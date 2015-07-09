@@ -1,0 +1,28 @@
+{namespace n=Tx_News_ViewHelpers}
+
+<div>
+	<div class="header">
+		<h3>
+			<span class="news-list-date">
+				<n:format.date format="%d.%m.%Y">{newsItem.datetime}</n:format.date>
+			</span>
+			<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+				{newsItem.title} - {settings.cropMaxCharacters}
+			</n:link>
+		</h3>
+	</div>
+	<div class="teaser-text">
+		<f:if condition="{newsItem.teaser}">
+			<f:then>
+				{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+			</f:then>
+			<f:else>
+				{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+			</f:else>
+		</f:if>
+		<n:link newsItem="{newsItem}" settings="{settings}" class="more" title="{newsItem.title}">
+			[<f:translate key="more-link"/>]
+		</n:link>
+	</div>
+	<hr class="separator-line">
+</div>
