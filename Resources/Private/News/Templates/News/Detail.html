@@ -1,0 +1,31 @@
+{namespace n=Tx_News_ViewHelpers}
+
+<f:layout name="Detail.html" />
+
+<!--
+	=====================
+		News/Detail.html
+-->
+
+<f:section name="content">
+	<f:if condition="{newsItem}">
+			<div class="header">
+				<h3>
+					<span class="news-list-date">
+						<n:format.date format="%d.%m.%Y">{newsItem.datetime}</n:format.date>
+					</span>
+					{newsItem.title}
+				</h3>
+			</div>
+			<div class="news-text-wrap">
+				<f:format.html>{newsItem.bodytext}</f:format.html>
+			</div>
+			<f:if condition="{settings.backPid}">
+				<div class="news-backlink-wrap">
+					<f:link.page pageUid="{settings.backPid}">
+						<f:translate key="back-link" />
+					</f:link.page>
+				</div>
+			</f:if>
+	</f:if>
+</f:section>

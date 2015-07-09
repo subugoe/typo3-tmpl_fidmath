@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl_fidmath/Configuration/TypoScript/Elements/" extensions="ts">
