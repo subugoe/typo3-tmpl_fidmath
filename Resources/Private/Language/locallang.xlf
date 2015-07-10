@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z"
+	      product-name="tmpl_fidmath">
+		<header/>
+		<body>
+			<trans-unit id="external-link" xml:space="preserve">
+                     <source>external link</source>
+             </trans-unit>
+			<trans-unit id="footer-link-dfg" xml:space="preserve">
+                     <source>http://www.dfg.de/en/</source>
+             </trans-unit>
+			<trans-unit id="footer-link-dfg-title" xml:space="preserve">
+                     <source>German Research Foundation (DFG)</source>
+             </trans-unit>
+
+			<trans-unit id="footer-link-uni-goe" xml:space="preserve">
+                     <source>http://www.uni-goettingen.de/en/1.html</source>
+             </trans-unit>
+			<trans-unit id="footer-link-uni-goe-title" xml:space="preserve">
+                     <source>Georg-August-University Goettingen</source>
+             </trans-unit>
+
+			<trans-unit id="footer-link-sub-goe" xml:space="preserve">
+                     <source>http://www.sub.uni-goettingen.de/en/</source>
+             </trans-unit>
+			<trans-unit id="footer-link-sub-goe-title" xml:space="preserve">
+                     <source>Goettingen State and University Library</source>
+             </trans-unit>
+
+			<trans-unit id="footer-link-tib" xml:space="preserve">
+                     <source>http://www.tib-hannover.de/en/</source>
+             </trans-unit>
+			<trans-unit id="footer-link-tib-title" xml:space="preserve">
+                     <source>German National Library of Science Technology Hanover</source>
+             </trans-unit>
+
+			<trans-unit id="footer-link-fiz" xml:space="preserve">
+                     <source>http://www.fiz-karlsruhe.de/</source>
+             </trans-unit>
+			<trans-unit id="footer-link-fiz-title" xml:space="preserve">
+                     <source>Leibniz Institute for Information Infrastructure</source>
+             </trans-unit>
+			<trans-unit id="footer-link-zentralblatt" xml:space="preserve">
+                     <source>http://www.emis.de/ZMATH/</source>
+             </trans-unit>
+			<trans-unit id="footer-link-zentralblatt-title" xml:space="preserve">
+                     <source>ZBMATH Database</source>
+             </trans-unit>
+            <trans-unit id="header-logo-title" xml:space="preserve">
+                  <source>Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH</source>
+            </trans-unit>
+            <trans-unit id="header-actionpicture-alt" xml:space="preserve">
+                  <source>Blackboard full of formulae</source>
+            </trans-unit>
+            <trans-unit id="header-actionpicture-title" xml:space="preserve">
+                  <source>Foto: Chistian Fries</source>
+            </trans-unit>
+            <trans-unit id="header-languageswitch-de" xml:space="preserve">
+                  <source>German version</source>
+            </trans-unit>
+            <trans-unit id="header-languageswitch-en" xml:space="preserve">
+                  <source>English version</source>
+            </trans-unit>
+            <trans-unit id="header-breadcrumb-title" xml:space="preserve">
+                <source>You are here</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

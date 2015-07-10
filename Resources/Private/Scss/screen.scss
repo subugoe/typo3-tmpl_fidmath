@@ -1,0 +1,876 @@
+@import 'Settings';
+@import 'color';
+@import 'font';
+
+/* Normalisiert margin, padding */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, blockquote, th, td, p {
+	margin: 0;
+	padding: 0;
+}
+
+h3, h4 {
+	padding: 0.7em 0 0.3em 0;
+}
+
+img {
+	border: none;
+}
+
+html {
+	height: 101%;
+}
+
+.csc-mailform-field {
+	padding: 0.2em 0;
+}
+
+.csc-mailform-field label {
+	vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+	padding: 0 0 0.2em 0.8em;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#accesskeys {
+	margin: 0;
+	padding: 0;
+	height: 0;
+	line-height: 1px;
+	display: none;
+}
+
+#mainContainer {
+	margin: 0 auto;
+	height: auto;
+	width: auto;
+	max-width: 80%;
+	min-width: 950px;
+	padding: 0 2%;
+}
+
+/*Oberer Bereich */
+
+#header {
+	min-width: 950px;
+	width: auto;
+	height: auto;
+}
+
+#logo {
+	float: left;
+	width: auto;
+	min-width: 603px;
+	max-width: 658px;
+	height: auto;
+	margin-top: 0;
+}
+
+#actionsPicture {
+	display: block;
+	float: right;
+	min-width: 272px;
+	max-width: 272px;
+	width: 272px;
+	height: auto;
+
+}
+
+#actionsPicture img {
+	border: none;
+}
+
+ul#menuService {
+	padding: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: -119px;
+}
+
+ul#menuService li {
+	float: left;
+	display: inline;
+	padding: 0;
+}
+
+ul#menuService li a {
+	display: inline;
+	padding: 0 1em 0 1em;
+	margin: 0 1em 0 0;
+}
+
+ul#menuService li.langMenu a img {
+	display: inline;
+	padding: .2em 0 0 0;
+}
+
+#mittelLeiste {
+	clear: both;
+	float: left;
+	width: 100%;
+	min-width: 950px;
+	height: auto;
+	min-height: 1.50em;
+	padding: 0.27em 0 0 0;
+}
+
+.SieSindHier {
+	float: left;
+	width: auto;
+	height: auto;
+}
+
+ul#breadcrumb {
+	float: left;
+	padding: 0;
+	width: auto;
+}
+
+ul#breadcrumb li {
+	float: left;
+	display: inline;
+	padding: 0;
+}
+
+ul#breadcrumb li a {
+	display: inline;
+	padding: 0 5px;
+}
+
+ul#breadcrumb li #breadSel, ul#breadcrumb li span #breadSel {
+	display: inline;
+	padding: 0 5px;
+}
+
+ul#features {
+	width: auto;
+}
+
+ul#features li {
+	float: right;
+	display: inline;
+	padding: 0;
+}
+
+ul#features li a {
+	display: inline;
+	padding: 0 10px;
+}
+
+ul#features ol li a {
+	display: inline;
+	padding: 0 4px;
+}
+
+ul#features li a img {
+	vertical-align: bottom;
+}
+
+/* Ende Oberer Bereich */
+
+/* Content Bereich*/
+
+#contentContainer {
+	float: left;
+	width: 100%;
+	min-width: 950px;
+	padding: 4em 0 0 0;
+	margin-bottom: 30px;
+}
+
+h1.welcome {
+	padding: 0 0 1.6em 0;
+}
+
+ul#menuMain {
+	clear: left;
+	float: left;
+	padding: 0;
+	width: 230px;
+}
+
+ul#menuMain li, ul#menuMain li.first, ul#menuMain li.last {
+	display: inline;
+	padding: 0;
+	font-size: 100%;
+}
+
+ul#menuMain li a {
+	display: block;
+	padding: 0.8em 0.6em;
+}
+
+ul#menuMain li a:hover {
+	display: block;
+	padding: 0.8em 0.6em;
+}
+
+ul#menuMain li.trenner {
+	display: block;
+	padding: 0.8em 0.6em;
+}
+
+/*	Highlight current menu item;
+	Use .homepage .first classes as a hack to make this to work for the homepage
+*/
+ul#menuMain li.current a,
+body.homepage ul#menuMain li.first a {
+	font-weight: bold;
+}
+
+#cSearch, #c735, #c738 {
+	margin: 0;
+	min-width: 500px;
+	max-width: 1200px;
+}
+
+#c735 {
+	#pazpar2 .pz2-mainForm {
+		position: absolute;
+		top: -30px;
+		right: 0;
+	}
+}
+
+#pazpar2 {
+	float: left;
+	width: 100%;
+	font-size: 111%;
+	#pz2-results ol.pz2-resultList {
+		padding-left: 30px;
+	}
+	.pz2-resultList .pz2-mediaIcon {
+		top: -3px;
+		left: -33px;
+	}
+}
+
+#pazpar2
+#pazpar2 .pz2-pager li a {
+	padding: 0 0.3em;
+}
+
+#pazpar2 .pz2-prev:after,
+#pazpar2 .pz2-next:after {
+	top: 0.05em;
+}
+
+#pazpar2 .pz2-pager .pz2-currentPage {
+	padding: 0 0.3em;
+}
+
+#pazpar2 #pz2-termLists .pz2-progressIndicator {
+	display: none;
+}
+
+#pazpar2 .pz2-termList li {
+	padding: 2px 0;
+}
+
+#pazpar2 .pz2-termList-medium li {
+	padding: 0;
+}
+
+#pz2-results .pz2-recordLink {
+	color: #192d57;
+	font-weight: normal;
+}
+
+#pz2-results .pz2-recordLink:after:hover {
+	color: #930;
+}
+
+#pazpar2 .pz2-journal-subpart {
+	font-weight: normal;
+}
+
+#pazpar2 .pz2-mediaIcon:before,
+#pazpar2 .pz2-mediaIcon:after {
+	top: -3px;
+}
+
+#pazpar2 .pz2-mediaIcon:after {
+	color: #192d57;
+}
+
+#pazpar2 .pz2-details dl {
+	line-height: 130%;
+}
+
+#pazpar2 .pz2-details dd {
+	margin-left: 11em;
+}
+
+#pazpar2 #pz2-results .pz2-details dl ul li {
+	list-style-type: circle;
+}
+
+#pazpar2 .pz2-detail-catalogueLink {
+	background: transparent;
+}
+
+#pazpar2 .pz2-extraLinks form {
+	background: transparent;
+}
+
+#pazpar2 .pz2-extraLinks input {
+	margin-left: 1em;
+}
+
+#pazpar2 .pz2-extraLinks:hover {
+	color: #930;
+}
+
+#pazpar2 .pz2-fieldsets ul {
+	margin-left: 1.5em;
+}
+
+#pazpar2 .pz2-fieldsets ul li {
+	padding: 0;
+}
+
+#pazpar2 #pz2-mainForm {
+	line-height: 180%;
+}
+
+#cInhalt {
+	margin: 0 0 0 250px;
+	min-width: 500px;
+	max-width: 1200px;
+	position: relative;
+}
+
+#cText {
+	float: left;
+	width: 99%;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+#iport_content {
+	position: relative;
+}
+
+.cIconsetTop {
+	float: right;
+	text-align: right;
+	width: 50%;
+	height: auto;
+	position: absolute;
+	top: -2.9em;
+	right: 0;
+	display: inline;
+}
+
+.cIconsetBottom {
+	float: right;
+	text-align: right;
+	width: 50%;
+	height: auto;
+	margin-top: -1.9em;
+	display: inline;
+}
+
+h1.standard {
+	width: 50%;
+	padding: 0 0 1.6em 0;
+	font-weight: normal;
+	margin-left: 250px;
+}
+
+h2.searchingIn {
+	width: 50%;
+	padding: 0 0 0.47em 0;
+	margin-left: 24%;
+	margin-top: -1.7em;
+}
+
+fieldset {
+	border: none;
+}
+
+input.iputStart {
+	float: left;
+	width: 65%;
+	padding: 0.2em 0.8em;
+	margin-left: 20px;
+}
+
+#searchTerm.iputStart {
+	float: left;
+	width: 62%;
+	padding: 0.2em 0.8em;
+	margin-left: 20px;
+
+}
+
+input.submStart {
+	float: right;
+	width: 15%;
+	min-width: 64px;
+	margin: 0 20px;
+	display: inline;
+	padding: 0.1em 0.8em;
+}
+
+input.iputStartSmall {
+	width: 30%;
+	padding: 0.2em 0.8em;
+	margin: 1em 0 2em 0;
+}
+
+input.submStartSmall {
+	width: 5%;
+	min-width: 64px;
+	margin: 1em 0 2em 1em;
+	display: inline;
+	padding: 0.1em 0.8em;
+}
+
+input.iputGoto {
+	width: 30%;
+	padding: 0.2em 0.2em;
+	margin: 1em 0 0 1em;
+}
+
+input.submGoto {
+	width: 10%;
+	min-width: 64px;
+	margin: 1em 0 1em 0em;
+	display: inline;
+	padding: 0.1em 0.2em;
+}
+
+#cSearch a#advancedLink {
+	display: block;
+	padding: 1em 0;
+	padding: 1em 2em 1em 1.7em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+#cNews {
+	float: right;
+	width: 17%;
+	max-width: 190px;
+	height: auto;
+	display: inline;
+	margin-top: -57px;
+	padding: 0.9em;
+}
+
+h2.csc-firstHeader {
+	margin-bottom: 15px;
+}
+
+.newsTeaser {
+	padding: 0.6em 0 1em 0;
+}
+
+.newsTeaser h3 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.news-list-container .showResultsWrap {
+	display: none;
+}
+
+/* Ende Content Bereich*/
+
+/* Abschluss unten*/
+#iport_left_nav {
+	float: left;
+	width: auto;
+	padding: 1em 0;
+	margin-top: 0.4em;
+}
+
+a.buttonlink {
+	display: inline;
+	padding: 0 1em 0 0;
+	margin: 0 1em 0 0;
+
+}
+
+#sponsorleiste {
+	clear: both;
+	width: 100%;
+}
+
+#cLogos {
+	width: 100%;
+	padding-top: 10px;
+}
+
+#cLogos a {
+	/* Diesen Wert (width:x%) anpassen, wenn ein Sponsor dazukommt */
+	width: 16.66%;
+	height: 51px;
+	display: block;
+	float: left;
+}
+
+.footer {
+	a.logo_dfg {
+		background: transparent url(../Images/Logos/logo_dfg_0.jpg) no-repeat center center;
+		text-indent: -10000em;
+	}
+
+	a:hover.logo_dfg {
+		background: transparent url(../Images/Logos/logo_dfg_1.jpg) no-repeat center center;
+	}
+
+	a.logo_gau {
+		background: transparent url(../Images/Logos/logo_gau_0.jpg) no-repeat center center;
+		text-indent: -10000em;
+	}
+
+	a:hover.logo_gau {
+		background: transparent url(../Images/Logos/logo_gau_1.jpg) no-repeat center center;
+	}
+
+	a.logo_sub {
+		background: transparent url(../Images/Logos/logo_sub_0.jpg) no-repeat center center;
+		text-indent: -10000em;
+	}
+
+	a:hover.logo_sub {
+		background: transparent url(../Images/Logos/logo_sub_1.jpg) no-repeat center center;
+	}
+
+	a.logo_tib {
+		background: transparent url(../Images/Logos/logo_tib_0.jpg) no-repeat center center;
+		text-indent: -10000em;
+	}
+
+	a:hover.logo_tib {
+		background: transparent url(../Images/Logos/logo_tib_1.jpg) no-repeat center center;
+
+	}
+
+	a.logo_fiz {
+		background: transparent url(../Images/Logos/logo_fiz_0.jpg) no-repeat center center;
+		text-indent: -10000em;
+	}
+
+	a:hover.logo_fiz {
+		background: transparent url(../Images/Logos/logo_fiz_1.jpg) no-repeat center center;
+	}
+
+	a.logo_math {
+		background: transparent url(../Images/Logos/logo_math_0.jpg) no-repeat center center;
+		text-indent: -10000em;
+	}
+
+	a:hover.logo_math {
+		background: transparent url(../Images/Logos/logo_math_1.jpg) no-repeat center center;
+	}
+
+}
+
+a.close {
+	padding: 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+form#simpleSearch, form#advancedSearch {
+	width: 70%;
+	margin-top: 2em;
+}
+
+#cSearch .tabs {
+	position: relative;
+	top: -20px;
+	left: 0;
+	float: left;
+	width: 100%;
+}
+
+.tabs {
+	position: relative;
+	top: -10px;
+	left: 0;
+	float: left;
+	width: 100%;
+}
+
+.tabs ul, .advTabs ul {
+	margin: 0;
+	padding: 10px 10px 0 50px;
+	list-style: none;
+}
+
+.tabs li, .advTabs li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.tabs a, .tabs span {
+	float: left;
+	padding: 3px 10px 3px 5px;
+	text-decoration: none;
+}
+
+.first, .second {
+	padding: 0;
+	padding-bottom: 1.3em;
+}
+
+#ttp, #tpp {
+
+	margin: 1em 0 0 0.5em;
+}
+
+div.second a {
+	float: right;
+	margin: 1.2em 1.9em 0 0;
+}
+
+div.free {
+	padding: 0 1.5em 1.5em 1.5em;
+}
+
+.advTabs {
+
+	position: relative;
+	top: -10px;
+	left: 0;
+	float: left;
+	width: 100%;
+
+}
+
+.advTabs a {
+	float: left;
+	padding: 3px 5px 0 5px;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.advFirst {
+	padding: 1em 0.3em 1em 0.3em;
+}
+
+.text {
+	padding-left: 0.5em;
+}
+
+#searchMsc {
+	margin-top: -0.8em;
+}
+
+#catalogues, #onlineDocs, #internet, #historicalMath {
+	float: left;
+	width: 45%;
+	padding: 1em 2em 1em 0;
+}
+
+#catalogues {
+	padding-top: 2.2em;
+}
+
+.dbGroup {
+
+}
+
+.all, .no {
+	padding: 0 0 0 0.5em;
+}
+
+/*input#math_opac, input#tiborder-math {
+position: relative;
+margin-left: 1.7em;
+}
+*/
+
+#newsnavi {
+	position: relative;
+	width: 100%;
+	text-align: right;
+	float: right;
+	top: -35px;
+
+}
+
+#clearer {
+	clear: both;
+}
+
+#all, #no {
+
+}
+
+#sitemap {
+	padding: 1em 0;
+	color: #9CAEDE;
+	ul li {
+		list-style-type: disc;
+		list-style-position: inside;
+		padding-bottom: 0.3em;
+		padding-top: 0.3em;
+	}
+	a {
+		color: #192d57;
+
+	}
+}
+
+#right {
+	border: 0;
+}
+
+.current, a.currentTab {
+	font-weight: bold;
+}
+
+#iportContent p.intro span.facet {
+	background-color: #58ACFA;
+	padding: 0 3px;
+
+}
+
+ul.csc-menu {
+	margin: 1em 0 2em 0;
+}
+
+.ow {
+	height: 70px;
+	padding: 0 0.3em 0.3em 0;
+}
+
+.externSearch {
+	font-weight: bold;
+	padding: 0.5em 0 0 0;
+}
+
+.clear2 {
+	clear: both;
+	padding: 2em;
+}
+
+#genResult {
+
+	width: 600px;
+}
+
+#genResult table {
+	width: 90%;
+	padding-bottom: 2.5em;
+}
+
+#mactutResult {
+	padding: .5em 2em;
+}
+
+#mactutResult a {
+	padding-left: 1em;
+}
+
+#mactutResult ul li, #mactutResult p {
+	margin: 0 -2em;
+	padding: 0 0 1em 0;
+}
+
+#owResult a img {
+	padding: .5em .5em;
+}
+
+/*
+	SUBJECT SEARCH COLUMN VIEW
+*/
+
+#contentContainer {
+	.gokContainer.column {
+		ul {
+			width: 24%;
+			padding: 0;
+			background: transparent;
+		}
+		li {
+			padding: 0;
+			border: 0 none;
+			&.selected {
+				background: #B5C7E7;
+			}
+			&.open,
+			&.close {
+				&:after {
+					top: 0.7em;
+					right: 0.3em;
+				}
+			}
+			a {
+				border-bottom: 1px dotted #192D57;
+				padding: 7px 12px 7px 7px;
+				color: #192D57;
+				font-weight: normal;
+				font-size: 100%;
+			}
+		}
+		.GOKID {
+			font-weight: bold;
+		}
+	}
+}
+
+/*
+	Correct ezbrequest styling.
+*/
+#cText #journalNavi li {
+	padding: 0;
+}
+
+#cText #journalList a {
+	color: #192D57;
+}
+
+#cText .tx-ezbrequest-pi1 #journalList li {
+	margin-left: 32px;
+}
+
+#cText .tx-ezbrequest-pi1 #journalList li span.ampel {
+	left: -32px;
+}
+
+/*
+	Hide duplicate more link in news list
+*/
+span.news-list-morelink {
+	display: none;
+}
+
+HR.separator-line {
+	clear: right;
+	height: 1px;
+	border: 1px solid #BBCAE7;
+}
+
+.news-list-date {
+	float: right;
+	color: #192d57;
+	width: 180px;
+	text-align: right;
+	height: 20px;
+	margin-top: -2px;
+	margin-right: -2px;
+	font-size: 0.8em;
+	font-weight: normal;
+}

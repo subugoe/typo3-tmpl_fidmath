@@ -1,0 +1,32 @@
+<div id="header">
+	<div id="logo">
+		<f:link.page pageUid="1">
+			<f:image src="{f:uri.resource(path:'Images/logo.jpg')}" alt="Vifamath Logo"
+			         title="{f:translate(key: 'header-logo-title')}"/>
+		</f:link.page>
+	</div>
+	<div id="actionsPicture">
+		<f:image src="{f:uri.resource(path:'Images/con_tafel.jpg')}"
+		         alt="{f:translate(key: 'header-actionpicture-alt')}"
+		         title="{f:translate(key: 'header-actionpicture-title')}"/>
+	</div>
+	<ul id="menuService">
+		<f:cObject typoscriptObjectPath="lib.topNavigation"/>
+		<li class="langMenu">
+			<f:link.page additionalParams="{L: 0}">
+				<f:image src="{f:uri.resource(path:'Images/flag_de.gif')}"
+				         alt="{f:translate(key: 'header-languageswitch-de')}"
+				         title="{f:translate(key: 'header-languageswitch-de')}"/>
+			</f:link.page>
+			<f:link.page additionalParams="{L: 1}">
+				<f:image src="{f:uri.resource(path:'Images/flag_en_01.gif')}"
+				         alt="{f:translate(key: 'header-languageswitch-en')}"
+				         title="{f:translate(key: 'header-languageswitch-en')}"/>
+			</f:link.page>
+		</li>
+	</ul>
+	<div id="mittelLeiste">
+		<span class="SieSindHier"><f:translate key="header-breadcrumb-title" />:</span>
+		<f:cObject typoscriptObjectPath="lib.breadcrumbs" />
+	</div>
+</div>
