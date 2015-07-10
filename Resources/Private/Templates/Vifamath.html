@@ -1,0 +1,28 @@
+<div id="mainContainer">
+
+	<f:render partial="Header"/>
+
+	<div id="contentContainer">
+		<f:if condition="{pageUid} == 1">
+			<f:then>
+				<h1 class="welcome">{pageTitle}</h1>
+			</f:then>
+			<f:else>
+				<h1 class="standard">{pageTitle}</h1>
+			</f:else>
+		</f:if>
+		<div id="cLeft">
+			<ul id="menuMain">
+				<f:cObject typoscriptObjectPath="lib.mainmenu"/>
+			</ul>
+			<div id="cInhalt">
+				<div id="cText">
+					<f:cObject typoscriptObjectPath="styles.content.get"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<f:if condition="{pageUid} == 1">
+		<f:render partial="Footer"/>
+	</f:if>
+</div>

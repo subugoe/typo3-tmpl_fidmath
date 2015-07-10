@@ -5,71 +5,21 @@ content.RTE_compliant = 0
 RTE.default.enableWordClean = 1
 RTE.default.disableEnterParagraphs = 0
 
-plugin.tt_news.xmlnewsfeed_id = 43
-plugin.tt_news.singlePid = 46
-plugin.tt_news.archiveTypoLink.parameter = 43
-plugin.tt_news.backPid = 43
-
-
 ### Constants from topNavigation
 temp.topNavigation.10.special {
-# cat=topNavigation/pagelist/3; type=string; label=List of page to appear in the top navigation
-   value = 1,18,21,154,79
+	# cat=topNavigation/pagelist/3; type=string; label=List of page to appear in the top navigation
+	value = 1,18,21,154,79
 }
 
 generalSearchTextEN {
-# cat=topNavigation/1; type=string; label= English text for fullSearch icon-link
-   value = general advanced search
+	# cat=topNavigation/1; type=string; label= English text for fullSearch icon-link
+	value = general advanced search
 }
 
 generalSearchTextDE {
-# cat=topNavigation/1; type=string; label= German text for fullSearch icon-link
-   value = gesamte erweiterte Suche
+	# cat=topNavigation/1; type=string; label= German text for fullSearch icon-link
+	value = gesamte erweiterte Suche
 }
-
-
-### Constants from header
-logoImgFile {
-# cat=header/file/1; type=string; label=Logo file
-value= fileadmin/template/images/logo.jpg
-}
-
-actionsPictureFile {
-# cat=header/file/2; type=string; label=image file for actionsPicutre right on the top
-  value=fileadmin/template/images/content/con_tafel.jpg
-}
-
-logoTitleDE {
-# cat=header/language/2; type=string; label=German title-text of logo
-   value = Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH
-   }
-
-logoTitleEN {
-# cat=header/language/2; type=string; label= English title-text of logo
-   value = Website of the Virtual Library of Mathematics
-   }
-
-
-actionsPictureTitleDE {
-# cat=header/language/3; type=string; label=German title-text for actionsPicture
-  value=Fotonachweis: Christian Fries
-}
-
-actionsPictureTitleEN {
-# cat=header/language/4; type=string; label=English title-text for actionsPicture
-  value=Foto: Chistian Fries
-}
-
-actionsPictureAltDE {
-# cat=header/language/5; type=string; label=German alt-text for actionsPicture
-  value=Eine Tafel voller Formeln
-}
-
-actionsPictureAltEN {
-# cat=header/language/6; type=string; label=English alt-text for actionsPicture
-  value=Blackbord full of formulae
-}
-
 
 ### Constants from mainContentPages
 styles.content.links.allowTags = address, cite, b, i, u, a, img, br, div, center, hr, sub, sup, p,strong, em, li, ul, ol, blockquote, strike, span, h2, h3, h4, h5
@@ -77,7 +27,6 @@ styles.content.links.allowTags := addToList(abbr, acronym)
 
 RTE.default.enableWordClean = 1
 RTE.default.disableEnterParagraphs = 0
-
 
 RTE.default.hideButtons = fontstyle, fontsize, lefttoright, righttoleft, inserttag
 
@@ -97,57 +46,53 @@ RTE.config.tt_content.bodytext.proc.allowedClasses = roteSchrift, sehrGross
 RTE.default.showStatusBar = 1
 
 RTE.default.proc {
-// TRANSFORMATION METHOD
-overruleMode = ts_css
+	// TRANSFORMATION METHOD
+	overruleMode = ts_css
 
-// LINES CONVERSION
-dontConvBRtoParagraph = 1
+	// LINES CONVERSION
+	dontConvBRtoParagraph = 1
 
-// TAGS ALLOWED OUTSIDE P & DIV
-allowTagsOutside = img,hr
+	// TAGS ALLOWED OUTSIDE P & DIV
+	allowTagsOutside = img,hr
 
-// TAGS ALLOWED
-allowTags = table, tbody, tr, th, td, h1, h2, h3, h4, h5, h6, div, p, br, span, ul, ol, li, re, blockquote, strong, em, b, i, u, sub, sup, strike, a, img, nobr, hr, tt, q, cite, abbr, acronym
+	// TAGS ALLOWED
+	allowTags = table, tbody, tr, th, td, h1, h2, h3, h4, h5, h6, div, p, br, span, ul, ol, li, re, blockquote, strong, em, b, i, u, sub, sup, strike, a, img, nobr, hr, tt, q, cite, abbr, acronym
 
-// TAGS DENIED
-denyTags = font
+	// TAGS DENIED
+	denyTags = font
 
-// ALLOWED P & DIV ATTRIBUTES
-keepPDIVattribs = align,class,style
+	// ALLOWED P & DIV ATTRIBUTES
+	keepPDIVattribs = align,class,style
 
-// CONTENT TO RTE
-HTMLparser_rte {
-// TAGS ALLOWED
-allowTags < RTE.default.proc.allowTags
-removeTags = font
+	// CONTENT TO RTE
+	HTMLparser_rte {
+		// TAGS ALLOWED
+		allowTags < RTE.default.proc.allowTags
+		removeTags = font
 
-// DO NOT REMOVE UNMATCHED TAGS
-keepNonMatchedTags = 0
+		// DO NOT REMOVE UNMATCHED TAGS
+		keepNonMatchedTags = 0
+	}
 
+	// CONTENT TO DATABASE
+	entryHTMLparser_db = 1
+	entryHTMLparser_db {
+		// XHTML COMPLIANCE
+		xhtml_cleaning = 1
+
+		// CLEAN TAGS
+
+		noAttrib = b, i, u, strike, sub, sup, strong, em, quote, blockquote, cite, tt, br, center
+		tags.hr.allowedAttribs = class
+		// REMAP B AND I TAGS
+		tags.b.remap = strong
+		tags.i.remap = em
+
+		rmTagIfNoAttrib = span,div,font
+
+		htmlSpecialChars = 1
+	}
 }
-
-// CONTENT TO DATABASE
-entryHTMLparser_db = 1
-entryHTMLparser_db {
-
-// XHTML COMPLIANCE
-xhtml_cleaning = 1
-
-// CLEAN TAGS
-
-noAttrib = b, i, u, strike, sub, sup, strong, em, quote, blockquote, cite, tt, br, center
-tags.hr.allowedAttribs = class
-// REMAP B AND I TAGS
-tags.b.remap = strong
-tags.i.remap = em
-
-rmTagIfNoAttrib = span,div,font
-
-htmlSpecialChars = 1
-}
-
-}
-
 
 plugin.feadmin.dmailsubscription.color1 = #CCCCCC
 plugin.feadmin.dmailsubscription.email = kontakt@vifamath.de
@@ -155,94 +100,68 @@ plugin.feadmin.dmailsubscription.emailName = vifamath
 plugin.feadmin.dmailsubscription.pid = 149
 
 [globalVar = GP:L = 1]
-
-plugin.feadmin.dmailsubscription{
-file.templateFile = fileadmin/template/fe_admin_dmailsubscrip_en.tmpl
-
-}
+	plugin.feadmin.dmailsubscription {
+		file.templateFile = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/DirectMail/fe_admin_dmailsubscrip_en.tmpl
+	}
 [else]
-plugin.feadmin.dmailsubscription{
-file.templateFile = fileadmin/template/fe_admin_dmailsubscrip_de.tmpl
-
-}
+	plugin.feadmin.dmailsubscription {
+		file.templateFile = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/DirectMail/fe_admin_dmailsubscrip_de.tmpl
+	}
 [end]
 
-
-### Constants from middlebar
-breadcrumbTextDE {
-# cat=middlebar/language/5; type=string; label=German text in breadcrumb
-   value = Sie sind hier:
-   }
-
-breadcrumbTextEN {
-# cat=middlebar/language/6; type=string; label= English text in breadcrumb
-   value = You are here:
-   }
-
 historyPage {
-# cat=middlebar/links/1; type=string; label= ID of the history page
-   value = 112
-   }
+	# cat=middlebar/links/1; type=string; label= ID of the history page
+	value = 112
+}
 
 historyParams {
-# cat=middlebar/params/1; type=string; label= GET parameter list for history request
-   value = &i&request=history&frame=VifaXML
-   }
+	# cat=middlebar/params/1; type=string; label= GET parameter list for history request
+	value = &i&request=history&frame=VifaXML
+}
 
 historyTextDE {
-# cat=middlebar/language/1; type=string; label= German name of the history link
-   value = Suchgeschichte
-   }
+	# cat=middlebar/language/1; type=string; label= German name of the history link
+	value = Suchgeschichte
+}
+
 historyTextEN {
-# cat=middlebar/language/2; type=string; label= English name of the history link
-   value = History
-   }
+	# cat=middlebar/language/2; type=string; label= English name of the history link
+	value = History
+}
 
 bookshelfPage {
-# cat=middlebar/links/2; type=string; label= ID of the bookshelf page
-   value = 111
-   }
+	# cat=middlebar/links/2; type=string; label= ID of the bookshelf page
+	value = 111
+}
 
 bookshelfParams {
-# cat=middlebar/params/2; type=string; label= GET parameter list for bookshelf request
-   value =  &i&request=saved_records&frame=VifaXML
-   }
+	# cat=middlebar/params/2; type=string; label= GET parameter list for bookshelf request
+	value = &i&request=saved_records&frame=VifaXML
+}
 
 bookshelfTextDE {
-# cat=middlebar/language/3; type=string; label= German name of the bookshelf link
-   value = Sammelmappe
-   }
+	# cat=middlebar/language/3; type=string; label= German name of the bookshelf link
+	value = Sammelmappe
+}
 
 bookshelfTextEN {
-# cat=middlebar/language/4; type=string; label= English name of the bookshelf link
-   value = Bookshelf
-   }
-
-printTextEN {
-# cat=middlebar/language/7; type=string; label= English text for print button
-   value = print page
+	# cat=middlebar/language/4; type=string; label= English name of the bookshelf link
+	value = Bookshelf
 }
-
-printTextDE {
-# cat=middlebar/language/8; type=string; label= German text for print button
-   value = Seite drucken
-}
-
 
 ### Constants from pageConfig
 plugin.tx_directmail_pi1.siteUrl = http://vifamath.dev
 
-
 plugin.tx_news {
 	view {
-		partialRootPath = EXT:tmpl_fidmath/Resources/Private/News/Partials
-		templateRootPath = EXT:tmpl_fidmath/Resources/Private/News/Templates
-		layoutRootPath = EXT:tmpl_fidmath/Resources/Private/News/Layouts
+		partialRootPath = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/News/Partials
+		templateRootPath = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/News/Templates
+		layoutRootPath = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/News/Layouts
 	}
+
 	settings {
 		cssFile = EXT:news/Resources/Public/Css/news-basic.css
 	}
-
 }
 
 

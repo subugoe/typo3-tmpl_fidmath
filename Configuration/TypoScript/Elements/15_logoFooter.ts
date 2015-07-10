@@ -1,9 +1,0 @@
-# foot logos content object:
-
-temp.logoFooter = TEXT
-temp.logoFooter.stdWrap.wrap =  <div id="cLogos"> | </div>
-[globalVar = GP:L=1]
-temp.logoFooter.value = <a class="logo_dfg" href="http://www.dfg.de/en/"  target="_blank">external Link: German Research Foundation (DFG)</a><a class="logo_gau" href="http://www.uni-goettingen.de/en/1.html" target="_blank">external Link: Georg-August-University Goettingen</a><a class="logo_sub" href="http://www.sub.uni-goettingen.de/index-e.html" target="_blank">external Link: Goettingen State and University Library</a><a class="logo_tib" href="http://www.tib-hannover.de/en/" target="_blank">external Link: German National Library of Science Technology Hanover</a><a class="logo_fiz" href="http://www.fiz-karlsruhe.de/" target="_blank">external Link: Leibniz Institute for Information Infrastructure</a><a class="logo_math" href="http://www.emis.de/ZMATH/" target="_blank">external Link: ZBMATH Database</a>
-[else]
-temp.logoFooter.value = <a class="logo_dfg" href="http://www.dfg.de/" target="_blank">externer Link:Deutsche Forschungsgemeinschaft</a><a class="logo_gau" href="http://www.uni-goettingen.de" target="_blank">externer Link: Georg-August-Universität Göttingen</a><a class="logo_sub" href="http://www.sub.uni-goettingen.de" target="_blank">externer Link: Niedersächsische Staats- und Universitätsbibliothek Göttingen</a><a class="logo_tib" href="http://www.tib-hannover.de/" target="_blank">externer Link: Technische Informationsbibliothek Hannover</a><a class="logo_fiz" href="http://www.fiz-karlsruhe.de/" target="_blank">externer Link: Fachinformationszentrum Karlsruhe</a><a class="logo_math" href="http://www.emis.de/ZMATH/" target="_blank">externer Link: Zentralblatt MATH</a>
-[end]
