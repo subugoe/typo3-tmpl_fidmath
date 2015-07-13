@@ -1,18 +1,4 @@
 .footer {
-
-	.footer-logo-bar {
-		border-top: 1px solid #fff;
-		width: 100%;
-		padding-top: 10px;
-		a {
-			/* Diesen Wert (width:x%) anpassen, wenn ein Sponsor dazukommt */
-			@include footer-logo-width;
-			height: 51px;
-			display: block;
-			float: left;
-		}
-	}
-
 	@include footer-logo('dfg');
 	@include footer-logo('gau');
 	@include footer-logo('sub');
@@ -20,4 +6,16 @@
 	@include footer-logo('fiz');
 	@include footer-logo('math');
 
+	.footer-logo-bar {
+		border-top: 1px solid #fff;
+		width: 100%;
+		padding-top: 10px;
+
+		a {
+			@include footer-logo-width;
+			height: 51px;
+			display: block;
+			float: left;
+		}
+	}
 }

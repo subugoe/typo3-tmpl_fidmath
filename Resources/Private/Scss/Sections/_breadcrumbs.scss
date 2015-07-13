@@ -1,14 +1,14 @@
 .breadcrumbs {
 	background-color: transparent;
 	text-align: right;
-	font-size: 96%;
+	font-size: 80%;
 	clear: both;
 	float: left;
 	width: 100%;
 	min-width: 950px;
 	height: auto;
-	min-height: 1.50em;
-	padding: 0.27em 0 0 0;
+	min-height: 1.5em;
+	padding: .27em 0 0;
 
 	a {
 		font-weight: normal;
@@ -18,7 +18,7 @@
 		float: left;
 		width: auto;
 		height: auto;
-		letter-spacing: 0.1em;
+		letter-spacing: .1em;
 	}
 
 	.breadcrumb-navigation {
@@ -26,18 +26,21 @@
 		float: left;
 		padding: 0;
 		width: auto;
+
 		li {
 			color: #fff;
 			text-transform: uppercase;
-			letter-spacing: 0.1em;
+			letter-spacing: .1em;
 			float: left;
 			display: inline;
 			padding: 0;
+
 			a {
 				text-transform: uppercase;
 				display: inline;
 				padding: 0 5px;
-				color: #192d57;
+				color: $text-color;
+
 				&:hover,
 				#breadSel {
 					color: #fff;
@@ -45,24 +48,26 @@
 					padding: 0 5px;
 				}
 			}
+
 			span {
 				#breadSel {
 					display: inline;
 					padding: 0 5px;
 				}
 			}
+
 			#breadSel {
 				display: inline;
 				padding: 0 5px;
 				text-transform: uppercase;
-				line-height: 0.75em;
-				letter-spacing: 0.1em;
+				line-height: .75em;
+				letter-spacing: .1em;
 			}
 		}
-		a {
-			color: #192d57;
-			text-transform: uppercase;
 
+		a {
+			color: $text-color;
+			text-transform: uppercase;
 		}
 	}
 }

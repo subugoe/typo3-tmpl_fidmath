@@ -1,0 +1,14 @@
+plugins {
+	id "com.moowork.gulp" version "0.10"
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.5'
+}
+
+node {
+	version = '0.10.39'
+	download = true
+}
+
+gulp_build.dependsOn 'npmInstall'

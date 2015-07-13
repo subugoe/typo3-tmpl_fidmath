@@ -9,7 +9,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
   padding: 0; }
 
 img {
-  border: none;
+  border: 0;
   display: none; }
 
 html {
@@ -17,7 +17,15 @@ html {
 
 h1.standard {
   color: #000;
-  padding-bottom: 0.5em; }
+  padding-bottom: .5em; }
+h1.welcome {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 14pt;
+  border: 0; }
+h1.csc-firstHeader {
+  margin-bottom: 15px; }
 
 a {
   text-decoration: none; }
@@ -67,23 +75,14 @@ ul#breadcrumb li a {
 
 ul#breadcrumb li #breadSel a {
   display: inline;
-  padding: 0 5px 0 5px; }
+  padding: 0 5px; }
 
-/* Ende Oberer Bereich */
-/* Content Bereich*/
 .content-container {
   float: left;
   width: 100%;
   min-width: 950px;
-  padding: 4em 0 0 0;
+  padding: 4em 0 0;
   margin-bottom: 30px; }
-
-h1.welcome {
-  padding: 0;
-  margin: 0;
-  color: #000;
-  font-size: 14pt;
-  border: none; }
 
 .main-navigation {
   display: none; }
@@ -101,8 +100,7 @@ h1.welcome {
     font-size: 14pt;
     margin: 0; }
 
-div .cIconsetTop,
-#right, #dbcard {
+div .cIconsetTop, #right, #dbcard {
   display: none; }
 
 div .cIconsetBottom {
@@ -124,9 +122,9 @@ div .cIconsetBottom {
 #cText {
   float: left;
   width: 99%;
-  padding: 0 0 0 0;
+  padding: 0;
   position: relative;
-  border: none; }
+  border: 0; }
 
 #iport_content {
   position: relative; }
@@ -142,15 +140,15 @@ h1.standard {
   padding: 0;
   font-weight: bold;
   font-size: 15pt;
-  margin-left: 0%;
-  border: none; }
+  margin-left: 0;
+  border: 0; }
 
 h2.woGesucht {
   width: 100%;
   font-size: 12pt;
   padding: 0;
   color: #000;
-  margin-left: 0%;
+  margin-left: 0;
   margin-top: 0; }
 
 table#recordtable {
@@ -166,13 +164,13 @@ table#recordtable caption {
 td.recno {
   padding: 1em 0;
   vertical-align: top;
-  border: none; }
+  border: 0; }
 
 td.data {
   padding: 1em 0;
   vertical-align: top;
   color: #000;
-  border: none; }
+  border: 0; }
 
 td.data a.normal_Link {
   color: #000; }
@@ -189,7 +187,7 @@ fieldset {
 input.iputStart {
   float: left;
   width: 65%;
-  padding: 0.2em 0.8em;
+  padding: .2em .8em;
   margin-left: 20px; }
 
 input.submStart {
@@ -198,34 +196,34 @@ input.submStart {
   min-width: 64px;
   margin: 0 20px;
   display: inline;
-  padding: 0.1em 0.8em; }
+  padding: .1em .8em; }
 
 input.iputStartSmall {
   width: 30%;
-  padding: 0.2em 0.8em;
-  margin: 1em 0 2em 0; }
+  padding: .2em .8em;
+  margin: 1em 0 2em; }
 
 input.submStartSmall {
   width: 5%;
   min-width: 64px;
   margin: 1em 0 2em 1em;
   display: inline;
-  padding: 0.1em 0.8em; }
+  padding: .1em .8em; }
 
 #iport_goto_form, #notify, #gen {
   display: none; }
 
 input.iputGoto {
   width: 30%;
-  padding: 0.2em 0.2em;
+  padding: .2em;
   margin: 1em 0 0 1em; }
 
 input.submGoto {
   width: 10%;
   min-width: 64px;
-  margin: 1em 0 1em 0;
+  margin: 1em 0;
   display: inline;
-  padding: 0.1em 0.2em; }
+  padding: .1em .2em; }
 
 #cSearch a#advancedLink {
   display: block;
@@ -241,13 +239,10 @@ p {
   height: 40em;
   display: inline;
   margin-top: -57px;
-  padding: 0.9em; }
-
-h1.csc-firstHeader {
-  margin-bottom: 15px; }
+  padding: .9em; }
 
 .newsTeaser {
-  padding: 1em 0 1.5em 0; }
+  padding: 1em 0 1.5em; }
   .newsTeaser h2 {
     margin-bottom: 5px; }
 
@@ -265,5 +260,3 @@ h1.csc-firstHeader {
 
 .close {
   display: none; }
-
-/*# sourceMappingURL=print.css.map */

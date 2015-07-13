@@ -1,0 +1,23 @@
+.tx-mathematicians {
+	.collection {
+		font-weight: bold;
+	}
+
+	.owResult a img {
+		padding: .5em;
+	}
+
+	#genResult {
+		width: 600px;
+
+		table {
+			width: 90%;
+			padding-bottom: 2.5em;
+		}
+	}
+
+	.clear2 {
+		clear: both;
+		padding: 2em;
+	}
+}

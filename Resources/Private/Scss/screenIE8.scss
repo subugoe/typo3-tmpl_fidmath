@@ -1,19 +1,21 @@
+@import 'Settings';
+
 .content-container {
 	float: left;
 	width: 100%;
 	min-width: 950px;
-	padding: 2.5em 0 0 0;
+	padding: 2.5em 0 0;
 	font-size: 85%;
 	margin-bottom: 30px;
 }
 
 h1.welcome {
 	width: 76%;
-	font-family: georgia, verdana, sans-serif;
+	font-family: $main-font-serif;
 	padding: 1em 0 1.6em 0;
 	color: #fff;
 	font-weight: normal;
-	font-size: 1.70em;
+	font-size: 1.7em;
 	letter-spacing: 0.18em;
 }
 
@@ -22,7 +24,7 @@ h1.welcome {
 }
 
 input#prefix {
-	margin-bottom: -0.5em;
+	margin-bottom: -.5em;
 }
 
 #right {

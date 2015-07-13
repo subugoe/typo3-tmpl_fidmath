@@ -1,6 +1,3 @@
-####
-# Default PAGE object:
-
 page = PAGE
 page {
 	typeNum = 0
@@ -18,9 +15,6 @@ page {
 
 	headerData = COA
 	headerData {
-		10 = TEXT
-		10.value = <!--[if IE 8]><link rel="stylesheet" href="typo3conf/ext/tmpl_fidmath/Resources/Public/Css/screenIE8.css" type="text/css" media="screen" /><![endif]-->
-
 		12 = TEXT
 		12.value = <link href="http://vifamath.de/interaktiv/news/?type=100" rel="alternate" type="application/rss+xml" title="Vifamath News" />
 
@@ -53,6 +47,9 @@ page {
 
 		file2 = EXT:tmpl_fidmath/Resources/Public/Css/print.css
 		file2.media = print
+
+		file3 = EXT:tmpl_fidmath/Resources/Public/Css/screenIE8.css
+		file3.allWrap = <!--[if IE 8]>|<![endif]-->
 	}
 
 	10 = FLUIDTEMPLATE
@@ -78,7 +75,6 @@ config {
 	metaCharset = utf-8
 	renderCharset = utf-8
 
-	//TYPO3 Kommentare in HTML-Ausgabe unterdrücken
 	disablePrefixComment = 1
 	disableImgBorderAttr = 1
 
