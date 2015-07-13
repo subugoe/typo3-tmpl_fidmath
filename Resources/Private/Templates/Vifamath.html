@@ -1,8 +1,8 @@
-<div id="mainContainer">
+<div class="main-container">
 
 	<f:render partial="Header"/>
 
-	<div id="contentContainer">
+	<div class="content-container">
 		<f:if condition="{pageUid} == 1">
 			<f:then>
 				<h1 class="welcome">{pageTitle}</h1>
@@ -12,9 +12,9 @@
 			</f:else>
 		</f:if>
 		<div id="cLeft">
-			<ul id="menuMain">
+			<nav class="main-navigation">
 				<f:cObject typoscriptObjectPath="lib.mainmenu"/>
-			</ul>
+			</nav>
 			<div id="cInhalt">
 				<div id="cText">
 					<f:cObject typoscriptObjectPath="styles.content.get"/>

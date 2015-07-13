@@ -1,0 +1,118 @@
+html {
+	height: 101%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+blockquote,
+th,
+td,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	font-weight: bolder;
+	.external-link-new-window {
+		color: $link-color;
+		background: url(../Images/icon_ext_url.png) center right no-repeat;
+		padding: 0 20px 0 0;
+		line-height: 20px;
+
+	}
+}
+
+body {
+	color: #192d57;
+	background: #dae1f4 url(../Images/bg_body.jpg) repeat-x;
+	font: x-small sans-serif;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+li {
+	list-style-type: none;
+	padding: 0 0 0.2em 0.8em;
+}
+
+strong {
+	background: #b5c7e7;
+}
+
+h1 {
+	&.standard {
+		color: #fff;
+		font-family: georgia, verdana, sans-serif;
+		font-weight: normal;
+		font-size: 1.69em;
+		letter-spacing: 0.149em;
+		width: 50%;
+		padding: 0 0 1.6em 0;
+		margin-left: 250px;
+	}
+
+	&.welcome {
+		color: #fff;
+		font-family: georgia, verdana, sans-serif;
+		font-weight: normal;
+		font-size: 1.69em;
+		letter-spacing: 0.149em;
+		padding: 0 0 1.6em 0;
+	}
+}
+
+h2 {
+	&.searchingIn {
+		color: #192d57;
+		font-family: georgia, verdana, sans-serif;
+		font-weight: normal;
+		font-size: 1.29em;
+		letter-spacing: 0.1em;
+	}
+	&.csc-firstHeader {
+		color: #f7e2a0;
+		font-size: 180%;
+		font-weight: normal;
+		font-family: georgia, sans-serif;
+		margin-bottom: 15px;
+
+	}
+}
+
+h3,
+h4 {
+	padding: 0.7em 0 0.3em 0;
+}
+
+p {
+	line-height: 1.5em;
+	margin: 1em 0;
+}
+
+img {
+	border: none;
+}
+
+fieldset {
+	border: none;
+}

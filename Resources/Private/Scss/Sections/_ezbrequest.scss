@@ -1,0 +1,20 @@
+.tx-ezbrequest-pi1 {
+
+	#journalNavi li {
+		padding: 0;
+	}
+
+	#journalList {
+		li {
+			margin-left: 32px;
+
+			span.ampel {
+				left: -32px;
+			}
+		}
+
+		a {
+			color: #192D57;
+		}
+	}
+}

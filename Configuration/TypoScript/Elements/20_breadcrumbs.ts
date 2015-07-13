@@ -1,7 +1,7 @@
 ###add breadcrumbs
 lib.breadcrumbs = HMENU
 lib.breadcrumbs {
-	wrap = <ul id="breadcrumb">|</ul>
+	wrap = <ul class="breadcrumb-navigation">|</ul>
 	special = rootline
 	spacial.range = 0/-1
 	1 = TMENU

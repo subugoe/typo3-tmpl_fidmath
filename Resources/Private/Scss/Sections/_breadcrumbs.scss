@@ -1,0 +1,68 @@
+.breadcrumbs {
+	background-color: transparent;
+	text-align: right;
+	font-size: 96%;
+	clear: both;
+	float: left;
+	width: 100%;
+	min-width: 950px;
+	height: auto;
+	min-height: 1.50em;
+	padding: 0.27em 0 0 0;
+
+	a {
+		font-weight: normal;
+	}
+
+	.SieSindHier {
+		float: left;
+		width: auto;
+		height: auto;
+		letter-spacing: 0.1em;
+	}
+
+	.breadcrumb-navigation {
+		list-style-type: none;
+		float: left;
+		padding: 0;
+		width: auto;
+		li {
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			float: left;
+			display: inline;
+			padding: 0;
+			a {
+				text-transform: uppercase;
+				display: inline;
+				padding: 0 5px;
+				color: #192d57;
+				&:hover,
+				#breadSel {
+					color: #fff;
+					display: inline;
+					padding: 0 5px;
+				}
+			}
+			span {
+				#breadSel {
+					display: inline;
+					padding: 0 5px;
+				}
+			}
+			#breadSel {
+				display: inline;
+				padding: 0 5px;
+				text-transform: uppercase;
+				line-height: 0.75em;
+				letter-spacing: 0.1em;
+			}
+		}
+		a {
+			color: #192d57;
+			text-transform: uppercase;
+
+		}
+	}
+}

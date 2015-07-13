@@ -1,0 +1,10 @@
+@mixin file-links($type) {
+	td.data a.external-link[href $=".#{$type}"],
+	td.data a.external_link[href $=".#{to-upper-case($type)}"],
+	td.data a.external-link-new-window[href $=".#{$type}"],
+	a.external-link-new-window[href $=".#{to-upper-case($type)}"] {
+		background: url(../Images/#{$type}.png) bottom right no-repeat;
+		padding: 5px 20px 0 0;
+		line-height: 20px;
+	}
+}

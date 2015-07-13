@@ -1,0 +1,83 @@
+.main-navigation {
+	border-bottom: 1px solid $border-color;
+	list-style-type: none;
+	font-size: 108%;
+	clear: left;
+	float: left;
+	padding: 0;
+	width: 230px;
+
+	li {
+		display: inline;
+		padding: 0;
+		font-size: 100%;
+
+		&#allsearch {
+			a {
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+
+		&.first,
+		&.last {
+			display: inline;
+			padding: 0;
+			font-size: 100%;
+		}
+
+		&.current {
+			a {
+				font-weight: bold;
+			}
+		}
+
+		&.trenner {
+			border-top: 1px solid $border-color;
+			line-height: 0.75em;
+			letter-spacing: 0.1em;
+			display: block;
+			padding: 0.8em 0.6em;
+		}
+
+		a {
+			border-top: 1px solid $border-color;
+			color: #192d57;
+			font-weight: normal;
+			line-height: 0.75em;
+			letter-spacing: 0.1em;
+			display: block;
+			padding: 0.8em 0.6em;
+
+			&:hover {
+				color: #fff;
+				border-top: 1px solid $border-color;
+				background-color: #b3c3e5;
+				line-height: 0.75em;
+				letter-spacing: 0.1em;
+				display: block;
+				padding: 0.8em 0.6em;
+			}
+
+			&.act {
+				font-weight: bolder;
+
+			}
+
+		}
+
+	}
+
+	.menuPraefix {
+		font-size: 1.6em;
+	}
+
+}
+
+/*	Highlight current menu item;
+	Use .homepage .first classes as a hack to make this to work for the homepage
+*/
+body.homepage .main-navigation li.first a {
+	font-weight: bold;
+}

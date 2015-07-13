@@ -30,10 +30,7 @@ body {
 .intro {
   display: none; }
 
-#accesskeys {
-  display: none; }
-
-#mainContainer {
+.main-container {
   margin: 0 auto;
   height: auto;
   width: auto;
@@ -44,16 +41,13 @@ body {
   font-size: 12pt; }
 
 /*Oberer Bereich */
-#kopfleiste {
-  display: none; }
-
 #logoleiste {
   display: none; }
 
 #aktionsbild {
   display: none; }
 
-ul#menuService {
+.top-navigation {
   display: none; }
 
 #mittelLeiste {
@@ -62,7 +56,7 @@ ul#menuService {
 .SieSindHier {
   display: none; }
 
-ul#breadcrumb {
+.breadcrumbs {
   display: none; }
 
 ul#breadcrumb li {
@@ -75,13 +69,9 @@ ul#breadcrumb li #breadSel a {
   display: inline;
   padding: 0 5px 0 5px; }
 
-ul#features {
-  display: none;
-  width: auto; }
-
 /* Ende Oberer Bereich */
 /* Content Bereich*/
-#contentContainer {
+.content-container {
   float: left;
   width: 100%;
   min-width: 950px;
@@ -95,7 +85,7 @@ h1.welcome {
   font-size: 14pt;
   border: none; }
 
-ul#menuMain {
+.main-navigation {
   display: none; }
 
 #cSearch {
@@ -105,14 +95,14 @@ ul#menuMain {
   min-width: 500px;
   max-width: 1200px;
   display: inline; }
+  #cSearch h2 {
+    padding: 0;
+    color: #000;
+    font-size: 14pt;
+    margin: 0; }
 
-#cSearch h2 {
-  padding: 0;
-  color: #000;
-  font-size: 14pt;
-  margin: 0; }
-
-div .cIconsetTop, #right, #dbcard {
+div .cIconsetTop,
+#right, #dbcard {
   display: none; }
 
 div .cIconsetBottom {
@@ -239,7 +229,6 @@ input.submGoto {
 
 #cSearch a#advancedLink {
   display: block;
-  padding: 1em 0;
   padding: 1em 2em 1em 3.7em; }
 
 p {
@@ -262,7 +251,6 @@ h1.csc-firstHeader {
   .newsTeaser h2 {
     margin-bottom: 5px; }
 
-/* Ende Content Bereich*/
 /* Abschluss unten*/
 #iport_left_nav {
   display: none; }

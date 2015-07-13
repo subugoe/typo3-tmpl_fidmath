@@ -33,15 +33,9 @@ page {
 		16 = TEXT
 		16.value = <link rel="search" type="application/opensearchdescription+xml" title="vifamath" href="http://vifamath.de/?type=9004">
 
-		20 = TEXT
-		20.value = Vifamath
-		20.wrap = <title>|:&nbsp;
-
 		30 = TEXT
 		30.field = title
-
-		50 = TEXT
-		50.value = </title>
+		30.wrap = <title>Vifamath:&nbsp;|</title>
 	}
 
 	meta {

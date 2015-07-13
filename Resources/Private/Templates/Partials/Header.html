@@ -1,16 +1,16 @@
-<div id="header">
-	<div id="logo">
+<div class="header">
+	<div class="logo">
 		<f:link.page pageUid="1">
 			<f:image src="{f:uri.resource(path:'Images/logo.jpg')}" alt="Vifamath Logo"
 			         title="{f:translate(key: 'header-logo-title')}"/>
 		</f:link.page>
 	</div>
-	<div id="actionsPicture">
+	<div class="actionsPicture">
 		<f:image src="{f:uri.resource(path:'Images/con_tafel.jpg')}"
 		         alt="{f:translate(key: 'header-actionpicture-alt')}"
 		         title="{f:translate(key: 'header-actionpicture-title')}"/>
 	</div>
-	<ul id="menuService">
+	<ul class="top-navigation">
 		<f:cObject typoscriptObjectPath="lib.topNavigation"/>
 		<li class="langMenu">
 			<f:link.page additionalParams="{L: 0}">
@@ -25,7 +25,7 @@
 			</f:link.page>
 		</li>
 	</ul>
-	<div id="mittelLeiste">
+	<div class="breadcrumbs">
 		<span class="SieSindHier"><f:translate key="header-breadcrumb-title" />:</span>
 		<f:cObject typoscriptObjectPath="lib.breadcrumbs" />
 	</div>
