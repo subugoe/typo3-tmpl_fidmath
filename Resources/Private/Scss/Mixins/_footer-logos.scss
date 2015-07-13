@@ -1,0 +1,14 @@
+@mixin footer-logo($title) {
+	a.logo_#{$title} {
+		background: transparent url(../Images/Logos/logo_#{$title}_0.jpg) no-repeat center center;
+		text-indent: -10000em;
+	}
+
+	a:hover.logo_#{$title} {
+		background: transparent url(../Images/Logos/logo_#{$title}_1.jpg) no-repeat center center;
+	}
+}
+
+@mixin footer-logo-width {
+	width: percentage(1 / $footer-logo-count);
+}

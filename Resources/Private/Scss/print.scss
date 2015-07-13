@@ -37,11 +37,7 @@ body {
 	display: none;
 }
 
-#accesskeys {
-	display: none;
-}
-
-#mainContainer {
+.main-container {
 	margin: 0 auto;
 	height: auto;
 	width: auto;
@@ -54,10 +50,6 @@ body {
 
 /*Oberer Bereich */
 
-#kopfleiste {
-	display: none;
-}
-
 #logoleiste {
 	display: none;
 }
@@ -66,7 +58,7 @@ body {
 	display: none;
 }
 
-ul#menuService {
+.top-navigation {
 	display: none;
 }
 
@@ -78,7 +70,7 @@ ul#menuService {
 	display: none;
 }
 
-ul#breadcrumb {
+.breadcrumbs {
 	display: none;
 }
 
@@ -99,16 +91,11 @@ ul#breadcrumb li #breadSel a {
 	padding: 0 5px 0 5px;
 }
 
-ul#features {
-	display: none;
-	width: auto;
-}
-
 /* Ende Oberer Bereich */
 
 /* Content Bereich*/
 
-#contentContainer {
+.content-container {
 	float: left;
 	width: 100%;
 	min-width: 950px;
@@ -124,7 +111,7 @@ h1.welcome {
 	border: none;
 }
 
-ul#menuMain {
+.main-navigation {
 	display: none;
 }
 
@@ -135,16 +122,16 @@ ul#menuMain {
 	min-width: 500px;
 	max-width: 1200px;
 	display: inline;
+	h2 {
+		padding: 0;
+		color: #000;
+		font-size: 14pt;
+		margin: 0;
+	}
 }
 
-#cSearch h2 {
-	padding: 0;
-	color: #000;
-	font-size: 14pt;
-	margin: 0;
-}
-
-div .cIconsetTop, #right, #dbcard {
+div .cIconsetTop,
+#right, #dbcard {
 	display: none;
 }
 
@@ -297,7 +284,6 @@ input.submGoto {
 
 #cSearch a#advancedLink {
 	display: block;
-	padding: 1em 0;
 	padding: 1em 2em 1em 3.7em;
 }
 
@@ -325,8 +311,6 @@ h1.csc-firstHeader {
 		margin-bottom: 5px;
 	}
 }
-
-/* Ende Content Bereich*/
 
 /* Abschluss unten*/
 #iport_left_nav {
