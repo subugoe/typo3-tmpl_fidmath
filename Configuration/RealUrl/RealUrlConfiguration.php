@@ -35,24 +35,86 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = array(
 		'expireDays' => 3,
 		'rootpage_id' => '1',
 	),
+	'fixedPostVars' => array(
+		'newsDetailConfiguration' => array(
+			array(
+				'GETvar' => 'tx_news_pi1[news]',
+				'lookUpTable' => array(
+					'table' => 'tx_news_domain_model_news',
+					'id_field' => 'uid',
+					'alias_field' => 'title',
+					'addWhereClause' => ' AND NOT deleted',
+					'useUniqueCache' => 1,
+					'useUniqueCache_conf' => array(
+						'strtolower' => 1,
+						'spaceCharacter' => '-'
+					),
+					'languageGetVar' => 'L',
+					'languageExceptionUids' => '',
+					'languageField' => 'sys_language_uid',
+					'transOrigPointerField' => 'l10n_parent',
+					'autoUpdate' => 1,
+					'expireDays' => 180,
+				)
+			)
+		),
+		'newsCategoryConfiguration' => array(
+			array(
+				'GETvar' => 'tx_news_pi1[overwriteDemand][categories]',
+				'lookUpTable' => array(
+					'table' => 'tx_news_domain_model_category',
+					'id_field' => 'uid',
+					'alias_field' => 'title',
+					'addWhereClause' => ' AND NOT deleted',
+					'useUniqueCache' => 1,
+					'useUniqueCache_conf' => array(
+						'strtolower' => 1,
+						'spaceCharacter' => '-'
+					)
+				)
+			)
+		),
+		'newsTagConfiguration' => array(
+			array(
+				'GETvar' => 'tx_news_pi1[overwriteDemand][tags]',
+					'lookUpTable' => array(
+					'table' => 'tx_news_domain_model_tag',
+					'id_field' => 'uid',
+					'alias_field' => 'title',
+					'addWhereClause' => ' AND NOT deleted',
+					'useUniqueCache' => 1,
+					'useUniqueCache_conf' => array(
+						'strtolower' => 1,
+						'spaceCharacter' => '-'
+					)
+				)
+			)
+		),
+		'46' => 'newsDetailConfiguration',
+	),
 	'postVarSets' => array(
 		'_DEFAULT' => array(
-			'artikel' => array(
+			'controller' => array(
 				array(
-					'GETvar' => 'tx_ttnews[tt_news]',
+					'GETvar' => 'tx_news_pi1[action]',
+					'noMatch' => 'bypass'
 				),
 				array(
-					'GETvar' => 'tx_ttnews[backPid]',
+					'GETvar' => 'tx_news_pi1[controller]',
+					'noMatch' => 'bypass'
+				)
+			),
+			'dateFilter' => array(
+				array(
+					'GETvar' => 'tx_news_pi1[overwriteDemand][year]',
+				),
+				array(
+					'GETvar' => 'tx_news_pi1[overwriteDemand][month]',
 				),
 			),
-			'kategorie' => array(
+			'page' => array(
 				array(
-					'GETvar' => 'tx_ttnews[cat]',
-				),
-			),
-			'eintrag' => array(
-				array(
-					'GETvar' => 'tx_ttnews[pointer]',
+					'GETvar' => 'tx_news_pi1[@widget_0][currentPage]',
 				),
 			),
 		),
