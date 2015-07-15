@@ -1,24 +1,11 @@
-
-buildscript {
-    repositories { jcenter() }
-
-    dependencies {
-      classpath group: 'com.github.jruby-gradle', name: 'jruby-gradle-plugin', version: '0.1.2'
-    }
-}
-
 plugins {
 	id "com.moowork.gulp" version "0.10"
 }
 
-apply plugin: 'com.github.jruby-gradle.base'
-
-dependencies {
-	gems group: 'rubygems', name: 'scss_lint', version: '0.38.0'
-}
-
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.5'
+	archivePath = './Build'
+	distributionPath = './Build'
 }
 
 node {
@@ -27,4 +14,3 @@ node {
 }
 
 gulp_build.dependsOn 'npmInstall'
-gulp_build.dependsOn 'jrubyPrepare'

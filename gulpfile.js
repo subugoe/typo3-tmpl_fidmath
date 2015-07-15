@@ -38,6 +38,17 @@ gulp.task('sass', ['lint'], function () {
 		.pipe(gulp.dest('./Resources/Public/Css/'))
 });
 
+gulp.task('sassProd', function () {
+	gulp.src(config.paths.sass)
+		.pipe(sass({
+			outputStyle: 'expanded'
+		}))
+		.pipe(autoprefixer(
+			config.autoprefixer
+		))
+		.pipe(gulp.dest('./Resources/Public/Css/'))
+});
+
 gulp.task('lint', function () {
 	gulp.src(config.paths.sass)
 		.pipe(cached('scsslint'))
@@ -48,7 +59,7 @@ gulp.task('lint', function () {
 });
 
 gulp.task('build', function () {
-	gulp.start('sass')
+	gulp.start('sassProd')
 });
 
 gulp.task('watch', function () {
