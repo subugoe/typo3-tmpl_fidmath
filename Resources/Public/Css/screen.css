@@ -84,7 +84,7 @@ input.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, 
   border: 1px solid #aaa;
   color: #fff; }
 
-.iputStartSmall {
+.iputStartSmall, .csc-form-element-textline input[type=text] {
   border-style: solid;
   border-width: 1px;
   border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
@@ -118,7 +118,7 @@ input.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, 
   padding: .2em .8em;
   margin-left: 20px; }
 
-.submStart {
+.submStart, .csc-form-element-submit input {
   float: right;
   width: 15%;
   min-width: 64px;
@@ -133,6 +133,18 @@ input.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, 
 form#simpleSearch, form#advancedSearch {
   width: 70%;
   margin-top: 2em; }
+
+.csc-form-element-textline input[type=text] {
+  padding: .2em 0;
+  margin: 0; }
+
+.csc-mailform-field label {
+  vertical-align: top; }
+
+.csc-form-element {
+  float: left;
+  width: 100%;
+  clear: both; }
 
 .main-navigation {
   border-bottom: 1px solid #f0f0f0;
@@ -687,12 +699,6 @@ div .showResultsWrap, div .browseLinksWrap {
 #adw {
   width: 125px;
   float: right; }
-
-.csc-mailform-field {
-  padding: .2em 0; }
-
-.csc-mailform-field label {
-  vertical-align: top; }
 
 img#allsearch {
   position: absolute;

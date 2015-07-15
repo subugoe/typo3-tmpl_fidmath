@@ -21,7 +21,8 @@ input.iputStart,
 	color: #fff;
 }
 
-.iputStartSmall {
+.iputStartSmall,
+.csc-form-element-textline input[type=text] {
 	border-style: solid;
 	border-width: 1px;
 	border-color: $button-background #b4b4b4 #b4b4b4 $button-background;
@@ -60,7 +61,8 @@ input.iputStart,
 
 }
 
-.submStart {
+.submStart,
+.csc-form-element-submit input{
 	float: right;
 	width: 15%;
 	min-width: 64px;
@@ -78,4 +80,20 @@ form#simpleSearch,
 form#advancedSearch {
 	width: 70%;
 	margin-top: 2em;
+}
+
+.csc-form-element-textline input[type=text] {
+	padding: .2em 0;
+	margin: 0;
+
+}
+
+.csc-mailform-field label {
+	vertical-align: top;
+}
+
+.csc-form-element {
+	float: left;
+	width: 100%;
+	clear: both;
 }
