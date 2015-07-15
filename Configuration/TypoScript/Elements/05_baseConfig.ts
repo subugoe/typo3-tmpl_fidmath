@@ -87,7 +87,7 @@ config {
 
 	simulateStaticDocuments = 0
 	tx_realurl_enable = 1
-	baseURL = http://vifamath.dev/
+	baseURL = {$baseUrl}
 }
 
 # English language, sys_language.uid = 1
@@ -99,10 +99,6 @@ config {
 		defaultLanguageISOCode = EN
 		htmlTag_langKey = en
 	}
-[global]
-
-[globalString = _SERVER|HTTPS=on]
-	config.baseURL = https://vifamath.dev/
 [global]
 
 temp.rss = TEXT
