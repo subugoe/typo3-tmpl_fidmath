@@ -1,0 +1,39 @@
+.content-container {
+	.gokContainer.column {
+		ul {
+			width: 24%;
+			padding: 0;
+			background: transparent;
+		}
+
+		li {
+			padding: 0;
+			border: 0 none;
+
+			&.selected {
+				background: $background-color;
+			}
+
+			&.open,
+			&.close {
+
+				&:after {
+					top: .5em;
+					right: .3em;
+				}
+			}
+
+			a {
+				border-bottom: 1px dotted $top-menu-color;
+				padding: 7px 12px 7px 7px;
+				color: $top-menu-color;
+				font-weight: normal;
+				font-size: 100%;
+			}
+		}
+
+		.GOKID {
+			font-weight: bold;
+		}
+	}
+}

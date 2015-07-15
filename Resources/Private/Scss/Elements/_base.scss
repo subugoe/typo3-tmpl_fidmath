@@ -32,9 +32,10 @@ a {
 	color: $link-color;
 	text-decoration: none;
 	font-weight: bolder;
+
 	.external-link-new-window {
 		color: $link-color;
-		background: url(../Images/icon_ext_url.png) center right no-repeat;
+		background: url('../Images/icon_ext_url.png') center right no-repeat;
 		padding: 0 20px 0 0;
 		line-height: 20px;
 
@@ -42,9 +43,10 @@ a {
 }
 
 body {
-	color: #192d57;
-	background: #dae1f4 url(../Images/bg_body.jpg) repeat-x;
-	font: x-small sans-serif;
+	color: $text-color;
+	background: #dae1f4 url('../Images/bg_body.jpg') repeat-x;
+	font-size: 12px;
+	font-family: $main-font;
 	text-align: center;
 	width: 100%;
 	height: 100%;
@@ -52,7 +54,7 @@ body {
 
 li {
 	list-style-type: none;
-	padding: 0 0 0.2em 0.8em;
+	padding: 0 0 .2em .8em;
 }
 
 strong {
@@ -62,38 +64,39 @@ strong {
 h1 {
 	&.standard {
 		color: #fff;
-		font-family: georgia, verdana, sans-serif;
+		font-family: $main-font-serif;
 		font-weight: normal;
 		font-size: 1.69em;
-		letter-spacing: 0.149em;
+		letter-spacing: .149em;
 		width: 50%;
-		padding: 0 0 1.6em 0;
+		padding: 0 0 1.6em;
 		margin-left: 250px;
 	}
 
 	&.welcome {
 		color: #fff;
-		font-family: georgia, verdana, sans-serif;
+		font-family: $main-font-serif;
 		font-weight: normal;
 		font-size: 1.69em;
-		letter-spacing: 0.149em;
-		padding: 0 0 1.6em 0;
+		letter-spacing: .149em;
+		padding: 0 0 1.6em;
 	}
 }
 
 h2 {
 	&.searchingIn {
-		color: #192d57;
-		font-family: georgia, verdana, sans-serif;
+		color: $text-color;
+		font-family: $main-font-serif;
 		font-weight: normal;
 		font-size: 1.29em;
-		letter-spacing: 0.1em;
+		letter-spacing: .1em;
 	}
+
 	&.csc-firstHeader {
 		color: #f7e2a0;
 		font-size: 180%;
 		font-weight: normal;
-		font-family: georgia, sans-serif;
+		font-family: $main-font-serif;
 		margin-bottom: 15px;
 
 	}
@@ -101,7 +104,7 @@ h2 {
 
 h3,
 h4 {
-	padding: 0.7em 0 0.3em 0;
+	padding: .7em 0 .3em;
 }
 
 p {
@@ -110,9 +113,9 @@ p {
 }
 
 img {
-	border: none;
+	border: 0;
 }
 
 fieldset {
-	border: none;
+	border: 0;
 }

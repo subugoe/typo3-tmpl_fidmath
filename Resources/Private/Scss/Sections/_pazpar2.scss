@@ -2,9 +2,11 @@
 	float: left;
 	width: 100%;
 	font-size: 111%;
+
 	#pz2-results ol.pz2-resultList {
 		padding-left: 30px;
 	}
+
 	.pz2-resultList .pz2-mediaIcon {
 		top: -3px;
 		left: -33px;
@@ -13,16 +15,16 @@
 
 #pazpar2
 #pazpar2 .pz2-pager li a {
-	padding: 0 0.3em;
+	padding: 0 .3em;
 }
 
 #pazpar2 .pz2-prev:after,
 #pazpar2 .pz2-next:after {
-	top: 0.05em;
+	top: .05em;
 }
 
 #pazpar2 .pz2-pager .pz2-currentPage {
-	padding: 0 0.3em;
+	padding: 0 .3em;
 }
 
 #pazpar2 #pz2-termLists .pz2-progressIndicator {
@@ -38,12 +40,12 @@
 }
 
 #pz2-results .pz2-recordLink {
-	color: #192d57;
+	color: $text-color;
 	font-weight: normal;
 }
 
 #pz2-results .pz2-recordLink:after:hover {
-	color: #930;
+	color: $link-color;
 }
 
 #pazpar2 .pz2-journal-subpart {
@@ -56,7 +58,7 @@
 }
 
 #pazpar2 .pz2-mediaIcon:after {
-	color: #192d57;
+	color: $text-color;
 }
 
 #pazpar2 .pz2-details dl {
@@ -84,7 +86,7 @@
 }
 
 #pazpar2 .pz2-extraLinks:hover {
-	color: #930;
+	color: $link-color;
 }
 
 #pazpar2 .pz2-fieldsets ul {

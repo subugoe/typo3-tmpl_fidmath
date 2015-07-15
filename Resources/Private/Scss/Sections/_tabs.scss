@@ -1,0 +1,61 @@
+// @todo where is this needed?
+.tabs a,
+.advTabs a,
+.tabs span {
+	color: $top-menu-color;
+	background-color: $background-color;
+	border-right: 1px solid $lighter-border-color;
+}
+
+.currentTab,
+a.currentTab {
+	color: #005;
+}
+
+.tabs {
+	position: relative;
+	top: -10px;
+	left: 0;
+	float: left;
+	width: 100%;
+
+	a,
+	span {
+		float: left;
+		padding: 3px 10px 3px 5px;
+		text-decoration: none;
+	}
+}
+
+.tabs ul,
+.advTabs ul {
+	margin: 0;
+	padding: 10px 10px 0 50px;
+	list-style: none;
+}
+
+.tabs li,
+.advTabs li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.advTabs {
+	position: relative;
+	top: -10px;
+	left: 0;
+	float: left;
+	width: 100%;
+
+	a {
+		float: left;
+		padding: 3px 5px 0;
+		text-decoration: none;
+		font-weight: normal;
+	}
+}
+
+.advFirst {
+	padding: 1em .3em;
+}
