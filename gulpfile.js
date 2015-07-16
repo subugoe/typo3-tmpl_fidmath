@@ -67,5 +67,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function () {
-	gulp.start('lint', 'build', 'watch')
+	gulp.start('lint', 'sass', 'watch')
 });
