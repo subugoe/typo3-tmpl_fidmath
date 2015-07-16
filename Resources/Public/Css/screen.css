@@ -92,6 +92,10 @@ input.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, 
   padding: .2em .8em;
   margin: 1em 0 2em; }
 
+.csc-form-element-select select {
+  width: 30%;
+  height: 30px; }
+
 .submStartSmall {
   background: #d4d4d4;
   border-style: solid;
