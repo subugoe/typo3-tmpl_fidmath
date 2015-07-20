@@ -1,6 +1,10 @@
 $button-background: #d4d4d4;
 $button-background-alternate: #b4b4b4;
 
+.csc-mailform {
+	padding-top: 0.8em;
+}
+
 input.iputStart,
 #mailformname,
 #mailformtitle,
@@ -15,25 +19,18 @@ input.iputStart,
 	color: #695a5c;
 }
 
-.submStart,
-.csc-mailform-submit {
-	background: #9fb900 url('../Images/bg_search_submit.jpg') repeat-x;
-	border: 1px solid #aaa;
-	color: #fff;
-}
-
 .iputStartSmall,
 .csc-form-element-textline input[type=text] {
 	border-style: solid;
 	border-width: 1px;
 	border-color: $button-background $button-background-alternate $button-background-alternate $button-background;
-	width: 30%;
+	width: $form-field-width;
 	padding: .2em .8em;
 	margin: 1em 0 2em;
 }
 
 .csc-form-element-select select {
-	width: 30%;
+	width: $form-field-width;
 	height: 30px;
 }
 
@@ -43,9 +40,9 @@ input.iputStart,
 	border-width: 1px;
 	border-color: $button-background $button-background-alternate $button-background-alternate $button-background;
 	color: $text-color;
-	width: 5%;
-	min-width: 64px;
-	margin: 1em 0 2em 1em;
+	width: $form-submit-width;
+	min-width: $form-submit-width;
+	margin: 1em 0 2em 10px;
 	display: inline;
 	padding: .1em .8em;
 	height: 1.7em;
@@ -68,10 +65,10 @@ input.iputStart,
 
 .submStart,
 .csc-form-element-submit input{
-	float: right;
+	float: left;
 	width: 15%;
-	min-width: 64px;
-	margin: 0 20px;
+	min-width: $form-submit-width;
+	margin: 0 20px 20px #{(196.25 + $form-field-width - $form-submit-width)};
 	display: inline;
 	padding: .1em .8em;
 }

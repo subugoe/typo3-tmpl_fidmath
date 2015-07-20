@@ -1,7 +1,15 @@
 .tx-ezbrequest-pi1 {
 
-	#journalNavi li {
-		padding: 0;
+	#navi {
+		height: 2.5em;
+	}
+
+	#journalNavi {
+		padding-top: .8em;
+
+		li {
+			padding: 0;
+		}
 	}
 
 	#journalList {
@@ -16,5 +24,16 @@
 		a {
 			color: $text-color;
 		}
+	}
+
+	#ezb_search_form {
+
+		.iputStartSmall {
+			width: ($form-field-width / 2);
+		}
+	}
+
+	.jourItem {
+		padding-top: 0.3em;
 	}
 }
