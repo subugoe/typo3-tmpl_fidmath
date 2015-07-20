@@ -1,28 +1,7 @@
 html {
   height: 101%; }
 
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-blockquote,
-th,
-td,
-p {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, blockquote, th, td, p {
   margin: 0;
   padding: 0; }
 
@@ -32,15 +11,15 @@ a {
   font-weight: bolder; }
   a .external-link-new-window {
     color: #930;
-    background: url("../Images/icon_ext_url.png") center right no-repeat;
+    background: url('../Images/icon_ext_url.png') center right no-repeat;
     padding: 0 20px 0 0;
     line-height: 20px; }
 
 body {
   color: #192d57;
-  background: #dae1f4 url("../Images/bg_body.jpg") repeat-x;
+  background: #dae1f4 url('../Images/bg_body.jpg') repeat-x;
   font-size: 12px;
-  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
   text-align: center;
   width: 100%;
   height: 100%; }
@@ -82,8 +61,7 @@ h2.csc-firstHeader {
   font-family: Georgia, serif;
   margin-bottom: 15px; }
 
-h3,
-h4 {
+h3, h4 {
   padding: .7em 0 .3em; }
 
 p {
@@ -99,21 +77,12 @@ fieldset {
 .csc-mailform {
   padding-top: 0.8em; }
 
-input.iputStart,
-#mailformname,
-#mailformtitle,
-#mailformauthor,
-#mailformmail,
-#mailformmsc,
-#mailformmscverbal,
-#mailformkeywords,
-#mailformurl {
-  background: #fff url("../Images/bg_search_input.jpg") repeat-x;
+input.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, #mailformmsc, #mailformmscverbal, #mailformkeywords, #mailformurl {
+  background: #fff url('../Images/bg_search_input.jpg') repeat-x;
   border: 1px solid #aaa;
   color: #695a5c; }
 
-.iputStartSmall,
-.csc-form-element-textline input[type=text] {
+.iputStartSmall, .csc-form-element-textline input[type=text] {
   border-style: solid;
   border-width: 1px;
   border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
@@ -151,8 +120,7 @@ input.iputStart,
   padding: .2em .8em;
   margin-left: 20px; }
 
-.submStart,
-.csc-form-element-submit input {
+.submStart, .csc-form-element-submit input {
   float: left;
   width: 15%;
   min-width: 64px;
@@ -164,8 +132,7 @@ input.iputStart,
   display: block;
   padding: 1em 2em 1em 1.7em; }
 
-form#simpleSearch,
-form#advancedSearch {
+form#simpleSearch, form#advancedSearch {
   width: 70%;
   margin-top: 2em; }
 
@@ -296,8 +263,7 @@ body.homepage .main-navigation li.first a {
         display: inline;
         padding: 0 5px;
         color: #192d57; }
-        .breadcrumbs .breadcrumb-navigation li a:hover,
-        .breadcrumbs .breadcrumb-navigation li a #breadSel {
+        .breadcrumbs .breadcrumb-navigation li a:hover, .breadcrumbs .breadcrumb-navigation li a #breadSel {
           color: #fff;
           display: inline;
           padding: 0 5px; }
@@ -328,7 +294,7 @@ body.homepage .main-navigation li.first a {
   background-repeat: no-repeat;
   text-align: left;
   font-size: 127%;
-  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
   margin: 0 auto;
   height: auto;
   width: auto;
@@ -413,12 +379,10 @@ body.homepage .main-navigation li.first a {
     top: -3px;
     left: -33px; }
 
-#pazpar2
-#pazpar2 .pz2-pager li a {
+#pazpar2 #pazpar2 .pz2-pager li a {
   padding: 0 .3em; }
 
-#pazpar2 .pz2-prev:after,
-#pazpar2 .pz2-next:after {
+#pazpar2 .pz2-prev:after, #pazpar2 .pz2-next:after {
   top: .05em; }
 
 #pazpar2 .pz2-pager .pz2-currentPage {
@@ -443,8 +407,7 @@ body.homepage .main-navigation li.first a {
 #pazpar2 .pz2-journal-subpart {
   font-weight: normal; }
 
-#pazpar2 .pz2-mediaIcon:before,
-#pazpar2 .pz2-mediaIcon:after {
+#pazpar2 .pz2-mediaIcon:before, #pazpar2 .pz2-mediaIcon:after {
   top: -3px; }
 
 #pazpar2 .pz2-mediaIcon:after {
@@ -561,15 +524,12 @@ span.news-list-morelink {
     color: #192d57;
     font-weight: normal; }
 
-.tabs a,
-.advTabs a,
-.tabs span {
+.tabs a, .advTabs a, .tabs span {
   color: #484848;
   background-color: #b5c5e6;
   border-right: 1px solid #c1d0ed; }
 
-.currentTab,
-a.currentTab {
+.currentTab, a.currentTab {
   color: #005; }
 
 .tabs {
@@ -578,20 +538,17 @@ a.currentTab {
   left: 0;
   float: left;
   width: 100%; }
-  .tabs a,
-  .tabs span {
+  .tabs a, .tabs span {
     float: left;
     padding: 3px 10px 3px 5px;
     text-decoration: none; }
 
-.tabs ul,
-.advTabs ul {
+.tabs ul, .advTabs ul {
   margin: 0;
   padding: 10px 10px 0 50px;
   list-style: none; }
 
-.tabs li,
-.advTabs li {
+.tabs li, .advTabs li {
   display: inline;
   margin: 0;
   padding: 0; }
@@ -650,66 +607,42 @@ a.currentTab {
 .tx-mathematicians .iputStart {
   float: none; }
 
-td.data a.external-link[href$=".pdf"],
-td.data a.external_link[href$=".PDF"],
-td.data a.external-link-new-window[href$=".pdf"],
-a.external-link-new-window[href$=".PDF"] {
+td.data a.external-link[href$=".pdf"], td.data a.external_link[href$=".PDF"], td.data a.external-link-new-window[href$=".pdf"], a.external-link-new-window[href$=".PDF"] {
   background: url(../Images/pdf.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
 
-td.data a.external-link[href$=".dvi"],
-td.data a.external_link[href$=".DVI"],
-td.data a.external-link-new-window[href$=".dvi"],
-a.external-link-new-window[href$=".DVI"] {
+td.data a.external-link[href$=".dvi"], td.data a.external_link[href$=".DVI"], td.data a.external-link-new-window[href$=".dvi"], a.external-link-new-window[href$=".DVI"] {
   background: url(../Images/dvi.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
 
-td.data a.external-link[href$=".dvi.gz"],
-td.data a.external_link[href$=".DVI.GZ"],
-td.data a.external-link-new-window[href$=".dvi.gz"],
-a.external-link-new-window[href$=".DVI.GZ"] {
+td.data a.external-link[href$=".dvi.gz"], td.data a.external_link[href$=".DVI.GZ"], td.data a.external-link-new-window[href$=".dvi.gz"], a.external-link-new-window[href$=".DVI.GZ"] {
   background: url(../Images/dvi.gz.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
 
-td.data a.external-link[href$=".ps"],
-td.data a.external_link[href$=".PS"],
-td.data a.external-link-new-window[href$=".ps"],
-a.external-link-new-window[href$=".PS"] {
+td.data a.external-link[href$=".ps"], td.data a.external_link[href$=".PS"], td.data a.external-link-new-window[href$=".ps"], a.external-link-new-window[href$=".PS"] {
   background: url(../Images/ps.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
 
-td.data a.external-link[href$=".ps.gz"],
-td.data a.external_link[href$=".PS.GZ"],
-td.data a.external-link-new-window[href$=".ps.gz"],
-a.external-link-new-window[href$=".PS.GZ"] {
+td.data a.external-link[href$=".ps.gz"], td.data a.external_link[href$=".PS.GZ"], td.data a.external-link-new-window[href$=".ps.gz"], a.external-link-new-window[href$=".PS.GZ"] {
   background: url(../Images/ps.gz.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
 
-td.data a.external-link[href$=".djvu"],
-td.data a.external_link[href$=".DJVU"],
-td.data a.external-link-new-window[href$=".djvu"],
-a.external-link-new-window[href$=".DJVU"] {
+td.data a.external-link[href$=".djvu"], td.data a.external_link[href$=".DJVU"], td.data a.external-link-new-window[href$=".djvu"], a.external-link-new-window[href$=".DJVU"] {
   background: url(../Images/djvu.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
 
-td.data a.external-link[href$=".txt"],
-td.data a.external_link[href$=".TXT"],
-td.data a.external-link-new-window[href$=".txt"],
-a.external-link-new-window[href$=".TXT"] {
+td.data a.external-link[href$=".txt"], td.data a.external_link[href$=".TXT"], td.data a.external-link-new-window[href$=".txt"], a.external-link-new-window[href$=".TXT"] {
   background: url(../Images/txt.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
 
-td.data a.external-link[href$=".html"],
-td.data a.external_link[href$=".HTML"],
-td.data a.external-link-new-window[href$=".html"],
-a.external-link-new-window[href$=".HTML"] {
+td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], td.data a.external-link-new-window[href$=".html"], a.external-link-new-window[href$=".HTML"] {
   background: url(../Images/html.png) bottom right no-repeat;
   padding: 5px 20px 0 0;
   line-height: 20px; }
@@ -749,14 +682,11 @@ td.data a.external_link {
 a.buttonlink {
   border-right: 1px solid #f0f0f0; }
 
-.first,
-.second,
-.advFirst {
+.first, .second, .advFirst {
   background-color: #b5c5e6;
   border-bottom: 1px solid #c1d0ed; }
 
-#tree a,
-ul.tabs li a {
+#tree a, ul.tabs li a {
   font-weight: normal; }
 
 #iport_left_nav {
@@ -765,23 +695,20 @@ ul.tabs li a {
 ul.tabs li a.currentTab {
   font-weight: bold; }
 
-.first,
-.advFirst {
+.first, .advFirst {
   font-size: 93%;
   line-height: 1.4em; }
 
 .dbGroup {
   font-weight: bold; }
 
-#all,
-#no {
+#all, #no {
   font-size: 1.6em; }
 
 span.aboText {
   font-size: 1.2em; }
 
-div .showResultsWrap,
-div .browseLinksWrap {
+div .showResultsWrap, div .browseLinksWrap {
   font-size: 1.2em; }
 
 #adw {
@@ -793,9 +720,7 @@ img#allsearch {
   top: 570px;
   left: 132px; }
 
-#cSearch,
-#c735,
-#c738 {
+#cSearch, #c735, #c738 {
   margin: 0;
   min-width: 500px;
   max-width: 1200px; }
@@ -853,12 +778,10 @@ a.close {
 .hidden {
   display: none; }
 
-.first,
-.second {
+.first, .second {
   padding: 0 0 1.3em; }
 
-#ttp,
-#tpp {
+#ttp, #tpp {
   margin: 1em 0 0 .5em; }
 
 div.second a {
@@ -874,10 +797,7 @@ div.free {
 #searchMsc {
   margin-top: -.8em; }
 
-#catalogues,
-#onlineDocs,
-#internet,
-#historicalMath {
+#catalogues, #onlineDocs, #internet, #historicalMath {
   float: left;
   width: 45%;
   padding: 1em 2em 1em 0; }
@@ -885,8 +805,7 @@ div.free {
 #catalogues {
   padding-top: 2.2em; }
 
-.all,
-.no {
+.all, .no {
   padding: 0 0 0 .5em; }
 
 #clearer {
@@ -895,8 +814,7 @@ div.free {
 #right {
   border: 0; }
 
-.current,
-a.currentTab {
+.current, a.currentTab {
   font-weight: bold; }
 
 ul.csc-menu {
@@ -914,5 +832,3 @@ HR.separator-line {
   clear: right;
   height: 1px;
   border: 1px solid #c1d0ed; }
-
-/*# sourceMappingURL=screen.css.map */
