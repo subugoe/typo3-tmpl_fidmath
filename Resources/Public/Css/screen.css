@@ -329,46 +329,6 @@ body.homepage .main-navigation li.first a {
   max-width: 1200px;
   position: relative; }
 
-.footer a.logo_dfg {
-  background: transparent url(../Images/Logos/logo_dfg_0.jpg) no-repeat center center;
-  text-indent: -10000em; }
-.footer a:hover.logo_dfg {
-  background: transparent url(../Images/Logos/logo_dfg_1.jpg) no-repeat center center; }
-.footer a.logo_gau {
-  background: transparent url(../Images/Logos/logo_gau_0.jpg) no-repeat center center;
-  text-indent: -10000em; }
-.footer a:hover.logo_gau {
-  background: transparent url(../Images/Logos/logo_gau_1.jpg) no-repeat center center; }
-.footer a.logo_sub {
-  background: transparent url(../Images/Logos/logo_sub_0.jpg) no-repeat center center;
-  text-indent: -10000em; }
-.footer a:hover.logo_sub {
-  background: transparent url(../Images/Logos/logo_sub_1.jpg) no-repeat center center; }
-.footer a.logo_tib {
-  background: transparent url(../Images/Logos/logo_tib_0.jpg) no-repeat center center;
-  text-indent: -10000em; }
-.footer a:hover.logo_tib {
-  background: transparent url(../Images/Logos/logo_tib_1.jpg) no-repeat center center; }
-.footer a.logo_fiz {
-  background: transparent url(../Images/Logos/logo_fiz_0.jpg) no-repeat center center;
-  text-indent: -10000em; }
-.footer a:hover.logo_fiz {
-  background: transparent url(../Images/Logos/logo_fiz_1.jpg) no-repeat center center; }
-.footer a.logo_math {
-  background: transparent url(../Images/Logos/logo_math_0.jpg) no-repeat center center;
-  text-indent: -10000em; }
-.footer a:hover.logo_math {
-  background: transparent url(../Images/Logos/logo_math_1.jpg) no-repeat center center; }
-.footer .footer-logo-bar {
-  border-top: 1px solid #fff;
-  width: 100%;
-  padding-top: 10px; }
-  .footer .footer-logo-bar a {
-    width: 16.66667%;
-    height: 51px;
-    display: block;
-    float: left; }
-
 #pazpar2 {
   float: left;
   width: 100%;

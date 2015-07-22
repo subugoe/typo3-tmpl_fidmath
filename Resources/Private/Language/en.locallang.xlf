@@ -7,46 +7,6 @@
 		<trans-unit id="external-link" xml:space="preserve">
                  <target>external link</target>
          </trans-unit>
-		<trans-unit id="footer-link-dfg" xml:space="preserve">
-                 <target>http://www.dfg.de/en/</target>
-         </trans-unit>
-		<trans-unit id="footer-link-dfg-title" xml:space="preserve">
-                 <target>German Research Foundation (DFG)</target>
-         </trans-unit>
-
-		<trans-unit id="footer-link-uni-goe" xml:space="preserve">
-                 <target>http://www.uni-goettingen.de/en/1.html</target>
-         </trans-unit>
-		<trans-unit id="footer-link-uni-goe-title" xml:space="preserve">
-                 <target>Georg-August-University Goettingen</target>
-         </trans-unit>
-
-		<trans-unit id="footer-link-sub-goe" xml:space="preserve">
-                 <target>http://www.sub.uni-goettingen.de/en/</target>
-         </trans-unit>
-		<trans-unit id="footer-link-sub-goe-title" xml:space="preserve">
-                 <target>Goettingen State and University Library</target>
-         </trans-unit>
-
-		<trans-unit id="footer-link-tib" xml:space="preserve">
-                 <target>http://www.tib-hannover.de/en/</target>
-         </trans-unit>
-		<trans-unit id="footer-link-tib-title" xml:space="preserve">
-                 <target>German National Library of Science Technology Hanover</target>
-         </trans-unit>
-
-		<trans-unit id="footer-link-fiz" xml:space="preserve">
-                 <target>http://www.fiz-karlsruhe.de/</target>
-         </trans-unit>
-		<trans-unit id="footer-link-fiz-title" xml:space="preserve">
-                 <target>Leibniz Institute for Information Infrastructure</target>
-         </trans-unit>
-		<trans-unit id="footer-link-zentralblatt" xml:space="preserve">
-                 <target>http://www.emis.de/ZMATH/</target>
-         </trans-unit>
-		<trans-unit id="footer-link-zentralblatt-title" xml:space="preserve">
-                 <target>ZBMATH Database</target>
-         </trans-unit>
 		<trans-unit id="header-logo-title" xml:space="preserve">
 			<target>Website of the Virtual Library of Mathematics</target>
 		</trans-unit>
