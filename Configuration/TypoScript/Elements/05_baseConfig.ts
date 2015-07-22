@@ -19,10 +19,10 @@ page {
 		12.value = <link href="http://vifamath.de/interaktiv/news/?type=100" rel="alternate" type="application/rss+xml" title="Vifamath News" />
 
 		14 = TEXT
-		14.value = <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {Macros:{sb: ["{_#1}", 1], sp: ["{^#1}", 1]}}, extensions: ["tex2jax.js"],jax: ["input/TeX", "output/HTML-CSS"],tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script>
+		14.value = <script type="text/x-mathjax-config">MathJax.Hub.processSectionDelay = 0;MathJax.Hub.Config({TeX: {Macros:{sb: ["{_#1}", 1], sp: ["{^#1}", 1]}}, extensions: ["tex2jax.js"],jax: ["input/TeX", "output/HTML-CSS"],tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script>
 
 		15 = TEXT
-		15.value = <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		15.value = <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 		16 = TEXT
 		16.value = <link rel="search" type="application/opensearchdescription+xml" title="vifamath" href="http://vifamath.de/?type=9004">
