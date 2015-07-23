@@ -151,7 +151,7 @@ form#simpleSearch, form#advancedSearch {
 
 .csc-mailform-field label, .powermail_label {
   float: left;
-  width: 150px;
+  width: 200px;
   margin: 1em 0; }
   .csc-mailform-field label:after, .powermail_label:after {
     content: 'i';
