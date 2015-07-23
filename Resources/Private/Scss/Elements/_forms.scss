@@ -20,21 +20,25 @@ input.iputStart,
 }
 
 .iputStartSmall,
-.csc-form-element-textline input[type=text] {
+.csc-form-element-textline input[type=text],
+.powermail_input,
+.powermail_textarea {
 	border-style: solid;
 	border-width: 1px;
 	border-color: $button-background $button-background-alternate $button-background-alternate $button-background;
 	width: $form-field-width;
 	padding: .2em .8em;
-	margin: 1em 0 2em;
+	margin: 1em 0;
 }
 
-.csc-form-element-select select {
+.csc-form-element-select select,
+.powermail_select {
 	width: $form-field-width;
 	height: 30px;
 }
 
-.submStartSmall {
+.submStartSmall,
+.powermail_submit {
 	background: $button-background;
 	border-style: solid;
 	border-width: 1px;
@@ -64,7 +68,7 @@ input.iputStart,
 }
 
 .submStart,
-.csc-form-element-submit input{
+.csc-form-element-submit input {
 	float: left;
 	width: 15%;
 	min-width: $form-submit-width;
@@ -84,17 +88,82 @@ form#advancedSearch {
 	margin-top: 2em;
 }
 
+.powermail_fieldwrap {
+	min-height: 40px;
+	float: left;
+	clear: both;
+
+}
+
 .csc-form-element-textline input[type=text] {
 	padding: .2em 0;
 	margin: 0;
 }
 
-.csc-mailform-field label {
-	vertical-align: top;
+.powermail_legend {
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.csc-mailform-field label,
+.powermail_label {
+	float: left;
+	width: $form-label-width;
+	margin: 1em 0;
+	&:after {
+		content: 'i';
+		display: inline-block;
+		height: 16px;
+		width: 16px;
+		margin: 0 0 0 2px;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: white;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+	}
+
+	&[title=""] {
+		&:after {
+			display: none;
+		}
+	}
+
+	&:after {
+		cursor: help;
+		content: 'i';
+		display: inline-block;
+		height: 16px;
+		width: 16px;
+		background-color: #fff;
+		margin: 0 0 0 2px;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: $text-color;
+		font-weight: bold;
+	}
+
+	&[title=""] {
+		cursor: inherit;
+		&:after {
+			display: none;
+		}
+	}
+
 }
 
 .csc-form-element {
 	float: left;
 	width: 100%;
 	clear: both;
+}
+
+.powermail_check_outer {
+	float: left;
+	.powermail_check_inner {
+		float: left;
+		margin: 1em 0;
+	}
 }
