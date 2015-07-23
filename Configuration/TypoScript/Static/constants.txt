@@ -163,14 +163,3 @@ plugin.tx_news {
 		cssFile = EXT:news/Resources/Public/Css/news-basic.css
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
