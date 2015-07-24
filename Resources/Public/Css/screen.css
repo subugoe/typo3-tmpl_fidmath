@@ -196,7 +196,7 @@ form#simpleSearch, form#advancedSearch {
     float: left;
     margin: 1em 0; }
 
-.powermail_form.powermail_form_1 h3 {
+.powermail_form h3 {
   display: none; }
 
 .main-navigation {
