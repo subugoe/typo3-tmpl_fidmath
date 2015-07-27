@@ -146,7 +146,7 @@ form#simpleSearch, form#advancedSearch {
   margin: 0; }
 
 .powermail_legend {
-  margin: 20px 0;
+  padding-top: 20px;
   font-weight: bold; }
 
 .csc-mailform-field label, .powermail_label {
