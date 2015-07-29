@@ -609,6 +609,10 @@ span.news-list-morelink {
   .tx-mathematicians #genResult table {
     width: 90%;
     padding-bottom: 2.5em; }
+.tx-mathematicians #simpleSearch {
+  width: 100%;
+  max-width: 900px;
+  min-width: 700px; }
 .tx-mathematicians .clear2 {
   clear: both;
   padding: 2em; }
