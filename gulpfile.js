@@ -1,9 +1,6 @@
 var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		scsslint = require('gulp-scss-lint'),
-		concat = require('gulp-concat'),
-		uglify = require('gulp-uglify'),
-		rename = require('gulp-rename'),
 		autoprefixer = require('gulp-autoprefixer'),
 		cached = require('gulp-cached');
 
@@ -53,9 +50,8 @@ gulp.task('lint', function () {
 	gulp.src(config.paths.sass)
 		.pipe(cached('scsslint'))
 			.pipe(scsslint({
-			'config': 'Build/.scss-lint.yml',
-			'maxBuffer': 9999999
-		}))
+			'config': 'Build/.scss-lint.yml'
+					  }))
 });
 
 gulp.task('build', function () {
