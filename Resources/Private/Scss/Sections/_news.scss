@@ -50,8 +50,6 @@
 .news-list-date {
 	float: right;
 	color: $text-color;
-	width: 180px;
-	text-align: right;
 	height: 20px;
 	margin-top: -2px;
 	margin-right: -2px;
@@ -62,4 +60,16 @@
 /* Hide duplicate more link in news list*/
 span.news-list-morelink {
 	display: none;
+}
+
+.news-list-entry {
+	clear: both;
+	padding-bottom: 1em;
+	border-bottom: 1px solid white;
+	width: 100%;
+
+	.header {
+		min-width: 0;
+	}
+
 }
