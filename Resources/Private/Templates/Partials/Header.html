@@ -13,12 +13,12 @@
 	<ul class="top-navigation">
 		<f:cObject typoscriptObjectPath="lib.topNavigation"/>
 		<li class="langMenu">
-			<f:link.page additionalParams="{L: 0}">
+			<f:link.page additionalParams="{L: 0}" addQueryString="true">
 				<f:image src="{f:uri.resource(path:'Images/flag_de.gif')}"
 				         alt="{f:translate(key: 'header-languageswitch-de')}"
 				         title="{f:translate(key: 'header-languageswitch-de')}"/>
 			</f:link.page>
-			<f:link.page additionalParams="{L: 1}">
+			<f:link.page additionalParams="{L: 1}" addQueryString="true">
 				<f:image src="{f:uri.resource(path:'Images/flag_en_01.gif')}"
 				         alt="{f:translate(key: 'header-languageswitch-en')}"
 				         title="{f:translate(key: 'header-languageswitch-en')}"/>
