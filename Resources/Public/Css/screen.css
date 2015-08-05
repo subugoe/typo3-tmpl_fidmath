@@ -511,8 +511,6 @@ body.homepage .main-navigation li.first a {
 .news-list-date {
   float: right;
   color: #192d57;
-  width: 180px;
-  text-align: right;
   height: 20px;
   margin-top: -2px;
   margin-right: -2px;
@@ -522,6 +520,14 @@ body.homepage .main-navigation li.first a {
 /* Hide duplicate more link in news list*/
 span.news-list-morelink {
   display: none; }
+
+.news-list-entry {
+  clear: both;
+  padding-bottom: 1em;
+  border-bottom: 1px solid white;
+  width: 100%; }
+  .news-list-entry .header {
+    min-width: 0; }
 
 #sitemap, .csc-sitemap {
   padding: 1em 0;
