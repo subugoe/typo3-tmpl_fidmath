@@ -2,15 +2,14 @@
 	list-style-type: none;
 	font-size: 95%;
 	color: $top-menu-color;
-	width: 100%;
+	width: 80%;
 	height: auto;
-	float: left;
-	margin-top: -119px;
 	padding: 0;
+	display: block;
+	position: absolute;
 
 	li {
 		color: $top-menu-color;
-		float: left;
 		display: inline;
 		padding: 0;
 

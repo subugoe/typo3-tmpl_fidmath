@@ -1,24 +1,18 @@
 .header {
-	min-width: 950px;
+	display: flex;
 	width: auto;
 	height: auto;
 
 	.logo {
-		float: left;
-		width: auto;
-		min-width: 603px;
-		max-width: 658px;
+		flex: 3 1 60%;
 		height: auto;
 		margin-top: 0;
 	}
 
 	.actionsPicture {
-		display: block;
-		float: right;
-		min-width: 272px;
-		max-width: 272px;
-		width: 272px;
+		flex: 2 1 40%;
 		height: auto;
+		text-align: right;
 
 		img {
 			border: none;

@@ -1,10 +1,7 @@
 @import 'Settings';
-
 @import 'Mixins/file-links';
-
 @import 'Elements/base';
 @import 'Elements/forms';
-
 @import 'Sections/main-navigation';
 @import 'Sections/top-navigation';
 @import 'Sections/breadcrumbs';
@@ -33,45 +30,9 @@ td.data a.external_link {
 	color: $link-color;
 }
 
-#cSearch {
-	border-top: 1px solid $border-color;
-	font-size: 105%;
-
-	h2 {
-		font-size: 120%;
-		font-family: $main-font-serif;
-		font-weight: normal;
-		letter-spacing: .1em;
-	}
-
-	form {
-		background-color: $background-color;
-	}
-
-	a {
-		&#advancedLink {
-			border-top: 2px solid #dae1f3;
-			background-color: $background-color;
-		}
-	}
-
-	.tabs {
-		position: relative;
-		top: -20px;
-		left: 0;
-		float: left;
-		width: 100%;
-	}
-}
-
-#cText {
-	float: left;
-	width: 99%;
-	padding: 0;
-	position: relative;
-	border-top: 1px solid $border-color;
-	border-bottom: 1px solid $border-color;
-	font-size: 110%;
+.main {
+	display: flex;
+	flex-flow: row;
 }
 
 a.buttonlink {
@@ -122,12 +83,6 @@ div .browseLinksWrap {
 	font-size: 1.2em;
 }
 
-#adw {
-	width: 125px;
-	float: right;
-}
-
-
 img#allsearch {
 	position: absolute;
 	top: 570px;
@@ -154,38 +109,11 @@ img#allsearch {
 	position: relative;
 }
 
-.cIconsetTop {
-	float: right;
-	text-align: right;
-	width: 50%;
-	height: auto;
-	position: absolute;
-	top: -2.9em;
-	right: 0;
-	display: inline;
-}
-
-.cIconsetBottom {
-	float: right;
-	text-align: right;
-	width: 50%;
-	height: auto;
-	margin-top: -1.9em;
-	display: inline;
-}
-
 h2.searchingIn {
 	width: 50%;
 	padding: 0 0 .47em;
 	margin-left: 24%;
 	margin-top: -1.7em;
-}
-
-#iport_left_nav {
-	float: left;
-	width: auto;
-	padding: 1em 0;
-	margin-top: .4em;
 }
 
 a.buttonlink {
@@ -283,4 +211,50 @@ HR.separator-line {
 	clear: right;
 	height: 1px;
 	border: 1px solid $lighter-border-color;
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+
+	.main {
+		flex-direction: column;
+
+		&>.main-content,
+		&>.main-navigation {
+			order: 0;
+		}
+	}
+
+	h1 {
+		&.standard {
+			margin-left: 1em;
+			width: 100%;
+		}
+	}
+
+	.header {
+		.actionsPicture {
+			display: none;
+		}
+	}
+
+	.top-navigation {
+		width: 100%;
+
+		li {
+			a {
+				padding: 0;
+				margin: 0 .5em 0;
+			}
+		}
+	}
+
+	.main-navigation {
+		max-width: 100%;
+		width: auto;
+	}
+
+	.main-container {
+		max-width: 100%;
+	}
 }
