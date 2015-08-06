@@ -11,15 +11,13 @@
 				<h1 class="standard">{pageTitle}</h1>
 			</f:else>
 		</f:if>
-		<div id="cLeft">
+		<div class="main">
+			<div class="main-content">
+				<f:cObject typoscriptObjectPath="styles.content.get"/>
+			</div>
 			<nav class="main-navigation">
 				<f:cObject typoscriptObjectPath="lib.mainmenu"/>
 			</nav>
-			<div id="cInhalt">
-				<div id="cText">
-					<f:cObject typoscriptObjectPath="styles.content.get"/>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>

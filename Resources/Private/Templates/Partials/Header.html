@@ -1,3 +1,19 @@
+<ul class="top-navigation">
+	<f:cObject typoscriptObjectPath="lib.topNavigation"/>
+	<li class="langMenu">
+		<f:link.page additionalParams="{L: 0}" addQueryString="true">
+			<f:image src="{f:uri.resource(path:'Images/flag_de.gif')}"
+			         alt="{f:translate(key: 'header-languageswitch-de')}"
+			         title="{f:translate(key: 'header-languageswitch-de')}"/>
+		</f:link.page>
+		<f:link.page additionalParams="{L: 1}" addQueryString="true">
+			<f:image src="{f:uri.resource(path:'Images/flag_en_01.gif')}"
+			         alt="{f:translate(key: 'header-languageswitch-en')}"
+			         title="{f:translate(key: 'header-languageswitch-en')}"/>
+		</f:link.page>
+	</li>
+</ul>
+
 <div class="header">
 	<div class="logo">
 		<f:link.page pageUid="1">
@@ -10,23 +26,9 @@
 		         alt="{f:translate(key: 'header-actionpicture-alt')}"
 		         title="{f:translate(key: 'header-actionpicture-title')}"/>
 	</div>
-	<ul class="top-navigation">
-		<f:cObject typoscriptObjectPath="lib.topNavigation"/>
-		<li class="langMenu">
-			<f:link.page additionalParams="{L: 0}" addQueryString="true">
-				<f:image src="{f:uri.resource(path:'Images/flag_de.gif')}"
-				         alt="{f:translate(key: 'header-languageswitch-de')}"
-				         title="{f:translate(key: 'header-languageswitch-de')}"/>
-			</f:link.page>
-			<f:link.page additionalParams="{L: 1}" addQueryString="true">
-				<f:image src="{f:uri.resource(path:'Images/flag_en_01.gif')}"
-				         alt="{f:translate(key: 'header-languageswitch-en')}"
-				         title="{f:translate(key: 'header-languageswitch-en')}"/>
-			</f:link.page>
-		</li>
-	</ul>
-	<div class="breadcrumbs">
-		<span class="SieSindHier"><f:translate key="header-breadcrumb-title" />:</span>
-		<f:cObject typoscriptObjectPath="lib.breadcrumbs" />
-	</div>
+</div>
+
+<div class="breadcrumbs">
+	<span class="SieSindHier"><f:translate key="header-breadcrumb-title" />:</span>
+	<f:cObject typoscriptObjectPath="lib.breadcrumbs" />
 </div>

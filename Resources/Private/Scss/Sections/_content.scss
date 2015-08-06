@@ -1,6 +1,9 @@
-#cInhalt {
-	margin: 0 0 0 250px;
-	min-width: 500px;
-	max-width: 1200px;
-	position: relative;
+.main-content {
+	flex: 3 1 80%;
+	order: 2;
+	margin-left: 1em;
+	padding: 0;
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	font-size: 110%;
 }

@@ -2,10 +2,12 @@
 	border-bottom: 1px solid $border-color;
 	list-style-type: none;
 	font-size: 108%;
-	clear: left;
-	float: left;
 	padding: 0;
 	width: 230px;
+	max-width: 230px;
+	min-width: 230px;
+	flex: 1 6 20%;
+	order: 1;
 
 	li {
 		display: inline;
