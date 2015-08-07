@@ -5,26 +5,29 @@
 		<header/>
 		<body>
 			<trans-unit id="external-link" xml:space="preserve">
-                 <target>externer link</target>
-         </trans-unit>
-        <trans-unit id="header-logo-title" xml:space="preserve">
-			<target>Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH</target>
-		</trans-unit>
-		<trans-unit id="header-actionpicture-alt" xml:space="preserve">
-			<target>Eine Tafel voller Formeln</target>
-		</trans-unit>
-			<trans-unit id="header-actionpicture-title" xml:space="preserve">
-              <target>Fotonachweis: Christian Fries</target>
-			</trans-unit>
-			<trans-unit id="header-languageswitch-de" xml:space="preserve">
-	     <target>Deutsche Version</target>
-	</trans-unit>
-	<trans-unit id="header-languageswitch-en" xml:space="preserve">
-	     <target>Englische Version</target>
-	</trans-unit>
-			<trans-unit id="header-breadcrumb-title" xml:space="preserve">
-	      <target>Sie sind hier</target>
-	  </trans-unit>
+<target>externer link</target>
+</trans-unit>
+<trans-unit id="header-logo-title" xml:space="preserve">
+<target>Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH</target>
+</trans-unit>
+<trans-unit id="header-actionpicture-alt" xml:space="preserve">
+<target>Eine Tafel voller Formeln</target>
+</trans-unit>
+<trans-unit id="header-actionpicture-title" xml:space="preserve">
+<target>Fotonachweis: Christian Fries</target>
+</trans-unit>
+<trans-unit id="header-languageswitch-de" xml:space="preserve">
+<target>Deutsche Version</target>
+</trans-unit>
+<trans-unit id="header-languageswitch-en" xml:space="preserve">
+<target>Englische Version</target>
+</trans-unit>
+<trans-unit id="header-breadcrumb-title" xml:space="preserve">
+<target>Sie sind hier</target>
+</trans-unit>
+<trans-unit id="menu" xml:space="preserve">
+<target>Menü</target>
+</trans-unit>
 		</body>
 	</file>
 </xliff>

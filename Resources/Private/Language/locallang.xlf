@@ -5,26 +5,29 @@
 		<header/>
 		<body>
 			<trans-unit id="external-link" xml:space="preserve">
-                     <source>external link</source>
-            </trans-unit>
-            <trans-unit id="header-logo-title" xml:space="preserve">
-                  <source>Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH</source>
-            </trans-unit>
-            <trans-unit id="header-actionpicture-alt" xml:space="preserve">
-                  <source>Blackboard full of formulae</source>
-            </trans-unit>
-            <trans-unit id="header-actionpicture-title" xml:space="preserve">
-                  <source>Foto: Chistian Fries</source>
-            </trans-unit>
-            <trans-unit id="header-languageswitch-de" xml:space="preserve">
-                  <source>German version</source>
-            </trans-unit>
-            <trans-unit id="header-languageswitch-en" xml:space="preserve">
-                  <source>English version</source>
-            </trans-unit>
-            <trans-unit id="header-breadcrumb-title" xml:space="preserve">
-                <source>You are here</source>
-            </trans-unit>
+<source>external link</source>
+</trans-unit>
+<trans-unit id="header-logo-title" xml:space="preserve">
+<source>Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH</source>
+</trans-unit>
+<trans-unit id="header-actionpicture-alt" xml:space="preserve">
+<source>Blackboard full of formulae</source>
+</trans-unit>
+<trans-unit id="header-actionpicture-title" xml:space="preserve">
+<source>Foto: Chistian Fries</source>
+</trans-unit>
+<trans-unit id="header-languageswitch-de" xml:space="preserve">
+<source>German version</source>
+</trans-unit>
+<trans-unit id="header-languageswitch-en" xml:space="preserve">
+<source>English version</source>
+</trans-unit>
+<trans-unit id="header-breadcrumb-title" xml:space="preserve">
+<source>You are here</source>
+</trans-unit>
+<trans-unit id="menu" xml:space="preserve">
+<source>Menu</source>
+</trans-unit>
 		</body>
 	</file>
 </xliff>

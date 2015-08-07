@@ -52,6 +52,10 @@ page {
 		file3.allWrap = <!--[if IE 8]>|<![endif]-->
 	}
 
+	includeJS {
+		file1 = EXT:tmpl_fidmath/Resources/Public/JavaScript/fidmath.js
+	}
+
 	10 = FLUIDTEMPLATE
 	10 {
 		file = EXT:tmpl_fidmath/Resources/Private/Templates/Vifamath.html
