@@ -21,15 +21,12 @@
 			         title="{f:translate(key: 'header-logo-title')}"/>
 		</f:link.page>
 	</div>
-	<div class="actionsPicture">
-		<f:image src="{f:uri.resource(path:'Images/con_tafel.jpg')}"
-		         alt="{f:translate(key: 'header-actionpicture-alt')}"
-		         title="{f:translate(key: 'header-actionpicture-title')}"/>
-	</div>
+	<f:render partial="actionsPicture" />
 </div>
-<button class="menu-trigger"><f:translate key="menu">Menu</f:translate></button>
-<div class="breadcrumbs">
 
+<button class="menu-trigger"><f:translate key="menu">Menu</f:translate></button>
+
+<div class="breadcrumbs">
 	<span class="SieSindHier"><f:translate key="header-breadcrumb-title" />:</span>
 	<f:cObject typoscriptObjectPath="lib.breadcrumbs" />
 </div>
