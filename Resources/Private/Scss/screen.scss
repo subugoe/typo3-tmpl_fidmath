@@ -1,4 +1,5 @@
 @import 'Settings';
+@import 'Elements/font-awesome/font-awesome';
 @import 'Mixins/file-links';
 @import 'Elements/base';
 @import 'Elements/forms';
@@ -49,10 +50,6 @@ a.buttonlink {
 #tree a,
 ul.tabs li a {
 	font-weight: normal;
-}
-
-#iport_left_nav {
-	font-size: 105%;
 }
 
 ul.tabs li a.currentTab {
@@ -213,16 +210,14 @@ HR.separator-line {
 	border: 1px solid $lighter-border-color;
 }
 
-/* Too narrow to support three columns */
+.menu-trigger {
+	display: none;
+}
+
 @media all and (max-width: 640px) {
 
 	.main {
 		flex-direction: column;
-
-		&>.main-content,
-		&>.main-navigation {
-			order: 0;
-		}
 	}
 
 	h1 {
@@ -251,10 +246,48 @@ HR.separator-line {
 
 	.main-navigation {
 		max-width: 100%;
-		width: auto;
+		position: absolute;
+		width: 260px;
+		left: -280px;
 	}
 
 	.main-container {
 		max-width: 100%;
+	}
+
+	.menu-trigger {
+		display: inline-block;
+		position: absolute;
+		background: #fff;
+		color: $text-color;
+		z-index: 99;
+		border: 0;
+
+		&:before {
+			content: '\f0c9';
+			font-family: fontawesome;
+			margin-right: .3em;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgba(0, 0, 0, .05);
+			color: #fff;
+		}
+
+		&:active,
+		&:focus,
+		&:hover {
+			border: 0;
+			outline: 0;
+		}
+	}
+
+	.breadcrumbs {
+		text-align: right;
+
+		.SieSindHier {
+			display: none;
+		}
 	}
 }

@@ -3,4 +3,10 @@
 	width: 100%;
 	padding: 4em 0 0;
 	margin-bottom: 30px;
+	transform: translate3d(0, 0, 0);
+	transition: transform .3s;
+
+	&.is-open {
+		transform: translate3d(260px, 0, 0);
+	}
 }

@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0">
-<file source-language="en" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z"
-      product-name="tmpl_fidmath">
-	<header/>
-	<body>
-		<trans-unit id="external-link" xml:space="preserve">
-                 <target>external link</target>
-         </trans-unit>
-		<trans-unit id="header-logo-title" xml:space="preserve">
-			<target>Website of the Virtual Library of Mathematics</target>
-		</trans-unit>
-		<trans-unit id="header-actionpicture-alt" xml:space="preserve">
-			<target>Blackboard full of formulae</target>
-		</trans-unit>
-		<trans-unit id="header-actionpicture-title" xml:space="preserve">
-          <target>Foto: Chistian Fries</target>
-		</trans-unit>
-		<trans-unit id="header-languageswitch-de" xml:space="preserve">
-     <target>German version</target>
+	<file source-language="en" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z"
+	      product-name="tmpl_fidmath">
+		<header/>
+		<body>
+			<trans-unit id="external-link" xml:space="preserve">
+<target>external link</target>
+</trans-unit>
+<trans-unit id="header-logo-title" xml:space="preserve">
+<target>Website of the Virtual Library of Mathematics</target>
+</trans-unit>
+<trans-unit id="header-actionpicture-alt" xml:space="preserve">
+<target>Blackboard full of formulae</target>
+</trans-unit>
+<trans-unit id="header-actionpicture-title" xml:space="preserve">
+<target>Foto: Chistian Fries</target>
+</trans-unit>
+<trans-unit id="header-languageswitch-de" xml:space="preserve">
+<target>German version</target>
 </trans-unit>
 <trans-unit id="header-languageswitch-en" xml:space="preserve">
-     <target>English version</target>
+<target>English version</target>
 </trans-unit>
-		<trans-unit id="header-breadcrumb-title" xml:space="preserve">
-      <target>You are here</target>
-  </trans-unit>
-	</body>
-</file>
+<trans-unit id="header-breadcrumb-title" xml:space="preserve">
+<target>You are here</target>
+</trans-unit>
+<trans-unit id="menu" xml:space="preserve">
+<target>Menu</target>
+</trans-unit>
+
+		</body>
+	</file>
 </xliff>
