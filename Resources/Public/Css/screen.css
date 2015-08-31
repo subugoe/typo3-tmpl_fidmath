@@ -2760,7 +2760,7 @@ HR.separator-line {
 .menu-trigger {
   display: none; }
 
-@media all and (max-device-width: 640px) {
+@media all and (max-width: 640px) {
   .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
