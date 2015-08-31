@@ -213,7 +213,7 @@ HR.separator-line {
 	display: none;
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-device-width: 640px) {
 
 	.main {
 		flex-direction: column;
