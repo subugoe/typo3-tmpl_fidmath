@@ -39,6 +39,7 @@ page {
 		abstract = Die vifamath (Virtuelle Fachbibliothek Mathematik) ist ein zentraler Einstieg für die Recherche nach mathematikspezifischen Informationen; z. B. können Bibliothekskataloge, Preprintserver und Sammlungen von Reviews, Zeitschriften und mathematisch relevanten Internetseiten simultan durchsucht werden.
 		Content-language = de, en
 		Robots = index, follow
+		viewport = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no
 	}
 
 	includeCSS {
