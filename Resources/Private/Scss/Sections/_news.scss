@@ -11,7 +11,7 @@
 }
 
 .newsTeaser {
-	border-top: 1px solid #fff;
+	border-top: 1px solid $white;
 	padding: .6em 0 1em;
 
 	h2 {
@@ -22,7 +22,7 @@
 	h3 {
 		margin-bottom: 0;
 		padding-bottom: 0;
-		color: #fff;
+		color: $white;
 	}
 
 	a {
@@ -65,7 +65,7 @@ span.news-list-morelink {
 .news-list-entry {
 	clear: both;
 	padding-bottom: 1em;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid $white;
 	width: 100%;
 
 	.news-list-header {

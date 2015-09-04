@@ -1936,7 +1936,7 @@ a {
   color: #930;
   text-decoration: none;
   font-weight: bolder; }
-  a .external-link-new-window {
+  a.external-link-new-window {
     color: #930;
     background: url('../Images/icon_ext_url.png') center right no-repeat;
     padding: 0 20px 0 0;
@@ -2002,7 +2002,7 @@ fieldset {
   border: 0; }
 
 .csc-mailform {
-  padding-top: 0.8em; }
+  padding-top: .8em; }
 
 input.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, #mailformmsc, #mailformmscverbal, #mailformkeywords, #mailformurl {
   background: #fff url('../Images/bg_search_input.jpg') repeat-x;
@@ -2089,7 +2089,7 @@ form#simpleSearch, form#advancedSearch {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    color: white;
+    color: #fff;
     font-family: Arial, sans-serif;
     font-weight: bold; }
   .csc-mailform-field label[title=""]:after, .powermail_label[title=""]:after {
@@ -2190,18 +2190,18 @@ body.homepage .main-navigation li.first a {
   font-size: 95%;
   margin-bottom: 1em;
   text-align: center; }
-  .meta-navigation li {
+  .meta-navigation .metanavigation-element {
     display: inline;
     padding: 0; }
-    .meta-navigation li a {
-      font-weight: normal;
-      display: inline;
-      padding: 0 1em;
-      margin: 0 1em 0 0;
-      color: #192d57;
-      border-right: 1px solid #f0f0f0; }
-      .meta-navigation li a.act {
-        font-weight: bolder; }
+  .meta-navigation .metanavigation-element_link {
+    font-weight: normal;
+    display: inline;
+    padding: 0 1em;
+    margin: 0 1em 0 0;
+    color: #192d57;
+    border-right: 1px solid #f0f0f0; }
+    .meta-navigation .metanavigation-element_link.act {
+      font-weight: bolder; }
 
 .breadcrumbs {
   font-size: 80%;
@@ -2212,42 +2212,23 @@ body.homepage .main-navigation li.first a {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 2px; }
-  .breadcrumbs a {
-    font-weight: normal; }
-  .breadcrumbs .SieSindHier {
-    letter-spacing: .1em; }
+  margin-top: 2px;
+  letter-spacing: .1em; }
   .breadcrumbs .breadcrumb-navigation {
     list-style-type: none;
     padding: 0;
     width: auto;
     display: inline-block; }
-    .breadcrumbs .breadcrumb-navigation li {
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      display: inline;
-      padding: 0; }
-      .breadcrumbs .breadcrumb-navigation li a {
-        text-transform: uppercase;
-        display: inline;
-        padding: 0 5px;
-        color: #192d57; }
-        .breadcrumbs .breadcrumb-navigation li a:hover, .breadcrumbs .breadcrumb-navigation li a #breadSel {
-          color: #fff;
-          display: inline;
-          padding: 0 5px; }
-      .breadcrumbs .breadcrumb-navigation li span #breadSel {
-        display: inline;
-        padding: 0 5px; }
-      .breadcrumbs .breadcrumb-navigation li #breadSel {
-        display: inline;
-        padding: 0 5px;
-        text-transform: uppercase;
-        line-height: .75em;
-        letter-spacing: .1em; }
-    .breadcrumbs .breadcrumb-navigation a {
-      color: #192d57;
-      text-transform: uppercase; }
+  .breadcrumbs .breadcrumb-navigation_element {
+    text-transform: uppercase;
+    display: inline;
+    padding: 0; }
+  .breadcrumbs .breadcrumb-navigation_link {
+    padding: 0 5px;
+    color: #192d57;
+    font-weight: normal; }
+    .breadcrumbs .breadcrumb-navigation_link:hover {
+      text-decoration: underline; }
 
 .language-menu {
   float: right;
@@ -2276,8 +2257,6 @@ body.homepage .main-navigation li.first a {
             transform: translate3d(260px, 0, 0); }
 
 .main-container {
-  background-color: transparent;
-  background-repeat: no-repeat;
   text-align: left;
   font-size: 127%;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
@@ -2318,7 +2297,7 @@ body.homepage .main-navigation li.first a {
     height: auto;
     text-align: right; }
     .header .actionsPicture img {
-      border: none; }
+      border: 0; }
 
 .main-content {
   -webkit-box-flex: 3;
@@ -2424,7 +2403,7 @@ body.homepage .main-navigation li.first a {
 .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
   width: 170px; }
 .tx-ezbrequest-pi1 .jourItem {
-  padding-top: 0.3em; }
+  padding-top: .3em; }
 
 #cNews {
   border: 8px solid #e5eaf7;
@@ -2479,14 +2458,13 @@ span.news-list-morelink {
 .news-list-entry {
   clear: both;
   padding-bottom: 1em;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
   width: 100%; }
   .news-list-entry .news-list-header {
     min-width: 0; }
 
 #sitemap, .csc-sitemap {
-  padding: 1em 0;
-  color: #9caede; }
+  padding: 1em 0; }
   #sitemap ul li, .csc-sitemap ul li {
     list-style-type: disc;
     list-style-position: inside;
@@ -2776,7 +2754,7 @@ HR.separator-line {
     width: 100%; }
     .top-navigation li a {
       padding: 0;
-      margin: 0 .5em 0; }
+      margin: 0 .5em; }
   .main-navigation {
     max-width: 100%;
     position: absolute;

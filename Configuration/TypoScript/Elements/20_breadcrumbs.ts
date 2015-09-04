@@ -6,10 +6,12 @@ lib.breadcrumbs {
 	spacial.range = 0/-1
 	1 = TMENU
 	1 {
-		NO.linkWrap = |*| <li> |&nbsp;&gt; </li> |*| |
+		NO.linkWrap = |*| <li class="breadcrumb-navigation_element"> |&nbsp;&gt; </li> |*| |
+		NO.ATagParams = class="breadcrumb-navigation_link"
 
 		CUR = 1
-		CUR.linkWrap = <li> &nbsp;| </li>
+		CUR.linkWrap = <li class="breadcrumb-navigation_element"> &nbsp;| </li>
 		CUR.doNotLinkIt = 1
+		CUR.ATagParams = class="breadcrumb-navigation_link"
 	}
 }

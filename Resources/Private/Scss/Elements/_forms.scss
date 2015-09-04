@@ -2,7 +2,7 @@ $button-background: #d4d4d4;
 $button-background-alternate: #b4b4b4;
 
 .csc-mailform {
-	padding-top: 0.8em;
+	padding-top: .8em;
 }
 
 input.iputStart,
@@ -14,7 +14,7 @@ input.iputStart,
 #mailformmscverbal,
 #mailformkeywords,
 #mailformurl {
-	background: #fff url('../Images/bg_search_input.jpg') repeat-x;
+	background: $white url('../Images/bg_search_input.jpg') repeat-x;
 	border: 1px solid #aaa;
 	color: #695a5c;
 }
@@ -119,7 +119,7 @@ form#advancedSearch {
 		font-size: 14px;
 		line-height: 16px;
 		text-align: center;
-		color: white;
+		color: $white;
 		font-family: Arial, sans-serif;
 		font-weight: bold;
 	}
@@ -136,7 +136,7 @@ form#advancedSearch {
 		display: inline-block;
 		height: 16px;
 		width: 16px;
-		background-color: #fff;
+		background-color: $white;
 		margin: 0 0 0 2px;
 		font-size: 14px;
 		line-height: 16px;

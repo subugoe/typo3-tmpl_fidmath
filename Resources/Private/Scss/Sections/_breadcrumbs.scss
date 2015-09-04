@@ -5,60 +5,29 @@
 	min-height: 1.5em;
 	flex: 1;
 	margin-top: 2px;
-
-	a {
-		font-weight: normal;
-	}
-
-	.SieSindHier {
-		letter-spacing: .1em;
-	}
+	letter-spacing: .1em;
 
 	.breadcrumb-navigation {
 		list-style-type: none;
 		padding: 0;
 		width: auto;
 		display: inline-block;
+	}
 
-		li {
-			text-transform: uppercase;
-			letter-spacing: .1em;
-			display: inline;
-			padding: 0;
+	.breadcrumb-navigation_element {
+		text-transform: uppercase;
+		display: inline;
+		padding: 0;
+	}
 
-			a {
-				text-transform: uppercase;
-				display: inline;
-				padding: 0 5px;
-				color: $text-color;
+	.breadcrumb-navigation_link {
+		padding: 0 5px;
+		color: $text-color;
+		font-weight: normal;
 
-				&:hover,
-				#breadSel {
-					color: #fff;
-					display: inline;
-					padding: 0 5px;
-				}
-			}
-
-			span {
-				#breadSel {
-					display: inline;
-					padding: 0 5px;
-				}
-			}
-
-			#breadSel {
-				display: inline;
-				padding: 0 5px;
-				text-transform: uppercase;
-				line-height: .75em;
-				letter-spacing: .1em;
-			}
-		}
-
-		a {
-			color: $text-color;
-			text-transform: uppercase;
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
+
