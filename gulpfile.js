@@ -8,7 +8,8 @@ var config = {
 	paths: {
 		sass: [
 			'./Resources/Private/Scss/**/*.scss',
-			'./Resources/Private/Scss/*.scss'
+			'./Resources/Private/Scss/*.scss',
+			'!./Resources/Private/Scss/Elements/font-awesome/**'
 		]
 	},
 	autoprefixer: {
@@ -51,7 +52,7 @@ gulp.task('lint', function () {
 		.pipe(cached('scsslint'))
 			.pipe(scsslint({
 			'config': 'Build/.scss-lint.yml'
-					  }))
+			  }))
 });
 
 gulp.task('build', function () {
@@ -59,7 +60,7 @@ gulp.task('build', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch(config.paths.sass, ['build'])
+	gulp.watch(config.paths.sass, ['sass'])
 });
 
 gulp.task('default', function () {

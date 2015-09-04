@@ -9,11 +9,11 @@
 h1.welcome {
   width: 76%;
   font-family: Georgia, serif;
-  padding: 1em 0 1.6em 0;
+  padding: 1em 0 1.6em;
   color: #fff;
   font-weight: normal;
   font-size: 1.7em;
-  letter-spacing: 0.18em; }
+  letter-spacing: .18em; }
 
 .breadcrumbs {
   font-size: 95%; }

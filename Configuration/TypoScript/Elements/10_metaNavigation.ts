@@ -8,12 +8,13 @@ lib.metaNavigation.10 {
 	includeNotInMenu = 1
 	1 = TMENU
 	1.NO {
-		linkWrap = <li> | </li>
+		linkWrap = <li class="metanavigation-element"> | </li>
+		ATagParams = class = "metanavigation-element_link"
 	}
 
 	1.CUR = 1
 	1.CUR {
-		linkWrap = <li> | </li>
-		ATagParams = class = "act"
+		linkWrap = <li class="metanavigation-element"> | </li>
+		ATagParams = class = "act metanavigation-element_link"
 	}
 }

@@ -4,7 +4,7 @@
 @import 'Elements/base';
 @import 'Elements/forms';
 @import 'Sections/main-navigation';
-@import 'Sections/top-navigation';
+@import 'Sections/meta-navigation';
 @import 'Sections/breadcrumbs';
 @import 'Sections/language-menu';
 @import 'Sections/content-container';
@@ -239,7 +239,7 @@ HR.separator-line {
 		li {
 			a {
 				padding: 0;
-				margin: 0 .5em 0;
+				margin: 0 .5em;
 			}
 		}
 	}
@@ -258,7 +258,7 @@ HR.separator-line {
 	.menu-trigger {
 		display: inline-block;
 		position: absolute;
-		background: #fff;
+		background: $white;
 		color: $text-color;
 		z-index: 99;
 		border: 0;
@@ -273,7 +273,7 @@ HR.separator-line {
 		&:hover {
 			cursor: pointer;
 			background: rgba(0, 0, 0, .05);
-			color: #fff;
+			color: $white;
 		}
 
 		&:active,
