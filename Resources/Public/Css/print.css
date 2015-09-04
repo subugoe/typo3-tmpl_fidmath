@@ -15,15 +15,17 @@ img {
 html {
   height: 101%; }
 
-h1.standard {
+.headline-first_standard {
   color: #000;
   padding-bottom: .5em; }
-h1.welcome {
+
+.headline-first_welcome {
   padding: 0;
   margin: 0;
   color: #000;
   font-size: 14pt;
   border: 0; }
+
 h1.csc-firstHeader {
   margin-bottom: 15px; }
 
@@ -55,7 +57,7 @@ body {
 #aktionsbild {
   display: none; }
 
-.top-navigation {
+.meta-navigation {
   display: none; }
 
 #mittelLeiste {
@@ -67,15 +69,11 @@ body {
 .breadcrumbs {
   display: none; }
 
-ul#breadcrumb li {
+.breadcrumb-navigation_element {
   display: none; }
 
-ul#breadcrumb li a {
+.breadcrumb-navigation_link {
   display: none; }
-
-ul#breadcrumb li #breadSel a {
-  display: inline;
-  padding: 0 5px; }
 
 .content-container {
   float: left;
@@ -135,15 +133,7 @@ div .cIconsetBottom {
 .cIconsetBottom {
   display: none; }
 
-h1.standard {
-  width: 100%;
-  padding: 0;
-  font-weight: bold;
-  font-size: 15pt;
-  margin-left: 0;
-  border: 0; }
-
-h2.woGesucht {
+.woGesucht {
   width: 100%;
   font-size: 12pt;
   padding: 0;
@@ -151,46 +141,45 @@ h2.woGesucht {
   margin-left: 0;
   margin-top: 0; }
 
-table#recordtable {
+#recordtable {
   border-collapse: collapse;
   width: 100%;
   border-spacing: 0; }
+  #recordtable caption {
+    padding: 1.3em 0;
+    text-align: left;
+    font-size: 12pt; }
 
-table#recordtable caption {
-  padding: 1.3em 0;
-  text-align: left;
-  font-size: 12pt; }
-
-td.recno {
+.recno {
   padding: 1em 0;
   vertical-align: top;
   border: 0; }
 
-td.data {
+.data {
   padding: 1em 0;
   vertical-align: top;
   color: #000;
   border: 0; }
 
-td.data a.normal_Link {
+.data .normal_Link {
   color: #000; }
 
-span.neuesFenster {
+.neuesFenster {
   color: #000; }
 
-td.data a.external_link {
+.data .external_link {
   color: #000; }
 
 fieldset {
   display: none; }
 
-input.iputStart {
+.iputStart {
   float: left;
   width: 65%;
   padding: .2em .8em;
   margin-left: 20px; }
 
-input.submStart {
+.submStart {
   float: right;
   width: 15%;
   min-width: 64px;
@@ -198,12 +187,12 @@ input.submStart {
   display: inline;
   padding: .1em .8em; }
 
-input.iputStartSmall {
+.iputStartSmall {
   width: 30%;
   padding: .2em .8em;
   margin: 1em 0 2em; }
 
-input.submStartSmall {
+.submStartSmall {
   width: 5%;
   min-width: 64px;
   margin: 1em 0 2em 1em;
@@ -213,19 +202,19 @@ input.submStartSmall {
 #iport_goto_form, #notify, #gen {
   display: none; }
 
-input.iputGoto {
+.iputGoto {
   width: 30%;
   padding: .2em;
   margin: 1em 0 0 1em; }
 
-input.submGoto {
+.submGoto {
   width: 10%;
   min-width: 64px;
   margin: 1em 0;
   display: inline;
   padding: .1em .2em; }
 
-#cSearch a#advancedLink {
+#cSearch #advancedLink {
   display: block;
   padding: 1em 2em 1em 3.7em; }
 

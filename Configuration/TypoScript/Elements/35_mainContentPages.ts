@@ -19,7 +19,7 @@ lib.mainContentPages {
 	10 = TEXT
 	10 {
 		data = page:subtitle
-		wrap = <h1 class="standard">|</h1>
+		wrap = <h1 class="headline-first_standard">|</h1>
 	}
 
 	20 < temp.mainmenu
