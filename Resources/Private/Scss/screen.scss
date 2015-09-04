@@ -6,6 +6,7 @@
 @import 'Sections/main-navigation';
 @import 'Sections/top-navigation';
 @import 'Sections/breadcrumbs';
+@import 'Sections/language-menu';
 @import 'Sections/content-container';
 @import 'Sections/main-container';
 @import 'Sections/header';
@@ -261,6 +262,7 @@ HR.separator-line {
 		color: $text-color;
 		z-index: 99;
 		border: 0;
+		margin-top: 11px;
 
 		&:before {
 			content: '\f0c9';
@@ -284,6 +286,7 @@ HR.separator-line {
 
 	.breadcrumbs {
 		text-align: right;
+		margin-top: 13px;
 
 		.SieSindHier {
 			display: none;

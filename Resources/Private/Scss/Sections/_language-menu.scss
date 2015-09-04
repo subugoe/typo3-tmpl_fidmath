@@ -1,0 +1,14 @@
+.language-menu {
+	float: right;
+	display: inline;
+	padding: .2em 0 0;
+	margin-right: 1em;
+
+	.language-menu_switch {
+		margin-left: 1em;
+		filter: grayscale(100%);
+		&:hover {
+			filter: grayscale(0%);
+		}
+	}
+}
