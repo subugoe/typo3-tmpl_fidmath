@@ -1938,9 +1938,13 @@ a {
   font-weight: bolder; }
   a.external-link-new-window {
     color: #930;
-    background: url('../Images/icon_ext_url.png') center right no-repeat;
-    padding: 0 20px 0 0;
     line-height: 20px; }
+    a.external-link-new-window:after {
+      content: " \f08e";
+      font-family: fontawesome;
+      font-size: 80%;
+      color: #192d57;
+      font-weight: normal; }
 
 body {
   color: #192d57;
