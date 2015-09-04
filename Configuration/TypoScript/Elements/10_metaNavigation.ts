@@ -1,8 +1,7 @@
-# TOPNAV:
-lib.topNavigation = COA
+lib.metaNavigation = COA
 
-lib.topNavigation.10 = HMENU
-lib.topNavigation.10 {
+lib.metaNavigation.10 = HMENU
+lib.metaNavigation.10 {
 	special = list
 	special.value = {$temp.topNavigation.10.special.value}
 

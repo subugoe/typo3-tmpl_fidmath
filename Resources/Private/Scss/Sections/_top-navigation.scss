@@ -1,15 +1,10 @@
-.top-navigation {
+.meta-navigation {
 	list-style-type: none;
 	font-size: 95%;
-	color: $top-menu-color;
-	width: 80%;
-	height: auto;
-	padding: 0;
-	display: block;
-	position: absolute;
+	margin-bottom: 1em;
+	text-align: center;
 
 	li {
-		color: $top-menu-color;
 		display: inline;
 		padding: 0;
 
@@ -18,21 +13,12 @@
 			display: inline;
 			padding: 0 1em;
 			margin: 0 1em 0 0;
-			color: $top-menu-color;
+			color: $text-color;
 			border-right: 1px solid $border-color;
 
 			&.act {
 				font-weight: bolder;
 			}
-		}
-
-		&.sprachAnzeige {
-			color: $top-menu-color;
-		}
-
-		&.langMenu a img {
-			display: inline;
-			padding: .2em 0 0;
 		}
 	}
 

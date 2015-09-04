@@ -1,11 +1,10 @@
 .breadcrumbs {
-	background-color: transparent;
 	font-size: 80%;
 	width: 100%;
-	max-width: 950px;
 	height: auto;
 	min-height: 1.5em;
 	flex: 1;
+	margin-top: 2px;
 
 	a {
 		font-weight: normal;
@@ -22,7 +21,6 @@
 		display: inline-block;
 
 		li {
-			color: #fff;
 			text-transform: uppercase;
 			letter-spacing: .1em;
 			display: inline;
