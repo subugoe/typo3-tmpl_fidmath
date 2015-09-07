@@ -1926,9 +1926,6 @@
 .fa-fonticons:before {
   content: "\f280"; }
 
-html {
-  height: 101%; }
-
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, blockquote, th, td, p {
   margin: 0;
   padding: 0; }

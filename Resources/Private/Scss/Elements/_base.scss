@@ -1,7 +1,3 @@
-html {
-	height: 101%;
-}
-
 body,
 div,
 dl,
@@ -66,24 +62,24 @@ strong {
 }
 
 .headline-first_standard {
-		color: $white;
-		font-family: $main-font-serif;
-		font-weight: normal;
-		font-size: 1.69em;
-		letter-spacing: .149em;
-		width: 50%;
-		padding: 0 0 1.6em;
-		margin-left: 250px;
-	}
+	color: $white;
+	font-family: $main-font-serif;
+	font-weight: normal;
+	font-size: 1.69em;
+	letter-spacing: .149em;
+	width: 50%;
+	padding: 0 0 1.6em;
+	margin-left: 250px;
+}
 
 .headline-first_welcome {
-		color: $white;
-		font-family: $main-font-serif;
-		font-weight: normal;
-		font-size: 1.69em;
-		letter-spacing: .149em;
-		padding: 0 0 1.6em;
-	}
+	color: $white;
+	font-family: $main-font-serif;
+	font-weight: normal;
+	font-size: 1.69em;
+	letter-spacing: .149em;
+	padding: 0 0 1.6em;
+}
 
 h2 {
 	&.searchingIn {
