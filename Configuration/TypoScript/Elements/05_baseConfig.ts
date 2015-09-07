@@ -83,9 +83,6 @@ config {
 	disablePrefixComment = 1
 	disableImgBorderAttr = 1
 
-	index_enable = 1
-	index_external = 1
-
 	removeDefaultJS = 1
 
 	noPageTitle = 2
@@ -107,9 +104,13 @@ config {
 [global]
 
 temp.rss = TEXT
-temp.rss.value = RSS
-temp.rss.typolink.parameter = 43
-temp.rss.typolink.additionalParams = &type=100
+temp.rss {
+	value = RSS
+	typolink {
+		parameter = 43
+		additionalParams = &type=100
+	}
+}
 
 [globalVar = TSFE:id=111]
 	page.includeJS.file >
@@ -144,9 +145,9 @@ tt_content.text.20.parseFunc.tags.link {
 	stdWrap.parseFunc.constants = 1
 }
 
-##########################################
+################################################
 ##Gobale Marker: Personen + Ausdrücke + Phrasen
-#############################################
+################################################
 
 constants {
 	KH = Katharina Habermann

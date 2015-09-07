@@ -1964,7 +1964,7 @@ strong {
 
 .headline-first_standard {
   color: #fff;
-  font-family: Georgia, serif;
+  font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
   font-size: 1.69em;
   letter-spacing: .149em;
@@ -1974,7 +1974,7 @@ strong {
 
 .headline-first_welcome {
   color: #fff;
-  font-family: Georgia, serif;
+  font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
   font-size: 1.69em;
   letter-spacing: .149em;
@@ -1982,7 +1982,7 @@ strong {
 
 h2.searchingIn {
   color: #192d57;
-  font-family: Georgia, serif;
+  font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
   font-size: 1.29em;
   letter-spacing: .1em; }
@@ -2413,7 +2413,7 @@ fieldset {
   border-top: 1px solid #fff;
   padding: .6em 0 1em; }
   .newsTeaser h2 {
-    font-family: Georgia, serif;
+    font-family: 'Droid Serif', Georgia, serif;
     font-size: 125%; }
   .newsTeaser h3 {
     margin-bottom: 0;
