@@ -1,23 +1,25 @@
-# mainmenu content object:
 lib.mainmenu = HMENU
-
-#first level menu
 lib.mainmenu {
 	1 = TMENU
 	1 {
 		wrap = <ul>|</ul>
 		NO = 1
-		NO.wrapItemAndSub = <li class="first">|</li>|*|<li>|</li>|*|<li class="last">|</li>
-		NO.stdWrap.wrap = <span class="menuPraefix">&rsaquo;</span>&nbsp;|
+		NO {
+			wrapItemAndSub = <li class="main-navigation_element">|</li>
+			ATagParams = class="main-navigation_link"
+		}
 
 		ACT = 1
-		ACT.wrapItemAndSub = <li class="first current">|</li>|*|<li class="current">|</li>|*|<li class="last current">|</li>
-		ACT.stdWrap.wrap = <span class="menuPraefix">&rsaquo;</span>&nbsp;|
+		ACT {
+			wrapItemAndSub = <li class="current main-navigation_element">|</li>
+			ATagParams = class="main-navigation_link"
+		}
 
 		CUR = 1
-		CUR.wrapItemAndSub = <li class="first current"><a>|</a></li>|*|<li class="current"><a>|</a></li>|*|<li class="current last"><a>|</a></li>
-		CUR.stdWrap.wrap = <span class="menuPraefix">&rsaquo;</span>&nbsp;|
-		CUR.doNotLinkIt = 1
+		CUR {
+			wrapItemAndSub = <li class="current main-navigation_element">|</li>
+			ATagParams = class="main-navigation_link"
+		}
 
 		SPC = 1
 		SPC {

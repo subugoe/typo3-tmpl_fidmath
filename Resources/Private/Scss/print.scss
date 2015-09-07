@@ -1,4 +1,4 @@
-@import "Settings";
+@import 'Settings';
 
 /*diese beiden importierten CSS-Dateien
 werden unten mit den Farb-/Größenwerten für den Ausdruck überschrieben.
@@ -41,20 +41,20 @@ html {
 	height: 101%;
 }
 
+.headline-first_standard {
+	color: $print-color;
+	padding-bottom: .5em;
+}
+
+.headline-first_welcome {
+	padding: 0;
+	margin: 0;
+	color: $print-color;
+	font-size: 14pt;
+	border: 0;
+}
+
 h1 {
-	&.standard {
-		color: $print-color;
-		padding-bottom: .5em;
-	}
-
-	&.welcome {
-		padding: 0;
-		margin: 0;
-		color: $print-color;
-		font-size: 14pt;
-		border: 0;
-	}
-
 	&.csc-firstHeader {
 		margin-bottom: 15px;
 	}
@@ -95,7 +95,7 @@ body {
 	display: none;
 }
 
-.top-navigation {
+.meta-navigation {
 	display: none;
 }
 
@@ -111,17 +111,12 @@ body {
 	display: none;
 }
 
-ul#breadcrumb li {
+.breadcrumb-navigation_element {
 	display: none;
 }
 
-ul#breadcrumb li a {
+.breadcrumb-navigation_link {
 	display: none;
-}
-
-ul#breadcrumb li #breadSel a {
-	display: inline;
-	padding: 0 5px;
 }
 
 .content-container {
@@ -199,16 +194,7 @@ div .cIconsetBottom {
 	display: none;
 }
 
-h1.standard {
-	width: 100%;
-	padding: 0;
-	font-weight: bold;
-	font-size: 15pt;
-	margin-left: 0;
-	border: 0;
-}
-
-h2.woGesucht {
+.woGesucht {
 	width: 100%;
 	font-size: 12pt;
 	padding: 0;
@@ -217,40 +203,40 @@ h2.woGesucht {
 	margin-top: 0;
 }
 
-table#recordtable {
+#recordtable {
 	border-collapse: collapse;
 	width: 100%;
 	border-spacing: 0;
+
+	caption {
+		padding: 1.3em 0;
+		text-align: left;
+		font-size: 12pt;
+	}
 }
 
-table#recordtable caption {
-	padding: 1.3em 0;
-	text-align: left;
-	font-size: 12pt;
-}
-
-td.recno {
+.recno {
 	padding: 1em 0;
 	vertical-align: top;
 	border: 0;
 }
 
-td.data {
+.data {
 	padding: 1em 0;
 	vertical-align: top;
 	color: $print-color;
 	border: 0;
 }
 
-td.data a.normal_Link {
+.data .normal_Link {
 	color: $print-color;
 }
 
-span.neuesFenster {
+.neuesFenster {
 	color: $print-color;
 }
 
-td.data a.external_link {
+.data .external_link {
 	color: $print-color;
 }
 
@@ -258,14 +244,14 @@ fieldset {
 	display: none;
 }
 
-input.iputStart {
+.iputStart {
 	float: left;
 	width: 65%;
 	padding: .2em .8em;
 	margin-left: 20px;
 }
 
-input.submStart {
+.submStart {
 	float: right;
 	width: 15%;
 	min-width: 64px;
@@ -274,13 +260,13 @@ input.submStart {
 	padding: .1em .8em;
 }
 
-input.iputStartSmall {
+.iputStartSmall {
 	width: 30%;
 	padding: .2em .8em;
 	margin: 1em 0 2em;
 }
 
-input.submStartSmall {
+.submStartSmall {
 	width: 5%;
 	min-width: 64px;
 	margin: 1em 0 2em 1em;
@@ -294,13 +280,13 @@ input.submStartSmall {
 	display: none;
 }
 
-input.iputGoto {
+.iputGoto {
 	width: 30%;
 	padding: .2em;
 	margin: 1em 0 0 1em;
 }
 
-input.submGoto {
+.submGoto {
 	width: 10%;
 	min-width: 64px;
 	margin: 1em 0;
@@ -308,7 +294,7 @@ input.submGoto {
 	padding: .1em .2em;
 }
 
-#cSearch a#advancedLink {
+#cSearch #advancedLink {
 	display: block;
 	padding: 1em 2em 1em 3.7em;
 }

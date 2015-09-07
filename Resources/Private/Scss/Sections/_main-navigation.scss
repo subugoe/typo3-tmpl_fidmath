@@ -1,7 +1,7 @@
 .main-navigation {
 	border-bottom: 1px solid $border-color;
 	list-style-type: none;
-	font-size: 108%;
+	font-size: 1.1em;
 	padding: 0;
 	width: 230px;
 	max-width: 230px;
@@ -9,7 +9,37 @@
 	flex: 1 6 20%;
 	order: 1;
 
-	li {
+	.main-navigation_link {
+		border-top: 1px solid $border-color;
+		color: $text-color;
+		font-weight: normal;
+		line-height: .75em;
+		letter-spacing: .1em;
+		display: block;
+		padding: .8em .6em;
+
+		&:hover {
+			color: $white;
+			border-top: 1px solid $border-color;
+			background-color: $background-color;
+			line-height: .75em;
+			letter-spacing: .1em;
+			display: block;
+			padding: .8em .6em;
+		}
+
+		&.act {
+			font-weight: bolder;
+		}
+
+		&:before {
+			content: '›';
+			font-size: 1.6em;
+			margin-right: .3em;
+		}
+	}
+
+	.main-navigation_element {
 		display: inline;
 		padding: 0;
 		font-size: 100%;
@@ -24,15 +54,8 @@
 			}
 		}
 
-		&.first,
-		&.last {
-			display: inline;
-			padding: 0;
-			font-size: 100%;
-		}
-
 		&.current {
-			a {
+			.main-navigation_link {
 				font-weight: bold;
 			}
 		}
@@ -45,41 +68,11 @@
 			padding: .8em .6em;
 		}
 
-		a {
-			border-top: 1px solid $border-color;
-			color: $text-color;
-			font-weight: normal;
-			line-height: .75em;
-			letter-spacing: .1em;
-			display: block;
-			padding: .8em .6em;
-
-			&:hover {
-				color: $white;
-				border-top: 1px solid $border-color;
-				background-color: #b3c3e5;
-				line-height: .75em;
-				letter-spacing: .1em;
-				display: block;
-				padding: .8em .6em;
-			}
-
-			&.act {
-				font-weight: bolder;
-
-			}
-
-		}
-
-	}
-
-	.menuPraefix {
-		font-size: 1.6em;
 	}
 
 }
 
 /* Highlight current menu item; Use .homepage .first classes as a hack to make this to work for the homepage */
-body.homepage .main-navigation li.first a {
+.homepage .main-navigation_element:first-child .main-navigation_link {
 	font-weight: bold;
 }

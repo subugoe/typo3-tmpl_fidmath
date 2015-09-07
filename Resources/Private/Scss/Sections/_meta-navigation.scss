@@ -16,9 +16,14 @@
 		margin: 0 1em 0 0;
 		color: $text-color;
 		border-right: 1px solid $border-color;
+		text-decoration: none;
 
 		&.act {
 			font-weight: bolder;
+		}
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 

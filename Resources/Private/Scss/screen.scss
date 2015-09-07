@@ -28,7 +28,7 @@
 @include file-links('txt');
 @include file-links('html');
 
-td.data a.external_link {
+.data .external_link {
 	color: $link-color;
 }
 
@@ -37,7 +37,7 @@ td.data a.external_link {
 	flex-flow: row;
 }
 
-a.buttonlink {
+.buttonlink {
 	border-right: 1px solid $border-color;
 }
 
@@ -49,11 +49,11 @@ a.buttonlink {
 }
 
 #tree a,
-ul.tabs li a {
+.tabs li a {
 	font-weight: normal;
 }
 
-ul.tabs li a.currentTab {
+.tabs li .currentTab {
 	font-weight: bold;
 }
 
@@ -72,7 +72,7 @@ ul.tabs li a.currentTab {
 	font-size: 1.6em;
 }
 
-span.aboText {
+.aboText {
 	font-size: 1.2em;
 }
 
@@ -81,7 +81,7 @@ div .browseLinksWrap {
 	font-size: 1.2em;
 }
 
-img#allsearch {
+#allsearch {
 	position: absolute;
 	top: 570px;
 	left: 132px;
@@ -106,14 +106,14 @@ img#allsearch {
 	position: relative;
 }
 
-h2.searchingIn {
+.searchingIn {
 	width: 50%;
 	padding: 0 0 .47em;
 	margin-left: 24%;
 	margin-top: -1.7em;
 }
 
-a.buttonlink {
+.buttonlink {
 	display: inline;
 	padding: 0 1em 0 0;
 	margin: 0 1em 0 0;
@@ -124,7 +124,7 @@ a.buttonlink {
 	width: 100%;
 }
 
-a.close {
+.close {
 	padding: 5px;
 }
 
@@ -142,12 +142,12 @@ a.close {
 	margin: 1em 0 0 .5em;
 }
 
-div.second a {
+.second a {
 	float: right;
 	margin: 1.2em 1.9em 0 0;
 }
 
-div.free {
+.free {
 	padding: 0 1.5em 1.5em;
 }
 
@@ -177,20 +177,16 @@ div.free {
 	padding: 0 0 0 .5em;
 }
 
-#clearer {
-	clear: both;
-}
-
 #right {
 	border: 0;
 }
 
 .current,
-a.currentTab {
+.currentTab {
 	font-weight: bold;
 }
 
-ul.csc-menu {
+.csc-menu {
 	margin: 1em 0 2em;
 }
 
@@ -204,7 +200,7 @@ ul.csc-menu {
 	padding: .5em 0 0;
 }
 
-HR.separator-line {
+.separator-line {
 	clear: right;
 	height: 1px;
 	border: 1px solid $lighter-border-color;
@@ -220,11 +216,15 @@ HR.separator-line {
 		flex-direction: column;
 	}
 
-	h1 {
-		&.standard {
-			margin-left: 1em;
-			width: 100%;
-		}
+	.headline-first_standard,
+	.headline-first_welcome {
+		margin-left: .8em;
+		width: 100%;
+		padding: 0 0 1em;
+	}
+
+	.content-container {
+		padding: 2em 0 0;
 	}
 
 	.header {

@@ -5,7 +5,7 @@ $button-background-alternate: #b4b4b4;
 	padding-top: .8em;
 }
 
-input.iputStart,
+.iputStart,
 #mailformname,
 #mailformtitle,
 #mailformauthor,
@@ -15,8 +15,8 @@ input.iputStart,
 #mailformkeywords,
 #mailformurl {
 	background: $white url('../Images/bg_search_input.jpg') repeat-x;
-	border: 1px solid #aaa;
-	color: #695a5c;
+	border: 1px solid $border-color;
+	color: $text-color;
 }
 
 .iputStartSmall,
@@ -77,13 +77,13 @@ input.iputStart,
 	padding: .1em .8em;
 }
 
-#cSearch a#advancedLink {
+#cSearch #advancedLink {
 	display: block;
 	padding: 1em 2em 1em 1.7em;
 }
 
-form#simpleSearch,
-form#advancedSearch {
+#simpleSearch,
+#advancedSearch {
 	width: 70%;
 	margin-top: 2em;
 }
@@ -110,6 +110,7 @@ form#advancedSearch {
 	float: left;
 	width: $form-label-width;
 	margin: 1em 0;
+
 	&:after {
 		content: 'i';
 		display: inline-block;
@@ -147,6 +148,7 @@ form#advancedSearch {
 
 	&[title=""] {
 		cursor: inherit;
+
 		&:after {
 			display: none;
 		}
@@ -162,6 +164,7 @@ form#advancedSearch {
 
 .powermail_check_outer {
 	float: left;
+
 	.powermail_check_inner {
 		float: left;
 		margin: 1em 0;
