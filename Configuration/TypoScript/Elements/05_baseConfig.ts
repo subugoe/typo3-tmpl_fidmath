@@ -16,7 +16,13 @@ page {
 	headerData = COA
 	headerData {
 		12 = TEXT
-		12.value = <link href="http://vifamath.de/interaktiv/news/?type=100" rel="alternate" type="application/rss+xml" title="Vifamath News" />
+		12 {
+			wrap = <link href="|" rel="alternate" type="application/rss+xml" title="Fachinformationsdienst Mathe News"/>
+			typolink {
+				parameter = 43,100
+				returnLast = url
+			}
+		}
 
 		14 = TEXT
 		14.value = <script type="text/x-mathjax-config">MathJax.Hub.processSectionDelay = 0;MathJax.Hub.Config({TeX: {Macros:{sb: ["{_#1}", 1], sp: ["{^#1}", 1]}}, extensions: ["tex2jax.js"],jax: ["input/TeX", "output/HTML-CSS"],tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script>
@@ -25,11 +31,13 @@ page {
 		15.value = <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 		16 = TEXT
-		16.value = <link rel="search" type="application/opensearchdescription+xml" title="vifamath" href="http://vifamath.de/?type=9004">
-
-		30 = TEXT
-		30.field = title
-		30.wrap = <title>Vifamath:&nbsp;|</title>
+		16 {
+			wrap = <link rel="search" type="application/opensearchdescription+xml" title="vifamath" href="|" />
+			typolink {
+				parameter = 1,9004
+				returnLast = url
+			}
+		}
 	}
 
 	meta {
@@ -85,8 +93,6 @@ config {
 
 	removeDefaultJS = 1
 
-	noPageTitle = 2
-
 	simulateStaticDocuments = 0
 	tx_realurl_enable = 1
 	baseURL = {$baseUrl}
@@ -116,39 +122,13 @@ temp.rss {
 	page.includeJS.file >
 [global]
 
-####interne und extene links unterschiedlich formatieren
-tt_content.text.20.parseFunc.tags.link >
-tt_content.text.20.parseFunc.tags.link = COA
 tt_content.text.20.parseFunc.tags.link {
-	10 = TEXT
-	10.value =
-	10.if {
-		value = 0
-		isGreaterThan.data = parameters:allParams
-		isGreaterThan.intval = 1
-	}
-
-	20 = TEXT
-	20.if {
-		value = 0
-		isGreaterThan.data = parameters:allParams
-		isGreaterThan.intval = 1
-		negate = 1
-	}
-
-	30 = TEXT
-	30.current = 1
-	stdWrap.typolink.parameter.data = parameters:allParams
-	stdWrap.typolink.extTarget = _blank
-	stdWrap.typolink.wrap = |
-
 	stdWrap.parseFunc.constants = 1
 }
 
 ################################################
 ##Gobale Marker: Personen + Ausdrücke + Phrasen
 ################################################
-
 constants {
 	KH = Katharina Habermann
 	KS = Kristin Stroth

@@ -1,4 +1,3 @@
-###add breadcrumbs
 lib.breadcrumbs = HMENU
 lib.breadcrumbs {
 	wrap = <ul class="breadcrumb-navigation">|</ul>

@@ -14,11 +14,11 @@
 	}
 
 	a {
-		color: #f7e2a0;
+		color: $link-color;
 		font-weight: bold;
 	}
 
-	p.bodytext {
+	.bodytext {
 		font-size: 110%;
 	}
 }
@@ -46,7 +46,7 @@
 }
 
 /* Hide duplicate more link in news list*/
-span.news-list-morelink {
+.news-list-morelink {
 	display: none;
 }
 

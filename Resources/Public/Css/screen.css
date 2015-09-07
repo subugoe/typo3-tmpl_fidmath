@@ -2285,21 +2285,21 @@ fieldset {
   display: flex;
   width: auto;
   height: auto; }
-  .header .logo {
+  .header .header-logo {
     -webkit-box-flex: 3;
     -webkit-flex: 3 1 60%;
         -ms-flex: 3 1 60%;
             flex: 3 1 60%;
     height: auto;
     margin-top: .5em; }
-  .header .actionsPicture {
+  .header .header-actionspicture {
     -webkit-box-flex: 2;
     -webkit-flex: 2 1 40%;
         -ms-flex: 2 1 40%;
             flex: 2 1 40%;
     height: auto;
     text-align: right; }
-    .header .actionsPicture img {
+    .header .header-actionspicture img {
       border: 0; }
 
 .main-content {
@@ -2321,7 +2321,7 @@ fieldset {
   float: left;
   width: 100%;
   font-size: 111%; }
-  #pazpar2 #pz2-results ol.pz2-resultList {
+  #pazpar2 #pz2-results .pz2-resultList {
     padding-left: 30px; }
   #pazpar2 .pz2-resultList .pz2-mediaIcon {
     top: -3px;
@@ -2402,7 +2402,7 @@ fieldset {
   max-width: 80%; }
   .tx-ezbrequest-pi1 #journalList li {
     margin-left: 32px; }
-    .tx-ezbrequest-pi1 #journalList li span.ampel {
+    .tx-ezbrequest-pi1 #journalList li .ampel {
       left: -32px; }
   .tx-ezbrequest-pi1 #journalList a {
     color: #192d57; }
@@ -2422,9 +2422,9 @@ fieldset {
     padding-bottom: 0;
     color: #fff; }
   .newsTeaser a {
-    color: #f7e2a0;
+    color: #930;
     font-weight: bold; }
-  .newsTeaser p.bodytext {
+  .newsTeaser .bodytext {
     font-size: 110%; }
 
 .news-list-container .showResultsWrap {
@@ -2447,7 +2447,7 @@ fieldset {
   font-weight: normal; }
 
 /* Hide duplicate more link in news list*/
-span.news-list-morelink {
+.news-list-morelink {
   display: none; }
 
 .news-list-entry {
@@ -2474,8 +2474,8 @@ span.news-list-morelink {
   background-color: #b5c5e6;
   border-right: 1px solid #c1d0ed; }
 
-.currentTab, a.currentTab {
-  color: #005; }
+.currentTab {
+  color: #192d57; }
 
 .tabs {
   position: relative;
@@ -2743,7 +2743,7 @@ div .showResultsWrap, div .browseLinksWrap {
     padding: 0 0 1em; }
   .content-container {
     padding: 2em 0 0; }
-  .header .actionsPicture {
+  .header .header-actionspicture {
     display: none; }
   .top-navigation {
     width: 100%; }
@@ -2779,5 +2779,5 @@ div .showResultsWrap, div .browseLinksWrap {
   .breadcrumbs {
     text-align: right;
     margin-top: 13px; }
-    .breadcrumbs .SieSindHier {
+    .breadcrumbs .breadcrumb-title {
       display: none; } }

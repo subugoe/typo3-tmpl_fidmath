@@ -7,9 +7,8 @@
 	border-right: 1px solid $lighter-border-color;
 }
 
-.currentTab,
-a.currentTab {
-	color: #005;
+.currentTab {
+	color: $text-color;
 }
 
 .tabs {
