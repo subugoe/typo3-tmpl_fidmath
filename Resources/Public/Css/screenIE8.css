@@ -6,9 +6,9 @@
   font-size: 85%;
   margin-bottom: 30px; }
 
-h1.welcome {
+.headline-first-welcome {
   width: 76%;
-  font-family: Georgia, serif;
+  font-family: 'Droid Serif', Georgia, serif;
   padding: 1em 0 1.6em;
   color: #fff;
   font-weight: normal;
@@ -18,7 +18,7 @@ h1.welcome {
 .breadcrumbs {
   font-size: 95%; }
 
-input#prefix {
+#prefix {
   margin-bottom: -.5em; }
 
 #right {
