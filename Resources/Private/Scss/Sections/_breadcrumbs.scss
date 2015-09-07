@@ -18,10 +18,17 @@
 		text-transform: uppercase;
 		display: inline;
 		padding: 0;
+
+		&:not(:last-child):after {
+			content: '\f105';
+			font-family: fontawesome;
+			margin-left: .5em;
+			margin-right: .5em;
+		}
 	}
 
 	.breadcrumb-navigation_link {
-		padding: 0 5px;
+		padding: 0;
 		color: $text-color;
 		font-weight: normal;
 		text-decoration: none;
@@ -29,6 +36,7 @@
 		&:hover {
 			text-decoration: underline;
 		}
+
 	}
 }
 

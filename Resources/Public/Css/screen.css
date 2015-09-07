@@ -2220,8 +2220,13 @@ fieldset {
     text-transform: uppercase;
     display: inline;
     padding: 0; }
+    .breadcrumbs .breadcrumb-navigation_element:not(:last-child):after {
+      content: '\f105';
+      font-family: fontawesome;
+      margin-left: .5em;
+      margin-right: .5em; }
   .breadcrumbs .breadcrumb-navigation_link {
-    padding: 0 5px;
+    padding: 0;
     color: #192d57;
     font-weight: normal;
     text-decoration: none; }
