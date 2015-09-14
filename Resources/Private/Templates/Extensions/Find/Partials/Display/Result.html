@@ -1,0 +1,36 @@
+{namespace s=Subugoe\Find\ViewHelpers}
+<f:comment>
+	Creates a list item for document stored in the document variable.
+
+	It uses the standardFields configured in settings, result highlighting
+	(if configured) and a link to the document’s page.
+</f:comment>
+<li id="c{config.uid}-result-{document.id}">
+	<article>
+		<h1 class="resultlist-headline">
+			<f:link.action
+				action="detail"
+				arguments="{id:document.id}"
+				noCacheHash="1"
+				class="internal no-change"
+				onclick="{f:if(
+					condition:'{settings.paging.detailPagePaging == 1}',
+					then:'return tx_find.detailViewWithPaging(this);'
+				)}">
+				{document.persontitle} {document.Ansetzung.0} <span class="genealogy">
+				<f:if condition="{document.Geburt.0}">*{document.Geburt.0}</f:if><f:if condition="{document.Tod.0}"> ✝{document.Tod.0}</f:if></span>
+			</f:link.action>
+		</h1>
+		<p>
+			<f:render
+				partial="Display/Field/Inline"
+				arguments="{
+					config:config,
+					results:results,
+					document:document,
+					field:settings.standardFields.snippet,
+					separator:', '
+				}"/>
+		</p>
+	</article>
+</li>

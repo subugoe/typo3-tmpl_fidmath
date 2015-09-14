@@ -19,6 +19,7 @@
 @import 'Sections/tabs';
 @import 'Sections/subject-search';
 @import 'Sections/mathematicians';
+@import 'Sections/find';
 
 @include file-links('pdf');
 @include file-links('dvi');
@@ -207,7 +208,6 @@
 		color: $text-color;
 		z-index: 99;
 		border: 0;
-		margin-top: 11px;
 
 		&:before {
 			content: '\f0c9';

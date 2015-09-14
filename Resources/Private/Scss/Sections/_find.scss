@@ -1,0 +1,488 @@
+$inactive: #bbb;
+$highlight: #f00;
+$highlight-border: #b00;
+$downlight: #666;
+$downlight-inverted: #ddd;
+$tab-selected: #263476;
+
+.tx_find {
+
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+
+	.icon-left-dir {
+
+		&:after {
+			font-family: FontAwesome;
+			content: '\f053';
+		}
+	}
+
+	.icon-right-dir,
+	.icon-right-open {
+
+		&:after {
+			font-family: FontAwesome;
+			content: '\f054';
+		}
+	}
+
+
+	.clear {
+		clear: both;
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+	.detail {
+		clear: both;
+	}
+
+	.highlight {
+		font-weight: bold;
+	}
+
+	/* error message */
+
+	.error {
+		margin-bottom: 1em;
+		padding: 1em;
+		border: 2px solid $border-color;
+	}
+
+	/* search form */
+
+	form {
+
+		position: relative;
+		line-height: 150%;
+
+		.formFields {
+			float: left;
+		}
+
+		.controls {
+			float: left;
+			bottom: 0;
+		}
+
+		.fieldType-search {
+			color: #999;
+		}
+
+		.submit {
+			height: 2em;
+			background-color: $border-color;
+			border: 1px solid $border-color;
+			color: $text-color;
+			font-weight: bold;
+			padding: 3px 12px;
+			text-transform: uppercase;
+
+			&:active {
+				background-color: $border-color;
+			}
+		}
+
+		.extendedSearch {
+			line-height: 2em;
+			margin-left: .5em;
+		}
+
+		.field-mode-extended {
+			display: none;
+		}
+
+		.sortOrder,
+		.resultCountPicker {
+			float: right;
+			margin: 5px 0 0 .5em;
+
+			label {
+				width: auto;
+			}
+
+			select {
+				position: relative;
+				top: 2px;
+				margin-left: 3px;
+			}
+		}
+	}
+
+	.fieldContainer {
+		float: left;
+		clear: left;
+
+		.fieldLabel {
+			display: block;
+			float: left;
+			width: 110px;
+			text-align: right;
+		}
+
+		.inputContainer {
+			display: block;
+			margin-bottom: 2px;
+			line-height: 1.33em;
+			margin-left: 0;
+		}
+
+		input {
+			padding: 2px;
+			border: 1px solid $border-color;
+			color: $text-color;
+			background: $white;
+		}
+
+		.noleftmargin {
+			margin-left: 0;
+		}
+
+		select {
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	.field-default {
+		.fieldLabel {
+			display: none;
+		}
+
+		input {
+			width: 400px;
+			height: 1.5em;
+			margin: 0 6px 2px 0;
+			padding: 4px;
+		}
+	}
+
+	.fieldType-Text {
+		.alternate label {
+			display: inline-block;
+			float: none;
+			width: auto;
+			text-align: left;
+		}
+	}
+
+	.fieldType-Range {
+		input {
+			width: 6em;
+		}
+	}
+
+	.search-extended .field-mode-extended {
+		display: block;
+	}
+
+	/* result list */
+
+	.results {
+		padding-top: 2em;
+
+		.results-navigation {
+			margin-bottom: 2em;
+			clear: both;
+		}
+
+		.resultList {
+			order: 1;
+			margin: 0;
+			padding-left: 0;
+
+			h1 {
+				margin: 0;
+				font-size: 133%;
+				line-height: 133%;
+
+				.genealogy {
+					font-weight: normal;
+				}
+			}
+
+			li {
+
+				&:target {
+					background: $border-color;
+					border-radius: 7px;
+					transition: background .5s ease-in-out;
+				}
+			}
+		}
+	}
+
+	/* facets */
+
+	.facets {
+		order: 3;
+		clear: right;
+		width: 200px;
+	}
+
+	.facet {
+		margin-bottom: 2em;
+
+		h1 {
+			margin: 0;
+			font-size: 100%;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.facetSearch {
+			margin: 1em 0 0;
+		}
+
+		ol {
+			list-style-type: none;
+			margin: 1em 0 0;
+			padding-left: 0;
+			line-height: 150%;
+		}
+
+		.autocomplete {
+			margin: .5em 0 0;
+		}
+
+		.facetList li {
+			margin: 0;
+			padding-left: 1em;
+			text-indent: -1em;
+		}
+
+		a {
+			display: block;
+		}
+
+		.facetCount {
+			color: $downlight;
+			font-size: 80%;
+		}
+
+		.facetActive {
+			display: block;
+			background: $highlight;
+			border-radius: 5px;
+			border: 1px solid $highlight-border;
+			line-height: 150%;
+			font-weight: bold;
+			text-shadow: rgba(0, 0, 0, .5) 1px 1px 1px;
+		}
+
+		.facetList .facetActive {
+			padding: 0;
+			text-indent: 0;
+			margin-bottom: .25em;
+		}
+
+		.facetActive {
+			a {
+				padding-left: .2em;
+				color: $white;
+
+				&:before {
+					margin-right: .3em;
+					margin-left: .1em;
+				}
+			}
+		}
+
+		.facetShowAll {
+			a {
+				font-style: italic;
+				color: $downlight;
+			}
+
+			a:hover {
+				color: $link-color;
+			}
+		}
+
+		.facetHistogram-container .facetActive {
+			margin-bottom: .5em;
+		}
+
+		.histogram {
+			position: relative;
+			left: -13px;
+		}
+
+		.flot-x-axis .flot-tick-label:first-child {
+			left: 13px !important;
+		}
+	}
+
+	.facet-type-Map {
+		.mapContainer {
+			height: 150px;
+		}
+	}
+
+	.facet-type-Tabs {
+		@extend .facet;
+
+		h1 {
+			display: none;
+		}
+
+		ol {
+			border-bottom: 1px solid $inactive;
+
+			li {
+				display: inline-block;
+				margin: 0;
+				border-radius: 10px 10px 0 0;
+				border: 0 none;
+
+				a {
+					padding: 1em .5em 0;
+					display: inline-block;
+				}
+			}
+
+			.facetActive {
+				@extend li;
+				background: $tab-selected;
+				color: $white;
+
+				.facetCount {
+					color: $downlight-inverted;
+				}
+			}
+		}
+	}
+
+	/* page browser list view */
+
+	.pager-list {
+		margin-right: 220px;
+		text-align: center;
+
+		@include breakpoint('xs') {
+			margin-right: 0;
+		}
+
+		a {
+			font-weight: normal;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		ol {
+			display: inline;
+			list-style-type: none;
+
+			li {
+				display: inline;
+
+				a {
+					padding: .4em;
+				}
+			}
+		}
+
+		.pager-list_current {
+
+			a {
+				font-weight: bold;
+			}
+		}
+
+		.result-count {
+			margin-bottom: 2em;
+		}
+	}
+
+	/* result count */
+
+	.result-count {
+		float: right;
+		width: 200px;
+		text-align: right;
+	}
+
+	/* page browser single item view */
+
+	.queryAndPager {
+		margin: 1em 0 2em;
+
+		.query {
+			display: none;
+		}
+
+		.resultPager {
+			display: block;
+			float: right;
+
+			.pager {
+				color: $inactive;
+
+				.icon-right-dir,
+				.icon-left-dir {
+
+					&:before {
+						position: relative;
+						top: 1px;
+						width: auto;
+						padding: 0 4px;
+						font-size: 133%;
+					}
+				}
+
+				[class^="icon-"],
+				[class*=" icon-"] {
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	/* field list on single item view */
+
+	.detail h1 {
+		margin-bottom: 1em;
+	}
+
+	dl {
+		margin: 0;
+	}
+
+	dt {
+		font-weight: bold;
+	}
+
+	dd {
+		margin: .2em 0 1em 2em;
+
+		ul {
+			margin: 0;
+		}
+	}
+
+	.details {
+		display: block;
+
+		&:after {
+			font-size: .8em;
+			font-weight: normal;
+		}
+	}
+}
+
+#tx_find-histogram-tooltip {
+	display: none;
+	position: absolute;
+	background: $white;
+}
