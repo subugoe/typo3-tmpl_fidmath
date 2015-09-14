@@ -9,4 +9,8 @@
 	padding: 0 2%;
 	display: flex;
 	flex-direction: column;
+
+	@include breakpoint('xs') {
+		max-width: 100%;
+	}
 }

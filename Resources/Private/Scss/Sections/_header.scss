@@ -3,6 +3,10 @@
 	width: auto;
 	height: auto;
 
+	@include breakpoint('xs') {
+		display: none;
+	}
+
 	.header-logo {
 		flex: 3 1 60%;
 		height: auto;

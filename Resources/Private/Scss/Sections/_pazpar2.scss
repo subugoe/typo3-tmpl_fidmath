@@ -1,5 +1,7 @@
 #pazpar2 {
-	float: left;
+	display: flex;
+	flex-flow: column;
+
 	width: 100%;
 	font-size: 111%;
 
@@ -89,14 +91,30 @@
 	color: $link-color;
 }
 
-#pazpar2 .pz2-fieldsets ul {
-	margin-left: 1.5em;
-}
+#pazpar2 {
+	#pz2-mainForm {
+		line-height: 180%;
+	}
 
-#pazpar2 .pz2-fieldsets ul li {
-	padding: 0;
-}
+	.pz2-fieldsets ul {
+		margin-left: 1.5em;
 
-#pazpar2 #pz2-mainForm {
-	line-height: 180%;
+		li {
+			padding: 0;
+		}
+	}
+
+	.pz2-mainForm {
+		@include breakpoint('xs') {
+			top: 58px !important;
+		}
+	}
+
+	.pz2-basic {
+		order: 1;
+	}
+
+	#pz2-recordView {
+		order: 2;
+	}
 }

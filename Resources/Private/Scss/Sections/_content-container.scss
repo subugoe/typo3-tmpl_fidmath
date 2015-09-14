@@ -3,10 +3,14 @@
 	width: 100%;
 	padding: 4em 0 0;
 	margin-bottom: 1em;
-	transform: translate3d(0, 0, 0);
+	transform: translate(0, 0);
 	transition: transform .3s;
 
+	@include breakpoint('xs') {
+		padding: 2em 0 0;
+	}
+
 	&.is-open {
-		transform: translate3d(260px, 0, 0);
+		transform: translate(260px, 0);
 	}
 }

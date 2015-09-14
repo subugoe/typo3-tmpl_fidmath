@@ -70,6 +70,12 @@ strong {
 	width: 50%;
 	padding: 0 0 1.6em;
 	margin-left: 250px;
+
+	@include breakpoint('xs') {
+		margin-left: .8em;
+		width: 100%;
+		padding: 0 0 1em;
+	}
 }
 
 .headline-first_welcome {
@@ -79,6 +85,12 @@ strong {
 	font-size: 1.69em;
 	letter-spacing: .149em;
 	padding: 0 0 1.6em;
+
+	@include breakpoint('xs') {
+		margin-left: .8em;
+		width: 100%;
+		padding: 0 0 1em;
+	}
 }
 
 h2 {
@@ -107,4 +119,8 @@ img {
 
 fieldset {
 	border: 0;
+}
+
+.hidden {
+	display: none;
 }
