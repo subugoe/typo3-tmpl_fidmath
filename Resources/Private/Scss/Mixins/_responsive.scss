@@ -8,11 +8,11 @@
 			@content;
 		}
 	} @else if $class == md {
-		@media (min-width: 992px) and (max-width: 1199px) {
+		@media (min-width: 992px) and (max-width: 1169px) {
 			@content;
 		}
 	} @else if $class == lg {
-		@media (min-width: 1200px) {
+		@media (min-width: 1170px) {
 			@content;
 		}
 	} @else {

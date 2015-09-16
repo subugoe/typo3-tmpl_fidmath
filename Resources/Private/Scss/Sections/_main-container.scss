@@ -3,9 +3,7 @@
 	font-size: 127%;
 	font-family: $main-font;
 	margin: 0 auto;
-	height: auto;
-	width: auto;
-	max-width: 80%;
+	max-width: $site-max-width;
 	padding: 0 2%;
 	display: flex;
 	flex-direction: column;

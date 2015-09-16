@@ -47,7 +47,6 @@
 	border-right: 1px solid $border-color;
 }
 
-.first,
 .second,
 .advFirst {
 	background-color: $background-color;
@@ -62,7 +61,6 @@
 	font-weight: bold;
 }
 
-.first,
 .advFirst {
 	font-size: 93%;
 	line-height: 1.4em;
@@ -100,13 +98,6 @@
 	max-width: 1200px;
 }
 
-#c735 {
-	#pazpar2 .pz2-mainForm {
-		position: absolute;
-		right: 0;
-	}
-}
-
 .searchingIn {
 	width: 50%;
 	padding: 0 0 .47em;
@@ -124,7 +115,6 @@
 	padding: 5px;
 }
 
-.first,
 .second {
 	padding: 0 0 1.3em;
 }
@@ -208,6 +198,7 @@
 		color: $text-color;
 		z-index: 99;
 		border: 0;
+		margin: 3px 0 0 3px;
 
 		&:before {
 			content: '\f0c9';

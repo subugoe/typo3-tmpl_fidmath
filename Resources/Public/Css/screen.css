@@ -1945,7 +1945,6 @@ a {
 
 body {
   color: #192d57;
-  background: #dae1f4 url('../Images/bg_body.jpg') repeat-x;
   font-size: 12px;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
   text-align: center;
@@ -1960,7 +1959,6 @@ strong {
   background: #b5c5e6; }
 
 .headline-first_standard {
-  color: #fff;
   font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
   font-size: 1.69em;
@@ -1975,12 +1973,11 @@ strong {
       padding: 0 0 1em; } }
 
 .headline-first_welcome {
-  color: #fff;
   font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
   font-size: 1.69em;
   letter-spacing: .149em;
-  padding: 0 0 1.6em; }
+  padding: 0 0 1.6em 1em; }
   @media (max-width: 639px) {
     .headline-first_welcome {
       margin-left: .8em;
@@ -2013,7 +2010,7 @@ fieldset {
 .csc-mailform {
   padding-top: .8em; }
 
-.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, #mailformmsc, #mailformmscverbal, #mailformkeywords, #mailformurl {
+#mailformname, #mailformtitle, #mailformauthor, #mailformmail, #mailformmsc, #mailformmscverbal, #mailformkeywords, #mailformurl {
   background: #fff url('../Images/bg_search_input.jpg') repeat-x;
   border: 1px solid #f0f0f0;
   color: #192d57; }
@@ -2022,12 +2019,12 @@ fieldset {
   border-style: solid;
   border-width: 1px;
   border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
-  width: 340px;
+  width: 300px;
   padding: .2em .8em;
   margin: 1em 0; }
 
 .csc-form-element-select select, .powermail_select {
-  width: 340px;
+  width: 300px;
   height: 30px; }
 
 .submStartSmall, .powermail_submit {
@@ -2047,8 +2044,7 @@ fieldset {
 .iputStart {
   float: left;
   width: 65%;
-  padding: .2em .8em;
-  margin-left: 20px; }
+  padding: .2em .8em; }
 
 #searchTerm.iputStart {
   float: left;
@@ -2227,15 +2223,17 @@ fieldset {
 
 .breadcrumbs {
   font-size: 80%;
-  width: 100%;
   height: auto;
   min-height: 1.5em;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 2px;
-  letter-spacing: .1em; }
+  padding: 4px 1em 0;
+  letter-spacing: .1em;
+  border-top: 1px solid #c1d0ed;
+  border-bottom: 1px solid #c1d0ed;
+  margin: 5px 0; }
   @media (max-width: 639px) {
     .breadcrumbs {
       text-align: right; }
@@ -2278,8 +2276,7 @@ fieldset {
 
 .content-container {
   font-size: 90%;
-  width: 100%;
-  padding: 4em 0 0;
+  padding: 2em 0 0;
   margin-bottom: 1em;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
@@ -2299,9 +2296,7 @@ fieldset {
   font-size: 127%;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
   margin: 0 auto;
-  height: auto;
-  width: auto;
-  max-width: 80%;
+  max-width: 1170px;
   padding: 0 2%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2321,7 +2316,9 @@ fieldset {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: auto; }
+  width: auto;
+  background-color: white;
+  height: 119px; }
   .header .header-logo {
     -webkit-box-flex: 3;
     -webkit-flex: 3 1 60%;
@@ -2353,7 +2350,7 @@ fieldset {
       -ms-flex-order: 2;
           order: 2;
   margin-left: 1em;
-  padding: 0;
+  padding: 0 .6em 0;
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
   font-size: 110%; }
@@ -2429,8 +2426,9 @@ fieldset {
 #pazpar2 .pz2-extraLinks:hover {
   color: #930; }
 
-#pazpar2 #pz2-mainForm {
-  line-height: 180%; }
+#pazpar2 .pz2-mainForm {
+  line-height: 180%;
+  top: 90px !important; }
 #pazpar2 .pz2-fieldsets ul {
   margin-left: 1.5em; }
   #pazpar2 .pz2-fieldsets ul li, #pazpar2 .pz2-fieldsets ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-fieldsets ul .facetActive {
@@ -2449,6 +2447,9 @@ fieldset {
       -ms-flex-order: 2;
           order: 2; }
 
+.pz2-searchField {
+  border-color: #c1d0ed !important; }
+
 .tx-ezbrequest-pi1 #navi {
   height: 2.5em; }
 .tx-ezbrequest-pi1 #journalNavi {
@@ -2465,7 +2466,7 @@ fieldset {
   .tx-ezbrequest-pi1 #journalList a {
     color: #192d57; }
 .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
-  width: 170px; }
+  width: 150px; }
 .tx-ezbrequest-pi1 .jourItem {
   padding-top: .3em; }
 
@@ -2528,7 +2529,7 @@ fieldset {
     font-weight: normal; }
 
 .tabs a, .advTabs a, .tabs span {
-  color: #484848;
+  color: #192d57;
   background-color: #b5c5e6;
   border-right: 1px solid #c1d0ed; }
 
@@ -2584,9 +2585,9 @@ fieldset {
     top: .5em;
     right: .3em; }
   .content-container .gokContainer.column li a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive a {
-    border-bottom: 1px dotted #484848;
+    border-bottom: 1px dotted #192d57;
     padding: 7px 12px 7px 7px;
-    color: #484848;
+    color: #192d57;
     font-weight: normal;
     font-size: 100%; }
 .content-container .gokContainer.column .GOKID {
@@ -2703,7 +2704,7 @@ fieldset {
       margin-left: 0; }
     .tx_find .fieldContainer input {
       padding: 2px;
-      border: 1px solid #f0f0f0;
+      border: 1px solid #c1d0ed;
       color: #192d57;
       background: #fff; }
     .tx_find .fieldContainer .noleftmargin {
@@ -2957,7 +2958,7 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
 .buttonlink {
   border-right: 1px solid #f0f0f0; }
 
-.first, .second, .advFirst {
+.second, .advFirst {
   background-color: #b5c5e6;
   border-bottom: 1px solid #c1d0ed; }
 
@@ -2967,7 +2968,7 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
 .tabs li .currentTab, .tabs .tx_find .facet-type-Tabs ol .facetActive .currentTab, .tx_find .facet-type-Tabs ol .tabs .facetActive .currentTab {
   font-weight: bold; }
 
-.first, .advFirst {
+.advFirst {
   font-size: 93%;
   line-height: 1.4em; }
 
@@ -2993,10 +2994,6 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
   min-width: 500px;
   max-width: 1200px; }
 
-#c735 #pazpar2 .pz2-mainForm {
-  position: absolute;
-  right: 0; }
-
 .searchingIn {
   width: 50%;
   padding: 0 0 .47em;
@@ -3011,7 +3008,7 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
 .close {
   padding: 5px; }
 
-.first, .second {
+.second {
   padding: 0 0 1.3em; }
 
 #ttp, #tpp {
@@ -3072,7 +3069,8 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
       background: #fff;
       color: #192d57;
       z-index: 99;
-      border: 0; }
+      border: 0;
+      margin: 3px 0 0 3px; }
       .menu-trigger:before {
         content: '\f0c9';
         font-family: fontawesome;

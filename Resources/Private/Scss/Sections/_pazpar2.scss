@@ -92,8 +92,9 @@
 }
 
 #pazpar2 {
-	#pz2-mainForm {
+	.pz2-mainForm {
 		line-height: 180%;
+		top: 90px !important;
 	}
 
 	.pz2-fieldsets ul {
@@ -117,4 +118,8 @@
 	#pz2-recordView {
 		order: 2;
 	}
+}
+
+.pz2-searchField {
+	border-color: $lighter-border-color !important;
 }
