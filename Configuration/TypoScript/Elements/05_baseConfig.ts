@@ -186,6 +186,3 @@ plugin.tx_pazpar2.settings {
 		4.direction = ascending
 	}
 }
-
-# don’t use cssstyledcontent’s default CSS
-plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >

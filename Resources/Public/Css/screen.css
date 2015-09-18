@@ -1931,20 +1931,18 @@ body, div, dl, dt, dd, ul, ol, li, .tx_find .facet-type-Tabs ol .facetActive, h1
   padding: 0; }
 
 a {
-  color: #930;
-  text-decoration: none;
-  font-weight: bolder; }
+  color: #192d57; }
   a.external-link-new-window {
-    color: #930; }
+    color: #192d57; }
     a.external-link-new-window:after {
       content: ' \f08e';
       font-family: fontawesome;
       font-size: 80%;
-      color: #192d57;
+      color: #000;
       font-weight: normal; }
 
 body {
-  color: #192d57;
+  color: #000;
   font-size: 12px;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
   text-align: center;
@@ -1985,7 +1983,7 @@ strong {
       padding: 0 0 1em; } }
 
 h2.searchingIn {
-  color: #192d57;
+  color: #000;
   font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
   font-size: 1.29em;
@@ -2013,7 +2011,7 @@ fieldset {
 #mailformname, #mailformtitle, #mailformauthor, #mailformmail, #mailformmsc, #mailformmscverbal, #mailformkeywords, #mailformurl {
   background: #fff url('../Images/bg_search_input.jpg') repeat-x;
   border: 1px solid #f0f0f0;
-  color: #192d57; }
+  color: #000; }
 
 .iputStartSmall, .csc-form-element-textline input[type=text], .powermail_input, .powermail_textarea {
   border-style: solid;
@@ -2032,7 +2030,7 @@ fieldset {
   border-style: solid;
   border-width: 1px;
   border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
-  color: #192d57;
+  color: #000;
   width: 150px;
   min-width: 150px;
   margin: 1em 0 2em 10px;
@@ -2110,7 +2108,7 @@ fieldset {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    color: #192d57;
+    color: #000;
     font-weight: bold; }
   .csc-mailform-field label[title=""], .powermail_label[title=""] {
     cursor: inherit; }
@@ -2155,12 +2153,13 @@ fieldset {
       left: -280px; } }
   .main-navigation .main-navigation_link {
     border-top: 1px solid #f0f0f0;
-    color: #192d57;
+    color: #000;
     font-weight: normal;
     line-height: .75em;
     letter-spacing: .1em;
     display: block;
-    padding: .8em .6em; }
+    padding: .8em .6em;
+    text-decoration: none; }
     .main-navigation .main-navigation_link:hover {
       color: #fff;
       border-top: 1px solid #f0f0f0;
@@ -2213,7 +2212,7 @@ fieldset {
     display: inline;
     padding: 0 1em;
     margin: 0 1em 0 0;
-    color: #192d57;
+    color: #000;
     border-right: 1px solid #f0f0f0;
     text-decoration: none; }
     .meta-navigation .metanavigation-element_link.act {
@@ -2255,7 +2254,7 @@ fieldset {
       margin-right: .5em; }
   .breadcrumbs .breadcrumb-navigation_link {
     padding: 0;
-    color: #192d57;
+    color: #000;
     font-weight: normal;
     text-decoration: none; }
     .breadcrumbs .breadcrumb-navigation_link:hover {
@@ -2390,11 +2389,11 @@ fieldset {
   padding: 0; }
 
 #pz2-results .pz2-recordLink {
-  color: #192d57;
+  color: #000;
   font-weight: normal; }
 
 #pz2-results .pz2-recordLink:after:hover {
-  color: #930; }
+  color: #192d57; }
 
 #pazpar2 .pz2-journal-subpart {
   font-weight: normal; }
@@ -2403,7 +2402,7 @@ fieldset {
   top: -3px; }
 
 #pazpar2 .pz2-mediaIcon:after {
-  color: #192d57; }
+  color: #000; }
 
 #pazpar2 .pz2-details dl {
   line-height: 130%; }
@@ -2424,7 +2423,7 @@ fieldset {
   margin-left: 1em; }
 
 #pazpar2 .pz2-extraLinks:hover {
-  color: #930; }
+  color: #192d57; }
 
 #pazpar2 .pz2-mainForm {
   line-height: 180%;
@@ -2464,7 +2463,7 @@ fieldset {
     .tx-ezbrequest-pi1 #journalList li .ampel, .tx-ezbrequest-pi1 #journalList .tx_find .facet-type-Tabs ol .facetActive .ampel, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 #journalList .facetActive .ampel {
       left: -32px; }
   .tx-ezbrequest-pi1 #journalList a {
-    color: #192d57; }
+    color: #000; }
 .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
   width: 150px; }
 .tx-ezbrequest-pi1 .jourItem {
@@ -2481,7 +2480,7 @@ fieldset {
     padding-bottom: 0;
     color: #fff; }
   .newsTeaser a {
-    color: #930;
+    color: #192d57;
     font-weight: bold; }
   .newsTeaser .bodytext {
     font-size: 110%; }
@@ -2498,7 +2497,7 @@ fieldset {
 
 .news-list-date {
   float: right;
-  color: #192d57;
+  color: #000;
   height: 20px;
   margin-top: -2px;
   margin-right: -2px;
@@ -2525,16 +2524,16 @@ fieldset {
     padding-bottom: .3em;
     padding-top: .3em; }
   #sitemap a, .csc-sitemap a {
-    color: #192d57;
+    color: #000;
     font-weight: normal; }
 
 .tabs a, .advTabs a, .tabs span {
-  color: #192d57;
+  color: #000;
   background-color: #b5c5e6;
   border-right: 1px solid #c1d0ed; }
 
 .currentTab {
-  color: #192d57; }
+  color: #000; }
 
 .tabs {
   position: relative;
@@ -2585,9 +2584,9 @@ fieldset {
     top: .5em;
     right: .3em; }
   .content-container .gokContainer.column li a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive a {
-    border-bottom: 1px dotted #192d57;
+    border-bottom: 1px dotted #000;
     padding: 7px 12px 7px 7px;
-    color: #192d57;
+    color: #000;
     font-weight: normal;
     font-size: 100%; }
 .content-container .gokContainer.column .GOKID {
@@ -2669,7 +2668,7 @@ fieldset {
       height: 2em;
       background-color: #f0f0f0;
       border: 1px solid #f0f0f0;
-      color: #192d57;
+      color: #000;
       font-weight: bold;
       padding: 3px 12px;
       text-transform: uppercase; }
@@ -2705,7 +2704,7 @@ fieldset {
     .tx_find .fieldContainer input {
       padding: 2px;
       border: 1px solid #c1d0ed;
-      color: #192d57;
+      color: #000;
       background: #fff; }
     .tx_find .fieldContainer .noleftmargin {
       margin-left: 0; }
@@ -2805,7 +2804,7 @@ fieldset {
       font-style: italic;
       color: #666; }
     .tx_find .facet .facetShowAll a:hover, .tx_find .facet-type-Tabs .facetShowAll a:hover {
-      color: #930; }
+      color: #192d57; }
     .tx_find .facet .facetHistogram-container .facetActive, .tx_find .facet-type-Tabs .facetHistogram-container .facetActive {
       margin-bottom: .5em; }
     .tx_find .facet .histogram, .tx_find .facet-type-Tabs .histogram {
@@ -2937,7 +2936,7 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
   line-height: 20px; }
 
 .data .external_link {
-  color: #930; }
+  color: #192d57; }
 
 .main {
   display: -webkit-box;
@@ -3067,7 +3066,7 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
       display: inline-block;
       position: absolute;
       background: #fff;
-      color: #192d57;
+      color: #000;
       z-index: 99;
       border: 0;
       margin: 3px 0 0 3px; }
