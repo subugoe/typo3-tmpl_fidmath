@@ -2268,7 +2268,8 @@ fieldset {
   .language-menu .language-menu_switch {
     margin-left: 1em;
     -webkit-filter: grayscale(100%);
-            filter: grayscale(100%); }
+            filter: grayscale(100%);
+    text-decoration: none; }
     .language-menu .language-menu_switch:hover {
       -webkit-filter: grayscale(0%);
               filter: grayscale(0%); }
@@ -2580,15 +2581,17 @@ fieldset {
   border: 0 none; }
   .content-container .gokContainer.column li.selected, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .selected.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .selected.facetActive {
     background: #b5c5e6; }
+  .content-container .gokContainer.column li.open a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .open.facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .open.facetActive a, .content-container .gokContainer.column li.close a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive a {
+    color: #000; }
   .content-container .gokContainer.column li.open:after, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .open.facetActive:after, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .open.facetActive:after, .content-container .gokContainer.column li.close:after, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive:after, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive:after {
     top: .5em;
     right: .3em; }
   .content-container .gokContainer.column li a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive a {
     border-bottom: 1px dotted #000;
-    padding: 7px 12px 7px 7px;
-    color: #000;
+    padding: .5em;
+    color: #192d57;
     font-weight: normal;
-    font-size: 100%; }
+    text-decoration: none; }
 .content-container .gokContainer.column .GOKID {
   font-weight: bold; }
 
