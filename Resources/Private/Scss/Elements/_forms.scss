@@ -1,86 +1,20 @@
-$button-background-alternate: #b4b4b4;
-
-button {
-	font-size: $font-size;
-}
-
-.csc-mailform {
-	padding-top: .8em;
-}
-
-#mailformname,
-#mailformtitle,
-#mailformauthor,
-#mailformmail,
-#mailformmsc,
-#mailformmscverbal,
-#mailformkeywords,
-#mailformurl {
-	background: $white url('../Images/bg_search_input.jpg') repeat-x;
-	border: 1px solid $border-color;
-	color: $text-color;
-}
-
-.iputStartSmall,
 .csc-form-element-textline input[type=text],
+.iputStart,
 .powermail_input,
 .powermail_textarea {
-	border-style: solid;
-	border-width: 1px;
-	border-color: $button-background $button-background-alternate $button-background-alternate $button-background;
-	width: $form-field-width;
-	padding: .2em .8em;
-	margin: 1em 0;
+	@include input-text;
 }
 
 .csc-form-element-select select,
 .powermail_select {
-	width: $form-field-width;
-	height: 30px;
+	@include input-select;
 }
 
+.csc-form-element-submit input,
 .submStartSmall,
-.powermail_submit {
-	background: $button-background;
-	border-style: solid;
-	border-width: 1px;
-	border-color: $button-background $button-background-alternate $button-background-alternate $button-background;
-	color: $text-color;
-	width: $form-submit-width;
-	min-width: $form-submit-width;
-	margin: 1em 0 2em 10px;
-	display: inline;
-	padding: .1em .8em;
-	height: 1.7em;
-	text-transform: capitalize;
-}
-
-.iputStart {
-	float: left;
-	width: 65%;
-	padding: .2em .8em;
-}
-
-#searchTerm.iputStart {
-	float: left;
-	width: 62%;
-	padding: .2em .8em;
-	margin-left: 20px;
-}
-
 .submStart,
-.csc-form-element-submit input {
-	float: left;
-	width: 15%;
-	min-width: $form-submit-width;
-	margin: 0 20px 20px 235px;
-	display: inline;
-	padding: .1em .8em;
-}
-
-#cSearch #advancedLink {
-	display: block;
-	padding: 1em 2em 1em 1.7em;
+.powermail_submit {
+	@include input-submit;
 }
 
 #simpleSearch,
@@ -95,11 +29,6 @@ button {
 
 }
 
-.csc-form-element-textline input[type=text] {
-	padding: .2em 0;
-	margin: 0;
-}
-
 .powermail_legend {
 	padding: 20px 0;
 	font-weight: bold;
@@ -107,43 +36,20 @@ button {
 
 .csc-mailform-field label,
 .powermail_label {
-	float: left;
-	width: $form-label-width;
-	margin: 1em 0;
-
-	&:after {
-		content: 'i';
-		display: inline-block;
-		height: 16px;
-		width: 16px;
-		margin: 0 0 0 2px;
-		font-size: 14px;
-		line-height: 16px;
-		text-align: center;
-		color: $white;
-		font-family: Arial, sans-serif;
-		font-weight: bold;
-	}
-
-	&[title=""] {
-		&:after {
-			display: none;
-		}
-	}
+	@include form-label;
 
 	&:after {
 		cursor: help;
-		content: 'i';
+		content: '\f129';
 		display: inline-block;
 		height: 16px;
 		width: 16px;
-		background-color: $white;
-		margin: 0 0 0 2px;
-		font-size: 14px;
 		line-height: 16px;
+		margin: 0 0 0 2px;
+		font-size: $font-size;
 		text-align: center;
-		color: $text-color;
-		font-weight: bold;
+		border: 1px solid $button-background;
+		font-family: $icon-font;
 	}
 
 	&[title=""] {
@@ -153,7 +59,6 @@ button {
 			display: none;
 		}
 	}
-
 }
 
 .csc-form-element {

@@ -143,6 +143,10 @@
 	}
 }
 
+.pz2-months {
+	@include input-select;
+}
+
 .pz2-searchField {
 	border-color: $lighter-border-color !important;
 }

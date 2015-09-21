@@ -33,6 +33,7 @@
 	#ezb_search_form {
 
 		.iputStartSmall {
+			@include input-text;
 			width: ($form-field-width / 2);
 		}
 	}

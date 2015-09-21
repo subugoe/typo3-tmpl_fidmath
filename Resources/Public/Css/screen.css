@@ -1957,6 +1957,32 @@ li, .tx_find .facet-type-Tabs ol .facetActive {
 strong {
   background: #b5c5e6; }
 
+h2.searchingIn {
+  color: #000;
+  font-family: 'Droid Serif', Georgia, serif;
+  font-weight: normal;
+  font-size: 1.29em;
+  letter-spacing: .1em; }
+
+h3, h4 {
+  padding: .7em 0 .3em; }
+
+p {
+  line-height: 1.5em;
+  margin: 1em 0; }
+
+img {
+  border: 0; }
+
+fieldset {
+  border: 0; }
+
+button {
+  font-size: 14px; }
+
+.hidden {
+  display: none; }
+
 .headline-first_standard {
   font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
@@ -1983,88 +2009,27 @@ strong {
       width: 100%;
       padding: 0 0 1em; } }
 
-h2.searchingIn {
-  color: #000;
-  font-family: 'Droid Serif', Georgia, serif;
-  font-weight: normal;
-  font-size: 1.29em;
-  letter-spacing: .1em; }
-
-h3, h4 {
-  padding: .7em 0 .3em; }
-
-p {
-  line-height: 1.5em;
-  margin: 1em 0; }
-
-img {
-  border: 0; }
-
-fieldset {
-  border: 0; }
-
-.hidden {
-  display: none; }
-
-button {
-  font-size: 14px; }
-
-.csc-mailform {
-  padding-top: .8em; }
-
-#mailformname, #mailformtitle, #mailformauthor, #mailformmail, #mailformmsc, #mailformmscverbal, #mailformkeywords, #mailformurl {
-  background: #fff url('../Images/bg_search_input.jpg') repeat-x;
-  border: 1px solid #f0f0f0;
-  color: #000; }
-
-.iputStartSmall, .csc-form-element-textline input[type=text], .powermail_input, .powermail_textarea {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
+.csc-form-element-textline input[type=text], .iputStart, .powermail_input, .powermail_textarea {
+  border: 1px solid #d4d4d4;
   width: 280px;
   padding: .2em .8em;
   margin: 1em 0; }
 
 .csc-form-element-select select, .powermail_select {
   width: 280px;
-  height: 30px; }
+  height: 28px; }
 
-.submStartSmall, .powermail_submit {
+.csc-form-element-submit input, .submStartSmall, .submStart, .powermail_submit {
   background: #d4d4d4;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
+  border: 1px solid #d4d4d4;
   color: #000;
   width: 140px;
   min-width: 140px;
-  margin: 1em 0 2em 10px;
+  margin: 1em 0;
   display: inline;
-  padding: .1em .8em;
-  height: 1.7em;
-  text-transform: capitalize; }
-
-.iputStart {
-  float: left;
-  width: 65%;
-  padding: .2em .8em; }
-
-#searchTerm.iputStart {
-  float: left;
-  width: 62%;
   padding: .2em .8em;
-  margin-left: 20px; }
-
-.submStart, .csc-form-element-submit input {
-  float: left;
-  width: 15%;
-  min-width: 140px;
-  margin: 0 20px 20px 235px;
-  display: inline;
-  padding: .1em .8em; }
-
-#cSearch #advancedLink {
-  display: block;
-  padding: 1em 2em 1em 1.7em; }
+  height: 1.7em;
+  text-transform: uppercase; }
 
 #simpleSearch, #advancedSearch {
   width: 70%; }
@@ -2073,10 +2038,6 @@ button {
   min-height: 40px;
   float: left;
   clear: both; }
-
-.csc-form-element-textline input[type=text] {
-  padding: .2em 0;
-  margin: 0; }
 
 .powermail_legend {
   padding: 20px 0;
@@ -2087,32 +2048,17 @@ button {
   width: 186.66667px;
   margin: 1em 0; }
   .csc-mailform-field label:after, .powermail_label:after {
-    content: 'i';
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: 0 0 0 2px;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    font-weight: bold; }
-  .csc-mailform-field label[title=""]:after, .powermail_label[title=""]:after {
-    display: none; }
-  .csc-mailform-field label:after, .powermail_label:after {
     cursor: help;
-    content: 'i';
+    content: '\f129';
     display: inline-block;
     height: 16px;
     width: 16px;
-    background-color: #fff;
+    line-height: 16px;
     margin: 0 0 0 2px;
     font-size: 14px;
-    line-height: 16px;
     text-align: center;
-    color: #000;
-    font-weight: bold; }
+    border: 1px solid #d4d4d4;
+    font-family: 'FontAwesome'; }
   .csc-mailform-field label[title=""], .powermail_label[title=""] {
     cursor: inherit; }
     .csc-mailform-field label[title=""]:after, .powermail_label[title=""]:after {
@@ -2445,6 +2391,10 @@ button {
 #pz2-results .pz2-details dl ul li, #pz2-results .pz2-details dl ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pz2-results .pz2-details dl ul .facetActive {
   list-style-type: circle; }
 
+.pz2-months {
+  width: 280px;
+  height: 28px; }
+
 .pz2-searchField {
   border-color: #c1d0ed !important; }
 
@@ -2465,6 +2415,10 @@ button {
   .tx-ezbrequest-pi1 #journalList a {
     color: #000; }
 .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
+  border: 1px solid #d4d4d4;
+  width: 280px;
+  padding: .2em .8em;
+  margin: 1em 0;
   width: 140px; }
 .tx-ezbrequest-pi1 .jourItem {
   padding-top: .3em; }
@@ -2522,6 +2476,9 @@ button {
   width: 100%; }
   .news-list-entry .news-list-header {
     min-width: 0; }
+  .news-list-entry .more:before {
+    content: '\f105';
+    font-family: 'FontAwesome'; }
 
 #sitemap, .csc-sitemap {
   padding: 1em 0; }
@@ -2619,13 +2576,8 @@ button {
   max-width: 900px;
   min-width: 700px;
   margin-bottom: 2em; }
-.tx-mathematicians .clear2 {
-  clear: both;
-  padding: 1em; }
 .tx-mathematicians .submStart {
   margin: 0 1em;
-  float: none; }
-.tx-mathematicians .iputStart {
   float: none; }
 
 .tx_find {

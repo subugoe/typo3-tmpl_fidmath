@@ -1,7 +1,42 @@
+$form-margin: 1em 0;
+$form-padding: .2em .8em;
+$form-border: 1px solid $button-background;
+
 @mixin table() {
 	td {
 		border-bottom: 1px solid $border-color;
 		margin-bottom: .5em;
 		padding: .5em;
 	}
+}
+
+@mixin input-text() {
+	border: $form-border;
+	width: $form-field-width;
+	padding: $form-padding;
+	margin: $form-margin;
+}
+
+@mixin input-submit() {
+	background: $button-background;
+	border: $form-border;
+	color: $text-color;
+	width: $form-submit-width;
+	min-width: $form-submit-width;
+	margin: $form-margin;
+	display: inline;
+	padding: $form-padding;
+	height: 1.7em;
+	text-transform: uppercase;
+}
+
+@mixin input-select() {
+	width: $form-field-width;
+	height: (2 * $font-size);
+}
+
+@mixin form-label() {
+	float: left;
+	width: $form-label-width;
+	margin: $form-margin;
 }

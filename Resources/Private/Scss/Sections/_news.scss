@@ -60,4 +60,11 @@
 		min-width: 0;
 	}
 
+	.more {
+		&:before {
+			content: '\f105';
+			font-family: $icon-font;
+		}
+	}
+
 }
