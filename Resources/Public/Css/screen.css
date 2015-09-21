@@ -1939,11 +1939,12 @@ a {
       font-family: fontawesome;
       font-size: 80%;
       color: #000;
-      font-weight: normal; }
+      font-weight: normal;
+      text-decoration: none; }
 
 body {
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Trebuchet MS', Verdana, sans-serif;
   text-align: center;
   width: 100%;
@@ -1959,11 +1960,11 @@ strong {
 .headline-first_standard {
   font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
-  font-size: 1.69em;
+  font-size: 1.5em;
   letter-spacing: .149em;
   width: 50%;
   padding: 0 0 1.6em;
-  margin-left: 250px; }
+  margin-left: 252px; }
   @media (max-width: 639px) {
     .headline-first_standard {
       margin-left: .8em;
@@ -1973,7 +1974,7 @@ strong {
 .headline-first_welcome {
   font-family: 'Droid Serif', Georgia, serif;
   font-weight: normal;
-  font-size: 1.69em;
+  font-size: 1.5em;
   letter-spacing: .149em;
   padding: 0 0 1.6em 1em; }
   @media (max-width: 639px) {
@@ -2005,6 +2006,9 @@ fieldset {
 .hidden {
   display: none; }
 
+button {
+  font-size: 14px; }
+
 .csc-mailform {
   padding-top: .8em; }
 
@@ -2017,12 +2021,12 @@ fieldset {
   border-style: solid;
   border-width: 1px;
   border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
-  width: 300px;
+  width: 280px;
   padding: .2em .8em;
   margin: 1em 0; }
 
 .csc-form-element-select select, .powermail_select {
-  width: 300px;
+  width: 280px;
   height: 30px; }
 
 .submStartSmall, .powermail_submit {
@@ -2031,8 +2035,8 @@ fieldset {
   border-width: 1px;
   border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
   color: #000;
-  width: 150px;
-  min-width: 150px;
+  width: 140px;
+  min-width: 140px;
   margin: 1em 0 2em 10px;
   display: inline;
   padding: .1em .8em;
@@ -2053,7 +2057,7 @@ fieldset {
 .submStart, .csc-form-element-submit input {
   float: left;
   width: 15%;
-  min-width: 150px;
+  min-width: 140px;
   margin: 0 20px 20px 235px;
   display: inline;
   padding: .1em .8em; }
@@ -2063,8 +2067,7 @@ fieldset {
   padding: 1em 2em 1em 1.7em; }
 
 #simpleSearch, #advancedSearch {
-  width: 70%;
-  margin-top: 2em; }
+  width: 70%; }
 
 .powermail_fieldwrap {
   min-height: 40px;
@@ -2081,7 +2084,7 @@ fieldset {
 
 .csc-mailform-field label, .powermail_label {
   float: left;
-  width: 200px;
+  width: 186.66667px;
   margin: 1em 0; }
   .csc-mailform-field label:after, .powermail_label:after {
     content: 'i';
@@ -2132,11 +2135,10 @@ fieldset {
 .main-navigation {
   border-bottom: 1px solid #f0f0f0;
   list-style-type: none;
-  font-size: 1.1em;
   padding: 0;
-  width: 230px;
-  max-width: 230px;
-  min-width: 230px;
+  width: 224px;
+  max-width: 224px;
+  min-width: 224px;
   -webkit-box-flex: 1;
   -webkit-flex: 1 6 20%;
       -ms-flex: 1 6 20%;
@@ -2263,7 +2265,7 @@ fieldset {
 .languagemenu {
   float: right;
   display: inline;
-  padding: 0;
+  padding: 1px 0 0;
   margin-right: 1em; }
   .languagemenu .languagemenu_switch {
     margin-left: 1em;
@@ -2272,14 +2274,14 @@ fieldset {
     text-decoration: none;
     height: 1em; }
     .languagemenu .languagemenu_switch img {
-      height: 16px; }
+      height: 14px; }
     .languagemenu .languagemenu_switch:hover {
       -webkit-filter: grayscale(0%);
               filter: grayscale(0%); }
     .languagemenu .languagemenu_switch.-de img {
-      width: 25.6px; }
+      width: 22.4px; }
     .languagemenu .languagemenu_switch.-en img {
-      width: 32px; }
+      width: 28px; }
 
 .content-container {
   font-size: 90%;
@@ -2324,7 +2326,7 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   width: auto;
-  background-color: white;
+  background-color: #fff;
   height: 119px; }
   .header .header-logo {
     -webkit-box-flex: 3;
@@ -2359,8 +2361,11 @@ fieldset {
   margin-left: 1em;
   padding: 0 .6em 0;
   border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
-  font-size: 110%; }
+  border-bottom: 1px solid #f0f0f0; }
+  .main-content li, .main-content .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .main-content .facetActive {
+    list-style-type: square;
+    margin-left: 2em;
+    padding-left: 0; }
 
 #pazpar2 {
   display: -webkit-box;
@@ -2370,89 +2375,75 @@ fieldset {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
-  width: 100%;
-  font-size: 111%; }
-  #pazpar2 #pz2-results .pz2-resultList {
-    padding-left: 30px; }
+  width: 100%; }
+  #pazpar2 #pz2-recordView {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #pazpar2 #pz2-termLists .pz2-progressIndicator {
+    display: none; }
+  #pazpar2 #pz2-termLists li, #pazpar2 #pz2-termLists .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 #pz2-termLists .facetActive {
+    margin-left: 0; }
   #pazpar2 .pz2-resultList .pz2-mediaIcon {
     top: -3px;
     left: -33px; }
-
-#pazpar2 #pazpar2 .pz2-pager li a, #pazpar2 #pazpar2 .pz2-pager .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol #pazpar2 #pazpar2 .pz2-pager .facetActive a {
-  padding: 0 .3em; }
-
-#pazpar2 .pz2-prev:after, #pazpar2 .pz2-next:after {
-  top: .05em; }
-
-#pazpar2 .pz2-pager .pz2-currentPage {
-  padding: 0 .3em; }
-
-#pazpar2 #pz2-termLists .pz2-progressIndicator {
-  display: none; }
-
-#pazpar2 .pz2-termList li, #pazpar2 .pz2-termList .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-termList .facetActive {
-  padding: 2px 0; }
-
-#pazpar2 .pz2-termList-medium li, #pazpar2 .pz2-termList-medium .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-termList-medium .facetActive {
-  padding: 0; }
+  #pazpar2 .pz2-prev:after, #pazpar2 .pz2-next:after {
+    top: .05em; }
+  #pazpar2 .pz2-pager li a, #pazpar2 .pz2-pager .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-pager .facetActive a {
+    padding: 0 .3em; }
+  #pazpar2 .pz2-pager .pz2-currentPage {
+    padding: 0 .3em; }
+  #pazpar2 .pz2-mainForm {
+    line-height: 180%;
+    top: 90px !important; }
+  #pazpar2 .pz2-fieldsets ul {
+    margin-left: 1.5em; }
+    #pazpar2 .pz2-fieldsets ul li, #pazpar2 .pz2-fieldsets ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-fieldsets ul .facetActive {
+      padding: 0; }
+      #pazpar2 .pz2-fieldsets ul li.inline, #pazpar2 .pz2-fieldsets ul .tx_find .facet-type-Tabs ol .inline.facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-fieldsets ul .inline.facetActive {
+        margin-left: 0; }
+  @media (max-width: 639px) {
+    #pazpar2 .pz2-mainForm {
+      top: 58px !important; } }
+  #pazpar2 .pz2-basic {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  #pazpar2 .pz2-termList li, #pazpar2 .pz2-termList .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-termList .facetActive {
+    padding: 2px 0; }
+  #pazpar2 .pz2-termList-medium li, #pazpar2 .pz2-termList-medium .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-termList-medium .facetActive {
+    padding: 0; }
+  #pazpar2 .pz2-journal-subpart {
+    font-weight: normal; }
+  #pazpar2 .pz2-mediaIcon:before {
+    top: -3px; }
+  #pazpar2 .pz2-mediaIcon:after {
+    color: #000;
+    top: -3px; }
+  #pazpar2 .pz2-details dl {
+    line-height: 130%; }
+  #pazpar2 .pz2-details dd {
+    margin-left: 11em; }
+  #pazpar2 .pz2-detail-catalogueLink {
+    background: transparent; }
+  #pazpar2 .pz2-extraLinks form {
+    background: transparent; }
+  #pazpar2 .pz2-extraLinks input {
+    margin-left: 1em; }
+  #pazpar2 .pz2-extraLinks:hover {
+    color: #192d57; }
 
 #pz2-results .pz2-recordLink {
   color: #000;
   font-weight: normal; }
-
-#pz2-results .pz2-recordLink:after:hover {
-  color: #192d57; }
-
-#pazpar2 .pz2-journal-subpart {
-  font-weight: normal; }
-
-#pazpar2 .pz2-mediaIcon:before, #pazpar2 .pz2-mediaIcon:after {
-  top: -3px; }
-
-#pazpar2 .pz2-mediaIcon:after {
-  color: #000; }
-
-#pazpar2 .pz2-details dl {
-  line-height: 130%; }
-
-#pazpar2 .pz2-details dd {
-  margin-left: 11em; }
-
-#pazpar2 #pz2-results .pz2-details dl ul li, #pazpar2 #pz2-results .pz2-details dl ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 #pz2-results .pz2-details dl ul .facetActive {
+  #pz2-results .pz2-recordLink:after:hover {
+    color: #192d57; }
+#pz2-results .pz2-resultList {
+  padding-left: 30px; }
+#pz2-results .pz2-details dl ul li, #pz2-results .pz2-details dl ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pz2-results .pz2-details dl ul .facetActive {
   list-style-type: circle; }
-
-#pazpar2 .pz2-detail-catalogueLink {
-  background: transparent; }
-
-#pazpar2 .pz2-extraLinks form {
-  background: transparent; }
-
-#pazpar2 .pz2-extraLinks input {
-  margin-left: 1em; }
-
-#pazpar2 .pz2-extraLinks:hover {
-  color: #192d57; }
-
-#pazpar2 .pz2-mainForm {
-  line-height: 180%;
-  top: 90px !important; }
-#pazpar2 .pz2-fieldsets ul {
-  margin-left: 1.5em; }
-  #pazpar2 .pz2-fieldsets ul li, #pazpar2 .pz2-fieldsets ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-fieldsets ul .facetActive {
-    padding: 0; }
-@media (max-width: 639px) {
-  #pazpar2 .pz2-mainForm {
-    top: 58px !important; } }
-#pazpar2 .pz2-basic {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1; }
-#pazpar2 #pz2-recordView {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2; }
 
 .pz2-searchField {
   border-color: #c1d0ed !important; }
@@ -2467,15 +2458,23 @@ fieldset {
 .tx-ezbrequest-pi1 #journalList {
   max-width: 80%; }
   .tx-ezbrequest-pi1 #journalList li, .tx-ezbrequest-pi1 #journalList .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 #journalList .facetActive {
-    margin-left: 32px; }
+    margin-left: 32px;
+    list-style-type: none; }
     .tx-ezbrequest-pi1 #journalList li .ampel, .tx-ezbrequest-pi1 #journalList .tx_find .facet-type-Tabs ol .facetActive .ampel, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 #journalList .facetActive .ampel {
       left: -32px; }
   .tx-ezbrequest-pi1 #journalList a {
     color: #000; }
 .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
-  width: 150px; }
+  width: 140px; }
 .tx-ezbrequest-pi1 .jourItem {
   padding-top: .3em; }
+.tx-ezbrequest-pi1 .alphabetMenu li, .tx-ezbrequest-pi1 .alphabetMenu .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 .alphabetMenu .facetActive {
+  margin-left: 0;
+  letter-spacing: 1px; }
+.tx-ezbrequest-pi1 .ezbrequest_itemtable td {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: .5em;
+  padding: .5em; }
 
 .newsTeaser {
   border-top: 1px solid #fff;
@@ -2585,7 +2584,8 @@ fieldset {
   background: transparent; }
 .content-container .gokContainer.column li, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive {
   padding: 0;
-  border: 0 none; }
+  border: 0 none;
+  list-style-type: none; }
   .content-container .gokContainer.column li.selected, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .selected.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .selected.facetActive {
     background: #b5c5e6; }
   .content-container .gokContainer.column li.open a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .open.facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .open.facetActive a, .content-container .gokContainer.column li.close a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive a {
@@ -2607,14 +2607,18 @@ fieldset {
 .tx-mathematicians .owResult a img {
   padding: .5em; }
 .tx-mathematicians #genResult {
-  width: 600px; }
+  width: 50em; }
   .tx-mathematicians #genResult table {
-    width: 90%;
-    padding-bottom: 2.5em; }
+    margin-left: 0; }
+    .tx-mathematicians #genResult table td {
+      border-bottom: 1px solid #f0f0f0;
+      margin-bottom: .5em;
+      padding: .5em; }
 .tx-mathematicians #simpleSearch {
   width: 100%;
   max-width: 900px;
-  min-width: 700px; }
+  min-width: 700px;
+  margin-bottom: 2em; }
 .tx-mathematicians .clear2 {
   clear: both;
   padding: 1em; }
@@ -3079,7 +3083,7 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
       color: #000;
       z-index: 99;
       border: 0;
-      margin: 3px 0 0 3px; }
+      margin: 9px 0 0 3px; }
       .menu-trigger:before {
         content: '\f0c9';
         font-family: fontawesome;

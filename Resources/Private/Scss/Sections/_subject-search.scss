@@ -9,6 +9,7 @@
 		li {
 			padding: 0;
 			border: 0 none;
+			list-style-type: none;
 
 			&.selected {
 				background: $background-color;

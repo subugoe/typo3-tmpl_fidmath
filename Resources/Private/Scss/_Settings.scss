@@ -7,10 +7,10 @@ $print-color: #000;
 $white: #fff;
 $text-color: #000;
 $link-color: #192d57;
-
+$font-size: 14px;
 
 // forms
-$form-field-width: 300px;
+$form-field-width: $font-size * 20;
 $form-submit-width: $form-field-width / 2;
 $form-label-width: $form-field-width * (2 / 3);
 

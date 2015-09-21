@@ -1,11 +1,10 @@
 .main-navigation {
 	border-bottom: 1px solid $border-color;
 	list-style-type: none;
-	font-size: 1.1em;
 	padding: 0;
-	width: 230px;
-	max-width: 230px;
-	min-width: 230px;
+	width: $font-size * 16;
+	max-width: $font-size * 16;
+	min-width: $font-size * 16;
 	flex: 1 6 20%;
 	order: 1;
 

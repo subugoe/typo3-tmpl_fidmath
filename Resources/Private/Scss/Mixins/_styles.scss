@@ -1,0 +1,7 @@
+@mixin table() {
+	td {
+		border-bottom: 1px solid $border-color;
+		margin-bottom: .5em;
+		padding: .5em;
+	}
+}

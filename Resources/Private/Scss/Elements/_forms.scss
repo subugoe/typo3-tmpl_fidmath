@@ -1,5 +1,9 @@
 $button-background-alternate: #b4b4b4;
 
+button {
+	font-size: $font-size;
+}
+
 .csc-mailform {
 	padding-top: .8em;
 }
@@ -82,7 +86,6 @@ $button-background-alternate: #b4b4b4;
 #simpleSearch,
 #advancedSearch {
 	width: 70%;
-	margin-top: 2em;
 }
 
 .powermail_fieldwrap {

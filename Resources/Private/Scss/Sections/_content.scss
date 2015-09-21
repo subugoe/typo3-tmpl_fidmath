@@ -5,5 +5,10 @@
 	padding: 0 .6em 0;
 	border-top: 1px solid $border-color;
 	border-bottom: 1px solid $border-color;
-	font-size: 110%;
+
+	li {
+		list-style-type: square;
+		margin-left: 2em;
+		padding-left: 0;
+	}
 }

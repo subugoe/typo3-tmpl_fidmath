@@ -2,6 +2,7 @@
 @import 'Elements/font-awesome/font-awesome';
 @import 'Mixins/file-links';
 @import 'Mixins/responsive';
+@import 'Mixins/styles';
 @import 'Elements/base';
 @import 'Elements/forms';
 @import 'Sections/main-navigation';
@@ -198,7 +199,7 @@
 		color: $text-color;
 		z-index: 99;
 		border: 0;
-		margin: 3px 0 0 3px;
+		margin: ($font-size - 5) 0 0 3px;
 
 		&:before {
 			content: '\f0c9';

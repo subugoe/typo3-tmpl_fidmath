@@ -8,11 +8,11 @@
 	}
 
 	#genResult {
-		width: 600px;
+		width: 50em;
 
 		table {
-			width: 90%;
-			padding-bottom: 2.5em;
+			@include table;
+			margin-left: 0;
 		}
 	}
 
@@ -20,6 +20,7 @@
 		width: 100%;
 		max-width: 900px;
 		min-width: 700px;
+		margin-bottom: 2em;
 	}
 
 	.clear2 {
