@@ -14,7 +14,7 @@ $tab-selected: #263476;
 	.icon-left-dir {
 
 		&:after {
-			font-family: FontAwesome;
+			font-family: $icon-font;
 			content: '\f053';
 		}
 	}
@@ -23,7 +23,7 @@ $tab-selected: #263476;
 	.icon-right-open {
 
 		&:after {
-			font-family: FontAwesome;
+			font-family: $icon-font;
 			content: '\f054';
 		}
 	}

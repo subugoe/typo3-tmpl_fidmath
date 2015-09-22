@@ -19,7 +19,7 @@
 		color: $text-color;
 		font-weight: normal;
 		line-height: .75em;
-		letter-spacing: .1em;
+		letter-spacing: .03em;
 		display: block;
 		padding: .8em .6em;
 		text-decoration: none;
@@ -29,7 +29,7 @@
 			border-top: 1px solid $border-color;
 			background-color: $background-color;
 			line-height: .75em;
-			letter-spacing: .1em;
+			letter-spacing: .03em;
 			display: block;
 			padding: .8em .6em;
 		}
@@ -40,7 +40,7 @@
 
 		&:before {
 			content: '›';
-			font-size: 1.6em;
+			font-size: 1.3em;
 			margin-right: .3em;
 		}
 	}
@@ -69,7 +69,7 @@
 		&.trenner {
 			border-top: 1px solid $border-color;
 			line-height: .75em;
-			letter-spacing: .1em;
+			letter-spacing: .03em;
 			display: block;
 			padding: .8em .6em;
 		}

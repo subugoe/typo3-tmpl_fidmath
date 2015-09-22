@@ -1926,6 +1926,62 @@
 .fa-fonticons:before {
   content: "\f280"; }
 
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url('../Fonts/ComputerModern/cmunbxo-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunbxo-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunbxo.otf') format('opentype'), url('../Fonts/ComputerModern/cmunbxo-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunbxo-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunbxo-webfont.svg#cmu_brightboldoblique') format('svg');
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url('../Fonts/ComputerModern/cmunsi-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunsi-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunsi.otf') format('opentype'), url('../Fonts/ComputerModern/cmunsi-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunsi-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunsi-webfont.svg#cmu_sans_serifoblique') format('svg');
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url('../Fonts/ComputerModern/cmunss-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunss-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunss.otf') format('opentype'), url('../Fonts/ComputerModern/cmunss-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunss-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunss-webfont.svg#cmu_sans_serifmedium') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url('../Fonts/ComputerModern/cmunsx-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunsx-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunsx.otf') format('opentype'), url('../Fonts/ComputerModern/cmunsx-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunsx-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunsx-webfont.svg#cmu_sans_serifbold') format('svg');
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url('../Fonts/ComputerModern/cmunrm-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunrm-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunrm.otf') format('opentype'), url('../Fonts/ComputerModern/cmunrm-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunrm-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunrm-webfont.svg#cmu_serifroman') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url('../Fonts/ComputerModern/cmunsl-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunsl-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunsl.otf') format('opentype'), url('../Fonts/ComputerModern/cmunsl-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunsl-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunsl-webfont.svg#cmu_serif_extraromanslanted') format('svg');
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url('../Fonts/ComputerModern/cmunbl-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunbl-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunbl.otf') format('opentype'), url('../Fonts/ComputerModern/cmunbl-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunbl-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunbl-webfont.svg#cmu_serif_extraboldslanted') format('svg');
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url('../Fonts/ComputerModern/cmunbx-webfont.eot');
+  src: url('../Fonts/ComputerModern/cmunbx-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunbx.otf') format('opentype'), url('../Fonts/ComputerModern/cmunbx-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunbx-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunbx-webfont.svg#cmu_serifbold') format('svg');
+  font-weight: bold;
+  font-style: normal; }
+
 body, div, dl, dt, dd, ul, ol, li, .tx_find .facet-type-Tabs ol .facetActive, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, blockquote, th, td, p {
   margin: 0;
   padding: 0; }
@@ -1944,8 +2000,8 @@ a {
 
 body {
   color: #000;
-  font-size: 14px;
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  font-size: 16px;
+  font-family: 'Computer Modern Sans', sans-serif;
   text-align: center;
   width: 100%;
   height: 100%; }
@@ -1959,7 +2015,7 @@ strong {
 
 h2.searchingIn {
   color: #000;
-  font-family: 'Droid Serif', Georgia, serif;
+  font-family: 'Computer Modern Serif', Georgia, serif;
   font-weight: normal;
   font-size: 1.29em;
   letter-spacing: .1em; }
@@ -1968,7 +2024,7 @@ h3, h4 {
   padding: .7em 0 .3em; }
 
 p {
-  line-height: 1.5em;
+  line-height: 24px;
   margin: 1em 0; }
 
 img {
@@ -1978,19 +2034,21 @@ fieldset {
   border: 0; }
 
 button {
-  font-size: 14px; }
+  font-size: 16px; }
 
 .hidden {
   display: none; }
 
+input {
+  font-family: 'Computer Modern Sans', sans-serif; }
+
 .headline-first_standard {
-  font-family: 'Droid Serif', Georgia, serif;
-  font-weight: normal;
-  font-size: 1.5em;
-  letter-spacing: .149em;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: .03em;
   width: 50%;
-  padding: 0 0 1.6em;
-  margin-left: 252px; }
+  padding: 0 0 1.6em 1em;
+  margin-left: 256px; }
   @media (max-width: 639px) {
     .headline-first_standard {
       margin-left: .8em;
@@ -1998,10 +2056,9 @@ button {
       padding: 0 0 1em; } }
 
 .headline-first_welcome {
-  font-family: 'Droid Serif', Georgia, serif;
-  font-weight: normal;
-  font-size: 1.5em;
-  letter-spacing: .149em;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: .03em;
   padding: 0 0 1.6em 1em; }
   @media (max-width: 639px) {
     .headline-first_welcome {
@@ -2011,20 +2068,20 @@ button {
 
 .csc-form-element-textline input[type=text], .iputStart, .powermail_input, .powermail_textarea {
   border: 1px solid #d4d4d4;
-  width: 280px;
+  width: 320px;
   padding: .2em .8em;
   margin: 1em 0; }
 
 .csc-form-element-select select, .powermail_select {
-  width: 280px;
-  height: 28px; }
+  width: 320px;
+  height: 32px; }
 
 .csc-form-element-submit input, .submStartSmall, .submStart, .powermail_submit {
   background: #d4d4d4;
   border: 1px solid #d4d4d4;
   color: #000;
-  width: 140px;
-  min-width: 140px;
+  width: 160px;
+  min-width: 160px;
   margin: 1em 0;
   display: inline;
   padding: .2em .8em;
@@ -2045,7 +2102,7 @@ button {
 
 .csc-mailform-field label, .powermail_label {
   float: left;
-  width: 186.66667px;
+  width: 213.33333px;
   margin: 1em 0; }
   .csc-mailform-field label:after, .powermail_label:after {
     cursor: help;
@@ -2055,7 +2112,7 @@ button {
     width: 16px;
     line-height: 16px;
     margin: 0 0 0 2px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     border: 1px solid #d4d4d4;
     font-family: 'FontAwesome'; }
@@ -2081,9 +2138,9 @@ button {
 .main-navigation {
   list-style-type: none;
   padding: 0;
-  width: 224px;
-  max-width: 224px;
-  min-width: 224px;
+  width: 256px;
+  max-width: 256px;
+  min-width: 256px;
   -webkit-box-flex: 1;
   -webkit-flex: 1 6 20%;
       -ms-flex: 1 6 20%;
@@ -2103,7 +2160,7 @@ button {
     color: #000;
     font-weight: normal;
     line-height: .75em;
-    letter-spacing: .1em;
+    letter-spacing: .03em;
     display: block;
     padding: .8em .6em;
     text-decoration: none; }
@@ -2112,14 +2169,14 @@ button {
       border-top: 1px solid #f0f0f0;
       background-color: #b5c5e6;
       line-height: .75em;
-      letter-spacing: .1em;
+      letter-spacing: .03em;
       display: block;
       padding: .8em .6em; }
     .main-navigation .main-navigation_link.act {
       font-weight: bolder; }
     .main-navigation .main-navigation_link:before {
       content: '›';
-      font-size: 1.6em;
+      font-size: 1.3em;
       margin-right: .3em; }
   .main-navigation .main-navigation_element {
     display: inline;
@@ -2132,7 +2189,7 @@ button {
     .main-navigation .main-navigation_element.trenner {
       border-top: 1px solid #f0f0f0;
       line-height: .75em;
-      letter-spacing: .1em;
+      letter-spacing: .03em;
       display: block;
       padding: .8em .6em; }
 
@@ -2149,10 +2206,7 @@ button {
   border-top: 1px solid #f0f0f0; }
   @media (max-width: 639px) {
     .meta-navigation {
-      width: 100%; }
-      .meta-navigation li a, .meta-navigation .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol .meta-navigation .facetActive a {
-        padding: 0;
-        margin: 0 .5em; } }
+      width: 100%; } }
   .meta-navigation .metanavigation-element {
     display: inline;
     padding: 0; }
@@ -2164,15 +2218,18 @@ button {
     color: #000;
     border-right: 1px solid #f0f0f0;
     text-decoration: none; }
+    @media (max-width: 639px) {
+      .meta-navigation .metanavigation-element_link {
+        padding: 0;
+        margin: 0 .5em; } }
     .meta-navigation .metanavigation-element_link.act {
       font-weight: bolder; }
     .meta-navigation .metanavigation-element_link:hover {
       text-decoration: underline; }
 
 .breadcrumbs {
-  font-size: 80%;
+  font-size: 90%;
   height: auto;
-  min-height: 1.5em;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -2180,8 +2237,7 @@ button {
   padding: 4px 1em 0;
   letter-spacing: .1em;
   border-top: 1px solid #c1d0ed;
-  border-bottom: 1px solid #c1d0ed;
-  margin: 5px 0; }
+  border-bottom: 1px solid #c1d0ed; }
   @media (max-width: 639px) {
     .breadcrumbs {
       text-align: right; }
@@ -2193,12 +2249,11 @@ button {
     width: auto;
     display: inline-block; }
   .breadcrumbs .breadcrumb-navigation_element {
-    text-transform: uppercase;
     display: inline;
     padding: 0; }
     .breadcrumbs .breadcrumb-navigation_element:not(:last-child):after {
       content: '\f105';
-      font-family: fontawesome;
+      font-family: 'FontAwesome';
       margin-left: .5em;
       margin-right: .5em; }
   .breadcrumbs .breadcrumb-navigation_link {
@@ -2216,22 +2271,12 @@ button {
   margin-right: 1em; }
   .languagemenu .languagemenu_switch {
     margin-left: 1em;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     text-decoration: none;
     height: 1em; }
-    .languagemenu .languagemenu_switch img {
-      height: 14px; }
     .languagemenu .languagemenu_switch:hover {
-      -webkit-filter: grayscale(0%);
-              filter: grayscale(0%); }
-    .languagemenu .languagemenu_switch.-de img {
-      width: 22.4px; }
-    .languagemenu .languagemenu_switch.-en img {
-      width: 28px; }
+      text-decoration: underline; }
 
 .content-container {
-  font-size: 90%;
   padding: 2em 0 0;
   margin-bottom: 1em;
   -webkit-transform: translate(0, 0);
@@ -2249,8 +2294,7 @@ button {
 
 .main-container {
   text-align: left;
-  font-size: 127%;
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  font-family: 'Computer Modern Sans', sans-serif;
   margin: 0 auto;
   max-width: 1170px;
   padding: 0 2%;
@@ -2274,7 +2318,8 @@ button {
   display: flex;
   width: auto;
   background-color: #fff;
-  height: 119px; }
+  height: 119px;
+  margin: .5em 0; }
   .header .header-logo {
     -webkit-box-flex: 3;
     -webkit-flex: 3 1 60%;
@@ -2392,14 +2437,17 @@ button {
   list-style-type: circle; }
 
 .pz2-months {
-  width: 280px;
-  height: 28px; }
+  width: 320px;
+  height: 32px; }
 
 .pz2-searchField {
   border-color: #c1d0ed !important; }
 
 .pz2-pages li, .pz2-pages .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .pz2-pages .facetActive {
   margin-left: 0; }
+
+.pz2-extendedLink:hover {
+  text-decoration: none; }
 
 .tx-ezbrequest-pi1 #navi {
   height: 2.5em; }
@@ -2419,10 +2467,10 @@ button {
     color: #000; }
 .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
   border: 1px solid #d4d4d4;
-  width: 280px;
+  width: 320px;
   padding: .2em .8em;
   margin: 1em 0;
-  width: 140px; }
+  width: 160px; }
 .tx-ezbrequest-pi1 .jourItem {
   padding-top: .3em; }
 .tx-ezbrequest-pi1 .alphabetMenu li, .tx-ezbrequest-pi1 .alphabetMenu .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 .alphabetMenu .facetActive {
@@ -2437,17 +2485,12 @@ button {
   border-top: 1px solid #fff;
   padding: .6em 0 1em; }
   .newsTeaser h2 {
-    font-family: 'Droid Serif', Georgia, serif;
+    font-family: 'Computer Modern Serif', Georgia, serif;
     font-size: 125%; }
   .newsTeaser h3 {
     margin-bottom: 0;
     padding-bottom: 0;
     color: #fff; }
-  .newsTeaser a {
-    color: #192d57;
-    font-weight: bold; }
-  .newsTeaser .bodytext {
-    font-size: 110%; }
 
 .news-list-container .showResultsWrap {
   display: none; }
@@ -2595,10 +2638,10 @@ button {
   /* page browser single item view */
   /* field list on single item view */ }
   .tx_find .icon-left-dir:after {
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     content: '\f053'; }
   .tx_find .icon-right-dir:after, .tx_find .icon-right-open:after {
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     content: '\f054'; }
   .tx_find .clear {
     clear: both;
@@ -2929,7 +2972,6 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
   font-weight: bold; }
 
 .advFirst {
-  font-size: 93%;
   line-height: 1.4em; }
 
 .dbGroup {
@@ -3030,15 +3072,14 @@ td.data a.external-link[href$=".html"], td.data a.external_link[href$=".HTML"], 
       color: #000;
       z-index: 99;
       border: 0;
-      margin: 9px 0 0 3px; }
+      margin: 6px 0 0 3px; }
       .menu-trigger:before {
         content: '\f0c9';
-        font-family: fontawesome;
+        font-family: 'FontAwesome';
         margin-right: .3em; }
       .menu-trigger:hover {
         cursor: pointer;
-        background: rgba(0, 0, 0, 0.05);
-        color: #fff; }
+        background: rgba(0, 0, 0, 0.1); }
       .menu-trigger:active, .menu-trigger:focus, .menu-trigger:hover {
         border: 0;
         outline: 0; } }

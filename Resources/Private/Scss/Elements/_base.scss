@@ -75,7 +75,7 @@ h4 {
 }
 
 p {
-	line-height: 1.5em;
+	line-height: 1.5 * $font-size;
 	margin: 1em 0;
 }
 
@@ -95,14 +95,17 @@ button {
 	display: none;
 }
 
+input {
+	font-family: $main-font;
+}
+
 .headline-first_standard {
-	font-family: $main-font-serif;
-	font-weight: normal;
-	font-size: 1.5em;
-	letter-spacing: .149em;
+	font-weight: bold;
+	font-size: 1.5 * $font-size;
+	letter-spacing: .03em;
 	width: 50%;
-	padding: 0 0 1.6em;
-	margin-left: $font-size * 18;
+	padding: 0 0 1.6em 1em;
+	margin-left: $font-size * 16;
 
 	@include breakpoint('xs') {
 		margin-left: .8em;
@@ -112,10 +115,9 @@ button {
 }
 
 .headline-first_welcome {
-	font-family: $main-font-serif;
-	font-weight: normal;
-	font-size: 1.5em;
-	letter-spacing: .149em;
+	font-weight: bold;
+	font-size: 1.5 * $font-size;
+	letter-spacing: .03em;
 	padding: 0 0 1.6em 1em;
 
 	@include breakpoint('xs') {

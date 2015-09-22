@@ -7,28 +7,11 @@
 
 	.languagemenu_switch {
 		margin-left: 1em;
-		filter: grayscale(100%);
 		text-decoration: none;
 		height: 1em;
 
-		img {
-			height: $font-size;
-		}
-
 		&:hover {
-			filter: grayscale(0%);
-		}
-
-		&.-de {
-			img {
-				width: $font-size * 1.6;
-			}
-		}
-
-		&.-en {
-			img {
-				width: $font-size * 2;
-			}
+			text-decoration: underline;
 		}
 	}
 }

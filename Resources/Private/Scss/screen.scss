@@ -1,5 +1,6 @@
 @import 'Settings';
 @import 'Elements/font-awesome/font-awesome';
+@import 'Elements/computer-modern';
 @import 'Mixins/file-links';
 @import 'Mixins/responsive';
 @import 'Mixins/styles';
@@ -63,7 +64,6 @@
 }
 
 .advFirst {
-	font-size: 93%;
 	line-height: 1.4em;
 }
 
@@ -199,18 +199,17 @@
 		color: $text-color;
 		z-index: 99;
 		border: 0;
-		margin: ($font-size - 5) 0 0 3px;
+		margin: ($font-size - 10) 0 0 3px;
 
 		&:before {
 			content: '\f0c9';
-			font-family: fontawesome;
+			font-family: $icon-font;
 			margin-right: .3em;
 		}
 
 		&:hover {
 			cursor: pointer;
-			background: rgba(0, 0, 0, .05);
-			color: $white;
+			background: rgba(0, 0, 0, .1);
 		}
 
 		&:active,

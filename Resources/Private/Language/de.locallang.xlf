@@ -16,11 +16,11 @@
 <trans-unit id="header-actionpicture-title" xml:space="preserve">
 <target>Fotonachweis: Christian Fries</target>
 </trans-unit>
-<trans-unit id="header-languageswitch-de" xml:space="preserve">
-<target>Deutsche Version</target>
+<trans-unit id="header-languageswitch" xml:space="preserve">
+<target>English</target>
 </trans-unit>
-<trans-unit id="header-languageswitch-en" xml:space="preserve">
-<target>Englische Version</target>
+<trans-unit id="header-languageswitch-id" xml:space="preserve">
+<target>1</target>
 </trans-unit>
 <trans-unit id="header-breadcrumb-title" xml:space="preserve">
 <target>Sie sind hier</target>

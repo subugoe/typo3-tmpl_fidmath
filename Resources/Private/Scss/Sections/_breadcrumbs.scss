@@ -1,13 +1,11 @@
 .breadcrumbs {
-	font-size: 80%;
+	font-size: 90%;
 	height: auto;
-	min-height: 1.5em;
 	flex: 1;
 	padding: 4px 1em 0;
 	letter-spacing: .1em;
 	border-top: 1px solid $lighter-border-color;
 	border-bottom: 1px solid $lighter-border-color;
-	margin: 5px 0;
 
 	@include breakpoint('xs') {
 		text-align: right;
@@ -25,13 +23,12 @@
 	}
 
 	.breadcrumb-navigation_element {
-		text-transform: uppercase;
 		display: inline;
 		padding: 0;
 
 		&:not(:last-child):after {
 			content: '\f105';
-			font-family: fontawesome;
+			font-family: $icon-font;
 			margin-left: .5em;
 			margin-right: .5em;
 		}

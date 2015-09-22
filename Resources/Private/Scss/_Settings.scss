@@ -7,7 +7,7 @@ $print-color: #000;
 $white: #fff;
 $text-color: #000;
 $link-color: #192d57;
-$font-size: 14px;
+$font-size: 16px;
 
 // forms
 $form-field-width: $font-size * 20;
@@ -16,8 +16,9 @@ $form-label-width: $form-field-width * (2 / 3);
 
 $site-max-width: 1170px;
 
-$main-font: 'Trebuchet MS', Verdana, sans-serif;
-$main-font-serif: 'Droid Serif', Georgia, serif;
+$main-font: 'Computer Modern Sans', sans-serif;
+$main-font-serif: 'Computer Modern Serif', Georgia, serif;
 $icon-font: 'FontAwesome';
 
 $fa-font-path: '../Fonts';
+

@@ -17,10 +17,10 @@
 <source>Foto: Chistian Fries</source>
 </trans-unit>
 <trans-unit id="header-languageswitch-de" xml:space="preserve">
-<source>German version</source>
+<source>German</source>
 </trans-unit>
 <trans-unit id="header-languageswitch-en" xml:space="preserve">
-<source>English version</source>
+<source>English</source>
 </trans-unit>
 <trans-unit id="header-breadcrumb-title" xml:space="preserve">
 <source>You are here</source>

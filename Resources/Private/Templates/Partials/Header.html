@@ -15,15 +15,8 @@
 	<f:cObject typoscriptObjectPath="lib.breadcrumbs" />
 	<ul class="languagemenu">
 		<li>
-			<f:link.page additionalParams="{L: 0}" addQueryString="true" class="languagemenu_switch -de">
-				<f:image src="{f:uri.resource(path:'Images/DE.svg')}"
-				         alt="{f:translate(key: 'header-languageswitch-de')}"
-				         title="{f:translate(key: 'header-languageswitch-de')}"/>
-			</f:link.page>
-			<f:link.page additionalParams="{L: 1}" addQueryString="true" class="languagemenu_switch -en">
-				<f:image src="{f:uri.resource(path:'Images/GB.svg')}"
-				         alt="{f:translate(key: 'header-languageswitch-en')}"
-				         title="{f:translate(key: 'header-languageswitch-en')}"/>
+			<f:link.page additionalParams="{L: \"{f:translate(key:'header-languageswitch-id')}\"}" addQueryString="true" class="languagemenu_switch">
+				{f:translate(key: 'header-languageswitch')}
 			</f:link.page>
 		</li>
 	</ul>
