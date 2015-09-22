@@ -27,18 +27,8 @@
 	display: none;
 }
 
-#newsnavi {
-	position: relative;
-	width: 100%;
-	text-align: right;
-	float: right;
-	top: -35px;
-}
-
 .news-list-date {
 	float: right;
-	color: $text-color;
-	height: 20px;
 	margin-top: -2px;
 	margin-right: -2px;
 	font-size: .8em;
@@ -51,10 +41,7 @@
 }
 
 .news-list-entry {
-	clear: both;
 	padding-bottom: 1em;
-	border-bottom: 1px solid $white;
-	width: 100%;
 
 	.news-list-header {
 		min-width: 0;
@@ -66,5 +53,13 @@
 			font-family: $icon-font;
 		}
 	}
+}
 
+.news-backlink-wrap {
+	a {
+		&:before {
+			font-family: $icon-font;
+			content: '\f177';
+		}
+	}
 }

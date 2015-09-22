@@ -2,7 +2,9 @@
 	list-style-type: none;
 	font-size: 95%;
 	margin-bottom: 1em;
+	padding-top: 1em;
 	text-align: center;
+	border-top: 1px solid $border-color;
 
 	@include breakpoint('xs') {
 		width: 100%;
