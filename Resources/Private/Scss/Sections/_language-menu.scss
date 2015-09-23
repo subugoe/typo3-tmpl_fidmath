@@ -10,6 +10,11 @@
 		text-decoration: none;
 		height: 1em;
 
+		&:before {
+			content: '\f0ac';
+			font-family: $icon-font;
+		}
+
 		&:hover {
 			text-decoration: underline;
 		}

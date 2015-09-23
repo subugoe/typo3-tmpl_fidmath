@@ -14,7 +14,10 @@ $form-field-width: $font-size * 20;
 $form-submit-width: $form-field-width / 2;
 $form-label-width: $form-field-width * (2 / 3);
 
-$site-max-width: 1170px;
+$site-max-width: 75 * $font-size;
+
+$large: $site-max-width;
+
 
 $main-font: 'Computer Modern Sans', sans-serif;
 $main-font-serif: 'Computer Modern Serif', Georgia, serif;

@@ -1927,56 +1927,56 @@
   content: "\f280"; }
 
 @font-face {
-  font-family: "Computer Modern Sans";
+  font-family: 'Computer Modern Sans';
   src: url('../Fonts/ComputerModern/cmunbxo-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunbxo-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunbxo.otf') format('opentype'), url('../Fonts/ComputerModern/cmunbxo-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunbxo-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunbxo-webfont.svg#cmu_brightboldoblique') format('svg');
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: "Computer Modern Sans";
+  font-family: 'Computer Modern Sans';
   src: url('../Fonts/ComputerModern/cmunsi-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunsi-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunsi.otf') format('opentype'), url('../Fonts/ComputerModern/cmunsi-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunsi-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunsi-webfont.svg#cmu_sans_serifoblique') format('svg');
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
-  font-family: "Computer Modern Sans";
+  font-family: 'Computer Modern Sans';
   src: url('../Fonts/ComputerModern/cmunss-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunss-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunss.otf') format('opentype'), url('../Fonts/ComputerModern/cmunss-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunss-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunss-webfont.svg#cmu_sans_serifmedium') format('svg');
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "Computer Modern Sans";
+  font-family: 'Computer Modern Sans';
   src: url('../Fonts/ComputerModern/cmunsx-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunsx-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunsx.otf') format('opentype'), url('../Fonts/ComputerModern/cmunsx-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunsx-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunsx-webfont.svg#cmu_sans_serifbold') format('svg');
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: "Computer Modern Serif";
+  font-family: 'Computer Modern Serif';
   src: url('../Fonts/ComputerModern/cmunrm-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunrm-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunrm.otf') format('opentype'), url('../Fonts/ComputerModern/cmunrm-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunrm-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunrm-webfont.svg#cmu_serifroman') format('svg');
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "Computer Modern Serif";
+  font-family: 'Computer Modern Serif';
   src: url('../Fonts/ComputerModern/cmunsl-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunsl-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunsl.otf') format('opentype'), url('../Fonts/ComputerModern/cmunsl-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunsl-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunsl-webfont.svg#cmu_serif_extraromanslanted') format('svg');
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
-  font-family: "Computer Modern Serif";
+  font-family: 'Computer Modern Serif';
   src: url('../Fonts/ComputerModern/cmunbl-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunbl-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunbl.otf') format('opentype'), url('../Fonts/ComputerModern/cmunbl-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunbl-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunbl-webfont.svg#cmu_serif_extraboldslanted') format('svg');
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: "Computer Modern Serif";
+  font-family: 'Computer Modern Serif';
   src: url('../Fonts/ComputerModern/cmunbx-webfont.eot');
   src: url('../Fonts/ComputerModern/cmunbx-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/ComputerModern/cmunbx.otf') format('opentype'), url('../Fonts/ComputerModern/cmunbx-webfont.woff') format('woff'), url('../Fonts/ComputerModern/cmunbx-webfont.ttf') format('truetype'), url('../Fonts/ComputerModern/cmunbx-webfont.svg#cmu_serifbold') format('svg');
   font-weight: bold;
@@ -2273,6 +2273,9 @@ input {
     margin-left: 1em;
     text-decoration: none;
     height: 1em; }
+    .languagemenu .languagemenu_switch:before {
+      content: '\f0ac';
+      font-family: 'FontAwesome'; }
     .languagemenu .languagemenu_switch:hover {
       text-decoration: underline; }
 
@@ -2296,7 +2299,7 @@ input {
   text-align: left;
   font-family: 'Computer Modern Sans', sans-serif;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 2%;
   display: -webkit-box;
   display: -webkit-flex;
