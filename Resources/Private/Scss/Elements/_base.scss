@@ -62,7 +62,6 @@ strong {
 h2 {
 	&.searchingIn {
 		color: $text-color;
-		font-family: $main-font-serif;
 		font-weight: normal;
 		font-size: 1.29em;
 		letter-spacing: .1em;
@@ -104,7 +103,7 @@ input {
 	font-size: 1.5 * $font-size;
 	letter-spacing: .03em;
 	width: 50%;
-	padding: 0 0 1.6em 1em;
+	padding: 0 0 1.6em .6em;
 	margin-left: $font-size * 16;
 
 	@include breakpoint('xs') {

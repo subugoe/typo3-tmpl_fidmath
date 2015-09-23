@@ -1,6 +1,6 @@
 @import 'Settings';
 @import 'Elements/font-awesome/font-awesome';
-@import 'Elements/computer-modern';
+@import 'Elements/open-sans/everything';
 @import 'Mixins/file-links';
 @import 'Mixins/responsive';
 @import 'Mixins/styles';
@@ -61,10 +61,6 @@
 
 .tabs li .currentTab {
 	font-weight: bold;
-}
-
-.advFirst {
-	line-height: 1.4em;
 }
 
 .dbGroup {

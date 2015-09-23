@@ -19,9 +19,9 @@ $site-max-width: 75 * $font-size;
 $large: $site-max-width;
 
 
-$main-font: 'Computer Modern Sans', sans-serif;
-$main-font-serif: 'Computer Modern Serif', Georgia, serif;
+$main-font: 'Open Sans', Arial, sans-serif;
 $icon-font: 'FontAwesome';
 
 $fa-font-path: '../Fonts';
+$open-sans-path: $fa-font-path + '/OpenSans';
 
