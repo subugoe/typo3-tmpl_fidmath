@@ -105,7 +105,7 @@
 
 		.pz2-searchField {
 			@include breakpoint('xs') {
-				 width: auto;
+				width: auto;
 			}
 		}
 	}
@@ -230,5 +230,13 @@
 .pz2-extendedLink {
 	&:hover {
 		text-decoration: none;
+	}
+}
+
+.pz2-atomLink {
+	&:before {
+		content: '\f09e';
+		font-family: $icon-font;
+		margin: 0 .5em;
 	}
 }

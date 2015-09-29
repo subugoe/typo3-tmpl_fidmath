@@ -2518,6 +2518,11 @@ input {
 .pz2-extendedLink:hover {
   text-decoration: none; }
 
+.pz2-atomLink:before {
+  content: '\f09e';
+  font-family: 'FontAwesome';
+  margin: 0 .5em; }
+
 .tx-ezbrequest-pi1 #navi {
   height: 2.5em; }
 .tx-ezbrequest-pi1 #journalNavi {
