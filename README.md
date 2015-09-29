@@ -11,3 +11,5 @@ in setup, and also add the basic constants with
 ## For developers
 
 Compiling Scss to CSS needs either a call to ```gulp``` in the root directory of this extension or ```./gradlew gulp_build```.
+
+When using nvm switch to this directory and run ```nvm use ``` and ```npm install```
