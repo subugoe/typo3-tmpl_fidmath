@@ -2355,7 +2355,9 @@ input {
       .header .header-actionspicture {
         display: none; } }
     .header .header-actionspicture img {
-      border: 0; }
+      border: 0;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
 
 .main-content {
   -webkit-box-flex: 3;

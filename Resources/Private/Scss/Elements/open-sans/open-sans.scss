@@ -1,22 +1,22 @@
-$open-sans-path: "../fonts" !default;
-$open-sans-formats: ("eot", "svg", "ttf", "woff") !default;
+$open-sans-path: '../fonts' !default;
+$open-sans-formats: ('eot', 'svg', 'ttf', 'woff') !default;
 
-@mixin open-sans-font-face( $font, $svgid, $weight: normal, $style: normal ) {
+@mixin open-sans-font-face($font, $svgid, $weight: normal, $style: normal) {
 	$src: ();
 	$eot: null;
 
 	@each $format in $open-sans-formats {
-		@if $format == "eot" {
+		@if $format == 'eot' {
 			$src: $src, url('#{$open-sans-path}/#{$font}/opensans-#{$font}-webfont.eot#iefix') format('embedded-opentype');
 			$eot: url('#{$open-sans-path}/#{$font}/opensans-#{$font}-webfont.eot');
 		}
-		@if $format == "svg" {
+		@if $format == 'svg' {
 			$src: $src, url('#{$open-sans-path}/#{$font}/opensans-#{$font}-webfont.svg##{$svgid}') format('svg');
 		}
-		@if $format == "ttf" {
+		@if $format == 'ttf' {
 			$src: $src, url('#{$open-sans-path}/#{$font}/opensans-#{$font}-webfont.ttf') format('ttf');
 		}
-		@if $format == "woff" {
+		@if $format == 'woff' {
 			$src: $src, url('#{$open-sans-path}/#{$font}/opensans-#{$font}-webfont.woff') format('woff');
 		}
 	}
