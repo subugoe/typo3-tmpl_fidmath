@@ -175,6 +175,29 @@
 			color: $link-color;
 		}
 	}
+
+	.pz2-submitButton {
+		float: left;
+		background: $white;
+		border: 1px solid #c1d0ed;
+		border-radius: 5px;
+		color: #555555;
+		width: 160px;
+		min-width: 160px;
+		display: inline;
+		height: 30px;
+		text-transform: uppercase;
+		padding: 4px;
+	}
+
+	.pz2-searchField {
+		background: $white;
+		padding: 4px;
+		font-size: 100%;
+		text-indent: 0.5em;
+		border-radius: 5px;
+	}
+
 }
 
 #pz2-results {

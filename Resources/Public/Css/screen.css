@@ -2483,6 +2483,24 @@ input {
     margin-left: 1em; }
   #pazpar2 .pz2-extraLinks:hover {
     color: #192d57; }
+  #pazpar2 .pz2-submitButton {
+    float: left;
+    background: #fff;
+    border: 1px solid #c1d0ed;
+    border-radius: 5px;
+    color: #555555;
+    width: 160px;
+    min-width: 160px;
+    display: inline;
+    height: 30px;
+    text-transform: uppercase;
+    padding: 4px; }
+  #pazpar2 .pz2-searchField {
+    background: #fff;
+    padding: 4px;
+    font-size: 100%;
+    text-indent: 0.5em;
+    border-radius: 5px; }
 
 @media (max-width: 639px) {
   #pz2-results {
