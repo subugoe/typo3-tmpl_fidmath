@@ -2080,44 +2080,62 @@ input {
       padding: 0 0 1em; } }
 
 .csc-form-element-textline input[type=text], .iputStart, .powermail_input, .powermail_textarea {
-  border: 1px solid #d4d4d4;
+  border: 1px solid #25589A;
   width: 320px;
-  padding: .2em .8em;
-  margin: 1em 0; }
+  padding: .25em .8em;
+  margin: 0;
+  background: #fff;
+  font-size: 16px; }
 
 .csc-form-element-select select, .powermail_select {
   width: 320px;
-  height: 32px; }
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #25589A;
+  font-size: 16px; }
 
 .csc-form-element-submit input, .submStartSmall, .submStart, .powermail_submit {
-  background: #d4d4d4;
-  border: 1px solid #d4d4d4;
-  color: #000;
+  background: #25589A;
+  border: 0;
+  color: #fff;
   width: 160px;
   min-width: 160px;
-  margin: 1em 0;
+  margin: 0;
   display: inline;
-  padding: .2em .8em;
-  height: 1.7em;
-  text-transform: uppercase; }
+  height: 32px;
+  padding: .25em .8em;
+  text-transform: uppercase;
+  border-radius: 0;
+  text-shadow: none;
+  font-size: 16px;
+  font-weight: normal; }
 
 #simpleSearch, #advancedSearch {
   width: 70%; }
 
-.powermail_fieldwrap {
-  min-height: 40px;
+.csc-mailform li, .csc-mailform .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .csc-mailform .facetActive {
+  list-style-type: none !important;
+  margin-left: 0 !important; }
+
+.powermail_fieldwrap, .csc-form-element {
+  margin: .5em 0;
   float: left;
   clear: both; }
 
-.powermail_legend {
-  padding: 20px 0;
+.powermail_legend, .csc-mailform legend {
+  padding: 16px 0;
   font-weight: bold; }
 
-.csc-mailform-field label, .powermail_label {
+.csc-mailform label {
   float: left;
   width: 213.33333px;
-  margin: 1em 0; }
-  .csc-mailform-field label:after, .powermail_label:after {
+  margin: 0; }
+
+.powermail_label {
+  float: left;
+  width: 213.33333px;
+  margin: 0; }
+  .powermail_label:after {
     cursor: help;
     content: '\f129';
     display: inline-block;
@@ -2127,23 +2145,17 @@ input {
     margin: 0 0 0 2px;
     font-size: 16px;
     text-align: center;
-    border: 1px solid #d4d4d4;
     font-family: 'FontAwesome'; }
-  .csc-mailform-field label[title=""], .powermail_label[title=""] {
+  .powermail_label[title=""] {
     cursor: inherit; }
-    .csc-mailform-field label[title=""]:after, .powermail_label[title=""]:after {
+    .powermail_label[title=""]:after {
       display: none; }
-
-.csc-form-element {
-  float: left;
-  width: 100%;
-  clear: both; }
 
 .powermail_check_outer {
   float: left; }
   .powermail_check_outer .powermail_check_inner {
     float: left;
-    margin: 1em 0; }
+    margin: 0; }
 
 .powermail_form h3 {
   display: none; }
@@ -2483,6 +2495,39 @@ input {
     margin-left: 1em; }
   #pazpar2 .pz2-extraLinks:hover {
     color: #192d57; }
+  #pazpar2 .pz2-submitButton {
+    background: #25589A;
+    border: 0;
+    color: #fff;
+    width: 160px;
+    min-width: 160px;
+    margin: 0;
+    display: inline;
+    height: 32px;
+    padding: .25em .8em;
+    text-transform: uppercase;
+    border-radius: 0;
+    text-shadow: none;
+    font-size: 16px;
+    font-weight: normal; }
+  #pazpar2 .pz2-months {
+    width: 320px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #25589A;
+    font-size: 16px; }
+  #pazpar2 .pz2-searchField {
+    border: 1px solid #25589A;
+    width: 320px;
+    padding: .25em .8em;
+    margin: 0;
+    background: #fff;
+    font-size: 16px;
+    margin-right: 16px;
+    padding: 4px .8em; }
+    @media (max-width: 639px) {
+      #pazpar2 .pz2-searchField {
+        width: auto; } }
 
 @media (max-width: 639px) {
   #pz2-results {
@@ -2504,31 +2549,29 @@ input {
 #pz2-results .pz2-details dl ul li, #pz2-results .pz2-details dl ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pz2-results .pz2-details dl ul .facetActive {
   list-style-type: circle; }
 
-.pz2-months {
-  width: 320px;
-  height: 32px; }
-
-.pz2-searchField {
-  border-color: #c1d0ed !important; }
-  @media (max-width: 639px) {
-    .pz2-searchField {
-      width: auto; } }
-
 .pz2-pages li, .pz2-pages .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .pz2-pages .facetActive {
   margin-left: 0; }
 
-.pz2-extendedLink:hover {
-  text-decoration: none; }
+.pz2-extendedLink {
+  margin-top: 0; }
+  .pz2-extendedLink:hover {
+    text-decoration: none; }
 
 .pz2-atomLink:before {
   content: '\f09e';
   font-family: 'FontAwesome';
   margin: 0 .5em; }
 
+.pz2-extended .pz2-textFieldLabel {
+  margin-right: 1em; }
+
+.pz2-fieldContainer {
+  margin: .5em 0; }
+
 .tx-ezbrequest-pi1 #navi {
   height: 2.5em; }
 .tx-ezbrequest-pi1 #journalNavi {
-  padding: .7em 0;
+  padding: 0 0 .5em;
   border-bottom: 1px solid #f0f0f0; }
   .tx-ezbrequest-pi1 #journalNavi li, .tx-ezbrequest-pi1 #journalNavi .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 #journalNavi .facetActive {
     padding: 0; }
@@ -2541,12 +2584,16 @@ input {
       left: -32px; }
   .tx-ezbrequest-pi1 #journalList a {
     color: #000; }
-.tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
-  border: 1px solid #d4d4d4;
-  width: 320px;
-  padding: .2em .8em;
-  margin: 1em 0;
-  width: 160px; }
+.tx-ezbrequest-pi1 #ezb_search_form {
+  margin-top: .5em; }
+  .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
+    border: 1px solid #25589A;
+    width: 320px;
+    padding: .25em .8em;
+    margin: 0;
+    background: #fff;
+    font-size: 16px;
+    width: 160px; }
 .tx-ezbrequest-pi1 .jourItem {
   padding-top: .3em; }
 .tx-ezbrequest-pi1 .alphabetMenu li, .tx-ezbrequest-pi1 .alphabetMenu .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 .alphabetMenu .facetActive {
@@ -2689,9 +2736,8 @@ input {
   max-width: 900px;
   min-width: 700px;
   margin-bottom: 2em; }
-.tx-mathematicians .submStart {
-  margin: 0 1em;
-  float: none; }
+.tx-mathematicians .iputStart {
+  margin-right: 16px; }
 
 .tx_find {
   display: -webkit-box;
@@ -2742,15 +2788,22 @@ input {
       float: left;
       bottom: 0; }
     .tx_find form .fieldType-search {
-      color: #999; }
+      color: #000; }
     .tx_find form .submit {
-      height: 2em;
-      background-color: #f0f0f0;
-      border: 1px solid #f0f0f0;
-      color: #000;
-      font-weight: bold;
-      padding: 3px 12px;
-      text-transform: uppercase; }
+      background: #25589A;
+      border: 0;
+      color: #fff;
+      width: 160px;
+      min-width: 160px;
+      margin: 0;
+      display: inline;
+      height: 32px;
+      padding: .25em .8em;
+      text-transform: uppercase;
+      border-radius: 0;
+      text-shadow: none;
+      font-size: 16px;
+      font-weight: normal; }
       .tx_find form .submit:active {
         background-color: #f0f0f0; }
     .tx_find form .extendedSearch {
@@ -2781,10 +2834,12 @@ input {
       line-height: 1.33em;
       margin-left: 0; }
     .tx_find .fieldContainer input {
-      padding: 2px;
-      border: 1px solid #c1d0ed;
-      color: #000;
-      background: #fff; }
+      border: 1px solid #25589A;
+      width: 320px;
+      padding: .25em .8em;
+      margin: 0;
+      background: #fff;
+      font-size: 16px; }
     .tx_find .fieldContainer .noleftmargin {
       margin-left: 0; }
     .tx_find .fieldContainer select {
@@ -2794,9 +2849,7 @@ input {
     display: none; }
   .tx_find .field-default input {
     width: 400px;
-    height: 1.5em;
-    margin: 0 6px 2px 0;
-    padding: 4px; }
+    margin-right: 16px; }
   .tx_find .fieldType-Text .alternate label {
     display: inline-block;
     float: none;

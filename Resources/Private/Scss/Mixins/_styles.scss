@@ -1,5 +1,5 @@
-$form-margin: 1em 0;
-$form-padding: .2em .8em;
+$form-margin: 0;
+$form-padding: .25em .8em;
 $form-border: 1px solid $button-background;
 
 @mixin table() {
@@ -15,28 +15,42 @@ $form-border: 1px solid $button-background;
 	width: $form-field-width;
 	padding: $form-padding;
 	margin: $form-margin;
+	background: $white;
+	font-size: $font-size;
 }
 
 @mixin input-submit() {
 	background: $button-background;
-	border: $form-border;
-	color: $text-color;
+	border: 0;
+	color: $white;
 	width: $form-submit-width;
 	min-width: $form-submit-width;
 	margin: $form-margin;
 	display: inline;
+	height: 2 * $font-size;
 	padding: $form-padding;
-	height: 1.7em;
 	text-transform: uppercase;
+	border-radius: 0;
+	text-shadow: none;
+	font-size: $font-size;
+	font-weight: normal;
 }
 
 @mixin input-select() {
 	width: $form-field-width;
 	height: (2 * $font-size);
+	background-color: $white;
+	border: $form-border;
+	font-size: $font-size;
 }
 
 @mixin form-label() {
 	float: left;
 	width: $form-label-width;
 	margin: $form-margin;
+}
+
+@mixin form-legend() {
+	padding: $font-size 0;
+	font-weight: bold;
 }

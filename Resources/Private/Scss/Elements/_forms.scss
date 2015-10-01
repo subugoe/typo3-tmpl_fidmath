@@ -22,19 +22,29 @@
 	width: 70%;
 }
 
-.powermail_fieldwrap {
-	min-height: 40px;
+.csc-mailform {
+	li {
+		list-style-type: none !important;
+		margin-left: 0 !important;
+	}
+}
+
+.powermail_fieldwrap,
+.csc-form-element {
+	margin: .5em 0;
 	float: left;
 	clear: both;
-
 }
 
-.powermail_legend {
-	padding: 20px 0;
-	font-weight: bold;
+.powermail_legend,
+.csc-mailform legend {
+	@include form-legend;
 }
 
-.csc-mailform-field label,
+.csc-mailform label {
+	@include form-label;
+}
+
 .powermail_label {
 	@include form-label;
 
@@ -42,13 +52,12 @@
 		cursor: help;
 		content: '\f129';
 		display: inline-block;
-		height: 16px;
-		width: 16px;
-		line-height: 16px;
+		height: $font-size;
+		width: $font-size;
+		line-height: $font-size;
 		margin: 0 0 0 2px;
 		font-size: $font-size;
 		text-align: center;
-		border: 1px solid $button-background;
 		font-family: $icon-font;
 	}
 
@@ -61,18 +70,12 @@
 	}
 }
 
-.csc-form-element {
-	float: left;
-	width: 100%;
-	clear: both;
-}
-
 .powermail_check_outer {
 	float: left;
 
 	.powermail_check_inner {
 		float: left;
-		margin: 1em 0;
+		margin: 0;
 	}
 }
 
