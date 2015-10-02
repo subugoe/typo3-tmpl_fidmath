@@ -2,10 +2,10 @@ $border-color: #f0f0f0;
 $background-color: #b5c5e6;
 $lighter-border-color: #c1d0ed;
 $body-background: #dae1f4;
-$button-background: #d4d4d4;
-$print-color: #000;
+$button-background: #25589a;
 $white: #fff;
 $text-color: #000;
+$print-color: $text-color;
 $link-color: #192d57;
 $font-size: 16px;
 
@@ -18,6 +18,9 @@ $site-max-width: 75 * $font-size;
 
 $large: $site-max-width;
 
+$form-margin: 0;
+$form-padding: ($font-size / 4 ) ($font-size * .75);
+$form-border: 1px solid $button-background;
 
 $main-font: 'Open Sans', Arial, sans-serif;
 $icon-font: 'FontAwesome';

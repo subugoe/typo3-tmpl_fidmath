@@ -71,17 +71,12 @@ $tab-selected: #263476;
 		}
 
 		.fieldType-search {
-			color: #999;
+			color: $text-color;
 		}
 
 		.submit {
-			height: 2em;
-			background-color: $border-color;
-			border: 1px solid $border-color;
-			color: $text-color;
-			font-weight: bold;
-			padding: 3px 12px;
-			text-transform: uppercase;
+
+			@include input-submit();
 
 			&:active {
 				background-color: $border-color;
@@ -133,10 +128,7 @@ $tab-selected: #263476;
 		}
 
 		input {
-			padding: 2px;
-			border: 1px solid $lighter-border-color;
-			color: $text-color;
-			background: $white;
+			@include input-text();
 		}
 
 		.noleftmargin {
@@ -156,9 +148,8 @@ $tab-selected: #263476;
 
 		input {
 			width: 400px;
-			height: 1.5em;
-			margin: 0 6px 2px 0;
-			padding: 4px;
+			margin-right: $font-size;
+
 		}
 	}
 

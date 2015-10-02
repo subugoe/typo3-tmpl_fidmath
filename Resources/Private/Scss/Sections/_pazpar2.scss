@@ -105,7 +105,7 @@
 
 		.pz2-searchField {
 			@include breakpoint('xs') {
-				 width: auto;
+				width: auto;
 			}
 		}
 	}
@@ -175,6 +175,27 @@
 			color: $link-color;
 		}
 	}
+
+	.pz2-submitButton {
+		@include input-submit;
+	}
+
+	.pz2-months {
+		@include input-select;
+	}
+
+	.pz2-searchField {
+
+		@include input-text;
+
+		margin-right: $font-size;
+		padding: $form-padding;
+
+		@include breakpoint('xs') {
+			width: auto;
+		}
+
+	}
 }
 
 #pz2-results {
@@ -209,18 +230,6 @@
 	}
 }
 
-.pz2-months {
-	@include input-select;
-}
-
-.pz2-searchField {
-	border-color: $lighter-border-color !important;
-
-	@include breakpoint('xs') {
-		width: auto;
-	}
-}
-
 .pz2-pages {
 	li {
 		margin-left: 0;
@@ -228,7 +237,27 @@
 }
 
 .pz2-extendedLink {
+	margin-top: 0;
+
 	&:hover {
-		text-decoration: none;
+		text-decoration: underline !important;
 	}
+}
+
+.pz2-atomLink {
+	&:before {
+		content: '\f09e';
+		font-family: $icon-font;
+		margin: 0 .5em;
+	}
+}
+
+.pz2-extended {
+	.pz2-textFieldLabel {
+		margin-right: 1em;
+	}
+}
+
+.pz2-fieldContainer {
+	margin: .5em 0;
 }
