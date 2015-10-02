@@ -94,21 +94,6 @@ RTE.default.proc {
 	}
 }
 
-plugin.feadmin.dmailsubscription.color1 = #CCCCCC
-plugin.feadmin.dmailsubscription.email = kontakt@vifamath.de
-plugin.feadmin.dmailsubscription.emailName = vifamath
-plugin.feadmin.dmailsubscription.pid = 149
-
-[globalVar = GP:L = 1]
-	plugin.feadmin.dmailsubscription {
-		file.templateFile = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/DirectMail/fe_admin_dmailsubscrip_en.tmpl
-	}
-[else]
-	plugin.feadmin.dmailsubscription {
-		file.templateFile = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/DirectMail/fe_admin_dmailsubscrip_de.tmpl
-	}
-[end]
-
 historyPage {
 	# cat=middlebar/links/1; type=string; label= ID of the history page
 	value = 112
@@ -148,6 +133,8 @@ bookshelfTextEN {
 	# cat=middlebar/language/4; type=string; label= English name of the bookshelf link
 	value = Bookshelf
 }
+
+subject-search = 92
 
 ### Constants from pageConfig
 plugin.tx_directmail_pi1.siteUrl = http://vifamath.dev

@@ -189,7 +189,7 @@
 		@include input-text;
 
 		margin-right: $font-size;
-		padding: ($font-size / 4) .8em;
+		padding: $form-padding;
 
 		@include breakpoint('xs') {
 			width: auto;
@@ -240,7 +240,7 @@
 	margin-top: 0;
 
 	&:hover {
-		text-decoration: none;
+		text-decoration: underline !important;
 	}
 }
 

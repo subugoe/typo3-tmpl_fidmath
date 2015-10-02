@@ -52,7 +52,7 @@ page {
 
 	includeCSS {
 		file1 = EXT:tmpl_fidmath/Resources/Public/Css/screen.css
-		file1.media = screen
+		file1.media = all
 
 		file2 = EXT:tmpl_fidmath/Resources/Public/Css/print.css
 		file2.media = print
@@ -186,3 +186,39 @@ plugin.tx_pazpar2.settings {
 		4.direction = ascending
 	}
 }
+
+[PIDinRootline = {$subject-search}]
+	# configure pazpar2:
+	plugin.tx_pazpar2.settings {
+		# listen to nkwgok changes
+		triggeredByNKWGOK = 1
+		# hide the extended search link
+		allowExtendedSearch = 0
+		# use placeholder text 2 'additional search term'
+		mainSearchFieldPlaceholder = 2
+	}
+
+	# configure pazpar2 placeholder strings
+	plugin.tx_pazpar2._LOCAL_LANG {
+		# Hack! TYPO3 seems unable to recognise the 'en' language code
+		default {
+			form-main-placeholder = add a search term
+		}
+
+		de {
+			form-main-placeholder = zusätzlicher Suchbegriff
+		}
+	}
+
+	# add CSS rules to reposition the search form
+	page.CSS_inlineStyle (
+  #pazpar2 .pz2-mainForm {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+  }
+  #pazpar2 .pz2-mainForm input.pz2-searchField {
+    width: 250px;
+  }
+	)
+[global]

@@ -2052,7 +2052,7 @@ button {
 .hidden {
   display: none; }
 
-input {
+input, select {
   font-family: 'Open Sans', Arial, sans-serif; }
 
 .headline-first_standard {
@@ -2080,9 +2080,9 @@ input {
       padding: 0 0 1em; } }
 
 .csc-form-element-textline input[type=text], .iputStart, .powermail_input, .powermail_textarea {
-  border: 1px solid #25589A;
+  border: 1px solid #25589a;
   width: 320px;
-  padding: .25em .8em;
+  padding: 4px 12px;
   margin: 0;
   background: #fff;
   font-size: 16px; }
@@ -2091,11 +2091,11 @@ input {
   width: 320px;
   height: 32px;
   background-color: #fff;
-  border: 1px solid #25589A;
+  border: 1px solid #25589a;
   font-size: 16px; }
 
 .csc-form-element-submit input, .submStartSmall, .submStart, .powermail_submit {
-  background: #25589A;
+  background: #25589a;
   border: 0;
   color: #fff;
   width: 160px;
@@ -2103,12 +2103,17 @@ input {
   margin: 0;
   display: inline;
   height: 32px;
-  padding: .25em .8em;
+  padding: 4px 12px;
   text-transform: uppercase;
   border-radius: 0;
   text-shadow: none;
   font-size: 16px;
   font-weight: normal; }
+  .csc-form-element-submit input:hover, .submStartSmall:hover, .submStart:hover, .powermail_submit:hover {
+    border: 1px solid #b5c5e6; }
+  .csc-form-element-submit input:focus, .submStartSmall:focus, .submStart:focus, .powermail_submit:focus {
+    outline-offset: 0;
+    border: 0; }
 
 #simpleSearch, #advancedSearch {
   width: 70%; }
@@ -2494,7 +2499,7 @@ input {
   #pazpar2 .pz2-extraLinks:hover {
     color: #192d57; }
   #pazpar2 .pz2-submitButton {
-    background: #25589A;
+    background: #25589a;
     border: 0;
     color: #fff;
     width: 160px;
@@ -2502,27 +2507,32 @@ input {
     margin: 0;
     display: inline;
     height: 32px;
-    padding: .25em .8em;
+    padding: 4px 12px;
     text-transform: uppercase;
     border-radius: 0;
     text-shadow: none;
     font-size: 16px;
     font-weight: normal; }
+    #pazpar2 .pz2-submitButton:hover {
+      border: 1px solid #b5c5e6; }
+    #pazpar2 .pz2-submitButton:focus {
+      outline-offset: 0;
+      border: 0; }
   #pazpar2 .pz2-months {
     width: 320px;
     height: 32px;
     background-color: #fff;
-    border: 1px solid #25589A;
+    border: 1px solid #25589a;
     font-size: 16px; }
   #pazpar2 .pz2-searchField {
-    border: 1px solid #25589A;
+    border: 1px solid #25589a;
     width: 320px;
-    padding: .25em .8em;
+    padding: 4px 12px;
     margin: 0;
     background: #fff;
     font-size: 16px;
     margin-right: 16px;
-    padding: 4px .8em; }
+    padding: 4px 12px; }
     @media (max-width: 639px) {
       #pazpar2 .pz2-searchField {
         width: auto; } }
@@ -2553,7 +2563,7 @@ input {
 .pz2-extendedLink {
   margin-top: 0; }
   .pz2-extendedLink:hover {
-    text-decoration: none; }
+    text-decoration: underline !important; }
 
 .pz2-atomLink:before {
   content: '\f09e';
@@ -2585,9 +2595,9 @@ input {
 .tx-ezbrequest-pi1 #ezb_search_form {
   margin-top: .5em; }
   .tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
-    border: 1px solid #25589A;
+    border: 1px solid #25589a;
     width: 320px;
-    padding: .25em .8em;
+    padding: 4px 12px;
     margin: 0;
     background: #fff;
     font-size: 16px;
@@ -2788,7 +2798,7 @@ input {
     .tx_find form .fieldType-search {
       color: #000; }
     .tx_find form .submit {
-      background: #25589A;
+      background: #25589a;
       border: 0;
       color: #fff;
       width: 160px;
@@ -2796,12 +2806,17 @@ input {
       margin: 0;
       display: inline;
       height: 32px;
-      padding: .25em .8em;
+      padding: 4px 12px;
       text-transform: uppercase;
       border-radius: 0;
       text-shadow: none;
       font-size: 16px;
       font-weight: normal; }
+      .tx_find form .submit:hover {
+        border: 1px solid #b5c5e6; }
+      .tx_find form .submit:focus {
+        outline-offset: 0;
+        border: 0; }
       .tx_find form .submit:active {
         background-color: #f0f0f0; }
     .tx_find form .extendedSearch {
@@ -2832,9 +2847,9 @@ input {
       line-height: 1.33em;
       margin-left: 0; }
     .tx_find .fieldContainer input {
-      border: 1px solid #25589A;
+      border: 1px solid #25589a;
       width: 320px;
-      padding: .25em .8em;
+      padding: 4px 12px;
       margin: 0;
       background: #fff;
       font-size: 16px; }
