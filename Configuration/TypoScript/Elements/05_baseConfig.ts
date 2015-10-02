@@ -122,10 +122,6 @@ temp.rss {
 	page.includeJS.file >
 [global]
 
-tt_content.text.20.parseFunc.tags.link {
-	stdWrap.parseFunc.constants = 1
-}
-
 ################################################
 ##Gobale Marker: Personen + Ausdrücke + Phrasen
 ################################################

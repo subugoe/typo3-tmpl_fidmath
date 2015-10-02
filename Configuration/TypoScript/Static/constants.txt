@@ -1,6 +1,8 @@
 ### Constants from baseConfig
 styles.content.links.allowTags = address, cite, b, i, u, a, img, br, div, center, hr, sub, sup, p,strong, em, li, ul, ol, blockquote, strike, span, h2, h3, h4, h5
 styles.content.links.allowTags := addToList(abbr, acronym)
+styles.content.links.target = _self
+
 content.RTE_compliant = 0
 RTE.default.enableWordClean = 1
 RTE.default.disableEnterParagraphs = 0
@@ -135,9 +137,6 @@ bookshelfTextEN {
 }
 
 subject-search = 92
-
-### Constants from pageConfig
-plugin.tx_directmail_pi1.siteUrl = http://vifamath.dev
 
 plugin.tx_news {
 	view {
