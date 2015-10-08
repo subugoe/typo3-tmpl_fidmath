@@ -2372,8 +2372,7 @@ input, select {
       .header .header-actionspicture {
         display: none; } }
     .header .header-actionspicture img {
-      border: 0;
-      opacity: .4; }
+      border: 0; }
 
 .main-content {
   -webkit-box-flex: 3;
