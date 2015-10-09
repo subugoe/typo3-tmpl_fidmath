@@ -10,12 +10,6 @@
 <trans-unit id="header-logo-title" xml:space="preserve">
 <target>Website of the Virtual Library of Mathematics</target>
 </trans-unit>
-<trans-unit id="header-actionpicture-alt" xml:space="preserve">
-<target>Blackboard full of formulae</target>
-</trans-unit>
-<trans-unit id="header-actionpicture-title" xml:space="preserve">
-<target>Foto: Chistian Fries</target>
-</trans-unit>
 <trans-unit id="header-languageswitch" xml:space="preserve">
 <target>Deutsch</target>
 </trans-unit>

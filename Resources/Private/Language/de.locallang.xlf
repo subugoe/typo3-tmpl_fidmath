@@ -8,13 +8,7 @@
 <target>externer link</target>
 </trans-unit>
 <trans-unit id="header-logo-title" xml:space="preserve">
-<target>Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH</target>
-</trans-unit>
-<trans-unit id="header-actionpicture-alt" xml:space="preserve">
-<target>Eine Tafel voller Formeln</target>
-</trans-unit>
-<trans-unit id="header-actionpicture-title" xml:space="preserve">
-<target>Fotonachweis: Christian Fries</target>
+<target>Internetpräsenz des Fachinformationsdienstes Mathematik</target>
 </trans-unit>
 <trans-unit id="header-languageswitch" xml:space="preserve">
 <target>English</target>
