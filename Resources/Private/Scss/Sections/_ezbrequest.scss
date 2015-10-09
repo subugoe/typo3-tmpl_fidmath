@@ -37,6 +37,7 @@
 		.iputStartSmall {
 			@include input-text;
 			width: ($form-field-width / 2);
+			margin-right: $font-size;
 		}
 	}
 

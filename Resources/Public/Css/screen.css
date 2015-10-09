@@ -2601,7 +2601,8 @@ input, select {
     margin: 0;
     background: #fff;
     font-size: 16px;
-    width: 160px; }
+    width: 160px;
+    margin-right: 16px; }
 .tx-ezbrequest-pi1 .jourItem {
   padding-top: .3em; }
 .tx-ezbrequest-pi1 .alphabetMenu li, .tx-ezbrequest-pi1 .alphabetMenu .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 .alphabetMenu .facetActive {

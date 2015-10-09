@@ -8,13 +8,7 @@
 <source>external link</source>
 </trans-unit>
 <trans-unit id="header-logo-title" xml:space="preserve">
-<source>Internetpräsenz der Virtuellen Fachbibliothek Mathematik ViFaMATH</source>
-</trans-unit>
-<trans-unit id="header-actionpicture-alt" xml:space="preserve">
-<source>Blackboard full of formulae</source>
-</trans-unit>
-<trans-unit id="header-actionpicture-title" xml:space="preserve">
-<source>Foto: Chistian Fries</source>
+<source>Internetpräsenz des Fachinformationsdienstes Mathematik</source>
 </trans-unit>
 <trans-unit id="header-languageswitch-de" xml:space="preserve">
 <source>German</source>

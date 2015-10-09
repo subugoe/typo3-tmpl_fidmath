@@ -32,7 +32,7 @@ page {
 
 		16 = TEXT
 		16 {
-			wrap = <link rel="search" type="application/opensearchdescription+xml" title="vifamath" href="|" />
+			wrap = <link rel="search" type="application/opensearchdescription+xml" title="Fachinformationsdienst Mathematik" href="|" />
 			typolink {
 				parameter = 1,9004
 				returnLast = url
@@ -41,10 +41,9 @@ page {
 	}
 
 	meta {
-		author = vifamath
-		keywords = vifamath, Virtuelle Fachbibliothek Mathematik, Virtuelle Fachbibliothek, Mathematik, Mathe, Recherche, Portal, Suche, vlibmath, virtual library mathematics, virtual library, mathematics, research, portal
-		description = Die vifamath (Virtuelle Fachbibliothek Mathematik) ist ein zentraler Einstieg für die Recherche nach mathematikspezifischen Informationen; z. B. können Bibliothekskataloge, Preprintserver und Sammlungen von Reviews, Zeitschriften und mathematisch relevanten Internetseiten simultan durchsucht werden.
-		abstract = Die vifamath (Virtuelle Fachbibliothek Mathematik) ist ein zentraler Einstieg für die Recherche nach mathematikspezifischen Informationen; z. B. können Bibliothekskataloge, Preprintserver und Sammlungen von Reviews, Zeitschriften und mathematisch relevanten Internetseiten simultan durchsucht werden.
+		author = Fachinformationsdienst Mathematik
+		description = Der Fachinformationsdienst Mathematik ist ein zentraler Einstieg für die Recherche nach mathematikspezifischen Informationen; z. B. können Bibliothekskataloge, Preprintserver und Sammlungen von Reviews, Zeitschriften und mathematisch relevanten Internetseiten simultan durchsucht werden.
+		abstract = Der Fachinformationsdienst Mathematik ist ein zentraler Einstieg für die Recherche nach mathematikspezifischen Informationen; z. B. können Bibliothekskataloge, Preprintserver und Sammlungen von Reviews, Zeitschriften und mathematisch relevanten Internetseiten simultan durchsucht werden.
 		Content-language = de, en
 		Robots = index, follow
 		viewport = width=device-width, initial-scale=1
@@ -127,14 +126,13 @@ temp.rss {
 ################################################
 constants {
 	KH = Katharina Habermann
-	KS = Kristin Stroth
 	TF = Thomas Fischer
 
 	MM = Marianna Mühlhölzer
 
-	VM = Virtuelle Fachbibliothek Mathematik
+	VM = Fachinformationsdienst Mathematik
 	VM_en = Virtual Library of Mathematics
-	vifamath = <span class="prefix">vifa</span><span class="postfix">math</span>
+	vifamath = <span class="prefix">fid</span><span class="postfix">math</span>
 
 	SUB = SUB Göttingen
 	TIB = TIB Hannover
