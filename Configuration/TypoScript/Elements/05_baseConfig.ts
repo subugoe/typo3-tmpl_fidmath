@@ -19,7 +19,7 @@ page {
 		12 {
 			wrap = <link href="|" rel="alternate" type="application/rss+xml" title="Fachinformationsdienst Mathe News"/>
 			typolink {
-				parameter = 43,100
+				parameter = 1,100
 				returnLast = url
 			}
 		}
@@ -107,15 +107,6 @@ config {
 		htmlTag_langKey = en
 	}
 [global]
-
-temp.rss = TEXT
-temp.rss {
-	value = RSS
-	typolink {
-		parameter = 43
-		additionalParams = &type=100
-	}
-}
 
 [globalVar = TSFE:id=111]
 	page.includeJS.file >
