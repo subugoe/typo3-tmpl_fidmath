@@ -27,6 +27,8 @@ lib.breadcrumbs {
 		stdWrap.if.isTrue.data = GP:tx_news_pi1|news
 		stdWrap.required = 1
 
+		lib.breadcrumbs.10.special.range = 0|-2
+
 		dontCheckPid = 1
 		tables = tx_news_domain_model_news
 		source.data = GP:tx_news_pi1|news
