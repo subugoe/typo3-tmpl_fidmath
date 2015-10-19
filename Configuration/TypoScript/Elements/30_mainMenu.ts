@@ -23,7 +23,7 @@ lib.mainmenu {
 
 		SPC = 1
 		SPC {
-			allWrap = <li class="trenner">&nbsp;</li>
+			allWrap = <li class="trenner main-navigation_element">&nbsp;</li>
 			doNotShowLink = 1
 		}
 	}
