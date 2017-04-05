@@ -9,5 +9,9 @@
             "email": "i.pfennigstorf@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+             "Subugoe\\TmplFidmath\\": "Classes/"
+        }
+    }
 }
