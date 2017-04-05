@@ -1,3 +1,5 @@
 .gradletasknamecache
 node_modules
 .gradle
+
+/vendor/
