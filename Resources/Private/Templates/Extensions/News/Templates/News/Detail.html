@@ -1,31 +1,35 @@
 {namespace n=GeorgRinger\News\ViewHelpers}
-<f:layout name="Detail.html" />
+<f:layout name="Detail.html"/>
 
 <!--
 	=====================
 		News/Detail.html
 -->
 <f:section name="content">
-	<n:titleTag>{newsItem.title}</n:titleTag>
+    <n:titleTag>{newsItem.title}</n:titleTag>
 
-	<f:if condition="{newsItem}">
-			<div class="news-list-header">
-				<h3>
+    <f:if condition="{newsItem}">
+        <div class="news-list-header">
+            <h3>
 					<span class="news-list-date">
-						<n:format.date format="%d.%m.%Y">{newsItem.datetime}</n:format.date>
+						<time datetime="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}">
+							<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+							<meta itemprop="datePublished"
+                                  content="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}"/>
+						</time>
 					</span>
-					{newsItem.title}
-				</h3>
-			</div>
-			<div class="news-text-wrap">
-				<f:format.html>{newsItem.bodytext}</f:format.html>
-			</div>
-			<f:if condition="{settings.backPid}">
-				<div class="news-backlink-wrap">
-					<f:link.page pageUid="{settings.backPid}">
-						<f:translate key="back-link" />
-					</f:link.page>
-				</div>
-			</f:if>
-	</f:if>
+                {newsItem.title}
+            </h3>
+        </div>
+        <div class="news-text-wrap">
+            <f:format.html>{newsItem.bodytext}</f:format.html>
+        </div>
+        <f:if condition="{settings.backPid}">
+            <div class="news-backlink-wrap">
+                <f:link.page pageUid="{settings.backPid}">
+                    <f:translate key="back-link"/>
+                </f:link.page>
+            </div>
+        </f:if>
+    </f:if>
 </f:section>
