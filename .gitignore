@@ -1,5 +1,5 @@
 .gradletasknamecache
 node_modules
 .gradle
-
+.php_cs.cache
 /vendor/

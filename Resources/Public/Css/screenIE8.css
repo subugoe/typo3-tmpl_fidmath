@@ -4,7 +4,8 @@
   min-width: 950px;
   padding: 2.5em 0 0;
   font-size: 85%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .headline-first-welcome {
   width: 76%;
@@ -12,13 +13,17 @@
   color: #fff;
   font-weight: normal;
   font-size: 1.7em;
-  letter-spacing: .18em; }
+  letter-spacing: .18em;
+}
 
 .breadcrumbs {
-  font-size: 95%; }
+  font-size: 95%;
+}
 
 #prefix {
-  margin-bottom: -.5em; }
+  margin-bottom: -.5em;
+}
 
 #right {
-  border: 0; }
+  border: 0;
+}

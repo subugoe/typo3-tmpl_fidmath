@@ -16,10 +16,8 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Ingo Pfennigstorf, Ali Reza Sajedi',
     'author_email' => 'pfennigstorf@sub.uni-goettingen.de, sajedi@sub.uni-goettingen.de',
     'author_company' => 'SUB Uni-Göttingen',
-    'constraints' =>
-        [
-            'depends' =>
-                [
+    'constraints' => [
+            'depends' => [
                     'typo3' => '7.0.0-8.7.99',
                 ],
         ],

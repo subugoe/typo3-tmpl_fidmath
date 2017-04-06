@@ -3,39 +3,39 @@ plugin.tx_find.view.partialRootPaths.15 = EXT:tmpl_fidmath/Resources/Private/Tem
 plugin.tx_find.view.layoutRootPaths.15 = EXT:tmpl_fidmath/Resources/Private/Templates/Extensions/Find/Layouts/
 
 plugin.tx_find.settings {
-	connection {
-		host = solr
-		port = 8983
-		path = /solr/hansolr
-	}
+    connection {
+        host = solr
+        port = 8983
+        path = /solr/hansolr
+    }
 
-	standardFields {
-		title = title
-		snippet = content
-	}
+    standardFields {
+        title = title
+        snippet = content
+    }
 
-	CSSPaths {
-		10 >
-		20 >
-	}
+    CSSPaths {
+        10 >
+        20 >
+    }
 
-	jumpToID >
+    jumpToID >
 }
 
 plugin.tx_find.settings {
-	defaultQuery = Berufe:Mathematiker
+    defaultQuery = Berufe:Mathematiker
 
-	queryFields {
-		0 {
-			type = Text
-			query = %s Berufe:Mathematiker
-		}
-	}
+    queryFields {
+        0 {
+            type = Text
+            query = %s Berufe:Mathematiker
+        }
+    }
 
-	sort {
-		1 {
-			id = default
-			sortCriteria = Titel_sort asc
-		}
-	}
+    sort {
+        1 {
+            id = default
+            sortCriteria = Titel_sort asc
+        }
+    }
 }

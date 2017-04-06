@@ -9,7 +9,7 @@ task wrapper(type: Wrapper) {
 }
 
 node {
-	version = '0.12.7'
+	version = '7.6.0'
 	download = true
 }
 

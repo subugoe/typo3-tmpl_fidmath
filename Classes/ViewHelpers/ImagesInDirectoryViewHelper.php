@@ -1,4 +1,5 @@
 <?php
+
 namespace Subugoe\TmplFidmath\ViewHelpers;
 
 /* * *************************************************************
@@ -25,14 +26,15 @@ namespace Subugoe\TmplFidmath\ViewHelpers;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
+use TYPO3\CMS\Core\Resource\StorageRepository;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
- * Random image from folder
+ * Random image from folder.
  */
 class ImagesInDirectoryViewHelper extends AbstractViewHelper
 {
-
     /**
      * Initialize arguments.
      */
@@ -43,14 +45,10 @@ class ImagesInDirectoryViewHelper extends AbstractViewHelper
         $this->registerArgument('storageUid', 'int', 'FAL storage uid', false, 1);
     }
 
-
     public function render()
     {
-
         /** @var \TYPO3\CMS\Core\Resource\StorageRepository $storageRepository */
-        $storageRepository = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-            \TYPO3\CMS\Core\Resource\StorageRepository::class
-        );
+        $storageRepository = GeneralUtility::makeInstance(StorageRepository::class);
 
         $storage = $storageRepository->findByUid($this->arguments['storageUid']);
         $folder = $storage->getFolder($this->arguments['directory']);
@@ -61,7 +59,6 @@ class ImagesInDirectoryViewHelper extends AbstractViewHelper
         /** @var \TYPO3\CMS\Core\Resource\File $file */
         $file = $files[0];
 
-       $this->templateVariableContainer->add('randomImage', $file);
+        $this->templateVariableContainer->add('randomImage', $file);
     }
-
 }

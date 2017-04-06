@@ -1,9 +1,10 @@
 <?php
+
 $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = [
     'init' => [
         'appendMissingSlash' => 'ifNotFile',
         'postVarSet_failureMode' => 'redirect_goodUpperDir',
-        'emptyUrlReturnValue' => TRUE,
+        'emptyUrlReturnValue' => true,
         'respectSimulateStaticURLs' => 1,
         'enableCHashCache' => 1,
         'enableUrlDecodeCache' => 0,
@@ -23,7 +24,7 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = [
             'valueMap' => [
                 'no_cache' => 1,
             ],
-            'noMatch' => 'bypass'
+            'noMatch' => 'bypass',
         ],
     ],
     'pagePath' => [
@@ -47,7 +48,7 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = [
                     'useUniqueCache' => 1,
                     'useUniqueCache_conf' => [
                         'strtolower' => 1,
-                        'spaceCharacter' => '-'
+                        'spaceCharacter' => '-',
                     ],
                     'languageGetVar' => 'L',
                     'languageExceptionUids' => '',
@@ -55,8 +56,8 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = [
                     'transOrigPointerField' => 'l10n_parent',
                     'autoUpdate' => 1,
                     'expireDays' => 180,
-                ]
-            ]
+                ],
+            ],
         ],
         'newsCategoryConfiguration' => [
             [
@@ -69,10 +70,10 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = [
                     'useUniqueCache' => 1,
                     'useUniqueCache_conf' => [
                         'strtolower' => 1,
-                        'spaceCharacter' => '-'
-                    ]
-                ]
-            ]
+                        'spaceCharacter' => '-',
+                    ],
+                ],
+            ],
         ],
         'newsTagConfiguration' => [
             [
@@ -85,10 +86,10 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = [
                     'useUniqueCache' => 1,
                     'useUniqueCache_conf' => [
                         'strtolower' => 1,
-                        'spaceCharacter' => '-'
-                    ]
-                ]
-            ]
+                        'spaceCharacter' => '-',
+                    ],
+                ],
+            ],
         ],
         '46' => 'newsDetailConfiguration',
     ],
@@ -97,12 +98,12 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT'] = [
             'controller' => [
                 [
                     'GETvar' => 'tx_news_pi1[action]',
-                    'noMatch' => 'bypass'
+                    'noMatch' => 'bypass',
                 ],
                 [
                     'GETvar' => 'tx_news_pi1[controller]',
-                    'noMatch' => 'bypass'
-                ]
+                    'noMatch' => 'bypass',
+                ],
             ],
             'dateFilter' => [
                 [
