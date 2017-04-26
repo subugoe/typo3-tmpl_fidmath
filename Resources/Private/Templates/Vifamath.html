@@ -1,25 +1,25 @@
 <div class="main-container">
 
-	<f:render partial="Header"/>
+    <f:render partial="Header"/>
 
-	<div class="content-container">
-		<f:if condition="{pageUid} == 1">
-			<f:then>
-				<h1 class="headline-first_welcome">{pageTitle}</h1>
-			</f:then>
-			<f:else>
-				<h1 class="headline-first_standard">{pageTitle}</h1>
-			</f:else>
-		</f:if>
-		<div class="main">
-			<div class="main-content">
-				<f:cObject typoscriptObjectPath="styles.content.get"/>
-			</div>
-			<nav class="main-navigation">
-				<f:cObject typoscriptObjectPath="lib.mainmenu"/>
-			</nav>
-		</div>
-	</div>
+    <div class="content-container">
+        <f:if condition="{pageUid} == 1">
+            <f:then>
+                <h1 class="headline-first_welcome">{pageTitle}</h1>
+            </f:then>
+            <f:else>
+                <h1 class="headline-first_standard">{pageTitle}</h1>
+            </f:else>
+        </f:if>
+        <div class="main">
+            <div class="main-content">
+                <f:cObject typoscriptObjectPath="styles.content.get"/>
+            </div>
+            <nav class="main-navigation">
+                <f:cObject typoscriptObjectPath="lib.mainmenu"/>
+            </nav>
+        </div>
+    </div>
 
-	<f:render partial="Footer" />
+    <f:render partial="Footer"/>
 </div>
