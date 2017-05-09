@@ -1,6 +1,7 @@
 .csc-form-element-textline input[type=text],
 .iputStart,
 .powermail_input,
+.form-control,
 .powermail_textarea {
 	@include input-text;
 }
@@ -13,7 +14,8 @@
 .csc-form-element-submit input,
 .submStartSmall,
 .submStart,
-.powermail_submit {
+.powermail_submit,
+.btn-primary {
 	@include input-submit;
 }
 
@@ -22,14 +24,23 @@
 	width: 70%;
 }
 
-.csc-mailform {
+.csc-mailform,
+.frame-type-form_formframework {
 	li {
 		list-style-type: none !important;
 		margin-left: 0 !important;
 	}
 }
 
+form {
+	.actions {
+		float: left;
+		clear: both;
+	}
+}
+
 .powermail_fieldwrap,
+.form-group,
 .csc-form-element {
 	margin: .5em 0;
 	float: left;
@@ -37,7 +48,8 @@
 }
 
 .powermail_legend,
-.csc-mailform legend {
+.csc-mailform legend,
+.form-group legend {
 	@include form-legend;
 }
 
@@ -45,7 +57,8 @@
 	@include form-label;
 }
 
-.powermail_label {
+.powermail_label,
+.control-label {
 	@include form-label;
 
 	&:after {

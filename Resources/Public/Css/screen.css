@@ -2856,6 +2856,7 @@ select {
 .csc-form-element-textline input[type=text],
 .iputStart,
 .powermail_input,
+.form-control,
 .powermail_textarea {
   border: 1px solid #25589a;
   width: 320px;
@@ -2877,7 +2878,8 @@ select {
 .csc-form-element-submit input,
 .submStartSmall,
 .submStart,
-.powermail_submit {
+.powermail_submit,
+.btn-primary {
   background: #25589a;
   border: 0;
   color: #fff;
@@ -2897,14 +2899,16 @@ select {
 .csc-form-element-submit input:hover,
 .submStartSmall:hover,
 .submStart:hover,
-.powermail_submit:hover {
+.powermail_submit:hover,
+.btn-primary:hover {
   border: 1px solid #b5c5e6;
 }
 
 .csc-form-element-submit input:focus,
 .submStartSmall:focus,
 .submStart:focus,
-.powermail_submit:focus {
+.powermail_submit:focus,
+.btn-primary:focus {
   outline-offset: 0;
   border: 0;
 }
@@ -2914,12 +2918,21 @@ select {
   width: 70%;
 }
 
-.csc-mailform li, .csc-mailform .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .csc-mailform .facetActive {
+.csc-mailform li, .csc-mailform .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .csc-mailform .facetActive,
+.frame-type-form_formframework li,
+.frame-type-form_formframework .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol
+.frame-type-form_formframework .facetActive {
   list-style-type: none !important;
   margin-left: 0 !important;
 }
 
+form .actions {
+  float: left;
+  clear: both;
+}
+
 .powermail_fieldwrap,
+.form-group,
 .csc-form-element {
   margin: .5em 0;
   float: left;
@@ -2927,7 +2940,8 @@ select {
 }
 
 .powermail_legend,
-.csc-mailform legend {
+.csc-mailform legend,
+.form-group legend {
   padding: 16px 0;
   font-weight: bold;
 }
@@ -2938,13 +2952,15 @@ select {
   margin: 0;
 }
 
-.powermail_label {
+.powermail_label,
+.control-label {
   float: left;
   width: 213.33333px;
   margin: 0;
 }
 
-.powermail_label:after {
+.powermail_label:after,
+.control-label:after {
   cursor: help;
   content: '\f129';
   display: inline-block;
@@ -2957,11 +2973,13 @@ select {
   font-family: "FontAwesome";
 }
 
-.powermail_label[title=""] {
+.powermail_label[title=""],
+.control-label[title=""] {
   cursor: inherit;
 }
 
-.powermail_label[title=""]:after {
+.powermail_label[title=""]:after,
+.control-label[title=""]:after {
   display: none;
 }
 

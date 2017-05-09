@@ -1,0 +1,7 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowSaveToExtensionPaths: true
+        allowedExtensionPaths:
+          667: EXT:tmpl_fidmath/Resources/Private/Forms/

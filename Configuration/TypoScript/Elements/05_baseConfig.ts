@@ -214,3 +214,4 @@ plugin.tx_pazpar2.settings {
 
 plugin.tx_pazpar2.settings.flotJSPath = EXT:tmpl_fidmath/Resources/Public/JavaScript/jquery.flot.js
 plugin.tx_pazpar2.settings.flotSelectionJSPath = EXT:tmpl_fidmath/Resources/Public/JavaScript/jquery.flot.selection.js
+module.tx_form.settings.yamlConfigurations.667 = EXT:tmpl_fidmath/Configuration/Yaml/Form.yaml

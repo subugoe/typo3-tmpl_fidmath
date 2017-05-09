@@ -1,0 +1,122 @@
+renderingOptions:
+  submitButtonLabel: Submit
+identifier: beschaffungswunsch
+label: beschaffungswunsch
+type: Form
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Your message: {subject}'
+      recipientAddress: your.company@example.com
+      recipientName: 'Your Company name'
+      senderAddress: '{email}'
+      senderName: '{name}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'previous Page'
+      nextButtonLabel: 'next Page'
+    identifier: page-1
+    label: 'Contact Form'
+    type: Page
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-3
+        label: 'Ihr Vorschlag zum Erwerb bzw. zur Lizenzierung'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Buchtitel
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            identifier: subject
+            label: Autor/Herausgeber
+            type: Text
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Verlag/Erscheinungsort
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Erscheinungsjahr
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-4
+            label: ISBN
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-5
+            label: Referenz
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-6
+            label: Medium
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: 'Ihre Kontaktdaten'
+        renderables:
+          -
+            defaultValue: ''
+            identifier: name
+            label: 'Name, Vorname'
+            type: Text
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            identifier: email
+            label: 'E-Mail Adresse'
+            type: Text
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: EmailAddress
+      -
+        type: Fieldset
+        identifier: fieldset-2
+        label: 'Bemerkung / Mitteilung'
+        renderables:
+          -
+            defaultValue: ''
+            identifier: message
+            label: 'Ihre Mitteilung'
+            type: Textarea
