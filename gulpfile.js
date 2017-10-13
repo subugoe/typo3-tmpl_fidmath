@@ -1,10 +1,9 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     sass = require('gulp-sass'),
-    scsslint = require('gulp-scss-lint'),
     autoprefixer = require('gulp-autoprefixer'),
     cached = require('gulp-cached');
 
-var config = {
+const config = {
   paths: {
     sass: [
       './Resources/Private/Scss/**/*.scss',
@@ -30,12 +29,12 @@ var config = {
   }
 };
 
-gulp.task('js', function() {
+gulp.task('js', () => {
     gulp.src(config.paths.scripts)
         .pipe(gulp.dest('./Resources/Public/JavaScript/'))
 });
 
-gulp.task('sass', ['lint'], function () {
+gulp.task('sass', () => {
   gulp.src(config.paths.sass)
       .pipe(sass({
         outputStyle: 'expanded'
@@ -46,7 +45,7 @@ gulp.task('sass', ['lint'], function () {
       .pipe(gulp.dest('./Resources/Public/Css/'))
 });
 
-gulp.task('sassProd', function () {
+gulp.task('sassProd', () => {
   gulp.src(config.paths.sass)
       .pipe(sass({
         outputStyle: 'expanded'
@@ -57,22 +56,14 @@ gulp.task('sassProd', function () {
       .pipe(gulp.dest('./Resources/Public/Css/'))
 });
 
-gulp.task('lint', function () {
-  gulp.src(config.paths.sass)
-      .pipe(cached('scsslint'))
-      .pipe(scsslint({
-        'config': 'Build/.scss-lint.yml'
-      }))
-});
-
-gulp.task('build', function () {
+gulp.task('build', () => {
   gulp.start('sassProd')
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   gulp.watch(config.paths.sass, ['sass'])
 });
 
-gulp.task('default', function () {
-  gulp.start('lint', 'sass', 'js', 'watch')
+gulp.task('default', () => {
+  gulp.start('sass', 'js', 'watch')
 });

@@ -7,16 +7,16 @@
     "url": "https://github.com/subugoe/typo3-tmpl_fidmath.git"
   },
   "dependencies": {
-    "gulp": "^3.8.10",
-    "gulp-cached": "^1.0.2",
+    "bootstrap": "^4.0.0-beta",
+    "gulp": "^3.9.0",
+    "gulp-cached": "^1.1.1",
     "gulp-sass": "^3.1.0",
-    "gulp-scss-lint": "^0.4.0",
     "gulp-watch": "^4.3.11",
     "jquery": "^3.2.1",
     "jquery-flot": "^0.8.3"
   },
   "devDependencies": {
-    "gulp-autoprefixer": "^3.1.1"
+    "gulp-autoprefixer": "^4.0.0"
   },
   "author": "Ingo Pfennigstorf <i.pfennigstorf@gmail.com>",
   "license": "GPL-2.0",
