@@ -1,22 +1,17 @@
 .languagemenu {
 
-	float: right;
-	display: inline;
-	padding: 1px 0 0;
-	margin-right: 1em;
+    .languagemenu_switch {
+        margin-left: 1em;
+        text-decoration: none;
 
-	.languagemenu_switch {
-		margin-left: 1em;
-		text-decoration: none;
-		height: 1em;
+        &:before {
+            content: '\f0ac';
+            font-family: $icon-font;
+            margin-right: .5em;
+        }
 
-		&:before {
-			content: '\f0ac';
-			font-family: $icon-font;
-		}
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

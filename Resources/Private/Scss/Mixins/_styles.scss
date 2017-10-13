@@ -1,61 +1,61 @@
 @mixin table() {
-	td {
-		border-bottom: 1px solid $border-color;
-		margin-bottom: .5em;
-		padding: .5em;
-	}
+    td {
+        border-bottom: 1px solid $border-color;
+        margin-bottom: .5em;
+        padding: .5em;
+    }
 }
 
 @mixin input-text() {
-	border: $form-border;
-	width: $form-field-width;
-	padding: $form-padding;
-	margin: $form-margin;
-	background: $white;
-	font-size: $font-size;
+    border: $form-border;
+    width: $form-field-width;
+    padding: $form-padding;
+    margin: $form-margin;
+    background: $white;
+    font-size: $font-size;
 }
 
 @mixin input-submit() {
-	background: $button-background;
-	border: 0;
-	color: $white;
-	width: $form-submit-width;
-	min-width: $form-submit-width;
-	margin: $form-margin;
-	display: inline;
-	height: 2 * $font-size;
-	padding: $form-padding;
-	text-transform: uppercase;
-	border-radius: 0;
-	text-shadow: none;
-	font-size: $font-size;
-	font-weight: normal;
+    background: $button-background;
+    border: 0;
+    color: $white;
+    width: $form-submit-width;
+    min-width: $form-submit-width;
+    margin: $form-margin;
+    display: inline;
+    height: 2 * $font-size;
+    padding: $form-padding;
+    text-transform: uppercase;
+    border-radius: 0;
+    text-shadow: none;
+    font-size: $font-size;
+    font-weight: normal;
 
-	&:hover {
-		border: 1px solid $background-color;
-	}
+    &:hover {
+        border: 1px solid $background-color;
+    }
 
-	&:focus {
-		outline-offset: 0;
-		border: 0;
-	}
+    &:focus {
+        outline-offset: 0;
+        border: 0;
+    }
 }
 
 @mixin input-select() {
-	width: $form-field-width;
-	height: (2 * $font-size);
-	background-color: $white;
-	border: $form-border;
-	font-size: $font-size;
+    width: $form-field-width;
+    height: (2 * $font-size);
+    background-color: $white;
+    border: $form-border;
+    font-size: $font-size;
 }
 
 @mixin form-label() {
-	float: left;
-	width: $form-label-width;
-	margin: $form-margin;
+    float: left;
+    width: $form-label-width;
+    margin: $form-margin;
 }
 
 @mixin form-legend() {
-	padding: $font-size 0;
-	font-weight: bold;
+    padding: $font-size 0;
+    font-weight: bold;
 }

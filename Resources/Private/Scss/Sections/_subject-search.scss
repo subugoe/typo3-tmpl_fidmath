@@ -1,44 +1,44 @@
 .content-container {
-	.gokContainer.column {
-		ul {
-			width: 24%;
-			padding: 0;
-			background: transparent;
-		}
+    .gokContainer.column {
+        ul {
+            width: 24%;
+            padding: 0;
+            background: transparent;
+        }
 
-		li {
-			padding: 0;
-			border: 0 none;
-			list-style-type: none;
+        li {
+            padding: 0;
+            border: 0 none;
+            list-style-type: none;
 
-			&.selected {
-				background: $background-color;
-			}
+            &.selected {
+                background: $background-color;
+            }
 
-			&.open,
-			&.close {
+            &.open,
+            &.close {
 
-				a {
-					color: $text-color;
-				}
+                a {
+                    color: $text-color;
+                }
 
-				&:after {
-					top: .5em;
-					right: .3em;
-				}
-			}
+                &:after {
+                    top: .5em;
+                    right: .3em;
+                }
+            }
 
-			a {
-				border-bottom: 1px dotted $text-color;
-				padding: .5em;
-				color: $link-color;
-				font-weight: normal;
-				text-decoration: none;
-			}
-		}
+            a {
+                border-bottom: 1px dotted $text-color;
+                padding: .5em;
+                color: $link-color;
+                font-weight: normal;
+                text-decoration: none;
+            }
+        }
 
-		.GOKID {
-			font-weight: bold;
-		}
-	}
+        .GOKID {
+            font-weight: bold;
+        }
+    }
 }

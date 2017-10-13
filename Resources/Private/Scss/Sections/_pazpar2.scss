@@ -1,263 +1,263 @@
 #pazpar2 {
-	display: flex;
-	flex-flow: column;
+    display: flex;
+    flex-flow: column;
 
-	width: 100%;
+    width: 100%;
 
-	#pz2-recordView {
+    #pz2-recordView {
 
-		order: 2;
+        order: 2;
 
-		@include breakpoint('xs') {
-			display: flex;
-			flex-direction: column;
-		}
+        @include breakpoint('xs') {
+            display: flex;
+            flex-direction: column;
+        }
 
-	}
+    }
 
-	#pz2-termLists {
+    #pz2-termLists {
 
-		@include breakpoint('xs') {
-			order: 6;
-			float: none;
-			width: 100%;
-		}
+        @include breakpoint('xs') {
+            order: 6;
+            float: none;
+            width: 100%;
+        }
 
-		li {
-			margin-left: 0;
-		}
+        li {
+            margin-left: 0;
+        }
 
-		.pz2-progressIndicator {
-			display: none;
-		}
+        .pz2-progressIndicator {
+            display: none;
+        }
 
-	}
+    }
 
-	.pz2-resultList .pz2-mediaIcon {
-		top: -3px;
-		left: -33px;
-	}
+    .pz2-resultList .pz2-mediaIcon {
+        top: -3px;
+        left: -33px;
+    }
 
-	.pz2-prev:after,
-	.pz2-next:after {
-		@include breakpoint('xs') {
-			display: none;
-		}
-	}
+    .pz2-prev:after,
+    .pz2-next:after {
+        @include breakpoint('xs') {
+            display: none;
+        }
+    }
 
-	.pz2-prev,
-	.pz2-next {
+    .pz2-prev,
+    .pz2-next {
 
-		@include breakpoint('xs') {
-			position: static;
-			top: 0;
-			width: auto;
-			height: auto;
-			text-indent: 0;
-			overflow: visible;
-		}
+        @include breakpoint('xs') {
+            position: static;
+            top: 0;
+            width: auto;
+            height: auto;
+            text-indent: 0;
+            overflow: visible;
+        }
 
-	}
+    }
 
-	.pz2-pager {
-		li {
-			a {
-				padding: 0 .3em;
-			}
-		}
+    .pz2-pager {
+        li {
+            a {
+                padding: 0 .3em;
+            }
+        }
 
-		.pz2-pageNumbers {
-			@include breakpoint('xs') {
-				margin-right: 0;
-				text-align: left;
-			}
-		}
+        .pz2-pageNumbers {
+            @include breakpoint('xs') {
+                margin-right: 0;
+                text-align: left;
+            }
+        }
 
-		.pz2-currentPage {
-			padding: 0 .3em;
-		}
-	}
+        .pz2-currentPage {
+            padding: 0 .3em;
+        }
+    }
 
-	.pz2-mainForm {
-		line-height: 180%;
-	}
+    .pz2-mainForm {
+        line-height: 180%;
+    }
 
-	.pz2-fieldsets ul {
-		margin-left: 1.5em;
+    .pz2-fieldsets ul {
+        margin-left: 1.5em;
 
-		li {
-			padding: 0;
+        li {
+            padding: 0;
 
-			&.inline {
-				margin-left: 0;
-			}
-		}
-	}
+            &.inline {
+                margin-left: 0;
+            }
+        }
+    }
 
-	.pz2-mainForm {
-		@include breakpoint('xs') {
-			top: 58px !important;
-		}
-	}
+    .pz2-mainForm {
+        @include breakpoint('xs') {
+            top: 58px !important;
+        }
+    }
 
-	.pz2-basic {
-		order: 1;
+    .pz2-basic {
+        order: 1;
 
-		.pz2-searchField {
-			@include breakpoint('xs') {
-				width: auto;
-			}
-		}
-	}
+        .pz2-searchField {
+            @include breakpoint('xs') {
+                width: auto;
+            }
+        }
+    }
 
-	.pz2-termList {
-		li {
-			padding: 2px 0;
-		}
-	}
+    .pz2-termList {
+        li {
+            padding: 2px 0;
+        }
+    }
 
-	.pz2-termList-medium li {
-		padding: 0;
-	}
+    .pz2-termList-medium li {
+        padding: 0;
+    }
 
-	.pz2-journal-subpart {
-		font-weight: normal;
-	}
+    .pz2-journal-subpart {
+        font-weight: normal;
+    }
 
-	.pz2-mediaIcon {
+    .pz2-mediaIcon {
 
-		&:before {
-			top: -3px;
-		}
+        &:before {
+            top: -3px;
+        }
 
-		&:after {
-			color: $text-color;
-			top: -3px;
-		}
-	}
+        &:after {
+            color: $text-color;
+            top: -3px;
+        }
+    }
 
-	.pz2-details {
-		dl {
-			line-height: 130%;
-		}
+    .pz2-details {
+        dl {
+            line-height: 130%;
+        }
 
-		dd {
+        dd {
 
-			margin-left: 11em;
+            margin-left: 11em;
 
-			@include breakpoint('xs') {
-				margin-left: 8em;
-			}
+            @include breakpoint('xs') {
+                margin-left: 8em;
+            }
 
-		}
+        }
 
-		dt {
-			@include breakpoint('xs') {
-				width: 0;
-			}
-		}
-	}
+        dt {
+            @include breakpoint('xs') {
+                width: 0;
+            }
+        }
+    }
 
-	.pz2-detail-catalogueLink {
-		background: transparent;
-	}
+    .pz2-detail-catalogueLink {
+        background: transparent;
+    }
 
-	.pz2-extraLinks {
-		form {
-			background: transparent;
-		}
+    .pz2-extraLinks {
+        form {
+            background: transparent;
+        }
 
-		input {
-			margin-left: 1em;
-		}
+        input {
+            margin-left: 1em;
+        }
 
-		&:hover {
-			color: $link-color;
-		}
-	}
+        &:hover {
+            color: $link-color;
+        }
+    }
 
-	.pz2-submitButton {
-		@include input-submit;
-	}
+    .pz2-submitButton {
+        @include input-submit;
+    }
 
-	.pz2-months {
-		@include input-select;
-	}
+    .pz2-months {
+        @include input-select;
+    }
 
-	.pz2-searchField {
+    .pz2-searchField {
 
-		@include input-text;
+        @include input-text;
 
-		margin-right: $font-size;
-		padding: $form-padding;
+        margin-right: $font-size;
+        padding: $form-padding;
 
-		@include breakpoint('xs') {
-			width: auto;
-		}
+        @include breakpoint('xs') {
+            width: auto;
+        }
 
-	}
+    }
 }
 
 #pz2-results {
 
-	@include breakpoint('xs') {
-		margin-right: 0 !important;
-	}
+    @include breakpoint('xs') {
+        margin-right: 0 !important;
+    }
 
-	.pz2-recordLink {
-		color: $text-color;
-		font-weight: normal;
+    .pz2-recordLink {
+        color: $text-color;
+        font-weight: normal;
 
-		&:after {
-			&:hover {
-				color: $link-color;
-			}
-		}
-	}
+        &:after {
+            &:hover {
+                color: $link-color;
+            }
+        }
+    }
 
-	.pz2-resultList {
-		padding-left: 30px;
+    .pz2-resultList {
+        padding-left: 30px;
 
-		@include breakpoint('xs') {
-			order: 3;
-			padding-left: 0 !important;
-		}
+        @include breakpoint('xs') {
+            order: 3;
+            padding-left: 0 !important;
+        }
 
-	}
+    }
 
-	.pz2-details dl ul li {
-		list-style-type: circle;
-	}
+    .pz2-details dl ul li {
+        list-style-type: circle;
+    }
 }
 
 .pz2-pages {
-	li {
-		margin-left: 0;
-	}
+    li {
+        margin-left: 0;
+    }
 }
 
 .pz2-extendedLink {
-	margin-top: 0;
+    margin-top: 0;
 
-	&:hover {
-		text-decoration: underline !important;
-	}
+    &:hover {
+        text-decoration: underline !important;
+    }
 }
 
 .pz2-atomLink {
-	&:before {
-		content: '\f09e';
-		font-family: $icon-font;
-		margin: 0 .5em;
-	}
+    &:before {
+        content: '\f09e';
+        font-family: $icon-font;
+        margin: 0 .5em;
+    }
 }
 
 .pz2-extended {
-	.pz2-textFieldLabel {
-		margin-right: 1em;
-	}
+    .pz2-textFieldLabel {
+        margin-right: 1em;
+    }
 }
 
 .pz2-fieldContainer {
-	margin: .5em 0;
+    margin: .5em 0;
 }

@@ -61,7 +61,7 @@ gulp.task('build', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch(config.paths.sass, ['sass'])
+  gulp.watch(config.paths.sass, ['sass', 'sassProd'])
 });
 
 gulp.task('default', () => {

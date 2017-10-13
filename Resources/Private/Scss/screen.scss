@@ -9,7 +9,6 @@
 @import 'Elements/forms';
 @import 'Sections/main-navigation';
 @import 'Sections/meta-navigation';
-@import 'Sections/breadcrumbs';
 @import 'Sections/language-menu';
 @import 'Sections/content-container';
 @import 'Sections/main-container';
@@ -34,186 +33,145 @@
 @include file-links('html');
 
 .data .external_link {
-	color: $link-color;
-}
-
-.main {
-	display: flex;
-	flex-flow: row;
-
-	@include breakpoint('xs') {
-		flex-direction: column;
-	}
+    color: $link-color;
 }
 
 .buttonlink {
-	border-right: 1px solid $border-color;
+    border-right: 1px solid $border-color;
 }
 
 .second,
 .advFirst {
-	background-color: $background-color;
-	border-bottom: 1px solid $lighter-border-color;
+    background-color: $background-color;
+    border-bottom: 1px solid $lighter-border-color;
 }
 
 #tree a {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 .tabs li .currentTab {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .dbGroup {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 #all,
 #no {
-	font-size: 1.6em;
+    font-size: 1.6em;
 }
 
 .aboText {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .showResultsWrap,
 .browseLinksWrap {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 #allsearch {
-	position: absolute;
-	top: 570px;
-	left: 132px;
+    position: absolute;
+    top: 570px;
+    left: 132px;
 }
 
 #cSearch,
 #c735,
 #c738 {
-	margin: 0;
-	min-width: 500px;
-	max-width: 1200px;
+    margin: 0;
+    min-width: 500px;
+    max-width: 1200px;
 }
 
 .searchingIn {
-	width: 50%;
-	padding: 0 0 .47em;
-	margin-left: 24%;
-	margin-top: -1.7em;
+    width: 50%;
+    padding: 0 0 .47em;
+    margin-left: 24%;
+    margin-top: -1.7em;
 }
 
 .buttonlink {
-	display: inline;
-	padding: 0 1em 0 0;
-	margin: 0 1em 0 0;
+    display: inline;
+    padding: 0 1em 0 0;
+    margin: 0 1em 0 0;
 }
 
 .close {
-	padding: 5px;
+    padding: 5px;
 }
 
 .second {
-	padding: 0 0 1.3em;
+    padding: 0 0 1.3em;
 }
 
 #ttp,
 #tpp {
-	margin: 1em 0 0 .5em;
+    margin: 1em 0 0 .5em;
 }
 
 .second a {
-	float: right;
-	margin: 1.2em 1.9em 0 0;
+    float: right;
+    margin: 1.2em 1.9em 0 0;
 }
 
 .free {
-	padding: 0 1.5em 1.5em;
+    padding: 0 1.5em 1.5em;
 }
 
 .text {
-	padding-left: .5em;
+    padding-left: .5em;
 }
 
 #searchMsc {
-	margin-top: -.8em;
+    margin-top: -.8em;
 }
 
 #catalogues,
 #onlineDocs,
 #internet,
 #historicalMath {
-	float: left;
-	width: 45%;
-	padding: 1em 2em 1em 0;
+    float: left;
+    width: 45%;
+    padding: 1em 2em 1em 0;
 }
 
 #catalogues {
-	padding-top: 2.2em;
+    padding-top: 2.2em;
 }
 
 .all,
 .no {
-	padding: 0 0 0 .5em;
+    padding: 0 0 0 .5em;
 }
 
 #right {
-	border: 0;
+    border: 0;
 }
 
 .current,
 .currentTab {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .csc-menu {
-	margin: 1em 0 2em;
+    margin: 1em 0 2em;
 }
 
 .ow {
-	height: 70px;
-	padding: 0 .3em .3em 0;
+    height: 70px;
+    padding: 0 .3em .3em 0;
 }
 
 .externSearch {
-	font-weight: bold;
-	padding: .5em 0 0;
+    font-weight: bold;
+    padding: .5em 0 0;
 }
 
 .separator-line {
-	clear: right;
-	height: 1px;
-	border: 1px solid $lighter-border-color;
-}
-
-.menu-trigger {
-	display: none;
-
-	@include breakpoint('xs') {
-		display: inline-block;
-		position: absolute;
-		background: $white;
-		color: $text-color;
-		z-index: 99;
-		border: 0;
-		margin: ($font-size - 10) 0 0 3px;
-
-		&:before {
-			content: '\f0c9';
-			font-family: $icon-font;
-			margin-right: .3em;
-		}
-
-		&:hover {
-			cursor: pointer;
-			background: rgba(0, 0, 0, .1);
-		}
-
-		&:active,
-		&:focus,
-		&:hover {
-			border: 0;
-			outline: 0;
-		}
-	}
+    clear: right;
+    height: 1px;
+    border: 1px solid $lighter-border-color;
 }

@@ -1,16 +1,16 @@
 #sitemap,
 .csc-sitemap {
-	padding: 1em 0;
+    padding: 1em 0;
 
-	ul li {
-		list-style-type: disc;
-		list-style-position: inside;
-		padding-bottom: .3em;
-		padding-top: .3em;
-	}
+    ul li {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding-bottom: .3em;
+        padding-top: .3em;
+    }
 
-	a {
-		color: $text-color;
-		font-weight: normal;
-	}
+    a {
+        color: $text-color;
+        font-weight: normal;
+    }
 }

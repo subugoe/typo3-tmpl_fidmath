@@ -2,7 +2,7 @@ lib.mainmenu = HMENU
 lib.mainmenu {
     1 = TMENU
     1 {
-        wrap = <ul>|</ul>
+        wrap = <ul class="nav">|</ul>
         NO = 1
         NO {
             wrapItemAndSub = <li class="main-navigation_element">|</li>
