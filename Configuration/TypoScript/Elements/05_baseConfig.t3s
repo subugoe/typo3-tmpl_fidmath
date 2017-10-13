@@ -64,8 +64,8 @@ page {
         file1 = EXT:tmpl_fidmath/Resources/Public/JavaScript/fidmath.js
     }
 
-    includeJSLibs {
-        jquery = EXT:tmpl_fidmath/Resources/Public/JavaScript/jquery.min.js
+    includeJSFooterlibs {
+        vendor = EXT:tmpl_fidmath/Resources/Public/JavaScript/vendor.js
     }
 
     10 = FLUIDTEMPLATE

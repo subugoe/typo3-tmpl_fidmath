@@ -1,7 +1,7 @@
 const gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    cached = require('gulp-cached');
+    concat = require('gulp-concat');
 
 const config = {
   paths: {
@@ -13,8 +13,10 @@ const config = {
     scripts: [
         './node_modules/jquery/dist/jquery.min.js',
         './node_modules/jquery-flot/jquery.flot.js',
-        './node_modules/jquery-flot/jquery.flot.selection.js'
-    ]
+        './node_modules/jquery-flot/jquery.flot.selection.js',
+        './node_modules/bootstrap/js/dist/util.js',
+        './node_modules/bootstrap/js/dist/collapse.js'
+    ],
   },
   autoprefixer: {
     browsers: [
@@ -31,6 +33,7 @@ const config = {
 
 gulp.task('js', () => {
     gulp.src(config.paths.scripts)
+        .pipe(concat('vendor.js'))
         .pipe(gulp.dest('./Resources/Public/JavaScript/'))
 });
 
@@ -61,7 +64,7 @@ gulp.task('build', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch(config.paths.sass, ['sass', 'sassProd'])
+  gulp.watch(config.paths.sass, ['sass', 'sassProd', 'js'])
 });
 
 gulp.task('default', () => {

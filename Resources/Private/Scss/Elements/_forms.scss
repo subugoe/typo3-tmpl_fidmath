@@ -3,12 +3,12 @@
 .powermail_input,
 .form-control,
 .powermail_textarea {
-	@include input-text;
+    @include input-text;
 }
 
 .csc-form-element-select select,
 .powermail_select {
-	@include input-select;
+    @include input-select;
 }
 
 .csc-form-element-submit input,
@@ -16,82 +16,82 @@
 .submStart,
 .powermail_submit,
 .btn-primary {
-	@include input-submit;
+    @include input-submit;
 }
 
 #simpleSearch,
 #advancedSearch {
-	width: 70%;
+    width: 70%;
 }
 
 .csc-mailform,
 .frame-type-form_formframework {
-	li {
-		list-style-type: none !important;
-		margin-left: 0 !important;
-	}
+    li {
+        list-style-type: none !important;
+        margin-left: 0 !important;
+    }
 }
 
 form {
-	.actions {
-		float: left;
-		clear: both;
-	}
+    .actions {
+        float: left;
+        clear: both;
+    }
 }
 
 .powermail_fieldwrap,
 .form-group,
 .csc-form-element {
-	margin: .5em 0;
-	float: left;
-	clear: both;
+    margin: .5em 0;
+    float: left;
+    clear: both;
 }
 
 .powermail_legend,
 .csc-mailform legend,
 .form-group legend {
-	@include form-legend;
+    @include form-legend;
 }
 
 .csc-mailform label {
-	@include form-label;
+    @include form-label;
 }
 
 .powermail_label,
 .control-label {
-	@include form-label;
+    @include form-label;
 
-	&:after {
-		cursor: help;
-		content: '\f129';
-		display: inline-block;
-		height: $font-size;
-		width: $font-size;
-		line-height: $font-size;
-		margin: 0 0 0 2px;
-		font-size: $font-size;
-		text-align: center;
-		font-family: $icon-font;
-	}
+    &:after {
+        cursor: help;
+        content: '\f129';
+        display: inline-block;
+        height: $font-size;
+        width: $font-size;
+        line-height: $font-size;
+        margin: 0 0 0 2px;
+        font-size: $font-size;
+        text-align: center;
+        font-family: $icon-font;
+    }
 
-	&[title=""] {
-		cursor: inherit;
+    &[title=""] {
+        cursor: inherit;
 
-		&:after {
-			display: none;
-		}
-	}
+        &:after {
+            display: none;
+        }
+    }
 }
 
 .powermail_check_outer {
-	float: left;
+    float: left;
 
-	.powermail_check_inner {
-		float: left;
-		margin: 0;
-	}
+    .powermail_check_inner {
+        float: left;
+        margin: 0;
+    }
 }
 
 .powermail_form h3 {
-	display: none;
+    display: none;
 }

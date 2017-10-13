@@ -102,12 +102,6 @@
 
     .pz2-basic {
         order: 1;
-
-        .pz2-searchField {
-            @include breakpoint('xs') {
-                width: auto;
-            }
-        }
     }
 
     .pz2-termList {
@@ -194,7 +188,6 @@
         @include breakpoint('xs') {
             width: auto;
         }
-
     }
 }
 

@@ -16,7 +16,8 @@
     "jquery-flot": "^0.8.3"
   },
   "devDependencies": {
-    "gulp-autoprefixer": "^4.0.0"
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1"
   },
   "author": "Ingo Pfennigstorf <i.pfennigstorf@gmail.com>",
   "license": "GPL-2.0",
