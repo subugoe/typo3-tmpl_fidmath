@@ -58,11 +58,6 @@
     font-weight: bold;
 }
 
-#all,
-#no {
-    font-size: 1.6em;
-}
-
 .aboText {
     font-size: 1.2em;
 }
@@ -105,16 +100,16 @@
 
 .second {
     padding: 0 0 1.3em;
+
+    a {
+        float: right;
+        margin: 1.2em 1.9em 0 0;
+    }
 }
 
 #ttp,
 #tpp {
     margin: 1em 0 0 .5em;
-}
-
-.second a {
-    float: right;
-    margin: 1.2em 1.9em 0 0;
 }
 
 .free {
@@ -145,6 +140,7 @@
 .all,
 .no {
     padding: 0 0 0 .5em;
+    font-size: 1.6em;
 }
 
 #right {
@@ -154,10 +150,6 @@
 .current,
 .currentTab {
     font-weight: bold;
-}
-
-.csc-menu {
-    margin: 1em 0 2em;
 }
 
 .ow {

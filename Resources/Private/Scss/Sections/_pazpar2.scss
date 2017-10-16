@@ -5,24 +5,10 @@
     width: 100%;
 
     #pz2-recordView {
-
         order: 2;
-
-        @include breakpoint('xs') {
-            display: flex;
-            flex-direction: column;
-        }
-
     }
 
     #pz2-termLists {
-
-        @include breakpoint('xs') {
-            order: 6;
-            float: none;
-            width: 100%;
-        }
-
         li {
             margin-left: 0;
         }

@@ -1,0 +1,38 @@
+#####################################################
+# Gobale Markers: Personens + Expressions + Phrases #
+#####################################################
+constants {
+    KH = Katharina Habermann
+    TF = Thomas Fischer
+
+    MM = Marianna Mühlhölzer
+
+    VM = Fachinformationsdienst Mathematik
+    VM_en = Virtual Library of Mathematics
+    vifamath = <span class="prefix">fid</span><span class="postfix">math</span>
+
+    SUB = SUB Göttingen
+    TIB = TIB Hannover
+    FIZ = FIZ Karlsruhe
+
+    SUB_de = <abbr title="Niedersächsische Staats- und Universitätsbibliothek Göttingen">SUB Göttingen</abbr>
+    TIB_de = <abbr title="Technische Informationsbibliothek Hannover">TIB Hannover</abbr>
+    FIZ_de = <abbr title="Fachinformationszentrum Karlsruhe">FIZ Karlsruhe</abbr>
+    SUB_en = <abbr title="Göttingen State and University Library">SUB Göttingen</abbr>
+    TIB_en = <abbr title="German National Library of Science Technology Hanover">TIB Hannover</abbr>
+    FIZ_en = <abbr title="Fachinformationszentrum Karlsruhe">FIZ Karlsruhe</abbr>
+
+    SUB_long_link_de = <a href="http://www.sub.uni-goettingen.de/" class="external-link-new-window" target="_blank" title="externer Link: Niedersächsische Staats- und Universitätsbibliothek Göttingen">Niedersächsische Staats- und Universitätsbibliothek Göttingen</a>
+    TIB_long_link_de = <a href="http://www.tib-hannover.de/" class="external-link-new-window" target="_blank" title="externer Link: Technische Informationsbibliothek Hannover">Technische Informationsbibliothek Hannover</a>
+    FIZ_long_link_de = <a href="http://www.fiz-karlsruhe.de/" class="external-link-new-window" target="_blank" title="externer Link: Fachinformationszentrum Karlsruhe">Fachinformationszentrum Karlsruhe</a>
+    SUB_long_link_en = <a href="http://www.sub.uni-goettingen.de/en/" class="external-link-new-window" target="_blank" title="external link: Göttingen State and University Library">Göttingen State and University Library</a>
+    TIB_long_link_en = <a href="http://www.tib-hannover.de/en/" class="external-link-new-window" target="_blank" title="external link: German National Library of Science Technology Hanover">German National Library of Science Technology Hanover</a>
+    FIZ_long_link_en = <a href="http://www.fiz-karlsruhe.de/" class="external-link-new-window" target="_blank" title="external link: Fachinformationszentrum Karlsruhe">Fachinformationszentrum Karlsruhe</a>
+    # 2 = Namen im Genitiv:
+    SUB_long_2_link_de = <a href="http://www.sub.uni-goettingen.de/" class="external-link-new-window" target="_blank" title="externer Link: Niedersächsische Staats- und Universitätsbibliothek Göttingen">Niedersächsischen Staats- und Universitätsbibliothek Göttingen</a>
+    TIB_long_2_link_de = <a href="http://www.tib-hannover.de/" class="external-link-new-window" target="_blank" title="externer Link: Technische Informationsbibliothek Hannover">Technischen Informationsbibliothek Hannover</a>
+    FIZ_long_2_link_de = <a href="http://www.fiz-karlsruhe.de/" class="external-link-new-window" target="_blank" title="externer Link: Fachinformationszentrums Karlsruhe">Fachinformationszentrum Karlsruhe</a>
+
+    db_info_de = <b>i</b> - Infos zu den Datenquellen
+    db_info_en = <b>i</b> - Information on databases
+}

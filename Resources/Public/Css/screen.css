@@ -11132,11 +11132,6 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-li, .tx_find .facet-type-Tabs ol .facetActive {
-  list-style-type: none;
-  padding: 0 0 .2em .8em;
-}
-
 strong {
   background: #b5c5e6;
 }
@@ -11336,6 +11331,8 @@ form .actions {
 }
 
 .main-navigation {
+  padding-left: 0;
+  margin-top: 1em;
   border-top: 1px solid #b5c5e6;
   border-bottom: 1px solid #b5c5e6;
   background-color: white;
@@ -11403,6 +11400,11 @@ form .actions {
   transition: transform .3s, -webkit-transform .3s;
 }
 
+.content-container li, .content-container .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .facetActive {
+  list-style-type: none;
+  padding: 0 0 .2em .8em;
+}
+
 .main-container {
   font-family: "Open Sans", Arial, sans-serif;
 }
@@ -11437,28 +11439,6 @@ form .actions {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-}
-
-@media (max-width: 639px) {
-  #pazpar2 #pz2-recordView {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 639px) {
-  #pazpar2 #pz2-termLists {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
-    float: none;
-    width: 100%;
-  }
 }
 
 #pazpar2 #pz2-termLists li, #pazpar2 #pz2-termLists .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 #pz2-termLists .facetActive {
@@ -11926,6 +11906,12 @@ form .actions {
   color: #192d57;
   font-weight: normal;
   text-decoration: none;
+}
+
+.content-container .gokContainer.column .close {
+  float: none;
+  font-size: 16px;
+  opacity: 1;
 }
 
 .content-container .gokContainer.column .GOKID {
@@ -12529,11 +12515,6 @@ a.external-link-new-window[href$=".HTML"] {
   font-weight: bold;
 }
 
-#all,
-#no {
-  font-size: 1.6em;
-}
-
 .aboText {
   font-size: 1.2em;
 }
@@ -12578,14 +12559,14 @@ a.external-link-new-window[href$=".HTML"] {
   padding: 0 0 1.3em;
 }
 
-#ttp,
-#tpp {
-  margin: 1em 0 0 .5em;
-}
-
 .second a {
   float: right;
   margin: 1.2em 1.9em 0 0;
+}
+
+#ttp,
+#tpp {
+  margin: 1em 0 0 .5em;
 }
 
 .free {
@@ -12616,6 +12597,7 @@ a.external-link-new-window[href$=".HTML"] {
 .all,
 .no {
   padding: 0 0 0 .5em;
+  font-size: 1.6em;
 }
 
 #right {
@@ -12625,10 +12607,6 @@ a.external-link-new-window[href$=".HTML"] {
 .current,
 .currentTab {
   font-weight: bold;
-}
-
-.csc-menu {
-  margin: 1em 0 2em;
 }
 
 .ow {

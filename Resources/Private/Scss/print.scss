@@ -25,217 +25,216 @@ blockquote,
 th,
 td,
 p {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-	border: 0;
+    border: 0;
 }
 
 .header {
-	.header-actionspicture {
-		display: none;
-	}
+    .header-actionspicture {
+        display: none;
+    }
 }
 
 .menu-trigger {
-	display: none;
+    display: none;
 }
 
 .headline-first_standard {
-	color: $print-color;
-	padding-bottom: .5em;
+    color: $print-color;
+    padding-bottom: .5em;
 }
 
 .headline-first_welcome {
-	padding: 0;
-	margin: 0;
-	color: $print-color;
-	font-size: 14pt;
-	border: 0;
+    padding: 0;
+    margin: 0;
+    color: $print-color;
+    font-size: 14pt;
+    border: 0;
 }
 
 h1 {
-	&.csc-firstHeader {
-		margin-bottom: 15px;
-	}
+    &.csc-firstHeader {
+        margin-bottom: 15px;
+    }
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 body {
-	width: 100%;
-	height: 100%;
-	text-align: left;
+    width: 100%;
+    height: 100%;
+    text-align: left;
 }
 
 .intro {
-	display: none;
+    display: none;
 }
 
 .main-container {
-	margin: 0 auto;
-	height: auto;
-	width: auto;
-	max-width: 80%;
-	min-width: 950px;
-	padding: 0 2%;
-	color: $print-color;
-	font-size: 12pt;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    min-width: 950px;
+    padding: 0 2%;
+    color: $print-color;
+    font-size: 12pt;
 }
 
 /*Oberer Bereich */
 
 .meta-navigation {
-	display: none;
+    display: none;
 }
 
 .SieSindHier {
-	display: none;
+    display: none;
 }
 
 .breadcrumbs {
-	display: none;
+    display: none;
 }
 
 .breadcrumb-navigation_element {
-	display: none;
+    display: none;
 }
 
 .breadcrumb-navigation_link {
-	display: none;
+    display: none;
 }
 
 .content-container {
-	float: left;
-	width: 100%;
-	min-width: 950px;
-	padding: 4em 0 0;
-	margin-bottom: 30px;
+    float: left;
+    width: 100%;
+    min-width: 950px;
+    padding: 4em 0 0;
+    margin-bottom: 30px;
 }
 
-
 .main-navigation {
-	display: none;
+    display: none;
 }
 
 div .cIconsetTop,
 #right,
 #dbcard {
-	display: none;
+    display: none;
 }
 
 div .cIconsetBottom {
-	display: none;
+    display: none;
 }
 
 .cIconsetVerbal {
-	display: none;
+    display: none;
 }
 
 #cSearch form {
-	display: none;
+    display: none;
 }
 
 #cInhalt {
-	float: left;
-	width: 100%;
-	margin: 0;
-	display: inline;
-	position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    display: inline;
+    position: relative;
 }
 
 #cText {
-	float: left;
-	width: 99%;
-	padding: 0;
-	position: relative;
-	border: 0;
+    float: left;
+    width: 99%;
+    padding: 0;
+    position: relative;
+    border: 0;
 }
 
 #recordtable {
-	border-collapse: collapse;
-	width: 100%;
-	border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
 
-	caption {
-		padding: 1.3em 0;
-		text-align: left;
-		font-size: 12pt;
-	}
+    caption {
+        padding: 1.3em 0;
+        text-align: left;
+        font-size: 12pt;
+    }
 }
 
 .recno {
-	padding: 1em 0;
-	vertical-align: top;
-	border: 0;
+    padding: 1em 0;
+    vertical-align: top;
+    border: 0;
 }
 
 .data {
-	padding: 1em 0;
-	vertical-align: top;
-	color: $print-color;
-	border: 0;
+    padding: 1em 0;
+    vertical-align: top;
+    color: $print-color;
+    border: 0;
 }
 
 .data .normal_Link {
-	color: $print-color;
+    color: $print-color;
 }
 
 .data .external_link {
-	color: $print-color;
+    color: $print-color;
 }
 
 fieldset {
-	display: none;
+    display: none;
 }
 
 .iputStart {
-	float: left;
-	width: 65%;
-	padding: .2em .8em;
-	margin-left: 20px;
+    float: left;
+    width: 65%;
+    padding: .2em .8em;
+    margin-left: 20px;
 }
 
 #iport_goto_form,
 #notify,
 #gen {
-	display: none;
+    display: none;
 }
 
 .iputGoto {
-	width: 30%;
-	padding: .2em;
-	margin: 1em 0 0 1em;
+    width: 30%;
+    padding: .2em;
+    margin: 1em 0 0 1em;
 }
 
 .submGoto {
-	width: 10%;
-	min-width: 64px;
-	margin: 1em 0;
-	display: inline;
-	padding: .1em .2em;
+    width: 10%;
+    min-width: 64px;
+    margin: 1em 0;
+    display: inline;
+    padding: .1em .2em;
 }
 
 p {
-	margin: 1em 0;
+    margin: 1em 0;
 }
 
 .newsTeaser {
-	padding: 1em 0 1.5em;
+    padding: 1em 0 1.5em;
 
-	h2 {
-		margin-bottom: 5px;
-	}
+    h2 {
+        margin-bottom: 5px;
+    }
 }
 
 .csc-linkToTop {
-	display: none;
+    display: none;
 }
 
 .close {
-	display: none;
+    display: none;
 }

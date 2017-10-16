@@ -3,4 +3,9 @@
     margin-top: 1em;
     transform: translate(0, 0);
     transition: transform .3s;
+
+    li {
+        list-style-type: none;
+        padding: 0 0 .2em .8em;
+    }
 }
