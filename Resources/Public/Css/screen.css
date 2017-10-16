@@ -11362,14 +11362,11 @@ form .actions {
 .meta-navigation {
   list-style-type: none;
   font-size: 95%;
-  margin-bottom: 1em;
-  padding-top: 1em;
   text-align: center;
-  border-top: 1px solid #f0f0f0;
 }
 
 .meta-navigation .metanavigation-element {
-  display: inline;
+  display: inline-block;
   padding: 0;
 }
 
@@ -11427,6 +11424,10 @@ form .actions {
 
 .main-container {
   font-family: "Open Sans", Arial, sans-serif;
+}
+
+.header .header-meta {
+  display: inline-block;
 }
 
 .main-content {

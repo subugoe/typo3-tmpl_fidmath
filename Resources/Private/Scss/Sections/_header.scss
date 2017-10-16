@@ -1,3 +1,7 @@
 .header {
     @extend .container;
+
+    .header-meta {
+        display: inline-block;
+    }
 }

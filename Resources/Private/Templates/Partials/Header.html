@@ -1,25 +1,32 @@
 <div class="header">
-    <div class="header-logo">
-        <f:link.page pageUid="195">
-            <f:image src="{f:uri.resource(path:'Images/logo.png')}" alt="Fachinformationsdienst Mathematik Logo"
-                     title="{f:translate(key: 'header-logo-title')}" height="100"/>
-        </f:link.page>
+    <div class="row">
+        <div class="header-logo col-md-4">
+            <f:link.page pageUid="195">
+                <f:image src="{f:uri.resource(path:'Images/logo.png')}" alt="Fachinformationsdienst Mathematik Logo" title="{f:translate(key: 'header-logo-title')}" height="100"/>
+            </f:link.page>
+        </div>
+        <div class="header-meta col-md-4 ml-auto">
+            <ul class="meta-navigation">
+                <f:cObject typoscriptObjectPath="lib.metaNavigation"/>
+                <li class="metanavigation-element">
+                    <span class="navbar-text languagemenu">
+                        <f:link.page additionalParams="{L: \" {f:translate(key:'header-languageswitch-id')}\"}" addQueryString="true" addQueryStringMethod="GET" class="languagemenu_switch">{f:translate(key: 'header-languageswitch')}</f:link.page>
+                    </span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
 <div class="container">
-<nav class="main-navigation navbar navbar-expand-lg">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="main-navigation navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler"
+                aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="toggler">
-
-    <f:cObject typoscriptObjectPath="lib.mainmenu"/>
-
-    <span class="navbar-text languagemenu">
-        <f:link.page additionalParams="{L: \" {f:translate(key:'header-languageswitch-id')}\"}" addQueryString="true" addQueryStringMethod="GET" class="languagemenu_switch">{f:translate(key: 'header-languageswitch')}</f:link.page>
-    </span>
-    </div>
-</nav>
+        <div class="collapse navbar-collapse" id="toggler">
+            <f:cObject typoscriptObjectPath="lib.mainmenu"/>
+        </div>
+    </nav>
 </div>

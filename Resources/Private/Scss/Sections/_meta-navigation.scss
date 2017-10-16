@@ -1,13 +1,10 @@
 .meta-navigation {
     list-style-type: none;
     font-size: 95%;
-    margin-bottom: 1em;
-    padding-top: 1em;
     text-align: center;
-    border-top: 1px solid $border-color;
 
     .metanavigation-element {
-        display: inline;
+        display: inline-block;
         padding: 0;
     }
 

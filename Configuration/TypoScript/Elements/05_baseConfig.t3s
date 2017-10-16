@@ -1,10 +1,10 @@
 page = PAGE
 page {
     typeNum = 0
-
     shortcutIcon = EXT:tmpl_fidmath/Resources/Public/Images/favicon.ico
 
     config {
+        prefixLocalAnchors = true
         sys_language_uid = 0
         language = de
         locale_all = de_DE.UTF-8

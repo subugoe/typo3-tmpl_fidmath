@@ -10,7 +10,7 @@ RTE.default.disableEnterParagraphs = 0
 ### Constants from topNavigation
 temp.topNavigation.10.special {
     # cat=topNavigation/pagelist/3; type=string; label=List of page to appear in the top navigation
-    value = 1,18,21,154,79
+    value = 21,79
 }
 
 generalSearchTextEN {
