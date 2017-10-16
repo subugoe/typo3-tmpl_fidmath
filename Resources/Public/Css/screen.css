@@ -11179,6 +11179,8 @@ select {
   font-weight: bold;
   font-size: 24px;
   letter-spacing: .03em;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
 }
 
 .headline-first_welcome {
@@ -11417,6 +11419,10 @@ form .actions {
 .content-container li, .content-container .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .facetActive {
   list-style-type: none;
   padding: 0 0 .2em .8em;
+}
+
+.content-container .main {
+  padding: 0 1rem;
 }
 
 .main-container {
