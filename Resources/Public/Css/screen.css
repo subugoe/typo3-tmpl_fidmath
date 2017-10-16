@@ -11344,6 +11344,19 @@ form .actions {
   font-weight: bold;
 }
 
+.dropdown-menu {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+  border-left: 4px solid rgba(0, 0, 0, 0.15);
+  left: 1rem;
+  padding: 0.5rem;
+  min-width: 20rem;
+}
+
+.dropdown-menu li, .dropdown-menu .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .dropdown-menu .facetActive {
+  text-indent: -1em;
+  margin-left: 1em;
+}
+
 .meta-navigation {
   list-style-type: none;
   font-size: 95%;

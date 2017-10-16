@@ -23,3 +23,16 @@
 .main-navigation_element {
     @extend .nav-item;
 }
+
+.dropdown-menu {
+    border-bottom: 4px solid rgba(0,0,0, .15);
+    border-left: 4px solid rgba(0,0,0, .15);
+    left: 1rem;
+    padding: 0.5rem;
+    min-width: 20rem;
+
+    li {
+        text-indent: -1em;
+        margin-left: 1em;
+    }
+}
