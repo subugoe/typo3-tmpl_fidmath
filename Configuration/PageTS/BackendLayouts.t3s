@@ -1,5 +1,5 @@
 mod.web_layout.BackendLayouts {
-  1 {
+  onecolumn {
     title = One Column
     icon = EXT:tmpl_fidmath/Resources/Public/Images/BackendLayouts/one-column.png
     config {
@@ -20,7 +20,7 @@ mod.web_layout.BackendLayouts {
     }
   }
 
-  2 {
+  twocolumns {
     title = Two Columns
     icon = EXT:tmpl_fidmath/Resources/Public/Images/BackendLayouts/two-columns.png
     config {

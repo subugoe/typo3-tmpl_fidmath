@@ -74,8 +74,8 @@ page {
                 value = EXT:tmpl_fidmath/Resources/Private/Templates/Vifamath.html
             }
 
-            2 = TEXT
-            2 {
+            pagets__twocolumns = TEXT
+            pagets__twocolumns {
                 value = EXT:tmpl_fidmath/Resources/Private/Templates/Vifamath-2-columns.html
             }
         }
