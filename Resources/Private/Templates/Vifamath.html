@@ -1,20 +1,11 @@
-<div class="main-container">
+<f:layout name="Main" />
 
-    <f:render partial="Header"/>
+<f:section name="main">
 
-    <div class="content-container">
-        <f:if condition="{pageUid} == 1">
-            <f:then>
-                <h1 class="headline-first_welcome">{pageTitle}</h1>
-            </f:then>
-            <f:else>
-                <h1 class="headline-first_standard">{pageTitle}</h1>
-            </f:else>
-        </f:if>
-        <div class="main one-column">
-            <div class="main-content">
-                {mainContent -> f:format.raw()}
-            </div>
-        </div>
+<div class="main one-column">
+    <div class="main-content">
+        {mainContent -> f:format.raw()}
     </div>
 </div>
+
+</f:section>
