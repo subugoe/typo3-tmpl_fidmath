@@ -11382,7 +11382,8 @@ form .actions {
 }
 
 .meta-navigation .metanavigation-element_link.act {
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: 95%;
 }
 
 .meta-navigation .metanavigation-element_link:hover {
