@@ -11357,6 +11357,7 @@ form .actions {
 .dropdown-menu li, .dropdown-menu .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .dropdown-menu .facetActive {
   text-indent: -1em;
   margin-left: 1em;
+  padding-top: .25em;
 }
 
 .meta-navigation {
