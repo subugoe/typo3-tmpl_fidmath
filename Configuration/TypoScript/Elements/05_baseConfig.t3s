@@ -64,7 +64,21 @@ page {
 
     10 = FLUIDTEMPLATE
     10 {
-        file = EXT:tmpl_fidmath/Resources/Private/Templates/Vifamath.html
+        file.stdWrap.cObject = CASE
+        file.stdWrap.cObject {
+            key.data = levelfield:-1, backend_layout, slide
+            key.override.field = backend_layout
+
+            default = TEXT
+            default {
+                value = EXT:tmpl_fidmath/Resources/Private/Templates/Vifamath.html
+            }
+
+            2 = TEXT
+            2 {
+                value = EXT:tmpl_fidmath/Resources/Private/Templates/Vifamath-2-columns.html
+            }
+        }
         extbase.controllerExtensionName = tmpl_fidmath
         partialRootPath = EXT:tmpl_fidmath/Resources/Private/Templates/Partials/
         layoutRootPath = EXT:tmpl_fidmath/Resources/Private/Templates/Layouts/
@@ -74,6 +88,16 @@ page {
 
             pageUid = TEXT
             pageUid.data = page:uid
+
+            mainContent < styles.content.get
+            mainContent {
+                select.where = colPos=0
+            }
+
+            asideContent < styles.content.get
+            asideContent {
+                select.where = colPos=1
+            }
         }
     }
 }

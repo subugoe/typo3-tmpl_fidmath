@@ -11,10 +11,13 @@
                 <h1 class="headline-first_standard">{pageTitle}</h1>
             </f:else>
         </f:if>
-        <div class="main one-column">
+        <div class="main two-columns">
             <div class="main-content">
                 {mainContent -> f:format.raw()}
             </div>
+            <aside class="main-sidebar">
+                {asideContent -> f:format.raw()}
+            </aside>
         </div>
     </div>
 </div>

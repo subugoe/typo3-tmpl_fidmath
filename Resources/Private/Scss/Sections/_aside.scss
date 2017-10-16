@@ -1,0 +1,14 @@
+.main-sidebar {
+    h2 {
+        font-weight: bold;
+    }
+
+    h2,
+    h3 {
+        font-size: $font-size;
+    }
+
+    .teaser-text {
+        display: none;
+    }
+}
