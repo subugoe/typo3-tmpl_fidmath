@@ -2,17 +2,36 @@ lib.mainmenu = HMENU
 lib.mainmenu {
     1 = TMENU
     1 {
+        expAll = true
         wrap = <ul class="nav">|</ul>
         NO = 1
         NO {
-            wrapItemAndSub = <li class="main-navigation_element">|</li>
-            ATagParams = class="main-navigation_link"
+            wrapItemAndSub = <li class="main-navigation_element level-1">|</li>
+            ATagParams = class="main-navigation_link level-1"
+        }
+
+        IFSUB < .NO
+        IFSUB = 1
+        IFSUB {
+            wrapItemAndSub = <li class="main-navigation_element level-1 dropdown">|</li>
+            ATagParams = class="main-navigation_link level-1 dropdown-toggle" data-toggle="dropdown"
+            stdWrap.append = TEXT
+            stdWrap.append.value = <span class="caret"></span>
         }
 
         ACT = 1
         ACT {
-            wrapItemAndSub = <li class="current main-navigation_element">|</li>
-            ATagParams = class="main-navigation_link"
+            wrapItemAndSub = <li class="current main-navigation_element level-1 active">|</li>
+            ATagParams = class="main-navigation_link level-1 active"
+        }
+
+        ACTIFSUB < .NO
+        ACTIFSUB = 1
+        ACTIFSUB {
+            wrapItemAndSub = <li class="main-navigation_element dropdown active level-1">|</li>
+            ATagParams = class="main-navigation_link dropdown-toggle active level-1" data-toggle="dropdown"
+            stdWrap.append = TEXT
+            stdWrap.append.value = <span class="caret"></span>
         }
 
         CUR = 1
@@ -20,11 +39,22 @@ lib.mainmenu {
             wrapItemAndSub = <li class="current main-navigation_element">|</li>
             ATagParams = class="main-navigation_link"
         }
+    }
 
-        SPC = 1
-        SPC {
-            allWrap = <li class="trenner main-navigation_element">&nbsp;</li>
-            doNotShowLink = 1
+    2 = TMENU
+    2 {
+        wrap = <ul class="dropdown-menu level-2" role="menu">|</ul>
+        NO = 1
+        NO {
+            wrapItemAndSub = <li class="level-2">|</li>
+            ATagParams = class="level-2"
+            stdWrap.htmlSpecialChars = 1
+        }
+
+        ACT = .NO
+        ACT {
+            wrapItemAndSub = <li class="active level-2">|</li>
+            ATagParams = class="active level-2"
         }
     }
 }

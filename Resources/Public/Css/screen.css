@@ -11130,6 +11130,7 @@ body {
   color: #000;
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
+  margin-top: 1em;
 }
 
 strong {
@@ -11949,6 +11950,10 @@ form .actions {
 
 .tx-mathematicians .iputStart {
   margin-right: 16px;
+}
+
+.tx-mathematicians .mathematicians_collection-header img {
+  vertical-align: text-bottom;
 }
 
 .tx_find {
