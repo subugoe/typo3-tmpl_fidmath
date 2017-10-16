@@ -11756,6 +11756,10 @@ form .actions {
   padding: .5em;
 }
 
+.tx-ezbrequest-pi1 .journallist-image {
+  vertical-align: baseline;
+}
+
 .newsTeaser {
   border-top: 1px solid #fff;
   padding: .6em 0 1em;
@@ -11804,27 +11808,6 @@ form .actions {
 .news-backlink-wrap a:before {
   font-family: "FontAwesome";
   content: '\f177';
-}
-
-#sitemap,
-.csc-sitemap {
-  padding: 1em 0;
-}
-
-#sitemap ul li, #sitemap ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #sitemap ul .facetActive,
-.csc-sitemap ul li,
-.csc-sitemap ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol
-.csc-sitemap ul .facetActive {
-  list-style-type: disc;
-  list-style-position: inside;
-  padding-bottom: .3em;
-  padding-top: .3em;
-}
-
-#sitemap a,
-.csc-sitemap a {
-  color: #000;
-  font-weight: normal;
 }
 
 .tabs a,

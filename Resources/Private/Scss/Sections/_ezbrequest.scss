@@ -1,59 +1,62 @@
 .tx-ezbrequest-pi1 {
 
-	#navi {
-		height: 2.5em;
-	}
+    #navi {
+        height: 2.5em;
+    }
 
-	#journalNavi {
-		padding: 0 0 .5em;
-		border-bottom: 1px solid $border-color;
+    #journalNavi {
+        padding: 0 0 .5em;
+        border-bottom: 1px solid $border-color;
 
-		li {
-			padding: 0;
-		}
-	}
+        li {
+            padding: 0;
+        }
+    }
 
-	#journalList {
-		max-width: 80%;
+    #journalList {
+        max-width: 80%;
 
-		li {
-			margin-left: 2 * $font-size;
-			list-style-type: none;
+        li {
+            margin-left: 2 * $font-size;
+            list-style-type: none;
 
-			.ampel {
-				left: -2 * $font-size;
-			}
-		}
+            .ampel {
+                left: -2 * $font-size;
+            }
+        }
 
-		a {
-			color: $text-color;
-		}
-	}
+        a {
+            color: $text-color;
+        }
+    }
 
-	#ezb_search_form {
+    #ezb_search_form {
 
-		margin-top: .5em;
+        margin-top: .5em;
 
-		.iputStartSmall {
-			@include input-text;
-			width: ($form-field-width / 2);
-			margin-right: $font-size;
-		}
-	}
+        .iputStartSmall {
+            @include input-text;
+            width: ($form-field-width / 2);
+            margin-right: $font-size;
+        }
+    }
 
-	.jourItem {
-		padding-top: .3em;
-	}
+    .jourItem {
+        padding-top: .3em;
+    }
 
-	.alphabetMenu {
-		li {
-			margin-left: 0;
-			letter-spacing: 1px;
-		}
-	}
+    .alphabetMenu {
+        li {
+            margin-left: 0;
+            letter-spacing: 1px;
+        }
+    }
 
-	.ezbrequest_itemtable {
-		@include table;
-	}
+    .ezbrequest_itemtable {
+        @include table;
+    }
 
+    .journallist-image {
+        vertical-align: baseline;
+    }
 }
