@@ -1,0 +1,13 @@
+.to-top {
+    display: none;
+    background: $background-color;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0 .25em;
+    font-size: $h1-font-size;
+
+    a {
+        color: $white;
+    }
+}

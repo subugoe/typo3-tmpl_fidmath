@@ -12431,6 +12431,20 @@ form .actions {
   display: none;
 }
 
+.to-top {
+  display: none;
+  background: #b5c5e6;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0 .25em;
+  font-size: 2.5rem;
+}
+
+.to-top a {
+  color: #fff;
+}
+
 td.data a.external-link[href$=".pdf"],
 td.data a.external_link[href$=".PDF"],
 td.data a.external-link-new-window[href$=".pdf"],
