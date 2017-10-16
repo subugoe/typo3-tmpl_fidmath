@@ -39,6 +39,14 @@ lib.mainmenu {
             wrapItemAndSub = <li class="current main-navigation_element">|</li>
             ATagParams = class="main-navigation_link"
         }
+
+        CURIFSUB = 1
+        CURIFSUB {
+            wrapItemAndSub = <li class="main-navigation_element dropdown active level-1">|</li>
+            ATagParams = class="main-navigation_link dropdown-toggle active level-1" data-toggle="dropdown"
+            stdWrap.append = TEXT
+            stdWrap.append.value = <span class="caret"></span>
+        }
     }
 
     2 = TMENU
