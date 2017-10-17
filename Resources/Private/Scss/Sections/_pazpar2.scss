@@ -24,38 +24,10 @@
         left: -33px;
     }
 
-    .pz2-prev:after,
-    .pz2-next:after {
-        @include breakpoint('xs') {
-            display: none;
-        }
-    }
-
-    .pz2-prev,
-    .pz2-next {
-
-        @include breakpoint('xs') {
-            position: static;
-            top: 0;
-            width: auto;
-            height: auto;
-            text-indent: 0;
-            overflow: visible;
-        }
-
-    }
-
     .pz2-pager {
         li {
             a {
                 padding: 0 .3em;
-            }
-        }
-
-        .pz2-pageNumbers {
-            @include breakpoint('xs') {
-                margin-right: 0;
-                text-align: left;
             }
         }
 
@@ -77,12 +49,6 @@
             &.inline {
                 margin-left: 0;
             }
-        }
-    }
-
-    .pz2-mainForm {
-        @include breakpoint('xs') {
-            top: 58px !important;
         }
     }
 
@@ -122,19 +88,7 @@
         }
 
         dd {
-
             margin-left: 11em;
-
-            @include breakpoint('xs') {
-                margin-left: 8em;
-            }
-
-        }
-
-        dt {
-            @include breakpoint('xs') {
-                width: 0;
-            }
         }
     }
 
@@ -157,7 +111,8 @@
     }
 
     .pz2-submitButton {
-        @include input-submit;
+        @extend .btn;
+        @extend .btn-primary;
     }
 
     .pz2-months {
@@ -165,48 +120,27 @@
     }
 
     .pz2-searchField {
+        @extend .form-control;
+    }
+}
 
-        @include input-text;
+.pz2-recordLink {
+    color: $text-color;
+    font-weight: normal;
 
-        margin-right: $font-size;
-        padding: $form-padding;
-
-        @include breakpoint('xs') {
-            width: auto;
+    &:after {
+        &:hover {
+            color: $link-color;
         }
     }
 }
 
-#pz2-results {
+.pz2-resultList {
+    padding-left: 30px;
+}
 
-    @include breakpoint('xs') {
-        margin-right: 0 !important;
-    }
-
-    .pz2-recordLink {
-        color: $text-color;
-        font-weight: normal;
-
-        &:after {
-            &:hover {
-                color: $link-color;
-            }
-        }
-    }
-
-    .pz2-resultList {
-        padding-left: 30px;
-
-        @include breakpoint('xs') {
-            order: 3;
-            padding-left: 0 !important;
-        }
-
-    }
-
-    .pz2-details dl ul li {
-        list-style-type: circle;
-    }
+.pz2-details dl ul li {
+    list-style-type: circle;
 }
 
 .pz2-pages {
@@ -239,4 +173,20 @@
 
 .pz2-fieldContainer {
     margin: .5em 0;
+}
+
+.pz2-JSNote {
+    display: none;
+}
+
+.pz2-noJS .pz2-JSNote {
+    display: block;
+}
+
+.pz2-ranking {
+    display: none;
+}
+
+#pz2-termLists {
+    @extend .col-md-4;
 }

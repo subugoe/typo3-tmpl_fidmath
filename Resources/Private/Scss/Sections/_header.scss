@@ -58,13 +58,11 @@
 
         input {
             @extend .form-control;
-            @extend .form-control-lg;
         }
 
         .header-search-form_submit {
             @extend .btn;
             @extend .btn-primary;
-            @extend .btn-lg;
 
             width: auto;
             height: auto;

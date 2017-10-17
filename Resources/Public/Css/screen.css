@@ -3385,7 +3385,7 @@ pre code {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .main.two-columns .main-sidebar, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .main.two-columns .main-content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .main.one-column, .col-md,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .main.two-columns .main-sidebar, #pz2-termLists, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .main.two-columns .main-content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .main.one-column, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
@@ -3753,7 +3753,7 @@ pre code {
             flex: 0 0 25%;
     max-width: 25%;
   }
-  .col-md-4, .main.two-columns .main-sidebar {
+  .col-md-4, .main.two-columns .main-sidebar, #pz2-termLists {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
@@ -4226,16 +4226,16 @@ pre code {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #b8daff;
+  background-color: #c2d0e3;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #9fcdff;
+  background-color: #b1c3db;
 }
 
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #9fcdff;
+  background-color: #b1c3db;
 }
 
 .table-secondary,
@@ -4403,7 +4403,11 @@ pre code {
   }
 }
 
-.form-control, .header .header-search input {
+.csc-form-element-textline input[type=text],
+.iputStart,
+.powermail_input,
+.form-control,
+.powermail_textarea, .header .header-search input, #pazpar2 .pz2-searchField {
   display: block;
   width: 100%;
   padding: 0.5rem 0.75rem;
@@ -4421,49 +4425,89 @@ pre code {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
 }
 
-.form-control::-ms-expand, .header .header-search input::-ms-expand {
+.csc-form-element-textline input[type=text]::-ms-expand,
+.iputStart::-ms-expand,
+.powermail_input::-ms-expand,
+.form-control::-ms-expand,
+.powermail_textarea::-ms-expand, .header .header-search input::-ms-expand, #pazpar2 .pz2-searchField::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
-.form-control:focus, .header .header-search input:focus {
+.csc-form-element-textline input[type=text]:focus,
+.iputStart:focus,
+.powermail_input:focus,
+.form-control:focus,
+.powermail_textarea:focus, .header .header-search input:focus, #pazpar2 .pz2-searchField:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #80bdff;
+  border-color: #6598da;
   outline: none;
 }
 
-.form-control::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder {
+.csc-form-element-textline input[type=text]::-webkit-input-placeholder,
+.iputStart::-webkit-input-placeholder,
+.powermail_input::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder,
+.powermail_textarea::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder, #pazpar2 .pz2-searchField::-webkit-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder {
+.csc-form-element-textline input[type=text]:-ms-input-placeholder,
+.iputStart:-ms-input-placeholder,
+.powermail_input:-ms-input-placeholder,
+.form-control:-ms-input-placeholder,
+.powermail_textarea:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder, #pazpar2 .pz2-searchField:-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.form-control::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder {
+.csc-form-element-textline input[type=text]::-ms-input-placeholder,
+.iputStart::-ms-input-placeholder,
+.powermail_input::-ms-input-placeholder,
+.form-control::-ms-input-placeholder,
+.powermail_textarea::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder, #pazpar2 .pz2-searchField::-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.form-control::placeholder, .header .header-search input::placeholder {
+.csc-form-element-textline input[type=text]::placeholder,
+.iputStart::placeholder,
+.powermail_input::placeholder,
+.form-control::placeholder,
+.powermail_textarea::placeholder, .header .header-search input::placeholder, #pazpar2 .pz2-searchField::placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.form-control:disabled, .header .header-search input:disabled, .form-control[readonly], .header .header-search input[readonly] {
+.csc-form-element-textline input[type=text]:disabled,
+.iputStart:disabled,
+.powermail_input:disabled,
+.form-control:disabled,
+.powermail_textarea:disabled, .header .header-search input:disabled, #pazpar2 .pz2-searchField:disabled, .csc-form-element-textline input[readonly][type=text],
+[readonly].iputStart,
+[readonly].powermail_input,
+[readonly].form-control,
+[readonly].powermail_textarea, .header .header-search input[readonly], #pazpar2 [readonly].pz2-searchField {
   background-color: #e9ecef;
   opacity: 1;
 }
 
-select.form-control:not([size]):not([multiple]) {
+
+select.iputStart:not([size]):not([multiple]),
+select.powermail_input:not([size]):not([multiple]),
+select.form-control:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), #pazpar2 select.pz2-searchField:not([size]):not([multiple]) {
   height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px);
 }
 
-select.form-control:focus::-ms-value {
+
+select.iputStart:focus::-ms-value,
+select.powermail_input:focus::-ms-value,
+select.form-control:focus::-ms-value,
+select.powermail_textarea:focus::-ms-value, #pazpar2 select.pz2-searchField:focus::-ms-value {
   color: #495057;
   background-color: #fff;
 }
@@ -4513,47 +4557,117 @@ select.form-control:focus::-ms-value {
   border-width: 1px 0;
 }
 
-.form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .header .header-search .input-group-sm > input.form-control-plaintext,
+.form-control-plaintext.form-control-sm, .csc-form-element-textline .input-group-sm > input.form-control-plaintext[type=text], .input-group-sm >
+.form-control-plaintext.iputStart, .input-group-sm >
+.form-control-plaintext.powermail_input, .input-group-sm >
+.form-control-plaintext.form-control, .input-group-sm >
+.form-control-plaintext.powermail_textarea, .header .header-search .input-group-sm > input.form-control-plaintext, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-searchField,
 .input-group-sm > .form-control-plaintext.input-group-addon,
-.input-group-sm > .input-group-btn > .form-control-plaintext.btn, .header .header-search
-.input-group-sm > .input-group-btn > .form-control-plaintext.header-search-form_submit, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
+.input-group-sm > .input-group-btn > .form-control-plaintext.btn, .csc-form-element-submit
+.input-group-sm > .input-group-btn > input.form-control-plaintext,
+.input-group-sm > .input-group-btn >
+.form-control-plaintext.submStartSmall,
+.input-group-sm > .input-group-btn >
+.form-control-plaintext.submStart,
+.input-group-sm > .input-group-btn >
+.form-control-plaintext.powermail_submit, .header .header-search
+.input-group-sm > .input-group-btn > .form-control-plaintext.header-search-form_submit, #pazpar2
+.input-group-sm > .input-group-btn > .form-control-plaintext.pz2-submitButton, .form-control-plaintext.form-control-lg, .csc-form-element-textline .input-group-lg > input.form-control-plaintext[type=text], .input-group-lg >
+.form-control-plaintext.iputStart, .input-group-lg >
+.form-control-plaintext.powermail_input, .input-group-lg >
+.form-control-plaintext.form-control, .input-group-lg >
+.form-control-plaintext.powermail_textarea, .header .header-search .input-group-lg > input.form-control-plaintext, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-searchField,
 .input-group-lg > .form-control-plaintext.input-group-addon,
-.input-group-lg > .input-group-btn > .form-control-plaintext.btn, .header .header-search
-.input-group-lg > .input-group-btn > .form-control-plaintext.header-search-form_submit, .header .header-search input.form-control-plaintext {
+.input-group-lg > .input-group-btn > .form-control-plaintext.btn, .csc-form-element-submit
+.input-group-lg > .input-group-btn > input.form-control-plaintext,
+.input-group-lg > .input-group-btn >
+.form-control-plaintext.submStartSmall,
+.input-group-lg > .input-group-btn >
+.form-control-plaintext.submStart,
+.input-group-lg > .input-group-btn >
+.form-control-plaintext.powermail_submit, .header .header-search
+.input-group-lg > .input-group-btn > .form-control-plaintext.header-search-form_submit, #pazpar2
+.input-group-lg > .input-group-btn > .form-control-plaintext.pz2-submitButton {
   padding-right: 0;
   padding-left: 0;
 }
 
-.form-control-sm, .input-group-sm > .form-control, .header .header-search .input-group-sm > input,
+.form-control-sm, .csc-form-element-textline .input-group-sm > input[type=text], .input-group-sm >
+.iputStart, .input-group-sm >
+.powermail_input, .input-group-sm >
+.form-control, .input-group-sm >
+.powermail_textarea, .header .header-search .input-group-sm > input, #pazpar2 .input-group-sm > .pz2-searchField,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn, .header .header-search
-.input-group-sm > .input-group-btn > .header-search-form_submit {
+.input-group-sm > .input-group-btn > .btn, .csc-form-element-submit
+.input-group-sm > .input-group-btn > input,
+.input-group-sm > .input-group-btn >
+.submStartSmall,
+.input-group-sm > .input-group-btn >
+.submStart,
+.input-group-sm > .input-group-btn >
+.powermail_submit, .header .header-search
+.input-group-sm > .input-group-btn > .header-search-form_submit, #pazpar2
+.input-group-sm > .input-group-btn > .pz2-submitButton {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
 }
 
-select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm >
+select.iputStart:not([size]):not([multiple]), .input-group-sm >
+select.powermail_input:not([size]):not([multiple]), .input-group-sm >
+select.form-control:not([size]):not([multiple]), .input-group-sm >
+select.powermail_textarea:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-searchField:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
-.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]), .header .header-search
-.input-group-sm > .input-group-btn > select.header-search-form_submit:not([size]):not([multiple]) {
+.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
+.input-group-sm > .input-group-btn >
+select.submStartSmall:not([size]):not([multiple]),
+.input-group-sm > .input-group-btn >
+select.submStart:not([size]):not([multiple]),
+.input-group-sm > .input-group-btn >
+select.powermail_submit:not([size]):not([multiple]), .header .header-search
+.input-group-sm > .input-group-btn > select.header-search-form_submit:not([size]):not([multiple]), #pazpar2
+.input-group-sm > .input-group-btn > select.pz2-submitButton:not([size]):not([multiple]) {
   height: -webkit-calc(1.8125rem + 2px);
   height: calc(1.8125rem + 2px);
 }
 
-.form-control-lg, .input-group-lg > .form-control,
+.form-control-lg, .csc-form-element-textline .input-group-lg > input[type=text], .input-group-lg >
+.iputStart, .input-group-lg >
+.powermail_input, .input-group-lg >
+.form-control, .input-group-lg >
+.powermail_textarea, .header .header-search .input-group-lg > input, #pazpar2 .input-group-lg > .pz2-searchField,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn, .header .header-search
-.input-group-lg > .input-group-btn > .header-search-form_submit, .header .header-search input {
+.input-group-lg > .input-group-btn > .btn, .csc-form-element-submit
+.input-group-lg > .input-group-btn > input,
+.input-group-lg > .input-group-btn >
+.submStartSmall,
+.input-group-lg > .input-group-btn >
+.submStart,
+.input-group-lg > .input-group-btn >
+.powermail_submit, .header .header-search
+.input-group-lg > .input-group-btn > .header-search-form_submit, #pazpar2
+.input-group-lg > .input-group-btn > .pz2-submitButton {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg >
+select.iputStart:not([size]):not([multiple]), .input-group-lg >
+select.powermail_input:not([size]):not([multiple]), .input-group-lg >
+select.form-control:not([size]):not([multiple]), .input-group-lg >
+select.powermail_textarea:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-searchField:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
-.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]), .header .header-search
-.input-group-lg > .input-group-btn > select.header-search-form_submit:not([size]):not([multiple]) {
+.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
+.input-group-lg > .input-group-btn >
+select.submStartSmall:not([size]):not([multiple]),
+.input-group-lg > .input-group-btn >
+select.submStart:not([size]):not([multiple]),
+.input-group-lg > .input-group-btn >
+select.powermail_submit:not([size]):not([multiple]), .header .header-search
+.input-group-lg > .input-group-btn > select.header-search-form_submit:not([size]):not([multiple]), #pazpar2
+.input-group-lg > .input-group-btn > select.pz2-submitButton:not([size]):not([multiple]) {
   height: -webkit-calc(2.875rem + 2px);
   height: calc(2.875rem + 2px);
 }
@@ -4638,24 +4752,62 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   border-radius: .2rem;
 }
 
-.was-validated .form-control:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .form-control.is-valid, .header .header-search input.is-valid, .was-validated
+.was-validated .csc-form-element-textline input[type=text]:valid, .csc-form-element-textline .was-validated input[type=text]:valid, .was-validated
+.iputStart:valid, .was-validated
+.powermail_input:valid, .was-validated
+.form-control:valid, .was-validated
+.powermail_textarea:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .was-validated #pazpar2 .pz2-searchField:valid, #pazpar2 .was-validated .pz2-searchField:valid, .csc-form-element-textline input.is-valid[type=text],
+.is-valid.iputStart,
+.is-valid.powermail_input,
+.is-valid.form-control,
+.is-valid.powermail_textarea, .header .header-search input.is-valid, #pazpar2 .is-valid.pz2-searchField, .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745;
 }
 
-.was-validated .form-control:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .form-control.is-valid:focus, .header .header-search input.is-valid:focus, .was-validated
+.was-validated .csc-form-element-textline input[type=text]:valid:focus, .csc-form-element-textline .was-validated input[type=text]:valid:focus, .was-validated
+.iputStart:valid:focus, .was-validated
+.powermail_input:valid:focus, .was-validated
+.form-control:valid:focus, .was-validated
+.powermail_textarea:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .was-validated #pazpar2 .pz2-searchField:valid:focus, #pazpar2 .was-validated .pz2-searchField:valid:focus, .csc-form-element-textline input.is-valid[type=text]:focus,
+.is-valid.iputStart:focus,
+.is-valid.powermail_input:focus,
+.is-valid.form-control:focus,
+.is-valid.powermail_textarea:focus, .header .header-search input.is-valid:focus, #pazpar2 .is-valid.pz2-searchField:focus, .was-validated
 .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
-.was-validated .form-control:valid ~ .invalid-feedback, .was-validated .header .header-search input:valid ~ .invalid-feedback, .header .header-search .was-validated input:valid ~ .invalid-feedback,
-.was-validated .form-control:valid ~ .invalid-tooltip,
+.was-validated .csc-form-element-textline input[type=text]:valid ~ .invalid-feedback, .csc-form-element-textline .was-validated input[type=text]:valid ~ .invalid-feedback, .was-validated
+.iputStart:valid ~ .invalid-feedback, .was-validated
+.powermail_input:valid ~ .invalid-feedback, .was-validated
+.form-control:valid ~ .invalid-feedback, .was-validated
+.powermail_textarea:valid ~ .invalid-feedback, .was-validated .header .header-search input:valid ~ .invalid-feedback, .header .header-search .was-validated input:valid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:valid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:valid ~ .invalid-feedback,
+.was-validated .csc-form-element-textline input[type=text]:valid ~ .invalid-tooltip, .csc-form-element-textline
+.was-validated input[type=text]:valid ~ .invalid-tooltip,
+.was-validated
+.iputStart:valid ~ .invalid-tooltip,
+.was-validated
+.powermail_input:valid ~ .invalid-tooltip,
+.was-validated
+.form-control:valid ~ .invalid-tooltip,
+.was-validated
+.powermail_textarea:valid ~ .invalid-tooltip,
 .was-validated .header .header-search input:valid ~ .invalid-tooltip, .header .header-search
-.was-validated input:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback, .header .header-search input.is-valid ~ .invalid-feedback,
-.form-control.is-valid ~ .invalid-tooltip, .header .header-search input.is-valid ~ .invalid-tooltip, .was-validated
+.was-validated input:valid ~ .invalid-tooltip,
+.was-validated #pazpar2 .pz2-searchField:valid ~ .invalid-tooltip, #pazpar2
+.was-validated .pz2-searchField:valid ~ .invalid-tooltip, .csc-form-element-textline input.is-valid[type=text] ~ .invalid-feedback,
+.is-valid.iputStart ~ .invalid-feedback,
+.is-valid.powermail_input ~ .invalid-feedback,
+.is-valid.form-control ~ .invalid-feedback,
+.is-valid.powermail_textarea ~ .invalid-feedback, .header .header-search input.is-valid ~ .invalid-feedback, #pazpar2 .is-valid.pz2-searchField ~ .invalid-feedback, .csc-form-element-textline input.is-valid[type=text] ~ .invalid-tooltip,
+.is-valid.iputStart ~ .invalid-tooltip,
+.is-valid.powermail_input ~ .invalid-tooltip,
+.is-valid.form-control ~ .invalid-tooltip,
+.is-valid.powermail_textarea ~ .invalid-tooltip, .header .header-search input.is-valid ~ .invalid-tooltip, #pazpar2 .is-valid.pz2-searchField ~ .invalid-tooltip, .was-validated
 .custom-select:valid ~ .invalid-feedback,
 .was-validated
 .custom-select:valid ~ .invalid-tooltip,
@@ -4689,24 +4841,62 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
           box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
-.was-validated .form-control:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .form-control.is-invalid, .header .header-search input.is-invalid, .was-validated
+.was-validated .csc-form-element-textline input[type=text]:invalid, .csc-form-element-textline .was-validated input[type=text]:invalid, .was-validated
+.iputStart:invalid, .was-validated
+.powermail_input:invalid, .was-validated
+.form-control:invalid, .was-validated
+.powermail_textarea:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .was-validated #pazpar2 .pz2-searchField:invalid, #pazpar2 .was-validated .pz2-searchField:invalid, .csc-form-element-textline input.is-invalid[type=text],
+.is-invalid.iputStart,
+.is-invalid.powermail_input,
+.is-invalid.form-control,
+.is-invalid.powermail_textarea, .header .header-search input.is-invalid, #pazpar2 .is-invalid.pz2-searchField, .was-validated
 .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545;
 }
 
-.was-validated .form-control:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .form-control.is-invalid:focus, .header .header-search input.is-invalid:focus, .was-validated
+.was-validated .csc-form-element-textline input[type=text]:invalid:focus, .csc-form-element-textline .was-validated input[type=text]:invalid:focus, .was-validated
+.iputStart:invalid:focus, .was-validated
+.powermail_input:invalid:focus, .was-validated
+.form-control:invalid:focus, .was-validated
+.powermail_textarea:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .was-validated #pazpar2 .pz2-searchField:invalid:focus, #pazpar2 .was-validated .pz2-searchField:invalid:focus, .csc-form-element-textline input.is-invalid[type=text]:focus,
+.is-invalid.iputStart:focus,
+.is-invalid.powermail_input:focus,
+.is-invalid.form-control:focus,
+.is-invalid.powermail_textarea:focus, .header .header-search input.is-invalid:focus, #pazpar2 .is-invalid.pz2-searchField:focus, .was-validated
 .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback,
-.was-validated .form-control:invalid ~ .invalid-tooltip,
+.was-validated .csc-form-element-textline input[type=text]:invalid ~ .invalid-feedback, .csc-form-element-textline .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated
+.iputStart:invalid ~ .invalid-feedback, .was-validated
+.powermail_input:invalid ~ .invalid-feedback, .was-validated
+.form-control:invalid ~ .invalid-feedback, .was-validated
+.powermail_textarea:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:invalid ~ .invalid-feedback,
+.was-validated .csc-form-element-textline input[type=text]:invalid ~ .invalid-tooltip, .csc-form-element-textline
+.was-validated input[type=text]:invalid ~ .invalid-tooltip,
+.was-validated
+.iputStart:invalid ~ .invalid-tooltip,
+.was-validated
+.powermail_input:invalid ~ .invalid-tooltip,
+.was-validated
+.form-control:invalid ~ .invalid-tooltip,
+.was-validated
+.powermail_textarea:invalid ~ .invalid-tooltip,
 .was-validated .header .header-search input:invalid ~ .invalid-tooltip, .header .header-search
-.was-validated input:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback,
-.form-control.is-invalid ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, .was-validated
+.was-validated input:invalid ~ .invalid-tooltip,
+.was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-tooltip, #pazpar2
+.was-validated .pz2-searchField:invalid ~ .invalid-tooltip, .csc-form-element-textline input.is-invalid[type=text] ~ .invalid-feedback,
+.is-invalid.iputStart ~ .invalid-feedback,
+.is-invalid.powermail_input ~ .invalid-feedback,
+.is-invalid.form-control ~ .invalid-feedback,
+.is-invalid.powermail_textarea ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-feedback, .csc-form-element-textline input.is-invalid[type=text] ~ .invalid-tooltip,
+.is-invalid.iputStart ~ .invalid-tooltip,
+.is-invalid.powermail_input ~ .invalid-tooltip,
+.is-invalid.form-control ~ .invalid-tooltip,
+.is-invalid.powermail_textarea ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-tooltip, .was-validated
 .custom-select:invalid ~ .invalid-feedback,
 .was-validated
 .custom-select:invalid ~ .invalid-tooltip,
@@ -4786,7 +4976,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
             align-items: center;
     margin-bottom: 0;
   }
-  .form-inline .form-control, .form-inline .header .header-search input, .header .header-search .form-inline input {
+  .form-inline .csc-form-element-textline input[type=text], .csc-form-element-textline .form-inline input[type=text], .form-inline
+  .iputStart, .form-inline
+  .powermail_input, .form-inline
+  .form-control, .form-inline
+  .powermail_textarea, .form-inline .header .header-search input, .header .header-search .form-inline input, .form-inline #pazpar2 .pz2-searchField, #pazpar2 .form-inline .pz2-searchField {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -4847,7 +5041,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   }
 }
 
-.btn, .header .header-search .header-search-form_submit {
+.btn, .csc-form-element-submit input,
+.submStartSmall,
+.submStart,
+.powermail_submit, .header .header-search .header-search-form_submit, #pazpar2 .pz2-submitButton {
   display: inline-block;
   font-weight: normal;
   text-align: center;
@@ -4867,59 +5064,126 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-.btn:focus, .header .header-search .header-search-form_submit:focus, .btn:hover, .header .header-search .header-search-form_submit:hover {
+.btn:focus, .csc-form-element-submit input:focus,
+.submStartSmall:focus,
+.submStart:focus,
+.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .btn:hover, .csc-form-element-submit input:hover,
+.submStartSmall:hover,
+.submStart:hover,
+.powermail_submit:hover, .header .header-search .header-search-form_submit:hover, #pazpar2 .pz2-submitButton:hover {
   text-decoration: none;
 }
 
-.btn:focus, .header .header-search .header-search-form_submit:focus, .btn.focus, .header .header-search .focus.header-search-form_submit {
+.btn:focus, .csc-form-element-submit input:focus,
+.submStartSmall:focus,
+.submStart:focus,
+.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .btn.focus, .csc-form-element-submit input.focus,
+.focus.submStartSmall,
+.focus.submStart,
+.focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.25);
+          box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.25);
 }
 
-.btn.disabled, .header .header-search .disabled.header-search-form_submit, .btn:disabled, .header .header-search .header-search-form_submit:disabled {
+.btn.disabled, .csc-form-element-submit input.disabled,
+.disabled.submStartSmall,
+.disabled.submStart,
+.disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .btn:disabled, .csc-form-element-submit input:disabled,
+.submStartSmall:disabled,
+.submStart:disabled,
+.powermail_submit:disabled, .header .header-search .header-search-form_submit:disabled, #pazpar2 .pz2-submitButton:disabled {
   opacity: .65;
 }
 
-.btn:active, .header .header-search .header-search-form_submit:active, .btn.active, .header .header-search .active.header-search-form_submit {
+.btn:active, .csc-form-element-submit input:active,
+.submStartSmall:active,
+.submStart:active,
+.powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .btn.active, .csc-form-element-submit input.active,
+.active.submStartSmall,
+.active.submStart,
+.active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton {
   background-image: none;
 }
 
-a.btn.disabled, .header .header-search a.disabled.header-search-form_submit,
+a.btn.disabled,
+a.disabled.submStartSmall,
+a.disabled.submStart,
+a.disabled.powermail_submit, .header .header-search a.disabled.header-search-form_submit, #pazpar2 a.disabled.pz2-submitButton,
 fieldset[disabled] a.btn,
+fieldset[disabled]
+a.submStartSmall,
+fieldset[disabled]
+a.submStart,
+fieldset[disabled]
+a.powermail_submit,
 fieldset[disabled] .header .header-search a.header-search-form_submit, .header .header-search
-fieldset[disabled] a.header-search-form_submit {
+fieldset[disabled] a.header-search-form_submit,
+fieldset[disabled] #pazpar2 a.pz2-submitButton, #pazpar2
+fieldset[disabled] a.pz2-submitButton {
   pointer-events: none;
 }
 
-.btn-primary, .header .header-search .header-search-form_submit {
+.btn-primary, .csc-form-element-submit input,
+.submStartSmall,
+.submStart,
+.powermail_submit, .header .header-search .header-search-form_submit, #pazpar2 .pz2-submitButton {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #25589a;
+  border-color: #25589a;
 }
 
-.btn-primary:hover, .header .header-search .header-search-form_submit:hover {
+.btn-primary:hover, .csc-form-element-submit input:hover,
+.submStartSmall:hover,
+.submStart:hover,
+.powermail_submit:hover, .header .header-search .header-search-form_submit:hover, #pazpar2 .pz2-submitButton:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #1e467b;
+  border-color: #1b4171;
 }
 
-.btn-primary:focus, .header .header-search .header-search-form_submit:focus, .btn-primary.focus, .header .header-search .focus.header-search-form_submit {
-  -webkit-box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+.btn-primary:focus, .csc-form-element-submit input:focus,
+.submStartSmall:focus,
+.submStart:focus,
+.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .btn-primary.focus, .csc-form-element-submit input.focus,
+.focus.submStartSmall,
+.focus.submStart,
+.focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton {
+  -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
+          box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
 }
 
-.btn-primary.disabled, .header .header-search .disabled.header-search-form_submit, .btn-primary:disabled, .header .header-search .header-search-form_submit:disabled {
-  background-color: #007bff;
-  border-color: #007bff;
+.btn-primary.disabled, .csc-form-element-submit input.disabled,
+.disabled.submStartSmall,
+.disabled.submStart,
+.disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .btn-primary:disabled, .csc-form-element-submit input:disabled,
+.submStartSmall:disabled,
+.submStart:disabled,
+.powermail_submit:disabled, .header .header-search .header-search-form_submit:disabled, #pazpar2 .pz2-submitButton:disabled {
+  background-color: #25589a;
+  border-color: #25589a;
 }
 
-.btn-primary:active, .header .header-search .header-search-form_submit:active, .btn-primary.active, .header .header-search .active.header-search-form_submit,
-.show > .btn-primary.dropdown-toggle, .header .header-search
-.show > .dropdown-toggle.header-search-form_submit {
-  background-color: #0069d9;
+.btn-primary:active, .csc-form-element-submit input:active,
+.submStartSmall:active,
+.submStart:active,
+.powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .btn-primary.active, .csc-form-element-submit input.active,
+.active.submStartSmall,
+.active.submStart,
+.active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton,
+.show > .btn-primary.dropdown-toggle, .csc-form-element-submit
+.show > input.dropdown-toggle,
+.show >
+.dropdown-toggle.submStartSmall,
+.show >
+.dropdown-toggle.submStart,
+.show >
+.dropdown-toggle.powermail_submit, .header .header-search
+.show > .dropdown-toggle.header-search-form_submit, #pazpar2
+.show > .dropdown-toggle.pz2-submitButton {
+  background-color: #1e467b;
   background-image: none;
-  border-color: #0062cc;
+  border-color: #1b4171;
 }
 
 .btn-secondary {
@@ -5126,33 +5390,33 @@ fieldset[disabled] a.header-search-form_submit {
 }
 
 .btn-outline-primary {
-  color: #007bff;
+  color: #25589a;
   background-color: transparent;
   background-image: none;
-  border-color: #007bff;
+  border-color: #25589a;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #25589a;
+  border-color: #25589a;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
+          box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #007bff;
+  color: #25589a;
   background-color: transparent;
 }
 
 .btn-outline-primary:active, .btn-outline-primary.active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #25589a;
+  border-color: #25589a;
 }
 
 .btn-outline-secondary {
@@ -5399,13 +5663,19 @@ fieldset[disabled] a.header-search-form_submit {
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .header .header-search .header-search-form_submit {
+.btn-lg, .btn-group-lg > .btn, .csc-form-element-submit .btn-group-lg > input, .btn-group-lg >
+.submStartSmall, .btn-group-lg >
+.submStart, .btn-group-lg >
+.powermail_submit, .header .header-search .btn-group-lg > .header-search-form_submit, #pazpar2 .btn-group-lg > .pz2-submitButton {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-.btn-sm, .btn-group-sm > .btn, .header .header-search .btn-group-sm > .header-search-form_submit {
+.btn-sm, .btn-group-sm > .btn, .csc-form-element-submit .btn-group-sm > input, .btn-group-sm >
+.submStartSmall, .btn-group-sm >
+.submStart, .btn-group-sm >
+.powermail_submit, .header .header-search .btn-group-sm > .header-search-form_submit, #pazpar2 .btn-group-sm > .pz2-submitButton {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -5539,7 +5809,7 @@ tbody.collapse.show {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #007bff;
+  background-color: #25589a;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -5573,9 +5843,20 @@ tbody.collapse.show {
   vertical-align: middle;
 }
 
-.btn-group > .btn, .header .header-search .btn-group > .header-search-form_submit,
-.btn-group-vertical > .btn, .header .header-search
-.btn-group-vertical > .header-search-form_submit {
+.btn-group > .btn, .csc-form-element-submit .btn-group > input, .btn-group >
+.submStartSmall, .btn-group >
+.submStart, .btn-group >
+.powermail_submit, .header .header-search .btn-group > .header-search-form_submit, #pazpar2 .btn-group > .pz2-submitButton,
+.btn-group-vertical > .btn, .csc-form-element-submit
+.btn-group-vertical > input,
+.btn-group-vertical >
+.submStartSmall,
+.btn-group-vertical >
+.submStart,
+.btn-group-vertical >
+.powermail_submit, .header .header-search
+.btn-group-vertical > .header-search-form_submit, #pazpar2
+.btn-group-vertical > .pz2-submitButton {
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -5583,43 +5864,334 @@ tbody.collapse.show {
   margin-bottom: 0;
 }
 
-.btn-group > .btn:hover, .header .header-search .btn-group > .header-search-form_submit:hover,
-.btn-group-vertical > .btn:hover, .header .header-search
-.btn-group-vertical > .header-search-form_submit:hover {
+.btn-group > .btn:hover, .csc-form-element-submit .btn-group > input:hover, .btn-group >
+.submStartSmall:hover, .btn-group >
+.submStart:hover, .btn-group >
+.powermail_submit:hover, .header .header-search .btn-group > .header-search-form_submit:hover, #pazpar2 .btn-group > .pz2-submitButton:hover,
+.btn-group-vertical > .btn:hover, .csc-form-element-submit
+.btn-group-vertical > input:hover,
+.btn-group-vertical >
+.submStartSmall:hover,
+.btn-group-vertical >
+.submStart:hover,
+.btn-group-vertical >
+.powermail_submit:hover, .header .header-search
+.btn-group-vertical > .header-search-form_submit:hover, #pazpar2
+.btn-group-vertical > .pz2-submitButton:hover {
   z-index: 2;
 }
 
-.btn-group > .btn:focus, .header .header-search .btn-group > .header-search-form_submit:focus, .btn-group > .btn:active, .header .header-search .btn-group > .header-search-form_submit:active, .btn-group > .btn.active, .header .header-search .btn-group > .active.header-search-form_submit,
-.btn-group-vertical > .btn:focus, .header .header-search
-.btn-group-vertical > .header-search-form_submit:focus,
-.btn-group-vertical > .btn:active, .header .header-search
-.btn-group-vertical > .header-search-form_submit:active,
-.btn-group-vertical > .btn.active, .header .header-search
-.btn-group-vertical > .active.header-search-form_submit {
+.btn-group > .btn:focus, .csc-form-element-submit .btn-group > input:focus, .btn-group >
+.submStartSmall:focus, .btn-group >
+.submStart:focus, .btn-group >
+.powermail_submit:focus, .header .header-search .btn-group > .header-search-form_submit:focus, #pazpar2 .btn-group > .pz2-submitButton:focus, .btn-group > .btn:active, .csc-form-element-submit .btn-group > input:active, .btn-group >
+.submStartSmall:active, .btn-group >
+.submStart:active, .btn-group >
+.powermail_submit:active, .header .header-search .btn-group > .header-search-form_submit:active, #pazpar2 .btn-group > .pz2-submitButton:active, .btn-group > .btn.active, .csc-form-element-submit .btn-group > input.active, .btn-group >
+.active.submStartSmall, .btn-group >
+.active.submStart, .btn-group >
+.active.powermail_submit, .header .header-search .btn-group > .active.header-search-form_submit, #pazpar2 .btn-group > .active.pz2-submitButton,
+.btn-group-vertical > .btn:focus, .csc-form-element-submit
+.btn-group-vertical > input:focus,
+.btn-group-vertical >
+.submStartSmall:focus,
+.btn-group-vertical >
+.submStart:focus,
+.btn-group-vertical >
+.powermail_submit:focus, .header .header-search
+.btn-group-vertical > .header-search-form_submit:focus, #pazpar2
+.btn-group-vertical > .pz2-submitButton:focus,
+.btn-group-vertical > .btn:active, .csc-form-element-submit
+.btn-group-vertical > input:active,
+.btn-group-vertical >
+.submStartSmall:active,
+.btn-group-vertical >
+.submStart:active,
+.btn-group-vertical >
+.powermail_submit:active, .header .header-search
+.btn-group-vertical > .header-search-form_submit:active, #pazpar2
+.btn-group-vertical > .pz2-submitButton:active,
+.btn-group-vertical > .btn.active, .csc-form-element-submit
+.btn-group-vertical > input.active,
+.btn-group-vertical >
+.active.submStartSmall,
+.btn-group-vertical >
+.active.submStart,
+.btn-group-vertical >
+.active.powermail_submit, .header .header-search
+.btn-group-vertical > .active.header-search-form_submit, #pazpar2
+.btn-group-vertical > .active.pz2-submitButton {
   z-index: 2;
 }
 
-.btn-group .btn + .btn, .btn-group .header .header-search .header-search-form_submit + .btn, .header .header-search .btn-group .header-search-form_submit + .btn, .btn-group .header .header-search .btn + .header-search-form_submit, .header .header-search .btn-group .btn + .header-search-form_submit, .btn-group .header .header-search .header-search-form_submit + .header-search-form_submit, .header .header-search .btn-group .header-search-form_submit + .header-search-form_submit,
+.btn-group .btn + .btn, .btn-group .csc-form-element-submit input + .btn, .csc-form-element-submit .btn-group input + .btn, .btn-group
+.submStartSmall + .btn, .btn-group
+.submStart + .btn, .btn-group
+.powermail_submit + .btn, .btn-group .header .header-search .header-search-form_submit + .btn, .header .header-search .btn-group .header-search-form_submit + .btn, .btn-group #pazpar2 .pz2-submitButton + .btn, #pazpar2 .btn-group .pz2-submitButton + .btn, .btn-group .csc-form-element-submit .btn + input, .csc-form-element-submit .btn-group .btn + input, .btn-group .csc-form-element-submit input + input, .csc-form-element-submit .btn-group input + input, .btn-group .csc-form-element-submit
+.submStartSmall + input, .csc-form-element-submit .btn-group
+.submStartSmall + input, .btn-group .csc-form-element-submit
+.submStart + input, .csc-form-element-submit .btn-group
+.submStart + input, .btn-group .csc-form-element-submit
+.powermail_submit + input, .csc-form-element-submit .btn-group
+.powermail_submit + input, .btn-group .header .header-search .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit .btn-group .header .header-search .header-search-form_submit + input, .header .header-search .btn-group .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit .header .header-search .btn-group .header-search-form_submit + input, .btn-group #pazpar2 .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit .btn-group #pazpar2 .pz2-submitButton + input, #pazpar2 .btn-group .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .btn-group .pz2-submitButton + input, .btn-group .btn +
+.submStartSmall, .btn-group .csc-form-element-submit input +
+.submStartSmall, .csc-form-element-submit .btn-group input +
+.submStartSmall, .btn-group
+.submStartSmall +
+.submStartSmall, .btn-group
+.submStart +
+.submStartSmall, .btn-group
+.powermail_submit +
+.submStartSmall, .btn-group .header .header-search .header-search-form_submit +
+.submStartSmall, .header .header-search .btn-group .header-search-form_submit +
+.submStartSmall, .btn-group #pazpar2 .pz2-submitButton +
+.submStartSmall, #pazpar2 .btn-group .pz2-submitButton +
+.submStartSmall, .btn-group .btn +
+.submStart, .btn-group .csc-form-element-submit input +
+.submStart, .csc-form-element-submit .btn-group input +
+.submStart, .btn-group
+.submStartSmall +
+.submStart, .btn-group
+.submStart +
+.submStart, .btn-group
+.powermail_submit +
+.submStart, .btn-group .header .header-search .header-search-form_submit +
+.submStart, .header .header-search .btn-group .header-search-form_submit +
+.submStart, .btn-group #pazpar2 .pz2-submitButton +
+.submStart, #pazpar2 .btn-group .pz2-submitButton +
+.submStart, .btn-group .btn +
+.powermail_submit, .btn-group .csc-form-element-submit input +
+.powermail_submit, .csc-form-element-submit .btn-group input +
+.powermail_submit, .btn-group
+.submStartSmall +
+.powermail_submit, .btn-group
+.submStart +
+.powermail_submit, .btn-group
+.powermail_submit +
+.powermail_submit, .btn-group .header .header-search .header-search-form_submit +
+.powermail_submit, .header .header-search .btn-group .header-search-form_submit +
+.powermail_submit, .btn-group #pazpar2 .pz2-submitButton +
+.powermail_submit, #pazpar2 .btn-group .pz2-submitButton +
+.powermail_submit, .btn-group .header .header-search .btn + .header-search-form_submit, .header .header-search .btn-group .btn + .header-search-form_submit, .btn-group .csc-form-element-submit .header .header-search input + .header-search-form_submit, .header .header-search .btn-group .csc-form-element-submit input + .header-search-form_submit, .csc-form-element-submit .btn-group .header .header-search input + .header-search-form_submit, .header .header-search .csc-form-element-submit .btn-group input + .header-search-form_submit, .btn-group .header .header-search
+.submStartSmall + .header-search-form_submit, .header .header-search .btn-group
+.submStartSmall + .header-search-form_submit, .btn-group .header .header-search
+.submStart + .header-search-form_submit, .header .header-search .btn-group
+.submStart + .header-search-form_submit, .btn-group .header .header-search
+.powermail_submit + .header-search-form_submit, .header .header-search .btn-group
+.powermail_submit + .header-search-form_submit, .btn-group .header .header-search .header-search-form_submit + .header-search-form_submit, .header .header-search .btn-group .header-search-form_submit + .header-search-form_submit, .btn-group #pazpar2 .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search .btn-group #pazpar2 .pz2-submitButton + .header-search-form_submit, #pazpar2 .btn-group .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .btn-group .pz2-submitButton + .header-search-form_submit, .btn-group #pazpar2 .btn + .pz2-submitButton, #pazpar2 .btn-group .btn + .pz2-submitButton, .btn-group .csc-form-element-submit #pazpar2 input + .pz2-submitButton, #pazpar2 .btn-group .csc-form-element-submit input + .pz2-submitButton, .csc-form-element-submit .btn-group #pazpar2 input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .btn-group input + .pz2-submitButton, .btn-group #pazpar2
+.submStartSmall + .pz2-submitButton, #pazpar2 .btn-group
+.submStartSmall + .pz2-submitButton, .btn-group #pazpar2
+.submStart + .pz2-submitButton, #pazpar2 .btn-group
+.submStart + .pz2-submitButton, .btn-group #pazpar2
+.powermail_submit + .pz2-submitButton, #pazpar2 .btn-group
+.powermail_submit + .pz2-submitButton, .btn-group .header .header-search #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2 .btn-group .header .header-search .header-search-form_submit + .pz2-submitButton, .header .header-search .btn-group #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .btn-group .header-search-form_submit + .pz2-submitButton, .btn-group #pazpar2 .pz2-submitButton + .pz2-submitButton, #pazpar2 .btn-group .pz2-submitButton + .pz2-submitButton,
 .btn-group .btn + .btn-group,
+.btn-group .csc-form-element-submit input + .btn-group, .csc-form-element-submit
+.btn-group input + .btn-group,
+.btn-group
+.submStartSmall + .btn-group,
+.btn-group
+.submStart + .btn-group,
+.btn-group
+.powermail_submit + .btn-group,
 .btn-group .header .header-search .header-search-form_submit + .btn-group, .header .header-search
 .btn-group .header-search-form_submit + .btn-group,
+.btn-group #pazpar2 .pz2-submitButton + .btn-group, #pazpar2
+.btn-group .pz2-submitButton + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group .csc-form-element-submit .btn-group + input, .csc-form-element-submit
+.btn-group .btn-group + input,
+.btn-group .btn-group +
+.submStartSmall,
+.btn-group .btn-group +
+.submStart,
+.btn-group .btn-group +
+.powermail_submit,
 .btn-group .header .header-search .btn-group + .header-search-form_submit, .header .header-search
 .btn-group .btn-group + .header-search-form_submit,
+.btn-group #pazpar2 .btn-group + .pz2-submitButton, #pazpar2
+.btn-group .btn-group + .pz2-submitButton,
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
+.btn-group-vertical .csc-form-element-submit input + .btn, .csc-form-element-submit
+.btn-group-vertical input + .btn,
+.btn-group-vertical
+.submStartSmall + .btn,
+.btn-group-vertical
+.submStart + .btn,
+.btn-group-vertical
+.powermail_submit + .btn,
 .btn-group-vertical .header .header-search .header-search-form_submit + .btn, .header .header-search
 .btn-group-vertical .header-search-form_submit + .btn,
+.btn-group-vertical #pazpar2 .pz2-submitButton + .btn, #pazpar2
+.btn-group-vertical .pz2-submitButton + .btn,
+.btn-group-vertical .csc-form-element-submit .btn + input, .csc-form-element-submit
+.btn-group-vertical .btn + input,
+.btn-group-vertical .csc-form-element-submit input + input, .csc-form-element-submit
+.btn-group-vertical input + input,
+.btn-group-vertical .csc-form-element-submit
+.submStartSmall + input, .csc-form-element-submit
+.btn-group-vertical
+.submStartSmall + input,
+.btn-group-vertical .csc-form-element-submit
+.submStart + input, .csc-form-element-submit
+.btn-group-vertical
+.submStart + input,
+.btn-group-vertical .csc-form-element-submit
+.powermail_submit + input, .csc-form-element-submit
+.btn-group-vertical
+.powermail_submit + input,
+.btn-group-vertical .header .header-search .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit
+.btn-group-vertical .header .header-search .header-search-form_submit + input, .header .header-search
+.btn-group-vertical .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit .header .header-search
+.btn-group-vertical .header-search-form_submit + input,
+.btn-group-vertical #pazpar2 .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit
+.btn-group-vertical #pazpar2 .pz2-submitButton + input, #pazpar2
+.btn-group-vertical .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit #pazpar2
+.btn-group-vertical .pz2-submitButton + input,
+.btn-group-vertical .btn +
+.submStartSmall,
+.btn-group-vertical .csc-form-element-submit input +
+.submStartSmall, .csc-form-element-submit
+.btn-group-vertical input +
+.submStartSmall,
+.btn-group-vertical
+.submStartSmall +
+.submStartSmall,
+.btn-group-vertical
+.submStart +
+.submStartSmall,
+.btn-group-vertical
+.powermail_submit +
+.submStartSmall,
+.btn-group-vertical .header .header-search .header-search-form_submit +
+.submStartSmall, .header .header-search
+.btn-group-vertical .header-search-form_submit +
+.submStartSmall,
+.btn-group-vertical #pazpar2 .pz2-submitButton +
+.submStartSmall, #pazpar2
+.btn-group-vertical .pz2-submitButton +
+.submStartSmall,
+.btn-group-vertical .btn +
+.submStart,
+.btn-group-vertical .csc-form-element-submit input +
+.submStart, .csc-form-element-submit
+.btn-group-vertical input +
+.submStart,
+.btn-group-vertical
+.submStartSmall +
+.submStart,
+.btn-group-vertical
+.submStart +
+.submStart,
+.btn-group-vertical
+.powermail_submit +
+.submStart,
+.btn-group-vertical .header .header-search .header-search-form_submit +
+.submStart, .header .header-search
+.btn-group-vertical .header-search-form_submit +
+.submStart,
+.btn-group-vertical #pazpar2 .pz2-submitButton +
+.submStart, #pazpar2
+.btn-group-vertical .pz2-submitButton +
+.submStart,
+.btn-group-vertical .btn +
+.powermail_submit,
+.btn-group-vertical .csc-form-element-submit input +
+.powermail_submit, .csc-form-element-submit
+.btn-group-vertical input +
+.powermail_submit,
+.btn-group-vertical
+.submStartSmall +
+.powermail_submit,
+.btn-group-vertical
+.submStart +
+.powermail_submit,
+.btn-group-vertical
+.powermail_submit +
+.powermail_submit,
+.btn-group-vertical .header .header-search .header-search-form_submit +
+.powermail_submit, .header .header-search
+.btn-group-vertical .header-search-form_submit +
+.powermail_submit,
+.btn-group-vertical #pazpar2 .pz2-submitButton +
+.powermail_submit, #pazpar2
+.btn-group-vertical .pz2-submitButton +
+.powermail_submit,
 .btn-group-vertical .header .header-search .btn + .header-search-form_submit, .header .header-search
 .btn-group-vertical .btn + .header-search-form_submit,
+.btn-group-vertical .csc-form-element-submit .header .header-search input + .header-search-form_submit, .header .header-search
+.btn-group-vertical .csc-form-element-submit input + .header-search-form_submit, .csc-form-element-submit
+.btn-group-vertical .header .header-search input + .header-search-form_submit, .header .header-search .csc-form-element-submit
+.btn-group-vertical input + .header-search-form_submit,
+.btn-group-vertical .header .header-search
+.submStartSmall + .header-search-form_submit, .header .header-search
+.btn-group-vertical
+.submStartSmall + .header-search-form_submit,
+.btn-group-vertical .header .header-search
+.submStart + .header-search-form_submit, .header .header-search
+.btn-group-vertical
+.submStart + .header-search-form_submit,
+.btn-group-vertical .header .header-search
+.powermail_submit + .header-search-form_submit, .header .header-search
+.btn-group-vertical
+.powermail_submit + .header-search-form_submit,
 .btn-group-vertical .header .header-search .header-search-form_submit + .header-search-form_submit, .header .header-search
 .btn-group-vertical .header-search-form_submit + .header-search-form_submit,
+.btn-group-vertical #pazpar2 .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search
+.btn-group-vertical #pazpar2 .pz2-submitButton + .header-search-form_submit, #pazpar2
+.btn-group-vertical .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2
+.btn-group-vertical .pz2-submitButton + .header-search-form_submit,
+.btn-group-vertical #pazpar2 .btn + .pz2-submitButton, #pazpar2
+.btn-group-vertical .btn + .pz2-submitButton,
+.btn-group-vertical .csc-form-element-submit #pazpar2 input + .pz2-submitButton, #pazpar2
+.btn-group-vertical .csc-form-element-submit input + .pz2-submitButton, .csc-form-element-submit
+.btn-group-vertical #pazpar2 input + .pz2-submitButton, #pazpar2 .csc-form-element-submit
+.btn-group-vertical input + .pz2-submitButton,
+.btn-group-vertical #pazpar2
+.submStartSmall + .pz2-submitButton, #pazpar2
+.btn-group-vertical
+.submStartSmall + .pz2-submitButton,
+.btn-group-vertical #pazpar2
+.submStart + .pz2-submitButton, #pazpar2
+.btn-group-vertical
+.submStart + .pz2-submitButton,
+.btn-group-vertical #pazpar2
+.powermail_submit + .pz2-submitButton, #pazpar2
+.btn-group-vertical
+.powermail_submit + .pz2-submitButton,
+.btn-group-vertical .header .header-search #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2
+.btn-group-vertical .header .header-search .header-search-form_submit + .pz2-submitButton, .header .header-search
+.btn-group-vertical #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search
+.btn-group-vertical .header-search-form_submit + .pz2-submitButton,
+.btn-group-vertical #pazpar2 .pz2-submitButton + .pz2-submitButton, #pazpar2
+.btn-group-vertical .pz2-submitButton + .pz2-submitButton,
 .btn-group-vertical .btn + .btn-group,
+.btn-group-vertical .csc-form-element-submit input + .btn-group, .csc-form-element-submit
+.btn-group-vertical input + .btn-group,
+.btn-group-vertical
+.submStartSmall + .btn-group,
+.btn-group-vertical
+.submStart + .btn-group,
+.btn-group-vertical
+.powermail_submit + .btn-group,
 .btn-group-vertical .header .header-search .header-search-form_submit + .btn-group, .header .header-search
 .btn-group-vertical .header-search-form_submit + .btn-group,
+.btn-group-vertical #pazpar2 .pz2-submitButton + .btn-group, #pazpar2
+.btn-group-vertical .pz2-submitButton + .btn-group,
 .btn-group-vertical .btn-group + .btn,
+.btn-group-vertical .csc-form-element-submit .btn-group + input, .csc-form-element-submit
+.btn-group-vertical .btn-group + input,
+.btn-group-vertical .btn-group +
+.submStartSmall,
+.btn-group-vertical .btn-group +
+.submStart,
+.btn-group-vertical .btn-group +
+.powermail_submit,
 .btn-group-vertical .header .header-search .btn-group + .header-search-form_submit, .header .header-search
 .btn-group-vertical .btn-group + .header-search-form_submit,
+.btn-group-vertical #pazpar2 .btn-group + .pz2-submitButton, #pazpar2
+.btn-group-vertical .btn-group + .pz2-submitButton,
 .btn-group-vertical .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -5639,11 +6211,17 @@ tbody.collapse.show {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .header .header-search .btn-group > .header-search-form_submit:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .csc-form-element-submit .btn-group > input:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
+.submStartSmall:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
+.submStart:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
+.powermail_submit:not(:first-child):not(:last-child):not(.dropdown-toggle), .header .header-search .btn-group > .header-search-form_submit:not(:first-child):not(:last-child):not(.dropdown-toggle), #pazpar2 .btn-group > .pz2-submitButton:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .header .header-search .btn-group > .header-search-form_submit:first-child {
+.btn-group > .btn:first-child, .csc-form-element-submit .btn-group > input:first-child, .btn-group >
+.submStartSmall:first-child, .btn-group >
+.submStart:first-child, .btn-group >
+.powermail_submit:first-child, .header .header-search .btn-group > .header-search-form_submit:first-child, #pazpar2 .btn-group > .pz2-submitButton:first-child {
   margin-left: 0;
 }
 
@@ -5651,25 +6229,40 @@ tbody.collapse.show {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .header .header-search .btn-group > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .csc-form-element-submit .btn-group > .btn-group:not(:first-child):not(:last-child) > input, .btn-group > .btn-group:not(:first-child):not(:last-child) >
+.submStartSmall, .btn-group > .btn-group:not(:first-child):not(:last-child) >
+.submStart, .btn-group > .btn-group:not(:first-child):not(:last-child) >
+.powermail_submit, .header .header-search .btn-group > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit, #pazpar2 .btn-group > .btn-group:not(:first-child):not(:last-child) > .pz2-submitButton {
   border-radius: 0;
 }
 
-.btn + .dropdown-toggle-split, .header .header-search .header-search-form_submit + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, .csc-form-element-submit input + .dropdown-toggle-split,
+.submStartSmall + .dropdown-toggle-split,
+.submStart + .dropdown-toggle-split,
+.powermail_submit + .dropdown-toggle-split, .header .header-search .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .pz2-submitButton + .dropdown-toggle-split {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem;
 }
 
-.btn + .dropdown-toggle-split::after, .header .header-search .header-search-form_submit + .dropdown-toggle-split::after {
+.btn + .dropdown-toggle-split::after, .csc-form-element-submit input + .dropdown-toggle-split::after,
+.submStartSmall + .dropdown-toggle-split::after,
+.submStart + .dropdown-toggle-split::after,
+.powermail_submit + .dropdown-toggle-split::after, .header .header-search .header-search-form_submit + .dropdown-toggle-split::after, #pazpar2 .pz2-submitButton + .dropdown-toggle-split::after {
   margin-left: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .header .header-search .btn-group-sm > .header-search-form_submit + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .csc-form-element-submit .btn-group-sm > input + .dropdown-toggle-split, .btn-group-sm >
+.submStartSmall + .dropdown-toggle-split, .btn-group-sm >
+.submStart + .dropdown-toggle-split, .btn-group-sm >
+.powermail_submit + .dropdown-toggle-split, .header .header-search .btn-group-sm > .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .btn-group-sm > .pz2-submitButton + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .header .header-search .btn-group-lg > .header-search-form_submit + .dropdown-toggle-split, .header .header-search .header-search-form_submit + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .csc-form-element-submit .btn-group-lg > input + .dropdown-toggle-split, .btn-group-lg >
+.submStartSmall + .dropdown-toggle-split, .btn-group-lg >
+.submStart + .dropdown-toggle-split, .btn-group-lg >
+.powermail_submit + .dropdown-toggle-split, .header .header-search .btn-group-lg > .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .btn-group-lg > .pz2-submitButton + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -5690,36 +6283,130 @@ tbody.collapse.show {
           justify-content: center;
 }
 
-.btn-group-vertical .btn, .btn-group-vertical .header .header-search .header-search-form_submit, .header .header-search .btn-group-vertical .header-search-form_submit,
+.btn-group-vertical .btn, .btn-group-vertical .csc-form-element-submit input, .csc-form-element-submit .btn-group-vertical input, .btn-group-vertical
+.submStartSmall, .btn-group-vertical
+.submStart, .btn-group-vertical
+.powermail_submit, .btn-group-vertical .header .header-search .header-search-form_submit, .header .header-search .btn-group-vertical .header-search-form_submit, .btn-group-vertical #pazpar2 .pz2-submitButton, #pazpar2 .btn-group-vertical .pz2-submitButton,
 .btn-group-vertical .btn-group {
   width: 100%;
 }
 
-.btn-group-vertical > .btn + .btn, .header .header-search .btn-group-vertical > .header-search-form_submit + .btn, .header .header-search .btn-group-vertical > .btn + .header-search-form_submit, .header .header-search .btn-group-vertical > .header-search-form_submit + .header-search-form_submit,
-.btn-group-vertical > .btn + .btn-group, .header .header-search
-.btn-group-vertical > .header-search-form_submit + .btn-group,
-.btn-group-vertical > .btn-group + .btn, .header .header-search
-.btn-group-vertical > .btn-group + .header-search-form_submit,
+.btn-group-vertical > .btn + .btn, .csc-form-element-submit .btn-group-vertical > input + .btn, .btn-group-vertical >
+.submStartSmall + .btn, .btn-group-vertical >
+.submStart + .btn, .btn-group-vertical >
+.powermail_submit + .btn, .header .header-search .btn-group-vertical > .header-search-form_submit + .btn, #pazpar2 .btn-group-vertical > .pz2-submitButton + .btn, .csc-form-element-submit .btn-group-vertical > .btn + input, .csc-form-element-submit .btn-group-vertical > input + input, .csc-form-element-submit .btn-group-vertical >
+.submStartSmall + input, .csc-form-element-submit .btn-group-vertical >
+.submStart + input, .csc-form-element-submit .btn-group-vertical >
+.powermail_submit + input, .header .header-search .csc-form-element-submit .btn-group-vertical > .header-search-form_submit + input, .csc-form-element-submit .header .header-search .btn-group-vertical > .header-search-form_submit + input, #pazpar2 .csc-form-element-submit .btn-group-vertical > .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .btn-group-vertical > .pz2-submitButton + input, .btn-group-vertical > .btn +
+.submStartSmall, .csc-form-element-submit .btn-group-vertical > input +
+.submStartSmall, .btn-group-vertical >
+.submStartSmall +
+.submStartSmall, .btn-group-vertical >
+.submStart +
+.submStartSmall, .btn-group-vertical >
+.powermail_submit +
+.submStartSmall, .header .header-search .btn-group-vertical > .header-search-form_submit +
+.submStartSmall, #pazpar2 .btn-group-vertical > .pz2-submitButton +
+.submStartSmall, .btn-group-vertical > .btn +
+.submStart, .csc-form-element-submit .btn-group-vertical > input +
+.submStart, .btn-group-vertical >
+.submStartSmall +
+.submStart, .btn-group-vertical >
+.submStart +
+.submStart, .btn-group-vertical >
+.powermail_submit +
+.submStart, .header .header-search .btn-group-vertical > .header-search-form_submit +
+.submStart, #pazpar2 .btn-group-vertical > .pz2-submitButton +
+.submStart, .btn-group-vertical > .btn +
+.powermail_submit, .csc-form-element-submit .btn-group-vertical > input +
+.powermail_submit, .btn-group-vertical >
+.submStartSmall +
+.powermail_submit, .btn-group-vertical >
+.submStart +
+.powermail_submit, .btn-group-vertical >
+.powermail_submit +
+.powermail_submit, .header .header-search .btn-group-vertical > .header-search-form_submit +
+.powermail_submit, #pazpar2 .btn-group-vertical > .pz2-submitButton +
+.powermail_submit, .header .header-search .btn-group-vertical > .btn + .header-search-form_submit, .csc-form-element-submit .header .header-search .btn-group-vertical > input + .header-search-form_submit, .header .header-search .csc-form-element-submit .btn-group-vertical > input + .header-search-form_submit, .header .header-search .btn-group-vertical >
+.submStartSmall + .header-search-form_submit, .header .header-search .btn-group-vertical >
+.submStart + .header-search-form_submit, .header .header-search .btn-group-vertical >
+.powermail_submit + .header-search-form_submit, .header .header-search .btn-group-vertical > .header-search-form_submit + .header-search-form_submit, #pazpar2 .header .header-search .btn-group-vertical > .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .btn-group-vertical > .pz2-submitButton + .header-search-form_submit, #pazpar2 .btn-group-vertical > .btn + .pz2-submitButton, .csc-form-element-submit #pazpar2 .btn-group-vertical > input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .btn-group-vertical > input + .pz2-submitButton, #pazpar2 .btn-group-vertical >
+.submStartSmall + .pz2-submitButton, #pazpar2 .btn-group-vertical >
+.submStart + .pz2-submitButton, #pazpar2 .btn-group-vertical >
+.powermail_submit + .pz2-submitButton, .header .header-search #pazpar2 .btn-group-vertical > .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .btn-group-vertical > .header-search-form_submit + .pz2-submitButton, #pazpar2 .btn-group-vertical > .pz2-submitButton + .pz2-submitButton,
+.btn-group-vertical > .btn + .btn-group, .csc-form-element-submit
+.btn-group-vertical > input + .btn-group,
+.btn-group-vertical >
+.submStartSmall + .btn-group,
+.btn-group-vertical >
+.submStart + .btn-group,
+.btn-group-vertical >
+.powermail_submit + .btn-group, .header .header-search
+.btn-group-vertical > .header-search-form_submit + .btn-group, #pazpar2
+.btn-group-vertical > .pz2-submitButton + .btn-group,
+.btn-group-vertical > .btn-group + .btn, .csc-form-element-submit
+.btn-group-vertical > .btn-group + input,
+.btn-group-vertical > .btn-group +
+.submStartSmall,
+.btn-group-vertical > .btn-group +
+.submStart,
+.btn-group-vertical > .btn-group +
+.powermail_submit, .header .header-search
+.btn-group-vertical > .btn-group + .header-search-form_submit, #pazpar2
+.btn-group-vertical > .btn-group + .pz2-submitButton,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .header .header-search .btn-group-vertical > .header-search-form_submit:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .csc-form-element-submit .btn-group-vertical > input:not(:first-child):not(:last-child), .btn-group-vertical >
+.submStartSmall:not(:first-child):not(:last-child), .btn-group-vertical >
+.submStart:not(:first-child):not(:last-child), .btn-group-vertical >
+.powermail_submit:not(:first-child):not(:last-child), .header .header-search .btn-group-vertical > .header-search-form_submit:not(:first-child):not(:last-child), #pazpar2 .btn-group-vertical > .pz2-submitButton:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .header .header-search .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .csc-form-element-submit .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
+.submStartSmall, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
+.submStart, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
+.powermail_submit, .header .header-search .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit, #pazpar2 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .pz2-submitButton {
   border-radius: 0;
 }
 
-[data-toggle="buttons"] > .btn input[type="radio"], .header .header-search [data-toggle="buttons"] > .header-search-form_submit input[type="radio"],
-[data-toggle="buttons"] > .btn input[type="checkbox"], .header .header-search
-[data-toggle="buttons"] > .header-search-form_submit input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="radio"], .header .header-search
-[data-toggle="buttons"] > .btn-group > .header-search-form_submit input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], .header .header-search
-[data-toggle="buttons"] > .btn-group > .header-search-form_submit input[type="checkbox"] {
+[data-toggle="buttons"] > .btn input[type="radio"], .csc-form-element-submit [data-toggle="buttons"] > input input[type="radio"], [data-toggle="buttons"] >
+.submStartSmall input[type="radio"], [data-toggle="buttons"] >
+.submStart input[type="radio"], [data-toggle="buttons"] >
+.powermail_submit input[type="radio"], .header .header-search [data-toggle="buttons"] > .header-search-form_submit input[type="radio"], #pazpar2 [data-toggle="buttons"] > .pz2-submitButton input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="checkbox"], .csc-form-element-submit
+[data-toggle="buttons"] > input input[type="checkbox"],
+[data-toggle="buttons"] >
+.submStartSmall input[type="checkbox"],
+[data-toggle="buttons"] >
+.submStart input[type="checkbox"],
+[data-toggle="buttons"] >
+.powermail_submit input[type="checkbox"], .header .header-search
+[data-toggle="buttons"] > .header-search-form_submit input[type="checkbox"], #pazpar2
+[data-toggle="buttons"] > .pz2-submitButton input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"], .csc-form-element-submit
+[data-toggle="buttons"] > .btn-group > input input[type="radio"],
+[data-toggle="buttons"] > .btn-group >
+.submStartSmall input[type="radio"],
+[data-toggle="buttons"] > .btn-group >
+.submStart input[type="radio"],
+[data-toggle="buttons"] > .btn-group >
+.powermail_submit input[type="radio"], .header .header-search
+[data-toggle="buttons"] > .btn-group > .header-search-form_submit input[type="radio"], #pazpar2
+[data-toggle="buttons"] > .btn-group > .pz2-submitButton input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], .csc-form-element-submit
+[data-toggle="buttons"] > .btn-group > input input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group >
+.submStartSmall input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group >
+.submStart input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group >
+.powermail_submit input[type="checkbox"], .header .header-search
+[data-toggle="buttons"] > .btn-group > .header-search-form_submit input[type="checkbox"], #pazpar2
+[data-toggle="buttons"] > .btn-group > .pz2-submitButton input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -5733,7 +6420,11 @@ tbody.collapse.show {
   width: 100%;
 }
 
-.input-group .form-control, .input-group .header .header-search input, .header .header-search .input-group input {
+.input-group .csc-form-element-textline input[type=text], .csc-form-element-textline .input-group input[type=text], .input-group
+.iputStart, .input-group
+.powermail_input, .input-group
+.form-control, .input-group
+.powermail_textarea, .input-group .header .header-search input, .header .header-search .input-group input, .input-group #pazpar2 .pz2-searchField, #pazpar2 .input-group .pz2-searchField {
   position: relative;
   z-index: 2;
   -webkit-box-flex: 1;
@@ -5743,15 +6434,38 @@ tbody.collapse.show {
   margin-bottom: 0;
 }
 
-.input-group .form-control:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group .form-control:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group .form-control:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover {
+.input-group .csc-form-element-textline input[type=text]:focus, .csc-form-element-textline .input-group input[type=text]:focus, .input-group
+.iputStart:focus, .input-group
+.powermail_input:focus, .input-group
+.form-control:focus, .input-group
+.powermail_textarea:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group #pazpar2 .pz2-searchField:focus, #pazpar2 .input-group .pz2-searchField:focus, .input-group .csc-form-element-textline input[type=text]:active, .csc-form-element-textline .input-group input[type=text]:active, .input-group
+.iputStart:active, .input-group
+.powermail_input:active, .input-group
+.form-control:active, .input-group
+.powermail_textarea:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group #pazpar2 .pz2-searchField:active, #pazpar2 .input-group .pz2-searchField:active, .input-group .csc-form-element-textline input[type=text]:hover, .csc-form-element-textline .input-group input[type=text]:hover, .input-group
+.iputStart:hover, .input-group
+.powermail_input:hover, .input-group
+.form-control:hover, .input-group
+.powermail_textarea:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover, .input-group #pazpar2 .pz2-searchField:hover, #pazpar2 .input-group .pz2-searchField:hover {
   z-index: 3;
 }
 
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control,
+.input-group .csc-form-element-textline input[type=text], .csc-form-element-textline
+.input-group input[type=text],
+.input-group
+.iputStart,
+.input-group
+.powermail_input,
+.input-group
+.form-control,
+.input-group
+.powermail_textarea,
 .input-group .header .header-search input, .header .header-search
-.input-group input {
+.input-group input,
+.input-group #pazpar2 .pz2-searchField, #pazpar2
+.input-group .pz2-searchField {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5779,18 +6493,34 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.input-group-addon.form-control-sm, .header .header-search .input-group-sm > input.input-group-addon,
+.input-group-addon.form-control-sm, .csc-form-element-textline .input-group-sm > input.input-group-addon[type=text], .header .header-search .input-group-sm > input.input-group-addon, #pazpar2 .input-group-sm > .input-group-addon.pz2-searchField,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .input-group-addon.btn, .header .header-search
-.input-group-sm > .input-group-btn > .input-group-addon.header-search-form_submit {
+.input-group-sm > .input-group-btn > .input-group-addon.btn, .csc-form-element-submit
+.input-group-sm > .input-group-btn > input.input-group-addon,
+.input-group-sm > .input-group-btn >
+.input-group-addon.submStartSmall,
+.input-group-sm > .input-group-btn >
+.input-group-addon.submStart,
+.input-group-sm > .input-group-btn >
+.input-group-addon.powermail_submit, .header .header-search
+.input-group-sm > .input-group-btn > .input-group-addon.header-search-form_submit, #pazpar2
+.input-group-sm > .input-group-btn > .input-group-addon.pz2-submitButton {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
 
-.input-group-addon.form-control-lg,
+.input-group-addon.form-control-lg, .csc-form-element-textline .input-group-lg > input.input-group-addon[type=text], .header .header-search .input-group-lg > input.input-group-addon, #pazpar2 .input-group-lg > .input-group-addon.pz2-searchField,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .input-group-addon.btn, .header .header-search
-.input-group-lg > .input-group-btn > .input-group-addon.header-search-form_submit, .header .header-search input.input-group-addon {
+.input-group-lg > .input-group-btn > .input-group-addon.btn, .csc-form-element-submit
+.input-group-lg > .input-group-btn > input.input-group-addon,
+.input-group-lg > .input-group-btn >
+.input-group-addon.submStartSmall,
+.input-group-lg > .input-group-btn >
+.input-group-addon.submStart,
+.input-group-lg > .input-group-btn >
+.input-group-addon.powermail_submit, .header .header-search
+.input-group-lg > .input-group-btn > .input-group-addon.header-search-form_submit, #pazpar2
+.input-group-lg > .input-group-btn > .input-group-addon.pz2-submitButton {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
 }
@@ -5804,7 +6534,11 @@ tbody.collapse.show {
   border-right: 0;
 }
 
-.form-control + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child) {
+.csc-form-element-textline input[type=text] + .input-group-addon:not(:first-child),
+.iputStart + .input-group-addon:not(:first-child),
+.powermail_input + .input-group-addon:not(:first-child),
+.form-control + .input-group-addon:not(:first-child),
+.powermail_textarea + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child), #pazpar2 .pz2-searchField + .input-group-addon:not(:first-child) {
   border-left: 0;
 }
 
@@ -5814,32 +6548,101 @@ tbody.collapse.show {
   white-space: nowrap;
 }
 
-.input-group-btn > .btn, .header .header-search .input-group-btn > .header-search-form_submit {
+.input-group-btn > .btn, .csc-form-element-submit .input-group-btn > input, .input-group-btn >
+.submStartSmall, .input-group-btn >
+.submStart, .input-group-btn >
+.powermail_submit, .header .header-search .input-group-btn > .header-search-form_submit, #pazpar2 .input-group-btn > .pz2-submitButton {
   position: relative;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.input-group-btn > .btn + .btn, .header .header-search .input-group-btn > .header-search-form_submit + .btn, .header .header-search .input-group-btn > .btn + .header-search-form_submit, .header .header-search .input-group-btn > .header-search-form_submit + .header-search-form_submit {
+.input-group-btn > .btn + .btn, .csc-form-element-submit .input-group-btn > input + .btn, .input-group-btn >
+.submStartSmall + .btn, .input-group-btn >
+.submStart + .btn, .input-group-btn >
+.powermail_submit + .btn, .header .header-search .input-group-btn > .header-search-form_submit + .btn, #pazpar2 .input-group-btn > .pz2-submitButton + .btn, .csc-form-element-submit .input-group-btn > .btn + input, .csc-form-element-submit .input-group-btn > input + input, .csc-form-element-submit .input-group-btn >
+.submStartSmall + input, .csc-form-element-submit .input-group-btn >
+.submStart + input, .csc-form-element-submit .input-group-btn >
+.powermail_submit + input, .header .header-search .csc-form-element-submit .input-group-btn > .header-search-form_submit + input, .csc-form-element-submit .header .header-search .input-group-btn > .header-search-form_submit + input, #pazpar2 .csc-form-element-submit .input-group-btn > .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .input-group-btn > .pz2-submitButton + input, .input-group-btn > .btn +
+.submStartSmall, .csc-form-element-submit .input-group-btn > input +
+.submStartSmall, .input-group-btn >
+.submStartSmall +
+.submStartSmall, .input-group-btn >
+.submStart +
+.submStartSmall, .input-group-btn >
+.powermail_submit +
+.submStartSmall, .header .header-search .input-group-btn > .header-search-form_submit +
+.submStartSmall, #pazpar2 .input-group-btn > .pz2-submitButton +
+.submStartSmall, .input-group-btn > .btn +
+.submStart, .csc-form-element-submit .input-group-btn > input +
+.submStart, .input-group-btn >
+.submStartSmall +
+.submStart, .input-group-btn >
+.submStart +
+.submStart, .input-group-btn >
+.powermail_submit +
+.submStart, .header .header-search .input-group-btn > .header-search-form_submit +
+.submStart, #pazpar2 .input-group-btn > .pz2-submitButton +
+.submStart, .input-group-btn > .btn +
+.powermail_submit, .csc-form-element-submit .input-group-btn > input +
+.powermail_submit, .input-group-btn >
+.submStartSmall +
+.powermail_submit, .input-group-btn >
+.submStart +
+.powermail_submit, .input-group-btn >
+.powermail_submit +
+.powermail_submit, .header .header-search .input-group-btn > .header-search-form_submit +
+.powermail_submit, #pazpar2 .input-group-btn > .pz2-submitButton +
+.powermail_submit, .header .header-search .input-group-btn > .btn + .header-search-form_submit, .csc-form-element-submit .header .header-search .input-group-btn > input + .header-search-form_submit, .header .header-search .csc-form-element-submit .input-group-btn > input + .header-search-form_submit, .header .header-search .input-group-btn >
+.submStartSmall + .header-search-form_submit, .header .header-search .input-group-btn >
+.submStart + .header-search-form_submit, .header .header-search .input-group-btn >
+.powermail_submit + .header-search-form_submit, .header .header-search .input-group-btn > .header-search-form_submit + .header-search-form_submit, #pazpar2 .header .header-search .input-group-btn > .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .input-group-btn > .pz2-submitButton + .header-search-form_submit, #pazpar2 .input-group-btn > .btn + .pz2-submitButton, .csc-form-element-submit #pazpar2 .input-group-btn > input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .input-group-btn > input + .pz2-submitButton, #pazpar2 .input-group-btn >
+.submStartSmall + .pz2-submitButton, #pazpar2 .input-group-btn >
+.submStart + .pz2-submitButton, #pazpar2 .input-group-btn >
+.powermail_submit + .pz2-submitButton, .header .header-search #pazpar2 .input-group-btn > .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .input-group-btn > .header-search-form_submit + .pz2-submitButton, #pazpar2 .input-group-btn > .pz2-submitButton + .pz2-submitButton {
   margin-left: -1px;
 }
 
-.input-group-btn > .btn:focus, .header .header-search .input-group-btn > .header-search-form_submit:focus, .input-group-btn > .btn:active, .header .header-search .input-group-btn > .header-search-form_submit:active, .input-group-btn > .btn:hover, .header .header-search .input-group-btn > .header-search-form_submit:hover {
+.input-group-btn > .btn:focus, .csc-form-element-submit .input-group-btn > input:focus, .input-group-btn >
+.submStartSmall:focus, .input-group-btn >
+.submStart:focus, .input-group-btn >
+.powermail_submit:focus, .header .header-search .input-group-btn > .header-search-form_submit:focus, #pazpar2 .input-group-btn > .pz2-submitButton:focus, .input-group-btn > .btn:active, .csc-form-element-submit .input-group-btn > input:active, .input-group-btn >
+.submStartSmall:active, .input-group-btn >
+.submStart:active, .input-group-btn >
+.powermail_submit:active, .header .header-search .input-group-btn > .header-search-form_submit:active, #pazpar2 .input-group-btn > .pz2-submitButton:active, .input-group-btn > .btn:hover, .csc-form-element-submit .input-group-btn > input:hover, .input-group-btn >
+.submStartSmall:hover, .input-group-btn >
+.submStart:hover, .input-group-btn >
+.powermail_submit:hover, .header .header-search .input-group-btn > .header-search-form_submit:hover, #pazpar2 .input-group-btn > .pz2-submitButton:hover {
   z-index: 3;
 }
 
-.input-group-btn:not(:last-child) > .btn, .header .header-search .input-group-btn:not(:last-child) > .header-search-form_submit,
+.input-group-btn:not(:last-child) > .btn, .csc-form-element-submit .input-group-btn:not(:last-child) > input, .input-group-btn:not(:last-child) >
+.submStartSmall, .input-group-btn:not(:last-child) >
+.submStart, .input-group-btn:not(:last-child) >
+.powermail_submit, .header .header-search .input-group-btn:not(:last-child) > .header-search-form_submit, #pazpar2 .input-group-btn:not(:last-child) > .pz2-submitButton,
 .input-group-btn:not(:last-child) > .btn-group {
   margin-right: -1px;
 }
 
-.input-group-btn:not(:first-child) > .btn, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit,
+.input-group-btn:not(:first-child) > .btn, .csc-form-element-submit .input-group-btn:not(:first-child) > input, .input-group-btn:not(:first-child) >
+.submStartSmall, .input-group-btn:not(:first-child) >
+.submStart, .input-group-btn:not(:first-child) >
+.powermail_submit, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton,
 .input-group-btn:not(:first-child) > .btn-group {
   z-index: 2;
   margin-left: -1px;
 }
 
-.input-group-btn:not(:first-child) > .btn:focus, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:focus, .input-group-btn:not(:first-child) > .btn:active, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:active, .input-group-btn:not(:first-child) > .btn:hover, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:hover,
+.input-group-btn:not(:first-child) > .btn:focus, .csc-form-element-submit .input-group-btn:not(:first-child) > input:focus, .input-group-btn:not(:first-child) >
+.submStartSmall:focus, .input-group-btn:not(:first-child) >
+.submStart:focus, .input-group-btn:not(:first-child) >
+.powermail_submit:focus, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:focus, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:focus, .input-group-btn:not(:first-child) > .btn:active, .csc-form-element-submit .input-group-btn:not(:first-child) > input:active, .input-group-btn:not(:first-child) >
+.submStartSmall:active, .input-group-btn:not(:first-child) >
+.submStart:active, .input-group-btn:not(:first-child) >
+.powermail_submit:active, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:active, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:active, .input-group-btn:not(:first-child) > .btn:hover, .csc-form-element-submit .input-group-btn:not(:first-child) > input:hover, .input-group-btn:not(:first-child) >
+.submStartSmall:hover, .input-group-btn:not(:first-child) >
+.submStart:hover, .input-group-btn:not(:first-child) >
+.powermail_submit:hover, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:hover, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:hover,
 .input-group-btn:not(:first-child) > .btn-group:focus,
 .input-group-btn:not(:first-child) > .btn-group:active,
 .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -5864,17 +6667,17 @@ tbody.collapse.show {
 
 .custom-control-input:checked ~ .custom-control-indicator {
   color: #fff;
-  background-color: #007bff;
+  background-color: #25589a;
 }
 
 .custom-control-input:focus ~ .custom-control-indicator {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #007bff;
-          box-shadow: 0 0 0 1px #fff, 0 0 0 3px #007bff;
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #25589a;
+          box-shadow: 0 0 0 1px #fff, 0 0 0 3px #25589a;
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
   color: #fff;
-  background-color: #b3d7ff;
+  background-color: #8eb3e4;
 }
 
 .custom-control-input:disabled ~ .custom-control-indicator {
@@ -5908,7 +6711,7 @@ tbody.collapse.show {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
-  background-color: #007bff;
+  background-color: #25589a;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
 }
 
@@ -5958,7 +6761,7 @@ tbody.collapse.show {
 }
 
 .custom-select:focus {
-  border-color: #80bdff;
+  border-color: #6598da;
   outline: none;
 }
 
@@ -6003,8 +6806,8 @@ tbody.collapse.show {
 }
 
 .custom-file-input:focus ~ .custom-file-control {
-  -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #007bff;
-          box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #007bff;
+  -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #25589a;
+          box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #25589a;
 }
 
 .custom-file-control {
@@ -6116,7 +6919,7 @@ tbody.collapse.show {
 .show > .nav-pills .nav-link,
 .show > .nav-pills .main-navigation_link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #25589a;
 }
 
 .nav-fill .nav-item, .nav-fill .main-navigation_element {
@@ -6804,8 +7607,8 @@ tbody.collapse.show {
 .page-item.active .page-link {
   z-index: 2;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #25589a;
+  border-color: #25589a;
 }
 
 .page-item.disabled .page-link {
@@ -6861,7 +7664,10 @@ tbody.collapse.show {
   display: none;
 }
 
-.btn .badge, .header .header-search .header-search-form_submit .badge {
+.btn .badge, .csc-form-element-submit input .badge,
+.submStartSmall .badge,
+.submStart .badge,
+.powermail_submit .badge, .header .header-search .header-search-form_submit .badge, #pazpar2 .pz2-submitButton .badge {
   position: relative;
   top: -1px;
 }
@@ -6873,13 +7679,13 @@ tbody.collapse.show {
 
 .badge-primary {
   color: #fff;
-  background-color: #007bff;
+  background-color: #25589a;
 }
 
 .badge-primary[href]:focus, .badge-primary[href]:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #0062cc;
+  background-color: #1b4171;
 }
 
 .badge-secondary {
@@ -6999,17 +7805,17 @@ tbody.collapse.show {
 }
 
 .alert-primary {
-  color: #004085;
-  background-color: #cce5ff;
-  border-color: #b8daff;
+  color: #132e50;
+  background-color: #d3deeb;
+  border-color: #c2d0e3;
 }
 
 .alert-primary hr {
-  border-top-color: #9fcdff;
+  border-top-color: #b1c3db;
 }
 
 .alert-primary .alert-link {
-  color: #002752;
+  color: #091627;
 }
 
 .alert-secondary {
@@ -7149,7 +7955,7 @@ tbody.collapse.show {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  background-color: #007bff;
+  background-color: #25589a;
 }
 
 .progress-bar-striped {
@@ -7232,8 +8038,8 @@ tbody.collapse.show {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #25589a;
+  border-color: #25589a;
 }
 
 .list-group-flush .list-group-item {
@@ -7251,27 +8057,27 @@ tbody.collapse.show {
 }
 
 .list-group-item-primary {
-  color: #004085;
-  background-color: #b8daff;
+  color: #132e50;
+  background-color: #c2d0e3;
 }
 
 a.list-group-item-primary,
 button.list-group-item-primary {
-  color: #004085;
+  color: #132e50;
 }
 
 a.list-group-item-primary:focus, a.list-group-item-primary:hover,
 button.list-group-item-primary:focus,
 button.list-group-item-primary:hover {
-  color: #004085;
-  background-color: #9fcdff;
+  color: #132e50;
+  background-color: #b1c3db;
 }
 
 a.list-group-item-primary.active,
 button.list-group-item-primary.active {
   color: #fff;
-  background-color: #004085;
-  border-color: #004085;
+  background-color: #132e50;
+  border-color: #132e50;
 }
 
 .list-group-item-secondary {
@@ -8133,11 +8939,11 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: #25589a !important;
 }
 
 a.bg-primary:focus, a.bg-primary:hover {
-  background-color: #0062cc !important;
+  background-color: #1b4171 !important;
 }
 
 .bg-secondary {
@@ -8229,7 +9035,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .border-primary {
-  border-color: #007bff !important;
+  border-color: #25589a !important;
 }
 
 .border-secondary {
@@ -10836,11 +11642,11 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .text-primary {
-  color: #007bff !important;
+  color: #25589a !important;
 }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #0062cc !important;
+  color: #1b4171 !important;
 }
 
 .text-secondary {
@@ -11027,20 +11833,6 @@ select {
   padding: 0 0 1.6em 1em;
 }
 
-.csc-form-element-textline input[type=text],
-.iputStart,
-.powermail_input,
-.form-control,
-.header .header-search input,
-.powermail_textarea {
-  border: 1px solid #25589a;
-  width: 320px;
-  padding: 4px 12px;
-  margin: 0;
-  background: #fff;
-  font-size: 16px;
-}
-
 .csc-form-element-select select,
 .powermail_select {
   width: 320px;
@@ -11048,47 +11840,6 @@ select {
   background-color: #fff;
   border: 1px solid #25589a;
   font-size: 16px;
-}
-
-.csc-form-element-submit input,
-.submStartSmall,
-.submStart,
-.powermail_submit,
-.btn-primary,
-.header .header-search .header-search-form_submit {
-  background: #25589a;
-  border: 0;
-  color: #fff;
-  width: 160px;
-  min-width: 160px;
-  margin: 0;
-  display: inline;
-  height: 32px;
-  padding: 4px 12px;
-  text-transform: uppercase;
-  border-radius: 0;
-  text-shadow: none;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.csc-form-element-submit input:hover,
-.submStartSmall:hover,
-.submStart:hover,
-.powermail_submit:hover,
-.btn-primary:hover,
-.header .header-search .header-search-form_submit:hover {
-  border: 1px solid #b5c5e6;
-}
-
-.csc-form-element-submit input:focus,
-.submStartSmall:focus,
-.submStart:focus,
-.powermail_submit:focus,
-.btn-primary:focus,
-.header .header-search .header-search-form_submit:focus {
-  outline-offset: 0;
-  border: 0;
 }
 
 #simpleSearch,
@@ -11321,34 +12072,8 @@ form .actions {
   left: -33px;
 }
 
-@media (max-width: 639px) {
-  #pazpar2 .pz2-prev:after,
-  #pazpar2 .pz2-next:after {
-    display: none;
-  }
-}
-
-@media (max-width: 639px) {
-  #pazpar2 .pz2-prev,
-  #pazpar2 .pz2-next {
-    position: static;
-    top: 0;
-    width: auto;
-    height: auto;
-    text-indent: 0;
-    overflow: visible;
-  }
-}
-
 #pazpar2 .pz2-pager li a, #pazpar2 .pz2-pager .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-pager .facetActive a {
   padding: 0 .3em;
-}
-
-@media (max-width: 639px) {
-  #pazpar2 .pz2-pager .pz2-pageNumbers {
-    margin-right: 0;
-    text-align: left;
-  }
 }
 
 #pazpar2 .pz2-pager .pz2-currentPage {
@@ -11369,12 +12094,6 @@ form .actions {
 
 #pazpar2 .pz2-fieldsets ul li.inline, #pazpar2 .pz2-fieldsets ul .tx_find .facet-type-Tabs ol .inline.facetActive, .tx_find .facet-type-Tabs ol #pazpar2 .pz2-fieldsets ul .inline.facetActive {
   margin-left: 0;
-}
-
-@media (max-width: 639px) {
-  #pazpar2 .pz2-mainForm {
-    top: 58px !important;
-  }
 }
 
 #pazpar2 .pz2-basic {
@@ -11412,18 +12131,6 @@ form .actions {
   margin-left: 11em;
 }
 
-@media (max-width: 639px) {
-  #pazpar2 .pz2-details dd {
-    margin-left: 8em;
-  }
-}
-
-@media (max-width: 639px) {
-  #pazpar2 .pz2-details dt {
-    width: 0;
-  }
-}
-
 #pazpar2 .pz2-detail-catalogueLink {
   background: transparent;
 }
@@ -11440,32 +12147,6 @@ form .actions {
   color: #192d57;
 }
 
-#pazpar2 .pz2-submitButton {
-  background: #25589a;
-  border: 0;
-  color: #fff;
-  width: 160px;
-  min-width: 160px;
-  margin: 0;
-  display: inline;
-  height: 32px;
-  padding: 4px 12px;
-  text-transform: uppercase;
-  border-radius: 0;
-  text-shadow: none;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-#pazpar2 .pz2-submitButton:hover {
-  border: 1px solid #b5c5e6;
-}
-
-#pazpar2 .pz2-submitButton:focus {
-  outline-offset: 0;
-  border: 0;
-}
-
 #pazpar2 .pz2-months {
   width: 320px;
   height: 32px;
@@ -11474,52 +12155,20 @@ form .actions {
   font-size: 16px;
 }
 
-#pazpar2 .pz2-searchField {
-  border: 1px solid #25589a;
-  width: 320px;
-  padding: 4px 12px;
-  margin: 0;
-  background: #fff;
-  font-size: 16px;
-  margin-right: 16px;
-  padding: 4px 12px;
-}
-
-@media (max-width: 639px) {
-  #pazpar2 .pz2-searchField {
-    width: auto;
-  }
-}
-
-@media (max-width: 639px) {
-  #pz2-results {
-    margin-right: 0 !important;
-  }
-}
-
-#pz2-results .pz2-recordLink {
+.pz2-recordLink {
   color: #000;
   font-weight: normal;
 }
 
-#pz2-results .pz2-recordLink:after:hover {
+.pz2-recordLink:after:hover {
   color: #192d57;
 }
 
-#pz2-results .pz2-resultList {
+.pz2-resultList {
   padding-left: 30px;
 }
 
-@media (max-width: 639px) {
-  #pz2-results .pz2-resultList {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    padding-left: 0 !important;
-  }
-}
-
-#pz2-results .pz2-details dl ul li, #pz2-results .pz2-details dl ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pz2-results .pz2-details dl ul .facetActive {
+.pz2-details dl ul li, .pz2-details dl ul .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .pz2-details dl ul .facetActive {
   list-style-type: circle;
 }
 
@@ -11547,6 +12196,18 @@ form .actions {
 
 .pz2-fieldContainer {
   margin: .5em 0;
+}
+
+.pz2-JSNote {
+  display: none;
+}
+
+.pz2-noJS .pz2-JSNote {
+  display: block;
+}
+
+.pz2-ranking {
+  display: none;
 }
 
 .tx-ezbrequest-pi1 #navi {

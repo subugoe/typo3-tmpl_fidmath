@@ -3,7 +3,7 @@
 .powermail_input,
 .form-control,
 .powermail_textarea {
-    @include input-text;
+    @extend .form-control;
 }
 
 .csc-form-element-select select,
@@ -14,9 +14,9 @@
 .csc-form-element-submit input,
 .submStartSmall,
 .submStart,
-.powermail_submit,
-.btn-primary {
-    @include input-submit;
+.powermail_submit {
+    @extend .btn;
+    @extend .btn-primary;
 }
 
 #simpleSearch,
