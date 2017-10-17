@@ -75,8 +75,8 @@ $tab-selected: #263476;
 
         .submit {
 
-            @include input-submit();
-
+@extend .btn;
+            @extend .btn-primary;
             &:active {
                 background-color: $border-color;
             }
@@ -127,7 +127,7 @@ $tab-selected: #263476;
         }
 
         input {
-            @include input-text();
+            @extend .form-control;
         }
 
         .noleftmargin {

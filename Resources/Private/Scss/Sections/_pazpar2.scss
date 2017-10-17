@@ -37,7 +37,7 @@
     }
 
     .pz2-mainForm {
-        line-height: 180%;
+        display: none;
     }
 
     .pz2-fieldsets ul {
@@ -116,7 +116,7 @@
     }
 
     .pz2-months {
-        @include input-select;
+        @extend .form-control;
     }
 
     .pz2-searchField {

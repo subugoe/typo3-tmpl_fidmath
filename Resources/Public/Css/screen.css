@@ -2773,11 +2773,11 @@
   .badge {
     border: 1px solid #000;
   }
-  .table {
+  .table, .tx-ezbrequest-pi1 .ezbrequest_itemtable, .tx-mathematicians #genResult table {
     border-collapse: collapse !important;
   }
-  .table td,
-  .table th {
+  .table td, .tx-ezbrequest-pi1 .ezbrequest_itemtable td, .tx-mathematicians #genResult table td,
+  .table th, .tx-ezbrequest-pi1 .ezbrequest_itemtable th, .tx-mathematicians #genResult table th {
     background-color: #fff !important;
   }
   .table-bordered th,
@@ -3362,7 +3362,7 @@ pre code {
   width: 100%;
 }
 
-.row, .main {
+.row, .main, .tx-ezbrequest-pi1 #navi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3385,7 +3385,7 @@ pre code {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .main.two-columns .main-sidebar, #pz2-termLists, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .main.two-columns .main-content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .main.one-column, .col-md,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .main.two-columns .main-sidebar, #pz2-termLists, .col-md-5, .tx-ezbrequest-pi1 #ezb_search_form, .col-md-6, .col-md-7, .tx-ezbrequest-pi1 #journalNavi, .col-md-8, .main.two-columns .main-content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .main.one-column, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
@@ -3759,7 +3759,7 @@ pre code {
             flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
-  .col-md-5 {
+  .col-md-5, .tx-ezbrequest-pi1 #ezb_search_form {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 41.66667%;
             flex: 0 0 41.66667%;
@@ -3771,7 +3771,7 @@ pre code {
             flex: 0 0 50%;
     max-width: 50%;
   }
-  .col-md-7 {
+  .col-md-7, .tx-ezbrequest-pi1 #journalNavi {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 58.33333%;
             flex: 0 0 58.33333%;
@@ -4169,30 +4169,30 @@ pre code {
   }
 }
 
-.table {
+.table, .tx-ezbrequest-pi1 .ezbrequest_itemtable, .tx-mathematicians #genResult table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
 }
 
-.table th,
-.table td {
+.table th, .tx-ezbrequest-pi1 .ezbrequest_itemtable th, .tx-mathematicians #genResult table th,
+.table td, .tx-ezbrequest-pi1 .ezbrequest_itemtable td, .tx-mathematicians #genResult table td {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #e9ecef;
 }
 
-.table thead th {
+.table thead th, .tx-ezbrequest-pi1 .ezbrequest_itemtable thead th, .tx-mathematicians #genResult table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #e9ecef;
 }
 
-.table tbody + tbody {
+.table tbody + tbody, .tx-ezbrequest-pi1 .ezbrequest_itemtable tbody + tbody, .tx-mathematicians #genResult table tbody + tbody {
   border-top: 2px solid #e9ecef;
 }
 
-.table .table {
+.table .table, .tx-ezbrequest-pi1 .ezbrequest_itemtable .table, .tx-mathematicians #genResult table .table, .table .tx-ezbrequest-pi1 .ezbrequest_itemtable, .tx-ezbrequest-pi1 .table .ezbrequest_itemtable, .tx-ezbrequest-pi1 .ezbrequest_itemtable .ezbrequest_itemtable, .tx-mathematicians #genResult table .tx-ezbrequest-pi1 .ezbrequest_itemtable, .tx-ezbrequest-pi1 .tx-mathematicians #genResult table .ezbrequest_itemtable, .table .tx-mathematicians #genResult table, .tx-mathematicians #genResult .table table, .tx-ezbrequest-pi1 .ezbrequest_itemtable .tx-mathematicians #genResult table, .tx-mathematicians #genResult .tx-ezbrequest-pi1 .ezbrequest_itemtable table, .tx-mathematicians #genResult table table {
   background-color: #fff;
 }
 
@@ -4403,11 +4403,10 @@ pre code {
   }
 }
 
-.csc-form-element-textline input[type=text],
-.iputStart,
+.form-control, .csc-form-element-textline input[type=text],
 .powermail_input,
-.form-control,
-.powermail_textarea, .header .header-search input, #pazpar2 .pz2-searchField {
+.powermail_textarea, .csc-form-element-select select,
+.powermail_select, .header .header-search input, #pazpar2 .pz2-months, #pazpar2 .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-mathematicians .iputStart, .tx_find .fieldContainer input {
   display: block;
   width: 100%;
   padding: 0.5rem 0.75rem;
@@ -4425,89 +4424,79 @@ pre code {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
 }
 
-.csc-form-element-textline input[type=text]::-ms-expand,
-.iputStart::-ms-expand,
+.form-control::-ms-expand, .csc-form-element-textline input[type=text]::-ms-expand,
 .powermail_input::-ms-expand,
-.form-control::-ms-expand,
-.powermail_textarea::-ms-expand, .header .header-search input::-ms-expand, #pazpar2 .pz2-searchField::-ms-expand {
+.powermail_textarea::-ms-expand, .csc-form-element-select select::-ms-expand,
+.powermail_select::-ms-expand, .header .header-search input::-ms-expand, #pazpar2 .pz2-months::-ms-expand, #pazpar2 .pz2-searchField::-ms-expand, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-expand, .tx-mathematicians .iputStart::-ms-expand, .tx_find .fieldContainer input::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
-.csc-form-element-textline input[type=text]:focus,
-.iputStart:focus,
+.form-control:focus, .csc-form-element-textline input[type=text]:focus,
 .powermail_input:focus,
-.form-control:focus,
-.powermail_textarea:focus, .header .header-search input:focus, #pazpar2 .pz2-searchField:focus {
+.powermail_textarea:focus, .csc-form-element-select select:focus,
+.powermail_select:focus, .header .header-search input:focus, #pazpar2 .pz2-months:focus, #pazpar2 .pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-mathematicians .iputStart:focus, .tx_find .fieldContainer input:focus {
   color: #495057;
   background-color: #fff;
   border-color: #6598da;
   outline: none;
 }
 
-.csc-form-element-textline input[type=text]::-webkit-input-placeholder,
-.iputStart::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder, .csc-form-element-textline input[type=text]::-webkit-input-placeholder,
 .powermail_input::-webkit-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.powermail_textarea::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder, #pazpar2 .pz2-searchField::-webkit-input-placeholder {
+.powermail_textarea::-webkit-input-placeholder, .csc-form-element-select select::-webkit-input-placeholder,
+.powermail_select::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder, #pazpar2 .pz2-months::-webkit-input-placeholder, #pazpar2 .pz2-searchField::-webkit-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-webkit-input-placeholder, .tx-mathematicians .iputStart::-webkit-input-placeholder, .tx_find .fieldContainer input::-webkit-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.csc-form-element-textline input[type=text]:-ms-input-placeholder,
-.iputStart:-ms-input-placeholder,
+.form-control:-ms-input-placeholder, .csc-form-element-textline input[type=text]:-ms-input-placeholder,
 .powermail_input:-ms-input-placeholder,
-.form-control:-ms-input-placeholder,
-.powermail_textarea:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder, #pazpar2 .pz2-searchField:-ms-input-placeholder {
+.powermail_textarea:-ms-input-placeholder, .csc-form-element-select select:-ms-input-placeholder,
+.powermail_select:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder, #pazpar2 .pz2-months:-ms-input-placeholder, #pazpar2 .pz2-searchField:-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:-ms-input-placeholder, .tx-mathematicians .iputStart:-ms-input-placeholder, .tx_find .fieldContainer input:-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.csc-form-element-textline input[type=text]::-ms-input-placeholder,
-.iputStart::-ms-input-placeholder,
+.form-control::-ms-input-placeholder, .csc-form-element-textline input[type=text]::-ms-input-placeholder,
 .powermail_input::-ms-input-placeholder,
-.form-control::-ms-input-placeholder,
-.powermail_textarea::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder, #pazpar2 .pz2-searchField::-ms-input-placeholder {
+.powermail_textarea::-ms-input-placeholder, .csc-form-element-select select::-ms-input-placeholder,
+.powermail_select::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder, #pazpar2 .pz2-months::-ms-input-placeholder, #pazpar2 .pz2-searchField::-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-input-placeholder, .tx-mathematicians .iputStart::-ms-input-placeholder, .tx_find .fieldContainer input::-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.csc-form-element-textline input[type=text]::placeholder,
-.iputStart::placeholder,
+.form-control::placeholder, .csc-form-element-textline input[type=text]::placeholder,
 .powermail_input::placeholder,
-.form-control::placeholder,
-.powermail_textarea::placeholder, .header .header-search input::placeholder, #pazpar2 .pz2-searchField::placeholder {
+.powermail_textarea::placeholder, .csc-form-element-select select::placeholder,
+.powermail_select::placeholder, .header .header-search input::placeholder, #pazpar2 .pz2-months::placeholder, #pazpar2 .pz2-searchField::placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::placeholder, .tx-mathematicians .iputStart::placeholder, .tx_find .fieldContainer input::placeholder {
   color: #868e96;
   opacity: 1;
 }
 
-.csc-form-element-textline input[type=text]:disabled,
-.iputStart:disabled,
+.form-control:disabled, .csc-form-element-textline input[type=text]:disabled,
 .powermail_input:disabled,
-.form-control:disabled,
-.powermail_textarea:disabled, .header .header-search input:disabled, #pazpar2 .pz2-searchField:disabled, .csc-form-element-textline input[readonly][type=text],
-[readonly].iputStart,
+.powermail_textarea:disabled, .csc-form-element-select select:disabled,
+.powermail_select:disabled, .header .header-search input:disabled, #pazpar2 .pz2-months:disabled, #pazpar2 .pz2-searchField:disabled, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:disabled, .tx-mathematicians .iputStart:disabled, .tx_find .fieldContainer input:disabled, .form-control[readonly], .csc-form-element-textline input[readonly][type=text],
 [readonly].powermail_input,
-[readonly].form-control,
-[readonly].powermail_textarea, .header .header-search input[readonly], #pazpar2 [readonly].pz2-searchField {
+[readonly].powermail_textarea, .csc-form-element-select select[readonly],
+[readonly].powermail_select, .header .header-search input[readonly], #pazpar2 [readonly].pz2-months, #pazpar2 [readonly].pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[readonly][type=text], .tx-mathematicians [readonly].iputStart, .tx_find .fieldContainer input[readonly] {
   background-color: #e9ecef;
   opacity: 1;
 }
 
-
-select.iputStart:not([size]):not([multiple]),
-select.powermail_input:not([size]):not([multiple]),
 select.form-control:not([size]):not([multiple]),
-select.powermail_textarea:not([size]):not([multiple]), #pazpar2 select.pz2-searchField:not([size]):not([multiple]) {
+select.powermail_input:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), .csc-form-element-select select:not([size]):not([multiple]),
+select.powermail_select:not([size]):not([multiple]), #pazpar2 select.pz2-months:not([size]):not([multiple]), #pazpar2 select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians select.iputStart:not([size]):not([multiple]) {
   height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px);
 }
 
-
-select.iputStart:focus::-ms-value,
-select.powermail_input:focus::-ms-value,
 select.form-control:focus::-ms-value,
-select.powermail_textarea:focus::-ms-value, #pazpar2 select.pz2-searchField:focus::-ms-value {
+select.powermail_input:focus::-ms-value,
+select.powermail_textarea:focus::-ms-value, .csc-form-element-select select:focus::-ms-value,
+select.powermail_select:focus::-ms-value, #pazpar2 select.pz2-months:focus::-ms-value, #pazpar2 select.pz2-searchField:focus::-ms-value, .tx-mathematicians select.iputStart:focus::-ms-value {
   color: #495057;
   background-color: #fff;
 }
@@ -4557,122 +4546,123 @@ select.powermail_textarea:focus::-ms-value, #pazpar2 select.pz2-searchField:focu
   border-width: 1px 0;
 }
 
-.form-control-plaintext.form-control-sm, .csc-form-element-textline .input-group-sm > input.form-control-plaintext[type=text], .input-group-sm >
-.form-control-plaintext.iputStart, .input-group-sm >
+.form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .csc-form-element-textline .input-group-sm > input.form-control-plaintext[type=text], .input-group-sm >
 .form-control-plaintext.powermail_input, .input-group-sm >
-.form-control-plaintext.form-control, .input-group-sm >
-.form-control-plaintext.powermail_textarea, .header .header-search .input-group-sm > input.form-control-plaintext, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-searchField,
+.form-control-plaintext.powermail_textarea, .csc-form-element-select .input-group-sm > select.form-control-plaintext, .input-group-sm >
+.form-control-plaintext.powermail_select, .header .header-search .input-group-sm > input.form-control-plaintext, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-months, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-sm > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-sm > input.form-control-plaintext,
 .input-group-sm > .form-control-plaintext.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-plaintext.btn, .csc-form-element-submit
 .input-group-sm > .input-group-btn > input.form-control-plaintext,
 .input-group-sm > .input-group-btn >
-.form-control-plaintext.submStartSmall,
-.input-group-sm > .input-group-btn >
-.form-control-plaintext.submStart,
-.input-group-sm > .input-group-btn >
 .form-control-plaintext.powermail_submit, .header .header-search
 .input-group-sm > .input-group-btn > .form-control-plaintext.header-search-form_submit, #pazpar2
-.input-group-sm > .input-group-btn > .form-control-plaintext.pz2-submitButton, .form-control-plaintext.form-control-lg, .csc-form-element-textline .input-group-lg > input.form-control-plaintext[type=text], .input-group-lg >
-.form-control-plaintext.iputStart, .input-group-lg >
+.input-group-sm > .input-group-btn > .form-control-plaintext.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-sm > .input-group-btn > .form-control-plaintext.submStartSmall, .tx-mathematicians
+.input-group-sm > .input-group-btn > .form-control-plaintext.submStartSmall,
+.tx-mathematicians
+.input-group-sm > .input-group-btn > .form-control-plaintext.submStart, .tx_find form
+.input-group-sm > .input-group-btn > .form-control-plaintext.submit, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .csc-form-element-textline .input-group-lg > input.form-control-plaintext[type=text], .input-group-lg >
 .form-control-plaintext.powermail_input, .input-group-lg >
-.form-control-plaintext.form-control, .input-group-lg >
-.form-control-plaintext.powermail_textarea, .header .header-search .input-group-lg > input.form-control-plaintext, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-searchField,
+.form-control-plaintext.powermail_textarea, .csc-form-element-select .input-group-lg > select.form-control-plaintext, .input-group-lg >
+.form-control-plaintext.powermail_select, .header .header-search .input-group-lg > input.form-control-plaintext, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-months, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-lg > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-lg > input.form-control-plaintext,
 .input-group-lg > .form-control-plaintext.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-plaintext.btn, .csc-form-element-submit
 .input-group-lg > .input-group-btn > input.form-control-plaintext,
 .input-group-lg > .input-group-btn >
-.form-control-plaintext.submStartSmall,
-.input-group-lg > .input-group-btn >
-.form-control-plaintext.submStart,
-.input-group-lg > .input-group-btn >
 .form-control-plaintext.powermail_submit, .header .header-search
 .input-group-lg > .input-group-btn > .form-control-plaintext.header-search-form_submit, #pazpar2
-.input-group-lg > .input-group-btn > .form-control-plaintext.pz2-submitButton {
+.input-group-lg > .input-group-btn > .form-control-plaintext.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-lg > .input-group-btn > .form-control-plaintext.submStartSmall, .tx-mathematicians
+.input-group-lg > .input-group-btn > .form-control-plaintext.submStartSmall,
+.tx-mathematicians
+.input-group-lg > .input-group-btn > .form-control-plaintext.submStart, .tx_find form
+.input-group-lg > .input-group-btn > .form-control-plaintext.submit {
   padding-right: 0;
   padding-left: 0;
 }
 
-.form-control-sm, .csc-form-element-textline .input-group-sm > input[type=text], .input-group-sm >
-.iputStart, .input-group-sm >
+.form-control-sm, .input-group-sm > .form-control, .csc-form-element-textline .input-group-sm > input[type=text], .input-group-sm >
 .powermail_input, .input-group-sm >
-.form-control, .input-group-sm >
-.powermail_textarea, .header .header-search .input-group-sm > input, #pazpar2 .input-group-sm > .pz2-searchField,
+.powermail_textarea, .csc-form-element-select .input-group-sm > select, .input-group-sm >
+.powermail_select, .header .header-search .input-group-sm > input, #pazpar2 .input-group-sm > .pz2-months, #pazpar2 .input-group-sm > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input[type=text], .tx-mathematicians .input-group-sm > .iputStart, .tx_find .fieldContainer .input-group-sm > input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn, .csc-form-element-submit
 .input-group-sm > .input-group-btn > input,
 .input-group-sm > .input-group-btn >
-.submStartSmall,
-.input-group-sm > .input-group-btn >
-.submStart,
-.input-group-sm > .input-group-btn >
 .powermail_submit, .header .header-search
 .input-group-sm > .input-group-btn > .header-search-form_submit, #pazpar2
-.input-group-sm > .input-group-btn > .pz2-submitButton {
+.input-group-sm > .input-group-btn > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-sm > .input-group-btn > .submStartSmall, .tx-mathematicians
+.input-group-sm > .input-group-btn > .submStartSmall,
+.tx-mathematicians
+.input-group-sm > .input-group-btn > .submStart, .tx_find form
+.input-group-sm > .input-group-btn > .submit {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
 }
 
-select.form-control-sm:not([size]):not([multiple]), .input-group-sm >
-select.iputStart:not([size]):not([multiple]), .input-group-sm >
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .input-group-sm >
 select.powermail_input:not([size]):not([multiple]), .input-group-sm >
-select.form-control:not([size]):not([multiple]), .input-group-sm >
-select.powermail_textarea:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-searchField:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), .csc-form-element-select .input-group-sm > select:not([size]):not([multiple]), .input-group-sm >
+select.powermail_select:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-sm > select.iputStart:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn >
-select.submStartSmall:not([size]):not([multiple]),
-.input-group-sm > .input-group-btn >
-select.submStart:not([size]):not([multiple]),
-.input-group-sm > .input-group-btn >
 select.powermail_submit:not([size]):not([multiple]), .header .header-search
 .input-group-sm > .input-group-btn > select.header-search-form_submit:not([size]):not([multiple]), #pazpar2
-.input-group-sm > .input-group-btn > select.pz2-submitButton:not([size]):not([multiple]) {
+.input-group-sm > .input-group-btn > select.pz2-submitButton:not([size]):not([multiple]), .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-sm > .input-group-btn > select.submStartSmall:not([size]):not([multiple]), .tx-mathematicians
+.input-group-sm > .input-group-btn > select.submStartSmall:not([size]):not([multiple]),
+.tx-mathematicians
+.input-group-sm > .input-group-btn > select.submStart:not([size]):not([multiple]), .tx_find form
+.input-group-sm > .input-group-btn > select.submit:not([size]):not([multiple]) {
   height: -webkit-calc(1.8125rem + 2px);
   height: calc(1.8125rem + 2px);
 }
 
-.form-control-lg, .csc-form-element-textline .input-group-lg > input[type=text], .input-group-lg >
-.iputStart, .input-group-lg >
+.form-control-lg, .input-group-lg > .form-control, .csc-form-element-textline .input-group-lg > input[type=text], .input-group-lg >
 .powermail_input, .input-group-lg >
-.form-control, .input-group-lg >
-.powermail_textarea, .header .header-search .input-group-lg > input, #pazpar2 .input-group-lg > .pz2-searchField,
+.powermail_textarea, .csc-form-element-select .input-group-lg > select, .input-group-lg >
+.powermail_select, .header .header-search .input-group-lg > input, #pazpar2 .input-group-lg > .pz2-months, #pazpar2 .input-group-lg > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input[type=text], .tx-mathematicians .input-group-lg > .iputStart, .tx_find .fieldContainer .input-group-lg > input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn, .csc-form-element-submit
 .input-group-lg > .input-group-btn > input,
 .input-group-lg > .input-group-btn >
-.submStartSmall,
-.input-group-lg > .input-group-btn >
-.submStart,
-.input-group-lg > .input-group-btn >
 .powermail_submit, .header .header-search
 .input-group-lg > .input-group-btn > .header-search-form_submit, #pazpar2
-.input-group-lg > .input-group-btn > .pz2-submitButton {
+.input-group-lg > .input-group-btn > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-lg > .input-group-btn > .submStartSmall, .tx-mathematicians
+.input-group-lg > .input-group-btn > .submStartSmall,
+.tx-mathematicians
+.input-group-lg > .input-group-btn > .submStart, .tx_find form
+.input-group-lg > .input-group-btn > .submit {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-select.form-control-lg:not([size]):not([multiple]), .input-group-lg >
-select.iputStart:not([size]):not([multiple]), .input-group-lg >
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .input-group-lg >
 select.powermail_input:not([size]):not([multiple]), .input-group-lg >
-select.form-control:not([size]):not([multiple]), .input-group-lg >
-select.powermail_textarea:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-searchField:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), .csc-form-element-select .input-group-lg > select:not([size]):not([multiple]), .input-group-lg >
+select.powermail_select:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-lg > select.iputStart:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn >
-select.submStartSmall:not([size]):not([multiple]),
-.input-group-lg > .input-group-btn >
-select.submStart:not([size]):not([multiple]),
-.input-group-lg > .input-group-btn >
 select.powermail_submit:not([size]):not([multiple]), .header .header-search
 .input-group-lg > .input-group-btn > select.header-search-form_submit:not([size]):not([multiple]), #pazpar2
-.input-group-lg > .input-group-btn > select.pz2-submitButton:not([size]):not([multiple]) {
+.input-group-lg > .input-group-btn > select.pz2-submitButton:not([size]):not([multiple]), .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-lg > .input-group-btn > select.submStartSmall:not([size]):not([multiple]), .tx-mathematicians
+.input-group-lg > .input-group-btn > select.submStartSmall:not([size]):not([multiple]),
+.tx-mathematicians
+.input-group-lg > .input-group-btn > select.submStart:not([size]):not([multiple]), .tx_find form
+.input-group-lg > .input-group-btn > select.submit:not([size]):not([multiple]) {
   height: -webkit-calc(2.875rem + 2px);
   height: calc(2.875rem + 2px);
 }
 
-.form-group {
+.form-group, .powermail_fieldwrap,
+.csc-form-element {
   margin-bottom: 1rem;
 }
 
@@ -4752,62 +4742,65 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
   border-radius: .2rem;
 }
 
-.was-validated .csc-form-element-textline input[type=text]:valid, .csc-form-element-textline .was-validated input[type=text]:valid, .was-validated
-.iputStart:valid, .was-validated
+.was-validated .form-control:valid, .was-validated .csc-form-element-textline input[type=text]:valid, .csc-form-element-textline .was-validated input[type=text]:valid, .was-validated
 .powermail_input:valid, .was-validated
-.form-control:valid, .was-validated
-.powermail_textarea:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .was-validated #pazpar2 .pz2-searchField:valid, #pazpar2 .was-validated .pz2-searchField:valid, .csc-form-element-textline input.is-valid[type=text],
-.is-valid.iputStart,
+.powermail_textarea:valid, .was-validated .csc-form-element-select select:valid, .csc-form-element-select .was-validated select:valid, .was-validated
+.powermail_select:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .was-validated #pazpar2 .pz2-months:valid, #pazpar2 .was-validated .pz2-months:valid, .was-validated #pazpar2 .pz2-searchField:valid, #pazpar2 .was-validated .pz2-searchField:valid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid, .was-validated .tx-mathematicians .iputStart:valid, .tx-mathematicians .was-validated .iputStart:valid, .was-validated .tx_find .fieldContainer input:valid, .tx_find .fieldContainer .was-validated input:valid, .form-control.is-valid, .csc-form-element-textline input.is-valid[type=text],
 .is-valid.powermail_input,
-.is-valid.form-control,
-.is-valid.powermail_textarea, .header .header-search input.is-valid, #pazpar2 .is-valid.pz2-searchField, .was-validated
+.is-valid.powermail_textarea, .csc-form-element-select select.is-valid,
+.is-valid.powermail_select, .header .header-search input.is-valid, #pazpar2 .is-valid.pz2-months, #pazpar2 .is-valid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text], .tx-mathematicians .is-valid.iputStart, .tx_find .fieldContainer input.is-valid, .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745;
 }
 
-.was-validated .csc-form-element-textline input[type=text]:valid:focus, .csc-form-element-textline .was-validated input[type=text]:valid:focus, .was-validated
-.iputStart:valid:focus, .was-validated
+.was-validated .form-control:valid:focus, .was-validated .csc-form-element-textline input[type=text]:valid:focus, .csc-form-element-textline .was-validated input[type=text]:valid:focus, .was-validated
 .powermail_input:valid:focus, .was-validated
-.form-control:valid:focus, .was-validated
-.powermail_textarea:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .was-validated #pazpar2 .pz2-searchField:valid:focus, #pazpar2 .was-validated .pz2-searchField:valid:focus, .csc-form-element-textline input.is-valid[type=text]:focus,
-.is-valid.iputStart:focus,
+.powermail_textarea:valid:focus, .was-validated .csc-form-element-select select:valid:focus, .csc-form-element-select .was-validated select:valid:focus, .was-validated
+.powermail_select:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .was-validated #pazpar2 .pz2-months:valid:focus, #pazpar2 .was-validated .pz2-months:valid:focus, .was-validated #pazpar2 .pz2-searchField:valid:focus, #pazpar2 .was-validated .pz2-searchField:valid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid:focus, .was-validated .tx-mathematicians .iputStart:valid:focus, .tx-mathematicians .was-validated .iputStart:valid:focus, .was-validated .tx_find .fieldContainer input:valid:focus, .tx_find .fieldContainer .was-validated input:valid:focus, .form-control.is-valid:focus, .csc-form-element-textline input.is-valid[type=text]:focus,
 .is-valid.powermail_input:focus,
-.is-valid.form-control:focus,
-.is-valid.powermail_textarea:focus, .header .header-search input.is-valid:focus, #pazpar2 .is-valid.pz2-searchField:focus, .was-validated
+.is-valid.powermail_textarea:focus, .csc-form-element-select select.is-valid:focus,
+.is-valid.powermail_select:focus, .header .header-search input.is-valid:focus, #pazpar2 .is-valid.pz2-months:focus, #pazpar2 .is-valid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text]:focus, .tx-mathematicians .is-valid.iputStart:focus, .tx_find .fieldContainer input.is-valid:focus, .was-validated
 .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
-.was-validated .csc-form-element-textline input[type=text]:valid ~ .invalid-feedback, .csc-form-element-textline .was-validated input[type=text]:valid ~ .invalid-feedback, .was-validated
-.iputStart:valid ~ .invalid-feedback, .was-validated
+.was-validated .form-control:valid ~ .invalid-feedback, .was-validated .csc-form-element-textline input[type=text]:valid ~ .invalid-feedback, .csc-form-element-textline .was-validated input[type=text]:valid ~ .invalid-feedback, .was-validated
 .powermail_input:valid ~ .invalid-feedback, .was-validated
-.form-control:valid ~ .invalid-feedback, .was-validated
-.powermail_textarea:valid ~ .invalid-feedback, .was-validated .header .header-search input:valid ~ .invalid-feedback, .header .header-search .was-validated input:valid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:valid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:valid ~ .invalid-feedback,
+.powermail_textarea:valid ~ .invalid-feedback, .was-validated .csc-form-element-select select:valid ~ .invalid-feedback, .csc-form-element-select .was-validated select:valid ~ .invalid-feedback, .was-validated
+.powermail_select:valid ~ .invalid-feedback, .was-validated .header .header-search input:valid ~ .invalid-feedback, .header .header-search .was-validated input:valid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-months:valid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-months:valid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:valid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:valid ~ .invalid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid ~ .invalid-feedback, .was-validated .tx-mathematicians .iputStart:valid ~ .invalid-feedback, .tx-mathematicians .was-validated .iputStart:valid ~ .invalid-feedback, .was-validated .tx_find .fieldContainer input:valid ~ .invalid-feedback, .tx_find .fieldContainer .was-validated input:valid ~ .invalid-feedback,
+.was-validated .form-control:valid ~ .invalid-tooltip,
 .was-validated .csc-form-element-textline input[type=text]:valid ~ .invalid-tooltip, .csc-form-element-textline
 .was-validated input[type=text]:valid ~ .invalid-tooltip,
 .was-validated
-.iputStart:valid ~ .invalid-tooltip,
-.was-validated
 .powermail_input:valid ~ .invalid-tooltip,
 .was-validated
-.form-control:valid ~ .invalid-tooltip,
-.was-validated
 .powermail_textarea:valid ~ .invalid-tooltip,
+.was-validated .csc-form-element-select select:valid ~ .invalid-tooltip, .csc-form-element-select
+.was-validated select:valid ~ .invalid-tooltip,
+.was-validated
+.powermail_select:valid ~ .invalid-tooltip,
 .was-validated .header .header-search input:valid ~ .invalid-tooltip, .header .header-search
 .was-validated input:valid ~ .invalid-tooltip,
+.was-validated #pazpar2 .pz2-months:valid ~ .invalid-tooltip, #pazpar2
+.was-validated .pz2-months:valid ~ .invalid-tooltip,
 .was-validated #pazpar2 .pz2-searchField:valid ~ .invalid-tooltip, #pazpar2
-.was-validated .pz2-searchField:valid ~ .invalid-tooltip, .csc-form-element-textline input.is-valid[type=text] ~ .invalid-feedback,
-.is-valid.iputStart ~ .invalid-feedback,
+.was-validated .pz2-searchField:valid ~ .invalid-tooltip,
+.was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form
+.was-validated input[type=text]:valid ~ .invalid-tooltip,
+.was-validated .tx-mathematicians .iputStart:valid ~ .invalid-tooltip, .tx-mathematicians
+.was-validated .iputStart:valid ~ .invalid-tooltip,
+.was-validated .tx_find .fieldContainer input:valid ~ .invalid-tooltip, .tx_find .fieldContainer
+.was-validated input:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback, .csc-form-element-textline input.is-valid[type=text] ~ .invalid-feedback,
 .is-valid.powermail_input ~ .invalid-feedback,
-.is-valid.form-control ~ .invalid-feedback,
-.is-valid.powermail_textarea ~ .invalid-feedback, .header .header-search input.is-valid ~ .invalid-feedback, #pazpar2 .is-valid.pz2-searchField ~ .invalid-feedback, .csc-form-element-textline input.is-valid[type=text] ~ .invalid-tooltip,
-.is-valid.iputStart ~ .invalid-tooltip,
+.is-valid.powermail_textarea ~ .invalid-feedback, .csc-form-element-select select.is-valid ~ .invalid-feedback,
+.is-valid.powermail_select ~ .invalid-feedback, .header .header-search input.is-valid ~ .invalid-feedback, #pazpar2 .is-valid.pz2-months ~ .invalid-feedback, #pazpar2 .is-valid.pz2-searchField ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .invalid-feedback, .tx-mathematicians .is-valid.iputStart ~ .invalid-feedback, .tx_find .fieldContainer input.is-valid ~ .invalid-feedback,
+.form-control.is-valid ~ .invalid-tooltip, .csc-form-element-textline input.is-valid[type=text] ~ .invalid-tooltip,
 .is-valid.powermail_input ~ .invalid-tooltip,
-.is-valid.form-control ~ .invalid-tooltip,
-.is-valid.powermail_textarea ~ .invalid-tooltip, .header .header-search input.is-valid ~ .invalid-tooltip, #pazpar2 .is-valid.pz2-searchField ~ .invalid-tooltip, .was-validated
+.is-valid.powermail_textarea ~ .invalid-tooltip, .csc-form-element-select select.is-valid ~ .invalid-tooltip,
+.is-valid.powermail_select ~ .invalid-tooltip, .header .header-search input.is-valid ~ .invalid-tooltip, #pazpar2 .is-valid.pz2-months ~ .invalid-tooltip, #pazpar2 .is-valid.pz2-searchField ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .invalid-tooltip, .tx-mathematicians .is-valid.iputStart ~ .invalid-tooltip, .tx_find .fieldContainer input.is-valid ~ .invalid-tooltip, .was-validated
 .custom-select:valid ~ .invalid-feedback,
 .was-validated
 .custom-select:valid ~ .invalid-tooltip,
@@ -4841,62 +4834,65 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
           box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
-.was-validated .csc-form-element-textline input[type=text]:invalid, .csc-form-element-textline .was-validated input[type=text]:invalid, .was-validated
-.iputStart:invalid, .was-validated
+.was-validated .form-control:invalid, .was-validated .csc-form-element-textline input[type=text]:invalid, .csc-form-element-textline .was-validated input[type=text]:invalid, .was-validated
 .powermail_input:invalid, .was-validated
-.form-control:invalid, .was-validated
-.powermail_textarea:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .was-validated #pazpar2 .pz2-searchField:invalid, #pazpar2 .was-validated .pz2-searchField:invalid, .csc-form-element-textline input.is-invalid[type=text],
-.is-invalid.iputStart,
+.powermail_textarea:invalid, .was-validated .csc-form-element-select select:invalid, .csc-form-element-select .was-validated select:invalid, .was-validated
+.powermail_select:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .was-validated #pazpar2 .pz2-months:invalid, #pazpar2 .was-validated .pz2-months:invalid, .was-validated #pazpar2 .pz2-searchField:invalid, #pazpar2 .was-validated .pz2-searchField:invalid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid, .was-validated .tx-mathematicians .iputStart:invalid, .tx-mathematicians .was-validated .iputStart:invalid, .was-validated .tx_find .fieldContainer input:invalid, .tx_find .fieldContainer .was-validated input:invalid, .form-control.is-invalid, .csc-form-element-textline input.is-invalid[type=text],
 .is-invalid.powermail_input,
-.is-invalid.form-control,
-.is-invalid.powermail_textarea, .header .header-search input.is-invalid, #pazpar2 .is-invalid.pz2-searchField, .was-validated
+.is-invalid.powermail_textarea, .csc-form-element-select select.is-invalid,
+.is-invalid.powermail_select, .header .header-search input.is-invalid, #pazpar2 .is-invalid.pz2-months, #pazpar2 .is-invalid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text], .tx-mathematicians .is-invalid.iputStart, .tx_find .fieldContainer input.is-invalid, .was-validated
 .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545;
 }
 
-.was-validated .csc-form-element-textline input[type=text]:invalid:focus, .csc-form-element-textline .was-validated input[type=text]:invalid:focus, .was-validated
-.iputStart:invalid:focus, .was-validated
+.was-validated .form-control:invalid:focus, .was-validated .csc-form-element-textline input[type=text]:invalid:focus, .csc-form-element-textline .was-validated input[type=text]:invalid:focus, .was-validated
 .powermail_input:invalid:focus, .was-validated
-.form-control:invalid:focus, .was-validated
-.powermail_textarea:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .was-validated #pazpar2 .pz2-searchField:invalid:focus, #pazpar2 .was-validated .pz2-searchField:invalid:focus, .csc-form-element-textline input.is-invalid[type=text]:focus,
-.is-invalid.iputStart:focus,
+.powermail_textarea:invalid:focus, .was-validated .csc-form-element-select select:invalid:focus, .csc-form-element-select .was-validated select:invalid:focus, .was-validated
+.powermail_select:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .was-validated #pazpar2 .pz2-months:invalid:focus, #pazpar2 .was-validated .pz2-months:invalid:focus, .was-validated #pazpar2 .pz2-searchField:invalid:focus, #pazpar2 .was-validated .pz2-searchField:invalid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid:focus, .was-validated .tx-mathematicians .iputStart:invalid:focus, .tx-mathematicians .was-validated .iputStart:invalid:focus, .was-validated .tx_find .fieldContainer input:invalid:focus, .tx_find .fieldContainer .was-validated input:invalid:focus, .form-control.is-invalid:focus, .csc-form-element-textline input.is-invalid[type=text]:focus,
 .is-invalid.powermail_input:focus,
-.is-invalid.form-control:focus,
-.is-invalid.powermail_textarea:focus, .header .header-search input.is-invalid:focus, #pazpar2 .is-invalid.pz2-searchField:focus, .was-validated
+.is-invalid.powermail_textarea:focus, .csc-form-element-select select.is-invalid:focus,
+.is-invalid.powermail_select:focus, .header .header-search input.is-invalid:focus, #pazpar2 .is-invalid.pz2-months:focus, #pazpar2 .is-invalid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text]:focus, .tx-mathematicians .is-invalid.iputStart:focus, .tx_find .fieldContainer input.is-invalid:focus, .was-validated
 .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated .csc-form-element-textline input[type=text]:invalid ~ .invalid-feedback, .csc-form-element-textline .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated
-.iputStart:invalid ~ .invalid-feedback, .was-validated
+.was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .csc-form-element-textline input[type=text]:invalid ~ .invalid-feedback, .csc-form-element-textline .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated
 .powermail_input:invalid ~ .invalid-feedback, .was-validated
-.form-control:invalid ~ .invalid-feedback, .was-validated
-.powermail_textarea:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:invalid ~ .invalid-feedback,
+.powermail_textarea:invalid ~ .invalid-feedback, .was-validated .csc-form-element-select select:invalid ~ .invalid-feedback, .csc-form-element-select .was-validated select:invalid ~ .invalid-feedback, .was-validated
+.powermail_select:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-months:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-months:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:invalid ~ .invalid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated .tx-mathematicians .iputStart:invalid ~ .invalid-feedback, .tx-mathematicians .was-validated .iputStart:invalid ~ .invalid-feedback, .was-validated .tx_find .fieldContainer input:invalid ~ .invalid-feedback, .tx_find .fieldContainer .was-validated input:invalid ~ .invalid-feedback,
+.was-validated .form-control:invalid ~ .invalid-tooltip,
 .was-validated .csc-form-element-textline input[type=text]:invalid ~ .invalid-tooltip, .csc-form-element-textline
 .was-validated input[type=text]:invalid ~ .invalid-tooltip,
 .was-validated
-.iputStart:invalid ~ .invalid-tooltip,
-.was-validated
 .powermail_input:invalid ~ .invalid-tooltip,
 .was-validated
-.form-control:invalid ~ .invalid-tooltip,
-.was-validated
 .powermail_textarea:invalid ~ .invalid-tooltip,
+.was-validated .csc-form-element-select select:invalid ~ .invalid-tooltip, .csc-form-element-select
+.was-validated select:invalid ~ .invalid-tooltip,
+.was-validated
+.powermail_select:invalid ~ .invalid-tooltip,
 .was-validated .header .header-search input:invalid ~ .invalid-tooltip, .header .header-search
 .was-validated input:invalid ~ .invalid-tooltip,
+.was-validated #pazpar2 .pz2-months:invalid ~ .invalid-tooltip, #pazpar2
+.was-validated .pz2-months:invalid ~ .invalid-tooltip,
 .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-tooltip, #pazpar2
-.was-validated .pz2-searchField:invalid ~ .invalid-tooltip, .csc-form-element-textline input.is-invalid[type=text] ~ .invalid-feedback,
-.is-invalid.iputStart ~ .invalid-feedback,
+.was-validated .pz2-searchField:invalid ~ .invalid-tooltip,
+.was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form
+.was-validated input[type=text]:invalid ~ .invalid-tooltip,
+.was-validated .tx-mathematicians .iputStart:invalid ~ .invalid-tooltip, .tx-mathematicians
+.was-validated .iputStart:invalid ~ .invalid-tooltip,
+.was-validated .tx_find .fieldContainer input:invalid ~ .invalid-tooltip, .tx_find .fieldContainer
+.was-validated input:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .csc-form-element-textline input.is-invalid[type=text] ~ .invalid-feedback,
 .is-invalid.powermail_input ~ .invalid-feedback,
-.is-invalid.form-control ~ .invalid-feedback,
-.is-invalid.powermail_textarea ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-feedback, .csc-form-element-textline input.is-invalid[type=text] ~ .invalid-tooltip,
-.is-invalid.iputStart ~ .invalid-tooltip,
+.is-invalid.powermail_textarea ~ .invalid-feedback, .csc-form-element-select select.is-invalid ~ .invalid-feedback,
+.is-invalid.powermail_select ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-months ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-feedback, .tx-mathematicians .is-invalid.iputStart ~ .invalid-feedback, .tx_find .fieldContainer input.is-invalid ~ .invalid-feedback,
+.form-control.is-invalid ~ .invalid-tooltip, .csc-form-element-textline input.is-invalid[type=text] ~ .invalid-tooltip,
 .is-invalid.powermail_input ~ .invalid-tooltip,
-.is-invalid.form-control ~ .invalid-tooltip,
-.is-invalid.powermail_textarea ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-tooltip, .was-validated
+.is-invalid.powermail_textarea ~ .invalid-tooltip, .csc-form-element-select select.is-invalid ~ .invalid-tooltip,
+.is-invalid.powermail_select ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-months ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-tooltip, .tx-mathematicians .is-invalid.iputStart ~ .invalid-tooltip, .tx_find .fieldContainer input.is-invalid ~ .invalid-tooltip, .was-validated
 .custom-select:invalid ~ .invalid-feedback,
 .was-validated
 .custom-select:invalid ~ .invalid-tooltip,
@@ -4930,7 +4926,7 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
           box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
-.form-inline {
+.form-inline, .tx-ezbrequest-pi1 #ezb_search_form form, .tx-mathematicians form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4943,12 +4939,12 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
           align-items: center;
 }
 
-.form-inline .form-check {
+.form-inline .form-check, .tx-ezbrequest-pi1 #ezb_search_form form .form-check, .tx-mathematicians form .form-check {
   width: 100%;
 }
 
 @media (min-width: 576px) {
-  .form-inline label {
+  .form-inline label, .tx-ezbrequest-pi1 #ezb_search_form form label, .tx-mathematicians form label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4960,7 +4956,10 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
             justify-content: center;
     margin-bottom: 0;
   }
-  .form-inline .form-group {
+  .form-inline .form-group, .tx-ezbrequest-pi1 #ezb_search_form form .form-group, .tx-mathematicians form .form-group, .form-inline .powermail_fieldwrap, .tx-ezbrequest-pi1 #ezb_search_form form .powermail_fieldwrap, .tx-mathematicians form .powermail_fieldwrap, .form-inline
+  .csc-form-element, .tx-ezbrequest-pi1 #ezb_search_form form
+  .csc-form-element, .tx-mathematicians form
+  .csc-form-element {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4976,26 +4975,31 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
             align-items: center;
     margin-bottom: 0;
   }
-  .form-inline .csc-form-element-textline input[type=text], .csc-form-element-textline .form-inline input[type=text], .form-inline
-  .iputStart, .form-inline
+  .form-inline .form-control, .tx-ezbrequest-pi1 #ezb_search_form form .form-control, .tx-mathematicians form .form-control, .form-inline .csc-form-element-textline input[type=text], .csc-form-element-textline .form-inline input[type=text], .tx-mathematicians form .csc-form-element-textline input[type=text], .csc-form-element-textline .tx-mathematicians form input[type=text], .form-inline
+  .powermail_input, .tx-ezbrequest-pi1 #ezb_search_form form
+  .powermail_input, .tx-mathematicians form
   .powermail_input, .form-inline
-  .form-control, .form-inline
-  .powermail_textarea, .form-inline .header .header-search input, .header .header-search .form-inline input, .form-inline #pazpar2 .pz2-searchField, #pazpar2 .form-inline .pz2-searchField {
+  .powermail_textarea, .tx-ezbrequest-pi1 #ezb_search_form form
+  .powermail_textarea, .tx-mathematicians form
+  .powermail_textarea, .form-inline .csc-form-element-select select, .csc-form-element-select .form-inline select, .tx-ezbrequest-pi1 #ezb_search_form form .csc-form-element-select select, .csc-form-element-select .tx-ezbrequest-pi1 #ezb_search_form form select, .tx-mathematicians form .csc-form-element-select select, .csc-form-element-select .tx-mathematicians form select, .form-inline
+  .powermail_select, .tx-ezbrequest-pi1 #ezb_search_form form
+  .powermail_select, .tx-mathematicians form
+  .powermail_select, .form-inline .header .header-search input, .header .header-search .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .header .header-search input, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .header .header-search input, .header .header-search .tx-mathematicians form input, .form-inline #pazpar2 .pz2-months, #pazpar2 .form-inline .pz2-months, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-months, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-months, .tx-mathematicians form #pazpar2 .pz2-months, #pazpar2 .tx-mathematicians form .pz2-months, .form-inline #pazpar2 .pz2-searchField, #pazpar2 .form-inline .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-searchField, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-searchField, .tx-mathematicians form #pazpar2 .pz2-searchField, #pazpar2 .tx-mathematicians form .pz2-searchField, .form-inline .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .form-inline input[type=text], .tx-ezbrequest-pi1 #ezb_search_form form input[type=text], .tx-mathematicians form .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .form-inline .tx-mathematicians .iputStart, .tx-mathematicians .form-inline .iputStart, .tx-ezbrequest-pi1 #ezb_search_form form .tx-mathematicians .iputStart, .tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form form .iputStart, .tx-mathematicians form .iputStart, .form-inline .tx_find .fieldContainer input, .tx_find .fieldContainer .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-mathematicians form input {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  .form-inline .form-control-plaintext {
+  .form-inline .form-control-plaintext, .tx-ezbrequest-pi1 #ezb_search_form form .form-control-plaintext, .tx-mathematicians form .form-control-plaintext {
     display: inline-block;
   }
-  .form-inline .input-group {
+  .form-inline .input-group, .tx-ezbrequest-pi1 #ezb_search_form form .input-group, .tx-mathematicians form .input-group {
     width: auto;
   }
-  .form-inline .form-control-label {
+  .form-inline .form-control-label, .tx-ezbrequest-pi1 #ezb_search_form form .form-control-label, .tx-mathematicians form .form-control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-check {
+  .form-inline .form-check, .tx-ezbrequest-pi1 #ezb_search_form form .form-check, .tx-mathematicians form .form-check {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5009,16 +5013,16 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
     margin-top: 0;
     margin-bottom: 0;
   }
-  .form-inline .form-check-label {
+  .form-inline .form-check-label, .tx-ezbrequest-pi1 #ezb_search_form form .form-check-label, .tx-mathematicians form .form-check-label {
     padding-left: 0;
   }
-  .form-inline .form-check-input {
+  .form-inline .form-check-input, .tx-ezbrequest-pi1 #ezb_search_form form .form-check-input, .tx-mathematicians form .form-check-input {
     position: relative;
     margin-top: 0;
     margin-right: 0.25rem;
     margin-left: 0;
   }
-  .form-inline .custom-control {
+  .form-inline .custom-control, .tx-ezbrequest-pi1 #ezb_search_form form .custom-control, .tx-mathematicians form .custom-control {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5030,21 +5034,20 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
             justify-content: center;
     padding-left: 0;
   }
-  .form-inline .custom-control-indicator {
+  .form-inline .custom-control-indicator, .tx-ezbrequest-pi1 #ezb_search_form form .custom-control-indicator, .tx-mathematicians form .custom-control-indicator {
     position: static;
     display: inline-block;
     margin-right: 0.25rem;
     vertical-align: text-bottom;
   }
-  .form-inline .has-feedback .form-control-feedback {
+  .form-inline .has-feedback .form-control-feedback, .tx-ezbrequest-pi1 #ezb_search_form form .has-feedback .form-control-feedback, .tx-mathematicians form .has-feedback .form-control-feedback {
     top: 0;
   }
 }
 
 .btn, .csc-form-element-submit input,
-.submStartSmall,
-.submStart,
-.powermail_submit, .header .header-search .header-search-form_submit, #pazpar2 .pz2-submitButton {
+.powermail_submit, .header .header-search .header-search-form_submit, #pazpar2 .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall, .tx-mathematicians .submStartSmall,
+.tx-mathematicians .submStart, .tx_find form .submit {
   display: inline-block;
   font-weight: normal;
   text-align: center;
@@ -5065,122 +5068,112 @@ select.powermail_submit:not([size]):not([multiple]), .header .header-search
 }
 
 .btn:focus, .csc-form-element-submit input:focus,
-.submStartSmall:focus,
-.submStart:focus,
-.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .btn:hover, .csc-form-element-submit input:hover,
-.submStartSmall:hover,
-.submStart:hover,
-.powermail_submit:hover, .header .header-search .header-search-form_submit:hover, #pazpar2 .pz2-submitButton:hover {
+.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:focus, .tx-mathematicians .submStartSmall:focus,
+.tx-mathematicians .submStart:focus, .tx_find form .submit:focus, .btn:hover, .csc-form-element-submit input:hover,
+.powermail_submit:hover, .header .header-search .header-search-form_submit:hover, #pazpar2 .pz2-submitButton:hover, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:hover, .tx-mathematicians .submStartSmall:hover,
+.tx-mathematicians .submStart:hover, .tx_find form .submit:hover {
   text-decoration: none;
 }
 
 .btn:focus, .csc-form-element-submit input:focus,
-.submStartSmall:focus,
-.submStart:focus,
-.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .btn.focus, .csc-form-element-submit input.focus,
-.focus.submStartSmall,
-.focus.submStart,
-.focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton {
+.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:focus, .tx-mathematicians .submStartSmall:focus,
+.tx-mathematicians .submStart:focus, .tx_find form .submit:focus, .btn.focus, .csc-form-element-submit input.focus,
+.focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .focus.submStartSmall, .tx-mathematicians .focus.submStartSmall,
+.tx-mathematicians .focus.submStart, .tx_find form .focus.submit {
   outline: 0;
   -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.25);
           box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.25);
 }
 
 .btn.disabled, .csc-form-element-submit input.disabled,
-.disabled.submStartSmall,
-.disabled.submStart,
-.disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .btn:disabled, .csc-form-element-submit input:disabled,
-.submStartSmall:disabled,
-.submStart:disabled,
-.powermail_submit:disabled, .header .header-search .header-search-form_submit:disabled, #pazpar2 .pz2-submitButton:disabled {
+.disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .disabled.submStartSmall, .tx-mathematicians .disabled.submStartSmall,
+.tx-mathematicians .disabled.submStart, .tx_find form .disabled.submit, .btn:disabled, .csc-form-element-submit input:disabled,
+.powermail_submit:disabled, .header .header-search .header-search-form_submit:disabled, #pazpar2 .pz2-submitButton:disabled, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:disabled, .tx-mathematicians .submStartSmall:disabled,
+.tx-mathematicians .submStart:disabled, .tx_find form .submit:disabled {
   opacity: .65;
 }
 
 .btn:active, .csc-form-element-submit input:active,
-.submStartSmall:active,
-.submStart:active,
-.powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .btn.active, .csc-form-element-submit input.active,
-.active.submStartSmall,
-.active.submStart,
-.active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton {
+.powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:active, .tx-mathematicians .submStartSmall:active,
+.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn.active, .csc-form-element-submit input.active,
+.active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-mathematicians .active.submStartSmall,
+.tx-mathematicians .active.submStart, .tx_find form .active.submit {
   background-image: none;
 }
 
 a.btn.disabled,
-a.disabled.submStartSmall,
-a.disabled.submStart,
-a.disabled.powermail_submit, .header .header-search a.disabled.header-search-form_submit, #pazpar2 a.disabled.pz2-submitButton,
+a.disabled.powermail_submit, .header .header-search a.disabled.header-search-form_submit, #pazpar2 a.disabled.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form a.disabled.submStartSmall, .tx-mathematicians a.disabled.submStartSmall,
+.tx-mathematicians a.disabled.submStart, .tx_find form a.disabled.submit,
 fieldset[disabled] a.btn,
-fieldset[disabled]
-a.submStartSmall,
-fieldset[disabled]
-a.submStart,
 fieldset[disabled]
 a.powermail_submit,
 fieldset[disabled] .header .header-search a.header-search-form_submit, .header .header-search
 fieldset[disabled] a.header-search-form_submit,
 fieldset[disabled] #pazpar2 a.pz2-submitButton, #pazpar2
-fieldset[disabled] a.pz2-submitButton {
+fieldset[disabled] a.pz2-submitButton,
+fieldset[disabled] .tx-ezbrequest-pi1 #ezb_search_form a.submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+fieldset[disabled] a.submStartSmall,
+fieldset[disabled] .tx-mathematicians a.submStartSmall, .tx-mathematicians
+fieldset[disabled] a.submStartSmall,
+fieldset[disabled]
+.tx-mathematicians a.submStart,
+.tx-mathematicians
+fieldset[disabled] a.submStart,
+fieldset[disabled] .tx_find form a.submit, .tx_find form
+fieldset[disabled] a.submit {
   pointer-events: none;
 }
 
 .btn-primary, .csc-form-element-submit input,
-.submStartSmall,
-.submStart,
-.powermail_submit, .header .header-search .header-search-form_submit, #pazpar2 .pz2-submitButton {
+.powermail_submit, .header .header-search .header-search-form_submit, #pazpar2 .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall, .tx-mathematicians .submStartSmall,
+.tx-mathematicians .submStart, .tx_find form .submit {
   color: #fff;
   background-color: #25589a;
   border-color: #25589a;
 }
 
 .btn-primary:hover, .csc-form-element-submit input:hover,
-.submStartSmall:hover,
-.submStart:hover,
-.powermail_submit:hover, .header .header-search .header-search-form_submit:hover, #pazpar2 .pz2-submitButton:hover {
+.powermail_submit:hover, .header .header-search .header-search-form_submit:hover, #pazpar2 .pz2-submitButton:hover, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:hover, .tx-mathematicians .submStartSmall:hover,
+.tx-mathematicians .submStart:hover, .tx_find form .submit:hover {
   color: #fff;
   background-color: #1e467b;
   border-color: #1b4171;
 }
 
 .btn-primary:focus, .csc-form-element-submit input:focus,
-.submStartSmall:focus,
-.submStart:focus,
-.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .btn-primary.focus, .csc-form-element-submit input.focus,
-.focus.submStartSmall,
-.focus.submStart,
-.focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton {
+.powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:focus, .tx-mathematicians .submStartSmall:focus,
+.tx-mathematicians .submStart:focus, .tx_find form .submit:focus, .btn-primary.focus, .csc-form-element-submit input.focus,
+.focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .focus.submStartSmall, .tx-mathematicians .focus.submStartSmall,
+.tx-mathematicians .focus.submStart, .tx_find form .focus.submit {
   -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
           box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
 }
 
 .btn-primary.disabled, .csc-form-element-submit input.disabled,
-.disabled.submStartSmall,
-.disabled.submStart,
-.disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .btn-primary:disabled, .csc-form-element-submit input:disabled,
-.submStartSmall:disabled,
-.submStart:disabled,
-.powermail_submit:disabled, .header .header-search .header-search-form_submit:disabled, #pazpar2 .pz2-submitButton:disabled {
+.disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .disabled.submStartSmall, .tx-mathematicians .disabled.submStartSmall,
+.tx-mathematicians .disabled.submStart, .tx_find form .disabled.submit, .btn-primary:disabled, .csc-form-element-submit input:disabled,
+.powermail_submit:disabled, .header .header-search .header-search-form_submit:disabled, #pazpar2 .pz2-submitButton:disabled, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:disabled, .tx-mathematicians .submStartSmall:disabled,
+.tx-mathematicians .submStart:disabled, .tx_find form .submit:disabled {
   background-color: #25589a;
   border-color: #25589a;
 }
 
 .btn-primary:active, .csc-form-element-submit input:active,
-.submStartSmall:active,
-.submStart:active,
-.powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .btn-primary.active, .csc-form-element-submit input.active,
-.active.submStartSmall,
-.active.submStart,
-.active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton,
+.powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:active, .tx-mathematicians .submStartSmall:active,
+.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn-primary.active, .csc-form-element-submit input.active,
+.active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-mathematicians .active.submStartSmall,
+.tx-mathematicians .active.submStart, .tx_find form .active.submit,
 .show > .btn-primary.dropdown-toggle, .csc-form-element-submit
 .show > input.dropdown-toggle,
 .show >
-.dropdown-toggle.submStartSmall,
-.show >
-.dropdown-toggle.submStart,
-.show >
 .dropdown-toggle.powermail_submit, .header .header-search
 .show > .dropdown-toggle.header-search-form_submit, #pazpar2
-.show > .dropdown-toggle.pz2-submitButton {
+.show > .dropdown-toggle.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.show > .dropdown-toggle.submStartSmall, .tx-mathematicians
+.show > .dropdown-toggle.submStartSmall,
+.tx-mathematicians
+.show > .dropdown-toggle.submStart, .tx_find form
+.show > .dropdown-toggle.submit {
   background-color: #1e467b;
   background-image: none;
   border-color: #1b4171;
@@ -5664,18 +5657,16 @@ fieldset[disabled] a.pz2-submitButton {
 }
 
 .btn-lg, .btn-group-lg > .btn, .csc-form-element-submit .btn-group-lg > input, .btn-group-lg >
-.submStartSmall, .btn-group-lg >
-.submStart, .btn-group-lg >
-.powermail_submit, .header .header-search .btn-group-lg > .header-search-form_submit, #pazpar2 .btn-group-lg > .pz2-submitButton {
+.powermail_submit, .header .header-search .btn-group-lg > .header-search-form_submit, #pazpar2 .btn-group-lg > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-lg > .submStartSmall, .tx-mathematicians .btn-group-lg > .submStartSmall,
+.tx-mathematicians .btn-group-lg > .submStart, .tx_find form .btn-group-lg > .submit {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .btn-sm, .btn-group-sm > .btn, .csc-form-element-submit .btn-group-sm > input, .btn-group-sm >
-.submStartSmall, .btn-group-sm >
-.submStart, .btn-group-sm >
-.powermail_submit, .header .header-search .btn-group-sm > .header-search-form_submit, #pazpar2 .btn-group-sm > .pz2-submitButton {
+.powermail_submit, .header .header-search .btn-group-sm > .header-search-form_submit, #pazpar2 .btn-group-sm > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-sm > .submStartSmall, .tx-mathematicians .btn-group-sm > .submStartSmall,
+.tx-mathematicians .btn-group-sm > .submStart, .tx_find form .btn-group-sm > .submit {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -5844,19 +5835,19 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn, .csc-form-element-submit .btn-group > input, .btn-group >
-.submStartSmall, .btn-group >
-.submStart, .btn-group >
-.powermail_submit, .header .header-search .btn-group > .header-search-form_submit, #pazpar2 .btn-group > .pz2-submitButton,
+.powermail_submit, .header .header-search .btn-group > .header-search-form_submit, #pazpar2 .btn-group > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall, .tx-mathematicians .btn-group > .submStartSmall,
+.tx-mathematicians .btn-group > .submStart, .tx_find form .btn-group > .submit,
 .btn-group-vertical > .btn, .csc-form-element-submit
 .btn-group-vertical > input,
 .btn-group-vertical >
-.submStartSmall,
-.btn-group-vertical >
-.submStart,
-.btn-group-vertical >
 .powermail_submit, .header .header-search
 .btn-group-vertical > .header-search-form_submit, #pazpar2
-.btn-group-vertical > .pz2-submitButton {
+.btn-group-vertical > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .submStartSmall, .tx-mathematicians
+.btn-group-vertical > .submStartSmall,
+.tx-mathematicians
+.btn-group-vertical > .submStart, .tx_find form
+.btn-group-vertical > .submit {
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -5865,178 +5856,208 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn:hover, .csc-form-element-submit .btn-group > input:hover, .btn-group >
-.submStartSmall:hover, .btn-group >
-.submStart:hover, .btn-group >
-.powermail_submit:hover, .header .header-search .btn-group > .header-search-form_submit:hover, #pazpar2 .btn-group > .pz2-submitButton:hover,
+.powermail_submit:hover, .header .header-search .btn-group > .header-search-form_submit:hover, #pazpar2 .btn-group > .pz2-submitButton:hover, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:hover, .tx-mathematicians .btn-group > .submStartSmall:hover,
+.tx-mathematicians .btn-group > .submStart:hover, .tx_find form .btn-group > .submit:hover,
 .btn-group-vertical > .btn:hover, .csc-form-element-submit
 .btn-group-vertical > input:hover,
 .btn-group-vertical >
-.submStartSmall:hover,
-.btn-group-vertical >
-.submStart:hover,
-.btn-group-vertical >
 .powermail_submit:hover, .header .header-search
 .btn-group-vertical > .header-search-form_submit:hover, #pazpar2
-.btn-group-vertical > .pz2-submitButton:hover {
+.btn-group-vertical > .pz2-submitButton:hover, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .submStartSmall:hover, .tx-mathematicians
+.btn-group-vertical > .submStartSmall:hover,
+.tx-mathematicians
+.btn-group-vertical > .submStart:hover, .tx_find form
+.btn-group-vertical > .submit:hover {
   z-index: 2;
 }
 
 .btn-group > .btn:focus, .csc-form-element-submit .btn-group > input:focus, .btn-group >
-.submStartSmall:focus, .btn-group >
-.submStart:focus, .btn-group >
-.powermail_submit:focus, .header .header-search .btn-group > .header-search-form_submit:focus, #pazpar2 .btn-group > .pz2-submitButton:focus, .btn-group > .btn:active, .csc-form-element-submit .btn-group > input:active, .btn-group >
-.submStartSmall:active, .btn-group >
-.submStart:active, .btn-group >
-.powermail_submit:active, .header .header-search .btn-group > .header-search-form_submit:active, #pazpar2 .btn-group > .pz2-submitButton:active, .btn-group > .btn.active, .csc-form-element-submit .btn-group > input.active, .btn-group >
-.active.submStartSmall, .btn-group >
-.active.submStart, .btn-group >
-.active.powermail_submit, .header .header-search .btn-group > .active.header-search-form_submit, #pazpar2 .btn-group > .active.pz2-submitButton,
+.powermail_submit:focus, .header .header-search .btn-group > .header-search-form_submit:focus, #pazpar2 .btn-group > .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:focus, .tx-mathematicians .btn-group > .submStartSmall:focus,
+.tx-mathematicians .btn-group > .submStart:focus, .tx_find form .btn-group > .submit:focus, .btn-group > .btn:active, .csc-form-element-submit .btn-group > input:active, .btn-group >
+.powermail_submit:active, .header .header-search .btn-group > .header-search-form_submit:active, #pazpar2 .btn-group > .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:active, .tx-mathematicians .btn-group > .submStartSmall:active,
+.tx-mathematicians .btn-group > .submStart:active, .tx_find form .btn-group > .submit:active, .btn-group > .btn.active, .csc-form-element-submit .btn-group > input.active, .btn-group >
+.active.powermail_submit, .header .header-search .btn-group > .active.header-search-form_submit, #pazpar2 .btn-group > .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .active.submStartSmall, .tx-mathematicians .btn-group > .active.submStartSmall,
+.tx-mathematicians .btn-group > .active.submStart, .tx_find form .btn-group > .active.submit,
 .btn-group-vertical > .btn:focus, .csc-form-element-submit
 .btn-group-vertical > input:focus,
 .btn-group-vertical >
-.submStartSmall:focus,
-.btn-group-vertical >
-.submStart:focus,
-.btn-group-vertical >
 .powermail_submit:focus, .header .header-search
 .btn-group-vertical > .header-search-form_submit:focus, #pazpar2
-.btn-group-vertical > .pz2-submitButton:focus,
+.btn-group-vertical > .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .submStartSmall:focus, .tx-mathematicians
+.btn-group-vertical > .submStartSmall:focus,
+.tx-mathematicians
+.btn-group-vertical > .submStart:focus, .tx_find form
+.btn-group-vertical > .submit:focus,
 .btn-group-vertical > .btn:active, .csc-form-element-submit
 .btn-group-vertical > input:active,
 .btn-group-vertical >
-.submStartSmall:active,
-.btn-group-vertical >
-.submStart:active,
-.btn-group-vertical >
 .powermail_submit:active, .header .header-search
 .btn-group-vertical > .header-search-form_submit:active, #pazpar2
-.btn-group-vertical > .pz2-submitButton:active,
+.btn-group-vertical > .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .submStartSmall:active, .tx-mathematicians
+.btn-group-vertical > .submStartSmall:active,
+.tx-mathematicians
+.btn-group-vertical > .submStart:active, .tx_find form
+.btn-group-vertical > .submit:active,
 .btn-group-vertical > .btn.active, .csc-form-element-submit
 .btn-group-vertical > input.active,
 .btn-group-vertical >
-.active.submStartSmall,
-.btn-group-vertical >
-.active.submStart,
-.btn-group-vertical >
 .active.powermail_submit, .header .header-search
 .btn-group-vertical > .active.header-search-form_submit, #pazpar2
-.btn-group-vertical > .active.pz2-submitButton {
+.btn-group-vertical > .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .active.submStartSmall, .tx-mathematicians
+.btn-group-vertical > .active.submStartSmall,
+.tx-mathematicians
+.btn-group-vertical > .active.submStart, .tx_find form
+.btn-group-vertical > .active.submit {
   z-index: 2;
 }
 
 .btn-group .btn + .btn, .btn-group .csc-form-element-submit input + .btn, .csc-form-element-submit .btn-group input + .btn, .btn-group
-.submStartSmall + .btn, .btn-group
-.submStart + .btn, .btn-group
-.powermail_submit + .btn, .btn-group .header .header-search .header-search-form_submit + .btn, .header .header-search .btn-group .header-search-form_submit + .btn, .btn-group #pazpar2 .pz2-submitButton + .btn, #pazpar2 .btn-group .pz2-submitButton + .btn, .btn-group .csc-form-element-submit .btn + input, .csc-form-element-submit .btn-group .btn + input, .btn-group .csc-form-element-submit input + input, .csc-form-element-submit .btn-group input + input, .btn-group .csc-form-element-submit
-.submStartSmall + input, .csc-form-element-submit .btn-group
-.submStartSmall + input, .btn-group .csc-form-element-submit
-.submStart + input, .csc-form-element-submit .btn-group
-.submStart + input, .btn-group .csc-form-element-submit
+.powermail_submit + .btn, .btn-group .header .header-search .header-search-form_submit + .btn, .header .header-search .btn-group .header-search-form_submit + .btn, .btn-group #pazpar2 .pz2-submitButton + .btn, #pazpar2 .btn-group .pz2-submitButton + .btn, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .btn, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall + .btn, .btn-group .tx-mathematicians .submStartSmall + .btn, .tx-mathematicians .btn-group .submStartSmall + .btn, .btn-group
+.tx-mathematicians .submStart + .btn,
+.tx-mathematicians .btn-group .submStart + .btn, .btn-group .tx_find form .submit + .btn, .tx_find form .btn-group .submit + .btn, .btn-group .csc-form-element-submit .btn + input, .csc-form-element-submit .btn-group .btn + input, .btn-group .csc-form-element-submit input + input, .csc-form-element-submit .btn-group input + input, .btn-group .csc-form-element-submit
 .powermail_submit + input, .csc-form-element-submit .btn-group
-.powermail_submit + input, .btn-group .header .header-search .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit .btn-group .header .header-search .header-search-form_submit + input, .header .header-search .btn-group .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit .header .header-search .btn-group .header-search-form_submit + input, .btn-group #pazpar2 .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit .btn-group #pazpar2 .pz2-submitButton + input, #pazpar2 .btn-group .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .btn-group .pz2-submitButton + input, .btn-group .btn +
-.submStartSmall, .btn-group .csc-form-element-submit input +
-.submStartSmall, .csc-form-element-submit .btn-group input +
-.submStartSmall, .btn-group
-.submStartSmall +
-.submStartSmall, .btn-group
-.submStart +
-.submStartSmall, .btn-group
-.powermail_submit +
-.submStartSmall, .btn-group .header .header-search .header-search-form_submit +
-.submStartSmall, .header .header-search .btn-group .header-search-form_submit +
-.submStartSmall, .btn-group #pazpar2 .pz2-submitButton +
-.submStartSmall, #pazpar2 .btn-group .pz2-submitButton +
-.submStartSmall, .btn-group .btn +
-.submStart, .btn-group .csc-form-element-submit input +
-.submStart, .csc-form-element-submit .btn-group input +
-.submStart, .btn-group
-.submStartSmall +
-.submStart, .btn-group
-.submStart +
-.submStart, .btn-group
-.powermail_submit +
-.submStart, .btn-group .header .header-search .header-search-form_submit +
-.submStart, .header .header-search .btn-group .header-search-form_submit +
-.submStart, .btn-group #pazpar2 .pz2-submitButton +
-.submStart, #pazpar2 .btn-group .pz2-submitButton +
-.submStart, .btn-group .btn +
+.powermail_submit + input, .btn-group .header .header-search .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit .btn-group .header .header-search .header-search-form_submit + input, .header .header-search .btn-group .csc-form-element-submit .header-search-form_submit + input, .csc-form-element-submit .header .header-search .btn-group .header-search-form_submit + input, .btn-group #pazpar2 .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit .btn-group #pazpar2 .pz2-submitButton + input, #pazpar2 .btn-group .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .btn-group .pz2-submitButton + input, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + input, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall + input, .btn-group .tx-mathematicians .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit .btn-group .tx-mathematicians .submStartSmall + input, .tx-mathematicians .btn-group .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit .tx-mathematicians .btn-group .submStartSmall + input, .btn-group
+.tx-mathematicians .csc-form-element-submit .submStart + input, .csc-form-element-submit .btn-group
+.tx-mathematicians .submStart + input,
+.tx-mathematicians .btn-group .csc-form-element-submit .submStart + input, .csc-form-element-submit
+.tx-mathematicians .btn-group .submStart + input, .btn-group .tx_find form .csc-form-element-submit .submit + input, .csc-form-element-submit .btn-group .tx_find form .submit + input, .tx_find form .btn-group .csc-form-element-submit .submit + input, .csc-form-element-submit .tx_find form .btn-group .submit + input, .btn-group .btn +
 .powermail_submit, .btn-group .csc-form-element-submit input +
 .powermail_submit, .csc-form-element-submit .btn-group input +
-.powermail_submit, .btn-group
-.submStartSmall +
-.powermail_submit, .btn-group
-.submStart +
 .powermail_submit, .btn-group
 .powermail_submit +
 .powermail_submit, .btn-group .header .header-search .header-search-form_submit +
 .powermail_submit, .header .header-search .btn-group .header-search-form_submit +
 .powermail_submit, .btn-group #pazpar2 .pz2-submitButton +
 .powermail_submit, #pazpar2 .btn-group .pz2-submitButton +
+.powermail_submit, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall +
+.powermail_submit, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall +
+.powermail_submit, .btn-group .tx-mathematicians .submStartSmall +
+.powermail_submit, .tx-mathematicians .btn-group .submStartSmall +
+.powermail_submit, .btn-group
+.tx-mathematicians .submStart +
+.powermail_submit,
+.tx-mathematicians .btn-group .submStart +
+.powermail_submit, .btn-group .tx_find form .submit +
+.powermail_submit, .tx_find form .btn-group .submit +
 .powermail_submit, .btn-group .header .header-search .btn + .header-search-form_submit, .header .header-search .btn-group .btn + .header-search-form_submit, .btn-group .csc-form-element-submit .header .header-search input + .header-search-form_submit, .header .header-search .btn-group .csc-form-element-submit input + .header-search-form_submit, .csc-form-element-submit .btn-group .header .header-search input + .header-search-form_submit, .header .header-search .csc-form-element-submit .btn-group input + .header-search-form_submit, .btn-group .header .header-search
-.submStartSmall + .header-search-form_submit, .header .header-search .btn-group
-.submStartSmall + .header-search-form_submit, .btn-group .header .header-search
-.submStart + .header-search-form_submit, .header .header-search .btn-group
-.submStart + .header-search-form_submit, .btn-group .header .header-search
 .powermail_submit + .header-search-form_submit, .header .header-search .btn-group
-.powermail_submit + .header-search-form_submit, .btn-group .header .header-search .header-search-form_submit + .header-search-form_submit, .header .header-search .btn-group .header-search-form_submit + .header-search-form_submit, .btn-group #pazpar2 .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search .btn-group #pazpar2 .pz2-submitButton + .header-search-form_submit, #pazpar2 .btn-group .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .btn-group .pz2-submitButton + .header-search-form_submit, .btn-group #pazpar2 .btn + .pz2-submitButton, #pazpar2 .btn-group .btn + .pz2-submitButton, .btn-group .csc-form-element-submit #pazpar2 input + .pz2-submitButton, #pazpar2 .btn-group .csc-form-element-submit input + .pz2-submitButton, .csc-form-element-submit .btn-group #pazpar2 input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .btn-group input + .pz2-submitButton, .btn-group #pazpar2
-.submStartSmall + .pz2-submitButton, #pazpar2 .btn-group
-.submStartSmall + .pz2-submitButton, .btn-group #pazpar2
-.submStart + .pz2-submitButton, #pazpar2 .btn-group
-.submStart + .pz2-submitButton, .btn-group #pazpar2
+.powermail_submit + .header-search-form_submit, .btn-group .header .header-search .header-search-form_submit + .header-search-form_submit, .header .header-search .btn-group .header-search-form_submit + .header-search-form_submit, .btn-group #pazpar2 .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search .btn-group #pazpar2 .pz2-submitButton + .header-search-form_submit, #pazpar2 .btn-group .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .btn-group .pz2-submitButton + .header-search-form_submit, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .header-search-form_submit, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall + .header-search-form_submit, .btn-group .tx-mathematicians .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search .btn-group .tx-mathematicians .submStartSmall + .header-search-form_submit, .tx-mathematicians .btn-group .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search .tx-mathematicians .btn-group .submStartSmall + .header-search-form_submit, .btn-group
+.tx-mathematicians .header .header-search .submStart + .header-search-form_submit, .header .header-search .btn-group
+.tx-mathematicians .submStart + .header-search-form_submit,
+.tx-mathematicians .btn-group .header .header-search .submStart + .header-search-form_submit, .header .header-search
+.tx-mathematicians .btn-group .submStart + .header-search-form_submit, .btn-group .tx_find form .header .header-search .submit + .header-search-form_submit, .header .header-search .btn-group .tx_find form .submit + .header-search-form_submit, .tx_find form .btn-group .header .header-search .submit + .header-search-form_submit, .header .header-search .tx_find form .btn-group .submit + .header-search-form_submit, .btn-group #pazpar2 .btn + .pz2-submitButton, #pazpar2 .btn-group .btn + .pz2-submitButton, .btn-group .csc-form-element-submit #pazpar2 input + .pz2-submitButton, #pazpar2 .btn-group .csc-form-element-submit input + .pz2-submitButton, .csc-form-element-submit .btn-group #pazpar2 input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .btn-group input + .pz2-submitButton, .btn-group #pazpar2
 .powermail_submit + .pz2-submitButton, #pazpar2 .btn-group
-.powermail_submit + .pz2-submitButton, .btn-group .header .header-search #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2 .btn-group .header .header-search .header-search-form_submit + .pz2-submitButton, .header .header-search .btn-group #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .btn-group .header-search-form_submit + .pz2-submitButton, .btn-group #pazpar2 .pz2-submitButton + .pz2-submitButton, #pazpar2 .btn-group .pz2-submitButton + .pz2-submitButton,
+.powermail_submit + .pz2-submitButton, .btn-group .header .header-search #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2 .btn-group .header .header-search .header-search-form_submit + .pz2-submitButton, .header .header-search .btn-group #pazpar2 .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .btn-group .header-search-form_submit + .pz2-submitButton, .btn-group #pazpar2 .pz2-submitButton + .pz2-submitButton, #pazpar2 .btn-group .pz2-submitButton + .pz2-submitButton, .btn-group .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2 .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall + .pz2-submitButton, .btn-group .tx-mathematicians #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2 .btn-group .tx-mathematicians .submStartSmall + .pz2-submitButton, .tx-mathematicians .btn-group #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2 .tx-mathematicians .btn-group .submStartSmall + .pz2-submitButton, .btn-group
+.tx-mathematicians #pazpar2 .submStart + .pz2-submitButton, #pazpar2 .btn-group
+.tx-mathematicians .submStart + .pz2-submitButton,
+.tx-mathematicians .btn-group #pazpar2 .submStart + .pz2-submitButton, #pazpar2
+.tx-mathematicians .btn-group .submStart + .pz2-submitButton, .btn-group .tx_find form #pazpar2 .submit + .pz2-submitButton, #pazpar2 .btn-group .tx_find form .submit + .pz2-submitButton, .tx_find form .btn-group #pazpar2 .submit + .pz2-submitButton, #pazpar2 .tx_find form .btn-group .submit + .pz2-submitButton, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .btn + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .btn + .submStartSmall, .btn-group .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .csc-form-element-submit input + .submStartSmall, .csc-form-element-submit .btn-group .tx-ezbrequest-pi1 #ezb_search_form input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit .btn-group input + .submStartSmall, .btn-group .tx-ezbrequest-pi1 #ezb_search_form
+.powermail_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group
+.powermail_submit + .submStartSmall, .btn-group .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .header-search-form_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .header .header-search .header-search-form_submit + .submStartSmall, .header .header-search .btn-group .tx-ezbrequest-pi1 #ezb_search_form .header-search-form_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .btn-group .header-search-form_submit + .submStartSmall, .btn-group #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group #pazpar2 .pz2-submitButton + .submStartSmall, #pazpar2 .btn-group .tx-ezbrequest-pi1 #ezb_search_form .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .btn-group .pz2-submitButton + .submStartSmall, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall + .submStartSmall, .btn-group
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .submStart + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group
+.tx-mathematicians .submStart + .submStartSmall,
+.tx-mathematicians .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStart + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .btn-group .submStart + .submStartSmall, .btn-group .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .tx_find form .submit + .submStartSmall, .tx_find form .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .btn-group .submit + .submStartSmall, .btn-group .tx-mathematicians .btn + .submStartSmall, .tx-mathematicians .btn-group .btn + .submStartSmall, .btn-group .csc-form-element-submit .tx-mathematicians input + .submStartSmall, .tx-mathematicians .btn-group .csc-form-element-submit input + .submStartSmall, .csc-form-element-submit .btn-group .tx-mathematicians input + .submStartSmall, .tx-mathematicians .csc-form-element-submit .btn-group input + .submStartSmall, .btn-group .tx-mathematicians
+.powermail_submit + .submStartSmall, .tx-mathematicians .btn-group
+.powermail_submit + .submStartSmall, .btn-group .header .header-search .tx-mathematicians .header-search-form_submit + .submStartSmall, .tx-mathematicians .btn-group .header .header-search .header-search-form_submit + .submStartSmall, .header .header-search .btn-group .tx-mathematicians .header-search-form_submit + .submStartSmall, .tx-mathematicians .header .header-search .btn-group .header-search-form_submit + .submStartSmall, .btn-group #pazpar2 .tx-mathematicians .pz2-submitButton + .submStartSmall, .tx-mathematicians .btn-group #pazpar2 .pz2-submitButton + .submStartSmall, #pazpar2 .btn-group .tx-mathematicians .pz2-submitButton + .submStartSmall, .tx-mathematicians #pazpar2 .btn-group .pz2-submitButton + .submStartSmall, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .tx-mathematicians .submStartSmall + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .tx-mathematicians .submStartSmall + .submStartSmall, .btn-group .tx-mathematicians .submStartSmall + .submStartSmall, .tx-mathematicians .btn-group .submStartSmall + .submStartSmall, .btn-group .tx-mathematicians .submStart + .submStartSmall, .tx-mathematicians .btn-group .submStart + .submStartSmall, .btn-group .tx_find form .tx-mathematicians .submit + .submStartSmall, .tx-mathematicians .btn-group .tx_find form .submit + .submStartSmall, .tx_find form .btn-group .tx-mathematicians .submit + .submStartSmall, .tx-mathematicians .tx_find form .btn-group .submit + .submStartSmall, .btn-group
+.tx-mathematicians .btn + .submStart,
+.tx-mathematicians .btn-group .btn + .submStart, .btn-group .csc-form-element-submit
+.tx-mathematicians input + .submStart,
+.tx-mathematicians .btn-group .csc-form-element-submit input + .submStart, .csc-form-element-submit .btn-group
+.tx-mathematicians input + .submStart,
+.tx-mathematicians .csc-form-element-submit .btn-group input + .submStart, .btn-group
+.tx-mathematicians
+.powermail_submit + .submStart,
+.tx-mathematicians .btn-group
+.powermail_submit + .submStart, .btn-group .header .header-search
+.tx-mathematicians .header-search-form_submit + .submStart,
+.tx-mathematicians .btn-group .header .header-search .header-search-form_submit + .submStart, .header .header-search .btn-group
+.tx-mathematicians .header-search-form_submit + .submStart,
+.tx-mathematicians .header .header-search .btn-group .header-search-form_submit + .submStart, .btn-group #pazpar2
+.tx-mathematicians .pz2-submitButton + .submStart,
+.tx-mathematicians .btn-group #pazpar2 .pz2-submitButton + .submStart, #pazpar2 .btn-group
+.tx-mathematicians .pz2-submitButton + .submStart,
+.tx-mathematicians #pazpar2 .btn-group .pz2-submitButton + .submStart, .btn-group .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .submStartSmall + .submStart,
+.tx-mathematicians .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .submStart, .tx-ezbrequest-pi1 #ezb_search_form .btn-group
+.tx-mathematicians .submStartSmall + .submStart,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall + .submStart, .btn-group .tx-mathematicians .submStartSmall + .submStart, .tx-mathematicians .btn-group .submStartSmall + .submStart, .btn-group .tx-mathematicians .submStart + .submStart, .tx-mathematicians .btn-group .submStart + .submStart, .btn-group .tx_find form
+.tx-mathematicians .submit + .submStart,
+.tx-mathematicians .btn-group .tx_find form .submit + .submStart, .tx_find form .btn-group
+.tx-mathematicians .submit + .submStart,
+.tx-mathematicians .tx_find form .btn-group .submit + .submStart, .btn-group .tx_find form .btn + .submit, .tx_find form .btn-group .btn + .submit, .btn-group .csc-form-element-submit .tx_find form input + .submit, .tx_find form .btn-group .csc-form-element-submit input + .submit, .csc-form-element-submit .btn-group .tx_find form input + .submit, .tx_find form .csc-form-element-submit .btn-group input + .submit, .btn-group .tx_find form
+.powermail_submit + .submit, .tx_find form .btn-group
+.powermail_submit + .submit, .btn-group .header .header-search .tx_find form .header-search-form_submit + .submit, .tx_find form .btn-group .header .header-search .header-search-form_submit + .submit, .header .header-search .btn-group .tx_find form .header-search-form_submit + .submit, .tx_find form .header .header-search .btn-group .header-search-form_submit + .submit, .btn-group #pazpar2 .tx_find form .pz2-submitButton + .submit, .tx_find form .btn-group #pazpar2 .pz2-submitButton + .submit, #pazpar2 .btn-group .tx_find form .pz2-submitButton + .submit, .tx_find form #pazpar2 .btn-group .pz2-submitButton + .submit, .btn-group .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .submStartSmall + .submit, .tx_find form .btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .submit, .tx-ezbrequest-pi1 #ezb_search_form .btn-group .tx_find form .submStartSmall + .submit, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .btn-group .submStartSmall + .submit, .btn-group .tx-mathematicians .tx_find form .submStartSmall + .submit, .tx_find form .btn-group .tx-mathematicians .submStartSmall + .submit, .tx-mathematicians .btn-group .tx_find form .submStartSmall + .submit, .tx_find form .tx-mathematicians .btn-group .submStartSmall + .submit, .btn-group
+.tx-mathematicians .tx_find form .submStart + .submit, .tx_find form .btn-group
+.tx-mathematicians .submStart + .submit,
+.tx-mathematicians .btn-group .tx_find form .submStart + .submit, .tx_find form
+.tx-mathematicians .btn-group .submStart + .submit, .btn-group .tx_find form .submit + .submit, .tx_find form .btn-group .submit + .submit,
 .btn-group .btn + .btn-group,
 .btn-group .csc-form-element-submit input + .btn-group, .csc-form-element-submit
 .btn-group input + .btn-group,
-.btn-group
-.submStartSmall + .btn-group,
-.btn-group
-.submStart + .btn-group,
 .btn-group
 .powermail_submit + .btn-group,
 .btn-group .header .header-search .header-search-form_submit + .btn-group, .header .header-search
 .btn-group .header-search-form_submit + .btn-group,
 .btn-group #pazpar2 .pz2-submitButton + .btn-group, #pazpar2
 .btn-group .pz2-submitButton + .btn-group,
+.btn-group .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .btn-group, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group .submStartSmall + .btn-group,
+.btn-group .tx-mathematicians .submStartSmall + .btn-group, .tx-mathematicians
+.btn-group .submStartSmall + .btn-group,
+.btn-group
+.tx-mathematicians .submStart + .btn-group,
+.tx-mathematicians
+.btn-group .submStart + .btn-group,
+.btn-group .tx_find form .submit + .btn-group, .tx_find form
+.btn-group .submit + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .csc-form-element-submit .btn-group + input, .csc-form-element-submit
 .btn-group .btn-group + input,
-.btn-group .btn-group +
-.submStartSmall,
-.btn-group .btn-group +
-.submStart,
 .btn-group .btn-group +
 .powermail_submit,
 .btn-group .header .header-search .btn-group + .header-search-form_submit, .header .header-search
 .btn-group .btn-group + .header-search-form_submit,
 .btn-group #pazpar2 .btn-group + .pz2-submitButton, #pazpar2
 .btn-group .btn-group + .pz2-submitButton,
+.btn-group .tx-ezbrequest-pi1 #ezb_search_form .btn-group + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group .btn-group + .submStartSmall,
+.btn-group .tx-mathematicians .btn-group + .submStartSmall, .tx-mathematicians
+.btn-group .btn-group + .submStartSmall,
+.btn-group
+.tx-mathematicians .btn-group + .submStart,
+.tx-mathematicians
+.btn-group .btn-group + .submStart,
+.btn-group .tx_find form .btn-group + .submit, .tx_find form
+.btn-group .btn-group + .submit,
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
 .btn-group-vertical .csc-form-element-submit input + .btn, .csc-form-element-submit
 .btn-group-vertical input + .btn,
-.btn-group-vertical
-.submStartSmall + .btn,
-.btn-group-vertical
-.submStart + .btn,
 .btn-group-vertical
 .powermail_submit + .btn,
 .btn-group-vertical .header .header-search .header-search-form_submit + .btn, .header .header-search
 .btn-group-vertical .header-search-form_submit + .btn,
 .btn-group-vertical #pazpar2 .pz2-submitButton + .btn, #pazpar2
 .btn-group-vertical .pz2-submitButton + .btn,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .btn, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + .btn,
+.btn-group-vertical .tx-mathematicians .submStartSmall + .btn, .tx-mathematicians
+.btn-group-vertical .submStartSmall + .btn,
+.btn-group-vertical
+.tx-mathematicians .submStart + .btn,
+.tx-mathematicians
+.btn-group-vertical .submStart + .btn,
+.btn-group-vertical .tx_find form .submit + .btn, .tx_find form
+.btn-group-vertical .submit + .btn,
 .btn-group-vertical .csc-form-element-submit .btn + input, .csc-form-element-submit
 .btn-group-vertical .btn + input,
 .btn-group-vertical .csc-form-element-submit input + input, .csc-form-element-submit
 .btn-group-vertical input + input,
-.btn-group-vertical .csc-form-element-submit
-.submStartSmall + input, .csc-form-element-submit
-.btn-group-vertical
-.submStartSmall + input,
-.btn-group-vertical .csc-form-element-submit
-.submStart + input, .csc-form-element-submit
-.btn-group-vertical
-.submStart + input,
 .btn-group-vertical .csc-form-element-submit
 .powermail_submit + input, .csc-form-element-submit
 .btn-group-vertical
@@ -6049,63 +6070,31 @@ tbody.collapse.show {
 .btn-group-vertical #pazpar2 .pz2-submitButton + input, #pazpar2
 .btn-group-vertical .csc-form-element-submit .pz2-submitButton + input, .csc-form-element-submit #pazpar2
 .btn-group-vertical .pz2-submitButton + input,
-.btn-group-vertical .btn +
-.submStartSmall,
-.btn-group-vertical .csc-form-element-submit input +
-.submStartSmall, .csc-form-element-submit
-.btn-group-vertical input +
-.submStartSmall,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + input, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + input,
+.btn-group-vertical .tx-mathematicians .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit
+.btn-group-vertical .tx-mathematicians .submStartSmall + input, .tx-mathematicians
+.btn-group-vertical .csc-form-element-submit .submStartSmall + input, .csc-form-element-submit .tx-mathematicians
+.btn-group-vertical .submStartSmall + input,
 .btn-group-vertical
-.submStartSmall +
-.submStartSmall,
+.tx-mathematicians .csc-form-element-submit .submStart + input, .csc-form-element-submit
 .btn-group-vertical
-.submStart +
-.submStartSmall,
-.btn-group-vertical
-.powermail_submit +
-.submStartSmall,
-.btn-group-vertical .header .header-search .header-search-form_submit +
-.submStartSmall, .header .header-search
-.btn-group-vertical .header-search-form_submit +
-.submStartSmall,
-.btn-group-vertical #pazpar2 .pz2-submitButton +
-.submStartSmall, #pazpar2
-.btn-group-vertical .pz2-submitButton +
-.submStartSmall,
-.btn-group-vertical .btn +
-.submStart,
-.btn-group-vertical .csc-form-element-submit input +
-.submStart, .csc-form-element-submit
-.btn-group-vertical input +
-.submStart,
-.btn-group-vertical
-.submStartSmall +
-.submStart,
-.btn-group-vertical
-.submStart +
-.submStart,
-.btn-group-vertical
-.powermail_submit +
-.submStart,
-.btn-group-vertical .header .header-search .header-search-form_submit +
-.submStart, .header .header-search
-.btn-group-vertical .header-search-form_submit +
-.submStart,
-.btn-group-vertical #pazpar2 .pz2-submitButton +
-.submStart, #pazpar2
-.btn-group-vertical .pz2-submitButton +
-.submStart,
+.tx-mathematicians .submStart + input,
+.tx-mathematicians
+.btn-group-vertical .csc-form-element-submit .submStart + input, .csc-form-element-submit
+.tx-mathematicians
+.btn-group-vertical .submStart + input,
+.btn-group-vertical .tx_find form .csc-form-element-submit .submit + input, .csc-form-element-submit
+.btn-group-vertical .tx_find form .submit + input, .tx_find form
+.btn-group-vertical .csc-form-element-submit .submit + input, .csc-form-element-submit .tx_find form
+.btn-group-vertical .submit + input,
 .btn-group-vertical .btn +
 .powermail_submit,
 .btn-group-vertical .csc-form-element-submit input +
 .powermail_submit, .csc-form-element-submit
 .btn-group-vertical input +
-.powermail_submit,
-.btn-group-vertical
-.submStartSmall +
-.powermail_submit,
-.btn-group-vertical
-.submStart +
 .powermail_submit,
 .btn-group-vertical
 .powermail_submit +
@@ -6118,20 +6107,30 @@ tbody.collapse.show {
 .powermail_submit, #pazpar2
 .btn-group-vertical .pz2-submitButton +
 .powermail_submit,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall +
+.powermail_submit, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall +
+.powermail_submit,
+.btn-group-vertical .tx-mathematicians .submStartSmall +
+.powermail_submit, .tx-mathematicians
+.btn-group-vertical .submStartSmall +
+.powermail_submit,
+.btn-group-vertical
+.tx-mathematicians .submStart +
+.powermail_submit,
+.tx-mathematicians
+.btn-group-vertical .submStart +
+.powermail_submit,
+.btn-group-vertical .tx_find form .submit +
+.powermail_submit, .tx_find form
+.btn-group-vertical .submit +
+.powermail_submit,
 .btn-group-vertical .header .header-search .btn + .header-search-form_submit, .header .header-search
 .btn-group-vertical .btn + .header-search-form_submit,
 .btn-group-vertical .csc-form-element-submit .header .header-search input + .header-search-form_submit, .header .header-search
 .btn-group-vertical .csc-form-element-submit input + .header-search-form_submit, .csc-form-element-submit
 .btn-group-vertical .header .header-search input + .header-search-form_submit, .header .header-search .csc-form-element-submit
 .btn-group-vertical input + .header-search-form_submit,
-.btn-group-vertical .header .header-search
-.submStartSmall + .header-search-form_submit, .header .header-search
-.btn-group-vertical
-.submStartSmall + .header-search-form_submit,
-.btn-group-vertical .header .header-search
-.submStart + .header-search-form_submit, .header .header-search
-.btn-group-vertical
-.submStart + .header-search-form_submit,
 .btn-group-vertical .header .header-search
 .powermail_submit + .header-search-form_submit, .header .header-search
 .btn-group-vertical
@@ -6142,20 +6141,32 @@ tbody.collapse.show {
 .btn-group-vertical #pazpar2 .pz2-submitButton + .header-search-form_submit, #pazpar2
 .btn-group-vertical .header .header-search .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2
 .btn-group-vertical .pz2-submitButton + .header-search-form_submit,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .header-search-form_submit, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + .header-search-form_submit,
+.btn-group-vertical .tx-mathematicians .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search
+.btn-group-vertical .tx-mathematicians .submStartSmall + .header-search-form_submit, .tx-mathematicians
+.btn-group-vertical .header .header-search .submStartSmall + .header-search-form_submit, .header .header-search .tx-mathematicians
+.btn-group-vertical .submStartSmall + .header-search-form_submit,
+.btn-group-vertical
+.tx-mathematicians .header .header-search .submStart + .header-search-form_submit, .header .header-search
+.btn-group-vertical
+.tx-mathematicians .submStart + .header-search-form_submit,
+.tx-mathematicians
+.btn-group-vertical .header .header-search .submStart + .header-search-form_submit, .header .header-search
+.tx-mathematicians
+.btn-group-vertical .submStart + .header-search-form_submit,
+.btn-group-vertical .tx_find form .header .header-search .submit + .header-search-form_submit, .header .header-search
+.btn-group-vertical .tx_find form .submit + .header-search-form_submit, .tx_find form
+.btn-group-vertical .header .header-search .submit + .header-search-form_submit, .header .header-search .tx_find form
+.btn-group-vertical .submit + .header-search-form_submit,
 .btn-group-vertical #pazpar2 .btn + .pz2-submitButton, #pazpar2
 .btn-group-vertical .btn + .pz2-submitButton,
 .btn-group-vertical .csc-form-element-submit #pazpar2 input + .pz2-submitButton, #pazpar2
 .btn-group-vertical .csc-form-element-submit input + .pz2-submitButton, .csc-form-element-submit
 .btn-group-vertical #pazpar2 input + .pz2-submitButton, #pazpar2 .csc-form-element-submit
 .btn-group-vertical input + .pz2-submitButton,
-.btn-group-vertical #pazpar2
-.submStartSmall + .pz2-submitButton, #pazpar2
-.btn-group-vertical
-.submStartSmall + .pz2-submitButton,
-.btn-group-vertical #pazpar2
-.submStart + .pz2-submitButton, #pazpar2
-.btn-group-vertical
-.submStart + .pz2-submitButton,
 .btn-group-vertical #pazpar2
 .powermail_submit + .pz2-submitButton, #pazpar2
 .btn-group-vertical
@@ -6166,32 +6177,214 @@ tbody.collapse.show {
 .btn-group-vertical .header-search-form_submit + .pz2-submitButton,
 .btn-group-vertical #pazpar2 .pz2-submitButton + .pz2-submitButton, #pazpar2
 .btn-group-vertical .pz2-submitButton + .pz2-submitButton,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + .pz2-submitButton,
+.btn-group-vertical .tx-mathematicians #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2
+.btn-group-vertical .tx-mathematicians .submStartSmall + .pz2-submitButton, .tx-mathematicians
+.btn-group-vertical #pazpar2 .submStartSmall + .pz2-submitButton, #pazpar2 .tx-mathematicians
+.btn-group-vertical .submStartSmall + .pz2-submitButton,
+.btn-group-vertical
+.tx-mathematicians #pazpar2 .submStart + .pz2-submitButton, #pazpar2
+.btn-group-vertical
+.tx-mathematicians .submStart + .pz2-submitButton,
+.tx-mathematicians
+.btn-group-vertical #pazpar2 .submStart + .pz2-submitButton, #pazpar2
+.tx-mathematicians
+.btn-group-vertical .submStart + .pz2-submitButton,
+.btn-group-vertical .tx_find form #pazpar2 .submit + .pz2-submitButton, #pazpar2
+.btn-group-vertical .tx_find form .submit + .pz2-submitButton, .tx_find form
+.btn-group-vertical #pazpar2 .submit + .pz2-submitButton, #pazpar2 .tx_find form
+.btn-group-vertical .submit + .pz2-submitButton,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .btn + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .btn + .submStartSmall,
+.btn-group-vertical .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .csc-form-element-submit input + .submStartSmall, .csc-form-element-submit
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit
+.btn-group-vertical input + .submStartSmall,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form
+.powermail_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical
+.powermail_submit + .submStartSmall,
+.btn-group-vertical .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .header-search-form_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .header .header-search .header-search-form_submit + .submStartSmall, .header .header-search
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .header-search-form_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search
+.btn-group-vertical .header-search-form_submit + .submStartSmall,
+.btn-group-vertical #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical #pazpar2 .pz2-submitButton + .submStartSmall, #pazpar2
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2
+.btn-group-vertical .pz2-submitButton + .submStartSmall,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + .submStartSmall,
+.btn-group-vertical
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .submStart + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical
+.tx-mathematicians .submStart + .submStartSmall,
+.tx-mathematicians
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStart + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians
+.btn-group-vertical .submStart + .submStartSmall,
+.btn-group-vertical .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .tx_find form .submit + .submStartSmall, .tx_find form
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form
+.btn-group-vertical .submit + .submStartSmall,
+.btn-group-vertical .tx-mathematicians .btn + .submStartSmall, .tx-mathematicians
+.btn-group-vertical .btn + .submStartSmall,
+.btn-group-vertical .csc-form-element-submit .tx-mathematicians input + .submStartSmall, .tx-mathematicians
+.btn-group-vertical .csc-form-element-submit input + .submStartSmall, .csc-form-element-submit
+.btn-group-vertical .tx-mathematicians input + .submStartSmall, .tx-mathematicians .csc-form-element-submit
+.btn-group-vertical input + .submStartSmall,
+.btn-group-vertical .tx-mathematicians
+.powermail_submit + .submStartSmall, .tx-mathematicians
+.btn-group-vertical
+.powermail_submit + .submStartSmall,
+.btn-group-vertical .header .header-search .tx-mathematicians .header-search-form_submit + .submStartSmall, .tx-mathematicians
+.btn-group-vertical .header .header-search .header-search-form_submit + .submStartSmall, .header .header-search
+.btn-group-vertical .tx-mathematicians .header-search-form_submit + .submStartSmall, .tx-mathematicians .header .header-search
+.btn-group-vertical .header-search-form_submit + .submStartSmall,
+.btn-group-vertical #pazpar2 .tx-mathematicians .pz2-submitButton + .submStartSmall, .tx-mathematicians
+.btn-group-vertical #pazpar2 .pz2-submitButton + .submStartSmall, #pazpar2
+.btn-group-vertical .tx-mathematicians .pz2-submitButton + .submStartSmall, .tx-mathematicians #pazpar2
+.btn-group-vertical .pz2-submitButton + .submStartSmall,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .tx-mathematicians .submStartSmall + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .tx-mathematicians .submStartSmall + .submStartSmall,
+.btn-group-vertical .tx-mathematicians .submStartSmall + .submStartSmall, .tx-mathematicians
+.btn-group-vertical .submStartSmall + .submStartSmall,
+.btn-group-vertical .tx-mathematicians .submStart + .submStartSmall, .tx-mathematicians
+.btn-group-vertical .submStart + .submStartSmall,
+.btn-group-vertical .tx_find form .tx-mathematicians .submit + .submStartSmall, .tx-mathematicians
+.btn-group-vertical .tx_find form .submit + .submStartSmall, .tx_find form
+.btn-group-vertical .tx-mathematicians .submit + .submStartSmall, .tx-mathematicians .tx_find form
+.btn-group-vertical .submit + .submStartSmall,
+.btn-group-vertical
+.tx-mathematicians .btn + .submStart,
+.tx-mathematicians
+.btn-group-vertical .btn + .submStart,
+.btn-group-vertical .csc-form-element-submit
+.tx-mathematicians input + .submStart,
+.tx-mathematicians
+.btn-group-vertical .csc-form-element-submit input + .submStart, .csc-form-element-submit
+.btn-group-vertical
+.tx-mathematicians input + .submStart,
+.tx-mathematicians .csc-form-element-submit
+.btn-group-vertical input + .submStart,
+.btn-group-vertical
+.tx-mathematicians
+.powermail_submit + .submStart,
+.tx-mathematicians
+.btn-group-vertical
+.powermail_submit + .submStart,
+.btn-group-vertical .header .header-search
+.tx-mathematicians .header-search-form_submit + .submStart,
+.tx-mathematicians
+.btn-group-vertical .header .header-search .header-search-form_submit + .submStart, .header .header-search
+.btn-group-vertical
+.tx-mathematicians .header-search-form_submit + .submStart,
+.tx-mathematicians .header .header-search
+.btn-group-vertical .header-search-form_submit + .submStart,
+.btn-group-vertical #pazpar2
+.tx-mathematicians .pz2-submitButton + .submStart,
+.tx-mathematicians
+.btn-group-vertical #pazpar2 .pz2-submitButton + .submStart, #pazpar2
+.btn-group-vertical
+.tx-mathematicians .pz2-submitButton + .submStart,
+.tx-mathematicians #pazpar2
+.btn-group-vertical .pz2-submitButton + .submStart,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .submStartSmall + .submStart,
+.tx-mathematicians
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .submStart, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical
+.tx-mathematicians .submStartSmall + .submStart,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + .submStart,
+.btn-group-vertical .tx-mathematicians .submStartSmall + .submStart, .tx-mathematicians
+.btn-group-vertical .submStartSmall + .submStart,
+.btn-group-vertical .tx-mathematicians .submStart + .submStart, .tx-mathematicians
+.btn-group-vertical .submStart + .submStart,
+.btn-group-vertical .tx_find form
+.tx-mathematicians .submit + .submStart,
+.tx-mathematicians
+.btn-group-vertical .tx_find form .submit + .submStart, .tx_find form
+.btn-group-vertical
+.tx-mathematicians .submit + .submStart,
+.tx-mathematicians .tx_find form
+.btn-group-vertical .submit + .submStart,
+.btn-group-vertical .tx_find form .btn + .submit, .tx_find form
+.btn-group-vertical .btn + .submit,
+.btn-group-vertical .csc-form-element-submit .tx_find form input + .submit, .tx_find form
+.btn-group-vertical .csc-form-element-submit input + .submit, .csc-form-element-submit
+.btn-group-vertical .tx_find form input + .submit, .tx_find form .csc-form-element-submit
+.btn-group-vertical input + .submit,
+.btn-group-vertical .tx_find form
+.powermail_submit + .submit, .tx_find form
+.btn-group-vertical
+.powermail_submit + .submit,
+.btn-group-vertical .header .header-search .tx_find form .header-search-form_submit + .submit, .tx_find form
+.btn-group-vertical .header .header-search .header-search-form_submit + .submit, .header .header-search
+.btn-group-vertical .tx_find form .header-search-form_submit + .submit, .tx_find form .header .header-search
+.btn-group-vertical .header-search-form_submit + .submit,
+.btn-group-vertical #pazpar2 .tx_find form .pz2-submitButton + .submit, .tx_find form
+.btn-group-vertical #pazpar2 .pz2-submitButton + .submit, #pazpar2
+.btn-group-vertical .tx_find form .pz2-submitButton + .submit, .tx_find form #pazpar2
+.btn-group-vertical .pz2-submitButton + .submit,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .submStartSmall + .submit, .tx_find form
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .submit, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .tx_find form .submStartSmall + .submit, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + .submit,
+.btn-group-vertical .tx-mathematicians .tx_find form .submStartSmall + .submit, .tx_find form
+.btn-group-vertical .tx-mathematicians .submStartSmall + .submit, .tx-mathematicians
+.btn-group-vertical .tx_find form .submStartSmall + .submit, .tx_find form .tx-mathematicians
+.btn-group-vertical .submStartSmall + .submit,
+.btn-group-vertical
+.tx-mathematicians .tx_find form .submStart + .submit, .tx_find form
+.btn-group-vertical
+.tx-mathematicians .submStart + .submit,
+.tx-mathematicians
+.btn-group-vertical .tx_find form .submStart + .submit, .tx_find form
+.tx-mathematicians
+.btn-group-vertical .submStart + .submit,
+.btn-group-vertical .tx_find form .submit + .submit, .tx_find form
+.btn-group-vertical .submit + .submit,
 .btn-group-vertical .btn + .btn-group,
 .btn-group-vertical .csc-form-element-submit input + .btn-group, .csc-form-element-submit
 .btn-group-vertical input + .btn-group,
-.btn-group-vertical
-.submStartSmall + .btn-group,
-.btn-group-vertical
-.submStart + .btn-group,
 .btn-group-vertical
 .powermail_submit + .btn-group,
 .btn-group-vertical .header .header-search .header-search-form_submit + .btn-group, .header .header-search
 .btn-group-vertical .header-search-form_submit + .btn-group,
 .btn-group-vertical #pazpar2 .pz2-submitButton + .btn-group, #pazpar2
 .btn-group-vertical .pz2-submitButton + .btn-group,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .btn-group, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .submStartSmall + .btn-group,
+.btn-group-vertical .tx-mathematicians .submStartSmall + .btn-group, .tx-mathematicians
+.btn-group-vertical .submStartSmall + .btn-group,
+.btn-group-vertical
+.tx-mathematicians .submStart + .btn-group,
+.tx-mathematicians
+.btn-group-vertical .submStart + .btn-group,
+.btn-group-vertical .tx_find form .submit + .btn-group, .tx_find form
+.btn-group-vertical .submit + .btn-group,
 .btn-group-vertical .btn-group + .btn,
 .btn-group-vertical .csc-form-element-submit .btn-group + input, .csc-form-element-submit
 .btn-group-vertical .btn-group + input,
-.btn-group-vertical .btn-group +
-.submStartSmall,
-.btn-group-vertical .btn-group +
-.submStart,
 .btn-group-vertical .btn-group +
 .powermail_submit,
 .btn-group-vertical .header .header-search .btn-group + .header-search-form_submit, .header .header-search
 .btn-group-vertical .btn-group + .header-search-form_submit,
 .btn-group-vertical #pazpar2 .btn-group + .pz2-submitButton, #pazpar2
 .btn-group-vertical .btn-group + .pz2-submitButton,
+.btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .btn-group + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical .btn-group + .submStartSmall,
+.btn-group-vertical .tx-mathematicians .btn-group + .submStartSmall, .tx-mathematicians
+.btn-group-vertical .btn-group + .submStartSmall,
+.btn-group-vertical
+.tx-mathematicians .btn-group + .submStart,
+.tx-mathematicians
+.btn-group-vertical .btn-group + .submStart,
+.btn-group-vertical .tx_find form .btn-group + .submit, .tx_find form
+.btn-group-vertical .btn-group + .submit,
 .btn-group-vertical .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -6212,16 +6405,14 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .csc-form-element-submit .btn-group > input:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
-.submStartSmall:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
-.submStart:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
-.powermail_submit:not(:first-child):not(:last-child):not(.dropdown-toggle), .header .header-search .btn-group > .header-search-form_submit:not(:first-child):not(:last-child):not(.dropdown-toggle), #pazpar2 .btn-group > .pz2-submitButton:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.powermail_submit:not(:first-child):not(:last-child):not(.dropdown-toggle), .header .header-search .btn-group > .header-search-form_submit:not(:first-child):not(:last-child):not(.dropdown-toggle), #pazpar2 .btn-group > .pz2-submitButton:not(:first-child):not(:last-child):not(.dropdown-toggle), .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:not(:first-child):not(:last-child):not(.dropdown-toggle), .tx-mathematicians .btn-group > .submStartSmall:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.tx-mathematicians .btn-group > .submStart:not(:first-child):not(:last-child):not(.dropdown-toggle), .tx_find form .btn-group > .submit:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
 .btn-group > .btn:first-child, .csc-form-element-submit .btn-group > input:first-child, .btn-group >
-.submStartSmall:first-child, .btn-group >
-.submStart:first-child, .btn-group >
-.powermail_submit:first-child, .header .header-search .btn-group > .header-search-form_submit:first-child, #pazpar2 .btn-group > .pz2-submitButton:first-child {
+.powermail_submit:first-child, .header .header-search .btn-group > .header-search-form_submit:first-child, #pazpar2 .btn-group > .pz2-submitButton:first-child, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:first-child, .tx-mathematicians .btn-group > .submStartSmall:first-child,
+.tx-mathematicians .btn-group > .submStart:first-child, .tx_find form .btn-group > .submit:first-child {
   margin-left: 0;
 }
 
@@ -6230,39 +6421,34 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .csc-form-element-submit .btn-group > .btn-group:not(:first-child):not(:last-child) > input, .btn-group > .btn-group:not(:first-child):not(:last-child) >
-.submStartSmall, .btn-group > .btn-group:not(:first-child):not(:last-child) >
-.submStart, .btn-group > .btn-group:not(:first-child):not(:last-child) >
-.powermail_submit, .header .header-search .btn-group > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit, #pazpar2 .btn-group > .btn-group:not(:first-child):not(:last-child) > .pz2-submitButton {
+.powermail_submit, .header .header-search .btn-group > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit, #pazpar2 .btn-group > .btn-group:not(:first-child):not(:last-child) > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .btn-group:not(:first-child):not(:last-child) > .submStartSmall, .tx-mathematicians .btn-group > .btn-group:not(:first-child):not(:last-child) > .submStartSmall,
+.tx-mathematicians .btn-group > .btn-group:not(:first-child):not(:last-child) > .submStart, .tx_find form .btn-group > .btn-group:not(:first-child):not(:last-child) > .submit {
   border-radius: 0;
 }
 
 .btn + .dropdown-toggle-split, .csc-form-element-submit input + .dropdown-toggle-split,
-.submStartSmall + .dropdown-toggle-split,
-.submStart + .dropdown-toggle-split,
-.powermail_submit + .dropdown-toggle-split, .header .header-search .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .pz2-submitButton + .dropdown-toggle-split {
+.powermail_submit + .dropdown-toggle-split, .header .header-search .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .pz2-submitButton + .dropdown-toggle-split, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .dropdown-toggle-split, .tx-mathematicians .submStartSmall + .dropdown-toggle-split,
+.tx-mathematicians .submStart + .dropdown-toggle-split, .tx_find form .submit + .dropdown-toggle-split {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem;
 }
 
 .btn + .dropdown-toggle-split::after, .csc-form-element-submit input + .dropdown-toggle-split::after,
-.submStartSmall + .dropdown-toggle-split::after,
-.submStart + .dropdown-toggle-split::after,
-.powermail_submit + .dropdown-toggle-split::after, .header .header-search .header-search-form_submit + .dropdown-toggle-split::after, #pazpar2 .pz2-submitButton + .dropdown-toggle-split::after {
+.powermail_submit + .dropdown-toggle-split::after, .header .header-search .header-search-form_submit + .dropdown-toggle-split::after, #pazpar2 .pz2-submitButton + .dropdown-toggle-split::after, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall + .dropdown-toggle-split::after, .tx-mathematicians .submStartSmall + .dropdown-toggle-split::after,
+.tx-mathematicians .submStart + .dropdown-toggle-split::after, .tx_find form .submit + .dropdown-toggle-split::after {
   margin-left: 0;
 }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .csc-form-element-submit .btn-group-sm > input + .dropdown-toggle-split, .btn-group-sm >
-.submStartSmall + .dropdown-toggle-split, .btn-group-sm >
-.submStart + .dropdown-toggle-split, .btn-group-sm >
-.powermail_submit + .dropdown-toggle-split, .header .header-search .btn-group-sm > .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .btn-group-sm > .pz2-submitButton + .dropdown-toggle-split {
+.powermail_submit + .dropdown-toggle-split, .header .header-search .btn-group-sm > .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .btn-group-sm > .pz2-submitButton + .dropdown-toggle-split, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-sm > .submStartSmall + .dropdown-toggle-split, .tx-mathematicians .btn-group-sm > .submStartSmall + .dropdown-toggle-split,
+.tx-mathematicians .btn-group-sm > .submStart + .dropdown-toggle-split, .tx_find form .btn-group-sm > .submit + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .csc-form-element-submit .btn-group-lg > input + .dropdown-toggle-split, .btn-group-lg >
-.submStartSmall + .dropdown-toggle-split, .btn-group-lg >
-.submStart + .dropdown-toggle-split, .btn-group-lg >
-.powermail_submit + .dropdown-toggle-split, .header .header-search .btn-group-lg > .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .btn-group-lg > .pz2-submitButton + .dropdown-toggle-split {
+.powermail_submit + .dropdown-toggle-split, .header .header-search .btn-group-lg > .header-search-form_submit + .dropdown-toggle-split, #pazpar2 .btn-group-lg > .pz2-submitButton + .dropdown-toggle-split, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-lg > .submStartSmall + .dropdown-toggle-split, .tx-mathematicians .btn-group-lg > .submStartSmall + .dropdown-toggle-split,
+.tx-mathematicians .btn-group-lg > .submStart + .dropdown-toggle-split, .tx_find form .btn-group-lg > .submit + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -6284,129 +6470,131 @@ tbody.collapse.show {
 }
 
 .btn-group-vertical .btn, .btn-group-vertical .csc-form-element-submit input, .csc-form-element-submit .btn-group-vertical input, .btn-group-vertical
-.submStartSmall, .btn-group-vertical
-.submStart, .btn-group-vertical
-.powermail_submit, .btn-group-vertical .header .header-search .header-search-form_submit, .header .header-search .btn-group-vertical .header-search-form_submit, .btn-group-vertical #pazpar2 .pz2-submitButton, #pazpar2 .btn-group-vertical .pz2-submitButton,
+.powermail_submit, .btn-group-vertical .header .header-search .header-search-form_submit, .header .header-search .btn-group-vertical .header-search-form_submit, .btn-group-vertical #pazpar2 .pz2-submitButton, #pazpar2 .btn-group-vertical .pz2-submitButton, .btn-group-vertical .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical .submStartSmall, .btn-group-vertical .tx-mathematicians .submStartSmall, .tx-mathematicians .btn-group-vertical .submStartSmall, .btn-group-vertical
+.tx-mathematicians .submStart,
+.tx-mathematicians .btn-group-vertical .submStart, .btn-group-vertical .tx_find form .submit, .tx_find form .btn-group-vertical .submit,
 .btn-group-vertical .btn-group {
   width: 100%;
 }
 
 .btn-group-vertical > .btn + .btn, .csc-form-element-submit .btn-group-vertical > input + .btn, .btn-group-vertical >
-.submStartSmall + .btn, .btn-group-vertical >
-.submStart + .btn, .btn-group-vertical >
-.powermail_submit + .btn, .header .header-search .btn-group-vertical > .header-search-form_submit + .btn, #pazpar2 .btn-group-vertical > .pz2-submitButton + .btn, .csc-form-element-submit .btn-group-vertical > .btn + input, .csc-form-element-submit .btn-group-vertical > input + input, .csc-form-element-submit .btn-group-vertical >
-.submStartSmall + input, .csc-form-element-submit .btn-group-vertical >
-.submStart + input, .csc-form-element-submit .btn-group-vertical >
-.powermail_submit + input, .header .header-search .csc-form-element-submit .btn-group-vertical > .header-search-form_submit + input, .csc-form-element-submit .header .header-search .btn-group-vertical > .header-search-form_submit + input, #pazpar2 .csc-form-element-submit .btn-group-vertical > .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .btn-group-vertical > .pz2-submitButton + input, .btn-group-vertical > .btn +
-.submStartSmall, .csc-form-element-submit .btn-group-vertical > input +
-.submStartSmall, .btn-group-vertical >
-.submStartSmall +
-.submStartSmall, .btn-group-vertical >
-.submStart +
-.submStartSmall, .btn-group-vertical >
-.powermail_submit +
-.submStartSmall, .header .header-search .btn-group-vertical > .header-search-form_submit +
-.submStartSmall, #pazpar2 .btn-group-vertical > .pz2-submitButton +
-.submStartSmall, .btn-group-vertical > .btn +
-.submStart, .csc-form-element-submit .btn-group-vertical > input +
-.submStart, .btn-group-vertical >
-.submStartSmall +
-.submStart, .btn-group-vertical >
-.submStart +
-.submStart, .btn-group-vertical >
-.powermail_submit +
-.submStart, .header .header-search .btn-group-vertical > .header-search-form_submit +
-.submStart, #pazpar2 .btn-group-vertical > .pz2-submitButton +
-.submStart, .btn-group-vertical > .btn +
+.powermail_submit + .btn, .header .header-search .btn-group-vertical > .header-search-form_submit + .btn, #pazpar2 .btn-group-vertical > .pz2-submitButton + .btn, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall + .btn, .tx-mathematicians .btn-group-vertical > .submStartSmall + .btn,
+.tx-mathematicians .btn-group-vertical > .submStart + .btn, .tx_find form .btn-group-vertical > .submit + .btn, .csc-form-element-submit .btn-group-vertical > .btn + input, .csc-form-element-submit .btn-group-vertical > input + input, .csc-form-element-submit .btn-group-vertical >
+.powermail_submit + input, .header .header-search .csc-form-element-submit .btn-group-vertical > .header-search-form_submit + input, .csc-form-element-submit .header .header-search .btn-group-vertical > .header-search-form_submit + input, #pazpar2 .csc-form-element-submit .btn-group-vertical > .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .btn-group-vertical > .pz2-submitButton + input, .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit .btn-group-vertical > .submStartSmall + input, .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall + input, .tx-mathematicians .csc-form-element-submit .btn-group-vertical > .submStartSmall + input, .csc-form-element-submit .tx-mathematicians .btn-group-vertical > .submStartSmall + input,
+.tx-mathematicians .csc-form-element-submit .btn-group-vertical > .submStart + input, .csc-form-element-submit
+.tx-mathematicians .btn-group-vertical > .submStart + input, .tx_find form .csc-form-element-submit .btn-group-vertical > .submit + input, .csc-form-element-submit .tx_find form .btn-group-vertical > .submit + input, .btn-group-vertical > .btn +
 .powermail_submit, .csc-form-element-submit .btn-group-vertical > input +
-.powermail_submit, .btn-group-vertical >
-.submStartSmall +
-.powermail_submit, .btn-group-vertical >
-.submStart +
 .powermail_submit, .btn-group-vertical >
 .powermail_submit +
 .powermail_submit, .header .header-search .btn-group-vertical > .header-search-form_submit +
 .powermail_submit, #pazpar2 .btn-group-vertical > .pz2-submitButton +
+.powermail_submit, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall +
+.powermail_submit, .tx-mathematicians .btn-group-vertical > .submStartSmall +
+.powermail_submit,
+.tx-mathematicians .btn-group-vertical > .submStart +
+.powermail_submit, .tx_find form .btn-group-vertical > .submit +
 .powermail_submit, .header .header-search .btn-group-vertical > .btn + .header-search-form_submit, .csc-form-element-submit .header .header-search .btn-group-vertical > input + .header-search-form_submit, .header .header-search .csc-form-element-submit .btn-group-vertical > input + .header-search-form_submit, .header .header-search .btn-group-vertical >
-.submStartSmall + .header-search-form_submit, .header .header-search .btn-group-vertical >
-.submStart + .header-search-form_submit, .header .header-search .btn-group-vertical >
-.powermail_submit + .header-search-form_submit, .header .header-search .btn-group-vertical > .header-search-form_submit + .header-search-form_submit, #pazpar2 .header .header-search .btn-group-vertical > .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .btn-group-vertical > .pz2-submitButton + .header-search-form_submit, #pazpar2 .btn-group-vertical > .btn + .pz2-submitButton, .csc-form-element-submit #pazpar2 .btn-group-vertical > input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .btn-group-vertical > input + .pz2-submitButton, #pazpar2 .btn-group-vertical >
-.submStartSmall + .pz2-submitButton, #pazpar2 .btn-group-vertical >
-.submStart + .pz2-submitButton, #pazpar2 .btn-group-vertical >
-.powermail_submit + .pz2-submitButton, .header .header-search #pazpar2 .btn-group-vertical > .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .btn-group-vertical > .header-search-form_submit + .pz2-submitButton, #pazpar2 .btn-group-vertical > .pz2-submitButton + .pz2-submitButton,
+.powermail_submit + .header-search-form_submit, .header .header-search .btn-group-vertical > .header-search-form_submit + .header-search-form_submit, #pazpar2 .header .header-search .btn-group-vertical > .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .btn-group-vertical > .pz2-submitButton + .header-search-form_submit, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .btn-group-vertical > .submStartSmall + .header-search-form_submit, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall + .header-search-form_submit, .tx-mathematicians .header .header-search .btn-group-vertical > .submStartSmall + .header-search-form_submit, .header .header-search .tx-mathematicians .btn-group-vertical > .submStartSmall + .header-search-form_submit,
+.tx-mathematicians .header .header-search .btn-group-vertical > .submStart + .header-search-form_submit, .header .header-search
+.tx-mathematicians .btn-group-vertical > .submStart + .header-search-form_submit, .tx_find form .header .header-search .btn-group-vertical > .submit + .header-search-form_submit, .header .header-search .tx_find form .btn-group-vertical > .submit + .header-search-form_submit, #pazpar2 .btn-group-vertical > .btn + .pz2-submitButton, .csc-form-element-submit #pazpar2 .btn-group-vertical > input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .btn-group-vertical > input + .pz2-submitButton, #pazpar2 .btn-group-vertical >
+.powermail_submit + .pz2-submitButton, .header .header-search #pazpar2 .btn-group-vertical > .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .btn-group-vertical > .header-search-form_submit + .pz2-submitButton, #pazpar2 .btn-group-vertical > .pz2-submitButton + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .btn-group-vertical > .submStartSmall + .pz2-submitButton, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall + .pz2-submitButton, .tx-mathematicians #pazpar2 .btn-group-vertical > .submStartSmall + .pz2-submitButton, #pazpar2 .tx-mathematicians .btn-group-vertical > .submStartSmall + .pz2-submitButton,
+.tx-mathematicians #pazpar2 .btn-group-vertical > .submStart + .pz2-submitButton, #pazpar2
+.tx-mathematicians .btn-group-vertical > .submStart + .pz2-submitButton, .tx_find form #pazpar2 .btn-group-vertical > .submit + .pz2-submitButton, #pazpar2 .tx_find form .btn-group-vertical > .submit + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .btn + .submStartSmall, .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit .btn-group-vertical > input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical >
+.powermail_submit + .submStartSmall, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .header-search-form_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .btn-group-vertical > .header-search-form_submit + .submStartSmall, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .btn-group-vertical > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall + .submStartSmall,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStart + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .btn-group-vertical > .submStart + .submStartSmall, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .btn-group-vertical > .submit + .submStartSmall, .tx-mathematicians .btn-group-vertical > .btn + .submStartSmall, .csc-form-element-submit .tx-mathematicians .btn-group-vertical > input + .submStartSmall, .tx-mathematicians .csc-form-element-submit .btn-group-vertical > input + .submStartSmall, .tx-mathematicians .btn-group-vertical >
+.powermail_submit + .submStartSmall, .header .header-search .tx-mathematicians .btn-group-vertical > .header-search-form_submit + .submStartSmall, .tx-mathematicians .header .header-search .btn-group-vertical > .header-search-form_submit + .submStartSmall, #pazpar2 .tx-mathematicians .btn-group-vertical > .pz2-submitButton + .submStartSmall, .tx-mathematicians #pazpar2 .btn-group-vertical > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx-mathematicians .btn-group-vertical > .submStartSmall + .submStartSmall, .tx-mathematicians .btn-group-vertical > .submStartSmall + .submStartSmall, .tx-mathematicians .btn-group-vertical > .submStart + .submStartSmall, .tx_find form .tx-mathematicians .btn-group-vertical > .submit + .submStartSmall, .tx-mathematicians .tx_find form .btn-group-vertical > .submit + .submStartSmall,
+.tx-mathematicians .btn-group-vertical > .btn + .submStart, .csc-form-element-submit
+.tx-mathematicians .btn-group-vertical > input + .submStart,
+.tx-mathematicians .csc-form-element-submit .btn-group-vertical > input + .submStart,
+.tx-mathematicians .btn-group-vertical >
+.powermail_submit + .submStart, .header .header-search
+.tx-mathematicians .btn-group-vertical > .header-search-form_submit + .submStart,
+.tx-mathematicians .header .header-search .btn-group-vertical > .header-search-form_submit + .submStart, #pazpar2
+.tx-mathematicians .btn-group-vertical > .pz2-submitButton + .submStart,
+.tx-mathematicians #pazpar2 .btn-group-vertical > .pz2-submitButton + .submStart, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .btn-group-vertical > .submStartSmall + .submStart,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall + .submStart, .tx-mathematicians .btn-group-vertical > .submStartSmall + .submStart, .tx-mathematicians .btn-group-vertical > .submStart + .submStart, .tx_find form
+.tx-mathematicians .btn-group-vertical > .submit + .submStart,
+.tx-mathematicians .tx_find form .btn-group-vertical > .submit + .submStart, .tx_find form .btn-group-vertical > .btn + .submit, .csc-form-element-submit .tx_find form .btn-group-vertical > input + .submit, .tx_find form .csc-form-element-submit .btn-group-vertical > input + .submit, .tx_find form .btn-group-vertical >
+.powermail_submit + .submit, .header .header-search .tx_find form .btn-group-vertical > .header-search-form_submit + .submit, .tx_find form .header .header-search .btn-group-vertical > .header-search-form_submit + .submit, #pazpar2 .tx_find form .btn-group-vertical > .pz2-submitButton + .submit, .tx_find form #pazpar2 .btn-group-vertical > .pz2-submitButton + .submit, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .btn-group-vertical > .submStartSmall + .submit, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall + .submit, .tx-mathematicians .tx_find form .btn-group-vertical > .submStartSmall + .submit, .tx_find form .tx-mathematicians .btn-group-vertical > .submStartSmall + .submit,
+.tx-mathematicians .tx_find form .btn-group-vertical > .submStart + .submit, .tx_find form
+.tx-mathematicians .btn-group-vertical > .submStart + .submit, .tx_find form .btn-group-vertical > .submit + .submit,
 .btn-group-vertical > .btn + .btn-group, .csc-form-element-submit
 .btn-group-vertical > input + .btn-group,
 .btn-group-vertical >
-.submStartSmall + .btn-group,
-.btn-group-vertical >
-.submStart + .btn-group,
-.btn-group-vertical >
 .powermail_submit + .btn-group, .header .header-search
 .btn-group-vertical > .header-search-form_submit + .btn-group, #pazpar2
-.btn-group-vertical > .pz2-submitButton + .btn-group,
+.btn-group-vertical > .pz2-submitButton + .btn-group, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .submStartSmall + .btn-group, .tx-mathematicians
+.btn-group-vertical > .submStartSmall + .btn-group,
+.tx-mathematicians
+.btn-group-vertical > .submStart + .btn-group, .tx_find form
+.btn-group-vertical > .submit + .btn-group,
 .btn-group-vertical > .btn-group + .btn, .csc-form-element-submit
 .btn-group-vertical > .btn-group + input,
 .btn-group-vertical > .btn-group +
-.submStartSmall,
-.btn-group-vertical > .btn-group +
-.submStart,
-.btn-group-vertical > .btn-group +
 .powermail_submit, .header .header-search
 .btn-group-vertical > .btn-group + .header-search-form_submit, #pazpar2
-.btn-group-vertical > .btn-group + .pz2-submitButton,
+.btn-group-vertical > .btn-group + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .btn-group + .submStartSmall, .tx-mathematicians
+.btn-group-vertical > .btn-group + .submStartSmall,
+.tx-mathematicians
+.btn-group-vertical > .btn-group + .submStart, .tx_find form
+.btn-group-vertical > .btn-group + .submit,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
 .btn-group-vertical > .btn:not(:first-child):not(:last-child), .csc-form-element-submit .btn-group-vertical > input:not(:first-child):not(:last-child), .btn-group-vertical >
-.submStartSmall:not(:first-child):not(:last-child), .btn-group-vertical >
-.submStart:not(:first-child):not(:last-child), .btn-group-vertical >
-.powermail_submit:not(:first-child):not(:last-child), .header .header-search .btn-group-vertical > .header-search-form_submit:not(:first-child):not(:last-child), #pazpar2 .btn-group-vertical > .pz2-submitButton:not(:first-child):not(:last-child) {
+.powermail_submit:not(:first-child):not(:last-child), .header .header-search .btn-group-vertical > .header-search-form_submit:not(:first-child):not(:last-child), #pazpar2 .btn-group-vertical > .pz2-submitButton:not(:first-child):not(:last-child), .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .submStartSmall:not(:first-child):not(:last-child), .tx-mathematicians .btn-group-vertical > .submStartSmall:not(:first-child):not(:last-child),
+.tx-mathematicians .btn-group-vertical > .submStart:not(:first-child):not(:last-child), .tx_find form .btn-group-vertical > .submit:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .csc-form-element-submit .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
-.submStartSmall, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
-.submStart, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
-.powermail_submit, .header .header-search .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit, #pazpar2 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .pz2-submitButton {
+.powermail_submit, .header .header-search .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .header-search-form_submit, #pazpar2 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .submStartSmall, .tx-mathematicians .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .submStartSmall,
+.tx-mathematicians .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .submStart, .tx_find form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .submit {
   border-radius: 0;
 }
 
 [data-toggle="buttons"] > .btn input[type="radio"], .csc-form-element-submit [data-toggle="buttons"] > input input[type="radio"], [data-toggle="buttons"] >
-.submStartSmall input[type="radio"], [data-toggle="buttons"] >
-.submStart input[type="radio"], [data-toggle="buttons"] >
-.powermail_submit input[type="radio"], .header .header-search [data-toggle="buttons"] > .header-search-form_submit input[type="radio"], #pazpar2 [data-toggle="buttons"] > .pz2-submitButton input[type="radio"],
+.powermail_submit input[type="radio"], .header .header-search [data-toggle="buttons"] > .header-search-form_submit input[type="radio"], #pazpar2 [data-toggle="buttons"] > .pz2-submitButton input[type="radio"], .tx-ezbrequest-pi1 #ezb_search_form [data-toggle="buttons"] > .submStartSmall input[type="radio"], .tx-mathematicians [data-toggle="buttons"] > .submStartSmall input[type="radio"],
+.tx-mathematicians [data-toggle="buttons"] > .submStart input[type="radio"], .tx_find form [data-toggle="buttons"] > .submit input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"], .csc-form-element-submit
 [data-toggle="buttons"] > input input[type="checkbox"],
 [data-toggle="buttons"] >
-.submStartSmall input[type="checkbox"],
-[data-toggle="buttons"] >
-.submStart input[type="checkbox"],
-[data-toggle="buttons"] >
 .powermail_submit input[type="checkbox"], .header .header-search
 [data-toggle="buttons"] > .header-search-form_submit input[type="checkbox"], #pazpar2
-[data-toggle="buttons"] > .pz2-submitButton input[type="checkbox"],
+[data-toggle="buttons"] > .pz2-submitButton input[type="checkbox"], .tx-ezbrequest-pi1 #ezb_search_form
+[data-toggle="buttons"] > .submStartSmall input[type="checkbox"], .tx-mathematicians
+[data-toggle="buttons"] > .submStartSmall input[type="checkbox"],
+.tx-mathematicians
+[data-toggle="buttons"] > .submStart input[type="checkbox"], .tx_find form
+[data-toggle="buttons"] > .submit input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"], .csc-form-element-submit
 [data-toggle="buttons"] > .btn-group > input input[type="radio"],
 [data-toggle="buttons"] > .btn-group >
-.submStartSmall input[type="radio"],
-[data-toggle="buttons"] > .btn-group >
-.submStart input[type="radio"],
-[data-toggle="buttons"] > .btn-group >
 .powermail_submit input[type="radio"], .header .header-search
 [data-toggle="buttons"] > .btn-group > .header-search-form_submit input[type="radio"], #pazpar2
-[data-toggle="buttons"] > .btn-group > .pz2-submitButton input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .pz2-submitButton input[type="radio"], .tx-ezbrequest-pi1 #ezb_search_form
+[data-toggle="buttons"] > .btn-group > .submStartSmall input[type="radio"], .tx-mathematicians
+[data-toggle="buttons"] > .btn-group > .submStartSmall input[type="radio"],
+.tx-mathematicians
+[data-toggle="buttons"] > .btn-group > .submStart input[type="radio"], .tx_find form
+[data-toggle="buttons"] > .btn-group > .submit input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], .csc-form-element-submit
 [data-toggle="buttons"] > .btn-group > input input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group >
-.submStartSmall input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group >
-.submStart input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group >
 .powermail_submit input[type="checkbox"], .header .header-search
 [data-toggle="buttons"] > .btn-group > .header-search-form_submit input[type="checkbox"], #pazpar2
-[data-toggle="buttons"] > .btn-group > .pz2-submitButton input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > .pz2-submitButton input[type="checkbox"], .tx-ezbrequest-pi1 #ezb_search_form
+[data-toggle="buttons"] > .btn-group > .submStartSmall input[type="checkbox"], .tx-mathematicians
+[data-toggle="buttons"] > .btn-group > .submStartSmall input[type="checkbox"],
+.tx-mathematicians
+[data-toggle="buttons"] > .btn-group > .submStart input[type="checkbox"], .tx_find form
+[data-toggle="buttons"] > .btn-group > .submit input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -6420,11 +6608,10 @@ tbody.collapse.show {
   width: 100%;
 }
 
-.input-group .csc-form-element-textline input[type=text], .csc-form-element-textline .input-group input[type=text], .input-group
-.iputStart, .input-group
+.input-group .form-control, .input-group .csc-form-element-textline input[type=text], .csc-form-element-textline .input-group input[type=text], .input-group
 .powermail_input, .input-group
-.form-control, .input-group
-.powermail_textarea, .input-group .header .header-search input, .header .header-search .input-group input, .input-group #pazpar2 .pz2-searchField, #pazpar2 .input-group .pz2-searchField {
+.powermail_textarea, .input-group .csc-form-element-select select, .csc-form-element-select .input-group select, .input-group
+.powermail_select, .input-group .header .header-search input, .header .header-search .input-group input, .input-group #pazpar2 .pz2-months, #pazpar2 .input-group .pz2-months, .input-group #pazpar2 .pz2-searchField, #pazpar2 .input-group .pz2-searchField, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text], .input-group .tx-mathematicians .iputStart, .tx-mathematicians .input-group .iputStart, .input-group .tx_find .fieldContainer input, .tx_find .fieldContainer .input-group input {
   position: relative;
   z-index: 2;
   -webkit-box-flex: 1;
@@ -6434,38 +6621,44 @@ tbody.collapse.show {
   margin-bottom: 0;
 }
 
-.input-group .csc-form-element-textline input[type=text]:focus, .csc-form-element-textline .input-group input[type=text]:focus, .input-group
-.iputStart:focus, .input-group
+.input-group .form-control:focus, .input-group .csc-form-element-textline input[type=text]:focus, .csc-form-element-textline .input-group input[type=text]:focus, .input-group
 .powermail_input:focus, .input-group
-.form-control:focus, .input-group
-.powermail_textarea:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group #pazpar2 .pz2-searchField:focus, #pazpar2 .input-group .pz2-searchField:focus, .input-group .csc-form-element-textline input[type=text]:active, .csc-form-element-textline .input-group input[type=text]:active, .input-group
-.iputStart:active, .input-group
+.powermail_textarea:focus, .input-group .csc-form-element-select select:focus, .csc-form-element-select .input-group select:focus, .input-group
+.powermail_select:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group #pazpar2 .pz2-months:focus, #pazpar2 .input-group .pz2-months:focus, .input-group #pazpar2 .pz2-searchField:focus, #pazpar2 .input-group .pz2-searchField:focus, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:focus, .input-group .tx-mathematicians .iputStart:focus, .tx-mathematicians .input-group .iputStart:focus, .input-group .tx_find .fieldContainer input:focus, .tx_find .fieldContainer .input-group input:focus, .input-group .form-control:active, .input-group .csc-form-element-textline input[type=text]:active, .csc-form-element-textline .input-group input[type=text]:active, .input-group
 .powermail_input:active, .input-group
-.form-control:active, .input-group
-.powermail_textarea:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group #pazpar2 .pz2-searchField:active, #pazpar2 .input-group .pz2-searchField:active, .input-group .csc-form-element-textline input[type=text]:hover, .csc-form-element-textline .input-group input[type=text]:hover, .input-group
-.iputStart:hover, .input-group
+.powermail_textarea:active, .input-group .csc-form-element-select select:active, .csc-form-element-select .input-group select:active, .input-group
+.powermail_select:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group #pazpar2 .pz2-months:active, #pazpar2 .input-group .pz2-months:active, .input-group #pazpar2 .pz2-searchField:active, #pazpar2 .input-group .pz2-searchField:active, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:active, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:active, .input-group .tx-mathematicians .iputStart:active, .tx-mathematicians .input-group .iputStart:active, .input-group .tx_find .fieldContainer input:active, .tx_find .fieldContainer .input-group input:active, .input-group .form-control:hover, .input-group .csc-form-element-textline input[type=text]:hover, .csc-form-element-textline .input-group input[type=text]:hover, .input-group
 .powermail_input:hover, .input-group
-.form-control:hover, .input-group
-.powermail_textarea:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover, .input-group #pazpar2 .pz2-searchField:hover, #pazpar2 .input-group .pz2-searchField:hover {
+.powermail_textarea:hover, .input-group .csc-form-element-select select:hover, .csc-form-element-select .input-group select:hover, .input-group
+.powermail_select:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover, .input-group #pazpar2 .pz2-months:hover, #pazpar2 .input-group .pz2-months:hover, .input-group #pazpar2 .pz2-searchField:hover, #pazpar2 .input-group .pz2-searchField:hover, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:hover, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:hover, .input-group .tx-mathematicians .iputStart:hover, .tx-mathematicians .input-group .iputStart:hover, .input-group .tx_find .fieldContainer input:hover, .tx_find .fieldContainer .input-group input:hover {
   z-index: 3;
 }
 
 .input-group-addon,
 .input-group-btn,
+.input-group .form-control,
 .input-group .csc-form-element-textline input[type=text], .csc-form-element-textline
 .input-group input[type=text],
 .input-group
-.iputStart,
-.input-group
 .powermail_input,
 .input-group
-.form-control,
-.input-group
 .powermail_textarea,
+.input-group .csc-form-element-select select, .csc-form-element-select
+.input-group select,
+.input-group
+.powermail_select,
 .input-group .header .header-search input, .header .header-search
 .input-group input,
+.input-group #pazpar2 .pz2-months, #pazpar2
+.input-group .pz2-months,
 .input-group #pazpar2 .pz2-searchField, #pazpar2
-.input-group .pz2-searchField {
+.input-group .pz2-searchField,
+.input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form
+.input-group input[type=text],
+.input-group .tx-mathematicians .iputStart, .tx-mathematicians
+.input-group .iputStart,
+.input-group .tx_find .fieldContainer input, .tx_find .fieldContainer
+.input-group input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6493,34 +6686,36 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.input-group-addon.form-control-sm, .csc-form-element-textline .input-group-sm > input.input-group-addon[type=text], .header .header-search .input-group-sm > input.input-group-addon, #pazpar2 .input-group-sm > .input-group-addon.pz2-searchField,
+.input-group-addon.form-control-sm, .csc-form-element-textline .input-group-sm > input.input-group-addon[type=text], .csc-form-element-select .input-group-sm > select.input-group-addon, .header .header-search .input-group-sm > input.input-group-addon, #pazpar2 .input-group-sm > .input-group-addon.pz2-months, #pazpar2 .input-group-sm > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.input-group-addon[type=text], .tx-mathematicians .input-group-sm > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-sm > input.input-group-addon,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn, .csc-form-element-submit
 .input-group-sm > .input-group-btn > input.input-group-addon,
 .input-group-sm > .input-group-btn >
-.input-group-addon.submStartSmall,
-.input-group-sm > .input-group-btn >
-.input-group-addon.submStart,
-.input-group-sm > .input-group-btn >
 .input-group-addon.powermail_submit, .header .header-search
 .input-group-sm > .input-group-btn > .input-group-addon.header-search-form_submit, #pazpar2
-.input-group-sm > .input-group-btn > .input-group-addon.pz2-submitButton {
+.input-group-sm > .input-group-btn > .input-group-addon.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-sm > .input-group-btn > .input-group-addon.submStartSmall, .tx-mathematicians
+.input-group-sm > .input-group-btn > .input-group-addon.submStartSmall,
+.tx-mathematicians
+.input-group-sm > .input-group-btn > .input-group-addon.submStart, .tx_find form
+.input-group-sm > .input-group-btn > .input-group-addon.submit {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
 
-.input-group-addon.form-control-lg, .csc-form-element-textline .input-group-lg > input.input-group-addon[type=text], .header .header-search .input-group-lg > input.input-group-addon, #pazpar2 .input-group-lg > .input-group-addon.pz2-searchField,
+.input-group-addon.form-control-lg, .csc-form-element-textline .input-group-lg > input.input-group-addon[type=text], .csc-form-element-select .input-group-lg > select.input-group-addon, .header .header-search .input-group-lg > input.input-group-addon, #pazpar2 .input-group-lg > .input-group-addon.pz2-months, #pazpar2 .input-group-lg > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.input-group-addon[type=text], .tx-mathematicians .input-group-lg > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-lg > input.input-group-addon,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn, .csc-form-element-submit
 .input-group-lg > .input-group-btn > input.input-group-addon,
 .input-group-lg > .input-group-btn >
-.input-group-addon.submStartSmall,
-.input-group-lg > .input-group-btn >
-.input-group-addon.submStart,
-.input-group-lg > .input-group-btn >
 .input-group-addon.powermail_submit, .header .header-search
 .input-group-lg > .input-group-btn > .input-group-addon.header-search-form_submit, #pazpar2
-.input-group-lg > .input-group-btn > .input-group-addon.pz2-submitButton {
+.input-group-lg > .input-group-btn > .input-group-addon.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
+.input-group-lg > .input-group-btn > .input-group-addon.submStartSmall, .tx-mathematicians
+.input-group-lg > .input-group-btn > .input-group-addon.submStartSmall,
+.tx-mathematicians
+.input-group-lg > .input-group-btn > .input-group-addon.submStart, .tx_find form
+.input-group-lg > .input-group-btn > .input-group-addon.submit {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
 }
@@ -6534,11 +6729,10 @@ tbody.collapse.show {
   border-right: 0;
 }
 
-.csc-form-element-textline input[type=text] + .input-group-addon:not(:first-child),
-.iputStart + .input-group-addon:not(:first-child),
+.form-control + .input-group-addon:not(:first-child), .csc-form-element-textline input[type=text] + .input-group-addon:not(:first-child),
 .powermail_input + .input-group-addon:not(:first-child),
-.form-control + .input-group-addon:not(:first-child),
-.powermail_textarea + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child), #pazpar2 .pz2-searchField + .input-group-addon:not(:first-child) {
+.powermail_textarea + .input-group-addon:not(:first-child), .csc-form-element-select select + .input-group-addon:not(:first-child),
+.powermail_select + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child), #pazpar2 .pz2-months + .input-group-addon:not(:first-child), #pazpar2 .pz2-searchField + .input-group-addon:not(:first-child), .tx-ezbrequest-pi1 #ezb_search_form input[type=text] + .input-group-addon:not(:first-child), .tx-mathematicians .iputStart + .input-group-addon:not(:first-child), .tx_find .fieldContainer input + .input-group-addon:not(:first-child) {
   border-left: 0;
 }
 
@@ -6549,100 +6743,91 @@ tbody.collapse.show {
 }
 
 .input-group-btn > .btn, .csc-form-element-submit .input-group-btn > input, .input-group-btn >
-.submStartSmall, .input-group-btn >
-.submStart, .input-group-btn >
-.powermail_submit, .header .header-search .input-group-btn > .header-search-form_submit, #pazpar2 .input-group-btn > .pz2-submitButton {
+.powermail_submit, .header .header-search .input-group-btn > .header-search-form_submit, #pazpar2 .input-group-btn > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall, .tx-mathematicians .input-group-btn > .submStartSmall,
+.tx-mathematicians .input-group-btn > .submStart, .tx_find form .input-group-btn > .submit {
   position: relative;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .input-group-btn > .btn + .btn, .csc-form-element-submit .input-group-btn > input + .btn, .input-group-btn >
-.submStartSmall + .btn, .input-group-btn >
-.submStart + .btn, .input-group-btn >
-.powermail_submit + .btn, .header .header-search .input-group-btn > .header-search-form_submit + .btn, #pazpar2 .input-group-btn > .pz2-submitButton + .btn, .csc-form-element-submit .input-group-btn > .btn + input, .csc-form-element-submit .input-group-btn > input + input, .csc-form-element-submit .input-group-btn >
-.submStartSmall + input, .csc-form-element-submit .input-group-btn >
-.submStart + input, .csc-form-element-submit .input-group-btn >
-.powermail_submit + input, .header .header-search .csc-form-element-submit .input-group-btn > .header-search-form_submit + input, .csc-form-element-submit .header .header-search .input-group-btn > .header-search-form_submit + input, #pazpar2 .csc-form-element-submit .input-group-btn > .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .input-group-btn > .pz2-submitButton + input, .input-group-btn > .btn +
-.submStartSmall, .csc-form-element-submit .input-group-btn > input +
-.submStartSmall, .input-group-btn >
-.submStartSmall +
-.submStartSmall, .input-group-btn >
-.submStart +
-.submStartSmall, .input-group-btn >
-.powermail_submit +
-.submStartSmall, .header .header-search .input-group-btn > .header-search-form_submit +
-.submStartSmall, #pazpar2 .input-group-btn > .pz2-submitButton +
-.submStartSmall, .input-group-btn > .btn +
-.submStart, .csc-form-element-submit .input-group-btn > input +
-.submStart, .input-group-btn >
-.submStartSmall +
-.submStart, .input-group-btn >
-.submStart +
-.submStart, .input-group-btn >
-.powermail_submit +
-.submStart, .header .header-search .input-group-btn > .header-search-form_submit +
-.submStart, #pazpar2 .input-group-btn > .pz2-submitButton +
-.submStart, .input-group-btn > .btn +
+.powermail_submit + .btn, .header .header-search .input-group-btn > .header-search-form_submit + .btn, #pazpar2 .input-group-btn > .pz2-submitButton + .btn, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + .btn, .tx-mathematicians .input-group-btn > .submStartSmall + .btn,
+.tx-mathematicians .input-group-btn > .submStart + .btn, .tx_find form .input-group-btn > .submit + .btn, .csc-form-element-submit .input-group-btn > .btn + input, .csc-form-element-submit .input-group-btn > input + input, .csc-form-element-submit .input-group-btn >
+.powermail_submit + input, .header .header-search .csc-form-element-submit .input-group-btn > .header-search-form_submit + input, .csc-form-element-submit .header .header-search .input-group-btn > .header-search-form_submit + input, #pazpar2 .csc-form-element-submit .input-group-btn > .pz2-submitButton + input, .csc-form-element-submit #pazpar2 .input-group-btn > .pz2-submitButton + input, .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit .input-group-btn > .submStartSmall + input, .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + input, .tx-mathematicians .csc-form-element-submit .input-group-btn > .submStartSmall + input, .csc-form-element-submit .tx-mathematicians .input-group-btn > .submStartSmall + input,
+.tx-mathematicians .csc-form-element-submit .input-group-btn > .submStart + input, .csc-form-element-submit
+.tx-mathematicians .input-group-btn > .submStart + input, .tx_find form .csc-form-element-submit .input-group-btn > .submit + input, .csc-form-element-submit .tx_find form .input-group-btn > .submit + input, .input-group-btn > .btn +
 .powermail_submit, .csc-form-element-submit .input-group-btn > input +
-.powermail_submit, .input-group-btn >
-.submStartSmall +
-.powermail_submit, .input-group-btn >
-.submStart +
 .powermail_submit, .input-group-btn >
 .powermail_submit +
 .powermail_submit, .header .header-search .input-group-btn > .header-search-form_submit +
 .powermail_submit, #pazpar2 .input-group-btn > .pz2-submitButton +
+.powermail_submit, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall +
+.powermail_submit, .tx-mathematicians .input-group-btn > .submStartSmall +
+.powermail_submit,
+.tx-mathematicians .input-group-btn > .submStart +
+.powermail_submit, .tx_find form .input-group-btn > .submit +
 .powermail_submit, .header .header-search .input-group-btn > .btn + .header-search-form_submit, .csc-form-element-submit .header .header-search .input-group-btn > input + .header-search-form_submit, .header .header-search .csc-form-element-submit .input-group-btn > input + .header-search-form_submit, .header .header-search .input-group-btn >
-.submStartSmall + .header-search-form_submit, .header .header-search .input-group-btn >
-.submStart + .header-search-form_submit, .header .header-search .input-group-btn >
-.powermail_submit + .header-search-form_submit, .header .header-search .input-group-btn > .header-search-form_submit + .header-search-form_submit, #pazpar2 .header .header-search .input-group-btn > .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .input-group-btn > .pz2-submitButton + .header-search-form_submit, #pazpar2 .input-group-btn > .btn + .pz2-submitButton, .csc-form-element-submit #pazpar2 .input-group-btn > input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .input-group-btn > input + .pz2-submitButton, #pazpar2 .input-group-btn >
-.submStartSmall + .pz2-submitButton, #pazpar2 .input-group-btn >
-.submStart + .pz2-submitButton, #pazpar2 .input-group-btn >
-.powermail_submit + .pz2-submitButton, .header .header-search #pazpar2 .input-group-btn > .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .input-group-btn > .header-search-form_submit + .pz2-submitButton, #pazpar2 .input-group-btn > .pz2-submitButton + .pz2-submitButton {
+.powermail_submit + .header-search-form_submit, .header .header-search .input-group-btn > .header-search-form_submit + .header-search-form_submit, #pazpar2 .header .header-search .input-group-btn > .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .input-group-btn > .pz2-submitButton + .header-search-form_submit, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .input-group-btn > .submStartSmall + .header-search-form_submit, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + .header-search-form_submit, .tx-mathematicians .header .header-search .input-group-btn > .submStartSmall + .header-search-form_submit, .header .header-search .tx-mathematicians .input-group-btn > .submStartSmall + .header-search-form_submit,
+.tx-mathematicians .header .header-search .input-group-btn > .submStart + .header-search-form_submit, .header .header-search
+.tx-mathematicians .input-group-btn > .submStart + .header-search-form_submit, .tx_find form .header .header-search .input-group-btn > .submit + .header-search-form_submit, .header .header-search .tx_find form .input-group-btn > .submit + .header-search-form_submit, #pazpar2 .input-group-btn > .btn + .pz2-submitButton, .csc-form-element-submit #pazpar2 .input-group-btn > input + .pz2-submitButton, #pazpar2 .csc-form-element-submit .input-group-btn > input + .pz2-submitButton, #pazpar2 .input-group-btn >
+.powermail_submit + .pz2-submitButton, .header .header-search #pazpar2 .input-group-btn > .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .input-group-btn > .header-search-form_submit + .pz2-submitButton, #pazpar2 .input-group-btn > .pz2-submitButton + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .input-group-btn > .submStartSmall + .pz2-submitButton, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + .pz2-submitButton, .tx-mathematicians #pazpar2 .input-group-btn > .submStartSmall + .pz2-submitButton, #pazpar2 .tx-mathematicians .input-group-btn > .submStartSmall + .pz2-submitButton,
+.tx-mathematicians #pazpar2 .input-group-btn > .submStart + .pz2-submitButton, #pazpar2
+.tx-mathematicians .input-group-btn > .submStart + .pz2-submitButton, .tx_find form #pazpar2 .input-group-btn > .submit + .pz2-submitButton, #pazpar2 .tx_find form .input-group-btn > .submit + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .btn + .submStartSmall, .csc-form-element-submit .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .csc-form-element-submit .input-group-btn > input + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn >
+.powermail_submit + .submStartSmall, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .header-search-form_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .input-group-btn > .header-search-form_submit + .submStartSmall, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .input-group-btn > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + .submStartSmall,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStart + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .input-group-btn > .submStart + .submStartSmall, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .input-group-btn > .submit + .submStartSmall, .tx-mathematicians .input-group-btn > .btn + .submStartSmall, .csc-form-element-submit .tx-mathematicians .input-group-btn > input + .submStartSmall, .tx-mathematicians .csc-form-element-submit .input-group-btn > input + .submStartSmall, .tx-mathematicians .input-group-btn >
+.powermail_submit + .submStartSmall, .header .header-search .tx-mathematicians .input-group-btn > .header-search-form_submit + .submStartSmall, .tx-mathematicians .header .header-search .input-group-btn > .header-search-form_submit + .submStartSmall, #pazpar2 .tx-mathematicians .input-group-btn > .pz2-submitButton + .submStartSmall, .tx-mathematicians #pazpar2 .input-group-btn > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx-mathematicians .input-group-btn > .submStartSmall + .submStartSmall, .tx-mathematicians .input-group-btn > .submStartSmall + .submStartSmall, .tx-mathematicians .input-group-btn > .submStart + .submStartSmall, .tx_find form .tx-mathematicians .input-group-btn > .submit + .submStartSmall, .tx-mathematicians .tx_find form .input-group-btn > .submit + .submStartSmall,
+.tx-mathematicians .input-group-btn > .btn + .submStart, .csc-form-element-submit
+.tx-mathematicians .input-group-btn > input + .submStart,
+.tx-mathematicians .csc-form-element-submit .input-group-btn > input + .submStart,
+.tx-mathematicians .input-group-btn >
+.powermail_submit + .submStart, .header .header-search
+.tx-mathematicians .input-group-btn > .header-search-form_submit + .submStart,
+.tx-mathematicians .header .header-search .input-group-btn > .header-search-form_submit + .submStart, #pazpar2
+.tx-mathematicians .input-group-btn > .pz2-submitButton + .submStart,
+.tx-mathematicians #pazpar2 .input-group-btn > .pz2-submitButton + .submStart, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .input-group-btn > .submStartSmall + .submStart,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + .submStart, .tx-mathematicians .input-group-btn > .submStartSmall + .submStart, .tx-mathematicians .input-group-btn > .submStart + .submStart, .tx_find form
+.tx-mathematicians .input-group-btn > .submit + .submStart,
+.tx-mathematicians .tx_find form .input-group-btn > .submit + .submStart, .tx_find form .input-group-btn > .btn + .submit, .csc-form-element-submit .tx_find form .input-group-btn > input + .submit, .tx_find form .csc-form-element-submit .input-group-btn > input + .submit, .tx_find form .input-group-btn >
+.powermail_submit + .submit, .header .header-search .tx_find form .input-group-btn > .header-search-form_submit + .submit, .tx_find form .header .header-search .input-group-btn > .header-search-form_submit + .submit, #pazpar2 .tx_find form .input-group-btn > .pz2-submitButton + .submit, .tx_find form #pazpar2 .input-group-btn > .pz2-submitButton + .submit, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .input-group-btn > .submStartSmall + .submit, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + .submit, .tx-mathematicians .tx_find form .input-group-btn > .submStartSmall + .submit, .tx_find form .tx-mathematicians .input-group-btn > .submStartSmall + .submit,
+.tx-mathematicians .tx_find form .input-group-btn > .submStart + .submit, .tx_find form
+.tx-mathematicians .input-group-btn > .submStart + .submit, .tx_find form .input-group-btn > .submit + .submit {
   margin-left: -1px;
 }
 
 .input-group-btn > .btn:focus, .csc-form-element-submit .input-group-btn > input:focus, .input-group-btn >
-.submStartSmall:focus, .input-group-btn >
-.submStart:focus, .input-group-btn >
-.powermail_submit:focus, .header .header-search .input-group-btn > .header-search-form_submit:focus, #pazpar2 .input-group-btn > .pz2-submitButton:focus, .input-group-btn > .btn:active, .csc-form-element-submit .input-group-btn > input:active, .input-group-btn >
-.submStartSmall:active, .input-group-btn >
-.submStart:active, .input-group-btn >
-.powermail_submit:active, .header .header-search .input-group-btn > .header-search-form_submit:active, #pazpar2 .input-group-btn > .pz2-submitButton:active, .input-group-btn > .btn:hover, .csc-form-element-submit .input-group-btn > input:hover, .input-group-btn >
-.submStartSmall:hover, .input-group-btn >
-.submStart:hover, .input-group-btn >
-.powermail_submit:hover, .header .header-search .input-group-btn > .header-search-form_submit:hover, #pazpar2 .input-group-btn > .pz2-submitButton:hover {
+.powermail_submit:focus, .header .header-search .input-group-btn > .header-search-form_submit:focus, #pazpar2 .input-group-btn > .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall:focus, .tx-mathematicians .input-group-btn > .submStartSmall:focus,
+.tx-mathematicians .input-group-btn > .submStart:focus, .tx_find form .input-group-btn > .submit:focus, .input-group-btn > .btn:active, .csc-form-element-submit .input-group-btn > input:active, .input-group-btn >
+.powermail_submit:active, .header .header-search .input-group-btn > .header-search-form_submit:active, #pazpar2 .input-group-btn > .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall:active, .tx-mathematicians .input-group-btn > .submStartSmall:active,
+.tx-mathematicians .input-group-btn > .submStart:active, .tx_find form .input-group-btn > .submit:active, .input-group-btn > .btn:hover, .csc-form-element-submit .input-group-btn > input:hover, .input-group-btn >
+.powermail_submit:hover, .header .header-search .input-group-btn > .header-search-form_submit:hover, #pazpar2 .input-group-btn > .pz2-submitButton:hover, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall:hover, .tx-mathematicians .input-group-btn > .submStartSmall:hover,
+.tx-mathematicians .input-group-btn > .submStart:hover, .tx_find form .input-group-btn > .submit:hover {
   z-index: 3;
 }
 
 .input-group-btn:not(:last-child) > .btn, .csc-form-element-submit .input-group-btn:not(:last-child) > input, .input-group-btn:not(:last-child) >
-.submStartSmall, .input-group-btn:not(:last-child) >
-.submStart, .input-group-btn:not(:last-child) >
-.powermail_submit, .header .header-search .input-group-btn:not(:last-child) > .header-search-form_submit, #pazpar2 .input-group-btn:not(:last-child) > .pz2-submitButton,
+.powermail_submit, .header .header-search .input-group-btn:not(:last-child) > .header-search-form_submit, #pazpar2 .input-group-btn:not(:last-child) > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:not(:last-child) > .submStartSmall, .tx-mathematicians .input-group-btn:not(:last-child) > .submStartSmall,
+.tx-mathematicians .input-group-btn:not(:last-child) > .submStart, .tx_find form .input-group-btn:not(:last-child) > .submit,
 .input-group-btn:not(:last-child) > .btn-group {
   margin-right: -1px;
 }
 
 .input-group-btn:not(:first-child) > .btn, .csc-form-element-submit .input-group-btn:not(:first-child) > input, .input-group-btn:not(:first-child) >
-.submStartSmall, .input-group-btn:not(:first-child) >
-.submStart, .input-group-btn:not(:first-child) >
-.powermail_submit, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton,
+.powermail_submit, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:not(:first-child) > .submStartSmall, .tx-mathematicians .input-group-btn:not(:first-child) > .submStartSmall,
+.tx-mathematicians .input-group-btn:not(:first-child) > .submStart, .tx_find form .input-group-btn:not(:first-child) > .submit,
 .input-group-btn:not(:first-child) > .btn-group {
   z-index: 2;
   margin-left: -1px;
 }
 
 .input-group-btn:not(:first-child) > .btn:focus, .csc-form-element-submit .input-group-btn:not(:first-child) > input:focus, .input-group-btn:not(:first-child) >
-.submStartSmall:focus, .input-group-btn:not(:first-child) >
-.submStart:focus, .input-group-btn:not(:first-child) >
-.powermail_submit:focus, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:focus, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:focus, .input-group-btn:not(:first-child) > .btn:active, .csc-form-element-submit .input-group-btn:not(:first-child) > input:active, .input-group-btn:not(:first-child) >
-.submStartSmall:active, .input-group-btn:not(:first-child) >
-.submStart:active, .input-group-btn:not(:first-child) >
-.powermail_submit:active, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:active, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:active, .input-group-btn:not(:first-child) > .btn:hover, .csc-form-element-submit .input-group-btn:not(:first-child) > input:hover, .input-group-btn:not(:first-child) >
-.submStartSmall:hover, .input-group-btn:not(:first-child) >
-.submStart:hover, .input-group-btn:not(:first-child) >
-.powermail_submit:hover, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:hover, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:hover,
+.powermail_submit:focus, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:focus, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:not(:first-child) > .submStartSmall:focus, .tx-mathematicians .input-group-btn:not(:first-child) > .submStartSmall:focus,
+.tx-mathematicians .input-group-btn:not(:first-child) > .submStart:focus, .tx_find form .input-group-btn:not(:first-child) > .submit:focus, .input-group-btn:not(:first-child) > .btn:active, .csc-form-element-submit .input-group-btn:not(:first-child) > input:active, .input-group-btn:not(:first-child) >
+.powermail_submit:active, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:active, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:not(:first-child) > .submStartSmall:active, .tx-mathematicians .input-group-btn:not(:first-child) > .submStartSmall:active,
+.tx-mathematicians .input-group-btn:not(:first-child) > .submStart:active, .tx_find form .input-group-btn:not(:first-child) > .submit:active, .input-group-btn:not(:first-child) > .btn:hover, .csc-form-element-submit .input-group-btn:not(:first-child) > input:hover, .input-group-btn:not(:first-child) >
+.powermail_submit:hover, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:hover, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:hover, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:not(:first-child) > .submStartSmall:hover, .tx-mathematicians .input-group-btn:not(:first-child) > .submStartSmall:hover,
+.tx-mathematicians .input-group-btn:not(:first-child) > .submStart:hover, .tx_find form .input-group-btn:not(:first-child) > .submit:hover,
 .input-group-btn:not(:first-child) > .btn-group:focus,
 .input-group-btn:not(:first-child) > .btn-group:active,
 .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -7665,9 +7850,8 @@ tbody.collapse.show {
 }
 
 .btn .badge, .csc-form-element-submit input .badge,
-.submStartSmall .badge,
-.submStart .badge,
-.powermail_submit .badge, .header .header-search .header-search-form_submit .badge, #pazpar2 .pz2-submitButton .badge {
+.powermail_submit .badge, .header .header-search .header-search-form_submit .badge, #pazpar2 .pz2-submitButton .badge, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall .badge, .tx-mathematicians .submStartSmall .badge,
+.tx-mathematicians .submStart .badge, .tx_find form .submit .badge {
   position: relative;
   top: -1px;
 }
@@ -11833,15 +12017,6 @@ select {
   padding: 0 0 1.6em 1em;
 }
 
-.csc-form-element-select select,
-.powermail_select {
-  width: 320px;
-  height: 32px;
-  background-color: #fff;
-  border: 1px solid #25589a;
-  font-size: 16px;
-}
-
 #simpleSearch,
 #advancedSearch {
   width: 70%;
@@ -11860,17 +12035,10 @@ form .actions {
   clear: both;
 }
 
-.powermail_fieldwrap,
-.form-group,
-.csc-form-element {
-  margin: .5em 0;
-  float: left;
-  clear: both;
-}
-
 .powermail_legend,
 .csc-mailform legend,
-.form-group legend {
+.form-group legend, .powermail_fieldwrap legend,
+.csc-form-element legend {
   padding: 16px 0;
   font-weight: bold;
 }
@@ -12081,7 +12249,7 @@ form .actions {
 }
 
 #pazpar2 .pz2-mainForm {
-  line-height: 180%;
+  display: none;
 }
 
 #pazpar2 .pz2-fieldsets ul {
@@ -12147,14 +12315,6 @@ form .actions {
   color: #192d57;
 }
 
-#pazpar2 .pz2-months {
-  width: 320px;
-  height: 32px;
-  background-color: #fff;
-  border: 1px solid #25589a;
-  font-size: 16px;
-}
-
 .pz2-recordLink {
   color: #000;
   font-weight: normal;
@@ -12210,23 +12370,6 @@ form .actions {
   display: none;
 }
 
-.tx-ezbrequest-pi1 #navi {
-  height: 2.5em;
-}
-
-.tx-ezbrequest-pi1 #journalNavi {
-  padding: 0 0 .5em;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.tx-ezbrequest-pi1 #journalNavi li, .tx-ezbrequest-pi1 #journalNavi .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 #journalNavi .facetActive {
-  padding: 0;
-}
-
-.tx-ezbrequest-pi1 #journalList {
-  max-width: 80%;
-}
-
 .tx-ezbrequest-pi1 #journalList li, .tx-ezbrequest-pi1 #journalList .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 #journalList .facetActive {
   margin-left: 32px;
   list-style-type: none;
@@ -12240,21 +12383,6 @@ form .actions {
   color: #000;
 }
 
-.tx-ezbrequest-pi1 #ezb_search_form {
-  margin-top: .5em;
-}
-
-.tx-ezbrequest-pi1 #ezb_search_form .iputStartSmall {
-  border: 1px solid #25589a;
-  width: 320px;
-  padding: 4px 12px;
-  margin: 0;
-  background: #fff;
-  font-size: 16px;
-  width: 160px;
-  margin-right: 16px;
-}
-
 .tx-ezbrequest-pi1 .jourItem {
   padding-top: .3em;
 }
@@ -12262,12 +12390,6 @@ form .actions {
 .tx-ezbrequest-pi1 .alphabetMenu li, .tx-ezbrequest-pi1 .alphabetMenu .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tx-ezbrequest-pi1 .alphabetMenu .facetActive {
   margin-left: 0;
   letter-spacing: 1px;
-}
-
-.tx-ezbrequest-pi1 .ezbrequest_itemtable td {
-  border-bottom: 1px solid #f0f0f0;
-  margin-bottom: .5em;
-  padding: .5em;
 }
 
 .tx-ezbrequest-pi1 .journallist-image {
@@ -12445,21 +12567,8 @@ form .actions {
   margin-left: 0;
 }
 
-.tx-mathematicians #genResult table td {
-  border-bottom: 1px solid #f0f0f0;
-  margin-bottom: .5em;
-  padding: .5em;
-}
-
 .tx-mathematicians #simpleSearch {
-  width: 100%;
-  max-width: 900px;
-  min-width: 700px;
-  margin-bottom: 2em;
-}
-
-.tx-mathematicians .iputStart {
-  margin-right: 16px;
+  margin-bottom: 1em;
 }
 
 .tx-mathematicians .mathematicians_collection-header img {
@@ -12537,32 +12646,6 @@ form .actions {
   color: #000;
 }
 
-.tx_find form .submit {
-  background: #25589a;
-  border: 0;
-  color: #fff;
-  width: 160px;
-  min-width: 160px;
-  margin: 0;
-  display: inline;
-  height: 32px;
-  padding: 4px 12px;
-  text-transform: uppercase;
-  border-radius: 0;
-  text-shadow: none;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.tx_find form .submit:hover {
-  border: 1px solid #b5c5e6;
-}
-
-.tx_find form .submit:focus {
-  outline-offset: 0;
-  border: 0;
-}
-
 .tx_find form .submit:active {
   background-color: #f0f0f0;
 }
@@ -12611,15 +12694,6 @@ form .actions {
   margin-bottom: 2px;
   line-height: 1.33em;
   margin-left: 0;
-}
-
-.tx_find .fieldContainer input {
-  border: 1px solid #25589a;
-  width: 320px;
-  padding: 4px 12px;
-  margin: 0;
-  background: #fff;
-  font-size: 16px;
 }
 
 .tx_find .fieldContainer .noleftmargin {

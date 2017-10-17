@@ -3,6 +3,10 @@
         font-weight: bold;
     }
 
+    form {
+        @extend .form-inline;
+    }
+
     .owResult a img {
         padding: .5em;
     }
@@ -11,20 +15,23 @@
         width: 50em;
 
         table {
-            @include table;
+            @extend .table;
             margin-left: 0;
         }
     }
 
     #simpleSearch {
-        width: 100%;
-        max-width: 900px;
-        min-width: 700px;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     .iputStart {
-        margin-right: $font-size;
+        @extend .form-control;
+    }
+
+    .submStartSmall,
+    .submStart {
+        @extend .btn;
+        @extend .btn-primary;
     }
 
     .mathematicians_collection-header {

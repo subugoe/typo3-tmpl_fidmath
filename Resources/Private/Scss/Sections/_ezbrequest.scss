@@ -1,21 +1,14 @@
 .tx-ezbrequest-pi1 {
 
     #navi {
-        height: 2.5em;
+        @extend .row;
     }
 
     #journalNavi {
-        padding: 0 0 .5em;
-        border-bottom: 1px solid $border-color;
-
-        li {
-            padding: 0;
-        }
+        @extend .col-md-7;
     }
 
     #journalList {
-        max-width: 80%;
-
         li {
             margin-left: 2 * $font-size;
             list-style-type: none;
@@ -31,13 +24,19 @@
     }
 
     #ezb_search_form {
+        @extend .col-md-5;
 
-        margin-top: .5em;
+        form {
+            @extend .form-inline;
+        }
 
-        .iputStartSmall {
-            @include input-text;
-            width: ($form-field-width / 2);
-            margin-right: $font-size;
+        input[type=text] {
+            @extend .form-control;
+        }
+
+        .submStartSmall {
+            @extend .btn;
+            @extend .btn-primary;
         }
     }
 
@@ -53,7 +52,7 @@
     }
 
     .ezbrequest_itemtable {
-        @include table;
+        @extend .table;
     }
 
     .journallist-image {

@@ -1,19 +1,15 @@
 .csc-form-element-textline input[type=text],
-.iputStart,
 .powermail_input,
-.form-control,
 .powermail_textarea {
     @extend .form-control;
 }
 
 .csc-form-element-select select,
 .powermail_select {
-    @include input-select;
+    @extend .form-control;
 }
 
 .csc-form-element-submit input,
-.submStartSmall,
-.submStart,
 .powermail_submit {
     @extend .btn;
     @extend .btn-primary;
@@ -40,11 +36,8 @@ form {
 }
 
 .powermail_fieldwrap,
-.form-group,
 .csc-form-element {
-    margin: .5em 0;
-    float: left;
-    clear: both;
+    @extend .form-group;
 }
 
 .powermail_legend,
