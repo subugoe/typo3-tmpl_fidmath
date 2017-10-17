@@ -6,14 +6,24 @@
             </f:link.page>
         </div>
         <div class="header-meta col-md-4 ml-auto">
-            <ul class="meta-navigation">
-                <f:cObject typoscriptObjectPath="lib.metaNavigation"/>
-                <li class="metanavigation-element">
-                    <span class="navbar-text languagemenu">
-                        <f:link.page additionalParams="{L: \" {f:translate(key:'header-languageswitch-id')}\"}" addQueryString="true" addQueryStringMethod="GET" class="languagemenu_switch">{f:translate(key: 'header-languageswitch')}</f:link.page>
-                    </span>
-                </li>
-            </ul>
+            <div class="row">
+                <ul class="meta-navigation">
+                    <f:cObject typoscriptObjectPath="lib.metaNavigation"/>
+                    <li class="metanavigation-element">
+                        <span class="navbar-text languagemenu">
+                            <f:link.page additionalParams="{L: \" {f:translate(key:'header-languageswitch-id')}\"}" addQueryString="true" addQueryStringMethod="GET" class="languagemenu_switch">{f:translate(key: 'header-languageswitch')}</f:link.page>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row header-search">
+                <form class="header-search-form">
+                    <div class="input-group">
+                        <input type="text" name="header-search-form_input" id="header-search-form_input" placeholder="Suche nach mathematischen Inhalten"/><label for="header-search-form_input" class="sr-only">Suche nach mathematischen Inhalten</label>
+                        <button class="input-group-addon header-search-form_submit" type="submit" aria-pressed="true"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

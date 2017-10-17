@@ -4,4 +4,71 @@
     .header-meta {
         display: inline-block;
     }
+
+    .languagemenu {
+        color: $text-color;
+
+        .languagemenu_switch {
+            margin-left: 1em;
+            text-decoration: none;
+
+            &:before {
+                content: '\f0ac';
+                font-family: $icon-font;
+                margin-right: .5em;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .meta-navigation {
+        list-style-type: none;
+        text-align: center;
+
+        .metanavigation-element {
+            display: inline-block;
+            padding: 0;
+        }
+
+        .metanavigation-element_link {
+            display: inline-block;
+            padding: 0 1em;
+            margin: 0;
+            color: $text-color;
+            border-right: 1px solid $border-color;
+            text-decoration: none;
+
+            &.act {
+                font-weight: bold;
+                font-size: 95%;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .header-search {
+        padding-left: 1em;
+
+        input {
+            @extend .form-control;
+            @extend .form-control-lg;
+        }
+
+        .header-search-form_submit {
+            @extend .btn;
+            @extend .btn-primary;
+            @extend .btn-lg;
+
+            width: auto;
+            height: auto;
+            min-width: $font-size;
+        }
+    }
 }
