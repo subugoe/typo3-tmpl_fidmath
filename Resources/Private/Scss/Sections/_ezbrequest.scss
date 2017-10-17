@@ -5,7 +5,7 @@
     }
 
     #journalNavi {
-        @extend .col-md-7;
+        @extend .col-md-8;
     }
 
     #journalList {
@@ -24,7 +24,7 @@
     }
 
     #ezb_search_form {
-        @extend .col-md-5;
+        @extend .col-md-4;
 
         form {
             @extend .form-inline;

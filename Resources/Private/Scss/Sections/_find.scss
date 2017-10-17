@@ -74,9 +74,9 @@ $tab-selected: #263476;
         }
 
         .submit {
-
-@extend .btn;
+            @extend .btn;
             @extend .btn-primary;
+
             &:active {
                 background-color: $border-color;
             }
@@ -208,7 +208,6 @@ $tab-selected: #263476;
     }
 
     /* facets */
-
     .facets {
         order: 3;
         clear: right;
@@ -349,14 +348,9 @@ $tab-selected: #263476;
     }
 
     /* page browser list view */
-
     .pager-list {
         margin-right: 220px;
         text-align: center;
-
-        @include breakpoint('xs') {
-            margin-right: 0;
-        }
 
         a {
             font-weight: normal;

@@ -84,7 +84,7 @@ button {
 }
 
 .hidden {
-    display: none;
+    @extend .sr-only;
 }
 
 input,

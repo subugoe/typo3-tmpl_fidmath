@@ -1,5 +1,6 @@
 .content-container {
     @extend .container;
+
     margin-top: 1em;
     transform: translate(0, 0);
     transition: transform .3s;
