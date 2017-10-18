@@ -19,13 +19,6 @@
     }
 }
 
-form {
-    .actions {
-        float: left;
-        clear: both;
-    }
-}
-
 .powermail_fieldwrap {
     @extend .form-group;
 }
@@ -55,10 +48,8 @@ form {
 }
 
 .powermail_check_outer {
-    float: left;
 
     .powermail_check_inner {
-        float: left;
         margin: 0;
     }
 }

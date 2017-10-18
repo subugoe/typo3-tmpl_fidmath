@@ -3362,7 +3362,7 @@ pre code {
   width: 100%;
 }
 
-.row, .main, .tx-ezbrequest-pi1 #navi, .news-list-header, .content-container .gokContainer.column {
+.row, .main, .tx-ezbrequest-pi1 #navi, .news-list-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4993,7 +4993,9 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 }
 
 .btn:active, .powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:active, .tx-mathematicians .submStartSmall:active,
-.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn.active, .active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-mathematicians .active.submStartSmall,
+.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn.active, .active.powermail_submit, .content-container .gokContainer.column .powermail_submit.close, .header .header-search .active.header-search-form_submit, .header .header-search .content-container .gokContainer.column .header-search-form_submit.close, .content-container .gokContainer.column .header .header-search .header-search-form_submit.close, #pazpar2 .active.pz2-submitButton, #pazpar2 .content-container .gokContainer.column .pz2-submitButton.close, .content-container .gokContainer.column #pazpar2 .pz2-submitButton.close, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column .submStartSmall.close, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall.close, .content-container .gokContainer.column .btn.close, .content-container .gokContainer.column .tx-mathematicians .close.submStartSmall, .tx-mathematicians .content-container .gokContainer.column .close.submStartSmall, .content-container .gokContainer.column
+.tx-mathematicians .close.submStart,
+.tx-mathematicians .content-container .gokContainer.column .close.submStart, .content-container .gokContainer.column .tx_find form .close.submit, .tx_find form .content-container .gokContainer.column .close.submit, .tx-mathematicians .active.submStartSmall,
 .tx-mathematicians .active.submStart, .tx_find form .active.submit {
   background-image: none;
 }
@@ -5048,7 +5050,9 @@ fieldset[disabled] a.submit {
 }
 
 .btn-primary:active, .powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:active, .tx-mathematicians .submStartSmall:active,
-.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn-primary.active, .active.powermail_submit, .header .header-search .active.header-search-form_submit, #pazpar2 .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-mathematicians .active.submStartSmall,
+.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn-primary.active, .active.powermail_submit, .content-container .gokContainer.column .powermail_submit.close, .header .header-search .active.header-search-form_submit, .header .header-search .content-container .gokContainer.column .header-search-form_submit.close, .content-container .gokContainer.column .header .header-search .header-search-form_submit.close, #pazpar2 .active.pz2-submitButton, #pazpar2 .content-container .gokContainer.column .pz2-submitButton.close, .content-container .gokContainer.column #pazpar2 .pz2-submitButton.close, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column .submStartSmall.close, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall.close, .content-container .gokContainer.column .btn-primary.close, .content-container .gokContainer.column .tx-mathematicians .close.submStartSmall, .tx-mathematicians .content-container .gokContainer.column .close.submStartSmall, .content-container .gokContainer.column
+.tx-mathematicians .close.submStart,
+.tx-mathematicians .content-container .gokContainer.column .close.submStart, .content-container .gokContainer.column .tx_find form .close.submit, .tx_find form .content-container .gokContainer.column .close.submit, .tx-mathematicians .active.submStartSmall,
 .tx-mathematicians .active.submStart, .tx_find form .active.submit,
 .show > .btn-primary.dropdown-toggle,
 .show > .dropdown-toggle.powermail_submit, .header .header-search
@@ -5086,7 +5090,7 @@ fieldset[disabled] a.submit {
   border-color: #868e96;
 }
 
-.btn-secondary:active, .btn-secondary.active,
+.btn-secondary:active, .btn-secondary.active, .content-container .gokContainer.column .btn-secondary.close,
 .show > .btn-secondary.dropdown-toggle {
   background-color: #727b84;
   background-image: none;
@@ -5115,7 +5119,7 @@ fieldset[disabled] a.submit {
   border-color: #28a745;
 }
 
-.btn-success:active, .btn-success.active,
+.btn-success:active, .btn-success.active, .content-container .gokContainer.column .btn-success.close,
 .show > .btn-success.dropdown-toggle {
   background-color: #218838;
   background-image: none;
@@ -5144,7 +5148,7 @@ fieldset[disabled] a.submit {
   border-color: #17a2b8;
 }
 
-.btn-info:active, .btn-info.active,
+.btn-info:active, .btn-info.active, .content-container .gokContainer.column .btn-info.close,
 .show > .btn-info.dropdown-toggle {
   background-color: #138496;
   background-image: none;
@@ -5173,7 +5177,7 @@ fieldset[disabled] a.submit {
   border-color: #ffc107;
 }
 
-.btn-warning:active, .btn-warning.active,
+.btn-warning:active, .btn-warning.active, .content-container .gokContainer.column .btn-warning.close,
 .show > .btn-warning.dropdown-toggle {
   background-color: #e0a800;
   background-image: none;
@@ -5202,7 +5206,7 @@ fieldset[disabled] a.submit {
   border-color: #dc3545;
 }
 
-.btn-danger:active, .btn-danger.active,
+.btn-danger:active, .btn-danger.active, .content-container .gokContainer.column .btn-danger.close,
 .show > .btn-danger.dropdown-toggle {
   background-color: #c82333;
   background-image: none;
@@ -5231,7 +5235,7 @@ fieldset[disabled] a.submit {
   border-color: #f8f9fa;
 }
 
-.btn-light:active, .btn-light.active,
+.btn-light:active, .btn-light.active, .content-container .gokContainer.column .btn-light.close,
 .show > .btn-light.dropdown-toggle {
   background-color: #e2e6ea;
   background-image: none;
@@ -5260,7 +5264,7 @@ fieldset[disabled] a.submit {
   border-color: #343a40;
 }
 
-.btn-dark:active, .btn-dark.active,
+.btn-dark:active, .btn-dark.active, .content-container .gokContainer.column .btn-dark.close,
 .show > .btn-dark.dropdown-toggle {
   background-color: #23272b;
   background-image: none;
@@ -5290,7 +5294,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-primary:active, .btn-outline-primary.active,
+.btn-outline-primary:active, .btn-outline-primary.active, .content-container .gokContainer.column .btn-outline-primary.close,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: #25589a;
@@ -5320,7 +5324,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-secondary:active, .btn-outline-secondary.active,
+.btn-outline-secondary:active, .btn-outline-secondary.active, .content-container .gokContainer.column .btn-outline-secondary.close,
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
   background-color: #868e96;
@@ -5350,7 +5354,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-success:active, .btn-outline-success.active,
+.btn-outline-success:active, .btn-outline-success.active, .content-container .gokContainer.column .btn-outline-success.close,
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
   background-color: #28a745;
@@ -5380,7 +5384,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-info:active, .btn-outline-info.active,
+.btn-outline-info:active, .btn-outline-info.active, .content-container .gokContainer.column .btn-outline-info.close,
 .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
   background-color: #17a2b8;
@@ -5410,7 +5414,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-warning:active, .btn-outline-warning.active,
+.btn-outline-warning:active, .btn-outline-warning.active, .content-container .gokContainer.column .btn-outline-warning.close,
 .show > .btn-outline-warning.dropdown-toggle {
   color: #fff;
   background-color: #ffc107;
@@ -5440,7 +5444,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-danger:active, .btn-outline-danger.active,
+.btn-outline-danger:active, .btn-outline-danger.active, .content-container .gokContainer.column .btn-outline-danger.close,
 .show > .btn-outline-danger.dropdown-toggle {
   color: #fff;
   background-color: #dc3545;
@@ -5470,7 +5474,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-light:active, .btn-outline-light.active,
+.btn-outline-light:active, .btn-outline-light.active, .content-container .gokContainer.column .btn-outline-light.close,
 .show > .btn-outline-light.dropdown-toggle {
   color: #fff;
   background-color: #f8f9fa;
@@ -5500,7 +5504,7 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-dark:active, .btn-outline-dark.active,
+.btn-outline-dark:active, .btn-outline-dark.active, .content-container .gokContainer.column .btn-outline-dark.close,
 .show > .btn-outline-dark.dropdown-toggle {
   color: #fff;
   background-color: #343a40;
@@ -5513,7 +5517,7 @@ fieldset[disabled] a.submit {
   border-radius: 0;
 }
 
-.btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
+.btn-link, .btn-link:active, .btn-link.active, .content-container .gokContainer.column .btn-link.close, .btn-link:disabled {
   background-color: transparent;
 }
 
@@ -5680,7 +5684,7 @@ tbody.collapse.show {
   background-color: #f8f9fa;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, .content-container .gokContainer.column .dropdown-item.close, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: #25589a;
@@ -5751,7 +5755,9 @@ tbody.collapse.show {
 
 .btn-group > .btn:focus, .btn-group > .powermail_submit:focus, .header .header-search .btn-group > .header-search-form_submit:focus, #pazpar2 .btn-group > .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:focus, .tx-mathematicians .btn-group > .submStartSmall:focus,
 .tx-mathematicians .btn-group > .submStart:focus, .tx_find form .btn-group > .submit:focus, .btn-group > .btn:active, .btn-group > .powermail_submit:active, .header .header-search .btn-group > .header-search-form_submit:active, #pazpar2 .btn-group > .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:active, .tx-mathematicians .btn-group > .submStartSmall:active,
-.tx-mathematicians .btn-group > .submStart:active, .tx_find form .btn-group > .submit:active, .btn-group > .btn.active, .btn-group > .active.powermail_submit, .header .header-search .btn-group > .active.header-search-form_submit, #pazpar2 .btn-group > .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .active.submStartSmall, .tx-mathematicians .btn-group > .active.submStartSmall,
+.tx-mathematicians .btn-group > .submStart:active, .tx_find form .btn-group > .submit:active, .btn-group > .btn.active, .btn-group > .active.powermail_submit, .content-container .gokContainer.column .btn-group > .powermail_submit.close, .header .header-search .btn-group > .active.header-search-form_submit, .header .header-search .content-container .gokContainer.column .btn-group > .header-search-form_submit.close, .content-container .gokContainer.column .header .header-search .btn-group > .header-search-form_submit.close, #pazpar2 .btn-group > .active.pz2-submitButton, #pazpar2 .content-container .gokContainer.column .btn-group > .pz2-submitButton.close, .content-container .gokContainer.column #pazpar2 .btn-group > .pz2-submitButton.close, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .active.submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column .btn-group > .submStartSmall.close, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall.close, .content-container .gokContainer.column .btn-group > .btn.close, .content-container .gokContainer.column .tx-mathematicians .btn-group > .close.submStartSmall, .tx-mathematicians .content-container .gokContainer.column .btn-group > .close.submStartSmall, .content-container .gokContainer.column
+.tx-mathematicians .btn-group > .close.submStart,
+.tx-mathematicians .content-container .gokContainer.column .btn-group > .close.submStart, .content-container .gokContainer.column .tx_find form .btn-group > .close.submit, .tx_find form .content-container .gokContainer.column .btn-group > .close.submit, .tx-mathematicians .btn-group > .active.submStartSmall,
 .tx-mathematicians .btn-group > .active.submStart, .tx_find form .btn-group > .active.submit,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .powermail_submit:focus, .header .header-search
@@ -5772,10 +5778,26 @@ tbody.collapse.show {
 .btn-group-vertical > .submStart:active, .tx_find form
 .btn-group-vertical > .submit:active,
 .btn-group-vertical > .btn.active,
-.btn-group-vertical > .active.powermail_submit, .header .header-search
-.btn-group-vertical > .active.header-search-form_submit, #pazpar2
-.btn-group-vertical > .active.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form
-.btn-group-vertical > .active.submStartSmall, .tx-mathematicians
+.btn-group-vertical > .active.powermail_submit, .content-container .gokContainer.column
+.btn-group-vertical > .powermail_submit.close, .header .header-search
+.btn-group-vertical > .active.header-search-form_submit, .header .header-search .content-container .gokContainer.column
+.btn-group-vertical > .header-search-form_submit.close, .content-container .gokContainer.column .header .header-search
+.btn-group-vertical > .header-search-form_submit.close, #pazpar2
+.btn-group-vertical > .active.pz2-submitButton, #pazpar2 .content-container .gokContainer.column
+.btn-group-vertical > .pz2-submitButton.close, .content-container .gokContainer.column #pazpar2
+.btn-group-vertical > .pz2-submitButton.close, .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .active.submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column
+.btn-group-vertical > .submStartSmall.close, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form
+.btn-group-vertical > .submStartSmall.close, .content-container .gokContainer.column
+.btn-group-vertical > .btn.close, .content-container .gokContainer.column .tx-mathematicians
+.btn-group-vertical > .close.submStartSmall, .tx-mathematicians .content-container .gokContainer.column
+.btn-group-vertical > .close.submStartSmall, .content-container .gokContainer.column
+.tx-mathematicians
+.btn-group-vertical > .close.submStart,
+.tx-mathematicians .content-container .gokContainer.column
+.btn-group-vertical > .close.submStart, .content-container .gokContainer.column .tx_find form
+.btn-group-vertical > .close.submit, .tx_find form .content-container .gokContainer.column
+.btn-group-vertical > .close.submit, .tx-mathematicians
 .btn-group-vertical > .active.submStartSmall,
 .tx-mathematicians
 .btn-group-vertical > .active.submStart, .tx_find form
@@ -6710,7 +6732,7 @@ tbody.collapse.show {
   border-color: transparent;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .active.main-navigation_link,
+.nav-tabs .nav-link.active, .nav-tabs .active.main-navigation_link, .nav-tabs .content-container .gokContainer.column .main-navigation_link.close, .content-container .gokContainer.column .nav-tabs .main-navigation_link.close, .nav-tabs .content-container .gokContainer.column .nav-link.close, .content-container .gokContainer.column .nav-tabs .nav-link.close,
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .show.main-navigation_element .nav-link,
 .nav-tabs .nav-item.show .main-navigation_link,
@@ -6724,7 +6746,7 @@ tbody.collapse.show {
   margin-top: -1px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .active.main-navigation_link,
+.nav-pills .nav-link.active, .nav-pills .active.main-navigation_link, .nav-pills .content-container .gokContainer.column .main-navigation_link.close, .content-container .gokContainer.column .nav-pills .main-navigation_link.close, .nav-pills .content-container .gokContainer.column .nav-link.close, .content-container .gokContainer.column .nav-pills .nav-link.close,
 .show > .nav-pills .nav-link,
 .show > .nav-pills .main-navigation_link {
   color: #fff;
@@ -6751,7 +6773,7 @@ tbody.collapse.show {
   display: none;
 }
 
-.tab-content > .active {
+.tab-content > .active, .content-container .gokContainer.column .tab-content > .close {
   display: block;
 }
 
@@ -7144,11 +7166,19 @@ tbody.collapse.show {
 
 .navbar-light .navbar-nav .show > .nav-link, .main-navigation .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .show > .main-navigation_link, .main-navigation .navbar-nav .show > .main-navigation_link,
 .navbar-light .navbar-nav .active > .nav-link, .main-navigation .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .content-container .gokContainer.column .close > .nav-link, .content-container .gokContainer.column
+.navbar-light .navbar-nav .close > .nav-link, .main-navigation .navbar-nav .content-container .gokContainer.column .close > .nav-link, .content-container .gokContainer.column .main-navigation .navbar-nav .close > .nav-link,
 .navbar-light .navbar-nav .active > .main-navigation_link, .main-navigation .navbar-nav .active > .main-navigation_link,
+.navbar-light .navbar-nav .content-container .gokContainer.column .close > .main-navigation_link, .content-container .gokContainer.column
+.navbar-light .navbar-nav .close > .main-navigation_link, .main-navigation .navbar-nav .content-container .gokContainer.column .close > .main-navigation_link, .content-container .gokContainer.column .main-navigation .navbar-nav .close > .main-navigation_link,
 .navbar-light .navbar-nav .nav-link.show, .main-navigation .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show.main-navigation_link, .main-navigation .navbar-nav .show.main-navigation_link,
 .navbar-light .navbar-nav .nav-link.active, .main-navigation .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .active.main-navigation_link, .main-navigation .navbar-nav .active.main-navigation_link {
+.navbar-light .navbar-nav .active.main-navigation_link, .main-navigation .navbar-nav .active.main-navigation_link,
+.navbar-light .navbar-nav .content-container .gokContainer.column .main-navigation_link.close, .content-container .gokContainer.column
+.navbar-light .navbar-nav .main-navigation_link.close, .main-navigation .navbar-nav .content-container .gokContainer.column .main-navigation_link.close, .content-container .gokContainer.column .main-navigation .navbar-nav .main-navigation_link.close,
+.navbar-light .navbar-nav .content-container .gokContainer.column .nav-link.close, .content-container .gokContainer.column
+.navbar-light .navbar-nav .nav-link.close, .main-navigation .navbar-nav .content-container .gokContainer.column .nav-link.close, .content-container .gokContainer.column .main-navigation .navbar-nav .nav-link.close {
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -7187,11 +7217,19 @@ tbody.collapse.show {
 
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .show > .main-navigation_link,
 .navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .content-container .gokContainer.column .close > .nav-link, .content-container .gokContainer.column
+.navbar-dark .navbar-nav .close > .nav-link,
 .navbar-dark .navbar-nav .active > .main-navigation_link,
+.navbar-dark .navbar-nav .content-container .gokContainer.column .close > .main-navigation_link, .content-container .gokContainer.column
+.navbar-dark .navbar-nav .close > .main-navigation_link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show.main-navigation_link,
 .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .active.main-navigation_link {
+.navbar-dark .navbar-nav .active.main-navigation_link,
+.navbar-dark .navbar-nav .content-container .gokContainer.column .main-navigation_link.close, .content-container .gokContainer.column
+.navbar-dark .navbar-nav .main-navigation_link.close,
+.navbar-dark .navbar-nav .content-container .gokContainer.column .nav-link.close, .content-container .gokContainer.column
+.navbar-dark .navbar-nav .nav-link.close {
   color: white;
 }
 
@@ -7397,7 +7435,7 @@ tbody.collapse.show {
   text-decoration: none;
 }
 
-.breadcrumb-item.active {
+.breadcrumb-item.active, .content-container .gokContainer.column .breadcrumb-item.close {
   color: #868e96;
 }
 
@@ -7413,7 +7451,7 @@ tbody.collapse.show {
   margin-left: 0;
 }
 
-.page-item.active .page-link {
+.page-item.active .page-link, .content-container .gokContainer.column .page-item.close .page-link {
   z-index: 2;
   color: #fff;
   background-color: #25589a;
@@ -7791,7 +7829,7 @@ tbody.collapse.show {
           flex: 1;
 }
 
-.list-group {
+.list-group, .content-container .gokContainer.column ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7820,7 +7858,7 @@ tbody.collapse.show {
   background-color: #e9ecef;
 }
 
-.list-group-item {
+.list-group-item, .content-container .gokContainer.column li, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
@@ -7829,37 +7867,37 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.list-group-item:last-child {
+.list-group-item:last-child, .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child {
   margin-bottom: 0;
 }
 
-.list-group-item:focus, .list-group-item:hover {
+.list-group-item:focus, .content-container .gokContainer.column li:focus, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:focus, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:focus, .list-group-item:hover, .content-container .gokContainer.column li:hover, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:hover, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:hover {
   text-decoration: none;
 }
 
-.list-group-item.disabled, .list-group-item:disabled {
+.list-group-item.disabled, .content-container .gokContainer.column li.disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .disabled.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .disabled.facetActive, .list-group-item:disabled, .content-container .gokContainer.column li:disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:disabled, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:disabled {
   color: #868e96;
   background-color: #fff;
 }
 
-.list-group-item.active {
+.list-group-item.active, .content-container .gokContainer.column li.active, .content-container .gokContainer.column li.close, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .active.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .active.facetActive, .content-container .gokContainer.column .list-group-item.close {
   z-index: 2;
   color: #fff;
   background-color: #25589a;
   border-color: #25589a;
 }
 
-.list-group-flush .list-group-item {
+.list-group-flush .list-group-item, .list-group-flush .content-container .gokContainer.column li, .content-container .gokContainer.column .list-group-flush li, .list-group-flush .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush .facetActive, .list-group-flush .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush .facetActive {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
 
-.list-group-flush:first-child .list-group-item:first-child {
+.list-group-flush:first-child .list-group-item:first-child, .list-group-flush:first-child .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .list-group-flush:first-child li:first-child, .list-group-flush:first-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:first-child .facetActive:first-child, .list-group-flush:first-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:first-child .facetActive:first-child {
   border-top: 0;
 }
 
-.list-group-flush:last-child .list-group-item:last-child {
+.list-group-flush:last-child .list-group-item:last-child, .list-group-flush:last-child .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .list-group-flush:last-child li:last-child, .list-group-flush:last-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:last-child .facetActive:last-child, .list-group-flush:last-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:last-child .facetActive:last-child {
   border-bottom: 0;
 }
 
@@ -7880,8 +7918,9 @@ button.list-group-item-primary:hover {
   background-color: #b1c3db;
 }
 
-a.list-group-item-primary.active,
-button.list-group-item-primary.active {
+a.list-group-item-primary.active, .content-container .gokContainer.column a.list-group-item-primary.close,
+button.list-group-item-primary.active,
+.content-container .gokContainer.column button.list-group-item-primary.close {
   color: #fff;
   background-color: #132e50;
   border-color: #132e50;
@@ -7904,8 +7943,9 @@ button.list-group-item-secondary:hover {
   background-color: #cfd2d6;
 }
 
-a.list-group-item-secondary.active,
-button.list-group-item-secondary.active {
+a.list-group-item-secondary.active, .content-container .gokContainer.column a.list-group-item-secondary.close,
+button.list-group-item-secondary.active,
+.content-container .gokContainer.column button.list-group-item-secondary.close {
   color: #fff;
   background-color: #464a4e;
   border-color: #464a4e;
@@ -7928,8 +7968,9 @@ button.list-group-item-success:hover {
   background-color: #b1dfbb;
 }
 
-a.list-group-item-success.active,
-button.list-group-item-success.active {
+a.list-group-item-success.active, .content-container .gokContainer.column a.list-group-item-success.close,
+button.list-group-item-success.active,
+.content-container .gokContainer.column button.list-group-item-success.close {
   color: #fff;
   background-color: #155724;
   border-color: #155724;
@@ -7952,8 +7993,9 @@ button.list-group-item-info:hover {
   background-color: #abdde5;
 }
 
-a.list-group-item-info.active,
-button.list-group-item-info.active {
+a.list-group-item-info.active, .content-container .gokContainer.column a.list-group-item-info.close,
+button.list-group-item-info.active,
+.content-container .gokContainer.column button.list-group-item-info.close {
   color: #fff;
   background-color: #0c5460;
   border-color: #0c5460;
@@ -7976,8 +8018,9 @@ button.list-group-item-warning:hover {
   background-color: #ffe8a1;
 }
 
-a.list-group-item-warning.active,
-button.list-group-item-warning.active {
+a.list-group-item-warning.active, .content-container .gokContainer.column a.list-group-item-warning.close,
+button.list-group-item-warning.active,
+.content-container .gokContainer.column button.list-group-item-warning.close {
   color: #fff;
   background-color: #856404;
   border-color: #856404;
@@ -8000,8 +8043,9 @@ button.list-group-item-danger:hover {
   background-color: #f1b0b7;
 }
 
-a.list-group-item-danger.active,
-button.list-group-item-danger.active {
+a.list-group-item-danger.active, .content-container .gokContainer.column a.list-group-item-danger.close,
+button.list-group-item-danger.active,
+.content-container .gokContainer.column button.list-group-item-danger.close {
   color: #fff;
   background-color: #721c24;
   border-color: #721c24;
@@ -8024,8 +8068,9 @@ button.list-group-item-light:hover {
   background-color: #ececf6;
 }
 
-a.list-group-item-light.active,
-button.list-group-item-light.active {
+a.list-group-item-light.active, .content-container .gokContainer.column a.list-group-item-light.close,
+button.list-group-item-light.active,
+.content-container .gokContainer.column button.list-group-item-light.close {
   color: #fff;
   background-color: #818182;
   border-color: #818182;
@@ -8048,8 +8093,9 @@ button.list-group-item-dark:hover {
   background-color: #b9bbbe;
 }
 
-a.list-group-item-dark.active,
-button.list-group-item-dark.active {
+a.list-group-item-dark.active, .content-container .gokContainer.column a.list-group-item-dark.close,
+button.list-group-item-dark.active,
+.content-container .gokContainer.column button.list-group-item-dark.close {
   color: #fff;
   background-color: #1b1e21;
   border-color: #1b1e21;
@@ -8546,7 +8592,7 @@ button.close {
           perspective: 1000px;
 }
 
-.carousel-item.active,
+.carousel-item.active, .content-container .gokContainer.column .carousel-item.close,
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
@@ -8573,28 +8619,32 @@ button.close {
 }
 
 .carousel-item-next,
-.active.carousel-item-right {
+.active.carousel-item-right,
+.content-container .gokContainer.column .carousel-item-right.close {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
 
 @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
   .carousel-item-next,
-  .active.carousel-item-right {
+  .active.carousel-item-right,
+  .content-container .gokContainer.column .carousel-item-right.close {
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
   }
 }
 
 .carousel-item-prev,
-.active.carousel-item-left {
+.active.carousel-item-left,
+.content-container .gokContainer.column .carousel-item-left.close {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
 
 @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
   .carousel-item-prev,
-  .active.carousel-item-left {
+  .active.carousel-item-left,
+  .content-container .gokContainer.column .carousel-item-left.close {
     -webkit-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
   }
@@ -8705,7 +8755,7 @@ button.close {
   content: "";
 }
 
-.carousel-indicators .active {
+.carousel-indicators .active, .carousel-indicators .content-container .gokContainer.column .close, .content-container .gokContainer.column .carousel-indicators .close {
   background-color: #fff;
 }
 
@@ -11646,11 +11696,6 @@ select {
   margin-left: 0 !important;
 }
 
-form .actions {
-  float: left;
-  clear: both;
-}
-
 .powermail_label:after,
 .control-label:after {
   cursor: help;
@@ -11675,12 +11720,7 @@ form .actions {
   display: none;
 }
 
-.powermail_check_outer {
-  float: left;
-}
-
 .powermail_check_outer .powermail_check_inner {
-  float: left;
   margin: 0;
 }
 
@@ -12027,66 +12067,14 @@ form .actions {
   content: '\f177';
 }
 
-.tabs a,
-.advTabs a,
-.tabs span {
-  color: #000;
-  background-color: #b5c5e6;
-  border-right: 1px solid #c1d0ed;
-}
-
-.currentTab {
-  color: #000;
-}
-
-.tabs {
-  position: relative;
-  top: -10px;
-  left: 0;
-  float: left;
-  width: 100%;
-}
-
-.tabs a,
-.tabs span {
-  float: left;
-  padding: 3px 10px 3px 5px;
-  text-decoration: none;
-}
-
-.tabs ul,
-.advTabs ul {
-  margin: 0;
-  padding: 10px 10px 0 50px;
-  list-style: none;
-}
-
-.tabs li, .tabs .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .tabs .facetActive,
-.advTabs li,
-.advTabs .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol
-.advTabs .facetActive {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-.advTabs {
-  position: relative;
-  top: -10px;
-  left: 0;
-  float: left;
-  width: 100%;
-}
-
-.advTabs a {
-  float: left;
-  padding: 3px 5px 0;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.advFirst {
-  padding: 1em .3em;
+.content-container .gokContainer.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .content-container .gokContainer.column ul {
@@ -12113,11 +12101,11 @@ form .actions {
 }
 
 .content-container .gokContainer.column li a, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive a, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive a {
-  border-bottom: 1px dotted #000;
   padding: .5em;
   color: #192d57;
   font-weight: normal;
   text-decoration: none;
+  border: 0;
 }
 
 .content-container .gokContainer.column .close {
