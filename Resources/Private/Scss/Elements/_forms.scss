@@ -1,21 +1,17 @@
-.csc-form-element-textline input[type=text],
 .powermail_input,
 .powermail_textarea {
     @extend .form-control;
 }
 
-.csc-form-element-select select,
 .powermail_select {
     @extend .form-control;
 }
 
-.csc-form-element-submit input,
 .powermail_submit {
     @extend .btn;
     @extend .btn-primary;
 }
 
-.csc-mailform,
 .frame-type-form_formframework {
     li {
         list-style-type: none !important;
@@ -30,19 +26,13 @@ form {
     }
 }
 
-.powermail_fieldwrap,
-.csc-form-element {
+.powermail_fieldwrap {
     @extend .form-group;
 }
 
 .powermail_legend,
-.csc-mailform legend,
 .form-group legend {
     @include form-legend;
-}
-
-.csc-mailform label {
-    @include form-label;
 }
 
 .powermail_label,

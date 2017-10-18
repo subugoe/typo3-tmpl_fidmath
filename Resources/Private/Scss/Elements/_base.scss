@@ -53,6 +53,8 @@ strong {
 }
 
 h2 {
+    line-height: $line-height-base;
+
     &.searchingIn {
         color: $text-color;
         font-weight: normal;
@@ -64,10 +66,11 @@ h2 {
 h3,
 h4 {
     padding: .7em 0 .3em;
+    line-height: $line-height-base;
 }
 
 p {
-    line-height: 1.5 * $font-size;
+    line-height: $line-height-base;
     margin: 1em 0;
 }
 

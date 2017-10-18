@@ -13,17 +13,31 @@
     }
 }
 
+.news-list-header {
+    @extend .row;
+    @extend .justify-content-between;
+
+    .news-list-headline {
+        @extend .col-10;
+
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: $line-height-base;
+    }
+
+    .news-list-date {
+        @extend .col-2;
+        @extend .text-right;
+
+        font-size: .8em;
+        font-weight: normal;
+    }
+}
+
 .news-list-container .showResultsWrap {
     display: none;
 }
 
-.news-list-date {
-    float: right;
-    margin-top: -2px;
-    margin-right: -2px;
-    font-size: .8em;
-    font-weight: normal;
-}
 
 /* Hide duplicate more link in news list*/
 .news-list-morelink {

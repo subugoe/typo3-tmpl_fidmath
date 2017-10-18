@@ -2,24 +2,21 @@
 <f:layout name="Detail.html"/>
 
 <!--
-	=====================
-		News/Detail.html
+    =====================
+        News/Detail.html
 -->
 <f:section name="content">
     <n:titleTag>{newsItem.title}</n:titleTag>
 
     <f:if condition="{newsItem}">
         <div class="news-list-header">
-            <h3>
-					<span class="news-list-date">
-						<time datetime="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}">
-							<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
-							<meta itemprop="datePublished"
-                                  content="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}"/>
-						</time>
-					</span>
-                {newsItem.title}
-            </h3>
+            <h3 class="news-list-headline">{newsItem.title}</h3>
+            <span class="news-list-date">
+                <time datetime="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}">
+                    <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+                    <meta itemprop="datePublished" content="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}"/>
+                </time>
+            </span>
         </div>
         <div class="news-text-wrap">
             <f:format.html>{newsItem.bodytext}</f:format.html>

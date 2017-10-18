@@ -2,18 +2,18 @@
 
 <div class="news-list-entry">
     <div class="news-list-header">
-        <h3>
-			<span class="news-list-date">
-				<time datetime="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}">
-					<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
-					<meta itemprop="datePublished"
-                          content="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}"/>
-				</time>
-			</span>
-            <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
-                {newsItem.title}
-            </n:link>
-        </h3>
+       <h3 class="news-list-headline">
+        <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+            {newsItem.title}
+        </n:link>
+       </h3>
+        <span class="news-list-date">
+            <time datetime="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}">
+                <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+                <meta itemprop="datePublished"
+                      content="{f:format.date(date:newsItem.datetime, format:'%d.%m.%Y')}"/>
+            </time>
+        </span>
     </div>
     <div class="teaser-text">
         <f:if condition="{newsItem.teaser}">
