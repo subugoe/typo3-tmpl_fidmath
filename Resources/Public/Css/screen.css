@@ -3362,7 +3362,7 @@ pre code {
   width: 100%;
 }
 
-.row, .main, .tx-ezbrequest-pi1 #navi, .news-list-header {
+.row, .main, .tx-ezbrequest-pi1 #navi, .news-list-header, .content-container .gokContainer.column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3377,13 +3377,13 @@ pre code {
   margin-left: 0;
 }
 
-.no-gutters > .col,
+.no-gutters > .col, .content-container .gokContainer.column .no-gutters > ul,
 .no-gutters > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.col-1, .col-2, .news-list-header .news-list-date, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .news-list-header .news-list-headline, .col-11, .col-12, .col,
+.col-1, .col-2, .news-list-header .news-list-date, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .news-list-header .news-list-headline, .col-11, .col-12, .col, .content-container .gokContainer.column ul,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .main.two-columns .main-sidebar, #pz2-termLists, .tx-ezbrequest-pi1 #ezb_search_form, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .main.two-columns .main-content, .tx-ezbrequest-pi1 #journalNavi, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .main.one-column, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -3396,7 +3396,7 @@ pre code {
   padding-left: 15px;
 }
 
-.col {
+.col, .content-container .gokContainer.column ul {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -4636,7 +4636,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   margin-left: -5px;
 }
 
-.form-row > .col,
+.form-row > .col, .content-container .gokContainer.column .form-row > ul,
 .form-row > [class*="col-"] {
   padding-right: 5px;
   padding-left: 5px;
@@ -11805,23 +11805,6 @@ form .actions {
   margin-left: 0;
 }
 
-#pazpar2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  width: 100%;
-}
-
-#pazpar2 #pz2-recordView {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
 #pazpar2 #pz2-termLists li, #pazpar2 #pz2-termLists .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 #pz2-termLists .facetActive {
   margin-left: 0;
 }
@@ -12107,14 +12090,12 @@ form .actions {
 }
 
 .content-container .gokContainer.column ul {
-  width: 24%;
-  padding: 0;
-  background: transparent;
+  background-color: #fff;
 }
 
 .content-container .gokContainer.column li, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive {
   padding: 0;
-  border: 0 none;
+  border: 0;
   list-style-type: none;
 }
 

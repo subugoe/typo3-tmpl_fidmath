@@ -1,13 +1,4 @@
 #pazpar2 {
-    display: flex;
-    flex-flow: column;
-
-    width: 100%;
-
-    #pz2-recordView {
-        order: 2;
-    }
-
     #pz2-termLists {
         li {
             margin-left: 0;

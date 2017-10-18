@@ -1,14 +1,18 @@
 .content-container {
+    @extend .container;
+
     .gokContainer.column {
+        @extend .row;
+
         ul {
-            width: 24%;
-            padding: 0;
-            background: transparent;
+            @extend .col;
+
+            background-color: $white;
         }
 
         li {
             padding: 0;
-            border: 0 none;
+            border: 0;
             list-style-type: none;
 
             &.selected {
@@ -17,7 +21,6 @@
 
             &.open,
             &.close {
-
                 a {
                     color: $text-color;
                 }
