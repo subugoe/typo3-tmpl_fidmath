@@ -37,8 +37,6 @@ form {
 
 .powermail_label,
 .control-label {
-    @include form-label;
-
     &:after {
         cursor: help;
         content: '\f129';

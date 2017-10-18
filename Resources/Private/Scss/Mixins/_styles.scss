@@ -1,9 +1,3 @@
-@mixin form-label() {
-    float: left;
-    width: $form-label-width;
-    margin: $form-margin;
-}
-
 @mixin form-legend() {
     padding: $font-size 0;
     font-weight: bold;

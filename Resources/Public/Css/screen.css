@@ -11657,13 +11657,6 @@ form .actions {
   font-weight: bold;
 }
 
-.powermail_label,
-.control-label {
-  float: left;
-  width: 213.33333px;
-  margin: 0;
-}
-
 .powermail_label:after,
 .control-label:after {
   cursor: help;
