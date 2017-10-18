@@ -30,11 +30,6 @@ form {
     @extend .form-group;
 }
 
-.powermail_legend,
-.form-group legend {
-    @include form-legend;
-}
-
 .powermail_label,
 .control-label {
     &:after {

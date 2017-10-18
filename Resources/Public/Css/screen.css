@@ -11651,12 +11651,6 @@ form .actions {
   clear: both;
 }
 
-.powermail_legend,
-.form-group legend, .powermail_fieldwrap legend {
-  padding: 16px 0;
-  font-weight: bold;
-}
-
 .powermail_label:after,
 .control-label:after {
   cursor: help;
