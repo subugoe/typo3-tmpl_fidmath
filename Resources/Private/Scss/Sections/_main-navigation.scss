@@ -9,6 +9,14 @@
     border-top: 1px solid $background-color;
     border-bottom: 1px solid $background-color;
     background-color: white;
+
+    .active {
+        font-weight: bold;
+    }
+
+    .normal {
+        font-weight: normal;
+    }
 }
 
 /* Highlight current menu item; Use .homepage .first classes as a hack to make this to work for the homepage */

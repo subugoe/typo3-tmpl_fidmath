@@ -36,7 +36,7 @@ lib.mainmenu {
 
         CUR = 1
         CUR {
-            wrapItemAndSub = <li class="current main-navigation_element">|</li>
+            wrapItemAndSub = <li class="current active main-navigation_element">|</li>
             ATagParams = class="main-navigation_link"
         }
 
@@ -55,11 +55,11 @@ lib.mainmenu {
         NO = 1
         NO {
             wrapItemAndSub = <li class="level-2">|</li>
-            ATagParams = class="level-2"
+            ATagParams = class="level-2 normal"
             stdWrap.htmlSpecialChars = 1
         }
 
-        ACT = .NO
+        ACT < .NO
         ACT {
             wrapItemAndSub = <li class="active level-2">|</li>
             ATagParams = class="active level-2"

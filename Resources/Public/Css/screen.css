@@ -11736,6 +11736,14 @@ select {
   background-color: white;
 }
 
+.main-navigation .active, .main-navigation .content-container .gokContainer.column .close, .content-container .gokContainer.column .main-navigation .close {
+  font-weight: bold;
+}
+
+.main-navigation .normal {
+  font-weight: normal;
+}
+
 /* Highlight current menu item; Use .homepage .first classes as a hack to make this to work for the homepage */
 .homepage .main-navigation_element:first-child .main-navigation_link {
   font-weight: bold;
