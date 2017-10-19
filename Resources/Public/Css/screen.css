@@ -12603,6 +12603,10 @@ select {
   color: #fff;
 }
 
+.tx-zamn-pi1 .alphabet-list a {
+  margin-left: .25em;
+}
+
 td.data a.external-link[href$=".pdf"],
 td.data a.external_link[href$=".PDF"],
 td.data a.external-link-new-window[href$=".pdf"],
