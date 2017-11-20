@@ -26,7 +26,7 @@ class Gok
                
                 var newButton = document.createElement('p');
                 newButton.classList.add(\"checkButton\");
-                var textnode = document.createTextNode(\"Select\");
+                var textnode = document.createTextNode(\"Auswahl...\");
                 newButton.appendChild(textnode);
 
                 var list = document.getElementById(\"tx_nkwgok-734\");

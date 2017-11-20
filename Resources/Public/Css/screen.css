@@ -12600,7 +12600,7 @@ select {
 
 .content-container .gokContainer.column .checkButton {
   width: 100%;
-  padding: 5px;
+  padding: 0 5px;
   font-size: 16px;
 }
 
