@@ -3412,13 +3412,13 @@ pre code {
   margin-left: 0;
 }
 
-.no-gutters > .col, .content-container .gokContainer.column .no-gutters > ul,
+.no-gutters > .col, .content-container .gokContainer.column .no-gutters > .checkButton, .content-container .gokContainer.column .no-gutters > ul,
 .no-gutters > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.col-1, .col-2, .news-list-header .news-list-date, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .news-list-header .news-list-headline, .col-11, .col-12, .col, .content-container .gokContainer.column ul,
+.col-1, .col-2, .news-list-header .news-list-date, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .news-list-header .news-list-headline, .col-11, .col-12, .col, .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column ul,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .main.two-columns .main-sidebar, #pz2-termLists, .tx-ezbrequest-pi1 #ezb_search_form, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .main.two-columns .main-content, .tx-ezbrequest-pi1 #journalNavi, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .main.one-column, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -3431,7 +3431,7 @@ pre code {
   padding-left: 15px;
 }
 
-.col, .content-container .gokContainer.column ul {
+.col, .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column ul {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -4945,7 +4945,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   margin-left: -5px;
 }
 
-.form-row > .col, .content-container .gokContainer.column .form-row > ul,
+.form-row > .col, .content-container .gokContainer.column .form-row > .checkButton, .content-container .gokContainer.column .form-row > ul,
 .form-row > [class*="col-"] {
   padding-right: 5px;
   padding-left: 5px;
@@ -7727,7 +7727,7 @@ tbody.collapse.show {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.card-header + .list-group .list-group-item:first-child, .content-container .gokContainer.column .card-header + ul .list-group-item:first-child, .card-header + .list-group .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .card-header + .list-group li:first-child, .content-container .gokContainer.column .card-header + ul li:first-child, .card-header + .list-group .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + .list-group .facetActive:first-child, .content-container .gokContainer.column .card-header + ul .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + ul .facetActive:first-child, .card-header + .list-group .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + .list-group .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + ul .facetActive:first-child {
+.card-header + .list-group .list-group-item:first-child, .content-container .gokContainer.column .card-header + ul .list-group-item:first-child, .card-header + .list-group .content-container .gokContainer.column .checkButton:first-child, .content-container .gokContainer.column .card-header + .list-group .checkButton:first-child, .content-container .gokContainer.column .card-header + ul .checkButton:first-child, .card-header + .list-group .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .card-header + .list-group li:first-child, .content-container .gokContainer.column .card-header + ul li:first-child, .card-header + .list-group .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + .list-group .facetActive:first-child, .content-container .gokContainer.column .card-header + ul .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + ul .facetActive:first-child, .card-header + .list-group .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + .list-group .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + ul .facetActive:first-child {
   border-top: 0;
 }
 
@@ -8311,7 +8311,7 @@ tbody.collapse.show {
   background-color: #e9ecef;
 }
 
-.list-group-item, .content-container .gokContainer.column li, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive {
+.list-group-item, .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column li, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
@@ -8320,37 +8320,37 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.list-group-item:last-child, .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child {
+.list-group-item:last-child, .content-container .gokContainer.column .checkButton:last-child, .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child {
   margin-bottom: 0;
 }
 
-.list-group-item:focus, .content-container .gokContainer.column li:focus, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:focus, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:focus, .list-group-item:hover, .content-container .gokContainer.column li:hover, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:hover, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:hover {
+.list-group-item:focus, .content-container .gokContainer.column .checkButton:focus, .content-container .gokContainer.column li:focus, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:focus, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:focus, .list-group-item:hover, .content-container .gokContainer.column .checkButton:hover, .content-container .gokContainer.column li:hover, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:hover, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:hover {
   text-decoration: none;
 }
 
-.list-group-item.disabled, .content-container .gokContainer.column li.disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .disabled.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .disabled.facetActive, .list-group-item:disabled, .content-container .gokContainer.column li:disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:disabled, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:disabled {
+.list-group-item.disabled, .content-container .gokContainer.column .disabled.checkButton, .content-container .gokContainer.column li.disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .disabled.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .disabled.facetActive, .list-group-item:disabled, .content-container .gokContainer.column .checkButton:disabled, .content-container .gokContainer.column li:disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:disabled, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:disabled {
   color: #868e96;
   background-color: #fff;
 }
 
-.list-group-item.active, .content-container .gokContainer.column li.active, .content-container .gokContainer.column li.close, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .active.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .active.facetActive, .content-container .gokContainer.column .list-group-item.close {
+.list-group-item.active, .content-container .gokContainer.column .active.checkButton, .content-container .gokContainer.column .checkButton.close, .content-container .gokContainer.column li.active, .content-container .gokContainer.column li.close, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .active.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .active.facetActive, .content-container .gokContainer.column .list-group-item.close {
   z-index: 2;
   color: #fff;
   background-color: #25589a;
   border-color: #25589a;
 }
 
-.list-group-flush .list-group-item, .list-group-flush .content-container .gokContainer.column li, .content-container .gokContainer.column .list-group-flush li, .list-group-flush .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush .facetActive, .list-group-flush .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush .facetActive {
+.list-group-flush .list-group-item, .list-group-flush .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column .list-group-flush .checkButton, .list-group-flush .content-container .gokContainer.column li, .content-container .gokContainer.column .list-group-flush li, .list-group-flush .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush .facetActive, .list-group-flush .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush .facetActive {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
 
-.list-group-flush:first-child .list-group-item:first-child, .list-group-flush:first-child .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .list-group-flush:first-child li:first-child, .list-group-flush:first-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:first-child .facetActive:first-child, .list-group-flush:first-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:first-child .facetActive:first-child {
+.list-group-flush:first-child .list-group-item:first-child, .list-group-flush:first-child .content-container .gokContainer.column .checkButton:first-child, .content-container .gokContainer.column .list-group-flush:first-child .checkButton:first-child, .list-group-flush:first-child .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .list-group-flush:first-child li:first-child, .list-group-flush:first-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:first-child .facetActive:first-child, .list-group-flush:first-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:first-child .facetActive:first-child {
   border-top: 0;
 }
 
-.list-group-flush:last-child .list-group-item:last-child, .list-group-flush:last-child .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .list-group-flush:last-child li:last-child, .list-group-flush:last-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:last-child .facetActive:last-child, .list-group-flush:last-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:last-child .facetActive:last-child {
+.list-group-flush:last-child .list-group-item:last-child, .list-group-flush:last-child .content-container .gokContainer.column .checkButton:last-child, .content-container .gokContainer.column .list-group-flush:last-child .checkButton:last-child, .list-group-flush:last-child .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .list-group-flush:last-child li:last-child, .list-group-flush:last-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:last-child .facetActive:last-child, .list-group-flush:last-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:last-child .facetActive:last-child {
   border-bottom: 0;
 }
 
@@ -12556,6 +12556,16 @@ select {
   margin-left: -15px;
 }
 
+.content-container .gokContainer.column .checkButton {
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.content-container .gokContainer.column .checkButton:after {
+  top: .5em;
+  right: .3em;
+}
+
 .content-container .gokContainer.column ul {
   background-color: #fff;
 }
@@ -12596,12 +12606,6 @@ select {
 
 .content-container .gokContainer.column .GOKID {
   font-weight: bold;
-}
-
-.content-container .gokContainer.column .checkButton {
-  width: 100%;
-  padding: 0 5px;
-  font-size: 16px;
 }
 
 .tx-mathematicians .collection {

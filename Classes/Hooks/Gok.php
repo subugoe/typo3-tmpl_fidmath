@@ -21,31 +21,62 @@ class Gok
 
 //        return $js.';console.log('.$element->objectID.')';
 
-        $js .=  "
+//        $js .=  "
+//            $( document ).ready(function() {
+//
+//                var newButton = document.createElement('p');
+//                newButton.classList.add(\"checkButton\");
+//                var textnode = document.createTextNode(\"Auswahl...\");
+//                newButton.appendChild(textnode);
+//
+//                var list = document.getElementById(\"tx_nkwgok-734\");
+//                list.insertBefore(newButton, list.childNodes[0]);
+//
+//
+//                $(\"ul#ul-734-MSC\").hide();
+//
+//                $(\".checkButton\").click(function(){
+//                    $(\"#ul-734-MSC\").toggle();
+//                });
+//
+//                $(\".level-0\").click(function() {
+//                    var text = $(this).html();
+//                    $(\".checkButton\").html(text);
+//                    $(\"ul#ul-734-MSC\").hide();
+//                });
+//
+//                function getSelectedValue(id) {
+//                    return $(\"#\" + id).find(\"dt a span.value\").html();
+//                }
+//
+//                $(document).bind(\"click\", function(e) {
+//                    var \$clicked = $(e.target);
+//                    if (! \$clicked.parents().hasClass(\"gokContainer\"))
+//                        $(\"ul#ul-734-MSC\").hide();
+//                        console.log(\"hasClass gokContainer\");
+//                });
+//            });
+//        ";
+
+        $js .= "
+        
             $( document ).ready(function() {
-               
-                var newButton = document.createElement('p');
-                newButton.classList.add(\"checkButton\");
-                var textnode = document.createTextNode(\"Auswahl...\");
-                newButton.appendChild(textnode);
-
-                var list = document.getElementById(\"tx_nkwgok-734\");
-                list.insertBefore(newButton, list.childNodes[0]);
-
-                $(\".checkButton\").click(function(){
-                    $(\"#ul-734-MSC\").toggle();
-                });
+                $(\"#ul-734-MSC\").each(function(){
+                    var list=\$(this), select=$(document.createElement(\"select\")).insertBefore($(this).hide()).change(function(){ window.open(\$(this).val(),\"_newtab\")});
                 
-                $(\".level-0\").click(function() {
-                    var text = $(this).html();
-                    $(\".checkButton\").html(text);
-                    $(\"ul#ul-734-MSC\").hide();
-                });
+                    $(\">li a span.GOKName\", this).each(function(){
+                        var option=$(document.createElement(\"option\"))
+                        .appendTo(select)
+                        .val(this.parentNode.href)
+                        .html($(this).html());
+                        
+                        if($(this).attr(\"class\") === \"selected\"){
+                            option.attr(\"selected\",\"selected\");
+                        }
+                    });
                 
-                $(document).bind(\"click\", function(e) {
-                    var \$clicked = $(e.target);
-                    if (! \$clicked.parents().hasClass(\"gokContainer\"))
-                        $(\"ul#ul-734-MSC\").hide();
+                list.remove();
+                
                 });
             });
         ";

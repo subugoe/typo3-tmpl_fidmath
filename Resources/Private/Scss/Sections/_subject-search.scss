@@ -4,6 +4,23 @@
     .gokContainer.column {
         @include make-row;
 
+        //.checkButton {
+        //    @extend .col;
+        //    @extend .list-group-item;
+        //    padding: 0 5px;
+        //    font-size: $font-size;
+        //
+        //    &:after {
+        //      top: .5em;
+        //      right: .3em;
+        //    }
+        //}
+
+        select {
+            @extend .powermail_select;
+            width: 400px;
+        }
+
         ul {
             @extend .col;
             @extend .list-group;
@@ -55,10 +72,5 @@
             font-weight: bold;
         }
 
-        .checkButton {
-            width: 100%;
-            padding: 0 5px;
-            font-size: $font-size;
-        }
     }
 }
