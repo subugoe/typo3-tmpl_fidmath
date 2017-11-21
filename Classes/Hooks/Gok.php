@@ -62,15 +62,15 @@ class Gok
         
             $( document ).ready(function() {
                 $(\"#ul-734-MSC\").each(function(){
-                    var list=\$(this), select=$(document.createElement(\"select\")).insertBefore($(this).hide()).change(function(){ window.open(\$(this).val(),\"_newtab\")});
+                    var list=\$(this), select=$(document.createElement(\"select\")).insertBefore($(this).hide()).change(function(){ window.open(\$(this).val())});
                 
                     $(\">li a span.GOKName\", this).each(function(){
                         var option=$(document.createElement(\"option\"))
                         .appendTo(select)
-                        .val(this.parentNode.href)
+                        .val(this.parentNode.href, this.parentNode.getAttribute(\"onclick\"))
                         .html($(this).html());
                         
-                        if($(this).attr(\"class\") === \"selected\"){
+                        if($(this).attr(\"class\") === \"open\"){
                             option.attr(\"selected\",\"selected\");
                         }
                     });
