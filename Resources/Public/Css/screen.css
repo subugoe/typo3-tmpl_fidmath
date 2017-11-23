@@ -3412,13 +3412,13 @@ pre code {
   margin-left: 0;
 }
 
-.no-gutters > .col, .content-container .gokContainer.column .no-gutters > .checkButton, .content-container .gokContainer.column .no-gutters > ul,
+.no-gutters > .col, .content-container .gokContainer.column .no-gutters > ul,
 .no-gutters > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.col-1, .col-2, .news-list-header .news-list-date, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .news-list-header .news-list-headline, .col-11, .col-12, .col, .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column ul,
+.col-1, .col-2, .news-list-header .news-list-date, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .news-list-header .news-list-headline, .col-11, .col-12, .col, .content-container .gokContainer.column ul,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .main.two-columns .main-sidebar, #pz2-termLists, .tx-ezbrequest-pi1 #ezb_search_form, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .main.two-columns .main-content, .tx-ezbrequest-pi1 #journalNavi, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .main.one-column, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -3431,7 +3431,7 @@ pre code {
   padding-left: 15px;
 }
 
-.col, .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column ul {
+.col, .content-container .gokContainer.column ul {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -4707,7 +4707,7 @@ pre code {
 }
 
 .form-control, .powermail_input,
-.powermail_textarea, .powermail_select, .header .header-search input, #pazpar2 .pz2-months, #pazpar2 .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-mathematicians .iputStart, .tx_find .fieldContainer input {
+.powermail_textarea, .powermail_select, .content-container .gokContainer.column select, .header .header-search input, #pazpar2 .pz2-months, #pazpar2 .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-mathematicians .iputStart, .tx_find .fieldContainer input {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -4726,13 +4726,13 @@ pre code {
 }
 
 .form-control::-ms-expand, .powermail_input::-ms-expand,
-.powermail_textarea::-ms-expand, .powermail_select::-ms-expand, .header .header-search input::-ms-expand, #pazpar2 .pz2-months::-ms-expand, #pazpar2 .pz2-searchField::-ms-expand, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-expand, .tx-mathematicians .iputStart::-ms-expand, .tx_find .fieldContainer input::-ms-expand {
+.powermail_textarea::-ms-expand, .powermail_select::-ms-expand, .content-container .gokContainer.column select::-ms-expand, .header .header-search input::-ms-expand, #pazpar2 .pz2-months::-ms-expand, #pazpar2 .pz2-searchField::-ms-expand, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-expand, .tx-mathematicians .iputStart::-ms-expand, .tx_find .fieldContainer input::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
 .form-control:focus, .powermail_input:focus,
-.powermail_textarea:focus, .powermail_select:focus, .header .header-search input:focus, #pazpar2 .pz2-months:focus, #pazpar2 .pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-mathematicians .iputStart:focus, .tx_find .fieldContainer input:focus {
+.powermail_textarea:focus, .powermail_select:focus, .content-container .gokContainer.column select:focus, .header .header-search input:focus, #pazpar2 .pz2-months:focus, #pazpar2 .pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-mathematicians .iputStart:focus, .tx_find .fieldContainer input:focus {
   color: #495057;
   background-color: #fff;
   border-color: #6598da;
@@ -4742,44 +4742,44 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder, .powermail_input::-webkit-input-placeholder,
-.powermail_textarea::-webkit-input-placeholder, .powermail_select::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder, #pazpar2 .pz2-months::-webkit-input-placeholder, #pazpar2 .pz2-searchField::-webkit-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-webkit-input-placeholder, .tx-mathematicians .iputStart::-webkit-input-placeholder, .tx_find .fieldContainer input::-webkit-input-placeholder {
+.powermail_textarea::-webkit-input-placeholder, .powermail_select::-webkit-input-placeholder, .content-container .gokContainer.column select::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder, #pazpar2 .pz2-months::-webkit-input-placeholder, #pazpar2 .pz2-searchField::-webkit-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-webkit-input-placeholder, .tx-mathematicians .iputStart::-webkit-input-placeholder, .tx_find .fieldContainer input::-webkit-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder, .powermail_input:-ms-input-placeholder,
-.powermail_textarea:-ms-input-placeholder, .powermail_select:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder, #pazpar2 .pz2-months:-ms-input-placeholder, #pazpar2 .pz2-searchField:-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:-ms-input-placeholder, .tx-mathematicians .iputStart:-ms-input-placeholder, .tx_find .fieldContainer input:-ms-input-placeholder {
+.powermail_textarea:-ms-input-placeholder, .powermail_select:-ms-input-placeholder, .content-container .gokContainer.column select:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder, #pazpar2 .pz2-months:-ms-input-placeholder, #pazpar2 .pz2-searchField:-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:-ms-input-placeholder, .tx-mathematicians .iputStart:-ms-input-placeholder, .tx_find .fieldContainer input:-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder, .powermail_input::-ms-input-placeholder,
-.powermail_textarea::-ms-input-placeholder, .powermail_select::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder, #pazpar2 .pz2-months::-ms-input-placeholder, #pazpar2 .pz2-searchField::-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-input-placeholder, .tx-mathematicians .iputStart::-ms-input-placeholder, .tx_find .fieldContainer input::-ms-input-placeholder {
+.powermail_textarea::-ms-input-placeholder, .powermail_select::-ms-input-placeholder, .content-container .gokContainer.column select::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder, #pazpar2 .pz2-months::-ms-input-placeholder, #pazpar2 .pz2-searchField::-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-input-placeholder, .tx-mathematicians .iputStart::-ms-input-placeholder, .tx_find .fieldContainer input::-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control::placeholder, .powermail_input::placeholder,
-.powermail_textarea::placeholder, .powermail_select::placeholder, .header .header-search input::placeholder, #pazpar2 .pz2-months::placeholder, #pazpar2 .pz2-searchField::placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::placeholder, .tx-mathematicians .iputStart::placeholder, .tx_find .fieldContainer input::placeholder {
+.powermail_textarea::placeholder, .powermail_select::placeholder, .content-container .gokContainer.column select::placeholder, .header .header-search input::placeholder, #pazpar2 .pz2-months::placeholder, #pazpar2 .pz2-searchField::placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::placeholder, .tx-mathematicians .iputStart::placeholder, .tx_find .fieldContainer input::placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control:disabled, .powermail_input:disabled,
-.powermail_textarea:disabled, .powermail_select:disabled, .header .header-search input:disabled, #pazpar2 .pz2-months:disabled, #pazpar2 .pz2-searchField:disabled, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:disabled, .tx-mathematicians .iputStart:disabled, .tx_find .fieldContainer input:disabled, .form-control[readonly], [readonly].powermail_input,
-[readonly].powermail_textarea, [readonly].powermail_select, .header .header-search input[readonly], #pazpar2 [readonly].pz2-months, #pazpar2 [readonly].pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[readonly][type=text], .tx-mathematicians [readonly].iputStart, .tx_find .fieldContainer input[readonly] {
+.powermail_textarea:disabled, .powermail_select:disabled, .content-container .gokContainer.column select:disabled, .header .header-search input:disabled, #pazpar2 .pz2-months:disabled, #pazpar2 .pz2-searchField:disabled, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:disabled, .tx-mathematicians .iputStart:disabled, .tx_find .fieldContainer input:disabled, .form-control[readonly], [readonly].powermail_input,
+[readonly].powermail_textarea, [readonly].powermail_select, .content-container .gokContainer.column select[readonly], .header .header-search input[readonly], #pazpar2 [readonly].pz2-months, #pazpar2 [readonly].pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[readonly][type=text], .tx-mathematicians [readonly].iputStart, .tx_find .fieldContainer input[readonly] {
   background-color: #e9ecef;
   opacity: 1;
 }
 
 select.form-control:not([size]):not([multiple]), select.powermail_input:not([size]):not([multiple]),
-select.powermail_textarea:not([size]):not([multiple]), select.powermail_select:not([size]):not([multiple]), #pazpar2 select.pz2-months:not([size]):not([multiple]), #pazpar2 select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians select.iputStart:not([size]):not([multiple]) {
+select.powermail_textarea:not([size]):not([multiple]), select.powermail_select:not([size]):not([multiple]), .content-container .gokContainer.column select:not([size]):not([multiple]), #pazpar2 select.pz2-months:not([size]):not([multiple]), #pazpar2 select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians select.iputStart:not([size]):not([multiple]) {
   height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px);
 }
 
 select.form-control:focus::-ms-value, select.powermail_input:focus::-ms-value,
-select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-value, #pazpar2 select.pz2-months:focus::-ms-value, #pazpar2 select.pz2-searchField:focus::-ms-value, .tx-mathematicians select.iputStart:focus::-ms-value {
+select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-value, .content-container .gokContainer.column select:focus::-ms-value, #pazpar2 select.pz2-months:focus::-ms-value, #pazpar2 select.pz2-searchField:focus::-ms-value, .tx-mathematicians select.iputStart:focus::-ms-value {
   color: #495057;
   background-color: #fff;
 }
@@ -4834,7 +4834,7 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 }
 
 .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .input-group-sm > .form-control-plaintext.powermail_input, .input-group-sm >
-.form-control-plaintext.powermail_textarea, .input-group-sm > .form-control-plaintext.powermail_select, .header .header-search .input-group-sm > input.form-control-plaintext, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-months, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-sm > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-sm > input.form-control-plaintext,
+.form-control-plaintext.powermail_textarea, .input-group-sm > .form-control-plaintext.powermail_select, .content-container .gokContainer.column .input-group-sm > select.form-control-plaintext, .header .header-search .input-group-sm > input.form-control-plaintext, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-months, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-sm > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-sm > input.form-control-plaintext,
 .input-group-sm > .form-control-plaintext.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-plaintext.btn,
 .input-group-sm > .input-group-btn > .form-control-plaintext.powermail_submit, .header .header-search
@@ -4845,7 +4845,7 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 .tx-mathematicians
 .input-group-sm > .input-group-btn > .form-control-plaintext.submStart, .tx_find form
 .input-group-sm > .input-group-btn > .form-control-plaintext.submit, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .input-group-lg > .form-control-plaintext.powermail_input, .input-group-lg >
-.form-control-plaintext.powermail_textarea, .input-group-lg > .form-control-plaintext.powermail_select, .header .header-search .input-group-lg > input.form-control-plaintext, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-months, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-lg > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-lg > input.form-control-plaintext,
+.form-control-plaintext.powermail_textarea, .input-group-lg > .form-control-plaintext.powermail_select, .content-container .gokContainer.column .input-group-lg > select.form-control-plaintext, .header .header-search .input-group-lg > input.form-control-plaintext, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-months, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-lg > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-lg > input.form-control-plaintext,
 .input-group-lg > .form-control-plaintext.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-plaintext.btn,
 .input-group-lg > .input-group-btn > .form-control-plaintext.powermail_submit, .header .header-search
@@ -4861,7 +4861,7 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 }
 
 .form-control-sm, .input-group-sm > .form-control, .input-group-sm > .powermail_input, .input-group-sm >
-.powermail_textarea, .input-group-sm > .powermail_select, .header .header-search .input-group-sm > input, #pazpar2 .input-group-sm > .pz2-months, #pazpar2 .input-group-sm > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input[type=text], .tx-mathematicians .input-group-sm > .iputStart, .tx_find .fieldContainer .input-group-sm > input,
+.powermail_textarea, .input-group-sm > .powermail_select, .content-container .gokContainer.column .input-group-sm > select, .header .header-search .input-group-sm > input, #pazpar2 .input-group-sm > .pz2-months, #pazpar2 .input-group-sm > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input[type=text], .tx-mathematicians .input-group-sm > .iputStart, .tx_find .fieldContainer .input-group-sm > input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .input-group-sm > .input-group-btn > .powermail_submit, .header .header-search
@@ -4878,7 +4878,7 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .input-group-sm > select.powermail_input:not([size]):not([multiple]), .input-group-sm >
-select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.powermail_select:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-sm > select.iputStart:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.powermail_select:not([size]):not([multiple]), .content-container .gokContainer.column .input-group-sm > select:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-sm > select.iputStart:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.powermail_submit:not([size]):not([multiple]), .header .header-search
@@ -4894,7 +4894,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.
 }
 
 .form-control-lg, .input-group-lg > .form-control, .input-group-lg > .powermail_input, .input-group-lg >
-.powermail_textarea, .input-group-lg > .powermail_select, .header .header-search .input-group-lg > input, #pazpar2 .input-group-lg > .pz2-months, #pazpar2 .input-group-lg > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input[type=text], .tx-mathematicians .input-group-lg > .iputStart, .tx_find .fieldContainer .input-group-lg > input,
+.powermail_textarea, .input-group-lg > .powermail_select, .content-container .gokContainer.column .input-group-lg > select, .header .header-search .input-group-lg > input, #pazpar2 .input-group-lg > .pz2-months, #pazpar2 .input-group-lg > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input[type=text], .tx-mathematicians .input-group-lg > .iputStart, .tx_find .fieldContainer .input-group-lg > input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .input-group-lg > .input-group-btn > .powermail_submit, .header .header-search
@@ -4911,7 +4911,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.
 }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .input-group-lg > select.powermail_input:not([size]):not([multiple]), .input-group-lg >
-select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.powermail_select:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-lg > select.iputStart:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.powermail_select:not([size]):not([multiple]), .content-container .gokContainer.column .input-group-lg > select:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-lg > select.iputStart:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.powermail_submit:not([size]):not([multiple]), .header .header-search
@@ -4945,7 +4945,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   margin-left: -5px;
 }
 
-.form-row > .col, .content-container .gokContainer.column .form-row > .checkButton, .content-container .gokContainer.column .form-row > ul,
+.form-row > .col, .content-container .gokContainer.column .form-row > ul,
 .form-row > [class*="col-"] {
   padding-right: 5px;
   padding-left: 5px;
@@ -5004,16 +5004,16 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 }
 
 .was-validated .form-control:valid, .was-validated .powermail_input:valid, .was-validated
-.powermail_textarea:valid, .was-validated .powermail_select:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .was-validated #pazpar2 .pz2-months:valid, #pazpar2 .was-validated .pz2-months:valid, .was-validated #pazpar2 .pz2-searchField:valid, #pazpar2 .was-validated .pz2-searchField:valid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid, .was-validated .tx-mathematicians .iputStart:valid, .tx-mathematicians .was-validated .iputStart:valid, .was-validated .tx_find .fieldContainer input:valid, .tx_find .fieldContainer .was-validated input:valid, .form-control.is-valid, .is-valid.powermail_input,
-.is-valid.powermail_textarea, .is-valid.powermail_select, .header .header-search input.is-valid, #pazpar2 .is-valid.pz2-months, #pazpar2 .is-valid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text], .tx-mathematicians .is-valid.iputStart, .tx_find .fieldContainer input.is-valid, .was-validated
+.powermail_textarea:valid, .was-validated .powermail_select:valid, .was-validated .content-container .gokContainer.column select:valid, .content-container .gokContainer.column .was-validated select:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .was-validated #pazpar2 .pz2-months:valid, #pazpar2 .was-validated .pz2-months:valid, .was-validated #pazpar2 .pz2-searchField:valid, #pazpar2 .was-validated .pz2-searchField:valid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid, .was-validated .tx-mathematicians .iputStart:valid, .tx-mathematicians .was-validated .iputStart:valid, .was-validated .tx_find .fieldContainer input:valid, .tx_find .fieldContainer .was-validated input:valid, .form-control.is-valid, .is-valid.powermail_input,
+.is-valid.powermail_textarea, .is-valid.powermail_select, .content-container .gokContainer.column select.is-valid, .header .header-search input.is-valid, #pazpar2 .is-valid.pz2-months, #pazpar2 .is-valid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text], .tx-mathematicians .is-valid.iputStart, .tx_find .fieldContainer input.is-valid, .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745;
 }
 
 .was-validated .form-control:valid:focus, .was-validated .powermail_input:valid:focus, .was-validated
-.powermail_textarea:valid:focus, .was-validated .powermail_select:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .was-validated #pazpar2 .pz2-months:valid:focus, #pazpar2 .was-validated .pz2-months:valid:focus, .was-validated #pazpar2 .pz2-searchField:valid:focus, #pazpar2 .was-validated .pz2-searchField:valid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid:focus, .was-validated .tx-mathematicians .iputStart:valid:focus, .tx-mathematicians .was-validated .iputStart:valid:focus, .was-validated .tx_find .fieldContainer input:valid:focus, .tx_find .fieldContainer .was-validated input:valid:focus, .form-control.is-valid:focus, .is-valid.powermail_input:focus,
-.is-valid.powermail_textarea:focus, .is-valid.powermail_select:focus, .header .header-search input.is-valid:focus, #pazpar2 .is-valid.pz2-months:focus, #pazpar2 .is-valid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text]:focus, .tx-mathematicians .is-valid.iputStart:focus, .tx_find .fieldContainer input.is-valid:focus, .was-validated
+.powermail_textarea:valid:focus, .was-validated .powermail_select:valid:focus, .was-validated .content-container .gokContainer.column select:valid:focus, .content-container .gokContainer.column .was-validated select:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .was-validated #pazpar2 .pz2-months:valid:focus, #pazpar2 .was-validated .pz2-months:valid:focus, .was-validated #pazpar2 .pz2-searchField:valid:focus, #pazpar2 .was-validated .pz2-searchField:valid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid:focus, .was-validated .tx-mathematicians .iputStart:valid:focus, .tx-mathematicians .was-validated .iputStart:valid:focus, .was-validated .tx_find .fieldContainer input:valid:focus, .tx_find .fieldContainer .was-validated input:valid:focus, .form-control.is-valid:focus, .is-valid.powermail_input:focus,
+.is-valid.powermail_textarea:focus, .is-valid.powermail_select:focus, .content-container .gokContainer.column select.is-valid:focus, .header .header-search input.is-valid:focus, #pazpar2 .is-valid.pz2-months:focus, #pazpar2 .is-valid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text]:focus, .tx-mathematicians .is-valid.iputStart:focus, .tx_find .fieldContainer input.is-valid:focus, .was-validated
 .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
@@ -5021,12 +5021,14 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 }
 
 .was-validated .form-control:valid ~ .valid-feedback, .was-validated .powermail_input:valid ~ .valid-feedback, .was-validated
-.powermail_textarea:valid ~ .valid-feedback, .was-validated .powermail_select:valid ~ .valid-feedback, .was-validated .header .header-search input:valid ~ .valid-feedback, .header .header-search .was-validated input:valid ~ .valid-feedback, .was-validated #pazpar2 .pz2-months:valid ~ .valid-feedback, #pazpar2 .was-validated .pz2-months:valid ~ .valid-feedback, .was-validated #pazpar2 .pz2-searchField:valid ~ .valid-feedback, #pazpar2 .was-validated .pz2-searchField:valid ~ .valid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .valid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid ~ .valid-feedback, .was-validated .tx-mathematicians .iputStart:valid ~ .valid-feedback, .tx-mathematicians .was-validated .iputStart:valid ~ .valid-feedback, .was-validated .tx_find .fieldContainer input:valid ~ .valid-feedback, .tx_find .fieldContainer .was-validated input:valid ~ .valid-feedback,
+.powermail_textarea:valid ~ .valid-feedback, .was-validated .powermail_select:valid ~ .valid-feedback, .was-validated .content-container .gokContainer.column select:valid ~ .valid-feedback, .content-container .gokContainer.column .was-validated select:valid ~ .valid-feedback, .was-validated .header .header-search input:valid ~ .valid-feedback, .header .header-search .was-validated input:valid ~ .valid-feedback, .was-validated #pazpar2 .pz2-months:valid ~ .valid-feedback, #pazpar2 .was-validated .pz2-months:valid ~ .valid-feedback, .was-validated #pazpar2 .pz2-searchField:valid ~ .valid-feedback, #pazpar2 .was-validated .pz2-searchField:valid ~ .valid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .valid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid ~ .valid-feedback, .was-validated .tx-mathematicians .iputStart:valid ~ .valid-feedback, .tx-mathematicians .was-validated .iputStart:valid ~ .valid-feedback, .was-validated .tx_find .fieldContainer input:valid ~ .valid-feedback, .tx_find .fieldContainer .was-validated input:valid ~ .valid-feedback,
 .was-validated .form-control:valid ~ .valid-tooltip,
 .was-validated .powermail_input:valid ~ .valid-tooltip,
 .was-validated
 .powermail_textarea:valid ~ .valid-tooltip,
 .was-validated .powermail_select:valid ~ .valid-tooltip,
+.was-validated .content-container .gokContainer.column select:valid ~ .valid-tooltip, .content-container .gokContainer.column
+.was-validated select:valid ~ .valid-tooltip,
 .was-validated .header .header-search input:valid ~ .valid-tooltip, .header .header-search
 .was-validated input:valid ~ .valid-tooltip,
 .was-validated #pazpar2 .pz2-months:valid ~ .valid-tooltip, #pazpar2
@@ -5039,9 +5041,9 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 .was-validated .iputStart:valid ~ .valid-tooltip,
 .was-validated .tx_find .fieldContainer input:valid ~ .valid-tooltip, .tx_find .fieldContainer
 .was-validated input:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .is-valid.powermail_input ~ .valid-feedback,
-.is-valid.powermail_textarea ~ .valid-feedback, .is-valid.powermail_select ~ .valid-feedback, .header .header-search input.is-valid ~ .valid-feedback, #pazpar2 .is-valid.pz2-months ~ .valid-feedback, #pazpar2 .is-valid.pz2-searchField ~ .valid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .valid-feedback, .tx-mathematicians .is-valid.iputStart ~ .valid-feedback, .tx_find .fieldContainer input.is-valid ~ .valid-feedback,
+.is-valid.powermail_textarea ~ .valid-feedback, .is-valid.powermail_select ~ .valid-feedback, .content-container .gokContainer.column select.is-valid ~ .valid-feedback, .header .header-search input.is-valid ~ .valid-feedback, #pazpar2 .is-valid.pz2-months ~ .valid-feedback, #pazpar2 .is-valid.pz2-searchField ~ .valid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .valid-feedback, .tx-mathematicians .is-valid.iputStart ~ .valid-feedback, .tx_find .fieldContainer input.is-valid ~ .valid-feedback,
 .form-control.is-valid ~ .valid-tooltip, .is-valid.powermail_input ~ .valid-tooltip,
-.is-valid.powermail_textarea ~ .valid-tooltip, .is-valid.powermail_select ~ .valid-tooltip, .header .header-search input.is-valid ~ .valid-tooltip, #pazpar2 .is-valid.pz2-months ~ .valid-tooltip, #pazpar2 .is-valid.pz2-searchField ~ .valid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .valid-tooltip, .tx-mathematicians .is-valid.iputStart ~ .valid-tooltip, .tx_find .fieldContainer input.is-valid ~ .valid-tooltip, .was-validated
+.is-valid.powermail_textarea ~ .valid-tooltip, .is-valid.powermail_select ~ .valid-tooltip, .content-container .gokContainer.column select.is-valid ~ .valid-tooltip, .header .header-search input.is-valid ~ .valid-tooltip, #pazpar2 .is-valid.pz2-months ~ .valid-tooltip, #pazpar2 .is-valid.pz2-searchField ~ .valid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .valid-tooltip, .tx-mathematicians .is-valid.iputStart ~ .valid-tooltip, .tx_find .fieldContainer input.is-valid ~ .valid-tooltip, .was-validated
 .custom-select:valid ~ .valid-feedback,
 .was-validated
 .custom-select:valid ~ .valid-tooltip,
@@ -5098,16 +5100,16 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 }
 
 .was-validated .form-control:invalid, .was-validated .powermail_input:invalid, .was-validated
-.powermail_textarea:invalid, .was-validated .powermail_select:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .was-validated #pazpar2 .pz2-months:invalid, #pazpar2 .was-validated .pz2-months:invalid, .was-validated #pazpar2 .pz2-searchField:invalid, #pazpar2 .was-validated .pz2-searchField:invalid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid, .was-validated .tx-mathematicians .iputStart:invalid, .tx-mathematicians .was-validated .iputStart:invalid, .was-validated .tx_find .fieldContainer input:invalid, .tx_find .fieldContainer .was-validated input:invalid, .form-control.is-invalid, .is-invalid.powermail_input,
-.is-invalid.powermail_textarea, .is-invalid.powermail_select, .header .header-search input.is-invalid, #pazpar2 .is-invalid.pz2-months, #pazpar2 .is-invalid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text], .tx-mathematicians .is-invalid.iputStart, .tx_find .fieldContainer input.is-invalid, .was-validated
+.powermail_textarea:invalid, .was-validated .powermail_select:invalid, .was-validated .content-container .gokContainer.column select:invalid, .content-container .gokContainer.column .was-validated select:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .was-validated #pazpar2 .pz2-months:invalid, #pazpar2 .was-validated .pz2-months:invalid, .was-validated #pazpar2 .pz2-searchField:invalid, #pazpar2 .was-validated .pz2-searchField:invalid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid, .was-validated .tx-mathematicians .iputStart:invalid, .tx-mathematicians .was-validated .iputStart:invalid, .was-validated .tx_find .fieldContainer input:invalid, .tx_find .fieldContainer .was-validated input:invalid, .form-control.is-invalid, .is-invalid.powermail_input,
+.is-invalid.powermail_textarea, .is-invalid.powermail_select, .content-container .gokContainer.column select.is-invalid, .header .header-search input.is-invalid, #pazpar2 .is-invalid.pz2-months, #pazpar2 .is-invalid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text], .tx-mathematicians .is-invalid.iputStart, .tx_find .fieldContainer input.is-invalid, .was-validated
 .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545;
 }
 
 .was-validated .form-control:invalid:focus, .was-validated .powermail_input:invalid:focus, .was-validated
-.powermail_textarea:invalid:focus, .was-validated .powermail_select:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .was-validated #pazpar2 .pz2-months:invalid:focus, #pazpar2 .was-validated .pz2-months:invalid:focus, .was-validated #pazpar2 .pz2-searchField:invalid:focus, #pazpar2 .was-validated .pz2-searchField:invalid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid:focus, .was-validated .tx-mathematicians .iputStart:invalid:focus, .tx-mathematicians .was-validated .iputStart:invalid:focus, .was-validated .tx_find .fieldContainer input:invalid:focus, .tx_find .fieldContainer .was-validated input:invalid:focus, .form-control.is-invalid:focus, .is-invalid.powermail_input:focus,
-.is-invalid.powermail_textarea:focus, .is-invalid.powermail_select:focus, .header .header-search input.is-invalid:focus, #pazpar2 .is-invalid.pz2-months:focus, #pazpar2 .is-invalid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text]:focus, .tx-mathematicians .is-invalid.iputStart:focus, .tx_find .fieldContainer input.is-invalid:focus, .was-validated
+.powermail_textarea:invalid:focus, .was-validated .powermail_select:invalid:focus, .was-validated .content-container .gokContainer.column select:invalid:focus, .content-container .gokContainer.column .was-validated select:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .was-validated #pazpar2 .pz2-months:invalid:focus, #pazpar2 .was-validated .pz2-months:invalid:focus, .was-validated #pazpar2 .pz2-searchField:invalid:focus, #pazpar2 .was-validated .pz2-searchField:invalid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid:focus, .was-validated .tx-mathematicians .iputStart:invalid:focus, .tx-mathematicians .was-validated .iputStart:invalid:focus, .was-validated .tx_find .fieldContainer input:invalid:focus, .tx_find .fieldContainer .was-validated input:invalid:focus, .form-control.is-invalid:focus, .is-invalid.powermail_input:focus,
+.is-invalid.powermail_textarea:focus, .is-invalid.powermail_select:focus, .content-container .gokContainer.column select.is-invalid:focus, .header .header-search input.is-invalid:focus, #pazpar2 .is-invalid.pz2-months:focus, #pazpar2 .is-invalid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text]:focus, .tx-mathematicians .is-invalid.iputStart:focus, .tx_find .fieldContainer input.is-invalid:focus, .was-validated
 .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
@@ -5115,12 +5117,14 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 }
 
 .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .powermail_input:invalid ~ .invalid-feedback, .was-validated
-.powermail_textarea:invalid ~ .invalid-feedback, .was-validated .powermail_select:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-months:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-months:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:invalid ~ .invalid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated .tx-mathematicians .iputStart:invalid ~ .invalid-feedback, .tx-mathematicians .was-validated .iputStart:invalid ~ .invalid-feedback, .was-validated .tx_find .fieldContainer input:invalid ~ .invalid-feedback, .tx_find .fieldContainer .was-validated input:invalid ~ .invalid-feedback,
+.powermail_textarea:invalid ~ .invalid-feedback, .was-validated .powermail_select:invalid ~ .invalid-feedback, .was-validated .content-container .gokContainer.column select:invalid ~ .invalid-feedback, .content-container .gokContainer.column .was-validated select:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-months:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-months:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:invalid ~ .invalid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated .tx-mathematicians .iputStart:invalid ~ .invalid-feedback, .tx-mathematicians .was-validated .iputStart:invalid ~ .invalid-feedback, .was-validated .tx_find .fieldContainer input:invalid ~ .invalid-feedback, .tx_find .fieldContainer .was-validated input:invalid ~ .invalid-feedback,
 .was-validated .form-control:invalid ~ .invalid-tooltip,
 .was-validated .powermail_input:invalid ~ .invalid-tooltip,
 .was-validated
 .powermail_textarea:invalid ~ .invalid-tooltip,
 .was-validated .powermail_select:invalid ~ .invalid-tooltip,
+.was-validated .content-container .gokContainer.column select:invalid ~ .invalid-tooltip, .content-container .gokContainer.column
+.was-validated select:invalid ~ .invalid-tooltip,
 .was-validated .header .header-search input:invalid ~ .invalid-tooltip, .header .header-search
 .was-validated input:invalid ~ .invalid-tooltip,
 .was-validated #pazpar2 .pz2-months:invalid ~ .invalid-tooltip, #pazpar2
@@ -5133,9 +5137,9 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 .was-validated .iputStart:invalid ~ .invalid-tooltip,
 .was-validated .tx_find .fieldContainer input:invalid ~ .invalid-tooltip, .tx_find .fieldContainer
 .was-validated input:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .is-invalid.powermail_input ~ .invalid-feedback,
-.is-invalid.powermail_textarea ~ .invalid-feedback, .is-invalid.powermail_select ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-months ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-feedback, .tx-mathematicians .is-invalid.iputStart ~ .invalid-feedback, .tx_find .fieldContainer input.is-invalid ~ .invalid-feedback,
+.is-invalid.powermail_textarea ~ .invalid-feedback, .is-invalid.powermail_select ~ .invalid-feedback, .content-container .gokContainer.column select.is-invalid ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-months ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-feedback, .tx-mathematicians .is-invalid.iputStart ~ .invalid-feedback, .tx_find .fieldContainer input.is-invalid ~ .invalid-feedback,
 .form-control.is-invalid ~ .invalid-tooltip, .is-invalid.powermail_input ~ .invalid-tooltip,
-.is-invalid.powermail_textarea ~ .invalid-tooltip, .is-invalid.powermail_select ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-months ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-tooltip, .tx-mathematicians .is-invalid.iputStart ~ .invalid-tooltip, .tx_find .fieldContainer input.is-invalid ~ .invalid-tooltip, .was-validated
+.is-invalid.powermail_textarea ~ .invalid-tooltip, .is-invalid.powermail_select ~ .invalid-tooltip, .content-container .gokContainer.column select.is-invalid ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-months ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-tooltip, .tx-mathematicians .is-invalid.iputStart ~ .invalid-tooltip, .tx_find .fieldContainer input.is-invalid ~ .invalid-tooltip, .was-validated
 .custom-select:invalid ~ .invalid-feedback,
 .was-validated
 .custom-select:invalid ~ .invalid-tooltip,
@@ -5218,7 +5222,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   .form-inline .form-control, .tx-ezbrequest-pi1 #ezb_search_form form .form-control, .tx-mathematicians form .form-control, .form-inline .powermail_input, .tx-ezbrequest-pi1 #ezb_search_form form .powermail_input, .tx-mathematicians form .powermail_input, .form-inline
   .powermail_textarea, .tx-ezbrequest-pi1 #ezb_search_form form
   .powermail_textarea, .tx-mathematicians form
-  .powermail_textarea, .form-inline .powermail_select, .tx-ezbrequest-pi1 #ezb_search_form form .powermail_select, .tx-mathematicians form .powermail_select, .form-inline .header .header-search input, .header .header-search .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .header .header-search input, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .header .header-search input, .header .header-search .tx-mathematicians form input, .form-inline #pazpar2 .pz2-months, #pazpar2 .form-inline .pz2-months, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-months, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-months, .tx-mathematicians form #pazpar2 .pz2-months, #pazpar2 .tx-mathematicians form .pz2-months, .form-inline #pazpar2 .pz2-searchField, #pazpar2 .form-inline .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-searchField, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-searchField, .tx-mathematicians form #pazpar2 .pz2-searchField, #pazpar2 .tx-mathematicians form .pz2-searchField, .form-inline .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .form-inline input[type=text], .tx-ezbrequest-pi1 #ezb_search_form form input[type=text], .tx-mathematicians form .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .form-inline .tx-mathematicians .iputStart, .tx-mathematicians .form-inline .iputStart, .tx-ezbrequest-pi1 #ezb_search_form form .tx-mathematicians .iputStart, .tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form form .iputStart, .tx-mathematicians form .iputStart, .form-inline .tx_find .fieldContainer input, .tx_find .fieldContainer .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-mathematicians form input {
+  .powermail_textarea, .form-inline .powermail_select, .tx-ezbrequest-pi1 #ezb_search_form form .powermail_select, .tx-mathematicians form .powermail_select, .form-inline .content-container .gokContainer.column select, .content-container .gokContainer.column .form-inline select, .tx-ezbrequest-pi1 #ezb_search_form form .content-container .gokContainer.column select, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form form select, .tx-mathematicians form .content-container .gokContainer.column select, .content-container .gokContainer.column .tx-mathematicians form select, .form-inline .header .header-search input, .header .header-search .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .header .header-search input, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .header .header-search input, .header .header-search .tx-mathematicians form input, .form-inline #pazpar2 .pz2-months, #pazpar2 .form-inline .pz2-months, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-months, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-months, .tx-mathematicians form #pazpar2 .pz2-months, #pazpar2 .tx-mathematicians form .pz2-months, .form-inline #pazpar2 .pz2-searchField, #pazpar2 .form-inline .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-searchField, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-searchField, .tx-mathematicians form #pazpar2 .pz2-searchField, #pazpar2 .tx-mathematicians form .pz2-searchField, .form-inline .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .form-inline input[type=text], .tx-ezbrequest-pi1 #ezb_search_form form input[type=text], .tx-mathematicians form .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .form-inline .tx-mathematicians .iputStart, .tx-mathematicians .form-inline .iputStart, .tx-ezbrequest-pi1 #ezb_search_form form .tx-mathematicians .iputStart, .tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form form .iputStart, .tx-mathematicians form .iputStart, .form-inline .tx_find .fieldContainer input, .tx_find .fieldContainer .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-mathematicians form input {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -6659,7 +6663,7 @@ tbody.collapse.show {
 }
 
 .input-group .form-control, .input-group .powermail_input, .input-group
-.powermail_textarea, .input-group .powermail_select, .input-group .header .header-search input, .header .header-search .input-group input, .input-group #pazpar2 .pz2-months, #pazpar2 .input-group .pz2-months, .input-group #pazpar2 .pz2-searchField, #pazpar2 .input-group .pz2-searchField, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text], .input-group .tx-mathematicians .iputStart, .tx-mathematicians .input-group .iputStart, .input-group .tx_find .fieldContainer input, .tx_find .fieldContainer .input-group input {
+.powermail_textarea, .input-group .powermail_select, .input-group .content-container .gokContainer.column select, .content-container .gokContainer.column .input-group select, .input-group .header .header-search input, .header .header-search .input-group input, .input-group #pazpar2 .pz2-months, #pazpar2 .input-group .pz2-months, .input-group #pazpar2 .pz2-searchField, #pazpar2 .input-group .pz2-searchField, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text], .input-group .tx-mathematicians .iputStart, .tx-mathematicians .input-group .iputStart, .input-group .tx_find .fieldContainer input, .tx_find .fieldContainer .input-group input {
   position: relative;
   z-index: 2;
   -webkit-box-flex: 1;
@@ -6670,9 +6674,9 @@ tbody.collapse.show {
 }
 
 .input-group .form-control:focus, .input-group .powermail_input:focus, .input-group
-.powermail_textarea:focus, .input-group .powermail_select:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group #pazpar2 .pz2-months:focus, #pazpar2 .input-group .pz2-months:focus, .input-group #pazpar2 .pz2-searchField:focus, #pazpar2 .input-group .pz2-searchField:focus, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:focus, .input-group .tx-mathematicians .iputStart:focus, .tx-mathematicians .input-group .iputStart:focus, .input-group .tx_find .fieldContainer input:focus, .tx_find .fieldContainer .input-group input:focus, .input-group .form-control:active, .input-group .powermail_input:active, .input-group
-.powermail_textarea:active, .input-group .powermail_select:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group #pazpar2 .pz2-months:active, #pazpar2 .input-group .pz2-months:active, .input-group #pazpar2 .pz2-searchField:active, #pazpar2 .input-group .pz2-searchField:active, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:active, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:active, .input-group .tx-mathematicians .iputStart:active, .tx-mathematicians .input-group .iputStart:active, .input-group .tx_find .fieldContainer input:active, .tx_find .fieldContainer .input-group input:active, .input-group .form-control:hover, .input-group .powermail_input:hover, .input-group
-.powermail_textarea:hover, .input-group .powermail_select:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover, .input-group #pazpar2 .pz2-months:hover, #pazpar2 .input-group .pz2-months:hover, .input-group #pazpar2 .pz2-searchField:hover, #pazpar2 .input-group .pz2-searchField:hover, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:hover, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:hover, .input-group .tx-mathematicians .iputStart:hover, .tx-mathematicians .input-group .iputStart:hover, .input-group .tx_find .fieldContainer input:hover, .tx_find .fieldContainer .input-group input:hover {
+.powermail_textarea:focus, .input-group .powermail_select:focus, .input-group .content-container .gokContainer.column select:focus, .content-container .gokContainer.column .input-group select:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group #pazpar2 .pz2-months:focus, #pazpar2 .input-group .pz2-months:focus, .input-group #pazpar2 .pz2-searchField:focus, #pazpar2 .input-group .pz2-searchField:focus, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:focus, .input-group .tx-mathematicians .iputStart:focus, .tx-mathematicians .input-group .iputStart:focus, .input-group .tx_find .fieldContainer input:focus, .tx_find .fieldContainer .input-group input:focus, .input-group .form-control:active, .input-group .powermail_input:active, .input-group
+.powermail_textarea:active, .input-group .powermail_select:active, .input-group .content-container .gokContainer.column select:active, .content-container .gokContainer.column .input-group select:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group #pazpar2 .pz2-months:active, #pazpar2 .input-group .pz2-months:active, .input-group #pazpar2 .pz2-searchField:active, #pazpar2 .input-group .pz2-searchField:active, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:active, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:active, .input-group .tx-mathematicians .iputStart:active, .tx-mathematicians .input-group .iputStart:active, .input-group .tx_find .fieldContainer input:active, .tx_find .fieldContainer .input-group input:active, .input-group .form-control:hover, .input-group .powermail_input:hover, .input-group
+.powermail_textarea:hover, .input-group .powermail_select:hover, .input-group .content-container .gokContainer.column select:hover, .content-container .gokContainer.column .input-group select:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover, .input-group #pazpar2 .pz2-months:hover, #pazpar2 .input-group .pz2-months:hover, .input-group #pazpar2 .pz2-searchField:hover, #pazpar2 .input-group .pz2-searchField:hover, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:hover, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:hover, .input-group .tx-mathematicians .iputStart:hover, .tx-mathematicians .input-group .iputStart:hover, .input-group .tx_find .fieldContainer input:hover, .tx_find .fieldContainer .input-group input:hover {
   z-index: 3;
 }
 
@@ -6683,6 +6687,8 @@ tbody.collapse.show {
 .input-group
 .powermail_textarea,
 .input-group .powermail_select,
+.input-group .content-container .gokContainer.column select, .content-container .gokContainer.column
+.input-group select,
 .input-group .header .header-search input, .header .header-search
 .input-group input,
 .input-group #pazpar2 .pz2-months, #pazpar2
@@ -6720,7 +6726,7 @@ tbody.collapse.show {
   border: 1px solid #ced4da;
 }
 
-.input-group-addon.form-control-sm, .header .header-search .input-group-sm > input.input-group-addon, #pazpar2 .input-group-sm > .input-group-addon.pz2-months, #pazpar2 .input-group-sm > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.input-group-addon[type=text], .tx-mathematicians .input-group-sm > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-sm > input.input-group-addon,
+.input-group-addon.form-control-sm, .content-container .gokContainer.column .input-group-sm > select.input-group-addon, .header .header-search .input-group-sm > input.input-group-addon, #pazpar2 .input-group-sm > .input-group-addon.pz2-months, #pazpar2 .input-group-sm > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.input-group-addon[type=text], .tx-mathematicians .input-group-sm > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-sm > input.input-group-addon,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 .input-group-sm > .input-group-btn > .input-group-addon.powermail_submit, .header .header-search
@@ -6735,7 +6741,7 @@ tbody.collapse.show {
   font-size: 0.875rem;
 }
 
-.input-group-addon.form-control-lg, .header .header-search .input-group-lg > input.input-group-addon, #pazpar2 .input-group-lg > .input-group-addon.pz2-months, #pazpar2 .input-group-lg > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.input-group-addon[type=text], .tx-mathematicians .input-group-lg > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-lg > input.input-group-addon,
+.input-group-addon.form-control-lg, .content-container .gokContainer.column .input-group-lg > select.input-group-addon, .header .header-search .input-group-lg > input.input-group-addon, #pazpar2 .input-group-lg > .input-group-addon.pz2-months, #pazpar2 .input-group-lg > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.input-group-addon[type=text], .tx-mathematicians .input-group-lg > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-lg > input.input-group-addon,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 .input-group-lg > .input-group-btn > .input-group-addon.powermail_submit, .header .header-search
@@ -6760,7 +6766,7 @@ tbody.collapse.show {
 }
 
 .form-control + .input-group-addon:not(:first-child), .powermail_input + .input-group-addon:not(:first-child),
-.powermail_textarea + .input-group-addon:not(:first-child), .powermail_select + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child), #pazpar2 .pz2-months + .input-group-addon:not(:first-child), #pazpar2 .pz2-searchField + .input-group-addon:not(:first-child), .tx-ezbrequest-pi1 #ezb_search_form input[type=text] + .input-group-addon:not(:first-child), .tx-mathematicians .iputStart + .input-group-addon:not(:first-child), .tx_find .fieldContainer input + .input-group-addon:not(:first-child) {
+.powermail_textarea + .input-group-addon:not(:first-child), .powermail_select + .input-group-addon:not(:first-child), .content-container .gokContainer.column select + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child), #pazpar2 .pz2-months + .input-group-addon:not(:first-child), #pazpar2 .pz2-searchField + .input-group-addon:not(:first-child), .tx-ezbrequest-pi1 #ezb_search_form input[type=text] + .input-group-addon:not(:first-child), .tx-mathematicians .iputStart + .input-group-addon:not(:first-child), .tx_find .fieldContainer input + .input-group-addon:not(:first-child) {
   border-left: 0;
 }
 
@@ -7727,7 +7733,7 @@ tbody.collapse.show {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.card-header + .list-group .list-group-item:first-child, .content-container .gokContainer.column .card-header + ul .list-group-item:first-child, .card-header + .list-group .content-container .gokContainer.column .checkButton:first-child, .content-container .gokContainer.column .card-header + .list-group .checkButton:first-child, .content-container .gokContainer.column .card-header + ul .checkButton:first-child, .card-header + .list-group .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .card-header + .list-group li:first-child, .content-container .gokContainer.column .card-header + ul li:first-child, .card-header + .list-group .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + .list-group .facetActive:first-child, .content-container .gokContainer.column .card-header + ul .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + ul .facetActive:first-child, .card-header + .list-group .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + .list-group .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + ul .facetActive:first-child {
+.card-header + .list-group .list-group-item:first-child, .content-container .gokContainer.column .card-header + ul .list-group-item:first-child, .card-header + .list-group .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .card-header + .list-group li:first-child, .content-container .gokContainer.column .card-header + ul li:first-child, .card-header + .list-group .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + .list-group .facetActive:first-child, .content-container .gokContainer.column .card-header + ul .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + ul .facetActive:first-child, .card-header + .list-group .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + .list-group .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + ul .facetActive:first-child {
   border-top: 0;
 }
 
@@ -8311,7 +8317,7 @@ tbody.collapse.show {
   background-color: #e9ecef;
 }
 
-.list-group-item, .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column li, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive {
+.list-group-item, .content-container .gokContainer.column li, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
@@ -8320,37 +8326,37 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.list-group-item:last-child, .content-container .gokContainer.column .checkButton:last-child, .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child {
+.list-group-item:last-child, .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child {
   margin-bottom: 0;
 }
 
-.list-group-item:focus, .content-container .gokContainer.column .checkButton:focus, .content-container .gokContainer.column li:focus, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:focus, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:focus, .list-group-item:hover, .content-container .gokContainer.column .checkButton:hover, .content-container .gokContainer.column li:hover, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:hover, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:hover {
+.list-group-item:focus, .content-container .gokContainer.column li:focus, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:focus, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:focus, .list-group-item:hover, .content-container .gokContainer.column li:hover, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:hover, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:hover {
   text-decoration: none;
 }
 
-.list-group-item.disabled, .content-container .gokContainer.column .disabled.checkButton, .content-container .gokContainer.column li.disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .disabled.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .disabled.facetActive, .list-group-item:disabled, .content-container .gokContainer.column .checkButton:disabled, .content-container .gokContainer.column li:disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:disabled, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:disabled {
+.list-group-item.disabled, .content-container .gokContainer.column li.disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .disabled.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .disabled.facetActive, .list-group-item:disabled, .content-container .gokContainer.column li:disabled, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:disabled, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:disabled {
   color: #868e96;
   background-color: #fff;
 }
 
-.list-group-item.active, .content-container .gokContainer.column .active.checkButton, .content-container .gokContainer.column .checkButton.close, .content-container .gokContainer.column li.active, .content-container .gokContainer.column li.close, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .active.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .active.facetActive, .content-container .gokContainer.column .list-group-item.close {
+.list-group-item.active, .content-container .gokContainer.column li.active, .content-container .gokContainer.column li.close, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .close.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .close.facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .active.facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .active.facetActive, .content-container .gokContainer.column .list-group-item.close {
   z-index: 2;
   color: #fff;
   background-color: #25589a;
   border-color: #25589a;
 }
 
-.list-group-flush .list-group-item, .list-group-flush .content-container .gokContainer.column .checkButton, .content-container .gokContainer.column .list-group-flush .checkButton, .list-group-flush .content-container .gokContainer.column li, .content-container .gokContainer.column .list-group-flush li, .list-group-flush .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush .facetActive, .list-group-flush .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush .facetActive {
+.list-group-flush .list-group-item, .list-group-flush .content-container .gokContainer.column li, .content-container .gokContainer.column .list-group-flush li, .list-group-flush .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush .facetActive, .list-group-flush .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush .facetActive {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
 
-.list-group-flush:first-child .list-group-item:first-child, .list-group-flush:first-child .content-container .gokContainer.column .checkButton:first-child, .content-container .gokContainer.column .list-group-flush:first-child .checkButton:first-child, .list-group-flush:first-child .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .list-group-flush:first-child li:first-child, .list-group-flush:first-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:first-child .facetActive:first-child, .list-group-flush:first-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:first-child .facetActive:first-child {
+.list-group-flush:first-child .list-group-item:first-child, .list-group-flush:first-child .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .list-group-flush:first-child li:first-child, .list-group-flush:first-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:first-child .facetActive:first-child, .list-group-flush:first-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:first-child .facetActive:first-child {
   border-top: 0;
 }
 
-.list-group-flush:last-child .list-group-item:last-child, .list-group-flush:last-child .content-container .gokContainer.column .checkButton:last-child, .content-container .gokContainer.column .list-group-flush:last-child .checkButton:last-child, .list-group-flush:last-child .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .list-group-flush:last-child li:last-child, .list-group-flush:last-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:last-child .facetActive:last-child, .list-group-flush:last-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:last-child .facetActive:last-child {
+.list-group-flush:last-child .list-group-item:last-child, .list-group-flush:last-child .content-container .gokContainer.column li:last-child, .content-container .gokContainer.column .list-group-flush:last-child li:last-child, .list-group-flush:last-child .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:last-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .list-group-flush:last-child .facetActive:last-child, .list-group-flush:last-child .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:last-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .list-group-flush:last-child .facetActive:last-child {
   border-bottom: 0;
 }
 
@@ -12554,16 +12560,6 @@ select {
       flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
-
-.content-container .gokContainer.column .checkButton {
-  padding: 0 5px;
-  font-size: 16px;
-}
-
-.content-container .gokContainer.column .checkButton:after {
-  top: .5em;
-  right: .3em;
 }
 
 .content-container .gokContainer.column ul {
