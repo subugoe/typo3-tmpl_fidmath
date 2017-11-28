@@ -70,8 +70,11 @@ class Gok
                 
                     $(\">li a span.GOKName\", this).each(function(){
                         var onclickfunction = this.parentNode.getAttribute(\"onclick\");
+                        var GOKIDclass = $(this).prev().html();
                         var option=$(document.createElement(\"option\"))
                         .appendTo(select)
+                        .val(this.parentNode.href)
+                        .attr('id',GOKIDclass)
                         .html(
                             '<a href=\"' + this.parentNode.href + '\"onclick=\"'+ onclickfunction + '\"/>'
 							+ $(this).html()
