@@ -59,37 +59,34 @@ class Gok
 //        ";
 
         $js .= "
-        
-            $( document ).ready(function() {
-                $(\"#ul-734-MSC\").each(function(){
-                    var list=\$(this), 
-                            select=$(document.createElement(\"select\"))
-                            .insertBefore($(this).hide())
-                            .change(function(){window.open(\$(this).val())
-                        });
-                
-                    $(\">li a span.GOKName\", this).each(function(){
-                        var onclickfunction = this.parentNode.getAttribute(\"onclick\");
-                        var GOKIDclass = $(this).prev().html();
-                        var option=$(document.createElement(\"option\"))
-                        .appendTo(select)
-                        .val(this.parentNode.href)
-                        .attr('id',GOKIDclass)
-                        .html(
-                            '<a href=\"' + this.parentNode.href + '\"onclick=\"'+ onclickfunction + '\"/>'
-							+ $(this).html()
-                            + '<a/>'
-                        );
-                        
-                        if($(this).attr(\"class\") === \"open\"){
-                            option.attr(\"selected\",\"selected\");
-                        }
-                    });
-                
-                list.remove();
-                
-                });
+        function makeIntoSelect (id) {
+            console.log(id);
+            var ulElement = document.getElementById(id);
+            $(ulElement).each(function(){
+                var list=$(this), 
+                        select=$(document.createElement(\"select\"))
+                        .insertBefore($(this))
+                        .change(function(){window.open($(this).val())
             });
+            
+            $(\">li a span.GOKName\", this).each(function(){
+                var onclickfunction = this.parentNode.getAttribute(\"onclick\");
+                    var GOKIDclass = $(this).prev().html();
+                    var option=$(document.createElement(\"option\"))
+                    .appendTo(select)
+                    .val(this.parentNode.href)
+                    .attr('id',GOKIDclass)
+                    .html('<a href=\"' + this.parentNode.href + '\"onclick=\"'+ onclickfunction + '\"/>' + $(this).html() + '<a/>');
+                    
+                    if($(this).attr(\"class\") === \"open\"){
+                        option.attr(\"selected\",\"selected\");
+                    }
+            });
+            
+            list.remove();
+            
+            });
+        }
         ";
 
         return $js;
