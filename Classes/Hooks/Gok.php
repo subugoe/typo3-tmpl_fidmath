@@ -56,6 +56,35 @@ class Gok
 //                        console.log(\"hasClass gokContainer\");
 //                });
 //            });
+//  ############################################################################
+//        function makeIntoSelect (id) {
+//            console.log(id);
+//            var ulElement = document.getElementById(id);
+//            $(ulElement).each(function(){
+//                var list=$(this),
+//                        select=$(document.createElement("select"))
+//                            .insertBefore($(this))
+//                            .change(function(){window.open($(this).val())
+//            });
+//
+//            $(">li a span.GOKName", this).each(function(){
+//                var onclickfunction = this.parentNode.getAttribute("onclick");
+//                var GOKIDclass = $(this).prev().html();
+//                var option=$(document.createElement("option"))
+//                    .appendTo(select)
+//                    .val(this.parentNode.href)
+//                    .attr('id',GOKIDclass)
+//                    .html('<a href="' + this.parentNode.href + '"onclick="'+ onclickfunction + '"/>' + $(this).html() + '<a/>');
+//
+//                if($(this).attr("class") === "open"){
+//                    option.attr("selected","selected");
+//                }
+//            });
+//
+//            list.remove();
+//
+//            });
+//        }
 //        ";
 
         $js .= "
@@ -66,8 +95,11 @@ class Gok
                 var list=$(this), 
                         select=$(document.createElement(\"select\"))
                         .insertBefore($(this))
-                        .change(function(){window.open($(this).val())
-            });
+                        .attr('id', id)
+                        .change(function(){
+                            console.log($(\"option a\").attr(\"onclick\"));
+                            $(\"option a\").attr(\"onclick\");
+                        });
             
             $(\">li a span.GOKName\", this).each(function(){
                 var onclickfunction = this.parentNode.getAttribute(\"onclick\");
@@ -76,11 +108,7 @@ class Gok
                     .appendTo(select)
                     .val(this.parentNode.href)
                     .attr('id',GOKIDclass)
-                    .html('<a href=\"' + this.parentNode.href + '\"onclick=\"'+ onclickfunction + '\"/>' + $(this).html() + '<a/>');
-                    
-                    if($(this).attr(\"class\") === \"open\"){
-                        option.attr(\"selected\",\"selected\");
-                    }
+                    .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>' + $(this).html() + '<a/>');
             });
             
             list.remove();
