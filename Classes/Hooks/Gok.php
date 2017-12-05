@@ -97,8 +97,8 @@ class Gok
                         .insertBefore($(this))
                         .attr('id', id)
                         .change(function(){
-                            console.log($(\"option a\").attr(\"onclick\"));
-                            $(\"option a\").attr(\"onclick\");
+                            expandGOK734($(\"option\").attr(\"id\"));
+                            makeIntoSelect('ul-734-'+ $(\"option\").attr(\"id\"));
                         });
             
             $(\">li a span.GOKName\", this).each(function(){
@@ -111,7 +111,7 @@ class Gok
                     .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>' + $(this).html() + '<a/>');
             });
             
-            list.remove();
+            list.hide();
             
             });
         }
