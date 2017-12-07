@@ -12560,6 +12560,12 @@ select {
       flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  background-color: #fff;
+}
+
+.content-container .gokContainer.column select {
+  margin-bottom: 5px;
+  background-color: #fff;
 }
 
 .content-container .gokContainer.column ul {

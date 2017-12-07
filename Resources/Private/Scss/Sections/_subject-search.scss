@@ -3,6 +3,7 @@
 
     .gokContainer.column {
         @include make-row;
+        background-color: $white;
 
         //.checkButton {
         //    @extend .col;
@@ -18,12 +19,13 @@
 
         select {
             @extend .powermail_select;
+            margin-bottom: 5px;
+            background-color: $white;
         }
 
         ul {
             @extend .col;
             @extend .list-group;
-
             background-color: $white;
         }
 

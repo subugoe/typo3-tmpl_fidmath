@@ -89,32 +89,59 @@ class Gok
 
         $js .= "
         function makeIntoSelect (id) {
-            console.log(id);
+        
             var ulElement = document.getElementById(id);
+           
             $(ulElement).each(function(){
+                
+                if (($('select.level-1').length > 0) & ($('ul.level-2').length == 0)) {
+                    $('select.level-1').remove();
+                    console.log(\"LEVEL-1 OPTIONS ARE DELETED\");
+                    
+                } else if (($('select.level-1').length > 0) & ($('select.level-2').length > 0)) {
+                    $('select.level-1').remove();
+                    $('select.level-2').remove();
+                    console.log(\"LEVEL-1 AND LEVEL-2 OPTIONS ARE DELETED\");
+                    
+                } else if ($('select.level-2').length > 0) {
+                    $('select.level-2').remove();
+                    console.log(\"LEVEL-2 OPTIONS ARE DELETED\");
+                };
+                
                 var list=$(this), 
-                        select=$(document.createElement(\"select\"))
-                        .insertBefore($(this))
-                        .attr('id', id)
-                        .change(function(){
-                            expandGOK734($(\"option\").attr(\"id\"));
-                            makeIntoSelect('ul-734-'+ $(\"option\").attr(\"id\"));
-                        });
+                    select=$(document.createElement(\"select\"))
+                    .insertBefore($(this))
+                    .attr('id', id)
+                    .attr('class', this.getAttribute(\"class\"))
+                    .change(function() {
+                    
+                        var selectedElement = $(this).children(\":selected\").attr(\"id\");
+                        expandGOK734(selectedElement);
+                        makeIntoSelect('ul-734-'+selectedElement);
+                    
+                    });
             
-            $(\">li a span.GOKName\", this).each(function(){
-                var onclickfunction = this.parentNode.getAttribute(\"onclick\");
-                    var GOKIDclass = $(this).prev().html();
-                    var option=$(document.createElement(\"option\"))
-                    .appendTo(select)
-                    .val(this.parentNode.href)
-                    .attr('id',GOKIDclass)
-                    .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>' + $(this).html() + '<a/>');
+                
+                $(\">li a span.GOKName\", this).each(function(){
+                    var onclickfunction = this.parentNode.getAttribute(\"onclick\");
+                        var GOKIDclass = $(this).prev().html();
+                        var option=$(document.createElement(\"option\"))
+                        .appendTo(select)
+                        .val(this.parentNode.href)
+                        .attr('id',GOKIDclass)
+                        .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>' + $(this).html() + '<a/>');
+                });
+            
+                list.hide();
+                
             });
             
-            list.hide();
-            
-            });
         }
+        
+        $( document ).ready(function() {
+            makeIntoSelect ('ul-$element->objectID-MSC');
+            
+        });
         ";
 
         return $js;
