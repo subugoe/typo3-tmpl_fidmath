@@ -12568,6 +12568,18 @@ select {
   background-color: #fff;
 }
 
+.content-container .gokContainer.column select.level-1 {
+  padding-left: 30px;
+}
+
+.content-container .gokContainer.column select.level-2 {
+  padding-left: 60px;
+}
+
+.content-container .gokContainer.column select.level-3 {
+  padding-left: 90px;
+}
+
 .content-container .gokContainer.column ul {
   background-color: #fff;
 }
@@ -12608,6 +12620,13 @@ select {
 
 .content-container .gokContainer.column .GOKID {
   font-weight: bold;
+}
+
+.content-container .gokContainer.column ul.level-0,
+.content-container .gokContainer.column ul.level-1,
+.content-container .gokContainer.column ul.level-2,
+.content-container .gokContainer.column ul.level-3 {
+  display: none;
 }
 
 .tx-mathematicians .collection {

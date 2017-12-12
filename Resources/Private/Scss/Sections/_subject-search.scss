@@ -23,6 +23,18 @@
             background-color: $white;
         }
 
+        select.level-1{
+            padding-left:30px;
+        }
+
+        select.level-2{
+            padding-left:60px;
+        }
+
+        select.level-3{
+            padding-left:90px;
+        }
+
         ul {
             @extend .col;
             @extend .list-group;
@@ -71,6 +83,13 @@
 
         .GOKID {
             font-weight: bold;
+        }
+
+        ul.level-0,
+        ul.level-1,
+        ul.level-2,
+        ul.level-3{
+            display:none;
         }
 
     }

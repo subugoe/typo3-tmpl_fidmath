@@ -87,26 +87,16 @@ class Gok
 //        }
 //        ";
 
+        $js = '        
+            var mutexSelect = false;
+            var newSelectedItem; '.$js;
+
         $js .= "
-        function makeIntoSelect (id) {
         
+        function makeIntoSelect (id) {
             var ulElement = document.getElementById(id);
-           
-            $(ulElement).each(function(){
-                
-                if (($('select.level-1').length > 0) & ($('ul.level-2').length == 0)) {
-                    $('select.level-1').remove();
-                    console.log(\"LEVEL-1 OPTIONS ARE DELETED\");
-                    
-                } else if (($('select.level-1').length > 0) & ($('select.level-2').length > 0)) {
-                    $('select.level-1').remove();
-                    $('select.level-2').remove();
-                    console.log(\"LEVEL-1 AND LEVEL-2 OPTIONS ARE DELETED\");
-                    
-                } else if ($('select.level-2').length > 0) {
-                    $('select.level-2').remove();
-                    console.log(\"LEVEL-2 OPTIONS ARE DELETED\");
-                };
+            
+            $(ulElement).each(function(){  
                 
                 var list=$(this), 
                     select=$(document.createElement(\"select\"))
@@ -116,11 +106,13 @@ class Gok
                     .change(function() {
                     
                         var selectedElement = $(this).children(\":selected\").attr(\"id\");
+                        newSelectedItem = 'ul-734-'+selectedElement;
                         expandGOK734(selectedElement);
-                        makeIntoSelect('ul-734-'+selectedElement);
-                    
+                        mutexSelect = true;
+                        
                     });
             
+                var option=$(document.createElement(\"option\")).appendTo(select).html('...');
                 
                 $(\">li a span.GOKName\", this).each(function(){
                     var onclickfunction = this.parentNode.getAttribute(\"onclick\");
@@ -138,10 +130,17 @@ class Gok
             
         }
         
-        $( document ).ready(function() {
+        $( document ).ready( function () {
             makeIntoSelect ('ul-$element->objectID-MSC');
-            
         });
+                
+        
+        window.setInterval( function(){
+            if (mutexSelect == true) {
+                mutexSelect = false;
+                makeIntoSelect(newSelectedItem);
+            }
+        },100);
         ";
 
         return $js;
