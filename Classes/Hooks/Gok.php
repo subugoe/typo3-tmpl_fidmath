@@ -86,12 +86,9 @@ class Gok
 //            });
 //        }
 //        ";
-
-        $js = '        
-            var mutexSelect = false;
-            var newSelectedItem; '.$js;
-
         $js .= "
+        var mutexSelect = false;
+        var newSelectedItem;
         
         function makeIntoSelect (id) {
             var ulElement = document.getElementById(id);
@@ -108,13 +105,16 @@ class Gok
                         var selectedElement = $(this).children(\":selected\").attr(\"id\");
                         newSelectedItem = 'ul-734-'+selectedElement;
                         expandGOK734(selectedElement);
+                        var jContainerLI = jQuery('#c".$element->objectID."-' + selectedElement);
+                        jContainerLI.parent().nextAll('select').remove();
                         mutexSelect = true;
                         
                     });
-            
+                    
                 var option=$(document.createElement(\"option\")).appendTo(select).html('...');
                 
                 $(\">li a span.GOKName\", this).each(function(){
+                
                     var onclickfunction = this.parentNode.getAttribute(\"onclick\");
                         var GOKIDclass = $(this).prev().html();
                         var option=$(document.createElement(\"option\"))
@@ -122,10 +122,10 @@ class Gok
                         .val(this.parentNode.href)
                         .attr('id',GOKIDclass)
                         .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>' + $(this).html() + '<a/>');
+                        
                 });
             
                 list.hide();
-                
             });
             
         }
@@ -133,14 +133,13 @@ class Gok
         $( document ).ready( function () {
             makeIntoSelect ('ul-$element->objectID-MSC');
         });
-                
-        
+
         window.setInterval( function(){
             if (mutexSelect == true) {
                 mutexSelect = false;
                 makeIntoSelect(newSelectedItem);
             }
-        },100);
+        },300);
         ";
 
         return $js;
