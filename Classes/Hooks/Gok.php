@@ -91,6 +91,7 @@ class Gok
         var newSelectedItem;
         
         function makeIntoSelect (id) {
+            mutexSelect = false;
             var ulElement = document.getElementById(id);
             
             $(ulElement).each(function(){  
@@ -135,11 +136,10 @@ class Gok
         });
 
         window.setInterval( function(){
-            if (mutexSelect == true) {
-                mutexSelect = false;
+            if (mutexSelect === true) {
                 makeIntoSelect(newSelectedItem);
             }
-        },500);
+        },100);
         ";
 
         return $js;
