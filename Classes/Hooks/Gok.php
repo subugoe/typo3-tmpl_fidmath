@@ -121,7 +121,7 @@ class Gok
                         .appendTo(select)
                         .val(this.parentNode.href)
                         .attr('id',GOKIDclass)
-                        .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>' + $(this).html() + '<a/>');
+                        .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>'+ '<span class=\"plusMinus\">' + $(this).prev().prev().html() + ' </span>' + '<span class=\"GOKID\">' + GOKIDclass + ' </span>' + '<span class=\"GOKNAME\">' + $(this).html() +' </span>' + '<a/>');
                         
                 });
             
@@ -139,7 +139,7 @@ class Gok
                 mutexSelect = false;
                 makeIntoSelect(newSelectedItem);
             }
-        },300);
+        },500);
         ";
 
         return $js;

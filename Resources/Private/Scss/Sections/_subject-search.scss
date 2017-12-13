@@ -35,6 +35,13 @@
             padding-left:90px;
         }
 
+        ul.level-0,
+        ul.level-1,
+        ul.level-2,
+        ul.level-3{
+            display:none;
+        }
+
         ul {
             @extend .col;
             @extend .list-group;
@@ -83,13 +90,6 @@
 
         .GOKID {
             font-weight: bold;
-        }
-
-        ul.level-0,
-        ul.level-1,
-        ul.level-2,
-        ul.level-3{
-            display:none;
         }
 
     }
