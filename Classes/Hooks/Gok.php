@@ -139,7 +139,7 @@ class Gok
             if (mutexSelect === true) {
                 makeIntoSelect(newSelectedItem);
             }
-        },100);
+        },300);
         ";
 
         return $js;
