@@ -2722,11 +2722,42 @@
 }
 
 /*!
- * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+:root {
+  --blue: #25589a;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #868e96;
+  --gray-dark: #343a40;
+  --primary: #25589a;
+  --secondary: #868e96;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 @media print {
   *,
   *::before,
@@ -2814,7 +2845,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -2834,7 +2865,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -2872,7 +2903,7 @@ ul ol {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dd {
@@ -2951,6 +2982,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
+  -ms-overflow-style: scrollbar;
 }
 
 figure {
@@ -2970,7 +3002,7 @@ a,
 area,
 button,
 [role="button"],
-input,
+input:not([type="range"]),
 label,
 select,
 summary,
@@ -2998,6 +3030,10 @@ th {
 label {
   display: inline-block;
   margin-bottom: .5rem;
+}
+
+button {
+  border-radius: 0;
 }
 
 button:focus {
@@ -3124,7 +3160,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.2;
   color: inherit;
 }
 
@@ -3160,25 +3196,25 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 hr {
@@ -3191,7 +3227,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 mark,
@@ -3297,7 +3333,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 100%;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 pre {
@@ -3322,11 +3358,11 @@ pre code {
 }
 
 .container, .content-container, .header {
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -3355,11 +3391,10 @@ pre code {
 
 .container-fluid {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .row, .main, .tx-ezbrequest-pi1 #navi, .news-list-header {
@@ -3497,6 +3532,12 @@ pre code {
   max-width: 100%;
 }
 
+.order-first {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
 .order-1 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -3567,6 +3608,50 @@ pre code {
   -webkit-box-ordinal-group: 13;
       -ms-flex-order: 12;
           order: 12;
+}
+
+.offset-1 {
+  margin-left: 8.33333%;
+}
+
+.offset-2 {
+  margin-left: 16.66667%;
+}
+
+.offset-3 {
+  margin-left: 25%;
+}
+
+.offset-4 {
+  margin-left: 33.33333%;
+}
+
+.offset-5 {
+  margin-left: 41.66667%;
+}
+
+.offset-6 {
+  margin-left: 50%;
+}
+
+.offset-7 {
+  margin-left: 58.33333%;
+}
+
+.offset-8 {
+  margin-left: 66.66667%;
+}
+
+.offset-9 {
+  margin-left: 75%;
+}
+
+.offset-10 {
+  margin-left: 83.33333%;
+}
+
+.offset-11 {
+  margin-left: 91.66667%;
 }
 
 @media (min-width: 576px) {
@@ -3657,6 +3742,11 @@ pre code {
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .order-sm-first {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
   .order-sm-1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -3716,6 +3806,42 @@ pre code {
     -webkit-box-ordinal-group: 13;
         -ms-flex-order: 12;
             order: 12;
+  }
+  .offset-sm-0 {
+    margin-left: 0;
+  }
+  .offset-sm-1 {
+    margin-left: 8.33333%;
+  }
+  .offset-sm-2 {
+    margin-left: 16.66667%;
+  }
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  .offset-sm-4 {
+    margin-left: 33.33333%;
+  }
+  .offset-sm-5 {
+    margin-left: 41.66667%;
+  }
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  .offset-sm-7 {
+    margin-left: 58.33333%;
+  }
+  .offset-sm-8 {
+    margin-left: 66.66667%;
+  }
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  .offset-sm-10 {
+    margin-left: 83.33333%;
+  }
+  .offset-sm-11 {
+    margin-left: 91.66667%;
   }
 }
 
@@ -3807,6 +3933,11 @@ pre code {
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .order-md-first {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
   .order-md-1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -3866,6 +3997,42 @@ pre code {
     -webkit-box-ordinal-group: 13;
         -ms-flex-order: 12;
             order: 12;
+  }
+  .offset-md-0 {
+    margin-left: 0;
+  }
+  .offset-md-1 {
+    margin-left: 8.33333%;
+  }
+  .offset-md-2 {
+    margin-left: 16.66667%;
+  }
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+  .offset-md-4 {
+    margin-left: 33.33333%;
+  }
+  .offset-md-5 {
+    margin-left: 41.66667%;
+  }
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+  .offset-md-7 {
+    margin-left: 58.33333%;
+  }
+  .offset-md-8 {
+    margin-left: 66.66667%;
+  }
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+  .offset-md-10 {
+    margin-left: 83.33333%;
+  }
+  .offset-md-11 {
+    margin-left: 91.66667%;
   }
 }
 
@@ -3957,6 +4124,11 @@ pre code {
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .order-lg-first {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
   .order-lg-1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -4016,6 +4188,42 @@ pre code {
     -webkit-box-ordinal-group: 13;
         -ms-flex-order: 12;
             order: 12;
+  }
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+  .offset-lg-1 {
+    margin-left: 8.33333%;
+  }
+  .offset-lg-2 {
+    margin-left: 16.66667%;
+  }
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+  .offset-lg-4 {
+    margin-left: 33.33333%;
+  }
+  .offset-lg-5 {
+    margin-left: 41.66667%;
+  }
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+  .offset-lg-7 {
+    margin-left: 58.33333%;
+  }
+  .offset-lg-8 {
+    margin-left: 66.66667%;
+  }
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+  .offset-lg-10 {
+    margin-left: 83.33333%;
+  }
+  .offset-lg-11 {
+    margin-left: 91.66667%;
   }
 }
 
@@ -4107,6 +4315,11 @@ pre code {
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .order-xl-first {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
   .order-xl-1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -4166,6 +4379,42 @@ pre code {
     -webkit-box-ordinal-group: 13;
         -ms-flex-order: 12;
             order: 12;
+  }
+  .offset-xl-0 {
+    margin-left: 0;
+  }
+  .offset-xl-1 {
+    margin-left: 8.33333%;
+  }
+  .offset-xl-2 {
+    margin-left: 16.66667%;
+  }
+  .offset-xl-3 {
+    margin-left: 25%;
+  }
+  .offset-xl-4 {
+    margin-left: 33.33333%;
+  }
+  .offset-xl-5 {
+    margin-left: 41.66667%;
+  }
+  .offset-xl-6 {
+    margin-left: 50%;
+  }
+  .offset-xl-7 {
+    margin-left: 58.33333%;
+  }
+  .offset-xl-8 {
+    margin-left: 66.66667%;
+  }
+  .offset-xl-9 {
+    margin-left: 75%;
+  }
+  .offset-xl-10 {
+    margin-left: 83.33333%;
+  }
+  .offset-xl-11 {
+    margin-left: 91.66667%;
   }
 }
 
@@ -4358,63 +4607,117 @@ pre code {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-.thead-inverse th {
+.table .thead-dark th, .tx-ezbrequest-pi1 .ezbrequest_itemtable .thead-dark th, .tx-mathematicians #genResult table .thead-dark th {
   color: #fff;
   background-color: #212529;
-}
-
-.thead-default th {
-  color: #495057;
-  background-color: #e9ecef;
-}
-
-.table-inverse {
-  color: #fff;
-  background-color: #212529;
-}
-
-.table-inverse th,
-.table-inverse td,
-.table-inverse thead th {
   border-color: #32383e;
 }
 
-.table-inverse.table-bordered {
+.table .thead-light th, .tx-ezbrequest-pi1 .ezbrequest_itemtable .thead-light th, .tx-mathematicians #genResult table .thead-light th {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+}
+
+.table-dark {
+  color: #fff;
+  background-color: #212529;
+}
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
+  border-color: #32383e;
+}
+
+.table-dark.table-bordered {
   border: 0;
 }
 
-.table-inverse.table-striped tbody tr:nth-of-type(odd) {
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.table-inverse.table-hover tbody tr:hover {
+.table-dark.table-hover tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-@media (max-width: 991px) {
-  .table-responsive {
+@media (max-width: 575px) {
+  .table-responsive-sm {
     display: block;
     width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  .table-responsive.table-bordered {
+  .table-responsive-sm.table-bordered {
     border: 0;
   }
 }
 
-.form-control, .powermail_input,
-.powermail_textarea, .powermail_select, .header .header-search input, #pazpar2 .pz2-months, #pazpar2 .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-mathematicians .iputStart, .tx_find .fieldContainer input {
+@media (max-width: 767px) {
+  .table-responsive-md {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive-md.table-bordered {
+    border: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .table-responsive-lg {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive-lg.table-bordered {
+    border: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .table-responsive-xl {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive-xl.table-bordered {
+    border: 0;
+  }
+}
+
+.table-responsive {
   display: block;
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-responsive.table-bordered {
+  border: 0;
+}
+
+.form-control, .powermail_input,
+.powermail_textarea, .powermail_select, .content-container .gokContainer.column select, .header .header-search input, #pazpar2 .pz2-months, #pazpar2 .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-mathematicians .iputStart, .tx_find .fieldContainer input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-image: none;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ced4da;
   border-radius: 0;
   -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
@@ -4423,58 +4726,60 @@ pre code {
 }
 
 .form-control::-ms-expand, .powermail_input::-ms-expand,
-.powermail_textarea::-ms-expand, .powermail_select::-ms-expand, .header .header-search input::-ms-expand, #pazpar2 .pz2-months::-ms-expand, #pazpar2 .pz2-searchField::-ms-expand, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-expand, .tx-mathematicians .iputStart::-ms-expand, .tx_find .fieldContainer input::-ms-expand {
+.powermail_textarea::-ms-expand, .powermail_select::-ms-expand, .content-container .gokContainer.column select::-ms-expand, .header .header-search input::-ms-expand, #pazpar2 .pz2-months::-ms-expand, #pazpar2 .pz2-searchField::-ms-expand, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-expand, .tx-mathematicians .iputStart::-ms-expand, .tx_find .fieldContainer input::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
 .form-control:focus, .powermail_input:focus,
-.powermail_textarea:focus, .powermail_select:focus, .header .header-search input:focus, #pazpar2 .pz2-months:focus, #pazpar2 .pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-mathematicians .iputStart:focus, .tx_find .fieldContainer input:focus {
+.powermail_textarea:focus, .powermail_select:focus, .content-container .gokContainer.column select:focus, .header .header-search input:focus, #pazpar2 .pz2-months:focus, #pazpar2 .pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-mathematicians .iputStart:focus, .tx_find .fieldContainer input:focus {
   color: #495057;
   background-color: #fff;
   border-color: #6598da;
   outline: none;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.25);
 }
 
 .form-control::-webkit-input-placeholder, .powermail_input::-webkit-input-placeholder,
-.powermail_textarea::-webkit-input-placeholder, .powermail_select::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder, #pazpar2 .pz2-months::-webkit-input-placeholder, #pazpar2 .pz2-searchField::-webkit-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-webkit-input-placeholder, .tx-mathematicians .iputStart::-webkit-input-placeholder, .tx_find .fieldContainer input::-webkit-input-placeholder {
+.powermail_textarea::-webkit-input-placeholder, .powermail_select::-webkit-input-placeholder, .content-container .gokContainer.column select::-webkit-input-placeholder, .header .header-search input::-webkit-input-placeholder, #pazpar2 .pz2-months::-webkit-input-placeholder, #pazpar2 .pz2-searchField::-webkit-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-webkit-input-placeholder, .tx-mathematicians .iputStart::-webkit-input-placeholder, .tx_find .fieldContainer input::-webkit-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder, .powermail_input:-ms-input-placeholder,
-.powermail_textarea:-ms-input-placeholder, .powermail_select:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder, #pazpar2 .pz2-months:-ms-input-placeholder, #pazpar2 .pz2-searchField:-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:-ms-input-placeholder, .tx-mathematicians .iputStart:-ms-input-placeholder, .tx_find .fieldContainer input:-ms-input-placeholder {
+.powermail_textarea:-ms-input-placeholder, .powermail_select:-ms-input-placeholder, .content-container .gokContainer.column select:-ms-input-placeholder, .header .header-search input:-ms-input-placeholder, #pazpar2 .pz2-months:-ms-input-placeholder, #pazpar2 .pz2-searchField:-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:-ms-input-placeholder, .tx-mathematicians .iputStart:-ms-input-placeholder, .tx_find .fieldContainer input:-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder, .powermail_input::-ms-input-placeholder,
-.powermail_textarea::-ms-input-placeholder, .powermail_select::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder, #pazpar2 .pz2-months::-ms-input-placeholder, #pazpar2 .pz2-searchField::-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-input-placeholder, .tx-mathematicians .iputStart::-ms-input-placeholder, .tx_find .fieldContainer input::-ms-input-placeholder {
+.powermail_textarea::-ms-input-placeholder, .powermail_select::-ms-input-placeholder, .content-container .gokContainer.column select::-ms-input-placeholder, .header .header-search input::-ms-input-placeholder, #pazpar2 .pz2-months::-ms-input-placeholder, #pazpar2 .pz2-searchField::-ms-input-placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::-ms-input-placeholder, .tx-mathematicians .iputStart::-ms-input-placeholder, .tx_find .fieldContainer input::-ms-input-placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control::placeholder, .powermail_input::placeholder,
-.powermail_textarea::placeholder, .powermail_select::placeholder, .header .header-search input::placeholder, #pazpar2 .pz2-months::placeholder, #pazpar2 .pz2-searchField::placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::placeholder, .tx-mathematicians .iputStart::placeholder, .tx_find .fieldContainer input::placeholder {
+.powermail_textarea::placeholder, .powermail_select::placeholder, .content-container .gokContainer.column select::placeholder, .header .header-search input::placeholder, #pazpar2 .pz2-months::placeholder, #pazpar2 .pz2-searchField::placeholder, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]::placeholder, .tx-mathematicians .iputStart::placeholder, .tx_find .fieldContainer input::placeholder {
   color: #868e96;
   opacity: 1;
 }
 
 .form-control:disabled, .powermail_input:disabled,
-.powermail_textarea:disabled, .powermail_select:disabled, .header .header-search input:disabled, #pazpar2 .pz2-months:disabled, #pazpar2 .pz2-searchField:disabled, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:disabled, .tx-mathematicians .iputStart:disabled, .tx_find .fieldContainer input:disabled, .form-control[readonly], [readonly].powermail_input,
-[readonly].powermail_textarea, [readonly].powermail_select, .header .header-search input[readonly], #pazpar2 [readonly].pz2-months, #pazpar2 [readonly].pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[readonly][type=text], .tx-mathematicians [readonly].iputStart, .tx_find .fieldContainer input[readonly] {
+.powermail_textarea:disabled, .powermail_select:disabled, .content-container .gokContainer.column select:disabled, .header .header-search input:disabled, #pazpar2 .pz2-months:disabled, #pazpar2 .pz2-searchField:disabled, .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:disabled, .tx-mathematicians .iputStart:disabled, .tx_find .fieldContainer input:disabled, .form-control[readonly], [readonly].powermail_input,
+[readonly].powermail_textarea, [readonly].powermail_select, .content-container .gokContainer.column select[readonly], .header .header-search input[readonly], #pazpar2 [readonly].pz2-months, #pazpar2 [readonly].pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input[readonly][type=text], .tx-mathematicians [readonly].iputStart, .tx_find .fieldContainer input[readonly] {
   background-color: #e9ecef;
   opacity: 1;
 }
 
 select.form-control:not([size]):not([multiple]), select.powermail_input:not([size]):not([multiple]),
-select.powermail_textarea:not([size]):not([multiple]), select.powermail_select:not([size]):not([multiple]), #pazpar2 select.pz2-months:not([size]):not([multiple]), #pazpar2 select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians select.iputStart:not([size]):not([multiple]) {
+select.powermail_textarea:not([size]):not([multiple]), select.powermail_select:not([size]):not([multiple]), .content-container .gokContainer.column select:not([size]):not([multiple]), #pazpar2 select.pz2-months:not([size]):not([multiple]), #pazpar2 select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians select.iputStart:not([size]):not([multiple]) {
   height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px);
 }
 
 select.form-control:focus::-ms-value, select.powermail_input:focus::-ms-value,
-select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-value, #pazpar2 select.pz2-months:focus::-ms-value, #pazpar2 select.pz2-searchField:focus::-ms-value, .tx-mathematicians select.iputStart:focus::-ms-value {
+select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-value, .content-container .gokContainer.column select:focus::-ms-value, #pazpar2 select.pz2-months:focus::-ms-value, #pazpar2 select.pz2-searchField:focus::-ms-value, .tx-mathematicians select.iputStart:focus::-ms-value {
   color: #495057;
   background-color: #fff;
 }
@@ -4485,47 +4790,51 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 }
 
 .col-form-label {
-  padding-top: -webkit-calc(0.5rem - 1px * 2);
-  padding-top: calc(0.5rem - 1px * 2);
-  padding-bottom: -webkit-calc(0.5rem - 1px * 2);
-  padding-bottom: calc(0.5rem - 1px * 2);
+  padding-top: -webkit-calc(0.375rem + 1px);
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: -webkit-calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
   margin-bottom: 0;
+  line-height: 1.5;
 }
 
 .col-form-label-lg {
-  padding-top: -webkit-calc(0.5rem - 1px * 2);
-  padding-top: calc(0.5rem - 1px * 2);
-  padding-bottom: -webkit-calc(0.5rem - 1px * 2);
-  padding-bottom: calc(0.5rem - 1px * 2);
+  padding-top: -webkit-calc(0.5rem + 1px);
+  padding-top: calc(0.5rem + 1px);
+  padding-bottom: -webkit-calc(0.5rem + 1px);
+  padding-bottom: calc(0.5rem + 1px);
   font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .col-form-label-sm {
-  padding-top: -webkit-calc(0.25rem - 1px * 2);
-  padding-top: calc(0.25rem - 1px * 2);
-  padding-bottom: -webkit-calc(0.25rem - 1px * 2);
-  padding-bottom: calc(0.25rem - 1px * 2);
+  padding-top: -webkit-calc(0.25rem + 1px);
+  padding-top: calc(0.25rem + 1px);
+  padding-bottom: -webkit-calc(0.25rem + 1px);
+  padding-bottom: calc(0.25rem + 1px);
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .col-form-legend {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
   margin-bottom: 0;
   font-size: 1rem;
 }
 
 .form-control-plaintext {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
   margin-bottom: 0;
-  line-height: 1.25;
+  line-height: 1.5;
+  background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
 }
 
 .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .input-group-sm > .form-control-plaintext.powermail_input, .input-group-sm >
-.form-control-plaintext.powermail_textarea, .input-group-sm > .form-control-plaintext.powermail_select, .header .header-search .input-group-sm > input.form-control-plaintext, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-months, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-sm > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-sm > input.form-control-plaintext,
+.form-control-plaintext.powermail_textarea, .input-group-sm > .form-control-plaintext.powermail_select, .content-container .gokContainer.column .input-group-sm > select.form-control-plaintext, .header .header-search .input-group-sm > input.form-control-plaintext, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-months, #pazpar2 .input-group-sm > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-sm > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-sm > input.form-control-plaintext,
 .input-group-sm > .form-control-plaintext.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-plaintext.btn,
 .input-group-sm > .input-group-btn > .form-control-plaintext.powermail_submit, .header .header-search
@@ -4536,7 +4845,7 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 .tx-mathematicians
 .input-group-sm > .input-group-btn > .form-control-plaintext.submStart, .tx_find form
 .input-group-sm > .input-group-btn > .form-control-plaintext.submit, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .input-group-lg > .form-control-plaintext.powermail_input, .input-group-lg >
-.form-control-plaintext.powermail_textarea, .input-group-lg > .form-control-plaintext.powermail_select, .header .header-search .input-group-lg > input.form-control-plaintext, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-months, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-lg > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-lg > input.form-control-plaintext,
+.form-control-plaintext.powermail_textarea, .input-group-lg > .form-control-plaintext.powermail_select, .content-container .gokContainer.column .input-group-lg > select.form-control-plaintext, .header .header-search .input-group-lg > input.form-control-plaintext, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-months, #pazpar2 .input-group-lg > .form-control-plaintext.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.form-control-plaintext[type=text], .tx-mathematicians .input-group-lg > .form-control-plaintext.iputStart, .tx_find .fieldContainer .input-group-lg > input.form-control-plaintext,
 .input-group-lg > .form-control-plaintext.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-plaintext.btn,
 .input-group-lg > .input-group-btn > .form-control-plaintext.powermail_submit, .header .header-search
@@ -4552,7 +4861,7 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 }
 
 .form-control-sm, .input-group-sm > .form-control, .input-group-sm > .powermail_input, .input-group-sm >
-.powermail_textarea, .input-group-sm > .powermail_select, .header .header-search .input-group-sm > input, #pazpar2 .input-group-sm > .pz2-months, #pazpar2 .input-group-sm > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input[type=text], .tx-mathematicians .input-group-sm > .iputStart, .tx_find .fieldContainer .input-group-sm > input,
+.powermail_textarea, .input-group-sm > .powermail_select, .content-container .gokContainer.column .input-group-sm > select, .header .header-search .input-group-sm > input, #pazpar2 .input-group-sm > .pz2-months, #pazpar2 .input-group-sm > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input[type=text], .tx-mathematicians .input-group-sm > .iputStart, .tx_find .fieldContainer .input-group-sm > input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .input-group-sm > .input-group-btn > .powermail_submit, .header .header-search
@@ -4569,7 +4878,7 @@ select.powermail_textarea:focus::-ms-value, select.powermail_select:focus::-ms-v
 }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .input-group-sm > select.powermail_input:not([size]):not([multiple]), .input-group-sm >
-select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.powermail_select:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-sm > select.iputStart:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.powermail_select:not([size]):not([multiple]), .content-container .gokContainer.column .input-group-sm > select:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-sm > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-sm > select.iputStart:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.powermail_submit:not([size]):not([multiple]), .header .header-search
@@ -4585,7 +4894,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.
 }
 
 .form-control-lg, .input-group-lg > .form-control, .input-group-lg > .powermail_input, .input-group-lg >
-.powermail_textarea, .input-group-lg > .powermail_select, .header .header-search .input-group-lg > input, #pazpar2 .input-group-lg > .pz2-months, #pazpar2 .input-group-lg > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input[type=text], .tx-mathematicians .input-group-lg > .iputStart, .tx_find .fieldContainer .input-group-lg > input,
+.powermail_textarea, .input-group-lg > .powermail_select, .content-container .gokContainer.column .input-group-lg > select, .header .header-search .input-group-lg > input, #pazpar2 .input-group-lg > .pz2-months, #pazpar2 .input-group-lg > .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input[type=text], .tx-mathematicians .input-group-lg > .iputStart, .tx_find .fieldContainer .input-group-lg > input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .input-group-lg > .input-group-btn > .powermail_submit, .header .header-search
@@ -4602,7 +4911,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-sm > select.
 }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .input-group-lg > select.powermail_input:not([size]):not([multiple]), .input-group-lg >
-select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.powermail_select:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-lg > select.iputStart:not([size]):not([multiple]),
+select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.powermail_select:not([size]):not([multiple]), .content-container .gokContainer.column .input-group-lg > select:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-months:not([size]):not([multiple]), #pazpar2 .input-group-lg > select.pz2-searchField:not([size]):not([multiple]), .tx-mathematicians .input-group-lg > select.iputStart:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.powermail_submit:not([size]):not([multiple]), .header .header-search
@@ -4665,24 +4974,21 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 
 .form-check-inline {
   display: inline-block;
+  margin-right: 0.75rem;
 }
 
 .form-check-inline .form-check-label {
   vertical-align: middle;
 }
 
-.form-check-inline + .form-check-inline {
-  margin-left: 0.75rem;
-}
-
-.invalid-feedback {
+.valid-feedback {
   display: none;
   margin-top: .25rem;
   font-size: .875rem;
-  color: #dc3545;
+  color: #28a745;
 }
 
-.invalid-tooltip {
+.valid-tooltip {
   position: absolute;
   top: 100%;
   z-index: 5;
@@ -4693,54 +4999,56 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   font-size: .875rem;
   line-height: 1;
   color: #fff;
-  background-color: rgba(220, 53, 69, 0.8);
+  background-color: rgba(40, 167, 69, 0.8);
   border-radius: .2rem;
 }
 
 .was-validated .form-control:valid, .was-validated .powermail_input:valid, .was-validated
-.powermail_textarea:valid, .was-validated .powermail_select:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .was-validated #pazpar2 .pz2-months:valid, #pazpar2 .was-validated .pz2-months:valid, .was-validated #pazpar2 .pz2-searchField:valid, #pazpar2 .was-validated .pz2-searchField:valid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid, .was-validated .tx-mathematicians .iputStart:valid, .tx-mathematicians .was-validated .iputStart:valid, .was-validated .tx_find .fieldContainer input:valid, .tx_find .fieldContainer .was-validated input:valid, .form-control.is-valid, .is-valid.powermail_input,
-.is-valid.powermail_textarea, .is-valid.powermail_select, .header .header-search input.is-valid, #pazpar2 .is-valid.pz2-months, #pazpar2 .is-valid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text], .tx-mathematicians .is-valid.iputStart, .tx_find .fieldContainer input.is-valid, .was-validated
+.powermail_textarea:valid, .was-validated .powermail_select:valid, .was-validated .content-container .gokContainer.column select:valid, .content-container .gokContainer.column .was-validated select:valid, .was-validated .header .header-search input:valid, .header .header-search .was-validated input:valid, .was-validated #pazpar2 .pz2-months:valid, #pazpar2 .was-validated .pz2-months:valid, .was-validated #pazpar2 .pz2-searchField:valid, #pazpar2 .was-validated .pz2-searchField:valid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid, .was-validated .tx-mathematicians .iputStart:valid, .tx-mathematicians .was-validated .iputStart:valid, .was-validated .tx_find .fieldContainer input:valid, .tx_find .fieldContainer .was-validated input:valid, .form-control.is-valid, .is-valid.powermail_input,
+.is-valid.powermail_textarea, .is-valid.powermail_select, .content-container .gokContainer.column select.is-valid, .header .header-search input.is-valid, #pazpar2 .is-valid.pz2-months, #pazpar2 .is-valid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text], .tx-mathematicians .is-valid.iputStart, .tx_find .fieldContainer input.is-valid, .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745;
 }
 
 .was-validated .form-control:valid:focus, .was-validated .powermail_input:valid:focus, .was-validated
-.powermail_textarea:valid:focus, .was-validated .powermail_select:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .was-validated #pazpar2 .pz2-months:valid:focus, #pazpar2 .was-validated .pz2-months:valid:focus, .was-validated #pazpar2 .pz2-searchField:valid:focus, #pazpar2 .was-validated .pz2-searchField:valid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid:focus, .was-validated .tx-mathematicians .iputStart:valid:focus, .tx-mathematicians .was-validated .iputStart:valid:focus, .was-validated .tx_find .fieldContainer input:valid:focus, .tx_find .fieldContainer .was-validated input:valid:focus, .form-control.is-valid:focus, .is-valid.powermail_input:focus,
-.is-valid.powermail_textarea:focus, .is-valid.powermail_select:focus, .header .header-search input.is-valid:focus, #pazpar2 .is-valid.pz2-months:focus, #pazpar2 .is-valid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text]:focus, .tx-mathematicians .is-valid.iputStart:focus, .tx_find .fieldContainer input.is-valid:focus, .was-validated
+.powermail_textarea:valid:focus, .was-validated .powermail_select:valid:focus, .was-validated .content-container .gokContainer.column select:valid:focus, .content-container .gokContainer.column .was-validated select:valid:focus, .was-validated .header .header-search input:valid:focus, .header .header-search .was-validated input:valid:focus, .was-validated #pazpar2 .pz2-months:valid:focus, #pazpar2 .was-validated .pz2-months:valid:focus, .was-validated #pazpar2 .pz2-searchField:valid:focus, #pazpar2 .was-validated .pz2-searchField:valid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid:focus, .was-validated .tx-mathematicians .iputStart:valid:focus, .tx-mathematicians .was-validated .iputStart:valid:focus, .was-validated .tx_find .fieldContainer input:valid:focus, .tx_find .fieldContainer .was-validated input:valid:focus, .form-control.is-valid:focus, .is-valid.powermail_input:focus,
+.is-valid.powermail_textarea:focus, .is-valid.powermail_select:focus, .content-container .gokContainer.column select.is-valid:focus, .header .header-search input.is-valid:focus, #pazpar2 .is-valid.pz2-months:focus, #pazpar2 .is-valid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text]:focus, .tx-mathematicians .is-valid.iputStart:focus, .tx_find .fieldContainer input.is-valid:focus, .was-validated
 .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
-.was-validated .form-control:valid ~ .invalid-feedback, .was-validated .powermail_input:valid ~ .invalid-feedback, .was-validated
-.powermail_textarea:valid ~ .invalid-feedback, .was-validated .powermail_select:valid ~ .invalid-feedback, .was-validated .header .header-search input:valid ~ .invalid-feedback, .header .header-search .was-validated input:valid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-months:valid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-months:valid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:valid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:valid ~ .invalid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid ~ .invalid-feedback, .was-validated .tx-mathematicians .iputStart:valid ~ .invalid-feedback, .tx-mathematicians .was-validated .iputStart:valid ~ .invalid-feedback, .was-validated .tx_find .fieldContainer input:valid ~ .invalid-feedback, .tx_find .fieldContainer .was-validated input:valid ~ .invalid-feedback,
-.was-validated .form-control:valid ~ .invalid-tooltip,
-.was-validated .powermail_input:valid ~ .invalid-tooltip,
+.was-validated .form-control:valid ~ .valid-feedback, .was-validated .powermail_input:valid ~ .valid-feedback, .was-validated
+.powermail_textarea:valid ~ .valid-feedback, .was-validated .powermail_select:valid ~ .valid-feedback, .was-validated .content-container .gokContainer.column select:valid ~ .valid-feedback, .content-container .gokContainer.column .was-validated select:valid ~ .valid-feedback, .was-validated .header .header-search input:valid ~ .valid-feedback, .header .header-search .was-validated input:valid ~ .valid-feedback, .was-validated #pazpar2 .pz2-months:valid ~ .valid-feedback, #pazpar2 .was-validated .pz2-months:valid ~ .valid-feedback, .was-validated #pazpar2 .pz2-searchField:valid ~ .valid-feedback, #pazpar2 .was-validated .pz2-searchField:valid ~ .valid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .valid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:valid ~ .valid-feedback, .was-validated .tx-mathematicians .iputStart:valid ~ .valid-feedback, .tx-mathematicians .was-validated .iputStart:valid ~ .valid-feedback, .was-validated .tx_find .fieldContainer input:valid ~ .valid-feedback, .tx_find .fieldContainer .was-validated input:valid ~ .valid-feedback,
+.was-validated .form-control:valid ~ .valid-tooltip,
+.was-validated .powermail_input:valid ~ .valid-tooltip,
 .was-validated
-.powermail_textarea:valid ~ .invalid-tooltip,
-.was-validated .powermail_select:valid ~ .invalid-tooltip,
-.was-validated .header .header-search input:valid ~ .invalid-tooltip, .header .header-search
-.was-validated input:valid ~ .invalid-tooltip,
-.was-validated #pazpar2 .pz2-months:valid ~ .invalid-tooltip, #pazpar2
-.was-validated .pz2-months:valid ~ .invalid-tooltip,
-.was-validated #pazpar2 .pz2-searchField:valid ~ .invalid-tooltip, #pazpar2
-.was-validated .pz2-searchField:valid ~ .invalid-tooltip,
-.was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form
-.was-validated input[type=text]:valid ~ .invalid-tooltip,
-.was-validated .tx-mathematicians .iputStart:valid ~ .invalid-tooltip, .tx-mathematicians
-.was-validated .iputStart:valid ~ .invalid-tooltip,
-.was-validated .tx_find .fieldContainer input:valid ~ .invalid-tooltip, .tx_find .fieldContainer
-.was-validated input:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback, .is-valid.powermail_input ~ .invalid-feedback,
-.is-valid.powermail_textarea ~ .invalid-feedback, .is-valid.powermail_select ~ .invalid-feedback, .header .header-search input.is-valid ~ .invalid-feedback, #pazpar2 .is-valid.pz2-months ~ .invalid-feedback, #pazpar2 .is-valid.pz2-searchField ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .invalid-feedback, .tx-mathematicians .is-valid.iputStart ~ .invalid-feedback, .tx_find .fieldContainer input.is-valid ~ .invalid-feedback,
-.form-control.is-valid ~ .invalid-tooltip, .is-valid.powermail_input ~ .invalid-tooltip,
-.is-valid.powermail_textarea ~ .invalid-tooltip, .is-valid.powermail_select ~ .invalid-tooltip, .header .header-search input.is-valid ~ .invalid-tooltip, #pazpar2 .is-valid.pz2-months ~ .invalid-tooltip, #pazpar2 .is-valid.pz2-searchField ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .invalid-tooltip, .tx-mathematicians .is-valid.iputStart ~ .invalid-tooltip, .tx_find .fieldContainer input.is-valid ~ .invalid-tooltip, .was-validated
-.custom-select:valid ~ .invalid-feedback,
+.powermail_textarea:valid ~ .valid-tooltip,
+.was-validated .powermail_select:valid ~ .valid-tooltip,
+.was-validated .content-container .gokContainer.column select:valid ~ .valid-tooltip, .content-container .gokContainer.column
+.was-validated select:valid ~ .valid-tooltip,
+.was-validated .header .header-search input:valid ~ .valid-tooltip, .header .header-search
+.was-validated input:valid ~ .valid-tooltip,
+.was-validated #pazpar2 .pz2-months:valid ~ .valid-tooltip, #pazpar2
+.was-validated .pz2-months:valid ~ .valid-tooltip,
+.was-validated #pazpar2 .pz2-searchField:valid ~ .valid-tooltip, #pazpar2
+.was-validated .pz2-searchField:valid ~ .valid-tooltip,
+.was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:valid ~ .valid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form
+.was-validated input[type=text]:valid ~ .valid-tooltip,
+.was-validated .tx-mathematicians .iputStart:valid ~ .valid-tooltip, .tx-mathematicians
+.was-validated .iputStart:valid ~ .valid-tooltip,
+.was-validated .tx_find .fieldContainer input:valid ~ .valid-tooltip, .tx_find .fieldContainer
+.was-validated input:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .is-valid.powermail_input ~ .valid-feedback,
+.is-valid.powermail_textarea ~ .valid-feedback, .is-valid.powermail_select ~ .valid-feedback, .content-container .gokContainer.column select.is-valid ~ .valid-feedback, .header .header-search input.is-valid ~ .valid-feedback, #pazpar2 .is-valid.pz2-months ~ .valid-feedback, #pazpar2 .is-valid.pz2-searchField ~ .valid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .valid-feedback, .tx-mathematicians .is-valid.iputStart ~ .valid-feedback, .tx_find .fieldContainer input.is-valid ~ .valid-feedback,
+.form-control.is-valid ~ .valid-tooltip, .is-valid.powermail_input ~ .valid-tooltip,
+.is-valid.powermail_textarea ~ .valid-tooltip, .is-valid.powermail_select ~ .valid-tooltip, .content-container .gokContainer.column select.is-valid ~ .valid-tooltip, .header .header-search input.is-valid ~ .valid-tooltip, #pazpar2 .is-valid.pz2-months ~ .valid-tooltip, #pazpar2 .is-valid.pz2-searchField ~ .valid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-valid[type=text] ~ .valid-tooltip, .tx-mathematicians .is-valid.iputStart ~ .valid-tooltip, .tx_find .fieldContainer input.is-valid ~ .valid-tooltip, .was-validated
+.custom-select:valid ~ .valid-feedback,
 .was-validated
-.custom-select:valid ~ .invalid-tooltip,
-.custom-select.is-valid ~ .invalid-feedback,
-.custom-select.is-valid ~ .invalid-tooltip {
+.custom-select:valid ~ .valid-tooltip,
+.custom-select.is-valid ~ .valid-feedback,
+.custom-select.is-valid ~ .valid-tooltip {
   display: block;
 }
 
@@ -4769,17 +5077,39 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
           box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
+.invalid-feedback {
+  display: none;
+  margin-top: .25rem;
+  font-size: .875rem;
+  color: #dc3545;
+}
+
+.invalid-tooltip {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  display: none;
+  width: 250px;
+  padding: .5rem;
+  margin-top: .1rem;
+  font-size: .875rem;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(220, 53, 69, 0.8);
+  border-radius: .2rem;
+}
+
 .was-validated .form-control:invalid, .was-validated .powermail_input:invalid, .was-validated
-.powermail_textarea:invalid, .was-validated .powermail_select:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .was-validated #pazpar2 .pz2-months:invalid, #pazpar2 .was-validated .pz2-months:invalid, .was-validated #pazpar2 .pz2-searchField:invalid, #pazpar2 .was-validated .pz2-searchField:invalid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid, .was-validated .tx-mathematicians .iputStart:invalid, .tx-mathematicians .was-validated .iputStart:invalid, .was-validated .tx_find .fieldContainer input:invalid, .tx_find .fieldContainer .was-validated input:invalid, .form-control.is-invalid, .is-invalid.powermail_input,
-.is-invalid.powermail_textarea, .is-invalid.powermail_select, .header .header-search input.is-invalid, #pazpar2 .is-invalid.pz2-months, #pazpar2 .is-invalid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text], .tx-mathematicians .is-invalid.iputStart, .tx_find .fieldContainer input.is-invalid, .was-validated
+.powermail_textarea:invalid, .was-validated .powermail_select:invalid, .was-validated .content-container .gokContainer.column select:invalid, .content-container .gokContainer.column .was-validated select:invalid, .was-validated .header .header-search input:invalid, .header .header-search .was-validated input:invalid, .was-validated #pazpar2 .pz2-months:invalid, #pazpar2 .was-validated .pz2-months:invalid, .was-validated #pazpar2 .pz2-searchField:invalid, #pazpar2 .was-validated .pz2-searchField:invalid, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid, .was-validated .tx-mathematicians .iputStart:invalid, .tx-mathematicians .was-validated .iputStart:invalid, .was-validated .tx_find .fieldContainer input:invalid, .tx_find .fieldContainer .was-validated input:invalid, .form-control.is-invalid, .is-invalid.powermail_input,
+.is-invalid.powermail_textarea, .is-invalid.powermail_select, .content-container .gokContainer.column select.is-invalid, .header .header-search input.is-invalid, #pazpar2 .is-invalid.pz2-months, #pazpar2 .is-invalid.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text], .tx-mathematicians .is-invalid.iputStart, .tx_find .fieldContainer input.is-invalid, .was-validated
 .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545;
 }
 
 .was-validated .form-control:invalid:focus, .was-validated .powermail_input:invalid:focus, .was-validated
-.powermail_textarea:invalid:focus, .was-validated .powermail_select:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .was-validated #pazpar2 .pz2-months:invalid:focus, #pazpar2 .was-validated .pz2-months:invalid:focus, .was-validated #pazpar2 .pz2-searchField:invalid:focus, #pazpar2 .was-validated .pz2-searchField:invalid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid:focus, .was-validated .tx-mathematicians .iputStart:invalid:focus, .tx-mathematicians .was-validated .iputStart:invalid:focus, .was-validated .tx_find .fieldContainer input:invalid:focus, .tx_find .fieldContainer .was-validated input:invalid:focus, .form-control.is-invalid:focus, .is-invalid.powermail_input:focus,
-.is-invalid.powermail_textarea:focus, .is-invalid.powermail_select:focus, .header .header-search input.is-invalid:focus, #pazpar2 .is-invalid.pz2-months:focus, #pazpar2 .is-invalid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text]:focus, .tx-mathematicians .is-invalid.iputStart:focus, .tx_find .fieldContainer input.is-invalid:focus, .was-validated
+.powermail_textarea:invalid:focus, .was-validated .powermail_select:invalid:focus, .was-validated .content-container .gokContainer.column select:invalid:focus, .content-container .gokContainer.column .was-validated select:invalid:focus, .was-validated .header .header-search input:invalid:focus, .header .header-search .was-validated input:invalid:focus, .was-validated #pazpar2 .pz2-months:invalid:focus, #pazpar2 .was-validated .pz2-months:invalid:focus, .was-validated #pazpar2 .pz2-searchField:invalid:focus, #pazpar2 .was-validated .pz2-searchField:invalid:focus, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid:focus, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid:focus, .was-validated .tx-mathematicians .iputStart:invalid:focus, .tx-mathematicians .was-validated .iputStart:invalid:focus, .was-validated .tx_find .fieldContainer input:invalid:focus, .tx_find .fieldContainer .was-validated input:invalid:focus, .form-control.is-invalid:focus, .is-invalid.powermail_input:focus,
+.is-invalid.powermail_textarea:focus, .is-invalid.powermail_select:focus, .content-container .gokContainer.column select.is-invalid:focus, .header .header-search input.is-invalid:focus, #pazpar2 .is-invalid.pz2-months:focus, #pazpar2 .is-invalid.pz2-searchField:focus, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text]:focus, .tx-mathematicians .is-invalid.iputStart:focus, .tx_find .fieldContainer input.is-invalid:focus, .was-validated
 .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
@@ -4787,12 +5117,14 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 }
 
 .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .powermail_input:invalid ~ .invalid-feedback, .was-validated
-.powermail_textarea:invalid ~ .invalid-feedback, .was-validated .powermail_select:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-months:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-months:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:invalid ~ .invalid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated .tx-mathematicians .iputStart:invalid ~ .invalid-feedback, .tx-mathematicians .was-validated .iputStart:invalid ~ .invalid-feedback, .was-validated .tx_find .fieldContainer input:invalid ~ .invalid-feedback, .tx_find .fieldContainer .was-validated input:invalid ~ .invalid-feedback,
+.powermail_textarea:invalid ~ .invalid-feedback, .was-validated .powermail_select:invalid ~ .invalid-feedback, .was-validated .content-container .gokContainer.column select:invalid ~ .invalid-feedback, .content-container .gokContainer.column .was-validated select:invalid ~ .invalid-feedback, .was-validated .header .header-search input:invalid ~ .invalid-feedback, .header .header-search .was-validated input:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-months:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-months:invalid ~ .invalid-feedback, .was-validated #pazpar2 .pz2-searchField:invalid ~ .invalid-feedback, #pazpar2 .was-validated .pz2-searchField:invalid ~ .invalid-feedback, .was-validated .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:invalid ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated .tx-mathematicians .iputStart:invalid ~ .invalid-feedback, .tx-mathematicians .was-validated .iputStart:invalid ~ .invalid-feedback, .was-validated .tx_find .fieldContainer input:invalid ~ .invalid-feedback, .tx_find .fieldContainer .was-validated input:invalid ~ .invalid-feedback,
 .was-validated .form-control:invalid ~ .invalid-tooltip,
 .was-validated .powermail_input:invalid ~ .invalid-tooltip,
 .was-validated
 .powermail_textarea:invalid ~ .invalid-tooltip,
 .was-validated .powermail_select:invalid ~ .invalid-tooltip,
+.was-validated .content-container .gokContainer.column select:invalid ~ .invalid-tooltip, .content-container .gokContainer.column
+.was-validated select:invalid ~ .invalid-tooltip,
 .was-validated .header .header-search input:invalid ~ .invalid-tooltip, .header .header-search
 .was-validated input:invalid ~ .invalid-tooltip,
 .was-validated #pazpar2 .pz2-months:invalid ~ .invalid-tooltip, #pazpar2
@@ -4805,9 +5137,9 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 .was-validated .iputStart:invalid ~ .invalid-tooltip,
 .was-validated .tx_find .fieldContainer input:invalid ~ .invalid-tooltip, .tx_find .fieldContainer
 .was-validated input:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .is-invalid.powermail_input ~ .invalid-feedback,
-.is-invalid.powermail_textarea ~ .invalid-feedback, .is-invalid.powermail_select ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-months ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-feedback, .tx-mathematicians .is-invalid.iputStart ~ .invalid-feedback, .tx_find .fieldContainer input.is-invalid ~ .invalid-feedback,
+.is-invalid.powermail_textarea ~ .invalid-feedback, .is-invalid.powermail_select ~ .invalid-feedback, .content-container .gokContainer.column select.is-invalid ~ .invalid-feedback, .header .header-search input.is-invalid ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-months ~ .invalid-feedback, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-feedback, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-feedback, .tx-mathematicians .is-invalid.iputStart ~ .invalid-feedback, .tx_find .fieldContainer input.is-invalid ~ .invalid-feedback,
 .form-control.is-invalid ~ .invalid-tooltip, .is-invalid.powermail_input ~ .invalid-tooltip,
-.is-invalid.powermail_textarea ~ .invalid-tooltip, .is-invalid.powermail_select ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-months ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-tooltip, .tx-mathematicians .is-invalid.iputStart ~ .invalid-tooltip, .tx_find .fieldContainer input.is-invalid ~ .invalid-tooltip, .was-validated
+.is-invalid.powermail_textarea ~ .invalid-tooltip, .is-invalid.powermail_select ~ .invalid-tooltip, .content-container .gokContainer.column select.is-invalid ~ .invalid-tooltip, .header .header-search input.is-invalid ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-months ~ .invalid-tooltip, #pazpar2 .is-invalid.pz2-searchField ~ .invalid-tooltip, .tx-ezbrequest-pi1 #ezb_search_form input.is-invalid[type=text] ~ .invalid-tooltip, .tx-mathematicians .is-invalid.iputStart ~ .invalid-tooltip, .tx_find .fieldContainer input.is-invalid ~ .invalid-tooltip, .was-validated
 .custom-select:invalid ~ .invalid-feedback,
 .was-validated
 .custom-select:invalid ~ .invalid-tooltip,
@@ -4890,7 +5222,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   .form-inline .form-control, .tx-ezbrequest-pi1 #ezb_search_form form .form-control, .tx-mathematicians form .form-control, .form-inline .powermail_input, .tx-ezbrequest-pi1 #ezb_search_form form .powermail_input, .tx-mathematicians form .powermail_input, .form-inline
   .powermail_textarea, .tx-ezbrequest-pi1 #ezb_search_form form
   .powermail_textarea, .tx-mathematicians form
-  .powermail_textarea, .form-inline .powermail_select, .tx-ezbrequest-pi1 #ezb_search_form form .powermail_select, .tx-mathematicians form .powermail_select, .form-inline .header .header-search input, .header .header-search .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .header .header-search input, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .header .header-search input, .header .header-search .tx-mathematicians form input, .form-inline #pazpar2 .pz2-months, #pazpar2 .form-inline .pz2-months, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-months, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-months, .tx-mathematicians form #pazpar2 .pz2-months, #pazpar2 .tx-mathematicians form .pz2-months, .form-inline #pazpar2 .pz2-searchField, #pazpar2 .form-inline .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-searchField, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-searchField, .tx-mathematicians form #pazpar2 .pz2-searchField, #pazpar2 .tx-mathematicians form .pz2-searchField, .form-inline .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .form-inline input[type=text], .tx-ezbrequest-pi1 #ezb_search_form form input[type=text], .tx-mathematicians form .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .form-inline .tx-mathematicians .iputStart, .tx-mathematicians .form-inline .iputStart, .tx-ezbrequest-pi1 #ezb_search_form form .tx-mathematicians .iputStart, .tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form form .iputStart, .tx-mathematicians form .iputStart, .form-inline .tx_find .fieldContainer input, .tx_find .fieldContainer .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-mathematicians form input {
+  .powermail_textarea, .form-inline .powermail_select, .tx-ezbrequest-pi1 #ezb_search_form form .powermail_select, .tx-mathematicians form .powermail_select, .form-inline .content-container .gokContainer.column select, .content-container .gokContainer.column .form-inline select, .tx-ezbrequest-pi1 #ezb_search_form form .content-container .gokContainer.column select, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form form select, .tx-mathematicians form .content-container .gokContainer.column select, .content-container .gokContainer.column .tx-mathematicians form select, .form-inline .header .header-search input, .header .header-search .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .header .header-search input, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .header .header-search input, .header .header-search .tx-mathematicians form input, .form-inline #pazpar2 .pz2-months, #pazpar2 .form-inline .pz2-months, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-months, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-months, .tx-mathematicians form #pazpar2 .pz2-months, #pazpar2 .tx-mathematicians form .pz2-months, .form-inline #pazpar2 .pz2-searchField, #pazpar2 .form-inline .pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form form #pazpar2 .pz2-searchField, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form form .pz2-searchField, .tx-mathematicians form #pazpar2 .pz2-searchField, #pazpar2 .tx-mathematicians form .pz2-searchField, .form-inline .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .form-inline input[type=text], .tx-ezbrequest-pi1 #ezb_search_form form input[type=text], .tx-mathematicians form .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .form-inline .tx-mathematicians .iputStart, .tx-mathematicians .form-inline .iputStart, .tx-ezbrequest-pi1 #ezb_search_form form .tx-mathematicians .iputStart, .tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form form .iputStart, .tx-mathematicians form .iputStart, .form-inline .tx_find .fieldContainer input, .tx_find .fieldContainer .form-inline input, .tx-ezbrequest-pi1 #ezb_search_form form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-ezbrequest-pi1 #ezb_search_form form input, .tx-mathematicians form .tx_find .fieldContainer input, .tx_find .fieldContainer .tx-mathematicians form input {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -4900,10 +5232,6 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   }
   .form-inline .input-group, .tx-ezbrequest-pi1 #ezb_search_form form .input-group, .tx-mathematicians form .input-group {
     width: auto;
-  }
-  .form-inline .form-control-label, .tx-ezbrequest-pi1 #ezb_search_form form .form-control-label, .tx-mathematicians form .form-control-label {
-    margin-bottom: 0;
-    vertical-align: middle;
   }
   .form-inline .form-check, .tx-ezbrequest-pi1 #ezb_search_form form .form-check, .tx-mathematicians form .form-check {
     display: -webkit-box;
@@ -4954,7 +5282,7 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 .btn, .powermail_submit, .header .header-search .header-search-form_submit, #pazpar2 .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall, .tx-mathematicians .submStartSmall,
 .tx-mathematicians .submStart, .tx_find form .submit {
   display: inline-block;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -4963,9 +5291,9 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
       -ms-user-select: none;
           user-select: none;
   border: 1px solid transparent;
-  padding: 0.5rem 0.75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.5;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4982,8 +5310,8 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
 .tx-mathematicians .submStart:focus, .tx_find form .submit:focus, .btn.focus, .focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .focus.submStartSmall, .tx-mathematicians .focus.submStartSmall,
 .tx-mathematicians .focus.submStart, .tx_find form .focus.submit {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.25);
-          box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.25);
 }
 
 .btn.disabled, .disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .disabled.submStartSmall, .tx-mathematicians .disabled.submStartSmall,
@@ -4992,11 +5320,11 @@ select.powermail_textarea:not([size]):not([multiple]), .input-group-lg > select.
   opacity: .65;
 }
 
-.btn:active, .powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:active, .tx-mathematicians .submStartSmall:active,
-.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn.active, .active.powermail_submit, .content-container .gokContainer.column .powermail_submit.close, .header .header-search .active.header-search-form_submit, .header .header-search .content-container .gokContainer.column .header-search-form_submit.close, .content-container .gokContainer.column .header .header-search .header-search-form_submit.close, #pazpar2 .active.pz2-submitButton, #pazpar2 .content-container .gokContainer.column .pz2-submitButton.close, .content-container .gokContainer.column #pazpar2 .pz2-submitButton.close, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column .submStartSmall.close, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall.close, .content-container .gokContainer.column .btn.close, .content-container .gokContainer.column .tx-mathematicians .close.submStartSmall, .tx-mathematicians .content-container .gokContainer.column .close.submStartSmall, .content-container .gokContainer.column
-.tx-mathematicians .close.submStart,
-.tx-mathematicians .content-container .gokContainer.column .close.submStart, .content-container .gokContainer.column .tx_find form .close.submit, .tx_find form .content-container .gokContainer.column .close.submit, .tx-mathematicians .active.submStartSmall,
-.tx-mathematicians .active.submStart, .tx_find form .active.submit {
+.btn:not([disabled]):not(.disabled):active, .powermail_submit:not([disabled]):not(.disabled):active, .header .header-search .header-search-form_submit:not([disabled]):not(.disabled):active, #pazpar2 .pz2-submitButton:not([disabled]):not(.disabled):active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:not([disabled]):not(.disabled):active, .tx-mathematicians .submStartSmall:not([disabled]):not(.disabled):active,
+.tx-mathematicians .submStart:not([disabled]):not(.disabled):active, .tx_find form .submit:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active, .powermail_submit:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .powermail_submit.close:not([disabled]):not(.disabled), .header .header-search .header-search-form_submit:not([disabled]):not(.disabled).active, .header .header-search .content-container .gokContainer.column .header-search-form_submit.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .header .header-search .header-search-form_submit.close:not([disabled]):not(.disabled), #pazpar2 .pz2-submitButton:not([disabled]):not(.disabled).active, #pazpar2 .content-container .gokContainer.column .pz2-submitButton.close:not([disabled]):not(.disabled), .content-container .gokContainer.column #pazpar2 .pz2-submitButton.close:not([disabled]):not(.disabled), .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:not([disabled]):not(.disabled).active, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column .submStartSmall.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .btn.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .tx-mathematicians .close.submStartSmall:not([disabled]):not(.disabled), .tx-mathematicians .content-container .gokContainer.column .close.submStartSmall:not([disabled]):not(.disabled), .content-container .gokContainer.column
+.tx-mathematicians .close.submStart:not([disabled]):not(.disabled),
+.tx-mathematicians .content-container .gokContainer.column .close.submStart:not([disabled]):not(.disabled), .content-container .gokContainer.column .tx_find form .close.submit:not([disabled]):not(.disabled), .tx_find form .content-container .gokContainer.column .close.submit:not([disabled]):not(.disabled), .tx-mathematicians .submStartSmall:not([disabled]):not(.disabled).active,
+.tx-mathematicians .submStart:not([disabled]):not(.disabled).active, .tx_find form .submit:not([disabled]):not(.disabled).active {
   background-image: none;
 }
 
@@ -5038,8 +5366,8 @@ fieldset[disabled] a.submit {
 .btn-primary:focus, .powermail_submit:focus, .header .header-search .header-search-form_submit:focus, #pazpar2 .pz2-submitButton:focus, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:focus, .tx-mathematicians .submStartSmall:focus,
 .tx-mathematicians .submStart:focus, .tx_find form .submit:focus, .btn-primary.focus, .focus.powermail_submit, .header .header-search .focus.header-search-form_submit, #pazpar2 .focus.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .focus.submStartSmall, .tx-mathematicians .focus.submStartSmall,
 .tx-mathematicians .focus.submStart, .tx_find form .focus.submit {
-  -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
-          box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
 }
 
 .btn-primary.disabled, .disabled.powermail_submit, .header .header-search .disabled.header-search-form_submit, #pazpar2 .disabled.pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .disabled.submStartSmall, .tx-mathematicians .disabled.submStartSmall,
@@ -5049,11 +5377,11 @@ fieldset[disabled] a.submit {
   border-color: #25589a;
 }
 
-.btn-primary:active, .powermail_submit:active, .header .header-search .header-search-form_submit:active, #pazpar2 .pz2-submitButton:active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:active, .tx-mathematicians .submStartSmall:active,
-.tx-mathematicians .submStart:active, .tx_find form .submit:active, .btn-primary.active, .active.powermail_submit, .content-container .gokContainer.column .powermail_submit.close, .header .header-search .active.header-search-form_submit, .header .header-search .content-container .gokContainer.column .header-search-form_submit.close, .content-container .gokContainer.column .header .header-search .header-search-form_submit.close, #pazpar2 .active.pz2-submitButton, #pazpar2 .content-container .gokContainer.column .pz2-submitButton.close, .content-container .gokContainer.column #pazpar2 .pz2-submitButton.close, .tx-ezbrequest-pi1 #ezb_search_form .active.submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column .submStartSmall.close, .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall.close, .content-container .gokContainer.column .btn-primary.close, .content-container .gokContainer.column .tx-mathematicians .close.submStartSmall, .tx-mathematicians .content-container .gokContainer.column .close.submStartSmall, .content-container .gokContainer.column
-.tx-mathematicians .close.submStart,
-.tx-mathematicians .content-container .gokContainer.column .close.submStart, .content-container .gokContainer.column .tx_find form .close.submit, .tx_find form .content-container .gokContainer.column .close.submit, .tx-mathematicians .active.submStartSmall,
-.tx-mathematicians .active.submStart, .tx_find form .active.submit,
+.btn-primary:not([disabled]):not(.disabled):active, .powermail_submit:not([disabled]):not(.disabled):active, .header .header-search .header-search-form_submit:not([disabled]):not(.disabled):active, #pazpar2 .pz2-submitButton:not([disabled]):not(.disabled):active, .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:not([disabled]):not(.disabled):active, .tx-mathematicians .submStartSmall:not([disabled]):not(.disabled):active,
+.tx-mathematicians .submStart:not([disabled]):not(.disabled):active, .tx_find form .submit:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active, .powermail_submit:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .powermail_submit.close:not([disabled]):not(.disabled), .header .header-search .header-search-form_submit:not([disabled]):not(.disabled).active, .header .header-search .content-container .gokContainer.column .header-search-form_submit.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .header .header-search .header-search-form_submit.close:not([disabled]):not(.disabled), #pazpar2 .pz2-submitButton:not([disabled]):not(.disabled).active, #pazpar2 .content-container .gokContainer.column .pz2-submitButton.close:not([disabled]):not(.disabled), .content-container .gokContainer.column #pazpar2 .pz2-submitButton.close:not([disabled]):not(.disabled), .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall:not([disabled]):not(.disabled).active, .tx-ezbrequest-pi1 #ezb_search_form .content-container .gokContainer.column .submStartSmall.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .tx-ezbrequest-pi1 #ezb_search_form .submStartSmall.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .btn-primary.close:not([disabled]):not(.disabled), .content-container .gokContainer.column .tx-mathematicians .close.submStartSmall:not([disabled]):not(.disabled), .tx-mathematicians .content-container .gokContainer.column .close.submStartSmall:not([disabled]):not(.disabled), .content-container .gokContainer.column
+.tx-mathematicians .close.submStart:not([disabled]):not(.disabled),
+.tx-mathematicians .content-container .gokContainer.column .close.submStart:not([disabled]):not(.disabled), .content-container .gokContainer.column .tx_find form .close.submit:not([disabled]):not(.disabled), .tx_find form .content-container .gokContainer.column .close.submit:not([disabled]):not(.disabled), .tx-mathematicians .submStartSmall:not([disabled]):not(.disabled).active,
+.tx-mathematicians .submStart:not([disabled]):not(.disabled).active, .tx_find form .submit:not([disabled]):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle,
 .show > .dropdown-toggle.powermail_submit, .header .header-search
 .show > .dropdown-toggle.header-search-form_submit, #pazpar2
@@ -5063,9 +5391,11 @@ fieldset[disabled] a.submit {
 .tx-mathematicians
 .show > .dropdown-toggle.submStart, .tx_find form
 .show > .dropdown-toggle.submit {
-  background-color: #1e467b;
-  background-image: none;
-  border-color: #1b4171;
+  color: #fff;
+  background-color: #1b4171;
+  border-color: #193b67;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
 }
 
 .btn-secondary {
@@ -5081,8 +5411,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5);
-          box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
@@ -5090,11 +5420,13 @@ fieldset[disabled] a.submit {
   border-color: #868e96;
 }
 
-.btn-secondary:active, .btn-secondary.active, .content-container .gokContainer.column .btn-secondary.close,
+.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-secondary.close:not([disabled]):not(.disabled),
 .show > .btn-secondary.dropdown-toggle {
-  background-color: #727b84;
-  background-image: none;
-  border-color: #6c757d;
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #666e76;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
 
 .btn-success {
@@ -5110,8 +5442,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-success:focus, .btn-success.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
-          box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 .btn-success.disabled, .btn-success:disabled {
@@ -5119,11 +5451,13 @@ fieldset[disabled] a.submit {
   border-color: #28a745;
 }
 
-.btn-success:active, .btn-success.active, .content-container .gokContainer.column .btn-success.close,
+.btn-success:not([disabled]):not(.disabled):active, .btn-success:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-success.close:not([disabled]):not(.disabled),
 .show > .btn-success.dropdown-toggle {
-  background-color: #218838;
-  background-image: none;
-  border-color: #1e7e34;
+  color: #fff;
+  background-color: #1e7e34;
+  border-color: #1c7430;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 .btn-info {
@@ -5139,8 +5473,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-info:focus, .btn-info.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5);
-          box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 .btn-info.disabled, .btn-info:disabled {
@@ -5148,11 +5482,13 @@ fieldset[disabled] a.submit {
   border-color: #17a2b8;
 }
 
-.btn-info:active, .btn-info.active, .content-container .gokContainer.column .btn-info.close,
+.btn-info:not([disabled]):not(.disabled):active, .btn-info:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-info.close:not([disabled]):not(.disabled),
 .show > .btn-info.dropdown-toggle {
-  background-color: #138496;
-  background-image: none;
-  border-color: #117a8b;
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 .btn-warning {
@@ -5168,8 +5504,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-warning:focus, .btn-warning.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
 .btn-warning.disabled, .btn-warning:disabled {
@@ -5177,11 +5513,13 @@ fieldset[disabled] a.submit {
   border-color: #ffc107;
 }
 
-.btn-warning:active, .btn-warning.active, .content-container .gokContainer.column .btn-warning.close,
+.btn-warning:not([disabled]):not(.disabled):active, .btn-warning:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-warning.close:not([disabled]):not(.disabled),
 .show > .btn-warning.dropdown-toggle {
-  background-color: #e0a800;
-  background-image: none;
-  border-color: #d39e00;
+  color: #111;
+  background-color: #d39e00;
+  border-color: #c69500;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
 .btn-danger {
@@ -5197,8 +5535,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-danger:focus, .btn-danger.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
-          box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
 .btn-danger.disabled, .btn-danger:disabled {
@@ -5206,11 +5544,13 @@ fieldset[disabled] a.submit {
   border-color: #dc3545;
 }
 
-.btn-danger:active, .btn-danger.active, .content-container .gokContainer.column .btn-danger.close,
+.btn-danger:not([disabled]):not(.disabled):active, .btn-danger:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-danger.close:not([disabled]):not(.disabled),
 .show > .btn-danger.dropdown-toggle {
-  background-color: #c82333;
-  background-image: none;
-  border-color: #bd2130;
+  color: #fff;
+  background-color: #bd2130;
+  border-color: #b21f2d;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
 .btn-light {
@@ -5226,8 +5566,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-light:focus, .btn-light.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
 .btn-light.disabled, .btn-light:disabled {
@@ -5235,11 +5575,13 @@ fieldset[disabled] a.submit {
   border-color: #f8f9fa;
 }
 
-.btn-light:active, .btn-light.active, .content-container .gokContainer.column .btn-light.close,
+.btn-light:not([disabled]):not(.disabled):active, .btn-light:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-light.close:not([disabled]):not(.disabled),
 .show > .btn-light.dropdown-toggle {
-  background-color: #e2e6ea;
-  background-image: none;
-  border-color: #dae0e5;
+  color: #111;
+  background-color: #dae0e5;
+  border-color: #d3d9df;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
 .btn-dark {
@@ -5255,8 +5597,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-dark:focus, .btn-dark.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5);
-          box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
 .btn-dark.disabled, .btn-dark:disabled {
@@ -5264,11 +5606,13 @@ fieldset[disabled] a.submit {
   border-color: #343a40;
 }
 
-.btn-dark:active, .btn-dark.active, .content-container .gokContainer.column .btn-dark.close,
+.btn-dark:not([disabled]):not(.disabled):active, .btn-dark:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-dark.close:not([disabled]):not(.disabled),
 .show > .btn-dark.dropdown-toggle {
-  background-color: #23272b;
-  background-image: none;
-  border-color: #1d2124;
+  color: #fff;
+  background-color: #1d2124;
+  border-color: #171a1d;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
 .btn-outline-primary {
@@ -5285,8 +5629,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
-          box-shadow: 0 0 0 3px rgba(37, 88, 154, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
@@ -5294,11 +5638,13 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-primary:active, .btn-outline-primary.active, .content-container .gokContainer.column .btn-outline-primary.close,
+.btn-outline-primary:not([disabled]):not(.disabled):active, .btn-outline-primary:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-primary.close:not([disabled]):not(.disabled),
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: #25589a;
   border-color: #25589a;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(37, 88, 154, 0.5);
 }
 
 .btn-outline-secondary {
@@ -5315,8 +5661,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5);
-          box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
@@ -5324,11 +5670,13 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-secondary:active, .btn-outline-secondary.active, .content-container .gokContainer.column .btn-outline-secondary.close,
+.btn-outline-secondary:not([disabled]):not(.disabled):active, .btn-outline-secondary:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-secondary.close:not([disabled]):not(.disabled),
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
   background-color: #868e96;
   border-color: #868e96;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
 
 .btn-outline-success {
@@ -5345,8 +5693,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
-          box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 .btn-outline-success.disabled, .btn-outline-success:disabled {
@@ -5354,11 +5702,13 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-success:active, .btn-outline-success.active, .content-container .gokContainer.column .btn-outline-success.close,
+.btn-outline-success:not([disabled]):not(.disabled):active, .btn-outline-success:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-success.close:not([disabled]):not(.disabled),
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 .btn-outline-info {
@@ -5375,8 +5725,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-info:focus, .btn-outline-info.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5);
-          box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 .btn-outline-info.disabled, .btn-outline-info:disabled {
@@ -5384,11 +5734,13 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-info:active, .btn-outline-info.active, .content-container .gokContainer.column .btn-outline-info.close,
+.btn-outline-info:not([disabled]):not(.disabled):active, .btn-outline-info:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-info.close:not([disabled]):not(.disabled),
 .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 .btn-outline-warning {
@@ -5405,8 +5757,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-warning:focus, .btn-outline-warning.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
@@ -5414,11 +5766,13 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-warning:active, .btn-outline-warning.active, .content-container .gokContainer.column .btn-outline-warning.close,
+.btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-warning.close:not([disabled]):not(.disabled),
 .show > .btn-outline-warning.dropdown-toggle {
   color: #fff;
   background-color: #ffc107;
   border-color: #ffc107;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
 .btn-outline-danger {
@@ -5435,8 +5789,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-danger:focus, .btn-outline-danger.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
-          box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
@@ -5444,11 +5798,13 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-danger:active, .btn-outline-danger.active, .content-container .gokContainer.column .btn-outline-danger.close,
+.btn-outline-danger:not([disabled]):not(.disabled):active, .btn-outline-danger:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-danger.close:not([disabled]):not(.disabled),
 .show > .btn-outline-danger.dropdown-toggle {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
 .btn-outline-light {
@@ -5459,14 +5815,14 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-light:hover {
-  color: #fff;
+  color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
 
 .btn-outline-light:focus, .btn-outline-light.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
 .btn-outline-light.disabled, .btn-outline-light:disabled {
@@ -5474,11 +5830,13 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-light:active, .btn-outline-light.active, .content-container .gokContainer.column .btn-outline-light.close,
+.btn-outline-light:not([disabled]):not(.disabled):active, .btn-outline-light:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-light.close:not([disabled]):not(.disabled),
 .show > .btn-outline-light.dropdown-toggle {
-  color: #fff;
+  color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
 .btn-outline-dark {
@@ -5495,8 +5853,8 @@ fieldset[disabled] a.submit {
 }
 
 .btn-outline-dark:focus, .btn-outline-dark.focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5);
-          box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
 .btn-outline-dark.disabled, .btn-outline-dark:disabled {
@@ -5504,45 +5862,36 @@ fieldset[disabled] a.submit {
   background-color: transparent;
 }
 
-.btn-outline-dark:active, .btn-outline-dark.active, .content-container .gokContainer.column .btn-outline-dark.close,
+.btn-outline-dark:not([disabled]):not(.disabled):active, .btn-outline-dark:not([disabled]):not(.disabled).active, .content-container .gokContainer.column .btn-outline-dark.close:not([disabled]):not(.disabled),
 .show > .btn-outline-dark.dropdown-toggle {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
 .btn-link {
-  font-weight: normal;
+  font-weight: 400;
   color: #192d57;
-  border-radius: 0;
-}
-
-.btn-link, .btn-link:active, .btn-link.active, .content-container .gokContainer.column .btn-link.close, .btn-link:disabled {
   background-color: transparent;
 }
 
-.btn-link, .btn-link:focus, .btn-link:active {
+.btn-link:hover {
+  color: #080e1c;
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-link:focus, .btn-link.focus {
   border-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.btn-link:hover {
-  border-color: transparent;
-}
-
-.btn-link:focus, .btn-link:hover {
-  color: #080e1c;
-  text-decoration: underline;
-  background-color: transparent;
-}
-
-.btn-link:disabled {
+.btn-link:disabled, .btn-link.disabled {
   color: #868e96;
-}
-
-.btn-link:disabled:focus, .btn-link:disabled:hover {
-  text-decoration: none;
 }
 
 .btn-lg, .btn-group-lg > .btn, .btn-group-lg > .powermail_submit, .header .header-search .btn-group-lg > .header-search-form_submit, #pazpar2 .btn-group-lg > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .btn-group-lg > .submStartSmall, .tx-mathematicians .btn-group-lg > .submStartSmall,
@@ -5622,21 +5971,12 @@ tbody.collapse.show {
   content: "";
   border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
+  border-bottom: 0;
   border-left: 0.3em solid transparent;
 }
 
 .dropdown-toggle:empty::after {
   margin-left: 0;
-}
-
-.dropup .dropdown-menu {
-  margin-top: 0;
-  margin-bottom: 0.125rem;
-}
-
-.dropup .dropdown-toggle::after {
-  border-top: 0;
-  border-bottom: 0.3em solid;
 }
 
 .dropdown-menu {
@@ -5658,6 +5998,28 @@ tbody.collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
+.dropup .dropdown-menu {
+  margin-top: 0;
+  margin-bottom: 0.125rem;
+}
+
+.dropup .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.3em solid;
+  border-left: 0.3em solid transparent;
+}
+
+.dropup .dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
 .dropdown-divider {
   height: 0;
   margin: 0.5rem 0;
@@ -5670,7 +6032,7 @@ tbody.collapse.show {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: normal;
+  font-weight: 400;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -5693,10 +6055,6 @@ tbody.collapse.show {
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #868e96;
   background-color: transparent;
-}
-
-.show > a {
-  outline: 0;
 }
 
 .dropdown-menu.show {
@@ -5736,7 +6094,6 @@ tbody.collapse.show {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  margin-bottom: 0;
 }
 
 .btn-group > .btn:hover, .btn-group > .powermail_submit:hover, .header .header-search .btn-group > .header-search-form_submit:hover, #pazpar2 .btn-group > .pz2-submitButton:hover, .tx-ezbrequest-pi1 #ezb_search_form .btn-group > .submStartSmall:hover, .tx-mathematicians .btn-group > .submStartSmall:hover,
@@ -6187,9 +6544,6 @@ tbody.collapse.show {
 }
 
 .btn-group-vertical {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -6302,11 +6656,14 @@ tbody.collapse.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 100%;
 }
 
 .input-group .form-control, .input-group .powermail_input, .input-group
-.powermail_textarea, .input-group .powermail_select, .input-group .header .header-search input, .header .header-search .input-group input, .input-group #pazpar2 .pz2-months, #pazpar2 .input-group .pz2-months, .input-group #pazpar2 .pz2-searchField, #pazpar2 .input-group .pz2-searchField, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text], .input-group .tx-mathematicians .iputStart, .tx-mathematicians .input-group .iputStart, .input-group .tx_find .fieldContainer input, .tx_find .fieldContainer .input-group input {
+.powermail_textarea, .input-group .powermail_select, .input-group .content-container .gokContainer.column select, .content-container .gokContainer.column .input-group select, .input-group .header .header-search input, .header .header-search .input-group input, .input-group #pazpar2 .pz2-months, #pazpar2 .input-group .pz2-months, .input-group #pazpar2 .pz2-searchField, #pazpar2 .input-group .pz2-searchField, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text], .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text], .input-group .tx-mathematicians .iputStart, .tx-mathematicians .input-group .iputStart, .input-group .tx_find .fieldContainer input, .tx_find .fieldContainer .input-group input {
   position: relative;
   z-index: 2;
   -webkit-box-flex: 1;
@@ -6317,9 +6674,9 @@ tbody.collapse.show {
 }
 
 .input-group .form-control:focus, .input-group .powermail_input:focus, .input-group
-.powermail_textarea:focus, .input-group .powermail_select:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group #pazpar2 .pz2-months:focus, #pazpar2 .input-group .pz2-months:focus, .input-group #pazpar2 .pz2-searchField:focus, #pazpar2 .input-group .pz2-searchField:focus, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:focus, .input-group .tx-mathematicians .iputStart:focus, .tx-mathematicians .input-group .iputStart:focus, .input-group .tx_find .fieldContainer input:focus, .tx_find .fieldContainer .input-group input:focus, .input-group .form-control:active, .input-group .powermail_input:active, .input-group
-.powermail_textarea:active, .input-group .powermail_select:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group #pazpar2 .pz2-months:active, #pazpar2 .input-group .pz2-months:active, .input-group #pazpar2 .pz2-searchField:active, #pazpar2 .input-group .pz2-searchField:active, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:active, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:active, .input-group .tx-mathematicians .iputStart:active, .tx-mathematicians .input-group .iputStart:active, .input-group .tx_find .fieldContainer input:active, .tx_find .fieldContainer .input-group input:active, .input-group .form-control:hover, .input-group .powermail_input:hover, .input-group
-.powermail_textarea:hover, .input-group .powermail_select:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover, .input-group #pazpar2 .pz2-months:hover, #pazpar2 .input-group .pz2-months:hover, .input-group #pazpar2 .pz2-searchField:hover, #pazpar2 .input-group .pz2-searchField:hover, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:hover, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:hover, .input-group .tx-mathematicians .iputStart:hover, .tx-mathematicians .input-group .iputStart:hover, .input-group .tx_find .fieldContainer input:hover, .tx_find .fieldContainer .input-group input:hover {
+.powermail_textarea:focus, .input-group .powermail_select:focus, .input-group .content-container .gokContainer.column select:focus, .content-container .gokContainer.column .input-group select:focus, .input-group .header .header-search input:focus, .header .header-search .input-group input:focus, .input-group #pazpar2 .pz2-months:focus, #pazpar2 .input-group .pz2-months:focus, .input-group #pazpar2 .pz2-searchField:focus, #pazpar2 .input-group .pz2-searchField:focus, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:focus, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:focus, .input-group .tx-mathematicians .iputStart:focus, .tx-mathematicians .input-group .iputStart:focus, .input-group .tx_find .fieldContainer input:focus, .tx_find .fieldContainer .input-group input:focus, .input-group .form-control:active, .input-group .powermail_input:active, .input-group
+.powermail_textarea:active, .input-group .powermail_select:active, .input-group .content-container .gokContainer.column select:active, .content-container .gokContainer.column .input-group select:active, .input-group .header .header-search input:active, .header .header-search .input-group input:active, .input-group #pazpar2 .pz2-months:active, #pazpar2 .input-group .pz2-months:active, .input-group #pazpar2 .pz2-searchField:active, #pazpar2 .input-group .pz2-searchField:active, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:active, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:active, .input-group .tx-mathematicians .iputStart:active, .tx-mathematicians .input-group .iputStart:active, .input-group .tx_find .fieldContainer input:active, .tx_find .fieldContainer .input-group input:active, .input-group .form-control:hover, .input-group .powermail_input:hover, .input-group
+.powermail_textarea:hover, .input-group .powermail_select:hover, .input-group .content-container .gokContainer.column select:hover, .content-container .gokContainer.column .input-group select:hover, .input-group .header .header-search input:hover, .header .header-search .input-group input:hover, .input-group #pazpar2 .pz2-months:hover, #pazpar2 .input-group .pz2-months:hover, .input-group #pazpar2 .pz2-searchField:hover, #pazpar2 .input-group .pz2-searchField:hover, .input-group .tx-ezbrequest-pi1 #ezb_search_form input[type=text]:hover, .tx-ezbrequest-pi1 #ezb_search_form .input-group input[type=text]:hover, .input-group .tx-mathematicians .iputStart:hover, .tx-mathematicians .input-group .iputStart:hover, .input-group .tx_find .fieldContainer input:hover, .tx_find .fieldContainer .input-group input:hover {
   z-index: 3;
 }
 
@@ -6330,6 +6687,8 @@ tbody.collapse.show {
 .input-group
 .powermail_textarea,
 .input-group .powermail_select,
+.input-group .content-container .gokContainer.column select, .content-container .gokContainer.column
+.input-group select,
 .input-group .header .header-search input, .header .header-search
 .input-group input,
 .input-group #pazpar2 .pz2-months, #pazpar2
@@ -6353,23 +6712,21 @@ tbody.collapse.show {
 .input-group-addon,
 .input-group-btn {
   white-space: nowrap;
-  vertical-align: middle;
 }
 
 .input-group-addon {
-  padding: 0.5rem 0.75rem;
+  padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.25;
+  font-weight: 400;
+  line-height: 1.5;
   color: #495057;
   text-align: center;
   background-color: #e9ecef;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ced4da;
 }
 
-.input-group-addon.form-control-sm, .header .header-search .input-group-sm > input.input-group-addon, #pazpar2 .input-group-sm > .input-group-addon.pz2-months, #pazpar2 .input-group-sm > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.input-group-addon[type=text], .tx-mathematicians .input-group-sm > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-sm > input.input-group-addon,
+.input-group-addon.form-control-sm, .content-container .gokContainer.column .input-group-sm > select.input-group-addon, .header .header-search .input-group-sm > input.input-group-addon, #pazpar2 .input-group-sm > .input-group-addon.pz2-months, #pazpar2 .input-group-sm > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-sm > input.input-group-addon[type=text], .tx-mathematicians .input-group-sm > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-sm > input.input-group-addon,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 .input-group-sm > .input-group-btn > .input-group-addon.powermail_submit, .header .header-search
@@ -6384,7 +6741,7 @@ tbody.collapse.show {
   font-size: 0.875rem;
 }
 
-.input-group-addon.form-control-lg, .header .header-search .input-group-lg > input.input-group-addon, #pazpar2 .input-group-lg > .input-group-addon.pz2-months, #pazpar2 .input-group-lg > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.input-group-addon[type=text], .tx-mathematicians .input-group-lg > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-lg > input.input-group-addon,
+.input-group-addon.form-control-lg, .content-container .gokContainer.column .input-group-lg > select.input-group-addon, .header .header-search .input-group-lg > input.input-group-addon, #pazpar2 .input-group-lg > .input-group-addon.pz2-months, #pazpar2 .input-group-lg > .input-group-addon.pz2-searchField, .tx-ezbrequest-pi1 #ezb_search_form .input-group-lg > input.input-group-addon[type=text], .tx-mathematicians .input-group-lg > .input-group-addon.iputStart, .tx_find .fieldContainer .input-group-lg > input.input-group-addon,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 .input-group-lg > .input-group-btn > .input-group-addon.powermail_submit, .header .header-search
@@ -6409,12 +6766,15 @@ tbody.collapse.show {
 }
 
 .form-control + .input-group-addon:not(:first-child), .powermail_input + .input-group-addon:not(:first-child),
-.powermail_textarea + .input-group-addon:not(:first-child), .powermail_select + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child), #pazpar2 .pz2-months + .input-group-addon:not(:first-child), #pazpar2 .pz2-searchField + .input-group-addon:not(:first-child), .tx-ezbrequest-pi1 #ezb_search_form input[type=text] + .input-group-addon:not(:first-child), .tx-mathematicians .iputStart + .input-group-addon:not(:first-child), .tx_find .fieldContainer input + .input-group-addon:not(:first-child) {
+.powermail_textarea + .input-group-addon:not(:first-child), .powermail_select + .input-group-addon:not(:first-child), .content-container .gokContainer.column select + .input-group-addon:not(:first-child), .header .header-search input + .input-group-addon:not(:first-child), #pazpar2 .pz2-months + .input-group-addon:not(:first-child), #pazpar2 .pz2-searchField + .input-group-addon:not(:first-child), .tx-ezbrequest-pi1 #ezb_search_form input[type=text] + .input-group-addon:not(:first-child), .tx-mathematicians .iputStart + .input-group-addon:not(:first-child), .tx_find .fieldContainer input + .input-group-addon:not(:first-child) {
   border-left: 0;
 }
 
 .input-group-btn {
   position: relative;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   font-size: 0;
   white-space: nowrap;
 }
@@ -6422,8 +6782,6 @@ tbody.collapse.show {
 .input-group-btn > .btn, .input-group-btn > .powermail_submit, .header .header-search .input-group-btn > .header-search-form_submit, #pazpar2 .input-group-btn > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall, .tx-mathematicians .input-group-btn > .submStartSmall,
 .tx-mathematicians .input-group-btn > .submStart, .tx_find form .input-group-btn > .submit {
   position: relative;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .input-group-btn > .btn + .btn, .input-group-btn > .powermail_submit + .btn, .header .header-search .input-group-btn > .header-search-form_submit + .btn, #pazpar2 .input-group-btn > .pz2-submitButton + .btn, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn > .submStartSmall + .btn, .tx-mathematicians .input-group-btn > .submStartSmall + .btn,
@@ -6457,6 +6815,30 @@ tbody.collapse.show {
   z-index: 3;
 }
 
+.input-group-btn:first-child > .btn + .btn, .input-group-btn:first-child > .powermail_submit + .btn, .header .header-search .input-group-btn:first-child > .header-search-form_submit + .btn, #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .btn, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStartSmall + .btn, .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .btn,
+.tx-mathematicians .input-group-btn:first-child > .submStart + .btn, .tx_find form .input-group-btn:first-child > .submit + .btn, .input-group-btn:first-child > .btn + .powermail_submit, .input-group-btn:first-child > .powermail_submit + .powermail_submit, .header .header-search .input-group-btn:first-child > .header-search-form_submit + .powermail_submit, #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .powermail_submit, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStartSmall + .powermail_submit, .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .powermail_submit,
+.tx-mathematicians .input-group-btn:first-child > .submStart + .powermail_submit, .tx_find form .input-group-btn:first-child > .submit + .powermail_submit, .header .header-search .input-group-btn:first-child > .btn + .header-search-form_submit, .header .header-search .input-group-btn:first-child > .powermail_submit + .header-search-form_submit, .header .header-search .input-group-btn:first-child > .header-search-form_submit + .header-search-form_submit, #pazpar2 .header .header-search .input-group-btn:first-child > .pz2-submitButton + .header-search-form_submit, .header .header-search #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .header-search-form_submit, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .input-group-btn:first-child > .submStartSmall + .header-search-form_submit, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStartSmall + .header-search-form_submit, .tx-mathematicians .header .header-search .input-group-btn:first-child > .submStartSmall + .header-search-form_submit, .header .header-search .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .header-search-form_submit,
+.tx-mathematicians .header .header-search .input-group-btn:first-child > .submStart + .header-search-form_submit, .header .header-search
+.tx-mathematicians .input-group-btn:first-child > .submStart + .header-search-form_submit, .tx_find form .header .header-search .input-group-btn:first-child > .submit + .header-search-form_submit, .header .header-search .tx_find form .input-group-btn:first-child > .submit + .header-search-form_submit, #pazpar2 .input-group-btn:first-child > .btn + .pz2-submitButton, #pazpar2 .input-group-btn:first-child > .powermail_submit + .pz2-submitButton, .header .header-search #pazpar2 .input-group-btn:first-child > .header-search-form_submit + .pz2-submitButton, #pazpar2 .header .header-search .input-group-btn:first-child > .header-search-form_submit + .pz2-submitButton, #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .input-group-btn:first-child > .submStartSmall + .pz2-submitButton, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStartSmall + .pz2-submitButton, .tx-mathematicians #pazpar2 .input-group-btn:first-child > .submStartSmall + .pz2-submitButton, #pazpar2 .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .pz2-submitButton,
+.tx-mathematicians #pazpar2 .input-group-btn:first-child > .submStart + .pz2-submitButton, #pazpar2
+.tx-mathematicians .input-group-btn:first-child > .submStart + .pz2-submitButton, .tx_find form #pazpar2 .input-group-btn:first-child > .submit + .pz2-submitButton, #pazpar2 .tx_find form .input-group-btn:first-child > .submit + .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .btn + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .powermail_submit + .submStartSmall, .header .header-search .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .header-search-form_submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .header .header-search .input-group-btn:first-child > .header-search-form_submit + .submStartSmall, #pazpar2 .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStartSmall + .submStartSmall,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStart + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .input-group-btn:first-child > .submStart + .submStartSmall, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submit + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .input-group-btn:first-child > .submit + .submStartSmall, .tx-mathematicians .input-group-btn:first-child > .btn + .submStartSmall, .tx-mathematicians .input-group-btn:first-child > .powermail_submit + .submStartSmall, .header .header-search .tx-mathematicians .input-group-btn:first-child > .header-search-form_submit + .submStartSmall, .tx-mathematicians .header .header-search .input-group-btn:first-child > .header-search-form_submit + .submStartSmall, #pazpar2 .tx-mathematicians .input-group-btn:first-child > .pz2-submitButton + .submStartSmall, .tx-mathematicians #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .submStartSmall, .tx-ezbrequest-pi1 #ezb_search_form .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .submStartSmall, .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .submStartSmall, .tx-mathematicians .input-group-btn:first-child > .submStart + .submStartSmall, .tx_find form .tx-mathematicians .input-group-btn:first-child > .submit + .submStartSmall, .tx-mathematicians .tx_find form .input-group-btn:first-child > .submit + .submStartSmall,
+.tx-mathematicians .input-group-btn:first-child > .btn + .submStart,
+.tx-mathematicians .input-group-btn:first-child > .powermail_submit + .submStart, .header .header-search
+.tx-mathematicians .input-group-btn:first-child > .header-search-form_submit + .submStart,
+.tx-mathematicians .header .header-search .input-group-btn:first-child > .header-search-form_submit + .submStart, #pazpar2
+.tx-mathematicians .input-group-btn:first-child > .pz2-submitButton + .submStart,
+.tx-mathematicians #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .submStart, .tx-ezbrequest-pi1 #ezb_search_form
+.tx-mathematicians .input-group-btn:first-child > .submStartSmall + .submStart,
+.tx-mathematicians .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStartSmall + .submStart, .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .submStart, .tx-mathematicians .input-group-btn:first-child > .submStart + .submStart, .tx_find form
+.tx-mathematicians .input-group-btn:first-child > .submit + .submStart,
+.tx-mathematicians .tx_find form .input-group-btn:first-child > .submit + .submStart, .tx_find form .input-group-btn:first-child > .btn + .submit, .tx_find form .input-group-btn:first-child > .powermail_submit + .submit, .header .header-search .tx_find form .input-group-btn:first-child > .header-search-form_submit + .submit, .tx_find form .header .header-search .input-group-btn:first-child > .header-search-form_submit + .submit, #pazpar2 .tx_find form .input-group-btn:first-child > .pz2-submitButton + .submit, .tx_find form #pazpar2 .input-group-btn:first-child > .pz2-submitButton + .submit, .tx-ezbrequest-pi1 #ezb_search_form .tx_find form .input-group-btn:first-child > .submStartSmall + .submit, .tx_find form .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:first-child > .submStartSmall + .submit, .tx-mathematicians .tx_find form .input-group-btn:first-child > .submStartSmall + .submit, .tx_find form .tx-mathematicians .input-group-btn:first-child > .submStartSmall + .submit,
+.tx-mathematicians .tx_find form .input-group-btn:first-child > .submStart + .submit, .tx_find form
+.tx-mathematicians .input-group-btn:first-child > .submStart + .submit, .tx_find form .input-group-btn:first-child > .submit + .submit {
+  margin-left: 0;
+}
+
 .input-group-btn:not(:last-child) > .btn, .input-group-btn:not(:last-child) > .powermail_submit, .header .header-search .input-group-btn:not(:last-child) > .header-search-form_submit, #pazpar2 .input-group-btn:not(:last-child) > .pz2-submitButton, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:not(:last-child) > .submStartSmall, .tx-mathematicians .input-group-btn:not(:last-child) > .submStartSmall,
 .tx-mathematicians .input-group-btn:not(:last-child) > .submStart, .tx_find form .input-group-btn:not(:last-child) > .submit,
 .input-group-btn:not(:last-child) > .btn-group {
@@ -6467,6 +6849,12 @@ tbody.collapse.show {
 .tx-mathematicians .input-group-btn:not(:first-child) > .submStart, .tx_find form .input-group-btn:not(:first-child) > .submit,
 .input-group-btn:not(:first-child) > .btn-group {
   z-index: 2;
+  margin-left: 0;
+}
+
+.input-group-btn:not(:first-child) > .btn:first-child, .input-group-btn:not(:first-child) > .powermail_submit:first-child, .header .header-search .input-group-btn:not(:first-child) > .header-search-form_submit:first-child, #pazpar2 .input-group-btn:not(:first-child) > .pz2-submitButton:first-child, .tx-ezbrequest-pi1 #ezb_search_form .input-group-btn:not(:first-child) > .submStartSmall:first-child, .tx-mathematicians .input-group-btn:not(:first-child) > .submStartSmall:first-child,
+.tx-mathematicians .input-group-btn:not(:first-child) > .submStart:first-child, .tx_find form .input-group-btn:not(:first-child) > .submit:first-child,
+.input-group-btn:not(:first-child) > .btn-group:first-child {
   margin-left: -1px;
 }
 
@@ -6502,8 +6890,8 @@ tbody.collapse.show {
 }
 
 .custom-control-input:focus ~ .custom-control-indicator {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #25589a;
-          box-shadow: 0 0 0 1px #fff, 0 0 0 3px #25589a;
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(37, 88, 154, 0.25);
+          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(37, 88, 154, 0.25);
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
@@ -6578,13 +6966,12 @@ tbody.collapse.show {
   height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
-  line-height: 1.25;
+  line-height: 1.5;
   color: #495057;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
-  background-clip: padding-box;
   background-size: 8px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ced4da;
   border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -6599,6 +6986,11 @@ tbody.collapse.show {
 .custom-select:focus::-ms-value {
   color: #495057;
   background-color: #fff;
+}
+
+.custom-select[multiple] {
+  height: auto;
+  background-image: none;
 }
 
 .custom-select:disabled {
@@ -6649,9 +7041,8 @@ tbody.collapse.show {
   z-index: 5;
   height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px);
-  padding: 0.5rem 0.75rem;
-  overflow: hidden;
-  line-height: 1.25;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
   color: #495057;
   pointer-events: none;
   -webkit-user-select: none;
@@ -6659,8 +7050,7 @@ tbody.collapse.show {
       -ms-user-select: none;
           user-select: none;
   background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ced4da;
 }
 
 .custom-file-control:lang(en):empty::after {
@@ -6669,17 +7059,18 @@ tbody.collapse.show {
 
 .custom-file-control::before {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
   z-index: 6;
   display: block;
   height: -webkit-calc(2.25rem + 2px);
   height: calc(2.25rem + 2px);
-  padding: 0.5rem 0.75rem;
-  line-height: 1.25;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
   color: #495057;
   background-color: #e9ecef;
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ced4da;
 }
 
 .custom-file-control:lang(en)::before {
@@ -6747,8 +7138,8 @@ tbody.collapse.show {
 }
 
 .nav-pills .nav-link.active, .nav-pills .active.main-navigation_link, .nav-pills .content-container .gokContainer.column .main-navigation_link.close, .content-container .gokContainer.column .nav-pills .main-navigation_link.close, .nav-pills .content-container .gokContainer.column .nav-link.close, .content-container .gokContainer.column .nav-pills .nav-link.close,
-.show > .nav-pills .nav-link,
-.show > .nav-pills .main-navigation_link {
+.nav-pills .show > .nav-link,
+.nav-pills .show > .main-navigation_link {
   color: #fff;
   background-color: #25589a;
 }
@@ -6854,6 +7245,9 @@ tbody.collapse.show {
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -6893,10 +7287,8 @@ tbody.collapse.show {
   .navbar-expand-sm {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -6927,9 +7319,15 @@ tbody.collapse.show {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
     display: none;
+  }
+  .navbar-expand-sm .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
   }
 }
 
@@ -6945,10 +7343,8 @@ tbody.collapse.show {
   .navbar-expand-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -6979,9 +7375,15 @@ tbody.collapse.show {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .navbar-expand-md .navbar-toggler {
     display: none;
+  }
+  .navbar-expand-md .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
   }
 }
 
@@ -6997,10 +7399,8 @@ tbody.collapse.show {
   .navbar-expand-lg, .main-navigation {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -7031,9 +7431,15 @@ tbody.collapse.show {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler, .main-navigation .navbar-toggler {
     display: none;
+  }
+  .navbar-expand-lg .dropup .dropdown-menu, .main-navigation .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
   }
 }
 
@@ -7049,10 +7455,8 @@ tbody.collapse.show {
   .navbar-expand-xl {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -7083,19 +7487,23 @@ tbody.collapse.show {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .navbar-expand-xl .navbar-toggler {
     display: none;
+  }
+  .navbar-expand-xl .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
   }
 }
 
 .navbar-expand {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -7138,10 +7546,17 @@ tbody.collapse.show {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
 }
 
 .navbar-expand .navbar-toggler {
   display: none;
+}
+
+.navbar-expand .dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
 }
 
 .navbar-light .navbar-brand, .main-navigation .navbar-brand {
@@ -7195,12 +7610,20 @@ tbody.collapse.show {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.navbar-light .navbar-text a, .main-navigation .navbar-text a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-text a:focus, .main-navigation .navbar-text a:focus, .navbar-light .navbar-text a:hover, .main-navigation .navbar-text a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
 .navbar-dark .navbar-brand {
-  color: white;
+  color: #fff;
 }
 
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: white;
+  color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .main-navigation_link {
@@ -7230,7 +7653,7 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .main-navigation_link.close,
 .navbar-dark .navbar-nav .content-container .gokContainer.column .nav-link.close, .content-container .gokContainer.column
 .navbar-dark .navbar-nav .nav-link.close {
-  color: white;
+  color: #fff;
 }
 
 .navbar-dark .navbar-toggler {
@@ -7244,6 +7667,14 @@ tbody.collapse.show {
 
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-text a {
+  color: #fff;
+}
+
+.navbar-dark .navbar-text a:focus, .navbar-dark .navbar-text a:hover {
+  color: #fff;
 }
 
 .card {
@@ -7260,6 +7691,11 @@ tbody.collapse.show {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .card-body {
@@ -7295,6 +7731,10 @@ tbody.collapse.show {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header + .list-group .list-group-item:first-child, .content-container .gokContainer.column .card-header + ul .list-group-item:first-child, .card-header + .list-group .content-container .gokContainer.column li:first-child, .content-container .gokContainer.column .card-header + .list-group li:first-child, .content-container .gokContainer.column .card-header + ul li:first-child, .card-header + .list-group .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + .list-group .facetActive:first-child, .content-container .gokContainer.column .card-header + ul .tx_find .facet-type-Tabs ol .facetActive:first-child, .content-container .gokContainer.column .tx_find .facet-type-Tabs ol .card-header + ul .facetActive:first-child, .card-header + .list-group .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + .list-group .facetActive:first-child, .tx_find .facet-type-Tabs ol .content-container .gokContainer.column .card-header + ul .facetActive:first-child {
+  border-top: 0;
 }
 
 .card-footer {
@@ -7336,11 +7776,22 @@ tbody.collapse.show {
   width: 100%;
 }
 
+.card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-deck .card {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 576px) {
   .card-deck {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -7360,15 +7811,27 @@ tbody.collapse.show {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-right: 15px;
+    margin-bottom: 0;
     margin-left: 15px;
   }
 }
 
+.card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-group .card {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 576px) {
   .card-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -7378,6 +7841,7 @@ tbody.collapse.show {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
             flex: 1 0 0%;
+    margin-bottom: 0;
   }
   .card-group .card + .card {
     margin-left: 0;
@@ -7403,20 +7867,15 @@ tbody.collapse.show {
 }
 
 .breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
   background-color: #e9ecef;
-}
-
-.breadcrumb::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.breadcrumb-item {
-  float: left;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -7499,9 +7958,8 @@ tbody.collapse.show {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
-  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -7628,6 +8086,7 @@ tbody.collapse.show {
 }
 
 .alert {
+  position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
@@ -7638,13 +8097,13 @@ tbody.collapse.show {
 }
 
 .alert-link {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .alert-dismissible .close {
-  position: relative;
-  top: -0.75rem;
-  right: -1.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 0.75rem 1.25rem;
   color: inherit;
 }
@@ -8104,7 +8563,7 @@ button.list-group-item-dark.active,
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -8163,6 +8622,7 @@ button.close {
   position: relative;
   width: auto;
   margin: 10px;
+  pointer-events: none;
 }
 
 .modal-content {
@@ -8174,6 +8634,7 @@ button.close {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -8202,9 +8663,9 @@ button.close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -8213,7 +8674,8 @@ button.close {
 }
 
 .modal-header .close {
-  margin-left: auto;
+  padding: 15px;
+  margin: -15px -15px -15px auto;
 }
 
 .modal-title {
@@ -8282,7 +8744,7 @@ button.close {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -8308,6 +8770,12 @@ button.close {
   display: block;
   width: 5px;
   height: 5px;
+}
+
+.tooltip .arrow::before {
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
 }
 
 .tooltip.bs-tooltip-top, .tooltip.bs-tooltip-auto[x-placement^="top"] {
@@ -8371,12 +8839,6 @@ button.close {
   border-left-color: #000;
 }
 
-.tooltip .arrow::before {
-  position: absolute;
-  border-color: transparent;
-  border-style: solid;
-}
-
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
@@ -8392,10 +8854,9 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  padding: 1px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -8417,8 +8878,8 @@ button.close {
 .popover .arrow {
   position: absolute;
   display: block;
-  width: 10px;
-  height: 5px;
+  width: 0.8rem;
+  height: 0.4rem;
 }
 
 .popover .arrow::before,
@@ -8431,16 +8892,16 @@ button.close {
 
 .popover .arrow::before {
   content: "";
-  border-width: 11px;
+  border-width: 0.8rem;
 }
 
 .popover .arrow::after {
   content: "";
-  border-width: 11px;
+  border-width: 0.8rem;
 }
 
 .popover.bs-popover-top, .popover.bs-popover-auto[x-placement^="top"] {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 .popover.bs-popover-top .arrow, .popover.bs-popover-auto[x-placement^="top"] .arrow {
@@ -8453,19 +8914,20 @@ button.close {
 }
 
 .popover.bs-popover-top .arrow::before, .popover.bs-popover-auto[x-placement^="top"] .arrow::before {
-  bottom: -11px;
-  margin-left: -6px;
+  bottom: -0.8rem;
+  margin-left: -0.8rem;
   border-top-color: rgba(0, 0, 0, 0.25);
 }
 
 .popover.bs-popover-top .arrow::after, .popover.bs-popover-auto[x-placement^="top"] .arrow::after {
-  bottom: -10px;
-  margin-left: -6px;
+  bottom: -webkit-calc((0.8rem - 1px) * -1);
+  bottom: calc((0.8rem - 1px) * -1);
+  margin-left: -0.8rem;
   border-top-color: #fff;
 }
 
 .popover.bs-popover-right, .popover.bs-popover-auto[x-placement^="right"] {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .popover.bs-popover-right .arrow, .popover.bs-popover-auto[x-placement^="right"] .arrow {
@@ -8474,22 +8936,23 @@ button.close {
 
 .popover.bs-popover-right .arrow::before, .popover.bs-popover-auto[x-placement^="right"] .arrow::before,
 .popover.bs-popover-right .arrow::after, .popover.bs-popover-auto[x-placement^="right"] .arrow::after {
-  margin-top: -8px;
+  margin-top: -0.8rem;
   border-left-width: 0;
 }
 
 .popover.bs-popover-right .arrow::before, .popover.bs-popover-auto[x-placement^="right"] .arrow::before {
-  left: -11px;
+  left: -0.8rem;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
 
 .popover.bs-popover-right .arrow::after, .popover.bs-popover-auto[x-placement^="right"] .arrow::after {
-  left: -10px;
+  left: -webkit-calc((0.8rem - 1px) * -1);
+  left: calc((0.8rem - 1px) * -1);
   border-right-color: #fff;
 }
 
 .popover.bs-popover-bottom, .popover.bs-popover-auto[x-placement^="bottom"] {
-  margin-top: 10px;
+  margin-top: 0.8rem;
 }
 
 .popover.bs-popover-bottom .arrow, .popover.bs-popover-auto[x-placement^="bottom"] .arrow {
@@ -8498,17 +8961,18 @@ button.close {
 
 .popover.bs-popover-bottom .arrow::before, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::before,
 .popover.bs-popover-bottom .arrow::after, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::after {
-  margin-left: -7px;
+  margin-left: -0.8rem;
   border-top-width: 0;
 }
 
 .popover.bs-popover-bottom .arrow::before, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::before {
-  top: -11px;
+  top: -0.8rem;
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
 
 .popover.bs-popover-bottom .arrow::after, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::after {
-  top: -10px;
+  top: -webkit-calc((0.8rem - 1px) * -1);
+  top: calc((0.8rem - 1px) * -1);
   border-bottom-color: #fff;
 }
 
@@ -8524,7 +8988,7 @@ button.close {
 }
 
 .popover.bs-popover-left, .popover.bs-popover-auto[x-placement^="left"] {
-  margin-right: 10px;
+  margin-right: 0.8rem;
 }
 
 .popover.bs-popover-left .arrow, .popover.bs-popover-auto[x-placement^="left"] .arrow {
@@ -8533,22 +8997,23 @@ button.close {
 
 .popover.bs-popover-left .arrow::before, .popover.bs-popover-auto[x-placement^="left"] .arrow::before,
 .popover.bs-popover-left .arrow::after, .popover.bs-popover-auto[x-placement^="left"] .arrow::after {
-  margin-top: -8px;
+  margin-top: -0.8rem;
   border-right-width: 0;
 }
 
 .popover.bs-popover-left .arrow::before, .popover.bs-popover-auto[x-placement^="left"] .arrow::before {
-  right: -11px;
+  right: -0.8rem;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
 
 .popover.bs-popover-left .arrow::after, .popover.bs-popover-auto[x-placement^="left"] .arrow::after {
-  right: -10px;
+  right: -webkit-calc((0.8rem - 1px) * -1);
+  right: calc((0.8rem - 1px) * -1);
   border-left-color: #fff;
 }
 
 .popover-header {
-  padding: 8px 14px;
+  padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
   color: inherit;
@@ -8561,7 +9026,7 @@ button.close {
 }
 
 .popover-body {
-  padding: 9px 14px;
+  padding: 0.5rem 0.75rem;
   color: #212529;
 }
 
@@ -8697,11 +9162,11 @@ button.close {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .carousel-indicators {
@@ -8952,11 +9417,11 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .rounded-circle {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
 .rounded-0 {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .clearfix::after {
@@ -8983,6 +9448,10 @@ a.bg-dark:focus, a.bg-dark:hover {
 
 .d-table {
   display: table !important;
+}
+
+.d-table-row {
+  display: table-row !important;
 }
 
 .d-table-cell {
@@ -9017,6 +9486,9 @@ a.bg-dark:focus, a.bg-dark:hover {
   .d-sm-table {
     display: table !important;
   }
+  .d-sm-table-row {
+    display: table-row !important;
+  }
   .d-sm-table-cell {
     display: table-cell !important;
   }
@@ -9047,6 +9519,9 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
   .d-md-table {
     display: table !important;
+  }
+  .d-md-table-row {
+    display: table-row !important;
   }
   .d-md-table-cell {
     display: table-cell !important;
@@ -9079,6 +9554,9 @@ a.bg-dark:focus, a.bg-dark:hover {
   .d-lg-table {
     display: table !important;
   }
+  .d-lg-table-row {
+    display: table-row !important;
+  }
   .d-lg-table-cell {
     display: table-cell !important;
   }
@@ -9109,6 +9587,9 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
   .d-xl-table {
     display: table !important;
+  }
+  .d-xl-table-row {
+    display: table-row !important;
   }
   .d-xl-table-cell {
     display: table-cell !important;
@@ -11483,11 +11964,11 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .font-weight-normal {
-  font-weight: normal !important;
+  font-weight: 400 !important;
 }
 
 .font-weight-bold {
-  font-weight: bold !important;
+  font-weight: 700 !important;
 }
 
 .font-italic {
@@ -12079,6 +12560,30 @@ select {
       flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  background-color: #fff;
+}
+
+.content-container .gokContainer.column select {
+  margin-bottom: 5px;
+}
+
+.content-container .gokContainer.column select.level-1 {
+  padding-left: 30px;
+}
+
+.content-container .gokContainer.column select.level-2 {
+  padding-left: 60px;
+}
+
+.content-container .gokContainer.column select.level-3 {
+  padding-left: 90px;
+}
+
+.content-container .gokContainer.column ul.level-0,
+.content-container .gokContainer.column ul.level-1,
+.content-container .gokContainer.column ul.level-2,
+.content-container .gokContainer.column ul.level-3 {
+  display: none;
 }
 
 .content-container .gokContainer.column ul {
