@@ -22,33 +22,33 @@ class Gok
         $js .= "
         var mutexSelect = false;
         var newSelectedItem;
-        
+
         function makeIntoSelect (id) {
-            mutexSelect = false;
+            console.log('MAKEINTOSELECT FUNCTION CALLED WITH ID: '+id);
             var ulElement = document.getElementById(id);
-            
-            $(ulElement).each(function(){  
-                
-                var list=$(this), 
+
+            $(ulElement).each(function(){
+
+                var list=$(this),
                     select=$(document.createElement(\"select\"))
                     .insertBefore($(this))
                     .attr('id', id)
                     .attr('class', this.getAttribute(\"class\"))
                     .change(function() {
-                    
+
                         var selectedElement = $(this).children(\":selected\").attr(\"id\");
                         newSelectedItem = 'ul-734-'+selectedElement;
                         expandGOK734(selectedElement);
                         var jContainerLI = jQuery('#c".$element->objectID."-' + selectedElement);
                         jContainerLI.parent().nextAll('select').remove();
                         mutexSelect = true;
-                        
+
                     });
-                    
+
                 var option=$(document.createElement(\"option\")).appendTo(select).html('...');
-                
+
                 $(\">li a span.GOKName\", this).each(function(){
-                
+
                     var onclickfunction = this.parentNode.getAttribute(\"onclick\");
                         var GOKIDclass = $(this).prev().html();
                         var option=$(document.createElement(\"option\"))
@@ -56,24 +56,27 @@ class Gok
                         .val($(this).html())
                         .attr('id',GOKIDclass)
                         .html('<a href=\"' + this.parentNode.href + '\"onclick=\''+onclickfunction+'\'/>'+ '<span class=\"plusMinus\">' + $(this).prev().prev().html() + ' </span>' + '<span class=\"GOKID\">' + GOKIDclass + ' </span>' + '<span class=\"GOKNAME\">' + $(this).html() +' </span>' + '<a/>');
-                        
+
                 });
-                
+
                 $('#'+newSelectedItem).val();
                 list.hide();
             });
-            
+
         }
-        
+
         $( document ).ready( function () {
             makeIntoSelect ('ul-$element->objectID-MSC');
         });
 
         window.setInterval( function(){
+          if($('#'+ newSelectedItem).length != 0) {
             if (mutexSelect === true) {
-                makeIntoSelect(newSelectedItem);
-            }
-        },300);
+              mutexSelect = false;
+              makeIntoSelect(newSelectedItem);
+            };
+          };
+        },100);
         ";
 
         return $js;
