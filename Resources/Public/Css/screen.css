@@ -12927,10 +12927,6 @@ select {
   min-width: 16px;
 }
 
-.main-content {
-  min-width: 100%;
-}
-
 .main-content li, .main-content .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .main-content .facetActive {
   list-style-type: square;
   margin-left: 2em;
@@ -12939,6 +12935,10 @@ select {
 
 .main {
   margin-left: 0;
+}
+
+.main.one-column .main-content {
+  min-width: 100%;
 }
 
 #pazpar2 #pz2-termLists li, #pazpar2 #pz2-termLists .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol #pazpar2 #pz2-termLists .facetActive {
