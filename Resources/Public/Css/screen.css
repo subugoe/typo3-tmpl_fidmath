@@ -13719,6 +13719,10 @@ select {
   margin-left: .25em;
 }
 
+.tify_viewer {
+  min-height: 688px;
+}
+
 td.data a.external-link[href$=".pdf"],
 td.data a.external_link[href$=".PDF"],
 td.data a.external-link-new-window[href$=".pdf"],
