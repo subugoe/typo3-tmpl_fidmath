@@ -12927,6 +12927,10 @@ select {
   min-width: 16px;
 }
 
+.main-content {
+  min-width: 100%;
+}
+
 .main-content li, .main-content .tx_find .facet-type-Tabs ol .facetActive, .tx_find .facet-type-Tabs ol .main-content .facetActive {
   list-style-type: square;
   margin-left: 2em;
