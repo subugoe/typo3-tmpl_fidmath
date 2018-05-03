@@ -13715,6 +13715,11 @@ select {
   color: #fff;
 }
 
+.tx-zamn-hans .alphabet-list {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .tx-zamn-hans .alphabet-list a {
   margin-left: .25em;
 }
