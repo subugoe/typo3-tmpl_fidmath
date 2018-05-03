@@ -1,3 +1,4 @@
+{namespace s=Subugoe\TmplFidmath\ViewHelpers}
 <div class="main-container" id="top">
 
     <f:render partial="Header"/>
@@ -8,3 +9,22 @@
     </div>
 </div>
 <div class="to-top"><f:link.page section="top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></f:link.page></div>
+
+<f:if condition="{s:trackingBackendUsers()} == false">
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.gwdg.de/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '71']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.gwdg.de/piwik.php?idsite=71&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+</f:if>
