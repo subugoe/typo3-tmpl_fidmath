@@ -26,7 +26,7 @@ namespace Subugoe\TmplFidmath\ViewHelpers;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
  * Determines if a backend user is logged in.
