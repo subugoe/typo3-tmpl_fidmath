@@ -1,3 +1,8 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:pazpar2/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/Configuration/TypoScript/Main/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ezbrequest/Configuration/TypoScript/constants.txt">
 ### Constants from baseConfig
 styles.content.links.allowTags = address, cite, b, i, u, a, img, br, div, center, hr, sub, sup, p,strong, em, li, ul, ol, blockquote, strike, span, h2, h3, h4, h5
 styles.content.links.allowTags := addToList(abbr, acronym)
