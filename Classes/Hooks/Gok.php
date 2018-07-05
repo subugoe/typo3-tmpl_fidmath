@@ -34,8 +34,8 @@ class Gok
                     .attr('class', this.getAttribute(\"class\"))
                     .change(function() {
                         var selectedElement = $(this).children(\":selected\").attr(\"id\");
-                        newSelectedItem = 'ul-734-'+selectedElement;
-                        expandGOK734(selectedElement);
+                        newSelectedItem = 'ul-".$element->objectID."-'+selectedElement;
+                        expandGOK".$element->objectID."(selectedElement);
                         var jContainerLI = jQuery('#c".$element->objectID."-' + selectedElement);
                         jContainerLI.parent().nextAll('select').remove();
                         mutexSelect = true;
