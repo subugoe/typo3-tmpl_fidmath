@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'SUB Uni-Göttingen',
     'constraints' => [
             'depends' => [
-                    'typo3' => '8.7.0-9.2.99',
+                    'typo3' => '8.7.0-9.5.99',
                 ],
         ],
 ];
