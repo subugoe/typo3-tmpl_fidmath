@@ -26,6 +26,9 @@ namespace Subugoe\TmplFidmath\ViewHelpers;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
+
+use TYPO3\CMS\Core\Context\Context;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
@@ -38,6 +41,8 @@ class TrackingBackendUsersViewHelper extends AbstractViewHelper
      */
     public function render(): bool
     {
-        return $GLOBALS['TSFE']->beUserLogin;
+        $context = GeneralUtility::makeInstance(Context::class);
+        
+        return $context->getPropertyFromAspect('backend.user', 'isLoggedIn');
     }
 }
