@@ -2,10 +2,6 @@
 
 defined('TYPO3_MODE') or die();
 
-$boot = function ($extKey) {
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['nkwgok']['gokTreeJavaScript'][] = 'Subugoe\\TmplFidmath\\Hooks\\Gok->javascript';
-};
-
-$boot('tmpl_fidmath');
-
-unset($boot);
+call_user_func(function () {
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['nkwgok']['gokTreeJavaScript'][] = \Subugoe\TmplFidmath\Hooks\Gok::class.'->javascript';
+});

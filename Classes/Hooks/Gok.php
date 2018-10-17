@@ -24,17 +24,17 @@ class Gok
         function makeIntoSelect(id) {
             var ulElement = document.getElementById(id);
 
-            $(ulElement).each(function() {
-                var list=$(this),
-                    select=$(document.createElement(\"select\"))
+            $(ulElement).each(function(index, value) {
+                var list = value;
+                var select = $(document.createElement('select'))
                     .insertBefore($(this))
                     .attr('id', id)
-                    .attr('class', this.getAttribute(\"class\"))
+                    .attr('class', this.getAttribute('class'))
                     .change(function() {
-                        var selectedElement = $(this).children(\":selected\").attr(\"id\");
-                        newSelectedItem = 'ul-${$objectID}-'+selectedElement;
-                        expandGOK${$objectID}(selectedElement);
-                        var jContainerLI = jQuery('#c${$objectID}-' + selectedElement);
+                        var selectedElement = $(this).children(':selected').attr('id');
+                        newSelectedItem = 'ul-${objectID}-'+selectedElement;
+                        expandGOK${objectID}(selectedElement);
+                        var jContainerLI = jQuery('#c${objectID}-' + selectedElement);
                         jContainerLI.parent().nextAll('select').remove();
                         mutexSelect = true;
                     });
@@ -57,7 +57,7 @@ class Gok
         }
 
         $(document).ready(function() {
-            makeIntoSelect ('ul-${$objectID}-MSC');
+            makeIntoSelect ('ul-${objectID}-MSC');
         });
 
         window.setInterval(function() {
