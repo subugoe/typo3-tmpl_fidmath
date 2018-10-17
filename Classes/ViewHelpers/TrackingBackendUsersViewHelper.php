@@ -41,8 +41,7 @@ class TrackingBackendUsersViewHelper extends AbstractViewHelper
      */
     public function render(): bool
     {
-        $context = GeneralUtility::makeInstance(Context::class);
-        
-        return $context->getPropertyFromAspect('backend.user', 'isLoggedIn');
+        // Use TYPO3 9.5 Context API
+        return GeneralUtility::makeInstance(Context::class)->getPropertyFromAspect('backend.user', 'isLoggedIn');
     }
 }
