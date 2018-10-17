@@ -16,8 +16,6 @@ class Gok
     public function javascript(string $js, Element $element): string
     {
         $objectID = $element->objectID;
-        $arguments = $element->arguments;
-        $extkey = Utility::extKey;
 
         $js .= "
         var mutexSelect = false;
@@ -34,9 +32,9 @@ class Gok
                     .attr('class', this.getAttribute(\"class\"))
                     .change(function() {
                         var selectedElement = $(this).children(\":selected\").attr(\"id\");
-                        newSelectedItem = 'ul-".$element->objectID."-'+selectedElement;
-                        expandGOK".$element->objectID."(selectedElement);
-                        var jContainerLI = jQuery('#c".$element->objectID."-' + selectedElement);
+                        newSelectedItem = 'ul-${$objectID}-'+selectedElement;
+                        expandGOK${$objectID}(selectedElement);
+                        var jContainerLI = jQuery('#c${$objectID}-' + selectedElement);
                         jContainerLI.parent().nextAll('select').remove();
                         mutexSelect = true;
                     });
@@ -59,7 +57,7 @@ class Gok
         }
 
         $(document).ready(function() {
-            makeIntoSelect ('ul-$element->objectID-MSC');
+            makeIntoSelect ('ul-${$objectID}-MSC');
         });
 
         window.setInterval(function() {
