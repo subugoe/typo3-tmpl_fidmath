@@ -28,7 +28,7 @@ page {
         14.value = <script type="text/x-mathjax-config">MathJax.Hub.processSectionDelay = 0;MathJax.Hub.Config({TeX: {Macros:{sb: ["{_#1}", 1], sp: ["{^#1}", 1]}}, extensions: ["tex2jax.js"],jax: ["input/TeX", "output/HTML-CSS"],tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script>
 
         15 = TEXT
-        15.value = <script type="text/javascript" src="https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        15.value = <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 
         16 = TEXT
         16 {
